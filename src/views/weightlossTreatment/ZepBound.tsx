@@ -178,7 +178,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="text-wine font-inter text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"
               >
                 Learn more about our process
@@ -1120,7 +1120,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={scaleIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/contact-us"
+            href="/contact-us/"
             className="bg-light text-wine px-12 py-4 rounded-full font-semibold text-lg hover:bg-cream transition-colors shadow-xl"
           >
             Book Free Consultation

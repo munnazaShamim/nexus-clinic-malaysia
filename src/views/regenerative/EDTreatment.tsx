@@ -813,7 +813,7 @@ export default function EDTreatment({
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="px-8 py-4 rounded-lg font-medium flex items-center gap-2"
                   style={{ background: "white", color: "#8C4F58" }}
                 >

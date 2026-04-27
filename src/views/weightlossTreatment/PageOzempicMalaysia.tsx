@@ -822,7 +822,7 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
               variants={scaleIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="px-12 py-5 bg-wine text-light font-inter text-lg rounded-full hover:bg-rose transition-colors shadow-xl hover:shadow-2xl"
             >
               Book Free Assessment

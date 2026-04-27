@@ -1035,7 +1035,7 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             </motion.p>
 
             <motion.div variants={fadeInUp}>
-              <Link href="/contact-us" className="bg-white text-wine px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">
+              <Link href="/contact-us/" className="bg-white text-wine px-10 py-4 rounded-full font-semibold hover:opacity-90 transition">
                 Book Free Assessment
               </Link>
             </motion.div>

@@ -338,7 +338,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -375,7 +375,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
             className="py-20 px-4"
           />
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Find Out Your Root Cause
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -418,7 +418,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Tailored Jawline Plans
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -454,7 +454,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           />
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
              Book a Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -495,7 +495,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
             <Link href='/face/cheek-filler-malaysia/' className='font-bold text-wine italic'> Cheek filler </Link>
         can also be used in combination with jawline filler for a complete enhancement of facial contour. at Nexus Clinic for mid-face support that balances the newly defined lower face.</p>
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Book Your Free Consultation
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -565,7 +565,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
                   </p>
                   <p className="text-taupe text-xs mt-1">[AbbVie Malaysia Aesthetic Market Summary Report, 2023]</p>
                 </div>
-                <Link href="/contact-us" className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                <Link href="/contact-us/" className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                   Product Suits Your Jawline
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -607,7 +607,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Jawline Assessment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -656,7 +656,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </section>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Jawline Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -767,7 +767,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

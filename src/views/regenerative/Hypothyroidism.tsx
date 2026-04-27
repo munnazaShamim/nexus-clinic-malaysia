@@ -116,7 +116,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="bg-wine text-white px-8 py-4 rounded-full font-semibold hover:bg-rose transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                   >
                     Book Your Hypothyroidism Assessment <ChevronRight className="w-4 h-4" />
@@ -124,7 +124,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="border-2 border-wine text-wine px-8 py-4 rounded-full font-semibold hover:bg-wine hover:text-white transition-all duration-300 bg-white/50 backdrop-blur-sm"
                   >
                     Free Assessment
@@ -546,7 +546,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-wine text-white px-12 py-4 rounded-full font-semibold hover:bg-rose transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
               >
                 Book Your  Assessment

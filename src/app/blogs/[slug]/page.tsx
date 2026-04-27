@@ -119,7 +119,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
             <div className="absolute bottom-0 left-0 right-0 max-w-4xl mx-auto px-6 lg:px-12 pb-16">
               <div className="flex w-full justify-between items-center">
-                <Link href="/blogs" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
+                <Link href="/blogs/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
                   <ArrowLeft size={18} />
                   Back to all articles
                 </Link>
@@ -167,7 +167,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
             <div className="mt-16 pt-8 border-t border-taupe/20">
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                <Link href="/blogs" className="flex items-center gap-2 text-wine hover:gap-3 transition-all">
+                <Link href="/blogs/" className="flex items-center gap-2 text-wine hover:gap-3 transition-all">
                   <ArrowLeft size={16} />
                   Back to all articles
                 </Link>

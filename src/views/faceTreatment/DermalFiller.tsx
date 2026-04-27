@@ -223,7 +223,7 @@ const DermalFillersLanding = ({
             </motion.div>
 
             <motion.div variants={fadeInUp} className="text-center mt-10">
-              <Link href="/contact-us" className="text-wine font-semibold hover:underline flex items-center gap-2 mx-auto">
+              <Link href="/contact-us/" className="text-wine font-semibold hover:underline flex items-center gap-2 mx-auto">
                 {treatmentAtGlance?.cta || "Speak to a Doctor About Your Goals | Book a Free Assessment"}
                 <ArrowRight size={16} />
               </Link>
@@ -348,7 +348,7 @@ const DermalFillersLanding = ({
             </div>
 
             <motion.div variants={fadeInUp} className="text-center mt-12">
-              <Link href="/contact-us" className="bg-wine/10 text-wine px-8 py-3 rounded-full hover:bg-wine/20 transition-all duration-300 font-semibold">
+              <Link href="/contact-us/" className="bg-wine/10 text-wine px-8 py-3 rounded-full hover:bg-wine/20 transition-all duration-300 font-semibold">
                 {faceAreas?.cta || "Book a Consultation to Map Your Treatment Areas | Free Assessment Available"}
               </Link>
             </motion.div>
@@ -392,7 +392,7 @@ const DermalFillersLanding = ({
                 </p>
               </div>
               <div className="text-center mt-6">
-                <Link href="/contact-us" className="text-wine font-semibold hover:underline">
+                <Link href="/contact-us/" className="text-wine font-semibold hover:underline">
                   {products?.cta || "Ask a Doctor About the Right Product for Your Face | Book a Free Consultation"}
                 </Link>
               </div>
@@ -426,7 +426,7 @@ const DermalFillersLanding = ({
                   ))}
                 </div>
                 <motion.div variants={fadeInUp} className="mt-8">
-                  <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
+                  <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
                     {whyNexus?.cta || "Book Your Consultation at Nexus Clinic KL"}
                   </Link>
                 </motion.div>
@@ -482,7 +482,7 @@ const DermalFillersLanding = ({
             </div>
 
             <motion.div variants={fadeInUp} className="text-center mt-12">
-              <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
+              <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
                 {procedure?.cta || "Ready to Book | Secure Your Appointment at Nexus Clinic KL"}
               </Link>
             </motion.div>
@@ -543,7 +543,7 @@ const DermalFillersLanding = ({
             </motion.div>
 
             <motion.div variants={fadeInUp} className="text-center">
-              <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
+              <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
                 {pricing?.cta || "Get Your Personalised Quote | Book a Free Consultation at Nexus Clinic KL"}
               </Link>
             </motion.div>
@@ -738,7 +738,7 @@ const DermalFillersLanding = ({
               variants={scaleIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="bg-white text-wine px-12 py-4 rounded-full font-semibold hover:bg-cream transition-colors shadow-xl inline-flex items-center gap-2"
             >
               {finalCta?.cta || "Book Your Free Consultation Now | Limited Slots Available This Week"}

@@ -206,7 +206,7 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="bg-wine text-white px-8 py-4 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-rose transition-colors shadow-lg hover:shadow-xl"
                   >
                     Book Your HRT Assessment

@@ -199,7 +199,7 @@ const OShotLanding = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="px-8 py-4 bg-wine text-white rounded-full font-semibold hover:bg-rose transition-colors shadow-lg"
                 >
                   Book Your O-Shot Consultation

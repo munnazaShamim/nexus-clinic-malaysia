@@ -276,7 +276,7 @@ const treatmentCategories: TreatmentCategory[] = [
                   <p className="text-taupe font-inter text-lg leading-relaxed mb-6">
                     {category.description}
                   </p>
-                  <Link href={`/${category.slug}`}>
+                  <Link href={`/${category.slug}/`}>
                     <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold border-b border-wine/30 hover:border-wine transition-all pb-1">
                       View All {category.name}
                       <ChevronRight className="w-4 h-4" />
@@ -315,7 +315,7 @@ const treatmentCategories: TreatmentCategory[] = [
                         whileHover={{ y: -5 }}
                         className="w-[280px] md:w-[320px] flex-shrink-0 bg-light rounded-xl border border-taupe/10 hover:shadow-xl transition-all duration-300 overflow-hidden group"
                       >
-                        <Link href={`/${category.slug}/${treatment.slug}`} className="block h-full">
+                        <Link href={`/${category.slug}/${treatment.slug}/`} className="block h-full">
                           {/* Image Container */}
                           <div className="h-48 relative overflow-hidden bg-wine/5">
                             <Image

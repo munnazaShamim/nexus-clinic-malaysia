@@ -506,7 +506,7 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             At Nexus Clinic KL, every anti-aging patient receives a treatment plan tailored to their specific aging biology, not a generic protocol. All stem cell therapies are compliant with the Ministry of Health Malaysia regulatory framework. All treatments are doctor-performed by registered medical, LCP-certified doctors with over 15 years of combined clinical experience.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Link href="/contact-us" className="bg-light text-wine px-12 py-4 rounded-full font-medium text-lg hover:bg-cream transition-all duration-300 shadow-2xl">
+            <Link href="/contact-us/" className="bg-light text-wine px-12 py-4 rounded-full font-medium text-lg hover:bg-cream transition-all duration-300 shadow-2xl">
               Book Your Anti-Aging Assessment
             </Link>
           </motion.div>

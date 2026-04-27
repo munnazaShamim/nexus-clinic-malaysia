@@ -47,7 +47,7 @@ const HeroSection = ({ t }: { t: (key: string) => string }) => {
               </a>
 
               <a
-                href="/consultation"
+                href="/consultation/"
                 className="px-6 py-3 rounded-full border border-gray-400 text-gray-700 text-sm font-medium hover:bg-green/10 transition text-center"
               >
                 Explore Treatments

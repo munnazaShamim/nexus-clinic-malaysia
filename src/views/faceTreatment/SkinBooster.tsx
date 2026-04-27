@@ -291,7 +291,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Free Skin Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -356,7 +356,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Book a Consultation
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -402,7 +402,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
                   className="object-cover"
                 />
               </div>
-              <Link href="/contact-us" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+              <Link href="/contact-us/" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Get the Right Booster 
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -445,7 +445,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               />
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Booster quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -488,7 +488,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
         />
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Ask About Products
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -534,7 +534,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get a Protocol Recommendation 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -600,7 +600,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Skin Booster Price
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -697,7 +697,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

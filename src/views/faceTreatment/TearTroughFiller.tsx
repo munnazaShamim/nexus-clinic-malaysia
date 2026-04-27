@@ -172,7 +172,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-            href="/contact-us">
+            href="/contact-us/">
               Speak to a Doctor About Your Under-Eye Concern | Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -213,7 +213,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-            href="/contact-us">
+            href="/contact-us/">
               Get a Proper Under-Eye Diagnosis | Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -281,7 +281,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
                   At Nexus Clinic KL, the doctor assesses the relationship between your cheek position and your tear trough depth at consultation. Patients who need cheek support first are given a staged treatment recommendation, not simply sold tear trough filler regardless of their anatomy.
                 </p>
               </div>
-              <Link className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all" href="/contact-us">
+              <Link className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all" href="/contact-us/">
                 Get the Right Treatment Sequence for Your Eyes
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -333,7 +333,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us">
+            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us/">
               Book with a Clinic That Understands Why This Treatment Is Different
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -376,7 +376,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"          
-            href="/contact-us">     
+            href="/contact-us/">     
               Ask Which Product Is Right for Your Under-Eyes
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -416,7 +416,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2" href="/contact-us">
+            <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2" href="/contact-us/">
               Book Your Tear Trough Filler Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -451,7 +451,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us">
+            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us/">
               Get Your Personalised Tear Trough Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -697,7 +697,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Under-Eye Consultation Now
@@ -712,10 +712,9 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
               Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="/cheek-filler-malaysia
-              " className="hover:text-cream transition-colors">Explore Cheek Filler</a>
+              <a href="/cheek-filler-malaysia/" className="hover:text-cream transition-colors">Explore Cheek Filler</a>
               <span>•</span>
-              <a href="/face/skin-booster-malaysia" className="hover:text-cream transition-colors">Explore Skin Boosters</a>
+              <a href="/face/skin-booster-malaysia/" className="hover:text-cream transition-colors">Explore Skin Boosters</a>
             </div>
           </motion.div>
         </motion.div>

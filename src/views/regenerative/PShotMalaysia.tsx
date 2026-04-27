@@ -270,7 +270,7 @@ const PShotLanding = () => {
                   alt="Medical consultation at Nexus Clinic"
                   className="rounded-2xl w-full h-auto object-cover"
                 />
-                <Link href="/contact-us">
+                <Link href="/contact-us/">
                   <div className="absolute -bottom-4 -right-4 bg-wine text-white px-6 py-3 rounded-full shadow-lg hover:bg-wine/90 transition-all duration-300 cursor-pointer">
                     <p className="font-inter font-semibold">Book Confidential Consultation</p>
                   </div>
@@ -415,7 +415,7 @@ const PShotLanding = () => {
             <p className="font-inter text-2xl font-bold">
               016-7025699 / 03-21635699
             </p>
-            <Link href="/contact-us">
+            <Link href="/contact-us/">
               <button className="mt-6 bg-white text-wine px-8 py-3 rounded-full font-semibold hover:bg-cream transition-all duration-300 cursor-pointer">
                 Book Your P-Shot Consultation Today | Call or WhatsApp
               </button>

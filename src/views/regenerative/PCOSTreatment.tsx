@@ -253,7 +253,7 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="px-8 py-4 rounded-full font-semibold flex items-center gap-2 shadow-lg"
                 style={{ backgroundColor: "#8C4F58", color: "#FAF8F7" }}
               >

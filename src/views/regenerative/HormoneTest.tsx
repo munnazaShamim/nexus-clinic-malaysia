@@ -863,7 +863,7 @@ export default function HormoneTestLanding({
               </motion.p>
 
               <motion.div variants={fadeInUp} className="space-y-4">
-                <Link href="/contact-us" className="bg-white text-wine px-8 py-4 rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <Link href="/contact-us/" className="bg-white text-wine px-8 py-4 rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   Call or WhatsApp to Schedule
                 </Link>
 

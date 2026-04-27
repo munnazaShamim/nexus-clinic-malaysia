@@ -628,7 +628,7 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 Phone: 016-7025699 / 03-21635699
               </p>
 
-              <Link href="/contact-us">
+              <Link href="/contact-us/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

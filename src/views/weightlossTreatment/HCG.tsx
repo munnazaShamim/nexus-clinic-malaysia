@@ -646,7 +646,7 @@ const HCGWeightLossLanding = ({
 
           <motion.a
             variants={scaleIn}
-            href="/contact-us"
+            href="/contact-us/"
             className="bg-cream text-wine px-10 py-5 rounded-full font-bold text-lg hover:bg-rose hover:text-white transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center gap-2"
           >
             Book Free Consultation

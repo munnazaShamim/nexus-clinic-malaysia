@@ -154,7 +154,7 @@ const doctors = [
             variants={fadeInUp} 
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
-            <Link href="/doctors">
+            <Link href="/doctors/">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -347,7 +347,7 @@ const doctors = [
           </div>
 
           <motion.div variants={fadeInUp} className="text-center mt-12">
-            <Link href="/doctors">
+            <Link href="/doctors/">
               <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
                 View All Doctors
                 <ArrowRight className="w-4 h-4" />
@@ -663,7 +663,7 @@ const doctors = [
               Book a consultation with our doctors today. No commitment, just honest advice about what may work for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/consultation">
+              <Link href="/consultation/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

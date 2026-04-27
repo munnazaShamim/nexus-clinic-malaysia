@@ -363,7 +363,7 @@ const SectionBeforeAfter = ({
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/contact-us"
+            href="/contact-us/"
             className="px-8 py-4 bg-wine text-light rounded-full font-inter font-medium inline-flex items-center gap-2 shadow-lg shadow-wine/30 hover:bg-wine/90 transition-colors"
           >
             <Sparkles className="w-5 h-5" />

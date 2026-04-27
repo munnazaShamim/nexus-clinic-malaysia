@@ -918,7 +918,7 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               Call or WhatsApp today to schedule your confidential consultation.
             </motion.p>
 
-            <Link href="/contact-us">
+            <Link href="/contact-us/">
               <motion.button
                 variants={scaleIn}
                 whileHover={{ scale: 1.05 }}

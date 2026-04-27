@@ -152,7 +152,7 @@ const ShockwaveLanding = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="group bg-wine text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-rose transition-all shadow-lg hover:shadow-xl"
                 >
                   Book Your Shockwave Therapy Assessment
@@ -784,7 +784,7 @@ const ShockwaveLanding = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-white text-wine px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-[--color-cream] transition-all shadow-lg"
               >
                 Book Your Shockwave Therapy Assessment

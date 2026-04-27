@@ -847,7 +847,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                           </div>
                           <div className="bg-linear-to-r from-cream to-cream/50 px-6 py-4 border-t border-rose/10">
                             <a
-                              href={getNavHref("/contact-us")}
+                              href={getNavHref("/contact-us/")}
                               className="flex items-center justify-between group"
                             >
                               <div className="flex items-center gap-3">
@@ -962,7 +962,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
 
               {/* CTA */}
               <motion.a
-                href={getNavHref("/contact-us")}
+                href={getNavHref("/contact-us/")}
                 whileHover={{
                   scale: 1.03,
                   boxShadow: "0 8px 30px rgba(140, 79, 88, 0.3)",
@@ -1215,7 +1215,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                     className="pt-6 space-y-3"
                   >
                     <a
-                      href={getNavHref("/contact-us")}
+                      href={getNavHref("/contact-us/")}
                       className="flex max-w-[93%] items-center justify-center gap-2 bg-wine text-light px-6 py-4 rounded-xl font-inter font-semibold text-center shadow-lg shadow-wine/20 hover:bg-wine/90 transition-all duration-200"
                     >
                       <Calendar size={18} />

@@ -475,7 +475,7 @@ const HormonReplaceLanding = ({
                 Phone: 016-7025699 / 03-21635699
               </p>
 
-              <Link href="/contact-us" className="bg-light text-wine px-8 py-4 rounded-lg hover:bg-cream transition-all duration-300 font-medium">
+              <Link href="/contact-us/" className="bg-light text-wine px-8 py-4 rounded-lg hover:bg-cream transition-all duration-300 font-medium">
                 Schedule Your Consultation
               </Link>
             </div>

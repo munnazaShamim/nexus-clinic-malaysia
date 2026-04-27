@@ -820,7 +820,7 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <motion.a
             variants={scaleIn}
-            href="/contact-us"
+            href="/contact-us/"
             className="px-8 py-4 bg-wine text-white rounded-full font-semibold hover:bg-rose transition-colors inline-flex items-center gap-2"
           >
             Book Free Assessment
