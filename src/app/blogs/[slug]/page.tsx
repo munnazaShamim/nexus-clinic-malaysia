@@ -14,16 +14,15 @@ import { cache } from "react";
 
 const baseUrl = process.env.BASE_URL || "https://www.nexus-clinic.com";
 
-export const revalidate = 3600; // ISR
+export const revalidate = 3600;
 export const dynamicParams = true;
 
-// ✅ CACHE (critical for SEO + performance)
+// ✅ CACHE
 const getPostCached = cache(async (slug: string) => {
-  const post = await wordpressService.getPost(slug);
-  return post;
+  return wordpressService.getPost(slug);
 });
 
-// ✅ OPTIONAL: only prebuild top posts (fast builds)
+// ✅ PREBUILD TOP POSTS ONLY
 export async function generateStaticParams() {
   try {
     const posts = await wordpressService.getAllPosts();
@@ -35,24 +34,23 @@ export async function generateStaticParams() {
   }
 }
 
-// ✅ SEO METADATA (fixed)
+// ✅ METADATA (FIXED FOR NEXT 15)
 export async function generateMetadata(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
   try {
-    const { slug } = params;
-    const wpPost = await getPostCached(slug);
+    const { slug } = await params;
 
-    if (!wpPost) {
-      return { title: "Blog Not Found" };
-    }
+    const wpPost = await getPostCached(slug);
+    if (!wpPost) return { title: "Blog Not Found" };
 
     const post = adaptWordPressPost(wpPost, 0);
 
     const cleanTitle = post.title.replace(/<[^>]*>/g, "");
     const description =
       post.seo?.description ||
-      post.content?.replace(/<[^>]*>/g, "").slice(0, 160);
+      post.content?.replace(/<[^>]*>/g, "").slice(0, 160) ||
+      "Read our latest blog post";
 
     return {
       metadataBase: new URL(baseUrl),
@@ -84,18 +82,16 @@ export async function generateMetadata(
   }
 }
 
-// ✅ MAIN PAGE
+// ✅ PAGE (FIXED FOR NEXT 15)
 export default async function Page(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const wpPost = await getPostCached(slug);
-
   if (!wpPost) return notFound();
 
   const post = adaptWordPressPost(wpPost, 0);
-
   if (!post?.title || !post?.content) return notFound();
 
   const cleanTitle = post.title.replace(/<[^>]*>/g, "");
@@ -142,7 +138,6 @@ export default async function Page(
       )}
 
       <main className="min-h-screen bg-cream">
-        {/* HERO */}
         <section className="relative h-[60vh] min-h-[500px] overflow-hidden">
           <Image
             src={post.image || "/default-image.jpg"}
@@ -156,10 +151,7 @@ export default async function Page(
 
           <div className="absolute bottom-0 left-0 right-0 max-w-4xl mx-auto px-6 lg:px-12 pb-16">
             <div className="flex justify-between items-center">
-              <Link
-                href="/blogs/"
-                className="flex items-center gap-2 text-white/80 hover:text-white"
-              >
+              <Link href="/blogs/" className="flex items-center gap-2 text-white/80 hover:text-white">
                 <ArrowLeft size={18} />
                 Back to all articles
               </Link>
@@ -188,7 +180,6 @@ export default async function Page(
               dangerouslySetInnerHTML={{ __html: post.title }}
             />
 
-            {/* AUTHOR */}
             <div className="mt-8">
               <Link href="/author/anum-jawed">
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20 transition">
@@ -202,12 +193,8 @@ export default async function Page(
                   </div>
 
                   <div>
-                    <h4 className="text-white font-semibold">
-                      Dr. Anum Jawed
-                    </h4>
-                    <p className="text-white text-sm">
-                      Pharm-D, MPhil
-                    </p>
+                    <h4 className="text-white font-semibold">Dr. Anum Jawed</h4>
+                    <p className="text-white text-sm">Pharm-D, MPhil</p>
                   </div>
                 </div>
               </Link>
@@ -215,40 +202,10 @@ export default async function Page(
           </div>
         </section>
 
-        {/* CONTENT */}
         <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
           <article>
-            <SingleBlogPost
-              content={post.content}
-              postSlug={slug}
-            />
+            <SingleBlogPost content={post.content} postSlug={slug} />
           </article>
-
-          {/* SHARE */}
-          <div className="mt-16 pt-8 border-t">
-            <div className="flex justify-between items-center flex-wrap gap-4">
-              <Link
-                href="/blogs/"
-                className="flex items-center gap-2 text-wine"
-              >
-                <ArrowLeft size={16} />
-                Back to all articles
-              </Link>
-
-              <div className="flex items-center gap-4">
-                <span className="text-sm">Share:</span>
-                <div className="flex gap-2">
-                  {["facebook", "twitter", "linkedin"].map((p) => (
-                    <ShareButton
-                      key={p}
-                      platform={p}
-                      title={cleanTitle}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
 
