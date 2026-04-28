@@ -543,39 +543,63 @@ const Navbar = ({ locale }: { locale?: string }) => {
   useEffect(() => {
     const newSearchIndex = buildSearchIndex(getText);
     setSearchIndex(newSearchIndex);
-  }, [getText]); // Only depend on getText, remove isBlogsPage
+  }, [getText]);
+  
 
-  // Persist selected locale in the i18next cookie so the middleware remembers
-  // the user's preference across navigations to unlocalized URLs.
-  const handleLangClick = useCallback((langCode: string) => {
-    document.cookie = `i18next=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
-  }, []);
-
-  // Build locale-aware href for language switcher
   const getLocaleHref = useCallback((langCode: string) => {
-    const localePrefix = /^\/(en|id|ar|ms|zh)(\/|$)/;
-    const match = pathname.match(localePrefix);
-    const basePath = match ? pathname.replace(localePrefix, "/") : pathname;
-    const cleanPath = basePath === "" ? "/" : basePath;
-
-    if (langCode === "en") {
-      return cleanPath;
-    }
-
-    return cleanPath === "/" ? `/${langCode}` : `/${langCode}${cleanPath}`;
-  }, [pathname]);
-
-  // Build locale-aware href for nav links - blogs always go to /blogs without locale
-  const getNavHref = useCallback((path: string) => {
-    // If it's the blogs link, always go to /blogs without locale prefix
-    if (path === '/blogs/') {
+    if (isBlogsPage || pathname.includes('/blogs/')) {
       return '/blogs/';
     }
     
-    // For other paths, add locale prefix if not English
+    const localePrefixRegex = /^\/(id|ar|ms|zh)(\/|$)/;
+    const hasPrefixMatch = pathname.match(localePrefixRegex);
+    
+    let basePath = pathname;
+    
+    if (hasPrefixMatch) {
+      basePath = pathname.replace(localePrefixRegex, "/");
+    } else {
+      basePath = pathname;
+    }
+    
+    const cleanPath = basePath === "" || basePath === "/" ? "/" : basePath;
+    
+    if (langCode === "en") {
+      return cleanPath;
+    }
+    
+    return cleanPath === "/" ? `/${langCode}` : `/${langCode}${cleanPath}`;
+  }, [pathname, isBlogsPage]);
+
+  const handleLangClick = useCallback((langCode: string) => {
+    document.cookie = `i18next=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
+    
+    const newHref = getLocaleHref(langCode);
+    
+    const currentLang = currentLocale || 'en';
+    if (langCode === currentLang && newHref === pathname) {
+      setIsLangOpen(false);
+      return;
+    }
+    
+    setTimeout(() => {
+      window.location.href = newHref;
+    }, 50);
+  }, [getLocaleHref, currentLocale, pathname]);
+
+  const getNavHref = useCallback((path: string) => {
+    if (path === '/blogs/' || path === '/blogs' || path.startsWith('/blogs/')) {
+      return '/blogs/';
+    }
+    
+    if (isBlogsPage) {
+      return path;
+    }
+
     if (!currentLocale || currentLocale === "en") return path;
+    
     return `/${currentLocale}${path}`;
-  }, [currentLocale]);
+  }, [currentLocale, isBlogsPage]);
 
   useEffect(() => {
     const checkTime = () => {

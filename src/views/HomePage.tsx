@@ -1,6 +1,5 @@
 "use client";
-// import { getTranslation } from "@/src/i18n/server";
-import { useTranslation } from "../i18n/client";
+import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import HeroSection from '@/src/views/HomeLanding/HeroSection'
 import WhyChooseSection from "@/src/views/HomeLanding/WhyChooseSection";
@@ -16,7 +15,6 @@ export default function HomePageNexus({
 }: {
   locale?: string;
 }) {
-  // const { t } = await getTranslation(locale, "home");
   const { t } = useTranslation(locale, "home");
     const faqData = t("faq.items", { returnObjects: true }) as Array<{q: string; a: string}>;
 
