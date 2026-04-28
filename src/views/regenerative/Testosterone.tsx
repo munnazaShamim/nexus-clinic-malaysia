@@ -45,7 +45,7 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       "https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     clinicInterior:
       "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2091&q=80",
-    patientCare: "/images/treatment/happy-patient.png",
+    patientCare: "/images/treatment/happy-patient.webp",
   };
 
   const transformations = [

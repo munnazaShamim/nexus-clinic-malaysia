@@ -33,6 +33,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Image from "next/image";
 const HCGWeightLossLanding = ({
   locale = fallbackLng,
 }: {
@@ -203,9 +204,11 @@ const HCGWeightLossLanding = ({
               variants={fadeInRight}
               className="relative h-100 rounded-3xl overflow-hidden shadow-2xl"
             >
-              <img
+              <Image
                 src="/images/main/HCG-weight-loss-treatment.webp"
                 alt="Medical consultation at Nexus Clinic Kuala Lumpur"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-brown/50 to-transparent" />

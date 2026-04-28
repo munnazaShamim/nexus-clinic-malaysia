@@ -33,6 +33,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero"
 import Link from "next/link";
+import Image from "next/image";
 const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/fatFreezing");
 
@@ -266,9 +267,11 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/weight-loss/Fat Freezing Treatment.webp"
                   alt="Fat freezing treatment procedure at Nexus Clinic Kuala Lumpur"
+                  width={600}
+                  height={400}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown/50 to-transparent"></div>

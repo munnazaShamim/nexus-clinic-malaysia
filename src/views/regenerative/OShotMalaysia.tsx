@@ -26,6 +26,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import TableForPages from "@/src/components/TableForPages";
+import Image from "next/image";
 const OShotLanding = () => {
   const faqs = [
     {
@@ -345,9 +346,11 @@ const OShotLanding = () => {
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-br from-wine to-rose opacity-10 rounded-3xl transform -rotate-3" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/regenerative/o-shot.webp"
                   alt="O-Shot Procedure at Nexus Clinic"
+                  width={400}
+                  height={300}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown via-transparent to-transparent" />

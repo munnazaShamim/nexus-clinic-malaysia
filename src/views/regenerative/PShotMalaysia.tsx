@@ -17,6 +17,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
+import Image from "next/image";
 
 const PShotLanding = () => {
   // P-Shot at a Glance Table Data
@@ -265,9 +266,11 @@ const PShotLanding = () => {
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-r from-wine/20 to-rose/20 rounded-3xl blur-3xl"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-taupe/20">
-                <img
+                <Image
                   src="/images/regenerative/embryonic.webp"
                   alt="Medical consultation at Nexus Clinic"
+                  width={400}
+                  height={400}
                   className="rounded-2xl w-full h-auto object-cover"
                 />
                 <Link href="/contact-us/">

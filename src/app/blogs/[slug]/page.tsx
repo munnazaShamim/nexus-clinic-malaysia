@@ -143,7 +143,7 @@ export default async function Page(
             src={post.image || "/default-image.jpg"}
             alt={cleanTitle}
             fill
-            priority
+            loading="lazy"
             className="object-cover"
           />
 

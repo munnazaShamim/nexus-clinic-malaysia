@@ -24,7 +24,6 @@ import SocialIcons from "@/src/components/SocialIcons";
 import HeroSection from '@/src/components/HeroSection'
 import GoogleReviews from '@/src/components/GoogleReviews'
 import Image from "next/image";
-const MotionImage = motion(Image);
 
 const GlassCard = ({
   children,
@@ -53,7 +52,7 @@ const ServicesSection = ({ t }: { t: (key: string) => string }) => {
       title: t("services.items.facial.title"),
       subtitle: t("services.items.facial.subtitle"),
       description: t("services.items.facial.description"),
-      image: "/images/treatment/facial.png",
+      image: "/images/treatment/facial.webp",
       span: "lg:col-span-2 lg:row-span-2",
       link: "/face/",
     },
@@ -61,7 +60,7 @@ const ServicesSection = ({ t }: { t: (key: string) => string }) => {
       title: t("services.items.weightLoss.title"),
       subtitle: t("services.items.weightLoss.subtitle"),
       description: t("services.items.weightLoss.description"),
-      image: "/images/treatment/weight-loss.png?w=400&auto=format&fit=crop",
+      image: "/images/treatment/weight-loss.webp",
       span: "",
       link: "/weight-loss/",
     },
@@ -69,7 +68,7 @@ const ServicesSection = ({ t }: { t: (key: string) => string }) => {
       title: t("services.items.skin.title"),
       subtitle: t("services.items.skin.subtitle"),
       description: t("services.items.skin.description"),
-      image: "/images/treatment/face-scan.png?w=400&auto=format&fit=crop",
+      image: "/images/treatment/face-scan.webp",
       span: "",
       link: "/skin/",
     },
@@ -77,7 +76,7 @@ const ServicesSection = ({ t }: { t: (key: string) => string }) => {
       title: t("services.items.hair.title"),
       subtitle: t("services.items.hair.subtitle"),
       description: t("services.items.hair.description"),
-      image:"/images/treatment/hair-restoration.png?w=600&auto=format&fit=crop",
+      image:"/images/treatment/hair-restoration.webp",
       span: "lg:col-span-2",
       link: "/hair/",
     },
@@ -126,14 +125,14 @@ const ServicesSection = ({ t }: { t: (key: string) => string }) => {
               }}
             >
               {/* Background Image */}
-              <MotionImage
-                src={service.image}
-                alt={service.title}
-                fill
-                className="absolute inset-0 w-full h-full object-cover"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.6 }}
-              />
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover"
+                />
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-brown/80 via-brown/40 to-transparent transition-opacity duration-500" />
@@ -213,7 +212,7 @@ const WhyChooseSection = ({ t }: { t: (key: string) => string }) => {
                 className="rounded-3xl lg:rounded-[40px] overflow-hidden"
               >
                 <Image
-                    src="/images/treatment/face-filler.png"
+                    src="/images/treatment/face-filler.webp"
                     alt="Clinic Interior"
                     width={800}
                     height={1000}
@@ -383,7 +382,7 @@ const TestimonialsSection = ({ t }: { t: (key: string) => string }) => {
           >
             <div className="rounded-3xl lg:rounded-[40px] overflow-hidden">
               <Image
-                src="/images/treatment/happy-patient.png"
+                src="/images/treatment/happy-patient.webp"
                 alt="Happy Patient"
                 width={800}
                 height={1000}

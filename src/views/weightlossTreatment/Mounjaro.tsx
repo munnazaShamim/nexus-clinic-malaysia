@@ -31,6 +31,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Image from "next/image";
 const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/mounjaro");
 
@@ -294,9 +295,11 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInRight} className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/main/mounjaro.webp"
                   alt="Mounjaro injection pen"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>

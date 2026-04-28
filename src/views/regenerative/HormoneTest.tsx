@@ -32,6 +32,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
+import Image from "next/image";
 export default function HormoneTestLanding({
   locale = fallbackLng,
 }: {
@@ -245,10 +246,11 @@ export default function HormoneTestLanding({
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
-                <div className="absolute inset-0 bg-linear-to-tr from-wine/20 to-transparent rounded-3xl" />
-                <img
+                <Image
                   src="/images/regenerative/hormone-test.webp"
                   alt="Blood test tubes in laboratory"
+                  width={400}
+                  height={300}
                   className="rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
               </motion.div>

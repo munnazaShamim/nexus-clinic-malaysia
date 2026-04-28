@@ -20,6 +20,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
+import Image from "next/image";
 
 const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/stemCell");
@@ -303,9 +304,11 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-br from-wine/20 to-rose/20 rounded-3xl blur-2xl" />
-              <img
+              <Image
                 src="/images/regenerative/stem-cell-therapy.webp"
                 alt="Stem cell therapy microscopic view"
+                width={400}
+                height={400}
                 className="relative z-10 rounded-3xl shadow-2xl w-full object-cover"
               />
             </motion.div>

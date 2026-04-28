@@ -101,7 +101,7 @@ const treatmentCategories: TreatmentCategory[] = [
     name: "Hair Treatments",
     slug: "hair",
     description: "Comprehensive hair restoration from medical therapy to FUE hair transplant, designed for natural density and long-term confidence.",
-    imageSrc: "/images/treatment/hair-restoration.png",
+    imageSrc: "/images/treatment/hair-restoration.webp",
     treatments: [
       { name: "Hair Transplant Malaysia", slug: "hair-transplant-malaysia", description: "Surgical hair restoration for long-term density.", imageUrl: "/images/hair/hair-transpalnt.jpeg" },
       { name: "FUE Hair Transplant Malaysia", slug: "fue-hair-transplant-malaysia", description: "Minimal scarring, natural-looking results.", imageUrl: "/images/hair/fue-hair-transplant.webp" },
@@ -266,7 +266,11 @@ const treatmentCategories: TreatmentCategory[] = [
               <div className={`grid md:grid-cols-2 gap-12 items-center mb-12 ${idx % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <motion.div variants={fadeInLeft} className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-t from-brown/30 to-transparent z-10" />
-                  <Image src={category.imageSrc} alt={category.name} fill className="object-cover" />
+                  <Image 
+                    src={category.imageSrc} 
+                    alt={category.name} 
+                    fill 
+                    className="object-cover" />
                 </motion.div>
                 
                 <motion.div variants={fadeInRight}>

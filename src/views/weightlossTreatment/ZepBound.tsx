@@ -33,6 +33,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
+import Image from "next/image";
 
 const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/zepbound");
@@ -261,33 +262,34 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             </motion.div>
 
             <motion.div variants={fadeInRight} className="space-y-8">
-              <img
+              <Image
                 src="/images/main/zepbound.webp"
                 alt="Mounjaro and Zepbound tirzepatide programme at Nexus Clinic Kuala Lumpur"
+                width={600}
+                height={400}
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
-
-              <div className="bg-cream p-8 rounded-2xl">
-                <h3 className="font-georgia text-2xl text-brown mb-4">
-                  Mounjaro vs Zepbound in Malaysia
-                </h3>
-                <p className="text-taupe mb-4">
-                  Both products contain the same Eli Lilly tirzepatide molecule
-                  and use the same once-weekly KwikPen injection device.
-                </p>
-                <p className="text-taupe mb-4">
-                  Mounjaro is registered for type 2 diabetes management.
-                  Zepbound refers to the chronic weight management indication
-                  and may be available subject to import logistics and clinic
-                  supply.
-                </p>
-                <p className="text-taupe font-medium">
-                  At Nexus Clinic KL, your doctor confirms which treatment route
-                  is appropriate, what stock is available through proper
-                  channels, and what plan best matches your health profile.
-                </p>
-              </div>
             </motion.div>
+          </div>
+          <div className="bg-cream p-8 rounded-2xl mt-12">
+            <h3 className="font-georgia text-2xl text-brown mb-4">
+              Mounjaro vs Zepbound in Malaysia
+            </h3>
+            <p className="text-taupe mb-4">
+              Both products contain the same Eli Lilly tirzepatide molecule
+              and use the same once-weekly KwikPen injection device.
+            </p>
+            <p className="text-taupe mb-4">
+              Mounjaro is registered for type 2 diabetes management.
+              Zepbound refers to the chronic weight management indication
+              and may be available subject to import logistics and clinic
+              supply.
+            </p>
+            <p className="text-taupe font-medium">
+              At Nexus Clinic KL, your doctor confirms which treatment route
+              is appropriate, what stock is available through proper
+              channels, and what plan best matches your health profile.
+            </p>
           </div>
         </div>
       </motion.section>

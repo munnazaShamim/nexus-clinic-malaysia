@@ -232,9 +232,11 @@ const doctors = [
             
             <motion.div variants={fadeInRight} className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/clinic/interior.png"
                   alt="Nexus Clinic Interior"
+                  width={200}
+                  height={400}
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -324,10 +326,11 @@ const doctors = [
                 className="bg-cream rounded-2xl overflow-hidden shadow-lg border border-taupe/10"
               >
                 <div className="aspect-square bg-brown/10 relative overflow-hidden">
-                  <img
+                  <Image
                     src={doctor.image}
                     alt={doctor.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    width={400}
+                    height={400}
                   />
                 </div>
                 <div className="p-5">
@@ -547,31 +550,39 @@ const doctors = [
             <motion.div variants={fadeInRight} className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     src="/images/clinic/medical.png"
                     alt="Clinic Reception"
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                      width={200}
+                      height={200}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
-                  <img
+                  <Image
                     src="/images/clinic/consultation2.png"
                     alt="Treatment Room"
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     src="/images/clinic/consultation.png"
                     alt="Consultation Room"
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
-                  <img
+                  <Image
                     src="/images/clinic/medical.png"
                     alt="Waiting Area"
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>

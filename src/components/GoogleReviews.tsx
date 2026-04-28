@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { getReviews } from "@/src/utils/googleReviews";
-
+import Image from "next/image";
 interface Review {
   author_name: string;
   text: string;
@@ -243,12 +243,14 @@ export default function GoogleReviews() {
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-4 border-t border-taupe/10">
                       <div className="relative">
-                        <img
+                        <Image
                           src={review.profile_photo_url || ""}
                           alt={review.author_name}
                           loading="lazy"
                           referrerPolicy="no-referrer"
-                          className="w-11 h-11 rounded-full object-cover border border-taupe/10"
+                          width={44}
+                          height={44}
+                          className="h-full w-full rounded-full object-cover border border-taupe/10"
                           onError={(e) => {
                             e.currentTarget.style.display = "none";
                             const fallback = e.currentTarget.nextElementSibling as HTMLElement;

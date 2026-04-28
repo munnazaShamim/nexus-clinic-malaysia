@@ -29,6 +29,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
+import Image from "next/image";
 
 const ShockwaveLanding = () => {
   const faqs = [
@@ -268,9 +269,11 @@ const ShockwaveLanding = () => {
 
             <motion.div variants={fadeInRight} className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/regenerative/shockwave-therapy.webp"
                   alt="Shockwave Therapy Procedure"
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown/50 to-transparent" />

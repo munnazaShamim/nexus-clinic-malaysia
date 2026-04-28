@@ -32,6 +32,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
+import Image from "next/image";
 export default function EDTreatment({
   locale = fallbackLng,
 }: {
@@ -786,10 +787,12 @@ export default function EDTreatment({
           className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         >
           <div className="absolute inset-0">
-            <img
+            <Image
               src={images.modernClinic}
               alt="Nexus Clinic Modern Facility"
               className="w-full h-full object-cover"
+              width={1200}
+              height={800}
             />
             <div
               className="absolute inset-0"

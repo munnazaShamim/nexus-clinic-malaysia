@@ -3,26 +3,16 @@ import Image from "next/image";
 const HeroSection = ({ t }: { t: (key: string) => string }) => {
   return (
     <section className="relative h-[700px] w-full overflow-hidden">
-      {/* Desktop Image */}
-      <Image
-        src="/images/hero_image.webp"
-        alt="Clinic treatment"
-        fill
-        priority
-        sizes="100vw"
-        className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
-      />
-
-      {/* Mobile Image */}
-      <Image
-        src="/images/hero_image_mobile.webp"
-        alt="Clinic treatment"
-        fill
-        priority
-        sizes="100vw"
-        className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
-      />
-
+        <Image
+          src="/images/hero_image.webp"
+          alt="Nexus Clinic Aesthetic Treatment"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          quality={75}
+          className="object-cover object-[65%_center] md:object-center"
+        />
       <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/10 to-transparent" />
 
       {/* Content */}

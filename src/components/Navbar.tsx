@@ -16,7 +16,6 @@ import {
 import { useTranslation } from "react-i18next";
 import "@/src/lib/vibration.css";
 import Image from "next/image";
-const MotionImage = motion(Image);
 const navItems = [
   {
     label: "nav.weightLoss",
@@ -521,7 +520,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
 
   // Check if current page is blogs page
   useEffect(() => {
-    const isBlogs = pathname.includes('/blogs');
+    const isBlogs = pathname.includes('/blogs/');
     setIsBlogsPage(isBlogs);
     
     // On blogs page, force locale to 'en' for display
@@ -570,8 +569,8 @@ const Navbar = ({ locale }: { locale?: string }) => {
   // Build locale-aware href for nav links - blogs always go to /blogs without locale
   const getNavHref = useCallback((path: string) => {
     // If it's the blogs link, always go to /blogs without locale prefix
-    if (path === '/blogs') {
-      return '/blogs';
+    if (path === '/blogs/') {
+      return '/blogs/';
     }
     
     // For other paths, add locale prefix if not English
@@ -670,22 +669,23 @@ const Navbar = ({ locale }: { locale?: string }) => {
               <div className="flex items-center gap-4">
                 
                 {isScrolled ? (
-                  <motion.div
+                  <motion.a
                     key="scroll-logo"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
                     transition={{ duration: 0.3 }}
                     className="flex items-center"
+                    href="/"
                   >
                     <Image
                       src="/images/logo_nexus_white.webp"
                       alt="Nexus Logo"
                       width={120}
                       height={40}
-                      className="h-10 w-auto object-contain"
+                      className="h-auto w-auto"
                     />
-                  </motion.div>
+                  </motion.a>
                 ) : (
                   <div className="hidden lg:flex items-center gap-6">
                     <a
@@ -739,10 +739,13 @@ const Navbar = ({ locale }: { locale?: string }) => {
                   transition={{ duration: 0.2 }}
                   className="shrink-0 relative z-10 overflow-hidden"
                 >
-                  <img
+                  <Image
                     src="/images/logo.png"
                     alt="Nexus Clinic Logo"
-                    className="h-24 md:h-32 w-auto"
+                    width={150}
+                    height={150}
+                    loading="lazy"
+                    className="h-full w-auto"
                   />
                 </motion.a>
               )}

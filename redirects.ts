@@ -435,7 +435,7 @@ export const blogStandaloneRedirects: [string, string][] = [
   // ALL /en/blogggg/ URLs - extracted from your list (94 total)
   ["/en/blog/effects-of-duromine-in-the-body/", "/blogs/effects-of-duromine-in-the-body/"],
   ["/en/blog/5-most-popular-botox-clinic-in-kuala-lumpur/", "/blogs/5-most-popular-botox-clinic-in-kuala-lumpur/"],
-  ["/en/blog/penile-melanosis-what-is-it-and-its-causes/", "/blogs/top-aesthetic-treatment-malaysia-book-trusted-clinic-in-kl/"],
+  ["/en/blog/penile-melanosis-what-is-it-and-its-causes/", "/blogs/penile-melanosis-what-is-it-and-its-causes/"],
   ["/en/blog/everything-you-need-to-know-about-breast-fillers-malaysia/", "/blogs/everything-you-need-to-know-about-breast-fillers-malaysia/"],
   ["/en/blog/prp-joint-and-knee-treatment-course-and-costs-malaysia/", "/blogs/prp-joint-and-knee-treatment-course-and-costs-malaysia/"],
   ["/en/blog/platelet-rich-plasma-prp-therapy-methods/", "/blogs/platelet-rich-plasma-prp-therapy-methods/"],
