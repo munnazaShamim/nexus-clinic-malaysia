@@ -21,7 +21,7 @@ const navItems = [
   {
     label: "nav.weightLoss",
     fallback: "Weight Loss",
-    href: "#",
+    href: "/weight-loss/",
     submenu: {
       weightLoss: {
         items: [
@@ -36,8 +36,6 @@ const navItems = [
         { key: "submenu.weightLoss.glp1", fallback: "glp-1-programme-malaysia" },
         { key: "submenu.weightLoss.zepbound", fallback: "zepbound-malaysia" },
         { key: "submenu.weightLoss.ivDrips", fallback: "iv-drip-malaysia" },
-        // { key: "submenu.weightLoss.semaglutide", fallback: "wegovy-malaysia" }, // or create separate
-        // { key: "submenu.weightLoss.tirzepatide", fallback: "mounjaro-malaysia" }, // or create separate
         ],
       },
     },
@@ -710,7 +708,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white border border-green text-green hover:bg-transparent hover:text-white hover:border-white font-semibold text-sm px-5 py-2 rounded-full transition-all duration-300 animate-vibration-slow"
                 >
-                  Consult with experts
+                 {getText("nav.topButton", "Consult with experts")}
                 </a>
               </div>
 
