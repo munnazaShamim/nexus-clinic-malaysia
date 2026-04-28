@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 import {
   Star,
   Phone,
@@ -16,13 +17,14 @@ import {
 } from "lucide-react";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
-// import GalleryPage from "./SliderGallery";
-// import { DoctorsSection } from "@/src/components/DoctorSection";
-import FAQWithSchema from "@/src/components/FAQWithSchema";
-// import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import SocialIcons from "@/src/components/SocialIcons";
 import HeroSection from '@/src/components/HeroSection'
-import GoogleReviews from '@/src/components/GoogleReviews'
+
+const FAQWithSchema = dynamic(() => import("@/src/components/FAQWithSchema"), {ssr: false});
+const SocialIcons = dynamic(() => import("@/src/components/SocialIcons"), {ssr: false});
+const GoogleReviews = dynamic(() => import("@/src/components/GoogleReviews"), {ssr: false});
+// import FAQWithSchema from "@/src/components/FAQWithSchema";
+// import SocialIcons from "@/src/components/SocialIcons";
+// import GoogleReviews from '@/src/components/GoogleReviews'
 import Image from "next/image";
 
 const GlassCard = ({
@@ -667,9 +669,6 @@ export default function HomePageNexus({
   return (
     <div className="min-h-screen overflow-hidden bg-cream font-inter">
       <HeroSection t={t} />
-      {/* <GalleryPage /> */}
-      {/* <DoctorsSection /> */}
-      {/* <SectionBeforeAfter transformations={transformations} t={t} /> */}
       <WhyChooseSection t={t} />
       <ServicesSection t={t} />
       <TestimonialsSection t={t} />
