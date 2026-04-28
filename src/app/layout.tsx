@@ -1,6 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
-
+import { inter } from "@/src/fonts/inter";
 export default function RootLayout({
   children,
 }: {
@@ -46,7 +46,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body>
+      <body className={inter.className}>
         <Script
           id="gtm-init"
           strategy="lazyOnload"
