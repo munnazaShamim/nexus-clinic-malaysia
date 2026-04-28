@@ -35,18 +35,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o"
-        />
+        <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script
           id="medical-clinic-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schemaData),
           }}
@@ -56,7 +52,7 @@ export default function RootLayout({
       <body>
         <Script
           id="gtm-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`
             (function(w,d,s,l,i){

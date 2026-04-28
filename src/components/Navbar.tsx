@@ -16,6 +16,7 @@ import {
 import { useTranslation } from "react-i18next";
 import "@/src/lib/vibration.css";
 import Image from "next/image";
+import Link from "next/link";
 const navItems = [
   {
     label: "nav.weightLoss",
@@ -669,12 +670,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
               <div className="flex items-center gap-4">
                 
                 {isScrolled ? (
-                  <motion.a
-                    key="scroll-logo"
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -10 }}
-                    transition={{ duration: 0.3 }}
+                  <Link
                     className="flex items-center"
                     href="/"
                   >
@@ -685,7 +681,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                       height={40}
                       className="h-auto w-auto"
                     />
-                  </motion.a>
+                  </Link>
                 ) : (
                   <div className="hidden lg:flex items-center gap-6">
                     <a
@@ -730,14 +726,9 @@ const Navbar = ({ locale }: { locale?: string }) => {
             {/* Logo */}
             <AnimatePresence>
               {!isMobileSearchOpen && (
-                <motion.a
+                <Link
                   href={getNavHref("/")}
-                  whileTap={{ scale: 0.98 }}
-                  initial={{ opacity: 1 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0, width: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="shrink-0 relative z-10 overflow-hidden"
+                  className="shrink-0 relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
                 >
                   <Image
                     src="/images/logo.png"
@@ -747,7 +738,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                     loading="lazy"
                     className="h-full w-auto"
                   />
-                </motion.a>
+                </Link>
               )}
             </AnimatePresence>
 
@@ -831,14 +822,13 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                       {categoryData.items.map(
                                         (subItem: { key: string; fallback: string }, idx: number) => (
                                           <li key={idx}>
-                                            <motion.a
+                                            <Link
                                               href={getNavHref(`/${getCategoryPath(category)}/${subItem.fallback}/`)}
-                                              whileHover={{ x: 4 }}
                                               className="group/item flex items-center gap-2 text-taupe hover:text-wine text-sm py-1.5 transition-all duration-200"
                                             >
                                               <span className="w-1.5 h-1.5 rounded-full bg-taupe/30 group-hover/item:bg-wine group-hover/item:scale-125 transition-all duration-200" />
                                               <span>{getText(subItem.key, subItem.fallback)}</span>
-                                            </motion.a>
+                                            </Link>
                                           </li>
                                         ),
                                       )}
@@ -935,15 +925,11 @@ const Navbar = ({ locale }: { locale?: string }) => {
                             </p>
                           </div>
                           {languages.map((lang, idx) => (
-                            <motion.a
+                            <Link
                               key={lang.code}
                               href={getLocaleHref(lang.code.toLowerCase())}
                               onClick={() => handleLangClick(lang.code.toLowerCase())}
-                              initial={{ opacity: 0, x: -10 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: idx * 0.03 }}
-                              whileHover={{ backgroundColor: "#F3EFEE",borderColor: "#8C4F58",scale: 1.02 }}
-                              className="flex items-center gap-3 px-4 py-2.5 text-brown border-b border-cream transition-colors"
+                              className="flex items-center gap-3 px-4 py-2.5 text-brown border-b border-cream transition-colors hover:bg-[#F3EFEE] hover:border-[#8C4F58] last:border-0 hover:scale-102"
                             >
                               {/* <span className="text-lg">{lang.flag}</span> */}
                               <div>
@@ -954,7 +940,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                   {lang.label}
                                 </span>
                               </div>
-                            </motion.a>
+                            </Link>
                           ))}
                         </motion.div>
                       </>
@@ -964,18 +950,13 @@ const Navbar = ({ locale }: { locale?: string }) => {
               )}
 
               {/* CTA */}
-              <motion.a
+              <Link
                 href={getNavHref("/contact-us/")}
-                whileHover={{
-                  scale: 1.03,
-                  boxShadow: "0 8px 30px rgba(140, 79, 88, 0.3)",
-                }}
-                whileTap={{ scale: 0.97 }}
-                className="ml-4 bg-green text-light px-6 py-2.5 rounded-full font-inter font-semibold text-sm shadow-lg shadow-green/20 hover:bg-green/90 transition-all duration-300 flex items-center gap-2"
+                className="ml-4 bg-green text-light px-6 py-2.5 rounded-full font-inter font-semibold text-sm shadow-lg shadow-green/20 hover:bg-green/90 transition-all duration-300 flex items-center gap-2 hover:shadow-green/30 hover:scale-105"
               >
                 <Calendar size={16} />
                 <span>{getText("nav.bookNow", "Book Now")}</span>
-              </motion.a>
+              </Link>
             </nav>
 
             {/* Mobile: Right Actions */}
@@ -1142,19 +1123,14 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                         <div className="grid grid-cols-1 gap-1">
                                           {categoryData.items.map(
                                             (subItem: { key: string; fallback: string }, idx: number) => (
-                                              <motion.a
+                                              <Link
                                                 key={idx}
                                                 href={getNavHref(`/${getCategoryPath(category)}/${subItem.fallback}/`)}
-                                                initial={{ opacity: 0, x: -10 }}
-                                                animate={{ opacity: 1, x: 0 }}
-                                                transition={{
-                                                  delay: idx * 0.02,
-                                                }}
                                                 className="text-taupe hover:text-wine text-sm py-2.5 px-3 rounded-lg hover:bg-light transition-all duration-200 flex items-center gap-2"
                                               >
                                                 <span className="w-1.5 h-1.5 rounded-full bg-taupe/30" />
                                                 {getText(subItem.key, subItem.fallback)}
-                                              </motion.a>
+                                              </Link>
                                             ),
                                           )}
                                         </div>
@@ -1192,19 +1168,15 @@ const Navbar = ({ locale }: { locale?: string }) => {
                       </p>
                       <div className="flex flex-wrap gap-2 px-2">
                         {languages.map((lang, idx) => (
-                          <motion.a
+                          <Link
                             key={lang.code}
                             href={getLocaleHref(lang.code.toLowerCase())}
                             onClick={() => handleLangClick(lang.code.toLowerCase())}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.35 + idx * 0.03 }}
-                            whileTap={{ scale: 0.95 }}
                             className="flex items-center gap-2 bg-cream hover:bg-rose/10 px-4 py-2.5 rounded-xl text-brown hover:text-wine text-sm font-inter transition-all duration-200"
                           >
                             {/* <span>{lang.flag}</span> */}
                             <span className="font-medium">{lang.code}</span>
-                          </motion.a>
+                          </Link>
                         ))}
                       </div>
                     </motion.div>
