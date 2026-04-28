@@ -242,7 +242,7 @@ export default function GoogleReviews() {
 
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-4 border-t border-taupe/10">
-                      <div className="relative">
+                      {/* <div className="relative">
                         <Image
                           src={review.profile_photo_url || ""}
                           alt={review.author_name}
@@ -257,8 +257,6 @@ export default function GoogleReviews() {
                             if (fallback) fallback.style.display = "flex";
                           }}
                         />
-
-                        {/* fallback initials */}
                         <div
                           className="hidden w-11 h-11 rounded-full bg-gradient-to-br from-wine to-rose items-center justify-center absolute inset-0"
                         >
@@ -270,7 +268,7 @@ export default function GoogleReviews() {
                               .join("")}
                           </span>
                         </div>
-                      </div>
+                      </div> */}
 
                       <div className="min-w-0">
                         <p className="font-georgia font-semibold text-brown truncate">
