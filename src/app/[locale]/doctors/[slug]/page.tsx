@@ -6,7 +6,7 @@ import { Star, Award, GraduationCap, Instagram, Linkedin, Stethoscope, ArrowLeft
 import { doctors } from "@/src/data/doctorProfiles";
 import { languages } from "@/src/i18n/settings";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com";
 
