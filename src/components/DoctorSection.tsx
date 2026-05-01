@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import Link from "next/link";
 
 import {
   ChevronRight,
@@ -13,59 +14,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import Image from "next/image";
-
-const doctors = [
-  {
-    id: 1,
-    name: "Dr. Preetha Nair",
-    title: "Aesthetic Medical Doctor | Advocate for Natural Beauty",
-    photo: "/images/main/Dr.-Preetha-Image.webp",
-    specialisation: "Non-Invasive Treatments & Personalized Skincare",
-    qualifications: [
-      "Expertise in Non-Invasive Treatments",
-      "Specialist in Personalized Skincare Solutions",
-    ],
-    awards: [],
-    bio: "Dr. Preetha Nair is a skilled Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia. She believes in a holistic approach to aesthetic medicine, tailoring every treatment to suit individual needs. Her gentle techniques and attention to detail ensure patient comfort and satisfaction.",
-    instagram: "#",
-    linkedin: "#",
-    rating: 5,
-  },
-  {
-    id: 2,
-    name: "Dr. Ashvinia Bala",
-    title: "Aesthetic Medical Doctor | Advocate for Wellness & Sustainability",
-    photo: "/images/main/Dr-Ashvinia-bala.webp",
-    specialisation: "General Medicine & Aesthetic Treatments",
-    qualifications: [
-      "Expertise in General Medicine",
-      "Specialized in Aesthetic Treatments",
-    ],
-    awards: [],
-    bio: "Dr. Ashvinia Bala is a dedicated Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia, affiliated with Nexus Clinic. Known for her meticulous approach, she tailors diagnostics and treatment plans to help individuals look and feel their best. Passionate about healthy living, environmental sustainability, baking cakes, and caring for dogs.",
-    instagram: "https://instagram.com/ashvinia_bala",
-    linkedin: "https://linkedin.com/in/dr-ashvinia-bala",
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: "Phr. Anum Jawed",
-    title: "Pharm-D, MPhil – Pharmaceutics | Clinical Pharmacist",
-    photo: "/images/Anum_img.png",
-    specialisation: "Drug Formulation & Medication Therapy Management",
-    qualifications: [
-      "Pharm-D: International Islamic University Malaysia (IIUM)",
-      "MPhil in Pharmaceutics: University of Malaya (UM), Malaysia",
-      "Member of Malaysian Pharmaceutical Society (MPS)",
-      "Member of Academy of Pharmacy Malaysia (APM)",
-    ],
-    awards: [],
-    bio: "Phr. Anum Jawed is a dedicated pharmacist with specialized expertise in Pharmaceutics. With extensive experience in pharmaceutical research and clinical practice, she is passionate about optimizing medication formulations and improving patient care. She plays a crucial role in ensuring patients receive safe and effective medication therapy.",
-    instagram: "#",
-    linkedin: "https://linkedin.com/in/dr-anum",
-    rating: 5,
-  },
-];
+import { doctors } from "@/src/data/doctorProfiles";
 
 function DoctorCard({
   doctor,
@@ -91,15 +40,14 @@ function DoctorCard({
       }}
       className="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-taupe/10 flex flex-col"
     >
-      {/* Photo */}
-      <div className="relative w-full aspect-3/4 overflow-hidden bg-cream">
+      {/* Clickable photo area → doctor profile */}
+      <Link href={`/doctors/${doctor.slug}`} className="block group relative w-full aspect-3/4 overflow-hidden bg-cream">
         <Image
           src={doctor.photo}
           alt={`Portrait of ${doctor.name}`}
           fill
           className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
           onError={(e) => {
-            // Fallback gradient when image missing
             (e.target as HTMLImageElement).style.display = "none";
           }}
         />
@@ -122,7 +70,7 @@ function DoctorCard({
             <Star key={i} className="w-3 h-3 fill-wine text-wine" />
           ))}
         </div>
-      </div>
+      </Link>
 
       {/* Body */}
       <div className="p-6 flex flex-col flex-1">
@@ -185,7 +133,7 @@ function DoctorCard({
           )}
         </AnimatePresence>
 
-        {/* Social */}
+        {/* Social + View Profile */}
         <div className="mt-auto pt-4 flex items-center gap-3 border-t border-taupe/20">
           <a
             href={doctor.instagram}
@@ -201,14 +149,12 @@ function DoctorCard({
           >
             <Linkedin className="w-4 h-4" />
           </a>
-          <a
-            href="https://wa.me/60167745699"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={`/doctors/${doctor.slug}`}
             className="ml-auto text-xs font-semibold tracking-wide text-cream bg-wine hover:bg-brown transition-colors px-4 py-2 rounded-full"
           >
-            Book Consultation
-          </a>
+            View Profile
+          </Link>
         </div>
       </div>
     </motion.article>
