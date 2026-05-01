@@ -100,6 +100,9 @@ const nextConfig: NextConfig = {
     return [
       ...blogStandaloneRedirects.map(([src, dest]) => ({ source: src, destination: dest, permanent: true })),
       ...redirectsList.map(([src, dest]) => ({ source: src, destination: dest, permanent: true })),
+
+      { source: '/sitemap.xml', destination: '/sitemap_index.xml', permanent: true },
+      {  source: '/:path((?!sitemap_index\\.xml$).*\\.xml$)', destination: '/404', permanent: false },
     ];
   },
 };

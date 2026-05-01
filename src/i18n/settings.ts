@@ -1,5 +1,6 @@
 export const fallbackLng = "en";
-export const languages = ["en", "id", "ar", "ms", "zh"];
+// export const languages = ["en", "id", "ar", "ms", "zh"];
+export const languages = ["en"];
 
 export const defaultNS = "common";
 
