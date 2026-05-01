@@ -3,7 +3,7 @@
 export const doctors = [
   {
     id: 1,
-    slug: "dr-preetha-nair",
+    slug: "preetha-nair",
     name: "Dr. Preetha Nair",
     title: "Aesthetic Medical Doctor | Advocate for Natural Beauty",
     photo: "/images/doctors/dr-preetha-nair.webp",
@@ -21,7 +21,7 @@ export const doctors = [
   },
   {
     id: 2,
-    slug: "dr-ashvinia-bala",
+    slug: "ashvinia-bala",
     name: "Dr. Ashvinia Bala",
     title: "Aesthetic Medical Doctor | Advocate for Wellness & Sustainability",
     photo: "/images/doctors/dr-ashvinia-bala.webp",
@@ -39,7 +39,7 @@ export const doctors = [
   },
   {
     id: 3,
-    slug: "phr-anum-jawed",
+    slug: "anum-jawed",
     name: "Phr. Anum Jawed",
     title: "Pharm-D, MPhil – Pharmaceutics | Clinical Pharmacist",
     photo: "/images/doctors/phr-anum-jawed.webp",

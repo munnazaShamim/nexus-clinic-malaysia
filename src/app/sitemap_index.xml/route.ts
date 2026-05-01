@@ -5,6 +5,7 @@ import { skinTreatmentsMetadata } from "@/src/config/skinTreatments";
 import { regenerativeTreatmentsMetadata } from "@/src/config/regenerativeTreatments";
 import { weightlossTreatmentsMetadata } from "@/src/config/weightlossTreatments";
 import { wordpressService } from "@/src/services/wordpress";
+import { doctors } from "@/src/data/doctorProfiles";
 
 export async function GET() {
   const baseUrl = process.env.BASE_URL || "https://www.nexus-clinic.com";
@@ -47,6 +48,7 @@ export async function GET() {
   const skinUrls = generateDynamicUrls(skinTreatmentsMetadata, "skin");
   const regenerativeUrls = generateDynamicUrls(regenerativeTreatmentsMetadata, "regenerative");
   const weightLossUrls = generateDynamicUrls(weightlossTreatmentsMetadata, "weight-loss");
+  const doctorUrls = generateDynamicUrls(doctors, "doctors");
 
   // Fix: Add explicit type
   let blogUrls: Array<{ url: string; lastModified: Date }> = [];
@@ -68,6 +70,7 @@ export async function GET() {
     ...skinUrls,
     ...regenerativeUrls,
     ...weightLossUrls,
+    ...doctorUrls,
     ...blogUrls,
   ];
 
