@@ -11,6 +11,7 @@ import HairMesotherapy from "@/src/views/hairTreatment/HairMesotherapy";
 import ExosomeHair from "@/src/views/hairTreatment/ExosomeHair";
 import MinoxidilTreatment from "@/src/views/hairTreatment/MinoxidilTreatment";
 import Finasteride from "@/src/views/hairTreatment/Finasteride";
+import AlopeciaArea from "@/src/views/hairTreatment/AlopeciaArea";
 import { notFound } from "next/navigation";
 import { hairSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
@@ -25,6 +26,7 @@ const components: Record<string, React.ComponentType<{ locale: string }>> = {
   ExosomeHair,
   MinoxidilTreatment,
   Finasteride,
+  AlopeciaArea,
 };
 
 export async function generateStaticParams() {

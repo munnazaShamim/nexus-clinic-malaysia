@@ -39,21 +39,29 @@ export const hairTreatmentsMetadata: TreatmentMetadata[] = [
     component: 'HairMesotherapy',
     title: 'Mesotherapy Hair Loss Treatment in Malaysia | Hair Mesotherapy and Klinik Scalp Rejuvenation at Nexus Clinic KL',
     description: 'Instant, lasting results without surgery. Nexus Clinic KL offers non-surgical mesotherapy treatment for hair loss in Malaysia. Involves injecting a customized cocktail into the scalp to stop hair thinning and stimulate regrowth. Hair mesotherapy and klinik services for Kuala Lumpur, Johor Bahru, and beyond. Book now.',
-    },
+  },
   {
     slug: 'exosome-hair-treatment-malaysia',
     component: 'ExosomeHair',
     title: 'Expert Exosome Hair Loss Treatment in Malaysia | Exosome Therapy and Hair Stem Cell Clinic at Nexus Clinic KL',
     description: 'Clinical trial data does not lie. Exosome therapy delivers 3x to 5x more growth factors than PRP to stimulate dormant hair follicles, promote hair growth, and regenerate the scalp. Nexus Clinic KL offers advanced exosome hair loss treatment in Malaysia for men and women in KL. Book your consultation today.',
-    },
+  },
   {
     slug: 'minoxidil-treatment-malaysia',
     component: 'MinoxidilTreatment',
     title: 'Minoxidil Malaysia: Topical and Oral Minoxidil Hair Loss Treatment and Hair Regrowth at Nexus Clinic KL',
-    description: 'Minoxidil hair loss treatment in Malaysia. Topical and oral minoxidil used to treat alopecia, stimulate hair growth and promote hair regrowth. Minoxidil combined with finasteride for treatment for men and women with hair thinning. Stimulate hair growth with minoxidil in Malaysia at Nexus Clinic KL.',  },
+    description: 'Minoxidil hair loss treatment in Malaysia. Topical and oral minoxidil used to treat alopecia, stimulate hair growth and promote hair regrowth. Minoxidil combined with finasteride for treatment for men and women with hair thinning. Stimulate hair growth with minoxidil in Malaysia at Nexus Clinic KL.',  
+  },
   {
     slug: 'finasteride-treatment-malaysia',
     component: 'Finasteride',
     title: 'Finasteride for Hair Loss in Malaysia: Finasteride 1mg, Topical Minoxidil and Hair Loss Treatment at Nexus Clinic KL',
-    description: 'Finasteride hair loss treatment in Malaysia. Finasteride 1mg prescribed by doctors to treat male pattern hair loss by blocking DHT and reducing hair follicle miniaturisation. Topical and oral finasteride, minoxidil, PRP and dutasteride available. Thin hair, receding hairline and hair regrowth treatment at Nexus Clinic KL. Book your consultation today.',  }
+    description: 'Finasteride hair loss treatment in Malaysia. Finasteride 1mg prescribed by doctors to treat male pattern hair loss by blocking DHT and reducing hair follicle miniaturisation. Topical and oral finasteride, minoxidil, PRP and dutasteride available. Thin hair, receding hairline and hair regrowth treatment at Nexus Clinic KL. Book your consultation today.', 
+  },
+  {
+    slug: 'alopecia-areata-treatment-malaysia',
+    component: 'AlopeciaArea',
+    title: 'Alopecia Areata Treatment Malaysia | Patchy Hair Loss & Scalp Treatment',
+    description: 'Sudden bald patches or patchy hair loss? Learn about alopecia areata treatment in Malaysia, including corticosteroid injections, hydrocortisone cream, PRP and scalp inflammation care.', 
+  },
 ];

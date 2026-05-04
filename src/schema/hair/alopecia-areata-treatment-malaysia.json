@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/#service",
+      "name": "Alopecia Areata Treatment in Malaysia for Hair Regrowth & Scalp Recovery",
+      "url": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/",
+      "description": "Struggling with patchy hair loss? Nexus Clinic KL offers advanced alopecia areata treatment in Malaysia to restore hair growth and improve scalp health. Our treatments include medical therapies and regenerative solutions tailored to your condition. Book a consultation in Kuala Lumpur today.",
+      "serviceType": "Alopecia Areata Treatment",
+      "provider": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/"
+      },
+      "image": "https://www.nexus-clinic.com/images/logo.png"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/#medicalprocedure",
+      "name": "Alopecia Areata Treatment in Malaysia for Hair Regrowth & Scalp Recovery",
+      "url": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/",
+      "description": "Alopecia areata is an autoimmune condition that causes patchy hair loss. At Nexus Clinic KL, we provide personalized treatment plans including medical therapy, PRP, and regenerative solutions to stimulate hair regrowth and restore confidence.",
+      "procedureType": "http://schema.org/TherapeuticProcedure",
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Nexus Clinic"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/"
+      }
+    }
+  ]
+}

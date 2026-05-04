@@ -25,6 +25,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
+
 interface BeardTransplantProps {
   locale: string;
 }
