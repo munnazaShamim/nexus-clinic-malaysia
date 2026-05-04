@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Activity,
@@ -289,6 +289,21 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               At Nexus Clinic KL, your doctor confirms which treatment route
               is appropriate, what stock is available through proper
               channels, and what plan best matches your health profile.
+
+              <br/>
+                Patients who want to compare Mounjaro against the broader GLP-1 programme landscape can review the dedicated{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  GLP-1 programme page at Nexus Clinic KL
+                </Link>
+                , the{' '}
+                <Link href="/weight-loss/ozempic-malaysia/" className="text-wine font-bold italic">
+                  Ozempic weight loss Malaysia
+                </Link>{' '}
+                page, and the{' '}
+                <Link href="/weight-loss/wegovy-malaysia/" className="text-wine font-bold italic">
+                  Wegovy weight loss Malaysia
+                </Link>{' '}
+                page for a complete comparison of available options.
             </p>
           </div>
         </div>
@@ -636,6 +651,14 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 reached, maintenance may include dose reduction, closer lifestyle
                 support, or a reduced long-term therapeutic dose.
               </p>
+
+              <p className="text-taupe">
+                Patients who want broader weight management context can explore the{' '}
+                <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                  doctor monitored weight loss programme
+                </Link>{' '}
+                which integrates multiple treatment options into a comprehensive long-term plan.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -841,9 +864,16 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="text-center text-taupe max-w-3xl mx-auto mt-8"
           >
-            Choice still depends on your indication, medical history, side
-            effect tolerance, blood sugar profile, availability, and doctor
-            guidance.
+            Jastreboff AM et al. Tirzepatide Once Weekly for the Treatment of Obesity. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/35658024/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              The New England Journal of Medicine
+            </a>. 
+            2022;387(3):205-216. SURMOUNT-1 trial: 72-week randomised controlled trial in adults with obesity without diabetes demonstrating 15.0%, 19.5%, and 20.9% average body weight reduction at 5mg, 10mg, and 15mg tirzepatide respectively, versus 3.1% with placebo.
           </motion.p>
         </div>
       </motion.section>
@@ -867,7 +897,8 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               treatments for appropriate patients.
             </p>
             <p className="text-taupe mb-4">
-              Treatments such as fat freezing or CoolSculpting target localised
+              Treatments such as fat freezing or
+                <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic"> CoolSculpting </Link>{' '}target localised
               fat pockets and are not substitutes for systemic appetite and
               metabolic treatment.
             </p>

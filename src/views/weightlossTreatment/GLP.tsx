@@ -1,19 +1,13 @@
 "use client";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Shield,
   AlertCircle,
   CheckCircle2,
-  XCircle,
   ArrowRight,
   Target,
-  Brain,
-  Activity,
-  ChevronRight,
   Phone,
   Heart as HeartIcon,
-  Pill,
   Award,
   MapPin,
   Clock,
@@ -224,6 +218,22 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
               </motion.div>
             ))}
           </div>
+
+          <p className="text-center mt-8 text-brown">
+              Patients who want to explore each medication in more detail can review the dedicated pages for{' '}
+              <Link href="/weight-loss/ozempic-malaysia/" className="text-wine font-bold italic">
+                Ozempic weight loss Malaysia
+              </Link>
+              ,{' '}
+              <Link href="/weight-loss/mounjaro-malaysia/" className="text-wine font-bold italic">
+                Mounjaro weight loss Malaysia
+              </Link>
+              , and{' '}
+              <Link href="/weight-loss/wegovy-malaysia/" className="text-wine font-bold italic">
+                Wegovy Malaysia
+              </Link>{' '}
+              for full programme breakdowns.
+            </p>
         </div>
       </section>
 
@@ -828,6 +838,18 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
                   are disproportionate, persistent, or clinically inappropriate for continued escalation.
                 </p>
               </div>
+              <p className="text-sm text-taupe p-4 border-l-4 border-wine rounded-lg">
+                  Wilding JPH et al. Once-Weekly Semaglutide in Adults with Overweight or Obesity. 
+                  <a 
+                    href="https://pubmed.ncbi.nlm.nih.gov/33567185/" 
+                    target="_blank" 
+                    rel="nofollow" 
+                    className="text-wine font-bold italic"
+                  >
+                    The New England Journal of Medicine
+                  </a>. 
+                  2021;384:989-1002. The STEP 1 trial demonstrated 14.9% mean body weight loss with semaglutide 2.4mg (Wegovy) versus 2.4% with placebo over 68 weeks in adults without diabetes, establishing the clinical benchmark for GLP-1 weight loss programmes.
+                </p>
             </motion.div>
           </div>
         </div>
@@ -868,6 +890,17 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
               </motion.div>
             ))}
           </div>
+          <p className="text-center mt-8 text-brown">
+            GLP-1 programme pricing in Malaysia varies based on the medication prescribed, the dose required, and the level of clinical support included. Nexus Clinic KL provides a transparent pricing breakdown after your initial consultation. No medication is prescribed without a full assessment, and no patient is committed to a cost before understanding exactly what is included. The table below reflects current 2026 indicative pricing. Patients who want to complement their GLP-1 programme with body contouring may also benefit from{' '}
+            <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+              fat freezing treatment in Malaysia
+            </Link>{' '}
+            or the broader{' '}
+            <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+              doctor monitored weight loss programme
+            </Link>{' '}
+            for integrated weight management support.
+          </p>
         </div>
       </section>
 

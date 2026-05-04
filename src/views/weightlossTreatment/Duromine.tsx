@@ -1,12 +1,12 @@
 "use client";
-
+import Link from "next/link";
 import {
   staggerContainer,
   fadeInUp,
   fadeInLeft,
   fadeInRight,
   scaleIn,
-} from "../../lib/animations";
+} from "@/src/lib/animations";
 import { motion } from "framer-motion";
 import {
   Shield,
@@ -16,19 +16,16 @@ import {
   CheckCircle2,
   XCircle,
   Users,
-  Sparkles,
   DollarSign,
   Ban,
   Beer,
   Heart as HeartIcon,
-  ChevronDown,
   MapPin,
   Pill,
-  Activity,
   ArrowRight,
 } from "lucide-react";
-import FAQWithSchema from "../../components/FAQWithSchema";
-import SectionBeforeAfter from "../../components/BeforeAfterCustomize";
+import FAQWithSchema from "@/src/components/FAQWithSchema";
+import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
@@ -286,6 +283,19 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
               Dose is never chosen as a blanket recommendation. It depends on BMI,
               cardiovascular health, stimulant tolerance, and previous phentermine use.
             </p>
+
+            <p className="text-sm text-taupe italic">
+              Hendricks EJ, Greenway FL, Westman EC, Gupta AK. Blood pressure and heart rate effects, weight loss and maintenance during long-term phentermine pharmacotherapy for obesity. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/21523428/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Obesity
+              </a>. 
+              2011;19(12):2351-2360. Demonstrates clinically meaningful weight reduction with phentermine across extended follow-up under medical supervision, supporting its use in structured programmes.
+            </p>
           </motion.div>
         </div>
       </motion.section>
@@ -441,9 +451,15 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
           </div>
 
           <p className="text-taupe bg-rose/5 p-6 rounded-xl">
-            At Nexus Clinic KL, medication choice is positioned as a doctor decision,
-            not a marketing decision. The right option depends on your BMI, risk profile,
-            health conditions, side-effect tolerance and long-term plan.
+            Patients interested in comparing Duromine with injectable GLP-1 options can review the{' '}
+            <Link href="/weight-loss/ozempic-malaysia/" className="text-wine font-bold italic">
+              full Ozempic weight loss programme in Malaysia
+            </Link>{' '}
+            and{' '}
+            <Link href="/weight-loss/mounjaro-malaysia/" className="text-wine font-bold italic">
+              Mounjaro weight loss Malaysia pages
+            </Link>{' '}
+            for a detailed breakdown of each protocol.
           </p>
         </div>
       </motion.section>
@@ -760,22 +776,23 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
           <div className="max-w-4xl mx-auto space-y-6">
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-2xl">
               <p className="text-brown">
-                The most neglected part of phentermine programmes is the exit. At Nexus Clinic KL,
-                the end of the 12-week cycle is treated as seriously as the start.
+                  The most underserved part of any Duromine programme is what happens after the 12-week cycle ends. Dependency on the medication is prevented by the fixed cycle structure, but weight regain after stopping is a real risk if no transition plan is in place. At Nexus Clinic KL, the post-Duromine phase is treated as seriously as the active treatment period. Patients do not simply finish their last capsule and leave. A structured transition plan is built into every programme.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-cream p-6 rounded-2xl">
               <p className="text-brown">
-                Patients move into a transition plan focused on appetite management without the capsule,
-                exercise structure, craving triggers, caloric awareness and maintenance support.
+                  The goal during the transition period is to lose weight through lifestyle changes that were initiated during the Duromine cycle and are now sustainable without pharmaceutical appetite suppression. Patients are guided on maintaining caloric awareness, building regular exercise habits around their fitness level and any joint pain limitations, and identifying the craving triggers that made previous weight loss attempts fail. For patients who need continued pharmacological support after the Duromine cycle ends, the doctor will assess whether a GLP-1 programme or a further monitored rest period followed by another Duromine cycle is the most appropriate path. The aim in every case is sustained weight loss and long-term success beyond the initial programme.
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-rose/5 p-6 rounded-2xl border border-rose/20">
               <p className="text-brown">
-                Where needed, the doctor may discuss a GLP-1 pathway, a monitored rest period,
-                or a later reassessed second Duromine cycle after at least four weeks.
+                  Patients who want broader, ongoing medical weight management support after their Duromine cycle can explore the{' '}
+                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                    full doctor monitored weight loss programme at Nexus Clinic KL
+                  </Link>
+                  , which integrates multiple treatment modalities into a personalised long-term plan.
               </p>
             </motion.div>
           </div>

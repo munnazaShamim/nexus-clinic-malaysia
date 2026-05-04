@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -16,18 +15,8 @@ import {
   AlertCircle,
   Activity,
   Zap,
-  Eye,
   AlertTriangle,
-  Droplet,
-  Scissors,
-  TrendingUp,
   Sun,
-  Map,
-  Layers,
-  Target,
-  Info,
-  ChevronRight,
-  Star,
 } from "lucide-react";
 
 import {

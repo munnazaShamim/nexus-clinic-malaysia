@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Activity,
@@ -7,14 +7,8 @@ import {
   MapPin,
   ChevronRight,
   CheckCircle2,
-  XCircle,
-  FileText,
   ArrowRight,
-  Heart,
-  Scale,
-  AlertCircle,
   Clock,
-  Users,
   Syringe,
 } from "lucide-react";
 import {
@@ -211,7 +205,13 @@ export default function DoctorMonitoredLanding({
                 increase hunger and encourage rebound weight gain. Doctor-led
                 weight loss works by treating the physiology behind the pattern.
               </p>
-
+              <p className="font-inter text-brown/80">
+                Supervision by an experienced healthcare professional is not optional when these risk factors are present. It is essential. Self-managed weight loss in patients with hypertension, fatty liver, or metabolic syndrome carries real clinical risk if medications are adjusted or caloric restriction is too severe without monitoring. The structured blood tests, vital sign checks, and ongoing doctor oversight built into every programme at Nexus Clinic KL ensure safety at every stage. Patients who are interested in body contouring as an adjunct to weight reduction may also benefit from{' '}
+                <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+                  CoolSculpting in Malaysia
+                </Link>{' '}
+                to address localised fat deposits that do not respond to weight loss alone.
+              </p>
               <div className="bg-light rounded-2xl p-6">
                 <p className="font-inter text-brown">
                   At Nexus Clinic KL, the programme is matched to the causes
@@ -360,7 +360,37 @@ export default function DoctorMonitoredLanding({
                     </li>
                   ))}
                 </ul>
+
+
+                <p className="text-brown text-sm mt-8 ">
+                  Patients interested in specific GLP-1 programmes can learn more about{' '}
+                  <Link href="/weight-loss/ozempic-malaysia/" className="text-wine font-bold italic">
+                    Ozempic weight loss in Malaysia
+                  </Link>
+                  ,{' '}
+                  <Link href="/weight-loss/mounjaro-malaysia/" className="text-wine font-bold italic">
+                    Mounjaro weight loss in Malaysia
+                  </Link>
+                  , and the{' '}
+                  <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                    full GLP-1 programme at Nexus Clinic
+                  </Link>{' '}
+                  on the dedicated programme pages.
+                </p>
               </div>
+
+              <p className="text-sm text-taupe p-4 border-l-4 border-wine rounded-lg">
+                Wilding JPH et al. Once-Weekly Semaglutide in Adults with Overweight or Obesity. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/33567185/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  The New England Journal of Medicine
+                </a>. 
+                2021;384:989-1002. The STEP 1 trial demonstrated 14.9% mean body weight loss with semaglutide versus 2.4% with placebo, confirming the significant impact of GLP-1 receptor agonism on medically supervised weight reduction.
+              </p>
             </motion.div>
 
             <motion.div variants={fadeInRight} className="space-y-6">
@@ -504,9 +534,11 @@ export default function DoctorMonitoredLanding({
           </h2>
 
           <p className="font-inter text-brown/80 mb-10 max-w-4xl">
-            Pricing depends on the protocol chosen, the medications prescribed
-            and the duration of your programme. The complimentary first
-            consultation helps confirm the right path before commitment.
+              The cost of a medically supervised weight loss programme at Nexus Clinic KL depends on the protocol chosen, the medications prescribed, and the duration of your programme. All first consultations are complimentary. Blood tests and medications are priced transparently and itemised on your treatment plan before you commit. There are no hidden package fees. The table below reflects current 2026 pricing as a reference. Patients combining weight loss programmes with{' '}
+              <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                fat freezing in Malaysia
+              </Link>{' '}
+              for body contouring may qualify for combined programme pricing. Your doctor will discuss all options at consultation.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -577,9 +609,11 @@ export default function DoctorMonitoredLanding({
               </div>
 
               <p className="font-inter text-brown/80">
-                The goal is not just to prescribe treatment, but to build
-                sustainable habits that continue to protect your results after
-                the active medication phase.
+                  The support you receive at Nexus Clinic KL extends beyond prescriptions. Your doctor provides guidance on building healthy habits that outlast the medication phase. The aim is always to help you maintain your results and avoid the cycle of weight loss followed by rapid regain that plagues unmonitored approaches. Patients who want to explore complementary hormonal support as part of their weight management journey may also benefit from{' '}
+                  <Link href="/regenerative/hormone-test-malaysia/" className="text-wine font-bold italic">
+                    hormone test and evaluation in Malaysia
+                  </Link>{' '}
+                  to rule out underlying hormonal contributors to weight difficulty.
               </p>
             </div>
           </div>

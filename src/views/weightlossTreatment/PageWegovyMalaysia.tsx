@@ -2,15 +2,11 @@
 
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Shield,
   Clock,
   AlertCircle,
   CheckCircle2,
-  XCircle,
   Heart,
-  Zap,
-  Scale,
   MapPin,
   ChevronRight,
   Activity,
@@ -28,6 +24,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Link from "next/link";
 export default function PageWegovyMalaysia({
   locale = fallbackLng,
 }: {
@@ -246,7 +243,11 @@ export default function PageWegovyMalaysia({
 
                 <p className="text-brown font-inter text-lg">
                   Wegovy contains the same molecule as Ozempic, semaglutide, but
-                  at more than double the maximum dose. Ozempic is primarily a
+                  at more than double the maximum dose. 
+                   <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                    full Ozempic weight loss programme page
+                  </Link>{' '}
+                  is primarily a
                   diabetes medication. Wegovy is specifically designed and
                   approved for chronic weight management.
                 </p>
@@ -454,7 +455,7 @@ export default function PageWegovyMalaysia({
                 className="bg-cream p-8 rounded-3xl shadow-lg"
               >
                 <h3 className="font-georgia text-2xl text-brown mb-4">
-                  Choose Mounjaro more often when:
+                  Choose   <Link href="/weight-loss/mounjaro-malaysia/" className="text-wine font-bold italic">Mounjaro </Link> more often when:
                 </h3>
                 <ul className="space-y-3">
                   {[
@@ -700,6 +701,19 @@ export default function PageWegovyMalaysia({
                     Proper titration and monitoring reduce dropout risk, improve
                     tolerability, and help patients build a plan that is more
                     sustainable after the active treatment phase.
+                  </p>
+
+                  <p className="text-sm text-taupe mt-8 border-l-4 rounded-lg border-wine p-4">
+                    Lincoff AM et al. Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes. 
+                    <a 
+                      href="https://pubmed.ncbi.nlm.nih.gov/37952131/" 
+                      target="_blank" 
+                      rel="nofollow" 
+                      className="text-wine font-bold italic"
+                    >
+                      The New England Journal of Medicine
+                    </a>. 
+                    2023;389(24):2221-2232. This landmark SELECT trial demonstrated that semaglutide 2.4 mg achieves a 20% relative risk reduction in major adverse cardiovascular events (MACE) in adults with overweight or obesity and established cardiovascular disease, independent of diabetes status.
                   </p>
                 </div>
               </motion.div>
@@ -975,8 +989,15 @@ export default function PageWegovyMalaysia({
                 arms, back fat and facial changes as weight comes down.
               </p>
               <p className="text-brown font-inter">
-                Where fat reduces first is individual. The right plan focuses on
-                overall metabolic improvement first, then refinement if needed.
+                  Patients who have completed significant weight loss with Wegovy and want to address residual localised fat deposits can explore our{' '}
+                  <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+                    CoolSculpting Malaysia programme
+                  </Link>{' '}
+                  or our{' '}
+                  <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                    fat freezing treatment in KL
+                  </Link>{' '}
+                  as a body contouring step following medical weight loss.
               </p>
             </motion.div>
           </div>

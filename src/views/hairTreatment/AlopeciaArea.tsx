@@ -83,8 +83,8 @@ export default function AlopeciaArea  ({ locale} : AlopeciaAreaProps) {
       {/* Hero Section */}
       <AllPagesHero
         badge="Nexus Clinic Kuala Lumpur"
-        title="Alopecia Areata Treatment in Malaysia | Patchy Hair Loss &"
-        highlight="Scalp Inflammation Solutions"
+        title="Treat Alopecia Areata in Malaysia"
+        highlight="Restore Hair & Confidence"
         description="Sudden bald patches are not normal hair loss. You may wake up one day and notice a round patch on your scalp. No warning. No slow thinning. Just missing hair."
         details="Alopecia areata is not ordinary hair thinning. It is a condition where the immune system attacks the hair follicles. The hair falls out in patches, but the follicle may still be alive. That means regrowth may still be possible with the right treatment. At Nexus Clinic Kuala Lumpur, treatment starts with diagnosis first. We check whether your hair loss is really alopecia areata, scalp inflammation, fungal infection, stress-related shedding, male or female pattern hair loss, or another condition. The goal is simple. Find the cause. Calm the scalp. Support regrowth. Avoid guessing with the wrong creams."
         note="Not all hair loss is alopecia areata. Hydrocortisone cream and other steroid-based treatments may help in selected inflammatory scalp conditions, but they are not general hair growth products. Always confirm the diagnosis before starting treatment."
@@ -707,7 +707,7 @@ export default function AlopeciaArea  ({ locale} : AlopeciaAreaProps) {
               <Calendar className="w-4 h-4" />
               Book Your Hair Loss Consultation Today
             </motion.a>
-            <Whatsapp message="Hi, I want to know more about your alopecia areata treatment services" />
+            <Whatsapp message="Hi, I want to know more about your alopecia areata treatment services" variant="light"/>
           </motion.div>
           <motion.p variants={fadeInUp} className="text-white/70 text-sm mt-6">
             Located at Wisma UOA II, Jalan Pinang, KLCC • Serving patients across Kuala Lumpur and Malaysia

@@ -1,25 +1,14 @@
 "use client";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Shield,
   MapPin,
   CheckCircle2,
-  HelpCircle,
   Award,
   ChevronRight,
-  Flame,
-  Droplets,
-  Pill,
-  Ban,
-  Apple,
-  Bone,
   ShieldAlert,
-  Clock,
-  Syringe,
-  Activity,
   ArrowRight,
-  AlertCircle,
 } from "lucide-react";
 
 import {
@@ -240,7 +229,9 @@ const HCGWeightLossLanding = ({
             </motion.h2>
 
             <motion.p variants={fadeInUp} className="text-brown/80 mb-8">
-              The HCG programme and GLP-1 programmes like Ozempic or Mounjaro
+              The HCG programme and
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic"> GLP-1 programmes   </Link>{' '}
+                like Ozempic or Mounjaro
               are both doctor-led weight-loss pathways, but they differ in
               speed, structure, calorie demands and long-term use.
             </motion.p>
@@ -396,6 +387,19 @@ const HCGWeightLossLanding = ({
                 </motion.div>
               ))}
             </div>
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+              Simeons ATW. The Action of Chorionic Gonadotrophin in the Obese. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/13213083/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                The Lancet
+              </a>. 
+              1954;2(6845):946-947. Original clinical description of HCG combined with a 500-calorie diet for obesity treatment, establishing the foundation of the HCG protocol used in medical weight management to this day.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -457,9 +461,11 @@ const HCGWeightLossLanding = ({
             </motion.h2>
 
             <motion.p variants={fadeInUp} className="text-brown/80 mb-8">
-              The HCG programme is priced as a fixed cycle rather than an
-              open-ended monthly medication plan. Initial consultation is
-              complimentary and pricing is transparent by cycle length.
+                The HCG weight loss programme is one of the most cost-effective medically supervised weight loss treatment options in Malaysia. Pricing is straightforward: a fixed cost per cycle rather than open-ended monthly fees. The table below reflects current 2026 pricing at Nexus Clinic KL in Kuala Lumpur. All initial consultations are complimentary. Medications and injections are included in cycle pricing. Patients who want to combine the HCG program with body contouring may also be interested in{' '}
+                <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                  fat freezing treatment in Malaysia
+                </Link>{' '}
+                as a non-invasive complement for stubborn localised fat that remains after the programme.
             </motion.p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -534,6 +540,13 @@ const HCGWeightLossLanding = ({
                   profile, Nexus Clinic KL positions GLP-1 or other doctor-led
                   pathways as the alternative rather than pushing the wrong
                   programme.
+                </p>
+                <p className="text-brown font-medium mt-4">
+                  Patients who complete the HCG programme and want to continue their weight loss journey with a longer-term approach may transition to the{' '}
+                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                    doctor monitored weight loss programme at Nexus Clinic KL
+                  </Link>
+                  , which includes GLP-1 options and ongoing hormonal support for sustained results.
                 </p>
               </div>
             </motion.div>

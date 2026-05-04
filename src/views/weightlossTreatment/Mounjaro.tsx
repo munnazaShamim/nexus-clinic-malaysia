@@ -4,19 +4,14 @@ import { motion } from "framer-motion";
 import {
   Shield,
   Clock,
-  Target,
   Heart,
-  Activity,
   TrendingDown,
-  ChevronRight,
   Sparkles,
   AlertCircle,
   CheckCircle2,
   ArrowRight,
   Users,
   ShieldCheck,
-  Scale,
-  Brain,
   Syringe,
 } from "lucide-react";
 import {
@@ -32,6 +27,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
+import Link from "next/link";
 const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/mounjaro");
 
@@ -100,8 +96,8 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
     <div className="min-h-screen overflow-hidden">
       <AllPagesHero
         badge="Doctor-Supervised Tirzepatide Programme in Kuala Lumpur"
-        title="Mounjaro Malaysia Programme"
-        highlight="Tirzepatide Injections for Maximum Weight Loss"
+        title="Mounjaro Malaysia |"
+        highlight="Weight Loss Injections"
         description="Powerful dual-agonist support for medically supervised weight reduction."
         details="Mounjaro is the strongest injectable weight loss option available in Malaysia in 2026, with average weight reductions of 15 to 22.5% in clinical programmes when used appropriately. At Nexus Clinic KL, every tirzepatide programme is prescribed and monitored by licensed doctors with bloodwork, dose titration, protein-first guidance and exit planning built in."
         note="15 to 22.5% average weight loss in trials • Once-weekly subcutaneous self-injection • Prescription-only with blood panel and screening • Structured titration from 2.5 mg to 15 mg"
@@ -424,11 +420,23 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="bg-rose/10 p-6 rounded-xl">
-            <p className="text-brown">
-              Patients who follow a protein-first structure consistently tend to
-              achieve a better proportion of fat-only loss compared with those
-              who simply reduce calories without a targeted lean-mass strategy.
-            </p>
+          <p className="text-brown">
+            Clinical studies on tirzepatide indicate that between 20 and 40% of weight lost during a Mounjaro programme can come from lean muscle mass if the treatment is not accompanied by adequate protein intake and resistance activity. This matters for several reasons. Muscle drives resting metabolic rate, meaning patients who lose significant lean mass during treatment have a slower metabolism at their new lower weight, making weight maintenance harder after discontinuation. Muscle also provides joint support, and reducing it alongside fat can create functional problems despite the apparent health improvement from weight loss.
+            <br />
+            <br />
+            At Nexus Clinic Kuala Lumpur, every Mounjaro patient receives specific dietary guidance centred on protein-first eating from the start of treatment to support their weight management. The target is a minimum of 1.2 to 1.6 grams of protein per kilogram of target body weight per day throughout the programme. This is not generic dietary advice. It is a clinical protocol based on body composition evidence that directly protects lean mass during rapid weight reduction. Patients who follow the protein-first protocol consistently demonstrate a significantly higher proportion of fat-only mass loss compared to those who reduce calories without specific protein targeting.
+            <br />
+            <br />
+            Patients who have achieved significant weight loss and want to address residual stubborn localised fat deposits after completing their Mounjaro programme can explore{' '}
+            <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+              fat freezing treatment in KL
+            </Link>{' '}
+            or our{' '}
+            <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+              CoolSculpting in Malaysia
+            </Link>{' '}
+            as a body contouring follow-up step.
+          </p>
           </motion.div>
         </div>
       </motion.section>
@@ -576,6 +584,18 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                     Temporary GI upset during titration
                   </li>
                 </ul>
+                <p className="text-sm text-taupe max-w-2xl  border-l-4 border-wine p-4 rounded-lg mt-8">
+                  Lin F, et al. Weight Loss Efficiency and Safety of Tirzepatide: A Systematic Review. 
+                  <a 
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10153303/" 
+                    target="_blank" 
+                    rel="nofollow" 
+                    className="text-wine font-bold italic"
+                  >
+                    PMC (PubMed Central)
+                  </a>. 
+                  2023;10:1091056. This meta-analysis of 10 randomized controlled trials involving 9,873 patients confirms tirzepatide's superior weight reduction versus placebo and standalone GLP-1 agonists, establishing its role as a highly effective dual GIP/GLP-1 receptor agonist.
+                </p>
               </div>
             </motion.div>
 
@@ -674,9 +694,16 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               Total programme cost can also include consultation, bloodwork,
               doctor reviews and monitoring.
             </p>
-            <p className="text-wine font-semibold text-lg">
-              At Nexus Clinic KL, pricing is structured around medical oversight
-              and treatment quality, not just pen cost alone.
+            <p className="text-brown font-semibold">
+                Patients seeking a more cost-accessible entry to GLP-1 therapy before committing to Mounjaro can explore our{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  Ozempic weight loss programme
+                </Link>{' '}
+                as a starting point, with the option to step up to tirzepatide in Malaysia if results plateau. Our{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  GLP-1 programme overview
+                </Link>{' '}
+                covers all available options at Nexus Clinic KL in one place.
             </p>
           </motion.div>
         </div>

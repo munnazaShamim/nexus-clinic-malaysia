@@ -33,6 +33,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Link from "next/link";
 const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/ivDrip");
 
@@ -351,9 +352,12 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={fadeInUp}
             className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-2xl"
           >
-            <p className="text-rose font-semibold text-xl">
-              The main advantage of IV therapy is not trend value. It is
-              bioavailability.
+            <p className="text-rose">
+                Patients combining IV drip therapies with a structured weight management programme can explore the broader{' '}
+                <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                  doctor monitored weight loss programme
+                </Link>{' '}
+                for a comprehensive approach that addresses both internal nutritional support and pharmaceutical weight management tools.
             </p>
           </motion.div>
         </div>
@@ -407,9 +411,11 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               </ul>
 
               <p className="text-taupe">
-                The best results come when the formulation is selected according
-                to the actual treatment goal rather than using the same drip for
-                everyone.
+                Patients interested in combining IV drip therapies with anti-aging regenerative treatments can explore the{' '}
+                <Link href="/regenerative/anti-aging-therapy-malaysia/" className="text-wine font-bold italic">
+                  anti-aging therapy programme
+                </Link>{' '}
+                for a comprehensive cellular health approach.
               </p>
             </motion.div>
 
@@ -795,9 +801,9 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <motion.div
             variants={fadeInUp}
-            className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-2xl"
+            className="max-w-3xl mx-auto bg-wine/5 p-8 rounded-2xl"
           >
-            <p className="text-brown text-lg font-medium mb-2">
+            <p className="text-brown font-medium mb-2">
               Indicative pricing from the source content:
             </p>
             <p className="text-taupe">
@@ -805,6 +811,18 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               immunity booster RM 300 to RM 500, liver detox RM 400 to RM 700,
               skin glow / glutathione drip RM 350 to RM 600, and NAD+ advanced
               therapy RM 800 to RM 1,500.
+            </p>
+
+            <p className="text-taupe">
+              IV drip pricing in Malaysia varies based on the formulation, ingredient complexity, and session duration. Nexus Clinic KL provides transparent, itemised pricing after the initial consultation. All first consultations are complimentary. The table below reflects current 2026 indicative pricing across the full range of formulations. Patients in Selangor, including those from Subang Jaya, Petaling Jaya, and surrounding areas, are welcome at the Wisma UOA II clinic in Kuala Lumpur. Mobile IV availability is offered for selected patients. Please enquire during your consultation. Patients combining IV drip therapies with other weight loss treatments may also be interested in the{' '}
+              <Link href="/weight-loss/hcg-programme-malaysia/" className="text-wine font-bold italic">
+                HCG weight loss programme
+              </Link>{' '}
+              or the{' '}
+              <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                full range of GLP-1 weight loss injections
+              </Link>{' '}
+              available at the clinic.
             </p>
           </motion.div>
         </div>
@@ -1078,16 +1096,26 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             most suitable clinical pathway for your goals.
           </motion.p>
 
-          <motion.a
-            variants={scaleIn}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <Link
             href="/contact-us/"
             className="bg-light text-wine px-12 py-4 rounded-full font-semibold text-lg hover:bg-cream transition-colors shadow-xl"
           >
             Book Free Consultation
-          </motion.a>
+          </Link>
+
         </div>
+          <p className="text-sm text-light text-center max-w-2xl mx-auto mt-8">
+              Padayatty SJ et al. Vitamin C Pharmacokinetics: Implications for Oral and Intravenous Use. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/15068981/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Annals of Internal Medicine
+              </a>. 
+              2004;140(7):533-537. This landmark study demonstrated that intravenous vitamin C achieves plasma concentrations 30 to 70 times higher than the maximum achievable with oral administration, establishing the pharmacokinetic basis for IV-based nutrient therapy.
+          </p>
       </motion.section>
     </div>
   );

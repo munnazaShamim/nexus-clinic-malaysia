@@ -8,7 +8,6 @@ import {
   Target,
   Sparkles,
   ChevronRight,
-  Award,
   Users,
   Scissors,
   Heart,
@@ -34,6 +33,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Link from "next/link";
 const CoolSculptingLanding = ({
   locale = fallbackLng,
 }: {
@@ -270,11 +270,18 @@ const CoolSculptingLanding = ({
                   Treatment Overview
                 </span>
               </h2>
-              <p className="text-lg" style={{ color: "var(--color-taupe)" }}>
+              <p className="text-lg text-taupe">
                 A clinically proven non-surgical fat reduction treatment for
                 adults at or near target weight who want to reduce stubborn
                 localised fat without downtime.
               </p>
+                <p className="text-lg text-taupe">
+                  At Nexus Clinic KL, our doctors use FDA-cleared CoolSculpting technology to deliver precise, controlled cooling to targeted fat pockets, triggering a process called cryolipolysis that permanently destroys fat cells without any incision, needle or downtime. The same clinic that has performed over 5,000 aesthetic procedures brings the same precision to{' '}
+                  <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+                    body contouring in KL
+                  </Link>
+                  . Results develop gradually over 8 to 12 weeks, looking entirely natural.
+                </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -307,6 +314,19 @@ const CoolSculptingLanding = ({
               contour changes developing at 2 to 3 months. Fat cells removed
               are gone permanently, provided weight is maintained.
             </p>
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Walia A, et al. Cryolipolysis: A Promising Nonsurgical Technique for Localized Fat Reduction. 
+              <a 
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11980024/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                PMC (PubMed Central)
+              </a>. 
+              2023;11980024. This 2023 review documents significant objective fat layer reduction across multiple body sites, confirming cryolipolysis as a safe and effective non-invasive alternative to traditional liposuction for localized adiposity.
+            </p>
           </div>
         </motion.section>
 
@@ -330,7 +350,7 @@ const CoolSculptingLanding = ({
               >
                 Why Stubborn Fat
                 <br />
-                <span style={{ color: "var(--color-wine)" }}>
+                <span className="text-wine font-bold italic">
                   Behaves Differently
                 </span>
               </h2>
@@ -345,6 +365,17 @@ const CoolSculptingLanding = ({
                 controlled cooling to targeted fat pockets, triggering
                 cryolipolysis so the body can gradually clear destroyed fat
                 cells while leaving surrounding tissue unharmed.
+              </p>
+              <p className="text-center">
+                Patients who require more significant overall weight reduction before targeting stubborn areas may want to explore our{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  GLP-1 programme in Malaysia
+                </Link>{' '}
+                which complements the benefits of CoolSculpting for weight management, or our{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  Mounjaro weight loss programme
+                </Link>{' '}
+                as a first phase before proceeding to CoolSculpting for contouring.
               </p>
             </motion.div>
           </div>
@@ -991,7 +1022,7 @@ const CoolSculptingLanding = ({
               >
                 CoolSculpting Versus
                 <br />
-                <span style={{ color: "var(--color-wine)" }}>
+                <span className="text-wine font-bold italic">
                   Other Fat Reduction Options
                 </span>
               </h2>
@@ -1075,6 +1106,14 @@ const CoolSculptingLanding = ({
                 </div>
               </motion.div>
             </div>
+
+            <p className="text-center mt-12" style={{ color: "var(--color-taupe)" }}>
+              Patients interested in skin tightening alongside fat reduction may benefit from combining CoolSculpting with our{' '}
+              <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                fat freezing programme in KL
+              </Link>{' '}
+              or asking about adjunctive skin tightening treatments at consultation.
+            </p>
           </div>
         </motion.section>
 

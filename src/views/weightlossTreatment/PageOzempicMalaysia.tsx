@@ -28,6 +28,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
+import Link from "next/link";
 const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/ozempic");
 
@@ -341,6 +342,18 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                 </p>
               </motion.div>
             </div>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+                Marso SP et al. Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/27633186/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  The New England Journal of Medicine
+                </a>. 
+                2016;375(19):1834-1844. This landmark SUSTAIN-6 trial established the clinical profile of semaglutide, demonstrating its significant weight reduction effects and confirming its cardiovascular safety by reducing the risk of major adverse cardiovascular events.
+              </p>
           </motion.div>
         </section>
 
@@ -406,12 +419,20 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
               <h3 className="font-georgia text-2xl text-wine mb-4">
                 Choosing the right GLP-1 pathway
               </h3>
-              <p className="font-inter text-brown">
-                Ozempic is often the most accessible and cost-effective entry
-                point in Malaysia. Wegovy is more weight-focused, Mounjaro has
-                the strongest average weight-loss performance, and Saxenda is a
-                daily-injection option for selected patients.
-              </p>
+                <p className="text-brown">
+                  Ozempic is the most accessible and cost-effective entry point for GLP-1 therapy in Malaysia with the strongest NPRA registration history. Wegovy uses the same active ingredient as Ozempic (semaglutide) but at a higher maximum dose of 2.4 mg weekly, which was specifically approved for weight management rather than diabetes. Mounjaro (tirzepatide) adds a second receptor pathway (GIP) to GLP-1 activation, producing the highest average weight loss currently available in any injectable medication. Saxenda requires daily injection, which reduces convenience compared to the weekly options.
+                  <br />
+                  <br />
+                  Patients who want to compare Mounjaro as an alternative should also review our{' '}
+                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                    Mounjaro weight loss programme in Malaysia
+                  </Link>{' '}
+                  and our{' '}
+                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                    Wegovy weight loss programme
+                  </Link>{' '}
+                  for a full picture of what is available at Nexus Clinic KL.
+                </p>
             </motion.div>
           </motion.div>
         </section>
@@ -486,6 +507,21 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                 </ul>
               </motion.div>
             </div>
+
+            <p className="text-center text-brown mt-8">
+                The six-phase structure means patients do not exit the programme cold. The taper is gradual, monitored and supported. Where further body contouring is appropriate after significant weight loss, our doctors can also advise on combination approaches with non-invasive options to improve insulin sensitivity.
+                <br />
+                <br />
+                Patients who reach their target weight and want to address residual stubborn fat deposits can explore our{' '}
+                <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                  fat freezing treatment in Malaysia
+                </Link>{' '}
+                as a refinement step after medical weight loss, or our{' '}
+                <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+                  CoolSculpting programme in KL
+                </Link>{' '}
+                which complements your weight loss journey.
+              </p>
           </motion.div>
         </section>
 
@@ -814,10 +850,11 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
               variants={fadeInUp}
               className="text-taupe font-inter text-lg mb-12 max-w-2xl mx-auto"
             >
-              If you are considering Ozempic weight loss treatment in Malaysia,
-              start with a proper medical discussion. Nexus Clinic KL focuses on
-              safe prescribing, transparent programme structure and realistic
-              long-term planning.
+                Patients considering other medical weight loss options alongside or instead of Ozempic can also review our{' '}
+                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                  GLP-1 programme overview
+                </Link>{' '}
+                for a full breakdown of semaglutide and tirzepatide options at Nexus Clinic KL. Please consult your healthcare provider.
             </motion.p>
 
             <motion.a

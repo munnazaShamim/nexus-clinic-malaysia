@@ -3,21 +3,15 @@
 import { motion } from "framer-motion";
 import {
   Clock,
-  Award,
-  Users,
   CheckCircle2,
   XCircle,
-  ThermometerSnowflake,
-  Shield,
   AlertCircle,
   Scale,
   Activity,
   Droplets,
   Heart,
   Smartphone,
-  Target,
   Zap,
-  Feather,
   Sparkles,
 } from "lucide-react";
 import {
@@ -25,7 +19,6 @@ import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
@@ -164,7 +157,13 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               Fat Freezing Treatment{" "}
               <span className="text-wine">at a Glance</span>
             </motion.h2>
-
+              <p className="text-center my-6 text-brown/80">
+                At Nexus Clinic KL, our licensed aesthetic doctors use clinically proven cryolipolysis technology to permanently destroy subcutaneous fat cells in targeted zones, without surgery, without needles and without any downtime. The same medical team behind over 5,000 aesthetic procedures now brings that precision to{' '}
+                <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
+                  body contouring and fat reduction in KL
+                </Link>
+                . Results emerge gradually over eight to twelve weeks, looking completely natural.
+              </p>
             <motion.div
               variants={fadeInUp}
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -354,6 +353,20 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               selection, precise applicator choice, and doctor-led treatment
               planning.
             </motion.p>
+
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-12">
+                Harvard Health Publishing. The Skinny on Freezing Fat. 
+                <a 
+                  href="https://www.health.harvard.edu/blog/the-skinny-on-freezing-fat-2020031219158" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Harvard Medical School
+                </a>. 
+                2020. This report details the biological mechanism of cryolipolysis, explaining how targeted cooling exploits the vulnerability of fat cells while clarifying the role of alpha-receptor biology in age-related resistance to traditional subcutaneous fat loss.
+              </p>
           </motion.div>
         </div>
       </section>
@@ -440,6 +453,21 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 </div>
               </div>
             </motion.div>
+
+            <p className="text-center text-brown/80 mt-8">
+              If your answers fall largely in the 'Likely Suitable' column, fat freezing is likely a strong match for your goals. If several factors fall in the 'Consider Alternatives' column, other approaches such as a supervised weight loss programme, GLP-1 medication, or a different body contouring modality may serve you better. Our doctors will always be transparent about this at consultation.
+              <br />
+              <br />
+              Patients who need more significant overall weight reduction before addressing specific fat zones may benefit from our{' '}
+              <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                doctor-monitored weight loss programme
+              </Link>{' '}
+              as a first phase. Alternatively, our{' '}
+              <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                Wegovy weight loss programme in Malaysia
+              </Link>{' '}
+              and GLP-1 options provide medically supervised appetite and weight management before body contouring for a comprehensive reduction without surgery or downtime.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -824,7 +852,15 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               </ul>
             </motion.div>
           </motion.div>
+          <p className="text-center text-brown/80 mt-8">
+            Patients seeking additional skin tightening alongside fat reduction may want to discuss combination approaches at consultation for optimal results. Patients managing weight holistically should also explore our{' '}
+            <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+              HCG weight loss programme in Malaysia
+            </Link>{' '}
+            and our range of medically supervised options.
+          </p>
         </div>
+
       </section>
 
       {/* Pricing */}
@@ -888,6 +924,18 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 personalised quote is provided after consultation.
               </p>
             </motion.div>
+
+            <p className="text-center text-brown/80 mt-8">
+              Patients interested in combining fat freezing with overall weight management can also explore our{' '}
+              <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">
+                CoolSculpting programme in Malaysia
+              </Link>{' '}
+              or discuss whether combining fat freezing with our{' '}
+              <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                Ozempic weight loss programme in Malaysia
+              </Link>{' '}
+              for a two-phase approach makes sense for their goals.
+            </p>
           </motion.div>
         </div>
       </section>
