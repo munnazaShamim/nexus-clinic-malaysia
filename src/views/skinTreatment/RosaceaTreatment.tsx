@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,17 +9,9 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
   Sun,
   Target,
-  Pill,
-  Stethoscope,
-  Ban,
   TrendingUp,
 } from "lucide-react";
 import {
@@ -28,12 +19,10 @@ import {
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -117,7 +106,7 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
     <div className="w-full bg-light overflow-hidden">
           <AllPagesHero
             badge="Phenotype-Directed Diagnosis • Doctor-Only"
-            title="Accurate Rosacea Treatment in Kuala Lumpur for"
+            title="Rosacea Treatment for"
             highlight="Calmer, Less Reactive Facial Skin"
             description="Rosacea is a chronic skin condition that causes facial redness, broken capillaries, flushing and acne-like breakouts. Most patients with rosacea in KL receive a wrong diagnosis before they receive a correct one."
             details="At Nexus Clinic KL, we manage rosacea using a phenotype-directed diagnostic approach specifically adapted for Asian skin. Rosacea treatment is built around your specific subtype, not a generic protocol, because different rosacea subtypes respond to fundamentally different treatments."
@@ -300,7 +289,6 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
         </motion.div>
       </section>
 
-      {/* Types of Rosacea Table */}
       <section className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
@@ -331,14 +319,22 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
             className="py-12 px-4"
           />  
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              A critical point: Topical metronidazole, azelaic acid and ivermectin have negligible effect on permanently dilated background blood vessels of ETR. Patients applying topical metronidazole for months without improvement in persistent redness likely have ETR where topicals are not appropriate primary treatment.
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Volk K, Ulfers A, Yi RC, Feldman S, Taylor SL. Treatment management for rosacea: current pharmacological and non-pharmacological options. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/40836652/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Expert Review of Clinical Pharmacology
+              </a>. 
+              2025;18(8):589-605. This review summarizes current phenotype-directed therapeutic strategies, categorizing interventions into topical agents (metronidazole, ivermectin), oral medications (doxycycline), and physical modalities (pulse dye lasers, surgical resurfacing) to optimize individualized patient outcomes.
             </p>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Diagnosis in Malaysian Skin Table */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -364,7 +360,11 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
               fadeInUp={fadeInUp}
               className="py-12 px-4"
             />
-        </motion.div>
+
+            <p className="text-center text-brown mt-4">
+              Rosacea management at Nexus Clinic KL focuses on reducing inflammation, strengthening the skin barrier, and minimizing triggers such as UV exposure and heat. For patients looking to restore skin hydration and resilience alongside rosacea care, our <Link href="https://www.nexus-clinic.com/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster Malaysia</Link> explores injectable treatments that improve skin quality and barrier function. Additionally, those experiencing post-inflammatory redness or irregular pigmentation following rosacea flares may benefit from the targeted approaches outlined on our <Link href="https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia</Link>, which addresses uneven skin tone and discoloration in sensitive skin types.
+            </p>
+                    </motion.div>
       </section>
 
       {/* Skincare Framework Table */}
@@ -436,6 +436,9 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
             fadeInUp={fadeInUp}
             className="py-12 px-4"
           />
+          <p className="text-center text-brown/80 text-sm mt-4">
+            Common rosacea triggers in Malaysia include prolonged sun exposure, spicy foods, hot beverages, alcohol, stress, and extreme temperature changes between outdoor heat and indoor air conditioning. For patients managing facial redness alongside concerns such as <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment in Malaysia</Link>, distinguishing rosacea from acne is essential for appropriate care. Those with persistent facial flushing may also explore <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> for associated textural or vascular concerns. Additionally, understanding broader <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment in Malaysia</Link> helps patients address post-inflammatory marks that can accompany rosacea flare-ups.
+          </p>
         </motion.div>
       </section>
 

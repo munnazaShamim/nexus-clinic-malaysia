@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,29 +9,19 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
   Eye,
-  AlertTriangle,
-  Droplet,
-  Sun,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Stethoscope,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -317,7 +306,7 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
-              The stretch test and press test are standard bedside clinical assessments. Patients who have received multiple rounds of Pico Laser for dark circles that are actually structural have wasted investment because laser pigment fragmentation does not address the shadow cast by a hollow tear trough.
+              The stretch test and press test are standard bedside clinical assessments. Patients who have received multiple rounds of Pico Laser for dark circles that are actually structural have wasted investment because laser pigment fragmentation does not address the shadow cast by a hollow <Link href="https://www.nexus-clinic.com/face/tear-trough-filler-malaysia/" className="text-wine font-bold italic"> tear trough</Link>.
             </p>
           </motion.div>
         </motion.div>
@@ -340,8 +329,7 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
           <motion.div variants={fadeInUp} className="bg-light p-6 rounded-xl border-l-4 border-wine">
             <p className="text-brown font-inter mb-3">Allergic rhinitis is one of the most prevalent chronic conditions in Malaysia, yet it is entirely absent from most aesthetic clinic's dark eye circle treatment pages.</p>
             <p className="text-taupe font-inter">The mechanism is specific: when allergic rhinitis causes nasal congestion, venous blood return from the periorbital area is impaired. Blood pools in the small periorbital veins and capillaries beneath the thin under-eye skin, producing the bluish or purplish bilateral dark shadow called allergic shiners.</p>
-          </motion.div>
-          
+          </motion.div>          
           <motion.div variants={fadeInUp} className="mt-6 grid md:grid-cols-2 gap-4">
             <div className="bg-wine/5 p-4 rounded-xl">
               <p className="font-semibold text-brown">Key diagnostic clues:</p>
@@ -362,6 +350,19 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
               </ul>
             </div>
           </motion.div>
+
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+              <a 
+                href="https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2023-full-report-and-press-releases/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                ISAPS Global Statistics Report 2023
+              </a>. 
+              This annual survey highlights significant growth in facial rejuvenation, noting that eyelid surgery remains a top surgical priority globally. In Southeast Asian markets, there is an increasing shift toward combination non-surgical protocols to address periorbital hollowing and pigmentary concerns in skin types common to the region.
+            </p>
         </motion.div>
       </section>
 
@@ -396,7 +397,7 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
-              A critical sequencing point: tear trough filler is always performed before Pico Laser in mixed cases. Restoring structural volume changes the skin's surface geometry, reducing apparent darkness even before pigmentation treatment begins.
+              A critical sequencing point: tear trough filler is always performed before <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic"> Pico Laser </Link> in mixed cases. Restoring structural volume changes the skin's surface geometry, reducing apparent darkness even before pigmentation treatment begins.
             </p>
           </motion.div>
         </motion.div>
@@ -620,8 +621,8 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
           />
 
           <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Combination programmes that pair two or more modalities offer the most comprehensive improvement for mixed and complex dark circle presentations. All pricing disclosed before any procedure is booked.
+            <p className="text-center text-wine/50 mt-4">
+              Further details are available on our <Link href="https://www.nexus-clinic.com/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster treatments in Malaysia page</Link>, designed to rejuvenate the skin and combat the look of tired eyes, addressing the underlying causes of dark circles.
             </p>
           </motion.div>
         </motion.div>
@@ -666,14 +667,6 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
                 message="Hi, I'd like to book a consultation for dark eye circle treatment at Nexus Clinic KL. Please let me know available slots."
                 variant="light"
               />
-            </div>
-            <p className="text-cream/80 font-inter text-sm">
-              Limited slots available | Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
-            </p>
-            <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Call: 016-7025699</a>
-              <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">WhatsApp: 03-21635699</a>
             </div>
           </motion.div>
         </motion.div>

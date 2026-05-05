@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,21 +9,10 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
   Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  Palette,
-  Layers,
   Sun,
-  Target,
-  Combine,
-  Touchpad,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -36,7 +24,6 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -118,7 +105,7 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
     <div className="w-full bg-light overflow-hidden">
         <AllPagesHero
           badge="Stage-Matched Laser Treatment • Doctor-Only"
-          title="Best Stretch Mark Removal in Malaysia Using"
+          title="Stretch Mark Removal Using"
           highlight="Laser Treatment for All Skin Types"
           description="Stretch marks removal in Malaysia is one of the most requested and most misunderstood areas of aesthetic medicine. Stretch marks are marks on the skin caused when the skin has been stretched rapidly, tearing the collagen and elastin fibres in the middle layer of the skin."
           details="At Nexus Clinic KL, the best stretch marks removal outcomes come from matching the laser treatment to the specific stage and cause of the stretch marks. Red stretch marks respond to pulsed dye laser. White or silver mature stretch marks require fractional CO2 laser or RF microneedling. Stretch mark removal cream cannot reach the middle layer of the skin where stretch marks originate."
@@ -331,9 +318,18 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
           />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              The most important clinical takeaway: Striae rubrae respond significantly better to laser treatment than white or silver marks. If you have developed stretch marks recently, beginning treatment while the marks are still red gives you the best possible outcome.
-            </p>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-4">
+                Loesch MM et al. Comparative study of microneedling monotherapy versus microneedling with autologous platelet-rich plasma for the treatment of stretch marks (striae distensae) and post-surgical scars: Clinical and dermoscopy outcomes. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/39649764/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Journal of Cosmetic Dermatology
+                </a>. 
+                2024;23(11):3612-3621. This prospective study confirms that the addition of autologous PRP to microneedling protocols yields statistically significant improvements in Manchester Scar Scale (MSS) scores and higher patient satisfaction compared to monotherapy, with dermoscopic evidence showing enhanced dermal remodeling and reduced atrophy.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -369,9 +365,9 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
               className="py-12 px-4"
             />
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              Stretch mark removal cream cannot penetrate to the middle layer of the skin where damaged collagen and elastin fibres are located. At Nexus Clinic KL, we redirect patients from topical approaches to evidence-based laser and microneedling options that actually reach the layer where treatment is needed.
-            </p>
+              <p className="text-center text-brown/50 text-sm mt-4">
+                Hormonal fluctuations play a significant role in stretch mark formation, particularly in conditions such as <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment in Malaysia</Link>, where rapid weight changes or hormonal shifts can weaken dermal integrity. For patients seeking to improve overall skin quality and hydration after completing laser or microneedling sessions for stretch marks, <Link href="https://www.nexus-clinic.com/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> offers complementary support by restoring moisture and stimulating residual collagen production in the treated area.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -404,6 +400,9 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
             fadeInUp={fadeInUp}
             className="py-12 px-4"
           />
+          <p className="text-center text-brown/50 text-sm mt-4">
+            Identifying the cause of stretch marks guides treatment timing and expected outcomes. For hormonal contributors such as elevated cortisol or PCOS, <Link href="https://www.nexus-clinic.com/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">hormone replacement therapy in Malaysia</Link> may help restore skin integrity. Post-treatment, <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> can further refine skin texture and tone in stretch mark areas.
+          </p>
         </motion.div>
       </section>
 

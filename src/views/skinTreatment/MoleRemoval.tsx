@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -14,25 +13,11 @@ import {
   AlertCircle,
   Activity,
   Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
   Scissors,
-  TrendingUp,
-  Sun,
-  Thermometer,
-  Flower2,
-  Layers,
   Target,
   ChevronRight,
   XCircle,
-  Phone,
-  MessageCircle,
-  Users,
-  FileText,
   Flame,
-  Snowflake,
-  HelpCircle,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -359,8 +344,17 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
               className="py-12 px-4"
             />          
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              Using surgical excision for a flat mole is the most common method mismatch in Malaysian mole removal. At Nexus Clinic KL, the correct method is selected based on clinical criteria rather than clinic preference.
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Lau C et al. Melanocytic naevi in Asian patients: Classification, risk stratification and management guidelines. 
+              <a 
+                href="https://onlinelibrary.wiley.com/journal/14400960" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Australasian Journal of Dermatology
+              </a>. 
+              2022;63(4):421-432. This guideline provides a structured approach to assessing benign and atypical moles in Asian skin, focusing on distinct dermoscopic patterns and identifying high-risk features to distinguish common naevi from early-stage melanoma.
             </p>
           </motion.div>
         </motion.div>
@@ -443,9 +437,9 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
             />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              Moles on the chest and upper back carry a higher risk of hypertrophic or keloid scarring in darker Fitzpatrick skin types. At Nexus Clinic KL, patients with a personal or family history of keloid scarring are counselled specifically about method choice.
-            </p>
+              <p className="text-center text-brown mt-4">
+                Patients with a history of keloid scarring may also wish to explore our <Link href="https://www.nexus-clinic.com/skin/keloid-treatment-malaysia/" className="text-wine font-bold italic">keloid treatment Malaysia page</Link> for additional context.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -551,6 +545,10 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
               </motion.div>
             ))}
           </div>
+
+          <p className="text-center text-brown/80 mt-4">
+            Patients with skin conditions alongside mole concerns, including pigmentation or acne-related marks, may also find our <Link href="https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia page</Link> relevant to their overall skin health plan.
+          </p>
         </motion.div>
       </section>
 
@@ -619,8 +617,9 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
             className="py-12 px-4"
           />
           <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Multiple mole removal in a single session offered at package pricing where clinically appropriate. Histopathology fees charged at cost and disclosed transparently before procedure.
+            <p className="text-center text-brown mt-4">
+              Patients exploring skin health more broadly alongside mole removal may find our <Link href="https://www.nexus-clinic.com/skin/mole-removal-malaysia/" className="text-wine font-bold italic">mole removal Malaysia page</Link> alongside our best mole removal options. 
+              <Link href="https://www.nexus-clinic.com/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">Acne scar treatment in Malaysia</Link> can also address cosmetic reasons for skin improvement. This page is relevant if post-removal marks are a concern, especially if damage to surrounding skin is a possibility.
             </p>
           </motion.div>
         </motion.div>
@@ -802,11 +801,11 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
               Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Explore Skin Tag Removal</a>
+              <a href="/skin/pigmentation-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Wart Removal</a>
+              <a href="/skin/acne-scar-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Scar Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Scar Treatment</a>
+              <a href="/skin/pico-laser-malaysia/" className="hover:text-cream transition-colors">Explore Pico Laser</a>
             </div>
           </motion.div>
         </motion.div>

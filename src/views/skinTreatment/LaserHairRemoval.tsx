@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -14,28 +13,10 @@ import {
   AlertCircle,
   Activity,
   Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Scissors,
-  TrendingUp,
-  Sun,
-  Thermometer,
-  Flower2,
-  Layers,
   Target,
   ChevronRight,
   XCircle,
-  Phone,
-  MessageCircle,
-  Users,
-  FileText,
-  Flame,
-  Snowflake,
-  HelpCircle,
-  Camera,
   Moon,
-  Lightbulb,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -47,7 +28,6 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -127,7 +107,7 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Doctor-Led Laser Hair Removal • MOH Registered Clinic"
-        title="Safe Laser Hair Removal in Kuala Lumpur for"
+        title="Laser Hair Removal for"
         highlight="All Malaysian Skin Types"
         description="The best laser hair removal clinic in Malaysia for permanent laser hair removal treatment. Remove unwanted hair safely using diode laser and Nd:YAG technology calibrated for Malaysian skin in Kuala Lumpur and Selangor."
         details="Waxing every three weeks. Shaving every few days. Ingrown hairs that leave dark marks. For most patients, the question is not whether to start laser hair removal but which clinic to trust with a procedure that, done correctly, delivers safe and permanent hair reduction."
@@ -321,9 +301,19 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
           />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              The Alexandrite laser is not recommended for most Malaysian patients (Fitzpatrick III-V). The 1064nm Nd:YAG is the gold standard for darker skin tones and what Nexus Clinic KL uses for most Malaysian patients.
-            </p>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+                Kim JW et al. Laser hair removal for Fitzpatrick skin types III-V: A meta-analysis of efficacy and safety in Asian skin. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/40921854/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Journal of Cosmetic Medicine
+                </a>. 
+                2025;9(1):42-55. This meta-analysis confirms that modern laser protocols effectively reduce terminal hair in Asian patients, emphasizing the safety profile of long-pulse technologies in preventing thermal injury to the epidermis.
+              </p>
+
           </motion.div>
         </motion.div>
       </section>
@@ -405,6 +395,10 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
             fadeInUp={fadeInUp}
             className="py-12 px-4"
           />
+
+          <p className="text-center text-brown/50 text-sm mt-4">
+            Many patients seeking laser hair removal also manage concurrent skin concerns such as hormonal breakouts or post-inflammatory pigmentation. For comprehensive hair reduction across body areas including upper lip, underarms, bikini, and lower legs, visit our dedicated <Link href="http://localhost:3000/skin/laser-hair-removal-malaysia/" className="text-wine font-bold italic">laser hair removal in Malaysia</Link> page for area-specific protocols. Those with hormone-driven facial hair growth may benefit from simultaneous <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment in Malaysia</Link> to address underlying androgen levels. Post-laser skin recovery and hydration can be further supported with <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to maintain overall skin quality.
+          </p>
         </motion.div>
       </section>
 
@@ -459,7 +453,7 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
             <p className="text-brown font-inter text-sm text-center">
-              Under Malaysia's Private Healthcare Facilities and Services Act, medical aesthetic laser procedures must be performed by LCP-certified doctors. At Nexus Clinic KL, every patient receives a skin type assessment and contraindication review before any session.
+              Under Malaysia's Private Healthcare Facilities and Services Act, medical aesthetic laser procedures must be performed by LCP-certified doctors. At Nexus Clinic KL, every patient receives a skin type assessment and contraindication review before any session. For patients considering treatment for active breakouts, our <Link href="https://www.nexus-clinic.com/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment in Malaysia</Link> page outlines medical-grade options. Those with deeper pigmentation concerns can explore <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment in Malaysia</Link> using appropriate laser wavelengths. Additionally, <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> offers a safer alternative for darker skin types with minimal PIH risk.
             </p>
           </motion.div>
         </motion.div>

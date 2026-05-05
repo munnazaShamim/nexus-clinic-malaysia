@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -11,41 +10,21 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
   Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Scissors,
-  TrendingUp,
-  Sun,
-  Thermometer,
-  Flower2,
-  Layers,
   Target,
   ChevronRight,
   XCircle,
-  Phone,
-  MessageCircle,
-  Users,
-  FileText,
-  Flame,
-  Snowflake,
-  HelpCircle,
-  Camera,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -317,8 +296,17 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
 
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              532nm carries the highest risk of post-inflammatory hyperpigmentation in Fitzpatrick Type IV and V skin. At Nexus Clinic KL, 1064nm is the safest and most versatile wavelength for the broadest range of Malaysian skin types.
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Chan HHL et al. Picosecond Laser Treatment of Pigmentation and Scarring in Asian Skin: A Clinical Review of Wavelength Selection and Safety Protocols. 
+              <a 
+                href="https://jddonline.com/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of Drugs in Dermatology
+              </a>. 
+              2022;21(2):142-149. This review provides evidence-based protocols for using 532 nm, 755 nm, and 1064 nm picosecond wavelengths in Asian populations, highlighting the use of laser-induced optical breakdown (LIOB) to treat acne scarring and dermal pigment with a significantly reduced risk of post-inflammatory hyperpigmentation.
             </p>
           </motion.div>
         </motion.div>
@@ -358,6 +346,9 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
             <p className="text-brown font-inter text-sm text-center">
               Acne scar treatment requires Fractional LIOB mode, not Toning mode. Patients whose acne scar treatment has consisted exclusively of toning mode sessions have been receiving the mode designed for pigmentation maintenance applied to a concern that requires fractional collagen induction.
             </p>
+            <p className="text-center text-brown mt-4 text-sm">
+              Our full acne scar treatment approach is described in detail on our <Link href="https://www.nexus-clinic.com/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment Malaysia page</Link> featuring the latest in laser treatment in Malaysia.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -394,6 +385,9 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
             <p className="text-brown font-inter text-sm text-center">
               Pico Laser is the most versatile, safest and lowest-downtime option across the broadest range of skin concerns for Fitzpatrick III to V skin. At Nexus Clinic KL, our doctors make recommendations based on your clinical picture rather than defaulting to whichever laser the clinic owns.
             </p>
+            <p className="text-center text-brown mt-4 text-sm">
+              For broader context on managing pigmentation alongside Pico Laser, visit our <Link href="https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">Pigmentation treatment in Malaysia using advanced laser technology, suitable for all skin types page</Link>.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -425,7 +419,9 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
             
             <motion.div variants={fadeInUp} className="bg-light p-6 rounded-xl">
               <h3 className="font-georgia text-xl text-wine mb-3">After Sessions Four to Six</h3>
-              <p className="text-taupe font-inter">Melasma patients: reach maintenance phase. Acne scar patients: most significant textural improvement as cumulative collagen remodelling matures. Maximum improvement assessed at 3 to 6 months after final session.</p>
+                <p className="font-inter text-taupe">
+                  After sessions four to six, patients with melasma or deeper pigmentation typically reach the maintenance phase where existing marks are significantly reduced and the focus shifts to preventing reactivation through the management programme described on our <Link href="https://www.nexus-clinic.com/skin/melasma-treatment-malaysia/" className="text-wine font-bold italic">Melasma treatment Malaysia with non-invasive techniques page</Link>.
+                </p>
             </motion.div>
           </div>
         </motion.div>
@@ -713,11 +709,11 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
               Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
+              <a href="/skin/pigmentation-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Acne Scar Treatment</a>
+              <a href="/skin/acne-scar-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Acne Scar Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Melasma Treatment</a>
+              <a href="/skin/melasma-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Melasma Treatment</a>
             </div>
           </motion.div>
         </motion.div>

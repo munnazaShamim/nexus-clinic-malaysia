@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,27 +9,19 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
   Zap,
-  AlertTriangle,
-  Droplet,
-  Scissors,
   Sun,
-  Palette,
-  Layers,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -114,7 +105,7 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Pico Laser Technology • Doctor-Only Treatment"
-        title="Laser Tattoo Removal in Malaysia Using"
+        title="Tattoo Removal in Malaysia Using"
         highlight="Advanced Pico Laser Technology for All Skin Types"
         description="Tattoo removal in Malaysia has transformed completely. What once required painful dermabrasion or surgical excision is now achievable through advanced pico laser technology."
         details="At Nexus Clinic Kuala Lumpur, we use the StarWalker PQX picosecond laser system with advanced picosecond laser technology and multiple wavelengths including yellow laser capability. Every tattoo is assessed colour by colour before any laser treatment begins, with honest session counts based on actual tattoo complexity."
@@ -297,7 +288,6 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
         </motion.div>
       </section>
 
-      {/* Tattoo Ink Colour and Laser Wavelength Table */}
       <section className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
@@ -329,9 +319,22 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
           />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
               The yellow laser row in this table is what distinguishes Nexus Clinic KL from competitor clinics. Yellow tattoo ink is the single most challenging colour to remove. The StarWalker PQX pico laser system includes the capability to address yellow ink, making it one of the most comprehensive laser tattoo removal systems for multi-colour tattoos in Malaysia.
             </p>
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-4">
+              Ho DD et al. Laser-tattoo removal: a study of the mechanism and optimal treatment strategy via computer simulations. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/11835252/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Lasers in Surgery and Medicine
+              </a>. 
+              2002;30(1):2-12. This research utilizes mathematical modeling to explain how laser pulses shatter ink particles via photomechanical effects, establishing the physical basis for thermal relaxation and pulse duration in clinical practice.
+            </p>
+
           </motion.div>
         </motion.div>
       </section>
@@ -364,8 +367,8 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
           />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              When you attend your free consultation at Nexus Clinic KL, the doctor assesses all six of these factors for your specific tattoo. The result is a session count estimate that is specific to your tattoo rather than a generic range.
+            <p className="text-center text-brown/50 text-sm mt-4">
+              Accurate session prediction requires assessing skin type, tattoo age, ink colours, and body location. Patients with darker Fitzpatrick skin (Types III to V) need conservative laser settings to minimise PIH risk, which extends treatment duration. For those also managing <Link href="https://www.nexus-clinic.com/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link>, similar principles of skin protection and collagen preservation apply. The same <Link href="https://www.nexus-clinic.com/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> technology used for tattoo removal also addresses post-inflammatory pigmentation and textural concerns with minimal downtime.
             </p>
           </motion.div>
         </motion.div>
@@ -400,8 +403,8 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
               className="py-12 px-4"
             />
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              For Malaysian patients with Fitzpatrick III to V skin tones, pico laser benefits are particularly significant because the pressure-based photoacoustic mechanism minimises the risk of changes in skin pigmentation that the heat-based Q-switch laser carries.
+            <p className="text-center text-brown mt-4">
+              For Malaysian patients with Fitzpatrick skin types III to V, pico laser offers a safer and more effective alternative to Q-switched technology due to its photoacoustic mechanism and lower PIH risk. Those with hormonal or vascular pigmentation concerns can explore <Link href="/skin/melasma-treatment-malaysia/" className="text-wine font-bold italic">melasma treatment in Malaysia</Link> for targeted management. Patients combining laser sessions with skin quality enhancement may also benefit from <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to support post-treatment hydration and recovery.
             </p>
           </motion.div>
         </motion.div>

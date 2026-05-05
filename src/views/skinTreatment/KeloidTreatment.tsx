@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -12,28 +11,17 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  ThermometerSnowflake,
-  Layers,
-  Users,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -330,8 +318,8 @@ export default function KeloidLandingPage({ locale }: KeloidTreatmentProps) {
             className="py-12 px-4"
           />
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              The growth pattern is the single most reliable distinguishing feature. If the raised scar has expanded beyond the area of the original wound into surrounding skin, it is a keloid. At Nexus Clinic KL, this distinction is confirmed clinically at the initial assessment.
+            <p className="text-center text-brown/50 text-sm mt-4">
+              The growth pattern is the single most reliable distinguishing feature. If the raised scar has expanded beyond the area of the original wound into surrounding skin, it is a <Link href="/skin/keloid-treatment-malaysia/" className="text-wine font-bold italic">keloid</Link>. For patients with post-inflammatory concerns following scar treatment, our <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia</Link> addresses residual dark marks. Those managing active breakouts alongside scarring may also find our <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment Malaysia</Link> relevant for comprehensive skin health. At Nexus Clinic KL, this distinction is confirmed clinically at the initial assessment.
             </p>
           </motion.div>
         </motion.div>
@@ -457,6 +445,19 @@ export default function KeloidLandingPage({ locale }: KeloidTreatmentProps) {
                   Keloids have no guaranteed permanent cure. The goal is meaningful flattening, symptom relief and the lowest achievable recurrence rate through combination therapy.
                 </p>
               </div>
+
+              <p className="text-sm text-taupe mt-4">
+                Juckett G, Hartman-Adams H. Management of Keloids and Hypertrophic Scars. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/19621835/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  American Family Physician
+                </a>. 
+                2009;80(3):253-260. This evidence-based review establishes intralesional corticosteroids and silicone sheeting as primary interventions, noting that individuals with darker skin phototypes carry a 15- to 20-fold increased risk for keloid formation.
+              </p>
             </motion.div>
 
             <motion.div
@@ -661,9 +662,9 @@ export default function KeloidLandingPage({ locale }: KeloidTreatmentProps) {
             className="py-12 px-4"
           />
             <motion.div variants={fadeInUp} className="text-center mt-4">
-              <p className="text-taupe font-inter text-sm italic">
-                Combination programmes that incorporate steroid injection plus laser across a 3 to 5 session series offer the best-evidence approach for moderate to large or treatment-resistant keloids. All pricing disclosed at initial assessment.
-              </p>
+              <p className="text-taupe font-inter text-sm italic text-sm">
+                  Combination programmes that incorporate steroid injection plus <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser</Link> across a 3 to 5 session series offer the best-evidence approach for moderate to large or treatment-resistant keloids. Patients with raised scars following acne may also benefit from reviewing our <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment Malaysia</Link> for comprehensive scar management. For those concerned about pigmentation changes around healed keloids, our <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia</Link> provides additional context for achieving even skin tone. All pricing disclosed at initial assessment.
+                </p>
             </motion.div>
         </motion.div>
       </section>

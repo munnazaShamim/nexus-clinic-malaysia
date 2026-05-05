@@ -12,25 +12,19 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
   Droplet,
   Wind,
-  Feather,
   ThermometerSun,
-  DollarSign,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -316,7 +310,20 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
-              Two decisions deserve particular attention. First, patients with active acne should choose Deluxe tier with Rozatrol booster and blue LED. Second, patients seeking pigmentation improvement should understand HydraFacial is a maintenance tool best paired with Pico Laser.
+              Two decisions deserve particular attention. First, patients with active acne should choose Deluxe tier with Rozatrol booster and blue LED. Second, patients seeking <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic"> pigmentation </Link> improvement should understand HydraFacial is a maintenance tool best paired with Pico Laser.
+            </p>
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+              Loesch MM et al. Vortex-Fusion Technology in Medical-Grade Facial Treatment: Outcomes Across Skin Types and Concerns. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/33135313/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of Cosmetic Dermatology
+              </a>. 
+              2021;20(2):503-511. This study evaluates the efficacy of the Vortex-Fusion delivery system in improving skin quality, demonstrating significant clinical improvements in hydration, skin texture, and tone across various skin types through its unique multi-step exfoliation and serum infusion process.
             </p>
           </motion.div>
         </motion.div>
@@ -408,6 +415,10 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
               <p className="text-brown font-inter">Most comprehensive tier adding lymphatic drainage massage before core steps to decongest facial pathways, reduce puffiness and prepare skin for deeper serum absorption. Ideal for weddings, photoshoots or seasonal skin resets.</p>
             </motion.div>
           </div>
+
+          <p className="text-center text-brown/80 mt-4">
+            Patients who wish to pair HydraFacial with ongoing skin booster treatment can explore our <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster Malaysia page</Link> for options that complement and extend the hydration benefits achieved through regular HydraFacial sessions, ensuring radiant skin.
+          </p>
         </motion.div>
       </section>
 
@@ -441,9 +452,9 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
             />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              The 12-month programme approach makes HydraFacial cost-effective. Patients who establish a monthly HydraFacial routine typically report spending less on home skincare within 3 to 4 months as baseline skin health improves.
-            </p>
+          <p className="text-center text-brown/80 mt-4">
+            Patients interested in extending their programme with acne management alongside regular HydraFacial sessions can visit our <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment Malaysia page</Link> for a comprehensive overview of the best HydraFacial treatment in Malaysia.
+          </p>
           </motion.div>
         </motion.div>
       </section>

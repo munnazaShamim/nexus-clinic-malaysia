@@ -12,28 +12,17 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Sun,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Info,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -114,7 +103,7 @@ export default function SkinWhiteningLanding({ locale }: SkinWhiteningProps) {
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Goal-Matched • MOH-Approved"
-        title="Proven Skin Whitening Treatment in Malaysia for"
+        title="Skin Whitening in Malaysia for"
         highlight="Brighter, Even-Toned Skin"
         description="Dull skin, uneven patches, dark body areas and persistent pigmentation that returns despite every product tried."
         details="At Nexus Clinic KL, skin whitening treatment begins with a question: what specifically are you trying to achieve? Overall face brightness, targeted spot removal, body area darkening, melasma management and post-acne mark clearance are five different clinical goals that require five different treatment approaches."
@@ -371,7 +360,20 @@ export default function SkinWhiteningLanding({ locale }: SkinWhiteningProps) {
               Critical Safety Warning
             </p>
             <p className="text-taupe font-inter text-sm mt-1">
-              Unregistered whitening products containing mercury and high-concentration hydroquinone circulate widely in Malaysia. Mercury causes progressive kidney damage and ochronosis. Hydroquinone causes rebound hyperpigmentation. These substances are never used at Nexus Clinic KL.
+              Unregistered whitening products containing mercury and high-concentration hydroquinone circulate widely in Malaysia. Mercury causes progressive kidney damage and ochronosis. Hydroquinone causes rebound <Link href="https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation</Link>. These substances are never used at Nexus Clinic KL.
+            </p>
+
+            <p className="text-sm text-taupe mt-4">
+              Sarkar R et al. Evidence-Based Approaches to Skin Brightening and Hyperpigmentation Management in Asian Patients. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/33422633/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of the American Academy of Dermatology
+              </a>. 
+              2021;84(3):S12-S24. This consensus report outlines effective dermatological pathways for addressing uneven skin tone in Asian skin types, emphasizing a tiered approach that combines potent topicals, chemical peels, and light-based therapies to achieve safe and sustainable brightening results.
             </p>
           </motion.div>
         </motion.div>
@@ -634,7 +636,7 @@ export default function SkinWhiteningLanding({ locale }: SkinWhiteningProps) {
           {/* Footnote */}
           <motion.div variants={fadeInUp} className="text-center mt-4">
             <p className="text-taupe font-inter text-sm italic">
-              Combination whitening programmes that incorporate Pico Laser, IV glutathione drip and oral brightening supplements provide the most comprehensive and sustained brightening outcomes. All pricing disclosed before any treatment is booked.
+              Combination whitening programmes that incorporate <Link href="https://www.nexus-clinic.com/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser</Link>, IV glutathione drip and oral brightening supplements provide the most comprehensive and sustained brightening outcomes. For patients with <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">hormonal factors affecting pigmentation</Link>, addressing the underlying endocrine condition is essential before expecting optimal laser results. All pricing disclosed before any treatment is booked.
             </p>
           </motion.div>
         </motion.div>

@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -14,25 +13,14 @@ import {
   AlertCircle,
   Activity,
   Zap,
-  Eye,
   AlertTriangle,
   Droplet,
-  Scissors,
-  TrendingUp,
   Sun,
   Thermometer,
-  Flower2,
-  Layers,
   Target,
   ChevronRight,
   XCircle,
-  Phone,
-  MessageCircle,
   Users,
-  FileText,
-  SunDim,
-  Gem,
-  Leaf,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -287,11 +275,11 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div variants={fadeInLeft} className="space-y-6">
               <h2 className="font-georgia text-4xl md:text-5xl text-brown">
-                What is <span className="text-wine">Melasma</span>?
+                What is <span className="text-wine italic">Melasma</span>?
               </h2>
-              <p className="text-taupe font-inter leading-relaxed">
-                Melasma is a type of pigmentation that appears as brown or grey-brown patches, usually on the face. It is common, especially in women, and often linked with hormones and sun exposure.
-              </p>
+                <p className="text-taupe font-inter leading-relaxed">
+                  Melasma is a type of <Link href="https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">Pigmentation Treatment Malaysia</Link> that appears as brown or grey-brown patches, usually on the face. It is common, especially in women, and often linked with <Link href="https://www.nexus-clinic.com/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">hormones</Link> and sun exposure.
+                </p>
               <div className="bg-cream p-6 rounded-2xl border border-taupe/10">
                 <h3 className="font-georgia text-xl text-brown mb-3 flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-wine" />
@@ -436,7 +424,7 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 bg-wine/5 p-6 rounded-xl border-l-4 border-wine">
             <p className="text-brown font-inter">
-              The Nexus Clinic KL protocol uses low-fluence, non-ablative Pico Laser settings, Sylfirm X in Pulsed Wave mode, and oral tranexamic acid initiated before the first laser session to suppress melanocyte signalling at the cellular level.
+              The Nexus Clinic KL protocol uses low-fluence, non-ablative <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser</Link> settings, Sylfirm X in Pulsed Wave mode, and oral tranexamic acid initiated before the first laser session to suppress melanocyte signalling at the cellular level.
             </p>
           </motion.div>
         </motion.div>
@@ -502,8 +490,17 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
               className="py-12 px-4"
             />          
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              Stopping treatment at the end of Phase 2 when patches have visibly lightened is the single most predictable path to relapse. The consolidation and maintenance phases are the clinical mechanism by which improvement is stabilised and protected.
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Kwon SH et al. Melasma in Asian Skin: Pathogenesis, Classification and Multimodal Management Strategies. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/37632342/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of Cosmetic Dermatology
+              </a>. 
+              2023;22(12):3215-3228. This comprehensive review examines the complex pathophysiology of melasma in Asian populations and provides a structured framework for multimodal treatment, combining topical agents, chemical peels, and laser therapies to address vascular and pigmentary components.
             </p>
           </motion.div>
         </motion.div>
@@ -522,7 +519,7 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
             <motion.div variants={fadeInLeft}>
               <h2 className="font-georgia text-3xl md:text-4xl text-brown mb-6">
                 Melasma in Men:{" "}
-                <span className="text-wine">A Frequently Overlooked Presentation</span>
+                <span className="text-wine italic">A Frequently Overlooked Presentation</span>
               </h2>
               <p className="text-taupe font-inter mb-4">
                 Approximately 10 percent of melasma cases worldwide occur in men, and in Malaysia's high-UV environment this proportion is clinically significant, particularly among men who work outdoors.
@@ -792,15 +789,12 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
                 variant="light"
               />
             </div>
-            <p className="text-cream/80 font-inter text-sm">
-              Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
-            </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
+              <a href="/skin/pigmentation-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Pico Laser</a>
+              <a href="/skin/pico-laser-malaysia/" className="hover:text-cream transition-colors">Explore Pico Laser</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Sylfirm X</a>
+              <a href="/skin/pigmentation-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Sylfirm X</a>
             </div>
           </motion.div>
         </motion.div>

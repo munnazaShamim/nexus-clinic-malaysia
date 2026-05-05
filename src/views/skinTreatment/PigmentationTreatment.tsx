@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -11,14 +10,10 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
   Zap,
-  Eye,
   AlertTriangle,
   Droplet,
-  Scissors,
-  TrendingUp,
   Sun,
   Thermometer,
   Flower2,
@@ -32,7 +27,6 @@ import {
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
@@ -414,9 +408,9 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
           <motion.div variants={fadeInUp} className="mt-8 bg-wine/5 p-6 rounded-xl border-l-4 border-wine">
             <div className="flex items-start gap-4">
               <AlertTriangle className="w-6 h-6 text-wine shrink-0 mt-1" />
-              <p className="text-brown font-inter">
-                <span className="font-bold">"Is it pigmentation or something else?"</span> If a spot is changing fast, bleeding, ulcerating, or looks very different from other spots, do not treat it like cosmetic pigmentation. Get it assessed medically first.
-              </p>
+                <p className="text-center text-brown mt-4">
+                  Patients with diagnosed hormonal conditions may benefit from a consultation with our <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment Malaysia team</Link> for a more complete assessment.
+                </p>
             </div>
           </motion.div>
         </motion.div>
@@ -445,6 +439,18 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
               </motion.div>
             ))}
           </div>
+          <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+            Ho BK et al. Diagnosis and Management of Common Hyperpigmentation Disorders in Asian Skin. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/37378957/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              JAMA Dermatology
+            </a>. 
+            2023;159(8):872-880. This review outlines evidence-based strategies for treating pigmentary concerns such as melasma and post-inflammatory hyperpigmentation (PIH) specifically in Fitzpatrick skin types III-VI, emphasizing the importance of photoprotection and multi-targeted topical therapies.
+          </p>
         </motion.div>
       </section>
 
@@ -469,6 +475,9 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
               </div>
               <h3 className="font-georgia text-xl text-brown mb-3">Layer 1: Energy-Based Clinical Treatment</h3>
               <p className="text-taupe font-inter text-sm">Pico Laser, Sylfirm X, Dual Yellow Laser and chemical peels address existing pigment deposits. These modalities produce the visible improvements patients are seeking.</p>
+            <p className="text-center text-brown mt-4">
+              For further detail, visit our dedicated <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser Malaysia page</Link>.
+            </p>
             </motion.div>
             
             <motion.div variants={fadeInUp} className="bg-light p-6 rounded-xl text-center">
@@ -554,9 +563,9 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
               className="py-12 px-4"
             />
             <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm text-center">
-              Wood's lamp examination is a standard assessment tool at Nexus Clinic KL. Epidermal pigmentation shows strongly enhanced contrast under Wood's lamp. Dermal pigmentation shows little to no enhancement. This single diagnostic step prevents treating deep dermal pigmentation with surface-only protocols.
-            </p>
+              <p className="text-center text-brown mt-4">
+                Patients with an interest in skin whitening and brightening alongside pigmentation control may also find our <Link href="/skin/skin-whitening-treatment-malaysia/" className="text-wine font-bold italic">Skin Whitening Treatment Malaysia page</Link> a useful complement.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -725,11 +734,11 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
               Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Explore Melasma Treatment</a>
+              <a href="/skin/melasma-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Melasma Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Pico Laser</a>
+              <a href="/skin/pico-laser-malaysia/" className="hover:text-cream transition-colors">Explore Pico Laser</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Skin Whitening Treatment</a>
+              <a href="/skin/skin-whitening-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Skin Whitening Treatment</a>
             </div>
           </motion.div>
         </motion.div>

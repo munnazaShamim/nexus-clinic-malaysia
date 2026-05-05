@@ -6,7 +6,7 @@ import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity, Leaf, Recycle, Award, Sparkle, Waves, Laugh, Smile, Scissors, Ban, Flower2, Sun, Moon, Thermometer, Wind, DropletIcon, Filter, Brush, Paintbrush } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, Heart, Shield, Droplet, Gem, Activity, Sparkle, Waves, Sun, Filter, Brush, } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
@@ -182,8 +182,8 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Skin Resurfacing Treatment"
-        title="Chemical Peel | Clearer, Brighter Skin Treatment"
-        highlight="at Nexus Clinic Kuala Lumpur"
+        title="Chemical Peel | "
+        highlight="Clearer, Brighter Skin Treatment"
         description="Improve acne marks, dull skin, uneven tone and fine lines with chemical peel treatment in Malaysia. Nexus Clinic KL offers doctor-led peels for smoother, brighter skin."
         details="Your skin can start looking tired before you realise why. It loses glow. Acne marks stay longer. Pores look rougher. Fine lines show more clearly. The skin tone becomes uneven, and regular facials stop doing enough. That is often the point where a chemical peel starts making sense."
         note="A chemical peel is generally considered safe when performed by a qualified and experienced clinician, but the right peel depth and aftercare matter."
@@ -296,7 +296,6 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
         </motion.div>
       </section>
 
-      {/* What Chemical Peel Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -323,16 +322,13 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If a Peel Matches Your Skin Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <p className="text-center text-sm text-brown/50 mt-4">
+              Chemical peels are highly effective for acne, post-acne marks, and uneven skin tone. For patients with active hormonal breakouts, combining peels with systemic management from our <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment in Malaysia</Link> can improve long-term outcomes. Those with deeper pigmentation may benefit from <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> for more aggressive clearance. Post-peel skin recovery and hydration can be further supported with <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to maintain your glowing results.
+            </p>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Types of Chemical Peels Section */}
       <section className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
@@ -368,7 +364,6 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
         </motion.div>
       </section>
 
-      {/* Nexus Clinic Difference Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -427,7 +422,6 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
         </motion.div>
       </section>
 
-      {/* Procedure Steps Section */}
       <section className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
@@ -503,17 +497,9 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              At Nexus Clinic KL, your skin is assessed first and the treatment plan is explained clearly before anything begins.
+            <p className="text-center text-brown/50 text-sm mt-4">
+              Chemical peel pricing varies based on peel depth, skin concern, and number of sessions required. Light peels for acne and dullness are typically more affordable and performed as a series, while medium peels for pigmentation and texture cost more due to stronger formulations and longer recovery monitoring. Patients with deeper acne scars or textural damage may find better value combining peels with <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> for comprehensive resurfacing. Those seeking ongoing skin brightness after completing their peel series can maintain results with <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to support long-term hydration and collagen health.
             </p>
-          </motion.div>
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Get Your Personalised Chemical Peel Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </motion.div>
         </motion.div>
       </section>

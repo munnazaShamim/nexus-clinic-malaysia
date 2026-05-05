@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -12,26 +11,16 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Thermometer,
-  Wind,
-  Home,
-  Car,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -107,7 +96,7 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
           badge="Structured Care • Doctor-Led"
-          title="Trusted Eczema Treatment in Malaysia for"
+          title="Eczema Treatment for"
           highlight="Long-Term Skin Comfort and Fewer Flares"
           description="Red, cracked, endlessly itchy skin that flares every few weeks and never fully settles. Eczema is one of the most common skin conditions treated at Nexus Clinic KL, and it is also one of the most undertreated."
           details="At Nexus Clinic KL, eczema management begins with a structured clinical assessment that identifies your eczema type, scores your severity using the validated SCORAD system, identifies your likely trigger profile including Malaysia-specific factors, and builds a written treatment plan with clear escalation criteria."
@@ -356,6 +345,20 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
               fadeInUp={fadeInUp}
               className="py-12 px-4"
             />
+
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Ministry of Health Malaysia. Clinical Practice Guidelines on the Management of Atopic Eczema. 
+              <a 
+                href="https://www.moh.gov.my/index.php/pages/view/211" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                MOH/P/PAK/382.18(GU)
+              </a>. 
+              2018. This comprehensive guideline provides evidence-based recommendations for the diagnosis and holistic management of atopic eczema in the Malaysian population, addressing topical therapies, trigger identification, and the step-up approach to systemic treatment.
+            </p>
         </motion.div>
       </section>
 
@@ -389,12 +392,8 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
             />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl border-l-4 border-wine">
-            <p className="text-wine font-inter font-semibold text-sm flex items-center gap-2">
-              <AlertCircle className="w-4 h-4" />
-              Critical Clinical Message
-            </p>
-            <p className="text-taupe font-inter text-sm mt-1">
-              Applying topical corticosteroids to a secondary bacterial infection accelerates the spread of the infection. If you notice yellow crusting, expanding hot red patches or weeping that does not dry within 24 hours, seek medical review for antibiotic prescription.
+            <p className="text-center text-brown mt-4">
+              Our skin restoration approaches are discussed on our <Link href="https://www.nexus-clinic.com/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment Malaysia page</Link> for context on barrier repair.
             </p>
           </motion.div>
         </motion.div>
@@ -432,6 +431,10 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
               <p className="text-taupe font-inter text-sm">Extremely common in Malaysian patients, frequently occupationally driven affecting healthcare workers, food handlers, and cleaners. Treatment emphasises barrier restoration and protective measures including glove use.</p>
             </motion.div>
           </div>
+
+          <p className="text-center text-wine/50 mt-4">
+            Patients with eczema affecting the face or eyelid areas should also review our <Link href="https://www.nexus-clinic.com/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster Malaysia page</Link> for barrier repair options that complement eczema management and address the symptoms of eczema effectively.
+          </p>
         </motion.div>
       </section>
 
@@ -539,8 +542,8 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
           />
 
           <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Total ongoing treatment costs depend on severity and frequency of flares. All treatment is structured to reduce frequency and severity over time through proper long-term management.
+            <p className="text-center text-brown/50 text-sm mt-4">
+              Eczema treatment costs in Malaysia vary based on severity, affected areas, and the combination of therapies required. At Nexus Clinic KL, pricing is transparent and discussed fully during your initial consultation. For patients whose eczema is linked to underlying hormonal fluctuations, our <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment Malaysia page</Link> provides context on managing hormonal triggers. Those experiencing post-eczema pigmentation changes may find our <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia page</Link> relevant for addressing residual dark marks. Additionally, patients with sensitive or compromised skin barriers can explore barrier repair options on our <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster Malaysia page</Link> to complement their eczema management plan.
             </p>
           </motion.div>
         </motion.div>

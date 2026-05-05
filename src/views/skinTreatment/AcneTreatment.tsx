@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -11,23 +10,15 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
   Zap,
-  Eye,
   AlertTriangle,
-  Droplet,
-  Scissors,
-  TrendingUp,
-  ChevronRight,
-  XCircle,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
@@ -445,6 +436,9 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
               </motion.div>
             ))}
           </div>
+          <p className="text-center text-brown mt-4 font-sm">
+            For patients who want to understand more about how <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">pico laser treatment in Malaysia</Link> works for both active acne and residual skin texture, our dedicated treatment page covers this in full.
+          </p>
         </motion.div>
       </section>
 
@@ -478,6 +472,9 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
               </motion.div>
             ))}
           </div>
+          <p className="text-center text-brown mt-4">
+            If your active acne has left behind scarring, our <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> page covers the full range of dedicated scar revision procedures available at Nexus Clinic KL.
+          </p>
         </motion.div>
       </section>
 
@@ -585,9 +582,18 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-taupe font-inter text-sm text-center">
-              Clinical guidelines developed by the South-East Asia Study Alliance (SASA) concluded that local variables including tropical climate, skin phototype and patterns of antibiotic resistance require an adapted clinical approach that differs from Western acne management protocols.
-            </p>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+                Lim TH, Badaruddin NSF et al. Prevalence and psychosocial impact of acne vulgaris among high school and university students in Sarawak, Malaysia, highlight the severity of acne in young populations. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/35903022/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Medical Journal of Malaysia
+                </a>. 
+                2022;77(4):446-453.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -697,15 +703,12 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
                 variant="light"
               />
             </div>
-            <p className="text-cream/80 font-inter text-sm">
-              Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
-            </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">Explore Acne Scar Treatment</a>
+              <a href="/skin/acne-scar-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Acne Scar Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
+              <a href="/skin/pigmentation-treatment-malaysia/" className="hover:text-cream transition-colors">Explore Pigmentation Treatment</a>
               <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">Explore Skin Booster Treatment</a>
+              <a href="/face/skin-booster-malaysia/" className="hover:text-cream transition-colors">Explore Skin Booster Treatment</a>
             </div>
           </motion.div>
         </motion.div>

@@ -529,12 +529,17 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
             variants={fadeInUp}
             className="mt-6 p-4 bg-wine/5 rounded-xl text-center"
           >
-            <p className="text-brown font-inter text-sm">
-              Ice pick scars respond poorly to surface lasers alone. Rolling
-              scars require subcision to release tethers before resurfacing.
-              Understanding these distinctions before treatment is the
-              difference between money well spent and multiple rounds that never
-              addressed the actual problem.
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Asai M, et al. Evidence-based recommendations for the management of acne scarring. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/34719045/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of the American Academy of Dermatology
+              </a>. 
+              2022;86(1):118-124. This systematic review provides expert clinical consensus and evidence-based protocols for treating various acne scar morphologies, emphasizing the integration of energy-based devices and multi-modal procedural approaches to optimize patient outcomes.
             </p>
           </motion.div>
         </motion.div>
@@ -612,16 +617,23 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
                 reflects the local climate rather than instructions written for
                 patients in cooler or drier countries.
               </p>
-              <div className="mt-6 bg-wine/5 p-4 rounded-lg">
-                <p className="text-wine font-inter text-sm font-semibold">
-                  ISAPS Global Statistics Report 2023:
-                </p>
-                <p className="text-taupe text-sm mt-1">
-                  Non-surgical skin resurfacing procedures in Southeast Asia grew
-                  by 28% year-on-year, with Malaysia showing above-average
-                  demand for combination scar protocols.
-                </p>
-              </div>
+                <div className="mt-6 bg-wine/5 p-4 rounded-lg">
+                  <p className="text-wine font-inter text-sm font-semibold">
+                    <a 
+                      href="https://www.isaps.org/discover/about-isaps/global-statistics/global-survey-2023-full-report-and-press-releases/" 
+                      target="_blank" 
+                      rel="nofollow" 
+                      className="hover:underline"
+                    >
+                      ISAPS Global Statistics Report 2023:
+                    </a>
+                  </p>
+                  <p className="text-taupe text-sm mt-1">
+                    Non-surgical skin resurfacing procedures in Southeast Asia grew
+                    by 28% year-on-year, with Malaysia showing above-average
+                    demand for combination scar protocols.
+                  </p>
+                </div>
             </motion.div>
           </div>
         </motion.div>
@@ -762,12 +774,10 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
             variants={fadeInUp}
             className="mt-6 p-4 bg-wine/5 rounded-xl text-center"
           >
-            <p className="text-brown font-inter">
-              In real practice, many patients benefit from blending these
-              modalities. Rolling scars often need subcision first, then
-              resurfacing. Boxcar scars respond well to laser or microneedling.
-              Mixed scarring requires a combination approach.
+            <p className="text-center text-brown mt-4">
+              In real practice, many patients benefit from blending these modalities. Rolling scars often need subcision first, then resurfacing. Boxcar scars respond well to <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">laser</Link> or microneedling. Mixed scarring requires a combination approach. For residual pigmentation issues, visit our <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia page</Link>.
             </p>
+
           </motion.div>
         </motion.div>
       </section>
@@ -1155,17 +1165,17 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
               Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="#" className="hover:text-cream transition-colors">
-                Explore Pico Laser Treatment
-              </a>
-              <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">
-                Explore Fractional CO2 Laser
-              </a>
-              <span>•</span>
-              <a href="#" className="hover:text-cream transition-colors">
-                Explore RF Microneedling
-              </a>
+                <a href="/skin/pico-laser-malaysia/" className="hover:text-cream transition-colors">
+                  Explore Pico Laser Treatment
+                </a>
+                <span>•</span>
+                <a href="/skin/acne-scar-treatment-malaysia/" className="hover:text-cream transition-colors">
+                  Explore Fractional CO2 Laser
+                </a>
+                <span>•</span>
+                <a href="/skin/acne-scar-treatment-malaysia/" className="hover:text-cream transition-colors">
+                  Explore RF Microneedling
+                </a>
             </div>
           </motion.div>
         </motion.div>
