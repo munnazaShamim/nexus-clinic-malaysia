@@ -300,7 +300,6 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* What Sculptra Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -327,11 +326,9 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If Sculptra Matches Your Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <p className="text-center text-brown/50 text-sm">
+              Sculptra stimulates natural collagen production to restore facial volume and improve skin firmness gradually over time. For patients with significant skin laxity or textural concerns alongside volume loss, combining Sculptra with <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser in Malaysia</Link> can address both collagen rebuilding and surface refinement. Those with pigmentation irregularities from sun damage may also benefit from <Link href="/skin/melasma-treatment-malaysia/" className="text-wine font-bold italic">melasma treatment in Malaysia</Link> to achieve an even complexion while collagen matures.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -405,10 +402,9 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter">
-              Some patients are better suited for one. Some need a combination plan. The right answer depends on whether the issue 
-              is true collagen loss, structural hollowing, shape deficiency, or all three.
-            </p>
+              <p className="text-center text-brown/50 mt-4">
+                Unlike hyaluronic acid fillers that provide immediate volume, Sculptra works gradually by rebuilding your own collagen over several months. Patients with thinning skin or early facial hollowing may enhance their results by pairing Sculptra with <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> for improved hydration and skin quality. Those concerned about under-eye hollows or tear trough deficiencies should consult our <Link href="/face/under-eye-filler-malaysia/" className="text-wine font-bold italic">under eye filler in Malaysia</Link> page for structural correction options that complement Sculptra's midface restoration.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -548,9 +544,9 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              At Nexus Clinic KL, pricing is discussed before treatment begins. No hidden charges. No pressure to proceed.
-            </p>
+              <p className="text-center text-brown/50 text-sm mt-4">
+                Sculptra is priced per vial, with most patients requiring 2 to 3 vials across 2 to 3 sessions for optimal collagen stimulation. For patients seeking maintenance of skin hydration and glow during the collagen-building phase, regular <Link href="/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> sessions can support surface skin health. Those with active acne or post-inflammatory marks may also explore <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> to address textural concerns alongside Sculptra's volumising effects.
+              </p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">

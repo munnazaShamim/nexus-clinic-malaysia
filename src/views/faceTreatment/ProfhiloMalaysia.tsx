@@ -299,7 +299,6 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* What Profhilo Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -326,11 +325,9 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If Profhilo Matches Your Skin Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <p className="text-center text-brown/50 mt-4">
+              Profhilo improves skin hydration, elasticity, and overall radiance without changing facial volume. For patients with dull, dehydrated skin exacerbated by urban pollution and UV exposure, pairing Profhilo with regular <Link href="https://www.nexus-clinic.com/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> can enhance surface glow and deep hydration. Those experiencing early signs of ageing around the eyes may also benefit from <Link href="https://www.nexus-clinic.com/face/under-eye-filler-malaysia/" className="text-wine font-bold italic">under eye filler in Malaysia</Link> to address structural hollowing while Profhilo improves surrounding skin quality.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -398,9 +395,9 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter">
-              Some patients need one. Some need both. The right answer depends on what is actually causing the concern.
-            </p>
+          <p className="text-center text-brown/50 mt-4">
+            Unlike dermal fillers that add direct volume, Profhilo works by spreading beneath the skin to boost hydration and stimulate collagen remodelling. Patients with age-related collagen loss causing flattened cheeks or softened jawlines may achieve better structural support by combining Profhilo with <Link href="https://www.nexus-clinic.com/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link>, which rebuilds facial volume gradually over months. For those seeking overall skin health maintenance, our <Link href="https://www.nexus-clinic.com" className="text-wine font-bold italic">aesthetic clinic in Kuala Lumpur</Link> offers comprehensive doctor-led treatment planning.
+          </p>
           </motion.div>
         </motion.div>
       </section>
@@ -539,18 +536,11 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              At Nexus Clinic KL, your confirmed price is discussed before treatment begins. No pressure. No hidden charges.
+            <p className="text-brown/50 font-inter text-sm">
+                Profhilo is typically priced as a 2-session course, with final cost depending on treatment area and product authenticity. Patients with persistent facial redness or sensitivity may first require barrier repair, which can be assessed through our <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment in Malaysia</Link> options. Those looking to extend Profhilo's hydrating effects can combine it with <Link href="/skin/skin-whitening-treatment-malaysia/" className="text-wine font-bold italic">skin whitening treatment in Malaysia</Link> for a brighter, more even complexion.
             </p>
           </motion.div>
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Get Your Personalised Profhilo Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
+        
         </motion.div>
       </section>
 

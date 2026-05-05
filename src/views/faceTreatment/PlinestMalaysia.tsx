@@ -311,7 +311,6 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* What Plinest Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -338,11 +337,9 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If Plinest Matches Your Skin Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <p className="text-center text-brown/50 mt-4">
+              Plinest uses polynucleotides to support skin hydration, elasticity, and tissue repair for a smoother, healthier complexion. For patients with active acne contributing to textural damage, combining Plinest with <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment in Malaysia</Link> can address both breakouts and healing. Those with post-inflammatory marks may also benefit from <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment in Malaysia</Link> to achieve an even skin tone while Plinest rebuilds skin quality.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -373,7 +370,6 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* Plinest vs Filler vs Skin Booster Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -414,9 +410,8 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter">
-              Plinest is better positioned as a regenerative polynucleotide treatment for the skin itself. It is chosen when the 
-              goal is not just plumping, but improvement in the tissue environment, elasticity, hydration and surface quality.
+            <p className="text-center text-brown/50 mt-4">
+              Unlike dermal fillers that add volume or basic skin boosters that provide only hydration, Plinest focuses on deep polynucleotide regeneration for lasting skin improvement. Patients with fragile under-eye skin or dark circles may find additional benefit from <Link href="/face/under-eye-filler-malaysia/" className="text-wine font-bold italic">under eye filler in Malaysia</Link> to address structural hollowing alongside Plinest. Those seeking overall skin health maintenance can pair Plinest with <Link href="/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> for surface-level glow and hydration between sessions.
             </p>
           </motion.div>
         </motion.div>
@@ -552,8 +547,8 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              At Nexus Clinic KL, pricing should always be explained clearly before treatment begins. No hidden charges. No rushed decisions.
+          <p className="text-center text-brown mt-4">
+              Plinest is typically priced as a course of 3 to 4 sessions, with final cost depending on treatment area and product quantity required. Patients with age-related collagen loss affecting facial structure may achieve better long-term results by combining Plinest with <Link href="/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link> for deeper collagen stimulation. Those concerned about fine lines and skin laxity on the neck and décolletage can also explore <Link href="/face/profhilo-malaysia/" className="text-wine font-bold italic">Profhilo in Malaysia</Link> as a complementary bio-remodelling treatment.
             </p>
           </motion.div>
           

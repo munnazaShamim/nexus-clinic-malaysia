@@ -312,7 +312,6 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* What Rejuran Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -339,11 +338,9 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If Rejuran Matches Your Skin Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <p className="text-center text-brown/50 mt-4">
+              Rejuran uses polynucleotides to stimulate skin repair, improve elasticity, and reduce the appearance of acne scars and enlarged pores. For patients with active breakouts contributing to ongoing scarring, combining Rejuran with <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment in Malaysia</Link> can address both active lesions and existing textural damage. Those with post-inflammatory dark marks may also benefit from <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment in Malaysia</Link> to achieve a more even skin tone while Rejuran rebuilds skin quality.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -380,7 +377,6 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* Rejuran vs Filler vs Skin Booster Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -425,6 +421,10 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
               Rejuran is better positioned for people who want the skin itself to behave better and look healthier over time. 
               That distinction is strongly reflected in the way clinics and brochures describe it as a skin healer or regenerative 
               injectable rather than a contouring product.
+            </p>
+
+            <p className="text-center text-brown mt-4">
+              Unlike dermal fillers that add volume or basic skin boosters that provide only hydration, Rejuran focuses on deep skin regeneration and collagen support. Patients with fragile under-eye skin or vascular dark circles may find additional benefit from <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to complement Rejuran's healing effects. Those with deeper acne scars requiring structural correction can explore <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> for more aggressive resurfacing alongside Rejuran maintenance.
             </p>
           </motion.div>
         </motion.div>
@@ -560,9 +560,9 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              At Nexus Clinic KL, pricing should always be explained clearly before treatment starts. No hidden charges. No rushed upselling.
-            </p>
+            <p className="text-brown/50 font-inter text-sm">
+                    Rejuran is typically priced as a course of 3 sessions, with final cost depending on product type and treatment area. Patients seeking to maintain skin hydration between Rejuran sessions can schedule regular <Link href="/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> for zero-downtime surface refreshment. For those with hormonal skin concerns affecting overall skin quality, a concurrent assessment through <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">PCOS treatment in Malaysia</Link> may help address underlying drivers of persistent breakouts and textural damage.
+              </p> 
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">

@@ -81,15 +81,38 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  async headers() {
+  // async headers() {
+  //   return [
+  //     { source: "/(.*)", headers: securityHeaders },
+  //     {
+  //       source: '/images/(.*)',
+  //       headers: [
+  //         {
+  //           key: 'Cache-Control',
+  //           value: 'public, max-age=31536000, immutable',
+  //         },
+  //       ],
+  //     },
+  //   ];
+  // },
+    async headers() {
     return [
-      { source: "/(.*)", headers: securityHeaders },
       {
-        source: '/images/(.*)',
+        source: "/(.*)",
+        headers: [
+          ...securityHeaders,
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=31536000, stale-while-revalidate=60",
+          },
+        ],
+      },
+      {
+        source: "/images/(.*)",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },

@@ -295,7 +295,6 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* What Karisma Helps Improve Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -322,11 +321,9 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Book a Consultation to See If Karisma Matches Your Skin Goals
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+              <p className="text-center text-brown/50 text-sm">
+                Karisma Rh Collagen supports type I collagen production to improve skin firmness, elasticity, and overall structure without adding obvious filler volume. For patients with active skin concerns affecting collagen health, combining Karisma with <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">acne treatment in Malaysia</Link> can address breakouts while supporting tissue repair. Those with post-inflammatory pigmentation may also benefit from <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment in Malaysia</Link> to achieve an even complexion during the collagen renewal process.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -357,7 +354,6 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* Karisma vs Filler vs Skin Booster Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -399,8 +395,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter">
-              Karisma is better positioned as a collagen-supporting bio-restorative injectable that aims to improve the skin itself, 
-              not just add water or create shape.
+              Unlike hyaluronic acid fillers that create immediate volume or basic skin boosters that add only hydration, Karisma focuses on collagen restoration for long-term skin quality improvement. Patients with fragile under-eye skin or hollowing may find better results by pairing Karisma with <Link href="/face/under-eye-filler-malaysia/" className="text-wine font-bold italic">under eye filler in Malaysia</Link> for structural support. Those seeking overall skin brightness and maintenance can complement Karisma with regular <Link href="/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> sessions for surface-level glow.
             </p>
           </motion.div>
         </motion.div>
@@ -538,7 +533,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
-              Final pricing is confirmed after consultation based on your skin condition, treatment area and doctor recommendation.
+              Karisma is typically recommended as a 2-session course spaced 1 month apart, with maintenance every 6 to 9 months depending on skin condition. Patients with age-related collagen loss affecting facial volume may achieve deeper structural improvement by combining Karisma with <Link href="/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link> for gradual collagen stimulation. Those concerned with fine lines and skin laxity on the neck and décolletage can also explore <Link href="/face/profhilo-malaysia/" className="text-wine font-bold italic">Profhilo in Malaysia</Link> as a complementary bio-remodelling treatment for overall skin hydration and firmness.
             </p>
           </motion.div>
           

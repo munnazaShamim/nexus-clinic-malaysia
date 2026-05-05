@@ -304,6 +304,10 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
               </Link>
             </motion.div>
           </div>
+
+        <p className="text-center text-sm text-brown/50 mt-8">
+          NEWEST restores skin hydration, elasticity, and radiance through polynucleotide regeneration. For patients with age-related volume loss in the midface, <Link href="https://www.nexus-clinic.com/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra Malaysia</Link> offers deeper collagen stimulation. Those with hollow under-eyes may also benefit from <Link href="https://www.nexus-clinic.com/face/under-eye-filler-malaysia/" className="text-wine font-bold italic">under eye filler Malaysia</Link> combined with NEWEST.
+        </p>
         </motion.div>
       </section>
 
@@ -369,7 +373,6 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
         </motion.div>
       </section>
 
-      {/* NEWEST vs Filler vs Skin Booster Section */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -411,8 +414,7 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter">
-              NEWEST combines regenerative PN support with hydration-focused HA support, giving it a position between classic 
-              polynucleotide repair and obvious hydrating skin boosters.
+               NEWEST works gradually on skin quality rather than adding volume. Patients needing texture refinement and scar reduction can explore <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment Malaysia</Link>. Those with uneven pigmentation alongside dehydration may pair NEWEST with <Link href="/skin/melasma-treatment-malaysia/" className="text-wine font-bold italic">melasma treatment Malaysia</Link>.
             </p>
           </motion.div>
         </motion.div>
@@ -494,18 +496,11 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              Final pricing is confirmed after consultation based on your skin condition, treatment area and doctor recommendation.
+            <p className="text-brown/50 font-inter text-sm">
+               NEWEST requires 3 to 4 sessions for optimal results. Patients seeking maintenance can add <Link href="/skin/laser-hair-removal-malaysia/" className="text-wine font-bold italic">laser hair removal Malaysia</Link> for facial grooming. Those with persistent redness or sensitivity may also review <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment Malaysia</Link> alongside their skin booster plan.
             </p>
           </motion.div>
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
-              Get Your Personalised NEWEST Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
+        
         </motion.div>
       </section>
 
