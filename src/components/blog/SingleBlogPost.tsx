@@ -454,81 +454,45 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
     processLists();
     processParagraphs();
 
-    // Rewrite blog.nexus-clinic.com links to point to the main domain
-    // const processLinks = () => {
-    //   const container = contentRef.current;
-    //   if (!container) return;
-    //   const links = container.querySelectorAll('a[href]');
-    //   links.forEach((link) => {
-    //     const href = link.getAttribute('href') || '';
-    //     if (href.includes('blog.nexus-clinic.com')) {
-    //       try {
-    //         const url = new URL(href);
-    //         const pathname = url.pathname.replace(/^\//, '').replace(/\/$/, '');
-    //         const newHref = pathname ? `/blogs/${pathname}` : '/blogs';
-    //         link.setAttribute('href', newHref);
-    //         // Internal link — remove _blank
-    //         link.removeAttribute('target');
-    //         link.removeAttribute('rel');
-    //       } catch {
-    //         // Not a valid URL, skip
-    //       }
-    //     }
-    //   });
-    // };
-    // processLinks();
-      const processLinks = () => {
-        const container = contentRef.current;
-        if (!container) return;
+  const processLinks = () => {
+    const container = contentRef.current;
+    if (!container) return;
 
-        const links = container.querySelectorAll('a[href]');
+    const links = container.querySelectorAll('a[href]');
 
-        links.forEach((link) => {
-          const href = link.getAttribute('href') || '';
+    links.forEach((link) => {
+      const href = link.getAttribute('href') || '';
 
-          if (href.includes('blog.nexus-clinic.com')) {
-            try {
-              const url = new URL(href);
+      if (href.includes('blog.nexus-clinic.com')) {
+        try {
+          const url = new URL(href);
+          
+          // Get the slug (everything after the domain)
+          const slug = url.pathname.split('/').filter(Boolean).pop() || '';
 
-              const pathParts = url.pathname.split('/').filter(Boolean);
-              const slug = pathParts.pop() || '';
+          let newHref = '/';
 
-              let newHref = '/';
-
-              // ✅ 1. Homepage
-              if (pathParts.length === 0 && !slug) {
-                newHref = '/';
-              }
-
-              // ✅ 2. Blog root or category pages
-              else if (
-                slug === 'blog' ||
-                pathParts.includes('category')
-              ) {
-                newHref = '/blogs';
-              }
-
-              // ✅ 3. Check in your Next.js pages
-              else if (slugMap[slug]) {
-                newHref = slugMap[slug];
-              }
-
-              // ✅ 4. Default → blog
-              else {
-                newHref = `/blogs/${slug}`;
-              }
-
-              link.setAttribute('href', newHref);
-              link.removeAttribute('target');
-              link.removeAttribute('rel');
-
-            } catch (err) {
-              console.log('Link processing error:', err);
-            }
+          // If slug matches a treatment page, go there
+          if (slugMap[slug]) {
+            newHref = slugMap[slug];
           }
-        });
-      };
-     processLinks();
+          // Otherwise go to homepage
+          else {
+            newHref = '/';
+          }
+
+          link.setAttribute('href', newHref);
+          link.removeAttribute('target');
+          link.removeAttribute('rel');
+
+        } catch (err) {
+          console.log('Link processing error:', err);
+        }
+      }
+    });
+  };
+
+  processLinks();
   }, [content]);
 
   return (

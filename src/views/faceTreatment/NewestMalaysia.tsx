@@ -297,11 +297,9 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If NEWEST Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                Clinical evidence supports the role of polynucleotides in skin regeneration. A <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11311621/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">2024 review by Lee KWA et al.</a> demonstrated that polynucleotides improve skin texture, enhance elasticity, stimulate collagen production, and support overall skin rejuvenation, aligning with their role in regenerative injectable skin treatments.
+              </p>
             </motion.div>
           </div>
 

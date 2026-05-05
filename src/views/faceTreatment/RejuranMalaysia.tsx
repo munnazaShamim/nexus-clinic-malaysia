@@ -302,11 +302,9 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If Rejuran Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the role of polynucleotides in tissue repair and skin regeneration. A study by <a href="https://pubmed.ncbi.nlm.nih.gov/10763787/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">Sini P, Denti A, Cattarini G, et al.</a> demonstrated that polynucleotides promote tissue repair, stimulate fibroblast activity, and support collagen-related skin regeneration, supporting their use in treatments such as Rejuran for improving skin texture, elasticity, and overall skin recovery.
+                </p>
             </motion.div>
           </div>
         </motion.div>

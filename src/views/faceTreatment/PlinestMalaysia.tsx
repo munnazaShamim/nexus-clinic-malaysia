@@ -301,11 +301,9 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If Plinest Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the role of polynucleotides in skin regeneration. A 2024 review by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11311621/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">Lee KWA, Kim JH, Park KY, et al.</a> demonstrates that polynucleotides improve skin texture, enhance elasticity, support fibroblast activity, and promote tissue regeneration, supporting their use in treatments such as Plinest for improving overall skin quality and facial rejuvenation.
+                </p>
             </motion.div>
           </div>
         </motion.div>

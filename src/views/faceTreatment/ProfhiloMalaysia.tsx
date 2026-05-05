@@ -289,11 +289,9 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If Profhilo Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the role of stabilised hyaluronic acid in skin rejuvenation. A <a href="https://pubmed.ncbi.nlm.nih.gov/23614718/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">review by De Boulle K, Glogau R, Kono T, et al.</a> demonstrates that stabilised hyaluronic acid improves skin hydration, enhances elasticity, and contributes to dermal remodelling, supporting its use in injectable treatments such as Profhilo for improving overall skin quality and firmness.
+                </p>
             </motion.div>
           </div>
         </motion.div>

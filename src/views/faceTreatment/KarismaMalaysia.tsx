@@ -285,11 +285,10 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If Karisma Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the role of collagen-based biomaterials in skin regeneration. A comprehensive review by Wang Y, et al. explains that collagen-based biomaterials promote fibroblast activity, support tissue regeneration, and improve skin structure and elasticity due to their excellent biocompatibility and natural distribution in tissues. 
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/36800415/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">View the full study on PubMed</a>
+                </p>
             </motion.div>
           </div>
         </motion.div>

@@ -290,11 +290,9 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If Sculptra Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the role of poly-L-lactic acid in collagen stimulation. A <a href="https://pubmed.ncbi.nlm.nih.gov/18380202/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">review by Vleggaar D and Fitzgerald R</a> explains how poly-L-lactic acid (PLLA) stimulates collagen production over time, supporting its use in treatments like Sculptra for gradual volume restoration, improved skin structure and long-lasting facial rejuvenation.
+                </p>
             </motion.div>
           </div>
         </motion.div>

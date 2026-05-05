@@ -286,11 +286,9 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
                   className="object-cover"
                 />
               </div>
-              <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us/">
-                Find Out If a Chemical Peel Is Right for You
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <p className="text-brown/50 mt-8 text-sm italic border-l-4 rounded-lg border-wine p-4">
+                  Clinical evidence supports the use of chemical peels for skin rejuvenation. A 2018 review by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6122508/" target="_blank" rel="noopener noreferrer nofollow" className="text-wine font-bold italic hover:underline">Soleymani T, Lanoue J, and Rahman Z</a> explains that chemical peels induce controlled skin injury leading to exfoliation, collagen remodeling, and skin regeneration, improving texture, pigmentation, acne scars, and overall skin appearance, supporting their use in treatments for skin rejuvenation and resurfacing.
+                </p>
             </motion.div>
           </div>
         </motion.div>
