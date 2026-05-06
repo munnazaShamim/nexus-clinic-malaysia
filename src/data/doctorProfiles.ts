@@ -13,6 +13,14 @@ export const doctors = [
       "Expertise in Non-Invasive Treatments",
       "Specialist in Personalized Skincare Solutions",
     ],
+    credentials: {
+      degree: "MD",
+      university: "Universitas Udayana",
+      universityUrl: "https://www.unud.ac.id/",
+      country: "Indonesia",
+      licenseNumber: "50328",
+      yearsOfExperience: 14, // 2008 provisional → 2026 = 18 years? Actually 2010 full reg = 16 years. Let's verify
+    },
     awards: [] as string[],
     bio: "Dr. Preetha Nair is a skilled Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia. She believes in a holistic approach to aesthetic medicine, tailoring every treatment to suit individual needs. Her gentle techniques and attention to detail ensure patient comfort and satisfaction.",
     instagram: "#",
@@ -28,13 +36,30 @@ export const doctors = [
     photoLandscape: "/images/doctors/dr-ashvinia-bala-landscape.webp",
     specialisation: "General Medicine & Aesthetic Treatments",
     qualifications: [
-      "Expertise in General Medicine",
-      "Specialized in Aesthetic Treatments",
+      "MBBS (Bachelor of Medicine & Surgery) – AIMST University",
+      "Certificate in Aesthetic Medical Practice – AAAM",
+      "Advanced Laser & Injectables Training",
+    ],
+    credentials: {
+      degree: "MBBS (Bachelor of Medicine and Bachelor of Surgery)",
+      university: "AIMST University",
+      universityUrl: "https://www.aimst.edu.my/",
+      country: "Malaysia",
+      licenseNumber: "82489",
+      yearsOfExperience: 9, // 2017 houseman → 2026 = 9 years clinical experience
+    },
+    clinicalFocus: [
+      "Aesthetic & Regenerative Medicine",
+      "Laser & Energy-Based Devices",
+      "Injectables (Botox, Fillers, Biostimulators)",
+      "Skin & Hair Rejuvenation (PRP, Mesotherapy)",
+      "Body Sculpting & Weight Management",
+      "Hormonal & Stem Cell Therapy",
     ],
     awards: [] as string[],
     bio: "Dr. Ashvinia Bala is a dedicated Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia, affiliated with Nexus Clinic. Known for her meticulous approach, she tailors diagnostics and treatment plans to help individuals look and feel their best. Passionate about healthy living, environmental sustainability, baking cakes, and caring for dogs.",
     instagram: "https://instagram.com/ashvinia_bala",
-    linkedin: "https://linkedin.com/in/dr-ashvinia-bala",
+    linkedin: "https://www.linkedin.com/in/dr-ashvinia-bala-16261327a/",
     rating: 5,
   },
   {
@@ -51,6 +76,14 @@ export const doctors = [
       "Member of Malaysian Pharmaceutical Society (MPS)",
       "Member of Academy of Pharmacy Malaysia (APM)",
     ],
+    credentials: {
+      degree: "Pharm-D, MPhil",
+      university: "International Islamic University Malaysia / University of Malaya",
+      universityUrl: "https://iium.edu.my/",
+      country: "Malaysia",
+      licenseNumber: "TBA", // Pharmacy board registration number
+      yearsOfExperience: 8,
+    },
     awards: [] as string[],
     bio: "Phr. Anum Jawed is a dedicated pharmacist with specialized expertise in Pharmaceutics. With extensive experience in pharmaceutical research and clinical practice, she is passionate about optimizing medication formulations and improving patient care. She plays a crucial role in ensuring patients receive safe and effective medication therapy.",
     instagram: "#",

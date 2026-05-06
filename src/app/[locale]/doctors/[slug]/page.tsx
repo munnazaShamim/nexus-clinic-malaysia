@@ -139,7 +139,6 @@ export default async function DoctorProfilePage({
 
       {/* Details */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Qualifications */}
         <div className="bg-cream rounded-2xl p-8 border border-taupe/10">
           <div className="flex items-center gap-3 mb-6">
             <GraduationCap className="w-5 h-5 text-wine" />
@@ -154,7 +153,40 @@ export default async function DoctorProfilePage({
             ))}
           </ul>
         </div>
-
+        <div className="bg-cream rounded-2xl p-8 border border-taupe/10">
+          <div className="flex items-center gap-3 mb-6">
+            <GraduationCap className="w-5 h-5 text-wine" />
+            <h2 className="font-georgia text-brown text-xl">Credentials</h2>
+          </div>
+          
+          <div className="space-y-3 text-taupe text-sm">
+            <div className="flex flex-wrap items-baseline gap-2">
+              <span className="font-medium text-brown">Degree:</span>
+              <span>{doctor.credentials.degree}</span>
+              <span>·</span>
+              <a 
+                href={doctor.credentials.universityUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wine hover:underline"
+              >
+                {doctor.credentials.university}
+              </a>
+              <span>·</span>
+              <span>{doctor.credentials.country}</span>
+            </div>
+            
+            <div>
+              <span className="font-medium text-brown">License No:</span>
+              <span> {doctor.credentials.licenseNumber}</span>
+            </div>
+            
+            <div>
+              <span className="font-medium text-brown">Experience:</span>
+              <span> {doctor.credentials.yearsOfExperience}+ years</span>
+            </div>
+          </div>
+        </div>
         {/* Awards */}
         {doctor.awards.length > 0 && (
           <div className="bg-cream rounded-2xl p-8 border border-taupe/10">
@@ -177,12 +209,28 @@ export default async function DoctorProfilePage({
             </ul>
           </div>
         )}
+        {/* Clinical Focus - optional section */}
+          {doctor.clinicalFocus && (
+            <div className="bg-cream rounded-2xl p-8 border border-taupe/10 mb-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Stethoscope className="w-5 h-5 text-wine" />
+                <h2 className="font-georgia text-brown text-xl">Clinical Focus</h2>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {doctor.clinicalFocus.map((area) => (
+                  <span key={area} className="bg-white/60 text-brown text-sm px-3 py-1.5 rounded-full border border-taupe/20">
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
       </section>
 
       {/* Back to doctors */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 text-center">
         <Link
-          href="/doctors"
+          href="/doctors/"
           className="inline-flex items-center gap-2 text-wine font-semibold text-sm hover:text-brown transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
