@@ -3,7 +3,7 @@
 export const doctors = [
   {
     id: 1,
-    slug: "preetha-nair",
+    slug: "dr-preetha-nair-aesthetic-doctor",
     name: "Dr. Preetha Nair",
     title: "Aesthetic Medical Doctor | Advocate for Natural Beauty",
     photo: "/images/doctors/dr-preetha-nair.webp",

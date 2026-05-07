@@ -152,7 +152,6 @@ export default function DrPreethaNairPage() {
           </div>
         </section>
 
-        {/* Qualifications & Areas of Expertise Row */}
         <section className="py-16 px-4 bg-light">
           <motion.div
             variants={staggerContainer}
@@ -198,7 +197,6 @@ export default function DrPreethaNairPage() {
                 </div>
               </motion.div>
 
-              {/* Areas of Expertise */}
               <motion.div variants={fadeInRight} className="bg-cream rounded-2xl p-8 border border-taupe/10">
                 <div className="flex items-center gap-3 mb-6">
                   <Stethoscope className="w-6 h-6 text-wine" />
@@ -206,12 +204,13 @@ export default function DrPreethaNairPage() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {content.areasOfExpertise.map((area) => (
-                    <span
-                      key={area}
-                      className="bg-white/60 text-brown text-sm px-3 py-1.5 rounded-full border border-taupe/20"
+                    <Link
+                      key={area.name}
+                      href={area.link}
+                      className="text-center text-wine text-sm hover:text-brown hover:font-bold transition-colors bg-white/60  px-3 py-1.5 rounded-full border border-wine/20"
                     >
-                      {area}
-                    </span>
+                      {area.name}
+                    </Link>
                   ))}
                 </div>
               </motion.div>
@@ -240,7 +239,6 @@ export default function DrPreethaNairPage() {
           </motion.div>
         </section>
 
-        {/* Treatments Performed */}
         <section className="py-16 px-4 bg-light">
           <motion.div
             variants={staggerContainer}
@@ -261,16 +259,16 @@ export default function DrPreethaNairPage() {
                   <Link
                     key={treatment.name}
                     href={treatment.href}
-                    className="text-wine text-sm hover:text-brown hover:underline transition-colors"
+                    className="text-center text-wine text-sm hover:text-brown hover:font-bold transition-colors bg-white/60  px-3 py-1.5 rounded-full border border-wine/20"
                   >
                     {treatment.name}
                   </Link>
                 ))}
               </div>
               {/* HIFU Note - only show if URL not supplied */}
-              <p className="text-taupe text-xs mt-4 italic">
+              {/* <p className="text-taupe text-xs mt-4 italic">
                 * HIFU treatment link will be added when the service page is active
-              </p>
+              </p> */}
             </motion.div>
           </motion.div>
         </section>

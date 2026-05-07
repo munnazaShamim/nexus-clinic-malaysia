@@ -10,6 +10,11 @@ import {
   Sparkles,
   Droplets,
   Calendar,
+  Award, 
+  ShieldCheck, 
+  Syringe, 
+  Users, 
+  Sparkle,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -68,6 +73,56 @@ const faqData = [
   },
 ];
 
+const features = [
+  {
+    id: 1,
+    icon: Calendar,
+    title: "Established Since 2001",
+    description: "Providing aesthetic and anti-aging treatments in Malaysia for over two decades."
+  },
+  {
+    id: 2,
+    icon: Award,
+    title: "Best Injector Award Winning Clinic",
+    description: "Recognised for excellence in aesthetic injectables, patient satisfaction and natural-looking outcomes."
+  },
+  {
+    id: 3,
+    icon: Sparkles,
+    title: "Natural-Looking Botox Results",
+    description: "Botox is carefully planned to soften lines while maintaining natural facial expressions."
+  },
+  {
+    id: 4,
+    icon: ShieldCheck,
+    title: "MOH Registered & LCP Certified Clinic",
+    description: "Treatments are performed under Malaysian medical aesthetic safety standards and protocols."
+  },
+  {
+    id: 5,
+    icon: Syringe,
+    title: "Authentic Botox & Safety Assurance",
+    description: "Only authentic medically approved botulinum toxin products are used with proper storage and dosing protocols."
+  },
+  {
+    id: 6,
+    icon: Activity,
+    title: "Personalised Treatment Planning",
+    description: "Every Botox treatment is tailored according to facial anatomy, muscle strength and aging patterns."
+  },
+  {
+    id: 7,
+    icon: Users,
+    title: "Trusted by Patients Across Kuala Lumpur",
+    description: "Known for consistent results, detailed consultations and long-term patient trust."
+  },
+  {
+    id: 8,
+    icon: Sparkle,
+    title: "Complete Anti-Aging Solutions",
+    description: "Patients may also be guided on complementary treatments including fillers, skin boosters and collagen stimulators for balanced rejuvenation."
+  }
+];
 const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "face/botoxMalaysia");
 
@@ -533,7 +588,53 @@ const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* FAQ Section - Using imported FAQ component */}
+      <motion.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        className="relative py-20 px-4 md:px-8 lg:px-16 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('/images/face/botox-bg.png')` }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className="relative z-10 max-w-6xl mx-auto">
+            <div className="text-center py-8">
+              <motion.h2
+                variants={fadeInUp}
+                className="text-3xl md:text-6xl text-light mb-4 font-georgia"
+              >
+                Why Patients Choose <br /> Nexus Clinic KL for Botox
+              </motion.h2>
+              <motion.p
+                variants={fadeInUp}
+                className="text-light text-sm md:text-base leading-relaxed"
+              >
+                With over two decades of expertise, Nexus Clinic KL has built a reputation for natural-looking, 
+                patient-focused aesthetic care. From award-winning injectors to MOH-registered safety protocols, 
+                every treatment is planned with precision, transparency, and your unique facial anatomy in mind.
+              </motion.p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-5">
+              {features.map((feature) => (
+                <motion.div
+                  key={feature.id}
+                  variants={fadeInUp}
+                  className="bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/20 hover:bg-white/15 transition-all"
+                >
+                  <feature.icon className="w-8 h-8 text-light mb-3" />
+                  <h3 className="font-georgia text-lg font-bold text-light mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-light text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+      </motion.section>
+
       <FAQWithSchema data={faqData} />
 
       {/* Final CTA */}

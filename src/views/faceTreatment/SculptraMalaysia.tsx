@@ -6,7 +6,26 @@ import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity, Leaf, Recycle, Award } from "lucide-react";
+import { 
+  ArrowRight,
+  CheckCircle,
+  Clock,
+  Syringe,
+  Heart,
+  Shield,
+  Sparkles,
+  Gem,
+  Eye,
+  Droplets,
+  TrendingUp,
+  Activity, 
+  Leaf,
+  Award,
+  Building2,
+  FlaskConical,
+  ShieldCheck,
+  ClipboardList,
+  } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
@@ -167,6 +186,45 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
     "Avoid strong heat exposure, sauna or steam for the first 24 to 48 hours",
     "Follow your doctor's aftercare guidance closely because Sculptra protocols can differ from standard filler",
     "Allow time for collagen rebuilding before judging the final result",
+  ];
+
+  const features = [
+    {
+      id: 1,
+      icon: Building2,
+      title: "Established Aesthetic Clinic Since 2001",
+      description: "Nexus Clinic KL has been serving patients in Kuala Lumpur since 2001, with long-standing experience in aesthetic medicine, facial rejuvenation and injectable treatments."
+    },
+    {
+      id: 2,
+      icon: Award,
+      title: "Best Injector Award-Winning Clinic",
+      description: "Nexus Clinic KL is recognised for injectable treatment expertise, with award-winning injector experience focused on natural-looking facial enhancement and safe aesthetic results."
+    },
+    {
+      id: 3,
+      icon: FlaskConical,
+      title: "Experienced in Collagen-Stimulating Injectables",
+      description: "Sculptra works differently from regular dermal fillers. Nexus Clinic KL focuses on collagen stimulation, facial structure support, skin firmness and gradual volume restoration instead of sudden overfilling."
+    },
+    {
+      id: 4,
+      icon: ShieldCheck,
+      title: "Authentic Sculptra Product Assurance",
+      description: "Only authentic Sculptra products are used in a proper clinical setting, with careful product handling, preparation, dosage planning and treatment protocols."
+    },
+    {
+      id: 5,
+      icon: ClipboardList,
+      title: "Personalised Sculptra Treatment Planning",
+      description: "Each Sculptra plan is based on facial volume loss, skin quality, treatment area, number of vials required and realistic collagen-building timelines."
+    },
+    {
+      id: 6,
+      icon: Leaf,
+      title: "Natural, Gradual Result Philosophy",
+      description: "The goal is not to make the face look filled or changed overnight. Sculptra is planned to restore support gradually, helping patients look fresher while still looking like themselves."
+    }
   ];
 
   const faqData = [
@@ -668,7 +726,60 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
           </motion.div>
         </motion.div>
       </section>
+            <motion.section
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              className="relative py-20 px-4 md:px-8 lg:px-16 bg-fixed bg-cover bg-center bg-no-repeat"
+              style={{ 
+                backgroundImage: `url('/images/face/sculptra-bg.webp')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center 25%',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed'
+              }}
+            >
 
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className="relative z-10 max-w-6xl mx-auto">
+            <div className="text-center py-8">
+              <motion.h2
+                variants={fadeInUp}
+                className="text-3xl md:text-6xl text-light mb-4 font-georgia"
+              >
+                Nexus Clinic’s Expertise in Sculptra Treatment
+              </motion.h2>
+              <motion.p
+                variants={fadeInUp}
+                className="text-light text-sm md:text-base leading-relaxed"
+              >
+                Sculptra is not a basic filler treatment. It requires proper facial assessment, 
+                correct product preparation, careful injection technique and a clear understanding 
+                 of how collagen rebuilds gradually over time. 
+
+              </motion.p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-5">
+              {features.map((feature) => (
+                <motion.div
+                  key={feature.id}
+                  variants={fadeInUp}
+                  className="bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/20 hover:bg-white/15 transition-all"
+                >
+                  <feature.icon className="w-8 h-8 text-light mb-3" />
+                  <h3 className="font-georgia text-lg font-bold text-light mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-light text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+      </motion.section>
       {/* FAQ Section */}
       <FAQWithSchema data={faqData} />
       
