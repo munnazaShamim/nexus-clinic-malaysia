@@ -71,10 +71,10 @@ export const doctors = [
     photoLandscape: "/images/doctors/phr-anum-jawed-landscape.webp",
     specialisation: "Drug Formulation & Medication Therapy Management",
     qualifications: [
-      "Pharm-D: International Islamic University Malaysia (IIUM)",
-      "MPhil in Pharmaceutics: University of Malaya (UM), Malaysia",
-      "Member of Malaysian Pharmaceutical Society (MPS)",
-      "Member of Academy of Pharmacy Malaysia (APM)",
+      "Pharm-D from the University of Karachi",
+      "MPhil in Pharmaceutics from the University of Karachi",
+      "Experience with DoctorOnCall",
+      "Contributions to initiatives associated with the Ministry of Health Malaysia",
     ],
     credentials: {
       degree: "Pharm-D, MPhil",
