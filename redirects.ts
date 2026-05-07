@@ -207,6 +207,8 @@ export const redirectsList: [string, string][] = [
   ["/en/fractional-laser-resurfacing-malaysia/", "/fraqtional-laser-resurfacing/"],
   ["/en/fraxel-laser-treatment-in-malaysia/", "/fraqtional-laser-resurfacing/"],
     // ["", ""],
+  ["/doctors/preetha-nair/", "/doctors/dr-preetha-nair-aesthetic-doctor/"],
+
 ];
 
 

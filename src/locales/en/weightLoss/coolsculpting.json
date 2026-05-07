@@ -1,143 +1,252 @@
 {
   "hero": {
-    "badge": "Medical-Grade Fat Freezing",
-    "title1": "Freeze Stubborn Fat,",
-    "title2": "Reveal Your Contour",
-    "description": "At Nexus Clinic Kuala Lumpur, advanced fat freezing technology helps reshape your body naturally. No needles. No downtime. Just gradual and visible fat reduction.",
-    "scheduleConsultation": "Schedule Consultation",
-    "viewResults": "View Results",
-    "stat1Value": "20-25%",
-    "stat1Label": "Fat Reduction",
-    "stat2Value": "30-60",
-    "stat2Label": "Minute Sessions",
-    "stat3Value": "4-12",
-    "stat3Label": "Weeks to Results",
-    "stat4Value": "1M+",
-    "stat4Label": "Treatments Worldwide",
-    "trustedBy": "Trusted by 5000+",
-    "patientsIn": "Patients in Malaysia"
+    "badge": "FDA-Cleared CoolSculpting in Malaysia",
+    "title": "Proven CoolSculpting",
+    "highlight": "for Permanent Fat Reduction",
+    "description": "Diet followed for months. Gym sessions done consistently. Yet the belly, love handles, inner thighs or bra fat refuse to shift.",
+    "details": "At Nexus Clinic KL, our doctors use precise controlled cooling to target stubborn fat pockets without surgery, needles or downtime, with results that develop naturally over 8 to 12 weeks.",
+    "note": "FDA-cleared cryolipolysis technology with over 5000+ procedures completed at Nexus Clinic KL. Trusted aesthetic care for permanent fat reduction.",
+    "imageAlt": "CoolSculpting Treatment at Nexus Clinic Kuala Lumpur",
+    "ctaText": "Book Free Assessment",
+    "whatsappMessage": "Hi, I'm interested in CoolSculpting treatment at Nexus Clinic KL. I'd like to book a consultation.",
+    "floatingTitle": "5000+ Procedures",
+    "floatingSubtitle": "Trusted aesthetic care at Nexus Clinic KL"
   },
-  "benefits": {
-    "title1": "Why Kuala Lumpur Chooses",
-    "title2": "CoolSculpting",
-    "description": "Body contouring demand has increased significantly in Kuala Lumpur. People want visible results without surgery or long recovery.",
-    "benefit1Title": "Non-Surgical",
-    "benefit1Desc": "No needles, no incisions, no scars",
-    "benefit2Title": "No Downtime",
-    "benefit2Desc": "Return to activities immediately",
-    "benefit3Title": "Targeted Results",
-    "benefit3Desc": "Up to 25% fat reduction per session",
-    "benefit4Title": "FDA-Cleared",
-    "benefit4Desc": "Safe & clinically proven technology"
+  "overview": {
+    "title": "CoolSculpting at a Glance",
+    "highlight": "Treatment Overview",
+    "description": "A clinically proven non-surgical fat reduction treatment for adults at or near target weight who want to reduce stubborn localised fat without downtime.",
+    "descriptionExtended": "At Nexus Clinic KL, our doctors use FDA-cleared CoolSculpting technology to deliver precise, controlled cooling to targeted fat pockets, triggering a process called cryolipolysis that permanently destroys fat cells without any incision, needle or downtime. The same clinic that has performed over 5,000 aesthetic procedures brings the same precision to body contouring in KL. Results develop gradually over 8 to 12 weeks, looking entirely natural.",
+    "bodyContouringLinkText": "body contouring in KL",
+    "visibleResultsText": "Visible results usually begin from 3 to 6 weeks, with optimal contour changes developing at 2 to 3 months. Fat cells removed are gone permanently, provided weight is maintained.",
+    "studyReference": "Walia A, et al. Cryolipolysis: A Promising Nonsurgical Technique for Localized Fat Reduction. PMC (PubMed Central). 2023;11980024. This 2023 review documents significant objective fat layer reduction across multiple body sites, confirming cryolipolysis as a safe and effective non-invasive alternative to traditional liposuction for localized adiposity."
   },
-  "science": {
-    "title1": "The Science of",
-    "title2": "Fat Freezing",
-    "description": "CoolSculpting is a fat freezing treatment based on cryolipolysis - the scientific principle that fat cells are more sensitive to cold than surrounding tissues.",
-    "step1": "Controlled cooling targets fat cells without damaging skin",
-    "step2": "Fat cells crystallize and break down naturally",
-    "step3": "Body eliminates frozen fat cells through lymphatic system",
-    "step4": "Results appear gradually over 4-12 weeks",
-    "freezing": "Freezing",
-    "crystallization": "Crystallization",
-    "elimination": "Elimination",
-    "results": "Results"
+  "benefits": [
+    {
+      "title": "Non-Surgical Fat Reduction",
+      "desc": "No incision, no needles, no anaesthesia and no downtime."
+    },
+    {
+      "title": "35 to 60 Minutes Per Area",
+      "desc": "A practical treatment session that fits easily into a busy schedule."
+    },
+    {
+      "title": "Targeted Fat Reduction",
+      "desc": "Reduces stubborn localised fat by 20 to 25 percent per treated area per session."
+    },
+    {
+      "title": "FDA-Cleared Technology",
+      "desc": "Clinically proven cryolipolysis for precise cooling of stubborn fat pockets."
+    }
+  ],
+  "stubbornFat": {
+    "title": "Why Stubborn Fat",
+    "highlight": "Behaves Differently",
+    "description": "That is not a failure of discipline. It is how subcutaneous fat works. Stored just beneath the skin, these fat deposits are metabolically inactive and structurally resistant to caloric restriction or exercise.",
+    "description2": "CoolSculpting changes that equation by delivering precise, controlled cooling to targeted fat pockets, triggering cryolipolysis so the body can gradually clear destroyed fat cells while leaving surrounding tissue unharmed.",
+    "glp1LinkText": "GLP-1 programme in Malaysia",
+    "mounjaroLinkText": "Mounjaro weight loss programme",
+    "footerNote": "Patients who require more significant overall weight reduction before targeting stubborn areas may want to explore our",
+    "orText": "or"
   },
-  "areas": {
-    "title1": "Target Any",
-    "title2": "Problem Area",
-    "area1": "Abdomen",
-    "area2": "Love Handles",
-    "area3": "Thighs",
-    "area4": "Arms",
-    "area5": "Chin & Jawline",
-    "area6": "Back & Bra Fat",
-    "bookConsultation": "Book Consultation",
-    "multipleTitle": "Multiple Areas? We've Got You Covered",
-    "multipleDesc": "CoolSculpting can target multiple areas in one treatment plan",
-    "designPlan": "Design Your Plan"
+  "howItWorks": {
+    "title": "The Science of",
+    "highlight": "Cryolipolysis",
+    "description": "CoolSculpting is based on the principle that fat cells are more sensitive to controlled cold exposure than surrounding skin, nerves and muscle tissue.",
+    "steps": [
+      "A protective gel pad is placed before the applicator is positioned precisely over the target area.",
+      "Controlled cooling brings the fat tissue into the treatment range where fat cells crystallise and begin apoptosis.",
+      "The body gradually clears the destroyed fat cells through the lymphatic system over the following weeks.",
+      "Results appear naturally from 3 to 6 weeks and continue improving over 8 to 12 weeks."
+    ],
+    "controlledCooling": "Controlled Cooling",
+    "crystallisation": "Crystallisation",
+    "naturalClearance": "Natural Clearance",
+    "naturalContour": "Natural Contour"
+  },
+  "treatmentAreas": {
+    "title": "Treatment Areas Commonly",
+    "highlight": "Targeted in Malaysia",
+    "description": "Malaysian patients often carry stubborn localised fat in the abdomen, flanks, thighs, upper arms, bra fat and under the chin even at lower BMI levels.",
+    "areas": [
+      { "name": "Abdomen / Belly", "suitabilityText": "Ask About Suitability" },
+      { "name": "Love Handles / Flanks", "suitabilityText": "Ask About Suitability" },
+      { "name": "Inner & Outer Thighs", "suitabilityText": "Ask About Suitability" },
+      { "name": "Upper Arms", "suitabilityText": "Ask About Suitability" },
+      { "name": "Double Chin", "suitabilityText": "Ask About Suitability" },
+      { "name": "Back & Bra Fat", "suitabilityText": "Ask About Suitability" }
+    ],
+    "ctaBox": {
+      "title": "Applicator Selection Matters",
+      "description": "The right applicator, position and treatment plan matter more than simply having the machine.",
+      "buttonText": "Check Your Concern Area"
+    }
   },
   "whyNexus": {
-    "title1": "Why Nexus Clinic",
-    "title2": "Is Different",
-    "point1Title": "Doctor-Led Assessment",
-    "point1Desc": "Every plan starts with professional medical consultation",
-    "point2Title": "Customized Treatment Plan",
-    "point2Desc": "Designed around your body goals and lifestyle",
-    "point3Title": "Advanced Technology",
-    "point3Desc": "Modern applicators for even cooling and better results",
-    "point4Title": "Trusted Aesthetic Experts",
-    "point4Desc": "Professional care designed to enhance confidence safely",
-    "happyPatients": "Happy Patients",
-    "yearsExperience": "Years Experience",
-    "safeProtocols": "Safe Protocols",
-    "patientSupport": "Patient Support"
+    "title": "Why Nexus Clinic",
+    "highlight": "Is Different",
+    "points": [
+      {
+        "title": "Doctor-Led Assessment",
+        "desc": "Every treatment begins with a proper medical consultation and body mapping by an aesthetic doctor."
+      },
+      {
+        "title": "Precise Applicator Planning",
+        "desc": "Applicators are selected according to body geometry, fat layer and treatment objective for smoother contour outcomes."
+      },
+      {
+        "title": "Original Zeltiq CoolSculpting System",
+        "desc": "The FDA-cleared cryolipolysis platform with extensive clinical research and global treatment history."
+      },
+      {
+        "title": "Transparent Suitability Advice",
+        "desc": "Patients who are not suitable candidates are told honestly and guided toward the right body contouring pathway."
+      }
+    ],
+    "stats": {
+      "procedures": "Aesthetic Procedures",
+      "cycleTime": "CoolAdvantage Cycles",
+      "globalTreatments": "Global Treatments",
+      "downtime": "Downtime Required",
+      "fatReduction": "Fat Reduction Per Area",
+      "minutesPerArea": "Minutes Per Area", 
+      "weeksToResults": "Weeks To Full Results",
+      "treatmentsWorldwide": "Treatments Worldwide"
+    }
   },
-  "journey": {
-    "title1": "Your Journey to",
-    "title2": "a New You",
-    "step1Title": "Consultation",
-    "step1Desc": "Doctor identifies treatment areas",
-    "step2Title": "Treatment",
-    "step2Desc": "30-60 minute cooling session",
-    "step3Title": "Natural Process",
-    "step3Desc": "Body eliminates fat cells",
-    "step4Title": "Results",
-    "step4Desc": "Visible changes in 4-12 weeks"
+  "processTimeline": {
+    "title": "Your CoolSculpting Session",
+    "highlight": "Step by Step",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Consultation",
+        "desc": "Medical history review, body mapping and suitability assessment by a doctor."
+      },
+      {
+        "step": "02",
+        "title": "Applicator Placement",
+        "desc": "Gel pad applied and the selected applicator positioned precisely over the target zone."
+      },
+      {
+        "step": "03",
+        "title": "Cryolipolysis Cycle",
+        "desc": "Controlled cooling runs for 35 to 60 minutes depending on the applicator and area."
+      },
+      {
+        "step": "04",
+        "title": "Massage & Review",
+        "desc": "Post-treatment massage is performed, then results are monitored over the following weeks."
+      }
+    ]
   },
-  "cost": {
-    "title1": "Investment in",
-    "title2": "Your Confidence",
-    "perArea": "Per Treatment Area",
-    "perAreaPrice": "RM1,500 - RM3,000",
-    "avgSession": "Average Session",
-    "avgSessionPrice": "RM2,000 - RM4,000",
-    "advancedPlans": "Advanced Plans",
-    "advancedPlansPrice": "RM2,500 - RM6,000",
-    "priceNote": "*Customized plans available. Consultation helps determine exact cost.",
-    "flexibleOptions": "Flexible Options",
-    "flex1": "Interest-free payment plans",
-    "flex2": "Package discounts available",
-    "flex3": "Credit card installment options",
-    "getQuote": "Get Personalized Quote"
+  "pricing": {
+    "title": "CoolSculpting Malaysia",
+    "highlight": "Pricing Guide",
+    "prices": [
+      {
+        "area": "Abdomen / Single Area",
+        "range": "RM1,500 - RM2,200"
+      },
+      {
+        "area": "Love Handles / Inner Thighs",
+        "range": "RM2,800 - RM4,000"
+      },
+      {
+        "area": "Full Body Package",
+        "range": "From RM6,500"
+      }
+    ],
+    "disclaimer": "A precise quote is provided after consultation once the target areas, applicator selection and number of cycles are confirmed.",
+    "commonAreas": {
+      "title": "Common Treatment Areas",
+      "list": [
+        "Abdomen, flanks and thighs",
+        "Upper arms, bra fat and back fat",
+        "Double chin and selected small pockets"
+      ],
+      "buttonText": "Get Personalised Quote"
+    }
   },
-  "competitors": {
-    "title1": "Why Patients Choose",
-    "title2": "Nexus Clinic",
-    "leadingClinics": "Leading KL Clinics",
-    "clinic1": "Beverly Wilshire Clinic",
-    "clinic1Highlight": "Premium medical aesthetics",
-    "clinic2": "Clique Clinic KL",
-    "clinic2Highlight": "Advanced technology focus",
-    "clinic3": "Premier Clinic",
-    "clinic3Highlight": "Comprehensive care",
-    "clinic4": "CLEO Clinic",
-    "clinic4Highlight": "Aesthetic expertise",
-    "clinic5": "Sliq Clinic",
-    "clinic5Highlight": "Modern approaches",
-    "nexusAdvantage": "Nexus Advantage",
-    "adv1Title": "Personalized Medical Assessment",
-    "adv1Desc": "Doctor-led consultations for every patient",
-    "adv2Title": "Advanced Treatment Planning",
-    "adv2Desc": "Customized plans for natural results",
-    "adv3Title": "Trusted Aesthetic Expertise",
-    "adv3Desc": "Years of experience in body contouring"
+  "comparison": {
+    "title": "CoolSculpting Versus",
+    "highlight": "Other Fat Reduction Options",
+    "treatmentPathways": "Treatment Pathways",
+    "competitors": [
+      { "name": "CoolSculpting", "highlight": "Best for localised stubborn fat near target weight" },
+      { "name": "Liposuction", "highlight": "Best for larger fat volume with surgery and downtime" },
+      { "name": "GLP-1 Injections", "highlight": "Best for overall medical weight reduction" },
+      { "name": "Combined Approach", "highlight": "Weight loss first, contouring refinement after" },
+      { "name": "Doctor Assessment", "highlight": "Needed to choose the right pathway safely" }
+    ],
+    "guideTitle": "How Nexus Clinic Guides You",
+    "guidePoints": [
+      {
+        "title": "CoolSculpting",
+        "desc": "Best for patients near target weight with stubborn localised fat that resists exercise."
+      },
+      {
+        "title": "GLP-1 Weight Loss",
+        "desc": "Better for patients who need medically supervised overall body weight reduction before contouring."
+      },
+      {
+        "title": "Liposuction",
+        "desc": "Suitable for larger volume fat reduction when surgery and recovery are acceptable."
+      }
+    ],
+    "footerNote": "Patients interested in skin tightening alongside fat reduction may benefit from combining CoolSculpting with our fat freezing programme in KL or asking about adjunctive skin tightening treatments at consultation.",
+    "fatFreezingLinkText": "fat freezing programme in KL"
   },
   "faq": {
-    "q1": "Does CoolSculpting really work?",
-    "a1": "Yes. Clinical studies show 20-25% fat reduction in treated areas after one session. Results are permanent as fat cells are eliminated naturally.",
-    "q2": "Is CoolSculpting painful?",
-    "a2": "Most patients feel intense cold and mild pressure initially, which subsides as the area becomes numb. Many read or relax during treatment.",
-    "q3": "How long do results last?",
-    "a3": "Results are permanent - treated fat cells are gone forever. Maintaining a stable weight ensures long-lasting outcomes.",
-    "q4": "When will I see results?",
-    "a4": "Initial changes appear in 4 weeks, with full results visible at 12 weeks as the body naturally eliminates frozen fat cells."
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is CoolSculpting the same as fat freezing?",
+        "a": "CoolSculpting is the original branded fat-freezing treatment based on cryolipolysis. Generic fat-freezing devices may use a similar principle, but they are not the same machine. At Nexus Clinic KL, the genuine Zeltiq CoolSculpting system is used."
+      },
+      {
+        "q": "How many sessions do I need?",
+        "a": "Most patients need one or two sessions per treated area depending on the amount of fat present, the area treated, and the contouring goal discussed during consultation."
+      },
+      {
+        "q": "Does CoolSculpting permanently remove fat cells?",
+        "a": "Yes. The treated fat cells are destroyed through apoptosis and gradually cleared by the body. Those removed fat cells do not regenerate, although remaining fat cells can still enlarge with weight gain."
+      },
+      {
+        "q": "Is CoolSculpting suitable for patients with higher BMI?",
+        "a": "CoolSculpting is designed for patients who are at or near their target weight but have localised stubborn fat. It is not a weight loss treatment for obesity. Patients with higher BMI may benefit more from a medically supervised weight loss programme first."
+      },
+      {
+        "q": "Can CoolSculpting be done during a lunch break?",
+        "a": "Yes. With CoolAdvantage applicators, many single-area sessions can be completed in about an hour including preparation and post-treatment massage, with no downtime afterward."
+      },
+      {
+        "q": "Does CoolSculpting hurt?",
+        "a": "Most patients feel cold, suction and pulling at the start of treatment. The area then numbs naturally. The post-treatment massage may feel tender, but overall the treatment is generally well tolerated."
+      },
+      {
+        "q": "Can CoolSculpting reduce belly fat after pregnancy?",
+        "a": "It can reduce the pinchable subcutaneous fat layer in the lower abdomen, but it does not treat diastasis recti or loose skin. A consultation is needed to confirm whether fat freezing is the right option."
+      },
+      {
+        "q": "What is the difference between CoolSculpting and Ozempic?",
+        "a": "CoolSculpting targets and removes specific localised fat pockets. Ozempic and other GLP-1 medicines help reduce appetite and overall body weight. They serve different patient needs and are not direct substitutes."
+      },
+      {
+        "q": "Is there downtime after CoolSculpting?",
+        "a": "No. Patients can return to normal daily activity immediately after treatment. Temporary redness, swelling, firmness or numbness can happen, but recovery time is not required."
+      },
+      {
+        "q": "What can CoolSculpting not fix?",
+        "a": "CoolSculpting cannot treat visceral fat, obesity, loose skin, stretch marks, cellulite texture or muscle separation. It works best on pinchable localised subcutaneous fat."
+      }
+    ]
   },
   "cta": {
-    "title1": "Start Your CoolSculpting Journey",
-    "title2": "at Nexus Clinic Kuala Lumpur",
-    "description": "Your transformation begins with a consultation. Discover how CoolSculpting can reshape your body safely and effectively.",
-    "bookButton": "Book Your Consultation",
-    "note": "No obligation. Just expert advice tailored to your goals."
+    "title": "Book Your Free",
+    "highlight": "CoolSculpting Assessment",
+    "description": "Speak to a doctor about your body contouring goals and find out whether CoolSculpting is the right treatment for your concern area.",
+    "buttonText": "Book Free Assessment",
+    "disclaimer": "No obligation. Just expert guidance tailored to your goals."
   }
 }

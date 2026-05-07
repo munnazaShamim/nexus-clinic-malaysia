@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Dr. Preetha Nair, Aesthetic & Weight Loss Doctor in Kuala Lumpur | Nexus Clinic",
+    "description": "Meet Dr. Preetha Nair, aesthetic and weight loss doctor at Nexus Clinic Kuala Lumpur, offering Botox, dermal fillers, Sculptra, Profhilo, Rejuran and medical weight loss treatments.",
+    "h1": "Dr. Preetha Nair – Aesthetic & Weight Loss Doctor in Kuala Lumpur",
+    "slug": "dr-preetha-nair-aesthetic-doctor",
+    "mainKeyword": "Dr. Preetha Nair aesthetic doctor",
+    "secondaryKeywords": "aesthetic doctor Kuala Lumpur, weight loss doctor Kuala Lumpur, Botox doctor Kuala Lumpur, Sculptra doctor Kuala Lumpur, dermal filler doctor Kuala Lumpur, medical weight loss doctor KL"
+  },
+  "doctor": {
+    "name": "Dr. Preetha Nair",
+    "title": "Aesthetic Medical Doctor | Advocate for Natural Beauty",
+    "specialisation": "Non-Invasive Treatments & Personalized Skincare",
+    "rating": 5,
+    "bio": "Dr. Preetha Nair is a skilled Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia. She believes in a holistic approach to aesthetic medicine, tailoring every treatment to suit individual needs. Her gentle techniques and attention to detail ensure patient comfort and satisfaction.",
+    "introduction": "Dr. Preetha Nair is a skilled Aesthetic Medical Doctor based in Kuala Lumpur, Malaysia. She believes in a holistic approach to aesthetic medicine, tailoring every treatment to suit individual needs. Her gentle techniques and attention to detail ensure patient comfort and satisfaction. She specializes in non-invasive treatments and personalized skincare solutions, with a focus on aesthetic medicine and weight loss management.",
+    "photo": "/images/doctors/dr-preetha-nair.webp",
+    "photoLandscape": "/images/doctors/dr-preetha-nair-landscape.webp",
+    "instagram": "https://instagram.com/nexusclinicmy",
+    "linkedin": "https://linkedin.com/company/nexus-clinic-malaysia"
+  },
+  "credentials": {
+    "degree": "Doctor of Medicine (MD)",
+    "university": "Universitas Udayana",
+    "universityUrl": "https://www.unud.ac.id/",
+    "country": "Indonesia",
+    "degreeFull": "Doctor of Medicine (MD), Universitas Udayana, Indonesia",
+    "licenseNumber": "50328",
+    "yearsOfExperience": 14,
+    "qualifications": [
+      "Expertise in Non-Invasive Treatments",
+      "Specialist in Personalized Skincare Solutions"
+    ]
+  },
+  "areasOfExpertise": [
+    "Botox & wrinkle relaxers",
+    "Dermal fillers & facial contouring",
+    "Sculptra collagen biostimulator",
+    "Profhilo skin rejuvenation",
+    "Rejuran skin healing treatments",
+    "Non-surgical anti-aging treatments",
+    "Personalized weight loss management",
+    "Medical-grade skincare solutions"
+  ],
+  "weightLossExpertise": "Dr. Preetha Nair also focuses on personalized weight management programs, helping patients achieve sustainable body transformation through medical weight loss solutions, lifestyle guidance, and non-invasive body contouring treatments. Her approach includes GLP-1 based options such as Ozempic, Mounjaro, Wegovy, Saxenda, HCG, and CoolSculpting where suitable for each patient's unique needs.",
+  "treatments": [
+    { "name": "Sculptra Treatment", "href": "/face/sculptra-malaysia/" },
+    { "name": "Botox Injection", "href": "/face/botox-malaysia/" },
+    { "name": "Dermal Fillers", "href": "/face/dermal-filler-malaysia/" },
+    { "name": "Profhilo", "href": "/face/profhilo-malaysia/" },
+    { "name": "Rejuran Healer", "href": "/face/rejuran-malaysia/" },
+    { "name": "Pico Laser", "href": "/skin/pico-laser-malaysia/" },
+    { "name": "Ozempic Weight Loss", "href": "/weight-loss/ozempic-malaysia/" },
+    { "name": "Mounjaro Treatment", "href": "/weight-loss/mounjaro-malaysia/" },
+    { "name": "CoolSculpting", "href": "/weight-loss/coolsculpting-malaysia/" }
+  ],
+  "professionalPhilosophy": "Dr. Preetha believes aesthetic medicine should enhance natural beauty while preserving facial harmony and individuality.",
+  "patientApproach": "Dr. Preetha takes a personalized and conservative approach to aesthetic medicine, focusing on treatment suitability, facial balance, patient comfort, and natural-looking results.",
+  "professionalBackground": {
+    "yearsOfExperience": 14,
+    "certifications": [],
+    "conferencesAttended": [],
+    "mediaFeatures": [],
+    "languagesSpoken": [],
+    "awards": [],
+    "medicalMemberships": [],
+    "beforeAfterPhilosophy": ""
+  },
+  "faq": [
+    {
+      "q": "Is Dr. Preetha experienced in injectable treatments?",
+      "a": "Yes. Dr. Preetha Nair performs injectable aesthetic treatments including Botox, dermal fillers, Sculptra, Profhilo and Rejuran, with a treatment approach focused on natural facial harmony, safety and patient suitability."
+    },
+    {
+      "q": "Does Dr. Preetha perform Sculptra treatments?",
+      "a": "Yes. Dr. Preetha offers Sculptra collagen biostimulator treatment for suitable patients who want gradual collagen support, facial volume improvement and natural-looking rejuvenation."
+    },
+    {
+      "q": "What weight loss treatments does Dr. Preetha offer?",
+      "a": "Dr. Preetha supports personalized weight management programs that may include medical weight loss consultation, lifestyle guidance, GLP-1 based options such as Ozempic, Mounjaro and Wegovy where suitable, Saxenda, HCG, and non-invasive body contouring options such as CoolSculpting."
+    },
+    {
+      "q": "Which filler brands are used by Dr. Preetha?",
+      "a": "Filler brand selection is confirmed during consultation based on treatment area, facial anatomy, patient goals and product suitability."
+    },
+    {
+      "q": "Is consultation available for anti-aging treatments?",
+      "a": "Yes. Patients can book a consultation with Dr. Preetha for anti-aging concerns including wrinkles, facial volume loss, skin laxity, dull skin, collagen loss and overall facial rejuvenation."
+    }
+  ]
+}
