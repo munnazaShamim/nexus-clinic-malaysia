@@ -52,7 +52,7 @@ export const Footer = ({ locale }: { locale?: string }) => {
             <div className="lg:col-span-2">
               <span className="text-2xl mb-6 block font-georgia text-brown">
                 <Image
-                  src="/images/logo.png" 
+                  src="/images/logo.webp" 
                   alt="Nexus Clinic Logo" 
                   width={200}
                   height={200}
@@ -98,7 +98,7 @@ export const Footer = ({ locale }: { locale?: string }) => {
           <div className="lg:col-span-2">
             <span className="text-2xl mb-6 block font-georgia text-brown">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Nexus Clinic Logo"
                 width={200}
                 height={200}

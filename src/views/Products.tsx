@@ -385,28 +385,28 @@ export default function Products({ locale = fallbackLng }: { locale?: string }) 
                         <div className="flex -space-x-4 rtl:space-x-reverse">
                           <Image
                             className="border-2 border-rose rounded-full"
-                            src="/images/profile1.png"
+                            src="/images/profile1.webp"
                             alt="p1"
                             width={50}
                             height={50}
                             />
                           <Image
                             className="border-2 border-rose rounded-full"
-                            src="/images/profile2.png"
+                            src="/images/profile2.webp"
                             alt="p2"
                             width={50}
                             height={50}
                             />
                           <Image
                             className="border-2 border-rose rounded-full"
-                            src="/images/profile3.png"
+                            src="/images/profile3.webp"
                             alt="p3"
                             width={50}
                             height={50}
                             />
                           <Image
                             className="border-2 border-rose rounded-full"
-                            src="/images/profile4.png"
+                            src="/images/profile4.webp"
                             alt="p4"
                             width={50}
                             height={50}

@@ -294,7 +294,7 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
             <motion.div variants={fadeInRight} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/skin/melasma.jpeg"
+                  src="/images/skin/melasma.webp"
                   alt="Melasma Consultation at Nexus Clinic KL"
                   width={600}
                   height={500}

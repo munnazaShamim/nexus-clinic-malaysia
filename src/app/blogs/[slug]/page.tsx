@@ -185,7 +185,7 @@ export default async function Page(
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20 transition">
                   <div className="relative w-14 h-14 rounded-full overflow-hidden">
                     <Image
-                      src="/images/Anum_img.png"
+                      src="/images/Anum_img.webp"
                       alt="Dr. Anum Jawed"
                       fill
                       className="object-cover"

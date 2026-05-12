@@ -42,7 +42,7 @@ export default function EDTreatment({
 
   const images = {
     doctorConsultation: "/images/regenerative/ed-treatment.webp",
-    modernClinic: "/images/clinic/interior.png",
+    modernClinic: "/images/clinic/interior.webp",
     medicalTeam:
       "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=2070&auto=format&fit=crop",
     healthyLifestyle:

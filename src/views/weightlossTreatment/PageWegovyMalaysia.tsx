@@ -1013,7 +1013,7 @@ export default function PageWegovyMalaysia({
           whileInView="visible"
           className="py-24 bg-linear-to-br from-wine to-rose relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-[url('/images/clinic/interior.png')] opacity-10 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[url('/images/clinic/interior.webp')] opacity-10 mix-blend-overlay" />
 
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.div

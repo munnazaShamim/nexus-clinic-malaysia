@@ -249,7 +249,7 @@ export default function ContactUs() {
               <div className="rounded-2xl overflow-hidden shadow-lg mb-6 group">
                 <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="block overflow-hidden">
                   <Image
-                    src="/images/map.png"
+                    src="/images/map.webp"
                     alt="Nexus Clinic location map at Wisma UOA 2, Kuala Lumpur"
                     fill
                     className="w-full h-[180px] sm:h-[200px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"

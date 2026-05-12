@@ -156,7 +156,7 @@ const DermalFillersLanding = ({
           description={heroData?.description || "Advanced dermal filler treatments tailored to your unique facial anatomy."}
           details={heroData?.experience || "Our award-winning injectors have performed over 5,000 facial filler procedures using technique built for Southeast Asian bone structure."}
           note="Always choose a licensed medical professional for dermal filler treatments. Results vary based on individual anatomy and product choice."
-          image="/images/face/dermal-filler.jpeg"
+          image="/images/face/dermal-filler.webp"
           imageAlt="Dermal filler treatment at Nexus Clinic Kuala Lumpur"
           ctaText={heroData?.cta || "Book Your Free Dermal Filler Consultation"}
           ctaLink="/contact-us"
@@ -275,7 +275,7 @@ const DermalFillersLanding = ({
                 <div className="absolute -inset-4 bg-wine/10 rounded-3xl blur-2xl" />
                 <div className="relative rounded-2xl shadow-2xl overflow-hidden">
                   <Image
-                    src="/images/face/dermal-filler-malaysia.jpeg"
+                    src="/images/face/dermal-filler-malaysia.webp"
                     alt="How dermal filler works"
                     width={500}
                     height={400}

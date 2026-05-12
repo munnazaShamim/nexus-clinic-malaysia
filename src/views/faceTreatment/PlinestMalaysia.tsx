@@ -428,7 +428,7 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
             <motion.div variants={fadeInLeft} className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/face/doctor-led.jpeg"
+                  src="/images/face/doctor-led.webp"
                   alt="Doctor-led Plinest treatment at Nexus Clinic KL"
                   fill
                   className="object-cover"

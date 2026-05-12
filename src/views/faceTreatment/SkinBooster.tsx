@@ -396,7 +396,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
             <motion.div variants={fadeInRight} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/face/skin-booster.jpeg"
+                  src="/images/face/skin-booster.webp"
                   alt="How skin booster works"
                   fill
                   className="object-cover"

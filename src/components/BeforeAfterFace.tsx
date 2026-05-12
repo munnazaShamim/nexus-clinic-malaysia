@@ -234,20 +234,20 @@ const BeforeAfterFaceSection = () => {
   const transformations = [
     {
       id: 1,
-      before: "/images/fc-before1.png",
-      after: "/images/fc-after1.png",
+      before: "/images/fc-before1.webp",
+      after: "/images/fc-after1.webp",
       title: "Fraqtional Laser",
     },
     {
       id: 2,
-      before: "/images/fc-before2.png",
-      after: "/images/fc-after2.png",
+      before: "/images/fc-before2.webp",
+      after: "/images/fc-after2.webp",
       title: "Laser CO2",
     },
     {
       id: 3,
-      before: "/images/fc-before3.png",
-      after: "/images/fc-after3.png",
+      before: "/images/fc-before3.webp",
+      after: "/images/fc-after3.webp",
       title: "Fraqtional Laser CO2",
     },
   ];

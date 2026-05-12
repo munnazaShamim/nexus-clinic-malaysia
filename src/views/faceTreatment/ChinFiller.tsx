@@ -100,7 +100,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
         description="Your side profile is the one angle you cannot control. A chin that sits too far back makes your nose look bigger, your jaw look softer, and your entire face look off."
         details="Chin filler at Nexus Clinic Kuala Lumpur fixes it. One session, 20 to 30 minutes, zero surgery. Our award-winning injectors have performed over 5,000 facial filler procedures using technique built for Southeast Asian bone structure. The result looks like you. Just sharper."
         note="Chin filler requires precise placement to avoid looking unnatural. Always choose an experienced injector who understands Asian facial proportions."
-        image="/images/face/chin.jpeg"
+        image="/images/face/chin.webp"
         imageAlt="Nexus Clinic Kuala Lumpur - Chin Filler Treatment"
         ctaText="Book free consultation"
         ctaLink="/contact-us"

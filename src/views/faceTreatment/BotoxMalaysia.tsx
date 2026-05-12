@@ -137,7 +137,7 @@ const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
         description="A forehead that looks tense before you even speak. Crow's feet that deepen every year. Frown lines that make you look more serious or tired than you feel. These are not personality traits. They are muscle habits. And they respond precisely to Botox."
         details="Botox at Nexus Clinic Kuala Lumpur is about one outcome: a face that looks like yours, but rested, smoother and more relaxed. Not frozen. Not blank. Just you, without the tension that builds over years of expression. We have been delivering Botox treatment in Malaysia since 2001, and our approach has always been the same: precise dosing, honest consultation and results that hold up in real life, not just right after the appointment."
         note="Botox results vary by individual. Always consult with a licensed medical professional for proper assessment and dosing."
-        image="/images/face/botox-malaysia.jpeg"
+        image="/images/face/botox-malaysia.webp"
         imageAlt="Botox treatment at Nexus Clinic Kuala Lumpur"
         ctaText="Book Free Consultation"
         ctaLink="/contact-us"
@@ -593,7 +593,7 @@ const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
         initial="hidden"
         whileInView="visible"
         className="relative py-20 px-4 md:px-8 lg:px-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/images/face/botox-bg.png')` }}
+        style={{ backgroundImage: `url('/images/face/botox-bg.webp')` }}
       >
         <div className="absolute inset-0 bg-black/60" />
 

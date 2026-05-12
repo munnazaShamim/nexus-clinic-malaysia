@@ -95,8 +95,8 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
   const transformations = [
     {
       id: 1,
-      before: "/images/B&A-hair/B&A-hair-transplant-men.jpeg",
-      after: "/images/B&A-hair/B&A-hair-transplant-men.jpeg",
+      before: "/images/B&A-hair/B&A-hair-transplant-men.webp",
+      after: "/images/B&A-hair/B&A-hair-transplant-men.webp",
     },
     {
       id: 2,

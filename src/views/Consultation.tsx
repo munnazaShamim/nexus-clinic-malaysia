@@ -61,10 +61,10 @@ const treatmentCategories: TreatmentCategory[] = [
     description: "Non-surgical facial aesthetics including dermal fillers, Botox, thread lifts, and skin boosters for natural-looking rejuvenation.",
     imageSrc: "/images/face/Cheek Filler.jpeg",
     treatments: [
-      { name: "Botox Malaysia", slug: "botox-malaysia", description: "Wrinkle relaxation, jaw slimming, gummy smile & more.", imageUrl: "/images/face/botox-malaysia.jpeg" },
+      { name: "Botox Malaysia", slug: "botox-malaysia", description: "Wrinkle relaxation, jaw slimming, gummy smile & more.", imageUrl: "/images/face/botox-malaysia.webp" },
       { name: "Cheek Filler Malaysia", slug: "cheek-filler-malaysia", description: "Restore midface volume & lift the lower face.", imageUrl: "/images/face/Cheek Filler Treatment.webp" },
       { name: "Chin Filler Malaysia", slug: "chin-filler-malaysia", description: "Correct projection & restore facial balance.", imageUrl: "/images/face/Chin Dermal Filler.webp" },
-      { name: "Dermal Filler Malaysia", slug: "dermal-filler-malaysia", description: "Volume restoration & facial contouring.", imageUrl: "/images/face/dermal-filler.jpeg" },
+      { name: "Dermal Filler Malaysia", slug: "dermal-filler-malaysia", description: "Volume restoration & facial contouring.", imageUrl: "/images/face/dermal-filler.webp" },
       { name: "Jawline Filler Malaysia", slug: "jawline-filler-malaysia", description: "Define jaw border & sharpen your profile.", imageUrl: "/images/face/Jawline Filler.webp" },
       { name: "Lip Filler Malaysia", slug: "lip-filler-malaysia", description: "Fuller lips & defined Cupid's bow.", imageUrl: "/images/face/Lip Filler.webp" },
       { name: "Nose Filler Malaysia", slug: "nose-filler-malaysia", description: "Higher bridge, hump camouflage & tip definition.", imageUrl: "/images/face/Nose Filler Treatment.webp" },
@@ -103,7 +103,7 @@ const treatmentCategories: TreatmentCategory[] = [
     description: "Comprehensive hair restoration from medical therapy to FUE hair transplant, designed for natural density and long-term confidence.",
     imageSrc: "/images/treatment/hair-restoration.webp",
     treatments: [
-      { name: "Hair Transplant Malaysia", slug: "hair-transplant-malaysia", description: "Surgical hair restoration for long-term density.", imageUrl: "/images/hair/hair-transpalnt.jpeg" },
+      { name: "Hair Transplant Malaysia", slug: "hair-transplant-malaysia", description: "Surgical hair restoration for long-term density.", imageUrl: "/images/hair/hair-transpalnt.webp" },
       { name: "FUE Hair Transplant Malaysia", slug: "fue-hair-transplant-malaysia", description: "Minimal scarring, natural-looking results.", imageUrl: "/images/hair/fue-hair-transplant.webp" },
       { name: "PRP Hair Treatment Malaysia", slug: "prp-hair-treatment-malaysia", description: "Support weaker follicles with growth factors.", imageUrl: "/images/hair/prp-hair-treatment.webp" },
       { name: "Hair Loss Treatment Malaysia", slug: "hair-loss-treatment-malaysia", description: "Personalized medical plans for hair loss.", imageUrl: "/images/hair/hair-loss-treatment.webp" },
@@ -111,7 +111,7 @@ const treatmentCategories: TreatmentCategory[] = [
       { name: "Mesotherapy Hair Loss Malaysia", slug: "mesotherapy-hair-loss-malaysia", description: "Deliver active ingredients to the scalp.", imageUrl: "/images/hair/mesotherapy-hair-loss.webp" },
       { name: "Exosome Hair Treatment Malaysia", slug: "exosome-hair-treatment-malaysia", description: "Advanced regenerative care for thinning.", imageUrl: "/images/hair/exesome-hair-treatment.webp" },
       { name: "Minoxidil Treatment Malaysia", slug: "minoxidil-treatment-malaysia", description: "Maintain density and slow thinning.", imageUrl: "/images/hair/minoxidil-treatment.webp" },
-      { name: "Finasteride Treatment Malaysia", slug: "finasteride-treatment-malaysia", description: "Reduce hormonal follicle miniaturization.", imageUrl: "/images/hair/hair-transpalnt.jpeg" },
+      { name: "Finasteride Treatment Malaysia", slug: "finasteride-treatment-malaysia", description: "Reduce hormonal follicle miniaturization.", imageUrl: "/images/hair/hair-transpalnt.webp" },
     ]
   },
   {

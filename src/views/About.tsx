@@ -233,7 +233,7 @@ const doctors = [
             <motion.div variants={fadeInRight} className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/clinic/interior.png"
+                  src="/images/clinic/interior.webp"
                   alt="Nexus Clinic Interior"
                   width={200}
                   height={400}
@@ -551,7 +551,7 @@ const doctors = [
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <Image
-                    src="/images/clinic/medical.png"
+                    src="/images/clinic/medical.webp"
                     alt="Clinic Reception"
                       width={200}
                       height={200}
@@ -560,7 +560,7 @@ const doctors = [
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
                   <Image
-                    src="/images/clinic/consultation2.png"
+                    src="/images/clinic/consultation2.webp"
                     alt="Treatment Room"
                     width={200}
                     height={200}
@@ -569,7 +569,7 @@ const doctors = [
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <Image
-                    src="/images/clinic/consultation.png"
+                    src="/images/clinic/consultation.webp"
                     alt="Consultation Room"
                     width={200}
                     height={200}
@@ -578,7 +578,7 @@ const doctors = [
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg mt-8">
                   <Image
-                    src="/images/clinic/medical.png"
+                    src="/images/clinic/medical.webp"
                     alt="Waiting Area"
                     width={200}
                     height={200}

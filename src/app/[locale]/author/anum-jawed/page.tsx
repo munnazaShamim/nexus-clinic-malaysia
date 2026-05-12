@@ -24,7 +24,7 @@ export default function AuthorPage() {
             {/* Profile Image */}
             <div className="relative w-32 h-32 md:w-36 md:h-36 rounded-full ring-4 ring-white shadow-md overflow-hidden flex-shrink-0">
               <Image
-                src="/images/Anum_img.png"
+                src="/images/Anum_img.webp"
                 alt="Dr. Anum Jawed"
                 fill
                 className="object-cover"

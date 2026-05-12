@@ -390,7 +390,7 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
             <motion.div variants={fadeInRight} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <Image
-                  src="/images/hair/hair-transpalnt.jpeg"
+                  src="/images/hair/hair-transpalnt.webp"
                   alt="Mesotherapy treatment at Nexus Clinic KL"
                   fill
                   className="object-cover"

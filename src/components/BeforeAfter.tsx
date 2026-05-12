@@ -235,22 +235,22 @@ const BeforeAfterSection = () => {
   const transformations = [
     {
       id: 1,
-      before: "/images/om-before1.png",
-      after: "/images/om-after1.png",
+      before: "/images/om-before1.webp",
+      after: "/images/om-after1.webp",
       title: "Weight Loss Journey",
       result: "-15 kg in 12 weeks",
     },
     {
       id: 2,
-      before: "/images/om-before2.png",
-      after: "/images/om-after2.png",
+      before: "/images/om-before2.webp",
+      after: "/images/om-after2.webp",
       title: "Body Transformation",
       result: "-20 kg in 16 weeks",
     },
     {
       id: 3,
-      before: "/images/om-before3.png",
-      after: "/images/om-after3.png",
+      before: "/images/om-before3.webp",
+      after: "/images/om-after3.webp",
       title: "Lifestyle Change",
       result: "-18 kg in 14 weeks",
     },

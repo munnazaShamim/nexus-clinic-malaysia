@@ -86,7 +86,7 @@ export default function AwardsCertificates({ locale }: AwardsCertificatesProps) 
         description="Quality assurance through industry recognition. Every award received by Nexus Clinic reflects our commitment to safe, effective, and innovative aesthetic treatments in Malaysia."
         details="From Allergan Aesthetics' highest honours to CoolSculpting excellence and advanced injectable certifications, our growing collection of awards represents decades of clinical expertise and patient-centred care at our KLCC clinic."
         note="All awards are presented by independent industry bodies including Allergan Aesthetics, CoolSculpting, and Biolyph, recognising clinical excellence and patient safety standards."
-        image="/images/awards/award.png"
+        image="/images/awards/award.webp"
         imageAlt="Nexus Clinic Kuala Lumpur - Awards and Certifications"
         ctaText="Book a Consultation"
         ctaLink="/contact-us"

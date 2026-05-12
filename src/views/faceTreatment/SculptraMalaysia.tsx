@@ -478,7 +478,7 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
             <motion.div variants={fadeInLeft} className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/face/Sculptra/dr-led.jpeg"
+                  src="/images/face/Sculptra/dr-led.webp"
                   alt="Doctor-led Sculptra treatment at Nexus Clinic KL"
                   fill
                   className="object-cover"
