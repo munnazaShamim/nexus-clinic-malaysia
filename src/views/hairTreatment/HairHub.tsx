@@ -32,7 +32,7 @@ export default function HairHub({ locale }: HairHubProps) {
         name: "Hair Transplant Malaysia",
         description: "A complete guide to surgical hair restoration for patients who want long-term improvement in density and hairline design. Learn who is suitable, how grafts are planned, and what results to expect.",
         slug: "hair-transplant-malaysia",
-        imageUrl: "/images/hair/hair-transpalnt.jpeg",
+        imageUrl: "/images/hair/hair-transpalnt.webp",
       },
       {
         name: "FUE Hair Transplant Malaysia",
@@ -80,7 +80,7 @@ export default function HairHub({ locale }: HairHubProps) {
         name: "Finasteride Treatment Malaysia",
         description: "Finasteride is a medical treatment often used in male pattern hair loss to reduce the hormonal process that drives follicle miniaturization. It is typically prescribed after doctor assessment and ongoing review.",
         slug: "finasteride-treatment-malaysia",
-        imageUrl: "/images/hair/hair-transpalnt.jpeg",
+        imageUrl: "/images/hair/hair-transpalnt.webp",
       },
     ];
 

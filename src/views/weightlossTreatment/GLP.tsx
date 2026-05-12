@@ -909,7 +909,7 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
       {/* CTA Section */}
       <section className="py-20 bg-wine relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/clinic/interior.png')] opacity-10 bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/images/clinic/interior.webp')] opacity-10 bg-cover bg-center" />
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
           <motion.div
             variants={fadeInUp}

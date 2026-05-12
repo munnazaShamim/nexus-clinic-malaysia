@@ -162,7 +162,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                 className="shrink-0 relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.webp"
                   alt="Nexus Clinic Logo"
                   width={150}
                   height={150}

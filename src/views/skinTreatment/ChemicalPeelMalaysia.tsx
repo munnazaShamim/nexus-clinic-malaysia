@@ -374,7 +374,7 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
             <motion.div variants={fadeInLeft} className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/nexus-clinic.jpeg"
+                  src="/images/nexus-clinic.webp"
                   alt="Doctor-led chemical peel treatment at Nexus Clinic KL"
                   fill
                   className="object-cover"

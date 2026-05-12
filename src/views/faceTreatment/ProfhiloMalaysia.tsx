@@ -413,7 +413,7 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
             <motion.div variants={fadeInLeft} className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/face/Profhilo/doctor-led.jpeg"
+                  src="/images/face/Profhilo/doctor-led.webp"
                   alt="Doctor-led Profhilo treatment at Nexus Clinic KL"
                   fill
                   className="object-cover"

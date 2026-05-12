@@ -325,7 +325,7 @@ export default function NoseThreadLift({ locale }: NoseThreadLiftProps) {
             <motion.div variants={fadeInRight} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/face/nose-thread-filler.jpeg"
+                  src="/images/face/nose-thread-filler.webp"
                   alt="Asian nose anatomy for thread lift"
                   fill
                   className="object-cover"

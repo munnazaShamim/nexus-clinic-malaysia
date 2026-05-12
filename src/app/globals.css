@@ -15,3 +15,14 @@
 --font-inter: "Inter", sans-serif;
 --font-georgia: "Georgia", serif;
 }
+
+/* Blog post internal link styles */
+.single-post a {
+  color: #8C4F58;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.single-post a:hover {
+  color: #4B3A33;
+}

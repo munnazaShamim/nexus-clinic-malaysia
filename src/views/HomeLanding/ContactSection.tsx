@@ -11,7 +11,7 @@ const ContactSection = ({ t }: { t: (key: string) => string }) => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
-        style={{ backgroundImage: "url('/images/nexus-clinic.jpeg')" }}
+        style={{ backgroundImage: "url('/images/nexus-clinic.webp')" }}
       />
       
       {/* Overlay */}

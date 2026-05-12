@@ -236,7 +236,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             <motion.div variants={fadeInRight} className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/face/lip-filler.jpeg"
+                  src="/images/face/lip-filler.webp"
                   alt={whatIsLipFiller?.imageAlt || "Lip filler injection procedure at Nexus Clinic KL"}
                   className="w-full h-auto object-cover"
                   width={600}

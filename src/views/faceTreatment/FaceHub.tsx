@@ -27,10 +27,10 @@ interface FaceHubProps {
 
 export default function FaceHub({ locale }: FaceHubProps) {
   const treatments = [
-    { name: "Botox Malaysia", slug: "botox-malaysia", description: "Wrinkle relaxation, jaw slimming, gummy smile & more.", imageUrl: "/images/face/botox-malaysia.jpeg" },
+    { name: "Botox Malaysia", slug: "botox-malaysia", description: "Wrinkle relaxation, jaw slimming, gummy smile & more.", imageUrl: "/images/face/botox-malaysia.webp" },
     { name: "Cheek Filler Malaysia", slug: "cheek-filler-malaysia", description: "Restore midface volume & lift the lower face.", imageUrl: "/images/face/Cheek Filler Treatment.webp" },
     { name: "Chin Filler Malaysia", slug: "chin-filler-malaysia", description: "Correct projection & restore facial balance.", imageUrl: "/images/face/Chin Dermal Filler.webp" },
-    { name: "Dermal Filler Malaysia", slug: "dermal-filler-malaysia", description: "Volume restoration & facial contouring.", imageUrl: "/images/face/dermal-filler.jpeg" },
+    { name: "Dermal Filler Malaysia", slug: "dermal-filler-malaysia", description: "Volume restoration & facial contouring.", imageUrl: "/images/face/dermal-filler.webp" },
     { name: "Jawline Filler Malaysia", slug: "jawline-filler-malaysia", description: "Define jaw border & sharpen your profile.", imageUrl: "/images/face/Jawline Filler.webp" },
     { name: "Lip Filler Malaysia", slug: "lip-filler-malaysia", description: "Fuller lips & defined Cupid's bow.", imageUrl: "/images/face/Lip Filler.webp" },
     { name: "Nose Filler Malaysia", slug: "nose-filler-malaysia", description: "Higher bridge, hump camouflage & tip definition.", imageUrl: "/images/face/Nose Filler Treatment.webp" },

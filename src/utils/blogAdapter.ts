@@ -54,7 +54,7 @@ function formatDate(dateString: string): string {
 }
 
 export function adaptWordPressPost(post: WordPressPost, index: number): Post {
-  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url ||  post.jetpack_featured_media_url || '/images/blog-default.png';
+  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url ||  post.jetpack_featured_media_url || '/images/blog-default.webp';
   
 
   const seo = post.yoast_head_json ? {
