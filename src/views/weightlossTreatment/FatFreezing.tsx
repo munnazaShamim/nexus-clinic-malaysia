@@ -873,58 +873,7 @@ const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             viewport={{ once: true }}
             className="max-w-5xl mx-auto"
           >
-            <motion.h2
-              variants={fadeInUp}
-              className="text-3xl md:text-4xl font-bold text-brown mb-8 text-center"
-            >
-              Fat Freezing Malaysia{" "}
-              <span className="text-wine">Price Guide 2026</span>
-            </motion.h2>
-
-            <motion.div
-              variants={fadeInUp}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Abdomen</p>
-                <p className="text-brown font-semibold">RM 1,500 to RM 2,200</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Love Handles</p>
-                <p className="text-brown font-semibold">RM 2,800 to RM 4,000</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Inner Thighs</p>
-                <p className="text-brown font-semibold">RM 2,800 to RM 4,000</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Bra / Back Fat</p>
-                <p className="text-brown font-semibold">RM 1,500 to RM 2,200</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Upper Arms</p>
-                <p className="text-brown font-semibold">RM 2,500 to RM 3,500</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <p className="text-sm text-taupe mb-2">Double Chin</p>
-                <p className="text-brown font-semibold">RM 1,200 to RM 1,800</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={fadeInUp}
-              className="bg-wine/10 rounded-2xl p-8 border border-wine/20 mt-8"
-            >
-              <p className="text-brown font-bold mb-2">
-                Multi-area package pricing
-              </p>
-              <p className="text-brown/80">
-                Multi-area packages start from RM 6,000, with final pricing
-                depending on area, number of cycles, and device selection. A
-                personalised quote is provided after consultation.
-              </p>
-            </motion.div>
-
+        {/* pricing will be addes here */}
             <p className="text-center text-brown/80 mt-8">
               Patients interested in combining fat freezing with overall weight management can also explore our{' '}
               <Link href="/weight-loss/coolsculpting-malaysia/" className="text-wine font-bold italic">

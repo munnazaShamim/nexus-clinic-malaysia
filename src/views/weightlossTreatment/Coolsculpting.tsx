@@ -29,6 +29,7 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
+import TableForPages from "@/src/components/TableForPages"
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
@@ -722,105 +723,6 @@ const CoolSculptingLanding = ({
           </div>
         </motion.section>
 
-        {/* Cost Section */}
-        <motion.section
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="py-20"
-          style={{ backgroundColor: "white" }}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div variants={fadeInLeft} className="space-y-6">
-                <h2
-                  className="text-3xl md:text-4xl font-bold"
-                  style={{
-                    color: "var(--color-brown)",
-                    fontFamily: "var(--font-georgia)",
-                  }}
-                >
-                  {t("pricing.title")}
-                  <br />
-                  <span style={{ color: "var(--color-wine)" }}>
-                    {t("pricing.highlight")}
-                  </span>
-                </h2>
-
-                <div className="space-y-4">
-                  {pricingItems && pricingItems.map((item, index) => {
-                    const widthClass = index === 0 ? "w-3/5" : index === 1 ? "w-4/5" : "w-5/6";
-                    return (
-                      <div
-                        key={index}
-                        className="p-6 rounded-2xl"
-                        style={{ backgroundColor: "var(--color-cream)" }}
-                      >
-                        <div className="flex justify-between items-center mb-2">
-                          <span style={{ color: "var(--color-brown)" }}>
-                            {item.area}
-                          </span>
-                          <span
-                            className="text-2xl font-bold"
-                            style={{ color: "var(--color-wine)" }}
-                          >
-                            {item.range}
-                          </span>
-                        </div>
-                        <div
-                          className="w-full h-2 rounded-full"
-                          style={{ backgroundColor: "white" }}
-                        >
-                          <div
-                            className={`${widthClass} h-2 rounded-full`}
-                            style={{ backgroundColor: "var(--color-wine)" }}
-                          />
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                <p className="text-sm" style={{ color: "var(--color-taupe)" }}>
-                  {t("pricing.disclaimer")}
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeInRight} className="relative">
-                <div
-                  className="p-8 rounded-3xl"
-                  style={{
-                    backgroundColor: "var(--color-wine)",
-                    color: "white",
-                  }}
-                >
-                  <h3 className="text-2xl font-bold mb-4">
-                    {t("pricing.commonAreas.title")}
-                  </h3>
-                  <ul className="space-y-3 mb-6">
-                    {commonAreasList && commonAreasList.map((item, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-5 h-5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href="/contact-us/"
-                    className="w-full py-3 rounded-full bg-white font-semibold inline-block text-center"
-                    style={{ color: "var(--color-wine)" }}
-                  >
-                    {t("pricing.commonAreas.buttonText")}
-                  </motion.a>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </motion.section>
-
         {/* Comparison Section */}
         <motion.section
           variants={staggerContainer}
@@ -918,7 +820,115 @@ const CoolSculptingLanding = ({
             </p>
           </div>
         </motion.section>
+         {/* Pricing */}
 
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
+          >
+            <TableForPages 
+                columns={[
+                  { key: "treatment", header: "Treatment System" },
+                  { key: "applicator", header: "Applicator / Option" },
+                  { key: "area", header: "Parts / Areas" },
+                  { key: "duration", header: "Duration" },
+                  { key: "normalPrice", header: "Normal Price" },
+                  { key: "sellingPrice", header: "Selling Price" },
+                  { key: "promoPrice", header: "Promo Price" },
+                  { key: "notes", header: "Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Coolsculpting Petite",
+                    applicator: "Fit",
+                    area: "Under Arm / inner thighs",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Petite",
+                    applicator: "Core",
+                    area: "Lower & upper abdomen / banana roll",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Petite",
+                    applicator: "Curve ++",
+                    area: "Flanks / muffin top / bra buldge / axillary puff",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Advantage",
+                    applicator: "Fit",
+                    area: "Under Arm / inner thighs",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Advantage",
+                    applicator: "Core",
+                    area: "Lower & upper abdomen / banana roll",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Advantage",
+                    applicator: "Curve ++",
+                    area: "Flanks / muffin top / bra buldge / axillary puff",
+                    duration: "35 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Legacy",
+                    applicator: "Coolsculpting Mini",
+                    area: "Double chin",
+                    duration: "45 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                  {
+                    treatment: "Coolsculpting Legacy",
+                    applicator: "Coolsculpting Smooth",
+                    area: "Outer Thighs",
+                    duration: "1 hour & 15 minutes",
+                    normalPrice: "RM2500 per applicator",
+                    sellingPrice: "Depending on the promo of the month",
+                    promoPrice: "RM1500",
+                    notes: "Price shown on parent Coolsculpting row",
+                  },
+                ]}
+              title="CoolSculpting Malaysia Pricing Guide"
+              subtitle=""
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+          </motion.div>
+        </section>
         {/* FAQ Section */}
         <FAQWithSchema data={faqs} />
 
