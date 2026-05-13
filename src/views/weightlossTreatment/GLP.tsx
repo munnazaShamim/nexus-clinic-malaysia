@@ -25,6 +25,7 @@ import {
 import FAQWithSchema from "../../components/FAQWithSchema";
 import SectionBeforeAfter from "../../components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
+import TableForPages from "@/src/components/TableForPages"
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
@@ -855,55 +856,59 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-20 bg-light">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        {/* Pricing */}
+        <section className="py-24 px-4">
           <motion.div
-            variants={fadeInUp}
-            className="max-w-3xl mx-auto text-center mb-16"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-brown mb-6">
-              GLP-1 Programme Price in Malaysia 2026
-            </h2>
-            <p className="text-xl text-taupe">
-              Pricing depends on medication, dose and level of support included.
-            </p>
+            <TableForPages 
+                columns={[
+                  { key: "programme", header: "Programme Option" },
+                  { key: "medication", header: "Medication" },
+                  { key: "price", header: "Price Range / Package Price" },
+                ]}
+                data={[
+                  {
+                    programme: "Saxenda Starter Programme",
+                    medication: "Liraglutide 3.0mg daily",
+                    price: "From RM1,650 for 3 pens",
+                  },
+                  {
+                    programme: "Ozempic Programme",
+                    medication: "Semaglutide 0.5mg to 1mg weekly",
+                    price: "From RM1,800 per pen",
+                  },
+                  {
+                    programme: "Wegovy Programme",
+                    medication: "Semaglutide up to 2.4mg weekly",
+                    price: "RM1,088–RM1,888 per pen",
+                  },
+                  {
+                    programme: "Mounjaro Programme",
+                    medication: "Tirzepatide weekly",
+                    price: "RM1,588–RM2,188 per pen",
+                  },
+                  {
+                    programme: "Zepbound Programme",
+                    medication: "Tirzepatide weekly",
+                    price: "Pricing subject to availability and consultation",
+                  },
+                  {
+                    programme: "Comprehensive GLP-1 Package",
+                    medication: "Medication + monitoring + lifestyle support",
+                    price: "Pricing varies by programme structure",
+                  },
+                ]}
+              title="GLP-1 Programme Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+              subtitle="GLP-1 programme pricing in Malaysia varies based on the medication prescribed, the dosage required, and the level of clinical monitoring included in the programme. Nexus Clinic KL provides a transparent pricing breakdown after your initial consultation. No medication is prescribed without a full medical assessment, and no patient is committed to treatment costs before understanding exactly what is included. The table below reflects updated 2026 indicative pricing based on currently available GLP-1 programmes at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
           </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              ["Initial Consultation + Blood Panel", "Complimentary consultation; blood tests from RM 200"],
-              ["Saxenda Starter Programme", "RM 600 to RM 900 per month"],
-              ["Ozempic Programme", "RM 700 to RM 1,200 per month"],
-              ["Wegovy Programme", "RM 900 to RM 1,500 per month"],
-              ["Mounjaro Programme", "RM 900 to RM 1,800 per month"],
-              ["Zepbound Programme", "RM 900 to RM 1,800 per month"],
-              ["Comprehensive GLP-1 Package", "RM 1,200 to RM 2,500 per month"],
-            ].map(([title, price], index) => (
-              <motion.div
-                key={index}
-                variants={scaleIn}
-                className="bg-cream p-6 rounded-2xl shadow-md"
-              >
-                <h3 className="text-xl font-serif text-wine mb-3">{title}</h3>
-                <p className="text-brown">{price}</p>
-              </motion.div>
-            ))}
-          </div>
-          <p className="text-center mt-8 text-brown">
-            GLP-1 programme pricing in Malaysia varies based on the medication prescribed, the dose required, and the level of clinical support included. Nexus Clinic KL provides a transparent pricing breakdown after your initial consultation. No medication is prescribed without a full assessment, and no patient is committed to a cost before understanding exactly what is included. The table below reflects current 2026 indicative pricing. Patients who want to complement their GLP-1 programme with body contouring may also benefit from{' '}
-            <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
-              fat freezing treatment in Malaysia
-            </Link>{' '}
-            or the broader{' '}
-            <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
-              doctor monitored weight loss programme
-            </Link>{' '}
-            for integrated weight management support.
-          </p>
-        </div>
-      </section>
-
+        </section>
       {/* FAQ */}
       <FAQWithSchema data={faqs} />
 

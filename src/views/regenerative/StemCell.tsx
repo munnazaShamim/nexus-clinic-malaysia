@@ -149,52 +149,6 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
     { factor: "Combined Wellness", malaysia: "Integrated anti-aging and regenerative care", western: "Separate specialist referrals" },
   ];
 
-  // Pricing Table Data
-  const pricingData = [
-    {
-      programme: "Anti-Aging Starter",
-      cellSource: "UC-MSC (Umbilical Cord)",
-      dosage: "50 million cells",
-      price: "RM 8,000 to RM 15,000"
-    },
-    {
-      programme: "Anti-Aging Advanced",
-      cellSource: "WJ-MSC (Wharton's Jelly)",
-      dosage: "100 million cells",
-      price: "RM 15,000 to RM 28,000"
-    },
-    {
-      programme: "Joint / Orthopaedic",
-      cellSource: "AD-MSC or UC-MSC",
-      dosage: "50 to 100 million cells",
-      price: "RM 12,000 to RM 25,000"
-    },
-    {
-      programme: "Systemic Rejuvenation",
-      cellSource: "WJ-MSC IV Infusion",
-      dosage: "100 to 200 million cells",
-      price: "RM 25,000 to RM 50,000"
-    },
-    {
-      programme: "Immune Support",
-      cellSource: "UC-MSC IV Infusion",
-      dosage: "50 to 100 million cells",
-      price: "RM 10,000 to RM 20,000"
-    },
-    {
-      programme: "Maintenance Session",
-      cellSource: "UC-MSC or WJ-MSC",
-      dosage: "50 million cells",
-      price: "RM 8,000 to RM 15,000"
-    },
-    {
-      programme: "Consultation",
-      cellSource: "Nexus Clinic KL, Wisma UOA II",
-      dosage: "N/A",
-      price: "Complimentary"
-    },
-  ];
-
   const faqData = [
     {
       q: "Is stem cell therapy in Malaysia legal and regulated?",
@@ -535,19 +489,53 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       {/* Stem Cell Treatment Price Table - Using TableForPages */}
       <section className="py-20 bg-cream">
         <TableForPages
-          columns={[
-            { key: "programme", header: "Programme", className: "font-semibold" },
-            { key: "cellSource", header: "Cell Source" },
-            { key: "dosage", header: "Dosage" },
-            { key: "price", header: "Price Range (RM) 2026" },
-          ]}
-          data={pricingData}
-          title="Stem Cell Treatment Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Mesenchymal Stem Cells, 15 Million",
+                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
+                unit: "Pre-order, paid first",
+                normalPrice: "RM15000",
+                sellingPrice: "RM15000",
+                packageNotes: "Pre-order 5 working days",
+              },
+              {
+                treatment: "Mesenchymal Stem Cells, 50 Million",
+                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
+                unit: "Pre-order, paid first",
+                normalPrice: "RM45000",
+                sellingPrice: "RM45000",
+                packageNotes: "-",
+              },
+              {
+                treatment: "Mesenchymal Stem Cells, 100 Million",
+                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
+                unit: "Pre-order, paid first",
+                normalPrice: "RM55000",
+                sellingPrice: "RM55000",
+                packageNotes: "-",
+              },
+              {
+                treatment: "Mesenchymal Stem Cells, 150 Million",
+                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
+                unit: "Pre-order, paid first",
+                normalPrice: "RM75000",
+                sellingPrice: "RM75000",
+                packageNotes: "-",
+              },
+            ]}
+          title="Stem Cell Treatment Price in Malaysia 2026"
           variant="detailed"
           fadeInUp={fadeInUp}
-          className="container mx-auto px-6"
         />
-        <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+        <p className="text-center mt-4 max-w-4xl mx-auto text-sm text-taupe">
             Stem cell therapy pricing in Malaysia varies significantly based on cell source, dosage, and treatment complexity. Nexus Clinic KL provides transparent, itemised pricing after every consultation. The table below reflects current 2026 indicative pricing. All consultations are complimentary. Patients combining stem cell therapy with{' '}
             <Link href="/hair/prp-hair-treatment-malaysia/" className="text-wine font-bold italic">
               PRP hair treatment

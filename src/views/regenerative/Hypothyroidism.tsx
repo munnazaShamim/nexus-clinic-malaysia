@@ -454,68 +454,6 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           </motion.div>
         </section>
 
-        {/* Hypothyroidism Treatment Cost Table */}
-        <section className="py-20 bg-cream">
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-          >
-              <TableForPages
-                columns={[
-                  { key: "service", header: "Service / Test / Treatment", className: "font-semibold" },
-                  { key: "details", header: "Details" },
-                  { key: "price", header: "Price Range (RM) 2026" },
-                ]}
-                data={[
-                  {
-                    service: "Initial Hypothyroidism Consultation",
-                    details: "Comprehensive hypothyroidism symptoms history, hypothyroidism risk factors review, physical examination of the thyroid gland and clinical signs, blood test requisition; management plan discussed before any prescription is issued",
-                    price: "RM 150 to RM 300"
-                  },
-                  {
-                    service: "Thyroid Function Blood Test Panel",
-                    details: "TSH (thyroid-stimulating hormone), FT4 (free thyroxine), FT3 (free triiodothyronine); levels of thyroid-stimulating hormone and FT4 together confirm or exclude overt hypothyroidism and subclinical hypothyroidism",
-                    price: "RM 80 to RM 180 (laboratory fees)"
-                  },
-                  {
-                    service: "Extended Thyroid Blood Test Panel",
-                    details: "TSH, FT4, FT3, anti-TPO antibodies, anti-thyroglobulin antibodies; used for new diagnoses to identify Hashimoto's thyroiditis as the autoimmune cause; lipid panel added for cardiovascular risk assessment in hypothyroidism",
-                    price: "RM 200 to RM 400 (laboratory fees)"
-                  },
-                  {
-                    service: "Levothyroxine Prescription (per month)",
-                    details: "Synthetic thyroxine for hypothyroidism treatment; dosage individualised by body weight, age and cardiovascular history; prescription valid for 1 to 3 months with follow-up blood test at 6 to 8 weeks to confirm dosage adequacy",
-                    price: "RM 20 to RM 60 per month (medication)"
-                  },
-                  {
-                    service: "Follow-Up Hypothyroidism Monitoring Consultation",
-                    details: "TSH and FT4 blood test review; dosage adjustment if indicated; symptom assessment; annual review once stable; hypothyroidism risk factors reassessment; management of thyroid disorders ongoing",
-                    price: "RM 100 to RM 200 per visit"
-                  },
-                  {
-                    service: "Thyroid Ultrasound Referral (when indicated)",
-                    details: "Indicated for goitre, thyroid nodules on physical examination or thyroid cancer surveillance; not required for routine hypothyroidism diagnosis; referral to radiology; report reviewed at follow-up consultation",
-                    price: "RM 150 to RM 350 (radiology fees)"
-                  },
-                ]}
-                title="Hypothyroidism Treatment Cost in Malaysia 2026: Pricing at Nexus Clinic KL"
-                variant="compact"
-                fadeInUp={fadeInUp}
-                className="py-20 px-4"
-              />
-
-              <motion.div 
-                variants={fadeInUp} 
-                className="mt-8 p-6 bg-wine/10 rounded-2xl"
-              >
-                <p className="text-taupe">
-                  Annual management cost for hypothyroidism at Nexus Clinic KL is typically RM 500 to RM 1,500 including initial consultation, extended blood test panel, levothyroxine prescription and annual follow-up monitoring. This is one of the most cost-effective long-term treatment programmes in all of endocrine medicine.
-                </p>
-              </motion.div>
-          </motion.div>
-        </section>
           <FAQWithSchema data={faqData}/>
         {/* CTA with Background Image */}
         <section className="py-20 relative overflow-hidden">

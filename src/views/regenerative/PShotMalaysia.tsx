@@ -376,19 +376,40 @@ const PShotLanding = () => {
         </p>
       </section>
 
-      {/* P-Shot Cost in Malaysia 2026 Table - Using TableForPages */}
       <section className="py-20 px-4 bg-white">
         <TableForPages
-          columns={[
-            { key: "service", header: "Service / Treatment", className: "font-semibold" },
-            { key: "details", header: "Details" },
-            { key: "price", header: "Price Range (RM) 2026" },
-          ]}
-          data={pricingData}
-          title="P-Shot Cost in Malaysia 2026: Treatment Pricing at Nexus Clinic KL"
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "P Shot, Regen PRP",
+                area: "Penile",
+                unit: "2 tubes",
+                normalPrice: "RM5000",
+                sellingPrice: "RM4800",
+                promoPrice: "RM2500",
+                packageNotes: "PRP-based P-Shot",
+              },
+              {
+                treatment: "P Shot, Korean PRP",
+                area: "Penile",
+                unit: "2 tubes",
+                normalPrice: "RM4000",
+                sellingPrice: "RM3800",
+                promoPrice: "RM2500",
+                packageNotes: "PRP-based P-Shot",
+              },
+            ]}
+          title="P-Shot Cost in Malaysia 2026"
           variant="detailed"
           fadeInUp={fadeInUp}
-          className="max-w-7xl mx-auto"
         />
       </section>
           <FAQWithSchema data={faqs} />

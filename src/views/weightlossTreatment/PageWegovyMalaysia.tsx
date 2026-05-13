@@ -24,6 +24,8 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import TableForPages from "@/src/components/TableForPages"
+
 import Link from "next/link";
 export default function PageWegovyMalaysia({
   locale = fallbackLng,
@@ -834,100 +836,6 @@ export default function PageWegovyMalaysia({
             </div>
           </div>
         </motion.section>
-
-        {/* Cost Section */}
-        <motion.section
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          className="py-24 bg-cream"
-        >
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div variants={fadeInLeft} className="space-y-6">
-                <h2 className="font-georgia text-4xl md:text-5xl text-brown">
-                  Wegovy price in Malaysia:{" "}
-                  <span className="text-wine">what affects the cost?</span>
-                </h2>
-
-                <p className="text-brown font-inter">
-                  Wegovy is generally more expensive than Ozempic because of its
-                  higher dose formulation and dedicated weight-management
-                  indication.
-                </p>
-
-                <ul className="space-y-3">
-                  {[
-                    "dose stage (starter vs maintenance)",
-                    "individual monthly billing vs package structure",
-                    "consultation, bloodwork and monitoring included",
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <ChevronRight className="w-5 h-5 text-wine" />
-                      <span className="text-brown font-inter">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="text-brown font-inter">
-                  At Nexus Clinic KL, a precise quote is given after doctor
-                  assessment and treatment planning, with transparent programme
-                  breakdown before commitment.
-                </p>
-              </motion.div>
-
-              <motion.div
-                variants={fadeInRight}
-                className="bg-light p-8 rounded-3xl"
-              >
-                <h3 className="font-georgia text-2xl text-brown mb-6">
-                  2026 indicative pricing
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-4 border-b border-taupe/20">
-                    <span className="text-brown font-inter">Starter pen</span>
-                    <span className="text-wine font-georgia text-xl">
-                      RM 1,100 - RM 1,350
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-taupe/20">
-                    <span className="text-brown font-inter">
-                      Maintenance pen
-                    </span>
-                    <span className="text-wine font-georgia text-xl">
-                      RM 1,250 - RM 1,600
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-taupe/20">
-                    <span className="text-brown font-inter">
-                      Monthly doctor review
-                    </span>
-                    <span className="text-wine font-georgia text-xl">
-                      RM 100 - RM 200
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center pb-4 border-b border-taupe/20">
-                    <span className="text-brown font-inter">3-month package</span>
-                    <span className="text-wine font-georgia text-xl">
-                      From RM 3,500
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-brown font-inter">6-month package</span>
-                    <span className="text-wine font-georgia text-xl">
-                      From RM 6,800
-                    </span>
-                  </div>
-                </div>
-                <p className="text-sm text-taupe mt-6">
-                  *Indicative 2026 pricing. Final cost depends on dose, timing
-                  and personalised programme structure.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </motion.section>
-
         {/* Comparison Section */}
         <motion.section
           variants={staggerContainer}
@@ -1003,6 +911,74 @@ export default function PageWegovyMalaysia({
           </div>
         </motion.section>
 
+        {/* Pricing */}
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
+          >
+            <TableForPages 
+                columns={[
+                  { key: "factor", header: "Factor" },
+                  { key: "wegovy", header: "Wegovy (Semaglutide 2.4mg)" },
+                  { key: "ozempic", header: "Ozempic (Semaglutide 0.25mg to 1mg)" },
+                ]}
+                data={[
+                  {
+                    factor: "Active Ingredient",
+                    wegovy: "Semaglutide",
+                    ozempic: "Semaglutide",
+                  },
+                  {
+                    factor: "Maximum Dose",
+                    wegovy: "2.4mg once weekly",
+                    ozempic: "1mg once weekly in the current Nexus price context",
+                  },
+                  {
+                    factor: "Primary Approval",
+                    wegovy: "Chronic weight management for obesity or overweight with weight-related risk factors",
+                    ozempic: "Type 2 diabetes management",
+                  },
+                  {
+                    factor: "Weight Loss",
+                    wegovy: "Around 14.9% average body-weight reduction over 68 weeks in STEP 1",
+                    ozempic: "Weight loss varies; not an obesity-dose semaglutide product, so avoid claiming a fixed 10–15% result",
+                  },
+                  {
+                    factor: "Cardiovascular Data",
+                    wegovy: "SELECT showed cardiovascular benefit; FDA approved Wegovy for reducing risk of CV death, heart attack, and stroke in adults with CVD and obesity/overweight",
+                    ozempic: "Ozempic has cardiovascular benefit data in type 2 diabetes patients with established cardiovascular disease",
+                  },
+                  {
+                    factor: "NPRA Malaysia Status",
+                    wegovy: "NPRA-registered semaglutide product; Wegovy 2.4mg is listed under MAL23066008ACZ",
+                    ozempic: "NPRA-registered semaglutide product; Ozempic is listed under MAL20026057AZ",
+                  },
+                  {
+                    factor: "Best Patient Profile",
+                    wegovy: "Obesity or overweight patients where weight loss is the primary goal",
+                    ozempic: "Type 2 diabetes patients where weight and blood sugar control are both relevant",
+                  },
+                  {
+                    factor: "Malaysia / Nexus Price",
+                    wegovy: "RM1,088–RM1,888 per pen depending on dose\n2.4mg dose: RM1,888 per pen",
+                    ozempic: "RM1,800 per pen\n4 pens: RM6,800\n6 pens: RM9,600",
+                  },
+                ]}
+              title="Wegovy vs Ozempic Malaysia: Same Molecule, Completely Different Mission"
+              subtitle="The most common question Malaysian patients ask when researching semaglutide is: if Wegovy and Ozempic both contain semaglutide, why is Wegovy more expensive and what is the actual difference? The answer has three parts: dose, primary approval, and cardiovascular indication. No Malaysian competitor clinic explains all three clearly in one place. The table below does."
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+
+            <p className="max-w-4xl mt-8 text-brown/50 text-sm mx-auto text-center">
+              The practical implication is this. Patients using Ozempic 1 mg for weight loss are using a diabetes medication off-label at a dose below Wegovy's therapeutic ceiling for obesity. Wegovy at 2.4 mg delivers a stronger and more sustained appetite suppression effect, produces modestly better weight loss results, and carries the full weight management regulatory approval rather than an off-label prescription. For patients with cardiovascular disease, the SELECT trial cardiovascular benefit makes Wegovy the medically preferred choice over Ozempic for weight management, regardless of cost.
+                Patients currently on Ozempic who want to understand the step-up process can review our full Ozempic weight loss programme page and discuss the transition at consultation.
+            </p>
+          </motion.div>
+        </section>
         {/* FAQ Section */}
         <FAQWithSchema data={faqs} />
 

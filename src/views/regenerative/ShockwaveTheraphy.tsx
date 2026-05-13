@@ -29,6 +29,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
+import TableForPages from "@/src/components/TableForPages"
 import Image from "next/image";
 
 const ShockwaveLanding = () => {
@@ -603,113 +604,34 @@ const ShockwaveLanding = () => {
           </div>
         </div>
       </motion.section>
-
-      {/* Cost Section */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="py-24 bg-[--color-cream]"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold font-georgia text-brown text-center mb-16">
-            Shockwave Therapy <span className="text-wine">Cost in Malaysia 2026</span>
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            <motion.div variants={fadeInLeft} className="space-y-6">
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-wine mb-4">Musculoskeletal ESWT</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">Initial Consultation</span>
-                    <span className="font-semibold text-brown">RM 100 - RM 200</span>
-                  </div>
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">Per Session</span>
-                    <span className="font-semibold text-brown">RM 300 - RM 700</span>
-                  </div>
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">3-Session Programme</span>
-                    <span className="font-semibold text-brown">RM 800 - RM 1,800</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-wine mb-4">Li-ESWT for Erectile Dysfunction</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">Per Session</span>
-                    <span className="font-semibold text-brown">RM 600 - RM 1,200</span>
-                  </div>
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">6-Session Programme</span>
-                    <span className="font-semibold text-brown">RM 3,500 - RM 6,500</span>
-                  </div>
-                  <div className="flex justify-between border-b border-[--color-cream] py-3">
-                    <span className="text-brown">12-Session Programme</span>
-                    <span className="font-semibold text-brown">RM 6,500 - RM 12,000</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div variants={fadeInRight} className="space-y-6">
-              <div className="bg-wine/5 rounded-2xl p-6">
-                <h3 className="font-semibold text-brown mb-3 flex items-center gap-2">
-                  <Info className="w-5 h-5 text-wine" />
-                  Important Notes
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    All pricing disclosed at initial consultation before any session is booked
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    Programme pricing provides better per-session value than individual booking
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    12-session programme for men who show partial response to initial 6-session course
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    Post-programme follow-up at 3 months to assess response
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-semibold text-wine mb-4">
-                  What's Included in Programme Pricing
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    All scheduled shockwave sessions
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    Initial clinical assessment
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    Post-programme follow-up consultation
-                  </li>
-                  <li className="flex items-start gap-2 text-brown">
-                    <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-1" />
-                    For ED: IIEF-5 assessment and medication review
-                  </li>
-                </ul>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
+      <section className="py-20 px-4 bg-white">
+        <TableForPages
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Shockwave",
+                area: "Penile",
+                unit: "20 minutes, no numb cream required",
+                normalPrice: "RM650",
+                sellingPrice: "RM550",
+                promoPrice: "RM450",
+                packageNotes: "ED / penile blood-flow support mentioned in sheet",
+              },
+            ]}
+          title="Shockwave Therapy Cost in Malaysia 2026"
+          subtitle="Transparent pricing at Nexus Clinic KL — disclosed before any injection is scheduled"
+          variant="detailed"
+          fadeInUp={fadeInUp}
+        />
+      </section>
       {/* Contraindications Section */}
       <motion.section
         variants={staggerContainer}

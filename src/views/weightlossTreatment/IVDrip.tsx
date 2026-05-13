@@ -30,6 +30,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 // import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
+import TableForPages from "@/src/components/TableForPages"
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
@@ -749,71 +750,49 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           </motion.div>
         </div>
       </motion.section>
-
-      {/* Cost Section */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="py-24 bg-light"
-      >
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            IV drip pricing in Kuala Lumpur, Malaysia
-          </h2>
-
-          <p className="text-center text-taupe max-w-3xl mx-auto mb-8">
-            Pricing depends on the selected formulation, ingredient complexity,
-            session duration, and whether the drip is part of a broader weight
-            management or wellness plan.
-          </p>
-
-          <p className="text-center text-brown font-medium mb-8">
-            Typical pricing factors include:
-          </p>
-
-          <div className="max-w-3xl mx-auto bg-cream p-8 rounded-2xl mb-8">
-            <ul className="space-y-4">
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Type of drip formulation selected
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Session length and ingredient intensity
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether the drip is slimming, energy, immunity, detox, NAD+, or
-                custom
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether mobile IV service or in-clinic treatment is used
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether it is a single session or part of a structured plan
-              </li>
-            </ul>
-          </div>
-
+        {/* Pricing */}
+        <section className="py-24 px-4">
           <motion.div
-            variants={fadeInUp}
-            className="max-w-3xl mx-auto bg-wine/5 p-8 rounded-2xl"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
           >
-            <p className="text-brown font-medium mb-2">
-              Indicative pricing from the source content:
-            </p>
-            <p className="text-taupe">
-              Slimming drip RM 380 to RM 650, energy booster RM 350 to RM 550,
-              immunity booster RM 300 to RM 500, liver detox RM 400 to RM 700,
-              skin glow / glutathione drip RM 350 to RM 600, and NAD+ advanced
-              therapy RM 800 to RM 1,500.
-            </p>
+            <TableForPages 
+                columns={[
+                  { key: "treatment", header: "Drip Formulation" },
+                  { key: "package", header: "Session / Package Details" },
+                  { key: "interval", header: "Suggested Interval" },
+                  { key: "price", header: "Price Range" },
+                ]}
+                data={[
+                  {
+                    treatment: "Hydrogen Drip RFB-1 Japan",
+                    package: "4 + 1 package, total 5 sessions, 500ml",
+                    interval: "Every 2 weeks",
+                    price: "RM4,800–RM6,000 package",
+                  },
+                  {
+                    treatment: "NMN Japan",
+                    package: "4 vials × 5cc",
+                    interval: "Can be diluted into Hydrogen Drip; every 2 weeks advisable",
+                    price: "RM7,200–RM8,000 package",
+                  },
+                  {
+                    treatment: "Monofer Drip",
+                    package: "1 vial",
+                    interval: "Based on doctor's recommendation",
+                    price: "RM1,000–RM1,300",
+                  },
+                ]}
+              title="IV Drip Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+              subtitle="IV drip pricing in Malaysia varies based on the formulation, ingredient complexity, and session duration. Nexus Clinic KL provides transparent, itemised pricing after the initial consultation. All first consultations are complimentary. The table below reflects current 2026 indicative pricing across the full range of formulations. Patients in Selangor, including those from Subang Jaya, Petaling Jaya, and surrounding areas, are welcome at the Wisma UOA II clinic in Kuala Lumpur. Mobile IV availability is offered for selected patients. Please enquire during your consultation. Patients combining iv drip therapies with other weight loss treatments may also be interested in 
+                HCG weight loss programme or the full range of GLP-1 weight loss injections available at the clinic."
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
-            <p className="text-taupe">
+            <p className="text-taupe mt-8 text-center text-sm max-w-4xl mx-auto">
               IV drip pricing in Malaysia varies based on the formulation, ingredient complexity, and session duration. Nexus Clinic KL provides transparent, itemised pricing after the initial consultation. All first consultations are complimentary. The table below reflects current 2026 indicative pricing across the full range of formulations. Patients in Selangor, including those from Subang Jaya, Petaling Jaya, and surrounding areas, are welcome at the Wisma UOA II clinic in Kuala Lumpur. Mobile IV availability is offered for selected patients. Please enquire during your consultation. Patients combining IV drip therapies with other weight loss treatments may also be interested in the{' '}
               <Link href="/weight-loss/hcg-programme-malaysia/" className="text-wine font-bold italic">
                 HCG weight loss programme
@@ -825,8 +804,7 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               available at the clinic.
             </p>
           </motion.div>
-        </div>
-      </motion.section>
+        </section>
 
       {/* Comparison Section */}
       <motion.section

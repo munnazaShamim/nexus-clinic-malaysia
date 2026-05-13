@@ -722,77 +722,43 @@ const OShotLanding = () => {
           </div>
         </div>
       </motion.section>
-
-      {/* Cost Section */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="py-24 bg-cream"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            variants={fadeInUp}
-            className="text-center max-w-3xl mx-auto mb-12"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold text-brown mb-4 font-georgia">
-              O-Shot Treatment Cost in Malaysia 2026
-            </h2>
-            <p className="text-taupe">
-              Transparent pricing at Nexus Clinic KL — disclosed before any injection is scheduled
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <motion.div variants={fadeInLeft} className="bg-white rounded-2xl p-6 shadow-xl">
-              <h3 className="text-xl font-semibold text-wine mb-4">Individual Services</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between border-b border-taupe/20 py-2">
-                  <span className="text-brown">O-Shot Initial Consultation</span>
-                  <span className="font-semibold text-brown">RM 150 - RM 300</span>
-                </div>
-                <div className="flex justify-between border-b border-taupe/20 py-2">
-                  <span className="text-brown">O-Shot (Single Session)</span>
-                  <span className="font-semibold text-brown">RM 2,000 - RM 4,500</span>
-                </div>
-                <div className="flex justify-between border-b border-taupe/20 py-2">
-                  <span className="text-brown">O-Shot and G-Shot Combined</span>
-                  <span className="font-semibold text-brown">RM 2,500 - RM 5,000</span>
-                </div>
-                <div className="flex justify-between py-2">
-                  <span className="text-brown">Blood Panel (if indicated)</span>
-                  <span className="font-semibold text-brown">RM 250 - RM 500</span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div variants={fadeInRight} className="bg-white rounded-2xl p-6 shadow-xl">
-              <h3 className="text-xl font-semibold text-wine mb-4">Programme Pricing</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between border-b border-taupe/20 py-2">
-                  <span className="text-brown">O-Shot Programme (2-3 sessions)</span>
-                  <span className="font-semibold text-brown">From RM 5,500</span>
-                </div>
-                <div className="flex justify-between py-2">
-                  <span className="text-brown">Session of P-Shot (Partner)</span>
-                  <span className="font-semibold text-brown">RM 2,000 - RM 4,500</span>
-                </div>
-              </div>
-              <div className="mt-4 p-3 bg-cream rounded-xl">
-                <p className="text-sm text-brown">
-                  Programme pricing provides better per-session value. Most specialist clinic
-                  recommendations advise 2-3 treatments spaced 2 weeks apart for optimal results.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
-          <motion.p variants={fadeInUp} className="text-center text-taupe text-sm mt-6">
-            All pricing includes consultation, procedure, and follow-up where indicated.
-            No obligation to proceed after consultation.
-          </motion.p>
-        </div>
-      </motion.section>
+      <section className="py-20 px-4 bg-white">
+        <TableForPages
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "O Shot, Regen PRP",
+                area: "Intra Vaginal",
+                unit: "1 tube",
+                normalPrice: "RM2888",
+                sellingPrice: "RM2500",
+                promoPrice: "RM2500",
+                packageNotes: "PRP-based O-Shot",
+              },
+              {
+                treatment: "O Shot, Korean PRP",
+                area: "Intra Vaginal",
+                unit: "1 tube",
+                normalPrice: "RM2300",
+                sellingPrice: "RM1888",
+                promoPrice: "RM2500",
+                packageNotes: "PRP-based O-Shot",
+              },
+            ]}
+          title="O-Shot Treatment Cost in Malaysia 2026"
+          subtitle="Transparent pricing at Nexus Clinic KL — disclosed before any injection is scheduled"
+          variant="detailed"
+          fadeInUp={fadeInUp}
+        />
+      </section>
 
       {/* FAQ Section */}
       <FAQWithSchema data={faqs} />

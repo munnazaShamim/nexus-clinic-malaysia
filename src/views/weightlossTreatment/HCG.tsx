@@ -22,6 +22,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import TableForPages from "@/src/components/TableForPages"
 import Image from "next/image";
 const HCGWeightLossLanding = ({
   locale = fallbackLng,
@@ -444,52 +445,44 @@ const HCGWeightLossLanding = ({
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-24 bg-cream">
-        <div className="container mx-auto px-4">
+        {/* Pricing */}
+        <section className="py-24 px-4">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
-            className="max-w-5xl mx-auto"
+            className="max-w-7xl mx-auto"
           >
-            <motion.h2
-              variants={fadeInUp}
-              className="font-georgia text-3xl text-brown mb-6"
-            >
-              HCG diet price in Malaysia 2026
-            </motion.h2>
-
-            <motion.p variants={fadeInUp} className="text-brown/80 mb-8">
-                The HCG weight loss programme is one of the most cost-effective medically supervised weight loss treatment options in Malaysia. Pricing is straightforward: a fixed cost per cycle rather than open-ended monthly fees. The table below reflects current 2026 pricing at Nexus Clinic KL in Kuala Lumpur. All initial consultations are complimentary. Medications and injections are included in cycle pricing. Patients who want to combine the HCG program with body contouring may also be interested in{' '}
-                <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
-                  fat freezing treatment in Malaysia
-                </Link>{' '}
-                as a non-invasive complement for stubborn localised fat that remains after the programme.
-            </motion.p>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                ["Initial Consultation + Medical Assessment", "RM 150 to RM 350"],
-                ["HCG Starter Programme (15-day)", "RM 800 to RM 1,400"],
-                ["HCG Standard Programme (23-day)", "RM 1,200 to RM 1,800"],
-                ["HCG Full Programme (40-day)", "RM 1,800 to RM 2,300"],
-                ["HCG Programme + Add-on Blood Panel", "RM 2,000 to RM 2,800"],
-                ["Second Cycle After Rest", "RM 1,000 to RM 2,000"],
-              ].map(([title, price], index) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="bg-white p-6 rounded-2xl shadow-sm"
-                >
-                  <h3 className="font-georgia text-lg text-wine mb-2">{title}</h3>
-                  <p className="text-brown font-medium">{price}</p>
-                </motion.div>
-              ))}
-            </div>
+            <TableForPages 
+                columns={[
+                  { key: "programme", header: "Programme Option" },
+                  { key: "duration", header: "Duration" },
+                  { key: "price", header: "Price Range (RM) 2026" },
+                ]}
+                data={[
+                  {
+                    programme: "HCG Standard Programme",
+                    duration: "23 days",
+                    price: "RM 1,200 to RM 1,800",
+                  },
+                  {
+                    programme: "HCG Full Programme",
+                    duration: "40 days",
+                    price: "RM 1,800 to RM 2,300",
+                  },
+                  {
+                    programme: "Free Consultation",
+                    duration: "Nexus Clinic KL, Wisma UOA II",
+                    price: "Complimentary",
+                  },
+                ]}
+              title="HCG Diet Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+              subtitle="The HCG weight loss programme is one of the most cost-effective medically supervised weight loss treatment options in Malaysia. Pricing is structured by treatment cycle rather than open-ended monthly billing. The table below reflects verified 2026 indicative pricing at Nexus Clinic KL in Kuala Lumpur. All initial consultations are complimentary. Medications and injections are included within programme pricing. Patients who want to combine the HCG programme with body contouring may also be interested in fat freezing treatment in Malaysia as a non-invasive complement for stubborn localised fat that remains after the programme."
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
           </motion.div>
-        </div>
-      </section>
+        </section>
 
       {/* Safety */}
       <section className="py-24 bg-light">

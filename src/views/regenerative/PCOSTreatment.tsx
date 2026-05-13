@@ -514,35 +514,6 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
           </motion.p>
         </div>
       </motion.section>
-
-      {/* Pricing Table - Using TableForPages */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        variants={staggerContainer}
-        className="py-20"
-        style={{ backgroundColor: "#F3EFEE" }}
-      >
-        <TableForPages
-          columns={[
-            { key: "item", header: "Service / PCOS Treatment", className: "font-semibold" },
-            { key: "details", header: "Details" },
-            { key: "price", header: "Price Range (RM) 2026" },
-          ]}
-          data={pricingItemsData}
-          title="PCOS Treatment Cost in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
-          subtitle="Annual management cost for polycystic ovary syndrome at Nexus Clinic KL is typically RM 3,000 to RM 7,000 including initial workup, blood tests, ongoing medication, follow-up consultations and annual monitoring."
-          variant="detailed"
-          fadeInUp={fadeInUp}
-          className="container mx-auto px-4 md:px-8"
-        />
-        <motion.div variants={fadeInUp} className="text-center mt-8">
-          <p className="text-lg" style={{ color: "#4B3A33" }}>
-            Get Your PCOS Treatment Programme Pricing at Nexus Clinic KL | Free Assessment
-          </p>
-        </motion.div>
-      </motion.section>
-
       {/* Why Nexus Section */}
       <motion.section
         initial="hidden"

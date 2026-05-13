@@ -26,6 +26,8 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import TableForPages from "@/src/components/TableForPages"
+
 import Image from "next/image";
 import Link from "next/link";
 const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
@@ -647,68 +649,65 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* Pricing */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        className="py-20 px-4 md:px-8 lg:px-16 bg-white"
-      >
-        <div className="max-w-4xl mx-auto">
-          <motion.h2
-            variants={fadeInUp}
-            className="text-4xl font-georgia text-brown mb-8"
+        {/* Pricing */}
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
           >
-            Mounjaro Malaysia price guide{" "}
-            <span className="text-wine">(2026)</span>
-          </motion.h2>
+            <TableForPages 
+                columns={[
+                  { key: "programme", header: "Programme" },
+                  { key: "details", header: "Details" },
+                  { key: "price", header: "Nexus Price Reference" },
+                ]}
+                data={[
+                  {
+                    programme: "Mounjaro Starter Dose",
+                    details: "2.5mg pen",
+                    price: "RM1,588 per pen",
+                  },
+                  {
+                    programme: "Mounjaro 5mg Dose",
+                    details: "5mg pen",
+                    price: "RM2,188 per pen",
+                  },
+                  {
+                    programme: "Higher-dose Mounjaro Programme",
+                    details: "7.5mg, 10mg, 12.5mg, or 15mg",
+                    price: "Subject to availability and doctor assessment",
+                  },
+                  {
+                    programme: "Consultation, blood tests, monitoring, and packages",
+                    details: "Based on treatment plan",
+                    price: "Quoted after assessment",
+                  },
+                ]}
+              title="Mounjaro Malaysia Price Guide 2026: Nexus Clinic KL"
+              subtitle="The monthly cost of a Mounjaro programme in Malaysia depends on the dosage level, clinic structure, and whether patients choose individual monthly billing or package-based programmes. Tirzepatide is generally more expensive than semaglutide due to its dual GIP and GLP-1 mechanism and stronger average clinical weight loss outcomes. The table below reflects updated 2026 indicative pricing at Nexus Clinic KL."
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
-          <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-2xl">
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="p-4 bg-white rounded-lg">
-                <p className="text-taupe">Starter phase</p>
-                <p className="text-3xl font-bold text-wine">RM 1,400 - RM 1,800</p>
-                <p className="text-sm text-brown">2.5 mg / 5 mg pen per month</p>
-              </div>
-
-              <div className="p-4 bg-white rounded-lg">
-                <p className="text-taupe">Mid dose</p>
-                <p className="text-3xl font-bold text-wine">RM 1,800 - RM 2,400</p>
-                <p className="text-sm text-brown">7.5 mg / 10 mg pen per month</p>
-              </div>
-
-              <div className="p-4 bg-white rounded-lg">
-                <p className="text-taupe">Maximum dose</p>
-                <p className="text-3xl font-bold text-wine">RM 2,200 - RM 3,200</p>
-                <p className="text-sm text-brown">12.5 mg / 15 mg pen per month</p>
-              </div>
-
-              <div className="p-4 bg-white rounded-lg">
-                <p className="text-taupe">Programme packages</p>
-                <p className="text-3xl font-bold text-wine">From RM 4,500</p>
-                <p className="text-sm text-brown">3-month package pricing</p>
-              </div>
-            </div>
-
-            <p className="text-brown mb-4">
-              Total programme cost can also include consultation, bloodwork,
-              doctor reviews and monitoring.
-            </p>
-            <p className="text-brown font-semibold">
-                Patients seeking a more cost-accessible entry to GLP-1 therapy before committing to Mounjaro can explore our{' '}
-                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
-                  Ozempic weight loss programme
-                </Link>{' '}
-                as a starting point, with the option to step up to tirzepatide in Malaysia if results plateau. Our{' '}
-                <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
-                  GLP-1 programme overview
-                </Link>{' '}
-                covers all available options at Nexus Clinic KL in one place.
-            </p>
+              <p className="text-brown/50 mb-4 mt-8 max-w-4xl mx-auto text-center">
+                Total programme cost can also include consultation, bloodwork,
+                doctor reviews and monitoring.
+              </p>
+              <p className="text-brown/50 mb-4 mt-4 max-w-4xl mx-auto text-center">
+                  Patients seeking a more cost-accessible entry to GLP-1 therapy before committing to Mounjaro can explore our{' '}
+                  <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                    Ozempic weight loss programme
+                  </Link>{' '}
+                  as a starting point, with the option to step up to tirzepatide in Malaysia if results plateau. Our{' '}
+                  <Link href="/weight-loss/glp-1-programme-malaysia/" className="text-wine font-bold italic">
+                    GLP-1 programme overview
+                  </Link>{' '}
+                  covers all available options at Nexus Clinic KL in one place.
+              </p>
           </motion.div>
-        </div>
-      </motion.section>
-
+        </section>
       {/* Comparison */}
       <motion.section
         variants={staggerContainer}

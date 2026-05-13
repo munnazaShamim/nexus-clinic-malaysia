@@ -24,6 +24,7 @@ import {
   Pill,
   ArrowRight,
 } from "lucide-react";
+import TableForPages from "@/src/components/TableForPages"
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
@@ -704,60 +705,6 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* Cost Section */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        className="py-20 px-4 bg-cream"
-      >
-        <div className="container mx-auto max-w-6xl">
-          <motion.div variants={fadeInUp} className="text-center mb-8">
-            <DollarSign className="w-12 h-12 text-wine mx-auto mb-4" />
-            <h2 className="font-georgia text-4xl text-brown">
-              Duromine price in Malaysia 2026
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={fadeInUp}
-            className="bg-white p-8 rounded-3xl shadow-xl max-w-5xl mx-auto"
-          >
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Consultation</p>
-                <p className="text-brown">Complimentary initial medical assessment</p>
-              </div>
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Duromine 15mg</p>
-                <p className="text-brown">RM 300 to RM 450 per month</p>
-              </div>
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Duromine 30mg</p>
-                <p className="text-brown">RM 450 to RM 650 per month</p>
-              </div>
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Duromine 40mg</p>
-                <p className="text-brown">RM 550 to RM 750 per month</p>
-              </div>
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Full 12-week programme</p>
-                <p className="text-brown">RM 1,200 to RM 1,800</p>
-              </div>
-              <div className="bg-cream p-5 rounded-xl">
-                <p className="font-bold text-wine mb-2">Lifestyle coaching add-on</p>
-                <p className="text-brown">RM 1,500 to RM 2,200</p>
-              </div>
-            </div>
-
-            <p className="text-wine font-medium bg-wine/5 p-4 rounded-xl mt-6">
-              At Nexus Clinic KL, pricing is framed around programme quality, monitoring
-              and transition planning, not just the capsule alone.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
-
       {/* Post Duromine */}
       <motion.section
         variants={staggerContainer}
@@ -799,6 +746,87 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
+        {/* Pricing */}
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
+          >
+            <TableForPages 
+              columns={[
+                { key: "factor", header: "Factor" },
+                { key: "duromine", header: "Duromine (Phentermine)" },
+                { key: "ozempic", header: "Ozempic (Semaglutide)" },
+                { key: "hcg", header: "HCG Programme" },
+                { key: "contrave", header: "Contrave (Naltrexone/Bupropion)" },
+              ]}
+              data={[
+                {
+                  factor: "Mechanism",
+                  duromine: "CNS stimulant, appetite suppressant",
+                  ozempic: "GLP-1 receptor agonist",
+                  hcg: "Hormonal fat mobilisation + VLCD",
+                  contrave: "Reward pathway modulator",
+                },
+                {
+                  factor: "Admin Route",
+                  duromine: "Daily oral capsule",
+                  ozempic: "Weekly injection",
+                  hcg: "Daily injection",
+                  contrave: "Daily oral tablet",
+                },
+                {
+                  factor: "Speed of Results",
+                  duromine: "Fast. Visible in 2 to 4 weeks",
+                  ozempic: "Moderate. 4 to 8 weeks",
+                  hcg: "Very fast. Days to 1 week",
+                  contrave: "Slow. 8 to 12 weeks",
+                },
+                {
+                  factor: "Duration",
+                  duromine: "Up to 12 weeks per cycle",
+                  ozempic: "Long-term ongoing",
+                  hcg: "23 to 40-day fixed cycle",
+                  contrave: "Long-term ongoing",
+                },
+                {
+                  factor: "Average Weight Loss",
+                  duromine: "7 to 12% body weight over 12 weeks",
+                  ozempic: "10 to 15% over 6 to 12 months",
+                  hcg: "5 to 13 kg per cycle",
+                  contrave: "5 to 9% body weight over 6 months",
+                },
+                {
+                  factor: "Dependency Risk",
+                  duromine: "Moderate. Requires structured exit",
+                  ozempic: "None",
+                  hcg: "None",
+                  contrave: "Low",
+                },
+                {
+                  factor: "Best For",
+                  duromine: "Short-term appetite suppression, kickstarting weight loss",
+                  ozempic: "Sustained metabolic control, diabetes",
+                  hcg: "Rapid structured reset, stubborn fat",
+                  contrave: "Emotional eating, food cravings, binge patterns",
+                },
+                {
+                  factor: "Cost in Malaysia (monthly)",
+                  duromine: "RM 300 to RM 600",
+                  ozempic: "From RM 1,800 per pen",
+                  hcg: "RM 1,200 to RM 2,300 per cycle",
+                  contrave: "RM 300 to RM 700",
+                },
+              ]}
+              title="Duromine vs Ozempic vs HCG vs Contrave: Choosing Your Weight Loss Medication in Malaysia"
+              subtitle="The weight loss medication landscape in Malaysia in 2026 offers more clinically proven options than at any previous point. Duromine vs alternatives is one of the most commonly discussed topics during consultations at Nexus Clinic KL, particularly as GLP-1 medications have gained significant public attention. Each medication has a distinct mechanism, a distinct patient profile it suits best, and a different risk and benefit trade-off. The comparison below covers the four main prescription weight loss medications available in Malaysia so patients can make informed decisions with their doctor rather than choosing based on marketing alone"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+          </motion.div>
+        </section>
       {/* FAQ Section */}
       <FAQWithSchema data={faqs} />
 

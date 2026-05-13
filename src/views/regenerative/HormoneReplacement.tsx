@@ -377,7 +377,6 @@ const HormonReplaceLanding = ({
         </motion.div>
       </section>
 
-      {/* Hormone Replacement Therapy Cost in Malaysia 2026 Table */}
       <section className="py-20 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -386,51 +385,46 @@ const HormonReplaceLanding = ({
           viewport={{ once: true }}
           className="container mx-auto px-4 sm:px-6 lg:px-8"
         >
-          {/* Hormone Replacement Therapy Cost Table */}
           <TableForPages
-            columns={[
-              { key: "service", header: "Service / Item", className: "font-semibold" },
-              { key: "details", header: "Details" },
-              { key: "price", header: "Price Range (RM) 2026" },
-            ]}
-            data={[
-              {
-                service: "Initial HRT Consultation",
-                details: "Comprehensive symptom assessment (MENQOL), medical history, contraindication screening, blood pressure, physical examination; discuss reasons for taking HRT; doctor will provide personalised guidance; make an appointment today for your HRT assessment",
-                price: "RM 150 to RM 300"
-              },
-              {
-                service: "Pre-HRT Blood Panel",
-                details: "FSH, LH, oestradiol, progesterone (if perimenopausal), testosterone, SHBG, thyroid function, lipids, fasting glucose, CBC, liver function tests; baseline hormone levels assessment",
-                price: "RM 300 to RM 550 (laboratory fees)"
-              },
-              {
-                service: "Transdermal Oestradiol Gel (per month supply)",
-                details: "Oestrogel or equivalent; oestrogen therapy applied daily; prescription valid for 1 to 3 months; the most commonly prescribed oestrogen-only HRT delivery route at this clinic",
-                price: "RM 80 to RM 180 per month"
-              },
-              {
-                service: "Micronised Progesterone / Bioidentical Hormones (per month)",
-                details: "Utrogestan; bioidentical hormone replacement therapy progestogen component; oral capsule taken nightly for women with uterus on systemic oestrogen; oestrogen and progestogen combination; continuous or cyclical depending on menopausal stage",
-                price: "RM 80 to RM 160 per month"
-              },
-              {
-                service: "Oral Combined HRT Tablets (per month)",
-                details: "Combined HRT (oestrogen and progestogen) tablet; various brands; cyclical or continuous regimen depending on stage; combined HRT is recommended for women with a uterus on systemic oestrogen therapy",
-                price: "RM 60 to RM 200 per month"
-              },
-              {
-                service: "Local Vaginal Oestrogen (per supply)",
-                details: "Vagifem pessaries, Ovestin cream or Estring ring; oestrogen-only HRT in local form; oestrogen therapy for genitourinary syndrome; used alongside or without systemic hormone replacement therapy",
-                price: "RM 80 to RM 250 per supply"
-              },
-              {
-                service: "Follow-Up HRT Review Consultation",
-                details: "Annual structured review; symptom assessment, blood pressure, unexpected bleeding evaluation, ongoing indication review, prescription renewal; decide whether to continue HRT; make an appointment for your annual HRT review",
-                price: "RM 100 to RM 200 per visit"
-              },
-            ]}
-            title="Hormone Replacement Therapy Cost in Malaysia 2026: HRT Pricing at Nexus Clinic KL"
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Area / Route" },
+                { key: "unit", header: "Unit / Session" },
+                { key: "normalPrice", header: "Normal Price" },
+                { key: "sellingPrice", header: "Selling Price" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Nebido 1000mg",
+                  area: "IM intramuscular",
+                  unit: "Per treatment",
+                  normalPrice: "RM1250",
+                  sellingPrice: "RM1250",
+                  promoPrice: "NIL",
+                  packageNotes: "Package price: Buy 4, get 1 free",
+                },
+                {
+                  treatment: "Janaesterone Testosterone Enanthate 250mg",
+                  area: "IM intramuscular",
+                  unit: "Per treatment",
+                  normalPrice: "RM450",
+                  sellingPrice: "RM450",
+                  promoPrice: "NIL",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Nexus DHEA 25mg, 60's",
+                  area: "Oral",
+                  unit: "60's, 1 to 2 months supply",
+                  normalPrice: "RM189",
+                  sellingPrice: "RM189",
+                  promoPrice: "NIL",
+                  packageNotes: "Sheet mentions DHEA is used for anti-aging and menopause symptoms",
+                },
+              ]}
+            title="Hormone Replacement Therapy Cost in Malaysia 2026"
             variant="compact"
             fadeInUp={fadeInUp}
             className="py-20 px-4"

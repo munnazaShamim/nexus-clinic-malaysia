@@ -33,6 +33,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
+import TableForPages from "@/src/components/TableForPages"
 import Image from "next/image";
 
 const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
@@ -751,70 +752,6 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      {/* Cost Section */}
-      <motion.section
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="py-24 bg-light"
-      >
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="font-georgia text-4xl text-brown text-center mb-8">
-            Mounjaro and Zepbound pricing in Kuala Lumpur, Malaysia
-          </h2>
-
-          <p className="text-center text-taupe max-w-3xl mx-auto mb-8">
-            Pricing depends on dose, monitoring structure, and whether the plan
-            is a simple monthly prescription pathway or a more comprehensive
-            package with bloods and check-ins included.
-          </p>
-
-          <p className="text-center text-brown font-medium mb-8">
-            Typical pricing factors include:
-          </p>
-
-          <div className="max-w-3xl mx-auto bg-cream p-8 rounded-2xl mb-8">
-            <ul className="space-y-4">
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                The prescribed dose and KwikPen strength
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Monthly monitoring and doctor review level
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether the programme includes labs, bloods, and nutrition support
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Whether you are on a Mounjaro diabetes pathway or a Zepbound-style weight management pathway
-              </li>
-              <li className="flex gap-3 text-taupe">
-                <DollarSign className="w-5 h-5 text-wine shrink-0" />
-                Any added body contouring or complementary treatments
-              </li>
-            </ul>
-          </div>
-
-          <motion.div
-            variants={fadeInUp}
-            className="text-center max-w-2xl mx-auto bg-wine/5 p-8 rounded-2xl"
-          >
-            <p className="text-brown text-lg font-medium mb-2">
-              Indicative pricing from the source content:
-            </p>
-            <p className="text-taupe">
-              2.5mg starter from RM 1,100 to RM 1,500, 5mg from RM 1,200 to RM
-              1,800, 10mg from RM 1,800 to RM 2,800, 15mg from RM 2,200 to RM
-              3,500, and 3-month packages from RM 4,500 to RM 9,000.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
-
       {/* Comparison Section */}
       <motion.section
         variants={staggerContainer}
@@ -995,6 +932,66 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           </motion.p>
         </div>
       </motion.section>
+
+        {/* Pricing */}
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
+          >
+            <TableForPages 
+                columns={[
+                  { key: "programme", header: "Programme" },
+                  { key: "includes", header: "Includes" },
+                  { key: "price", header: "Price Range (RM) 2026" },
+                ]}
+                data={[
+                  {
+                    programme: "Initial Consultation + Medical Assessment",
+                    includes: "BMI, bloods, health history, suitability check",
+                    price: "Complimentary",
+                  },
+                  {
+                    programme: "Mounjaro 2.5mg Starter (4 weeks)",
+                    includes: "KwikPen + doctor review",
+                    price: "RM 1,588 per pen",
+                  },
+                  {
+                    programme: "Mounjaro 5mg (4 weeks)",
+                    includes: "KwikPen + monitoring",
+                    price: "RM 2,188 per pen",
+                  },
+                  {
+                    programme: "Mounjaro 10mg (4 weeks)",
+                    includes: "KwikPen + monitoring",
+                    price: "RM 1,800 to RM 2,400 per pen",
+                  },
+                  {
+                    programme: "Mounjaro 15mg (4 weeks)",
+                    includes: "KwikPen + enhanced monitoring",
+                    price: "RM 2,200 to RM 3,200 per pen",
+                  },
+                  {
+                    programme: "Zepbound Programme (weight management)",
+                    includes: "KwikPen + full weight management support",
+                    price: "Pricing varies by availability and consultation",
+                  },
+                  {
+                    programme: "Comprehensive 3-Month Package",
+                    includes: "Medication + bloods + check-ins + nutrition support",
+                    price: "Pricing varies depending on programme structure and dosage stage",
+                  },
+                ]}
+              title="Mounjaro Price in Malaysia 2026: Transparent Programme Pricing at Nexus Clinic KL"
+              subtitle="Mounjaro pricing in Malaysia varies based on the dose prescribed and the programme structure chosen. All consultations at Nexus Clinic KL are complimentary. Medication pricing is itemised and provided in writing before any prescription is confirmed. The pricing table below reflects updated 2026 indicative pricing for the currently verified tirzepatide doses available at Nexus Clinic KL. Patients combining Mounjaro with aesthetic treatments for body contouring may also wish to explore CoolSculpting in Malaysia for localised fat reduction that complements the systemic weight loss achieved through tirzepatide.
+"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+          </motion.div>
+        </section>
       <FAQWithSchema data={faqData} />
       {/* Competitor Snapshot */}
       <motion.section

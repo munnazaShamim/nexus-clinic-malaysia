@@ -23,6 +23,7 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
+import TableForPages from "@/src/components/TableForPages"
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
@@ -412,9 +413,73 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
               ))}
             </div>
 
+            <TableForPages 
+                columns={[
+                  { key: "factor", header: "Factor" },
+                  { key: "ozempic", header: "Ozempic (Semaglutide)" },
+                  { key: "wegovy", header: "Wegovy (Semaglutide)" },
+                  { key: "mounjaro", header: "Mounjaro (Tirzepatide)" },
+                  { key: "saxenda", header: "Saxenda (Liraglutide)" },
+                ]}
+                data={[
+                  {
+                    factor: "Mechanism",
+                    ozempic: "GLP-1 agonist",
+                    wegovy: "GLP-1 agonist",
+                    mounjaro: "GLP-1 + GIP dual agonist",
+                    saxenda: "GLP-1 agonist",
+                  },
+                  {
+                    factor: "Max Dose",
+                    ozempic: "1 mg weekly",
+                    wegovy: "2.4 mg weekly",
+                    mounjaro: "15 mg weekly",
+                    saxenda: "3.0 mg daily",
+                  },
+                  {
+                    factor: "Frequency",
+                    ozempic: "Once weekly",
+                    wegovy: "Once weekly",
+                    mounjaro: "Once weekly",
+                    saxenda: "Once daily",
+                  },
+                  {
+                    factor: "Expected Weight Loss",
+                    ozempic: "10 to 15%",
+                    wegovy: "12 to 17%",
+                    mounjaro: "15 to 22%",
+                    saxenda: "5 to 8%",
+                  },
+                  {
+                    factor: "Malaysia Price / Month",
+                    ozempic: "RM 1,800 per pen",
+                    wegovy: "RM 1,100 to RM 1,600",
+                    mounjaro: "RM 1,588 to RM 2,188+",
+                    saxenda: "RM 1,200 to RM 2,000",
+                  },
+                  {
+                    factor: "NPRA Status in Malaysia",
+                    ozempic: "Registered (for T2DM)",
+                    wegovy: "Limited availability",
+                    mounjaro: "Registered (for T2DM)",
+                    saxenda: "Registered (for obesity)",
+                  },
+                  {
+                    factor: "Best For",
+                    ozempic: "Cost-effective entry point, T2DM + weight",
+                    wegovy: "Weight-focused patients",
+                    mounjaro: "Maximum weight loss potential",
+                    saxenda: "Daily compliance preference",
+                  },
+                ]}
+              title=""
+              subtitle=""
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
             <motion.div
               variants={fadeInUp}
-              className="bg-wine/5 p-8 rounded-3xl max-w-3xl mx-auto"
+              className="bg-wine/5 p-8 rounded max-w-6xl mx-auto mt-8 text-center"
             >
               <h3 className="font-georgia text-2xl text-wine mb-4">
                 Choosing the right GLP-1 pathway
@@ -685,75 +750,6 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                     part of safe prescribing.
                   </p>
                 </div>
-              </motion.div>
-            </div>
-          </motion.div>
-        </section>
-
-        {/* Pricing */}
-        <section className="py-24 px-4">
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            className="max-w-7xl mx-auto"
-          >
-            <motion.h2
-              variants={fadeInUp}
-              className="font-georgia text-4xl text-brown text-center mb-16"
-            >
-              Ozempic Malaysia price guide 2026
-            </motion.h2>
-
-            <div className="grid md:grid-cols-2 gap-12">
-              <motion.div variants={fadeInLeft} className="space-y-6">
-                <div className="bg-light p-8 rounded-3xl border-2 border-wine/20">
-                  <h3 className="font-georgia text-3xl text-wine mb-2">
-                    RM 900 - RM 1,400
-                  </h3>
-                  <p className="text-taupe font-inter mb-6">
-                    per pen depending on dose
-                  </p>
-                  <p className="text-sm font-inter text-brown">
-                    Starter-dose pens are usually lower in monthly cost, while 1
-                    mg maintenance-phase pens typically cost more. Consultation,
-                    bloodwork and reviews are separate programme components.
-                  </p>
-                </div>
-
-                <div className="bg-glass p-6 rounded-2xl">
-                  <p className="text-sm font-inter text-brown">
-                    Typical 2026 programme components include consultation,
-                    bloodwork, medication, and monthly doctor review. Package
-                    pricing may reduce total cost over three-month and six-month
-                    programmes.
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div variants={fadeInRight} className="space-y-4">
-                {[
-                  "Initial consultation: RM 150 to RM 300",
-                  "Pre-treatment blood panel: RM 200 to RM 400",
-                  "Starter pen: RM 900 to RM 1,100",
-                  "1 mg maintenance pen: RM 1,000 to RM 1,400",
-                  "Monthly doctor review: RM 100 to RM 200",
-                  "3-month package: from RM 3,200",
-                  "6-month package: from RM 6,000",
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    variants={fadeInUp}
-                    className="flex gap-4 p-4 bg-light rounded-xl"
-                  >
-                    <span className="font-bold text-wine min-w-24">
-                      {index + 1}
-                    </span>
-                    <span className="text-sm font-inter text-brown">
-                      {item}
-                    </span>
-                  </motion.div>
-                ))}
               </motion.div>
             </div>
           </motion.div>

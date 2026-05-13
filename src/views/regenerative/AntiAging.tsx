@@ -431,7 +431,6 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </motion.div>
       </section>
 
-      {/* Cost Section - Updated with 2026 pricing */}
       <section className="py-20 bg-light">
         <motion.div
           initial="hidden"
@@ -439,40 +438,194 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           variants={staggerContainer}
           className="container mx-auto px-6"
         >
-        {/* Anti-Aging Treatment Cost Table */}
         <TableForPages
-          columns={[
-            { key: "treatment", header: "Treatment / Programme" },
-            { key: "details", header: "Details" },
-            { key: "price", header: "Price Range (RM) 2026" },
-          ]}
-          data={[
-            { treatment: "Anti-Aging Initial Consultation", details: "Comprehensive assessment: aging concerns, skin type and Fitzpatrick classification, medical history, anti-aging goals; physical examination of skin quality, sagging skin, wrinkle depth and elasticity; treatment plan tailored to the patient's specific concerns and regenerative potential; book a consultation today", price: "RM 150 to RM 300" },
-            { treatment: "Pre-Treatment Blood Panel (for Stem Cell Therapies)", details: "Full blood count, liver function, renal function, infectious disease screen (Hepatitis B, Hepatitis C, HIV), inflammatory markers; required before MSC stem cell anti-aging therapy; baseline for monitoring cellular health improvements", price: "RM 300 to RM 500 (laboratory fees)" },
-            { treatment: "MSC Stem Cell Anti-Aging Therapy (per session)", details: "Wharton's Jelly mesenchymal stem cell (MSC) therapy; medically supervised IV infusion or targeted injection; GMP-certified MSC preparation from Ministry of Health Malaysia-compliant source; includes pre-session medical review and post-session monitoring; number of sessions determined at consultation", price: "RM 8,000 to RM 20,000 per session" },
-            { treatment: "PRP (Platelet-Rich Plasma) Therapy (per session)", details: "Autologous PRP prepared from patient's own blood; facial injection, scalp injection or combined with microneedling; 3-session initial programme recommended; anti-aging treatment for skin rejuvenation and hair restoration; includes platelet-rich plasma preparation and targeted injection", price: "RM 1,200 to RM 2,500 per session" },
-            { treatment: "Exosomes Therapy (per session)", details: "GMP-certified MSC-derived exosomes; delivered topically post-treatment or by injection; can be combined with fractional CO2, PRP, microneedling or thread lift; accelerates healing response and improves skin quality outcomes; cellular repair at the skin level", price: "RM 1,500 to RM 3,500 per session" },
-            { treatment: "Thread Lift (per session)", details: "Medical-grade PDO or PLLA threads for saggy skin lifting and sagging skin correction; minimally invasive non-surgical facial lifting; includes local anaesthetic; lifting effect immediate; collagen production continues for 6 to 12 months; doctor-performed at Nexus Clinic KL", price: "RM 2,500 to RM 6,000 per session (area dependent)" },
-            { treatment: "HIFU (High-Intensity Focused Ultrasound) per session", details: "Non-surgical face and neck lifting using high-intensity focused ultrasound; treats SMAS layer at 1.5mm, 3.0mm and 4.5mm depths; firms the skin and stimulates collagen remodelling over 2 to 3 months; non-invasive with no downtime; doctor-performed", price: "RM 1,800 to RM 4,500 per session (area dependent)" },
-            { treatment: "Fractional CO2 Laser (per session)", details: "Fractional CO2 laser skin resurfacing for wrinkle treatment, skin texture improvement and scar reduction; 5 to 7 days healing downtime; exosomes or PRP applied post-treatment as standard to optimise healing response and collagen regeneration; doctor-performed", price: "RM 1,500 to RM 3,500 per session" },
-            { treatment: "Comprehensive Anti-Aging Programme", details: "Customised programme combining 2 or more treatment modalities including stem cell therapies, PRP, exosomes and/or energy-based treatments; treatment plan tailored to the patient's specific anti-aging goals; programme pricing provides better per-session value; number of sessions agreed at consultation", price: "From RM 12,000 (programme pricing available)" },
-          ]}
-          title="Anti-Aging Treatment Cost in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Hyalual Electri",
+                area: "Full face / Surrounding eyes",
+                unit: "1.5cc",
+                normalPrice: "RM2500",
+                sellingPrice: "RM2500",
+                promoPrice: "RM2200",
+                packageNotes: "Buy 4, get 1 free",
+              },
+              {
+                treatment: "Profhilo",
+                area: "Neck / Décolleté / Arms / Knees / Hands",
+                unit: "1 syringe",
+                normalPrice: "RM2500",
+                sellingPrice: "RM2500",
+                promoPrice: "RM2500",
+                packageNotes: "Buy 4, get 1 free",
+              },
+              {
+                treatment: "Profhilo",
+                area: "Same treatment section",
+                unit: "2 syringes",
+                normalPrice: "RM5000",
+                sellingPrice: "RM4800",
+                promoPrice: "RM4800",
+                packageNotes: "Buy 4, get 1 free",
+              },
+              {
+                treatment: "PRO 32",
+                area: "Face / Neck / Hand",
+                unit: "1 syringe",
+                normalPrice: "RM2000",
+                sellingPrice: "RM1488",
+                promoPrice: "RM1488",
+                packageNotes: "-",
+              },
+              {
+                treatment: "Sculptra 1 vial",
+                area: "Face & Body",
+                unit: "1 vial, 9ml",
+                normalPrice: "RM3300",
+                sellingPrice: "RM3000",
+                promoPrice: "RM2700",
+                packageNotes: "Buy 4, get 1 free",
+              },
+              {
+                treatment: "Sculptra 3 vials",
+                area: "Face & Body",
+                unit: "1 vial 9ml x 3 sessions",
+                normalPrice: "RM9900",
+                sellingPrice: "RM7500",
+                promoPrice: "RM7500",
+                packageNotes: "Buy 4, get 1 free",
+              },
+              {
+                treatment: "Karisma 1, 2cc",
+                area: "Face, cheeks, jawline, temples / Neck / Hands / Décolletage",
+                unit: "1 syringe",
+                normalPrice: "RM3000",
+                sellingPrice: "RM3000",
+                promoPrice: "RM3000",
+                packageNotes: "-",
+              },
+              {
+                treatment: "Karisma 2, 4cc",
+                area: "Same treatment section",
+                unit: "2 syringes",
+                normalPrice: "RM6000",
+                sellingPrice: "RM5400",
+                promoPrice: "RM5400",
+                packageNotes: "-",
+              },
+              {
+                treatment: "Karisma 3, 6cc",
+                area: "Same treatment section",
+                unit: "3 syringes",
+                normalPrice: "RM9000",
+                sellingPrice: "RM7500",
+                promoPrice: "RM7500",
+                packageNotes: "-",
+              },
+            ]}
+          title="Anti-Aging Therapy - Injectables / Bio-Stimulators Cost in Malaysia 2026"
           subtitle="All pricing is disclosed at the initial consultation before any treatment begins."
           variant="compact"
           fadeInUp={fadeInUp}
-          className="py-20 px-4"
         />
-
-        {/* Footnote */}
-        <motion.div
-          variants={fadeInUp}
-          className="mt-8 p-6 bg-wine/10 rounded-2xl"
-        >
-          <p className="text-taupe">
-            Comprehensive anti-aging programmes that combine cellular therapies with structural treatments provide the most complete anti-aging results in Malaysia and are offered at programme pricing that provides better per-session value than individual session booking. All programme pricing at Nexus Clinic KL is disclosed before the first session is booked.
-          </p>
         </motion.div>
+      </section>
+
+      <section className="py-20 bg-light">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={staggerContainer}
+          className="container mx-auto px-6"
+        >
+        <TableForPages
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Area / Route" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Hydrogen Drip RFB-1",
+                area: "IV intravenous / Butterfly",
+                unit: "Every 2 weeks",
+                normalPrice: "RM6000",
+                sellingPrice: "RM4800",
+                promoPrice: "NIL",
+                packageNotes: "Package price: Buy 4, get 1 free",
+              },
+              {
+                treatment: "NMN, Japan",
+                area: "IV / mixed into Hydrogen Drip",
+                unit: "4 vials x 5cc",
+                normalPrice: "RM8000",
+                sellingPrice: "RM7200",
+                promoPrice: "NIL",
+                packageNotes: "Package price: Buy 4, get 1 free",
+              },
+              {
+                treatment: "Nexus DHEA 25mg, 60's",
+                area: "Oral",
+                unit: "60's, 1 to 2 months supply",
+                normalPrice: "RM189",
+                sellingPrice: "RM189",
+                promoPrice: "NIL",
+                packageNotes: "Anti-aging and menopause symptoms mentioned",
+              },
+              {
+                treatment: "Lumi22 Belltree",
+                area: "Oral",
+                unit: "1 box, 30 sachets",
+                normalPrice: "RM328",
+                sellingPrice: "RM328",
+                promoPrice: "NIL",
+                packageNotes: "Brighter, firmer, younger-looking skin",
+              },
+              {
+                treatment: "BHMed Marine Premium Softgel",
+                area: "Oral",
+                unit: "30 softgels in 1 box",
+                normalPrice: "RM1500",
+                sellingPrice: "RM1400",
+                promoPrice: "NIL",
+                packageNotes: "Buy 3 boxes, 90's, RM3600",
+              },
+              {
+                treatment: "BHMed Vege Premium Softgel",
+                area: "Oral",
+                unit: "30 softgels in 1 box",
+                normalPrice: "RM1500",
+                sellingPrice: "RM1400",
+                promoPrice: "NIL",
+                packageNotes: "Anti-aging support mentioned",
+              },
+              {
+                treatment: "BHMed Vital Cell Softgels",
+                area: "Oral",
+                unit: "30 softgels in 1 box",
+                normalPrice: "RM1500",
+                sellingPrice: "RM1400",
+                promoPrice: "NIL",
+                packageNotes: "Anti-aging support mentioned",
+              },
+            ]}
+          title="Anti-Aging Therapy - Wellness / Products Cost in Malaysia 2026"
+          subtitle="All pricing is disclosed at the initial consultation before any treatment begins."
+          variant="compact"
+          fadeInUp={fadeInUp}
+        />
         </motion.div>
       </section>
 

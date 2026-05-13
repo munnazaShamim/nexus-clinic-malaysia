@@ -22,6 +22,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import TableForPages from "@/src/components/TableForPages"
 
 // TypeScript interfaces
 interface TrustBarItem {
@@ -415,41 +416,6 @@ export default function DoctorMonitoredLanding({
         </motion.div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-20 bg-light">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="container mx-auto px-4"
-        >
-          <h2 className="font-georgia text-3xl md:text-4xl text-brown mb-6">
-            {t("pricing.title")}
-          </h2>
-
-          <p className="font-inter text-brown/80 mb-10 max-w-4xl">
-            {t("pricing.description")}{" "}
-            <Link href="/weight-loss/fat-freezing-malaysia/" className="text-wine font-bold italic">
-              {t("pricing.fatFreezingLinkText")}
-            </Link>{" "}
-            {t("pricing.descriptionSuffix")}
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pricingItems && pricingItems.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={scaleIn}
-                className="bg-cream rounded-3xl p-6 shadow-sm"
-              >
-                <h3 className="font-georgia text-lg text-wine mb-2">{item.title}</h3>
-                <p className="font-inter text-brown font-medium">{item.price}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
 
       {/* Safety and Expectations */}
       <section className="py-20 bg-cream">
@@ -579,7 +545,64 @@ export default function DoctorMonitoredLanding({
           </div>
         </motion.div>
       </section>
-
+        {/* Pricing */}
+        <section className="py-24 px-4">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            className="max-w-7xl mx-auto"
+          >
+            <TableForPages 
+                columns={[
+                  { key: "programme", header: "Programme" },
+                  { key: "duration", header: "Duration" },
+                  { key: "price", header: "Price" },
+                ]}
+                data={[
+                  {
+                    programme: "Duromine Weight Loss Programme",
+                    duration: "1 month supply",
+                    price: "RM438 promo / RM1,134 normal",
+                  },
+                  {
+                    programme: "HCG Weight Loss Programme",
+                    duration: "23 or 40-day cycle",
+                    price: "RM2,300–RM4,000 promo",
+                  },
+                  {
+                    programme: "Ozempic Programme",
+                    duration: "Per pen",
+                    price: "RM1,800 promo / RM2,500 normal",
+                  },
+                  {
+                    programme: "Wegovy Programme",
+                    duration: "Per pen, depending on dose",
+                    price: "RM1,088–RM1,888",
+                  },
+                  {
+                    programme: "Mounjaro Programme",
+                    duration: "Per pen, listed doses only",
+                    price: "RM1,588–RM2,188",
+                  },
+                  {
+                    programme: "Zepbound Programme",
+                    duration: "Subject to availability",
+                    price: "Pricing not confirmed",
+                  },
+                  {
+                    programme: "Comprehensive Weight Management",
+                    duration: "Custom programme",
+                    price: "Pricing varies by programme structure",
+                  },
+                ]}
+              title="Medical Weight Loss Clinic Pricing in Malaysia 2026: Transparent Costs at Nexus Clinic KL"
+              subtitle="The cost of a medically supervised weight loss programme at Nexus Clinic KL depends on the protocol chosen, the medications prescribed, and the duration of your programme. All first consultations are complimentary. Blood tests and medications are priced transparently and itemised on your treatment plan before you commit. There are no hidden package fees. The table below reflects updated 2026 pricing as a reference. Patients combining weight loss programmes with fat freezing in Malaysia for body contouring may qualify for combined programme pricing. Your doctor will discuss all options during consultation."
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+          </motion.div>
+        </section>
       {/* FAQ Section */}
       <FAQWithSchema data={faqs} />
 

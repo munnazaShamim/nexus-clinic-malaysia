@@ -556,32 +556,68 @@ export default function EDTreatment({
         >
             {/* Cost of Erectile Dysfunction Treatment Table */}
             <TableForPages
-              columns={[
-                { key: "item", header: "Service / Treatment", className: "font-semibold" },
-                { key: "details", header: "Details" },
-                { key: "price", header: "Price Range (RM) 2026" },
-              ]}
-              data={pricingItems.map((item) => ({
-                item: item.item,
-                details: item.details,
-                price: item.price,
-              }))}
-              title="Cost of Erectile Dysfunction Treatment in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Area / Route" },
+                  { key: "unit", header: "Unit / Session" },
+                  { key: "normalPrice", header: "Normal Price" },
+                  { key: "sellingPrice", header: "Selling Price" },
+                  { key: "promoPrice", header: "Promo Price" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "P Shot, Regen PRP",
+                    area: "Penile",
+                    unit: "2 tubes",
+                    normalPrice: "RM5000",
+                    sellingPrice: "RM4800",
+                    promoPrice: "RM2500",
+                    packageNotes: "P-Shot for erectile dysfunction mentioned in sheet",
+                  },
+                  {
+                    treatment: "P Shot, Korean PRP",
+                    area: "Penile",
+                    unit: "2 tubes",
+                    normalPrice: "RM4000",
+                    sellingPrice: "RM3800",
+                    promoPrice: "RM2500",
+                    packageNotes: "P-Shot for erectile dysfunction mentioned in sheet",
+                  },
+                  {
+                    treatment: "Shockwave",
+                    area: "Penile",
+                    unit: "20 minutes, no numb cream required",
+                    normalPrice: "RM650",
+                    sellingPrice: "RM550",
+                    promoPrice: "RM450",
+                    packageNotes: "Sheet mentions penile blood flow / erection support",
+                  },
+                  {
+                    treatment: "Nebido 1000mg",
+                    area: "IM intramuscular",
+                    unit: "Per treatment",
+                    normalPrice: "RM1250",
+                    sellingPrice: "RM1250",
+                    promoPrice: "NIL",
+                    packageNotes: "TRT option",
+                  },
+                  {
+                    treatment: "Janaesterone Testosterone Enanthate 250mg",
+                    area: "IM intramuscular",
+                    unit: "Per treatment",
+                    normalPrice: "RM450",
+                    sellingPrice: "RM450",
+                    promoPrice: "NIL",
+                    packageNotes: "TRT option",
+                  },
+                ]}
+              title="Cost of Erectile Dysfunction Treatment in Malaysia 2026"
               subtitle="All pricing is presented at the assessment consultation before any ED treatment begins. Oral medications are the most affordable ongoing option. Shockwave therapy programmes represent a more significant investment but address underlying blood flow."
               variant="compact"
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
-
-            {/* Footer Callout */}
-            <motion.div 
-              variants={fadeInUp} 
-              className="mt-8 text-center"
-            >
-              <p className="text-lg" style={{ color: "#4B3A33" }}>
-                Get Full ED Treatment Programme Pricing | Free Assessment at Nexus Clinic KL
-              </p>
-            </motion.div>
         </motion.section>
 
         {/* Pros and Cons Comparison */}

@@ -204,18 +204,6 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
     },
   ];
 
-  // Pricing Table Data
-  const pricingItemsData = [
-    { item: "Initial TRT Consultation", details: "Comprehensive assessment, symptom history, ADAM questionnaire, medical history review, physical examination, contraindication screening, fertility discussion, blood test requisition", price: "RM 150 to RM 300" },
-    { item: "Baseline Blood Panel (Pre-TRT)", details: "Fasting morning serum testosterone (x2 separate days), free testosterone, SHBG, LH, FSH, oestradiol, prolactin, CBC, haematocrit, LFTs, lipid panel, PSA (men over 40), fasting glucose and HbA1c", price: "RM 350 to RM 600" },
-    { item: "Nebido 1000mg Injection", details: "Testosterone undecanoate long-acting IM injection; every 10 to 14 weeks; 4 to 5 visits per year; includes administration fee", price: "RM 600 to RM 900 per injection" },
-    { item: "Sustanon 250 Injection", details: "Mixed testosterone esters IM injection; every 2 to 4 weeks; includes administration fee", price: "RM 150 to RM 350 per injection" },
-    { item: "Testosterone Gel", details: "Androgel 1% or equivalent; daily application; prescription valid for 1 to 3 months", price: "RM 400 to RM 700 per month" },
-    { item: "Monitoring Blood Panel", details: "Serum testosterone level, haematocrit, PSA, LFTs, blood pressure; at 3, 6 months then every 6 to 12 months", price: "RM 200 to RM 400 per panel" },
-    { item: "Follow-Up Consultation", details: "Review of blood test results, symptom and quality of life assessment, dose adjustment, blood pressure monitoring", price: "RM 100 to RM 200 per visit" },
-    { item: "Clomiphene Citrate", details: "Oral prescription for younger men who want testosterone benefit without spermatogenesis suppression", price: "RM 100 to RM 250 per month" },
-  ];
-
   const faqs = [
     { q: t("faq.q1"), a: t("faq.a1") },
     { q: t("faq.q2"), a: t("faq.a2") },
@@ -743,26 +731,39 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           whileInView="visible"
           viewport={{ once: true }}
           className="py-20"
-          style={{ backgroundColor: "var(--color-light)" }}
         >
           <TableForPages
-            columns={[
-              { key: "item", header: "Service / Item", className: "font-semibold" },
-              { key: "details", header: "Details" },
-              { key: "price", header: "Price Range (RM) 2026" },
-            ]}
-            data={pricingItemsData}
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Area / Route" },
+                  { key: "unit", header: "Unit / Session" },
+                  { key: "normalPrice", header: "Normal Price" },
+                  { key: "sellingPrice", header: "Selling Price" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Nebido 1000mg",
+                    area: "IM intramuscular",
+                    unit: "Per treatment",
+                    normalPrice: "RM1250",
+                    sellingPrice: "RM1250",
+                    packageNotes: "Package price: Buy 4, get 1 free",
+                  },
+                  {
+                    treatment: "Janaesterone Testosterone Enanthate 250mg",
+                    area: "IM intramuscular",
+                    unit: "Per treatment",
+                    normalPrice: "RM450",
+                    sellingPrice: "RM450",
+                    packageNotes: "-",
+                  },
+                ]}
             title="Testosterone Replacement Therapy Cost at Our Clinic in Malaysia 2026"
             subtitle="Total annual cost varies by formulation. Nebido-based programmes: RM 5,000 to RM 9,000 per year. Gel-based programmes: RM 7,000 to RM 12,000 per year. All pricing transparent and disclosed before any treatment plan is issued."
             variant="detailed"
             fadeInUp={fadeInUp}
-            className="container mx-auto px-4 sm:px-6 lg:px-8"
           />
-          <motion.div variants={fadeInUp} className="mt-8 p-6 rounded-xl text-center max-w-3xl mx-auto" style={{ backgroundColor: "var(--color-brown)" }}>
-            <p className="text-white">
-              Get Your Full TRT Programme Pricing Before Starting | Book at Nexus Clinic KL
-            </p>
-          </motion.div>
         </motion.section>
 
         {/* Benefits Section */}
