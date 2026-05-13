@@ -538,48 +538,136 @@ export default function CheekFiller({ locale }: CheekFillerProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
-        >          
-        <section className="py-20 px-4 bg-cream">
-          <div className="container mx-auto max-w-4xl">
-            <TableForPages
-              columns={[
-                { key: "treatment", header: "Treatment" },
-                { key: "volume", header: "Typical Volume" },
-                { key: "price", header: "Price Range (2026)" },
-              ]}
-              data={pricingTiers.map(tier => ({
-                treatment: tier.treatment,
-                volume: tier.volume,
-                price: tier.price,
-              }))}
-              title="Cheek Filler Price in Malaysia"
-              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-              variant="compact"
-              fadeInUp={fadeInUp}
-            />
-          </div>
-        </section>
+          className="container mx-auto max-w-7xl"
+        >
+          <section className="py-20 px-4 bg-cream rounded-[32px] shadow-sm">
+            <div className="container mx-auto max-w-6xl">
+              <TableForPages
+                columns={[
+                  { key: "product", header: "Product / Option" },
+                  { key: "areas", header: "Treatment Areas" },
+                  { key: "volume", header: "Volume" },
+                  { key: "selling", header: "Selling Price" },
+                  { key: "promo", header: "Promo Price" },
+                  { key: "notes", header: "Notes" },
+                ]}
+                data={[
+                  {
+                    product: "Juvederm Ultraplus XC",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,200",
+                    promo: "RM 2,200",
+                    notes: "Suitable for facial contouring and volume restoration",
+                  },
+                  {
+                    product: "Juvederm Voluma",
+                    areas: "Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,400",
+                    promo: "RM 2,200",
+                    notes: "Designed for deeper cheek enhancement and lifting",
+                  },
+                  {
+                    product: "Juvederm Volux",
+                    areas: "Cheek / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,500",
+                    promo: "RM 2,200",
+                    notes: "Popular for jawline and facial contour definition",
+                  },
+                  {
+                    product: "Juvederm Volift (Pre Order)",
+                    areas: "Lips / Chin / Lower Face / Cheek",
+                    volume: "1 cc",
+                    selling: "RM 2,500",
+                    promo: "RM 2,200",
+                    notes: "Pre-order filler option for soft facial refinement",
+                  },
+                  {
+                    product: "Celosome Implant",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1.1 cc",
+                    selling: "RM 1,888",
+                    promo: "RM 1,888",
+                    notes:
+                      "Used for cheekbones, jawline, chin, and nose enhancement",
+                  },
+                  {
+                    product: "Belotero Volume",
+                    areas: "Cheekbones / Temples",
+                    volume: "1 cc",
+                    selling: "RM 2,200",
+                    promo: "RM 2,200",
+                    notes: "Ideal for temple hollowing and cheekbone support",
+                  },
+                  {
+                    product: "Neauvia Intense",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,000",
+                    promo: "Out Of Stock",
+                    notes: "Currently unavailable",
+                  },
+                ]}
+                title="Cheek Filler Price in Malaysia"
+                subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+                variant="detailed"
+                fadeInUp={fadeInUp}
+              />
+            </div>
+          </section>
 
-          <motion.div variants={fadeInUp} className="mt-8">
-            <h3 className="font-georgia text-xl text-brown mb-3">What Affects Cheek Filler Price in Kuala Lumpur</h3>
-            <ul className="space-y-2">
-              {priceFactors.map((factor, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
-                  <span className="text-wine">•</span>
-                  <span>{factor}</span>
-                </li>
+          <motion.div
+            variants={fadeInUp}
+            className="mt-10 bg-white rounded-2xl p-8 shadow-sm"
+          >
+            <h3 className="font-georgia text-2xl text-brown mb-6">
+              What Affects Cheek Filler Price in Kuala Lumpur
+            </h3>
+
+            <div className="space-y-4">
+              {[
+                "Premium filler brands such as Juvederm and Belotero are priced differently based on formulation technology and longevity.",
+                "The amount of filler required varies depending on facial volume loss, contour goals, and treatment areas.",
+                "Higher density fillers used for cheekbone definition and jawline contouring generally cost more.",
+                "Some treatments may require multiple syringes for balanced full-face enhancement results.",
+                "Imported fillers with advanced lifting capabilities typically have higher pricing.",
+              ].map((factor, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 text-taupe font-inter"
+                >
+                  <div className="w-2 h-2 rounded-full bg-wine mt-2 shrink-0" />
+                  <p className="leading-relaxed">{factor}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </motion.div>
-          
-          <motion.p variants={fadeInUp} className="text-center text-sm text-taupe mt-6 italic">
-            For patients wanting a full overview of all filler treatments and pricing at the clinic, our <Link href="/face/dermal-filler-malaysia/" className="font-bold text-wine" >dermal filler Malaysia </Link> page covers every treatment area.
+
+          <motion.p
+            variants={fadeInUp}
+            className="text-center text-sm text-taupe mt-8 italic max-w-3xl mx-auto"
+          >
+            For patients wanting a complete overview of facial filler treatments and
+            pricing, our{" "}
+            <Link
+              href="/face/dermal-filler-malaysia/"
+              className="font-semibold text-wine hover:underline"
+            >
+              dermal filler Malaysia
+            </Link>{" "}
+            page covers all treatment areas available at Nexus Clinic KL.
           </motion.p>
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us/">
+
+          <motion.div variants={fadeInUp} className="text-center mt-8">
+            <Link
+              className="inline-flex items-center gap-2 bg-wine text-white px-6 py-3 rounded-full font-medium hover:gap-3 hover:bg-wine/90 transition-all shadow-md"
+              href="/contact-us/"
+            >
               Get Your Personalised Cheek Filler Quote
               <ArrowRight className="w-4 h-4" />
             </Link>

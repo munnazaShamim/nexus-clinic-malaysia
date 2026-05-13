@@ -1,11 +1,8 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 import {
   Sparkles,
-  Star,
   CheckCircle,
-  ChevronRight,
-  ChevronDown,
   Syringe,
   Clock,
   Heart,
@@ -14,28 +11,15 @@ import {
   Award,
   MapPin,
   Calendar,
-  Eye,
-  ArrowUp,
-  Gem,
   Zap,
-  Droplet,
-  User,
-  Scissors,
-  Activity,
-  TrendingUp,
   AlertCircle,
 } from "lucide-react";
-import { useState } from "react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
-  containerVariants,
-  rowVariants,
 } from "@/src/lib/animations";
-import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
@@ -586,44 +570,134 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          
-          <section className="py-20 px-4 bg-cream">
-            <div className="container mx-auto max-w-4xl">
+          <section className="py-20 px-4 bg-cream rounded-[32px] shadow-sm">
+            <div className="container mx-auto max-w-6xl">
               <TableForPages
                 columns={[
-                  { key: "brand", header: "Filler Brand / Type" },
+                  { key: "product", header: "Filler Product" },
+                  { key: "areas", header: "Treatment Areas" },
                   { key: "volume", header: "Volume" },
-                  { key: "price", header: "Est. Price (RM)" },
+                  { key: "selling", header: "Selling Price" },
+                  { key: "promo", header: "Promo Price" },
+                  { key: "notes", header: "Notes" },
                 ]}
                 data={[
-                  { brand: "Juvederm Voluma (Premium HA)", volume: "1 cc", price: "RM 2,200 – RM 3,000" },
-                  { brand: "Juvederm Voluma (Premium HA)", volume: "1.5 cc", price: "RM 3,000 – RM 3,500" },
-                  { brand: "Restylane Lyft (Premium HA)", volume: "1 cc", price: "RM 2,000 – RM 2,800" },
-                  { brand: "Belotero Volume (HA)", volume: "1 cc", price: "RM 1,500 – RM 2,200" },
-                  { brand: "Radiesse (Biostimulator)", volume: "1.5 cc", price: "RM 2,500 – RM 3,500" },
-                  { brand: "Subtle / First-Timer Correction", volume: "0.5 cc", price: "RM 1,500 – RM 2,000" },
+                  {
+                    product: "Juvederm Ultraplus XC",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,200",
+                    promo: "RM 2,200",
+                    notes:
+                      "Suitable for chin enhancement and overall facial contouring",
+                  },
+                  {
+                    product: "Juvederm Voluma",
+                    areas: "Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,400",
+                    promo: "RM 2,200",
+                    notes:
+                      "Popular for stronger chin projection and structural support",
+                  },
+                  {
+                    product: "Juvederm Volux",
+                    areas: "Cheek / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,500",
+                    promo: "RM 2,200",
+                    notes:
+                      "High-density filler commonly used for jawline and chin contouring",
+                  },
+                  {
+                    product: "Juvederm Volift (Pre Order)",
+                    areas: "Lips / Chin / Lower Face / Cheek",
+                    volume: "1 cc",
+                    selling: "RM 2,500",
+                    promo: "RM 2,200",
+                    notes:
+                      "Pre-order option designed for softer facial refinement",
+                  },
+                  {
+                    product: "Celosome Implant",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1.1 cc",
+                    selling: "RM 1,888",
+                    promo: "RM 1,888",
+                    notes:
+                      "Used for chin shaping, cheekbones, jawline, and nose enhancement",
+                  },
+                  {
+                    product: "Neauvia Intense",
+                    areas:
+                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                    volume: "1 cc",
+                    selling: "RM 2,000",
+                    promo: "Out Of Stock",
+                    notes: "Currently unavailable",
+                  },
                 ]}
                 title="Chin Filler Price in Malaysia"
                 subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-                variant="compact"
+                variant="detailed"
                 fadeInUp={fadeInUp}
               />
-              
+
               {/* Footnote */}
-              <motion.p 
+              <motion.p
                 variants={fadeInUp}
-                className="text-center text-taupe font-inter text-sm italic mt-4"
+                className="text-center text-taupe font-inter text-sm italic mt-6 max-w-3xl mx-auto"
               >
-                
-                  For patients comparing non-surgical options, our<a href='/face/dermal-filler-malaysia/' className='font-bold text-wine italic'> dermal filler Malaysia </a> page covers the full range of HA filler treatments available at Nexus Clinic KL.
+                For patients comparing non-surgical facial contouring options, our{" "}
+                <a
+                  href="/face/dermal-filler-malaysia/"
+                  className="font-semibold text-wine hover:underline"
+                >
+                  dermal filler Malaysia
+                </a>{" "}
+                page covers the complete range of HA filler treatments available at
+                Nexus Clinic KL.
               </motion.p>
             </div>
           </section>
-          
-          <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+
+          {/* Additional Pricing Information */}
+          <motion.div
+            variants={fadeInUp}
+            className="mt-10 bg-white rounded-2xl p-8 shadow-sm"
+          >
+            <h3 className="font-georgia text-2xl text-brown mb-6">
+              What Affects Chin Filler Pricing?
+            </h3>
+
+            <div className="space-y-4">
+              {[
+                "Premium filler collections such as Juvederm Voluma and Volux are formulated for stronger chin definition and facial balance.",
+                "The amount of filler required depends on chin projection goals, facial proportions, and jawline structure.",
+                "Higher density fillers used for sculpting and contouring generally have higher pricing.",
+                "Some patients may require multiple syringes for optimal side-profile enhancement.",
+                "Imported long-lasting fillers with advanced lifting properties may cost more than standard HA fillers.",
+              ].map((factor, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 text-taupe font-inter"
+                >
+                  <div className="w-2 h-2 rounded-full bg-wine mt-2 shrink-0" />
+                  <p className="leading-relaxed">{factor}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeInUp} className="text-center mt-8">
+            <Link
+              href="/contact-us/"
+              className="inline-flex items-center gap-2 bg-wine text-white px-6 py-3 rounded-full font-medium hover:gap-3 hover:bg-wine/90 transition-all shadow-md"
+            >
               Get Your Personalised Chin Filler Quote
               <ArrowRight className="w-4 h-4" />
             </Link>

@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -12,17 +11,10 @@ import {
   Shield,
   ArrowRight,
   AlertCircle,
-  Activity,
   Zap,
   Eye,
   AlertTriangle,
-  Droplet,
   TrendingUp,
-  User,
-  Sun,
-  Wind,
-  Droplets,
-  Smile,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -548,23 +540,63 @@ export default function UnderEyeFiller({ locale }: UnderEyeFillerProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto"
         >
-        <TableForPages
-              columns={[
-                { key: "treatment", header: "Treatment" },
-                { key: "volume", header: "Typical Volume" },
-                { key: "price", header: "Price Range (2026)" },
-              ]}
-              data={pricingTiers.map((tier) => ({
-                treatment: tier.treatment,
-                volume: tier.volume,
-                price: tier.price,
-              }))}
-              title="Under Eye Filler Price in Malaysia"
-              subtitle="2026 Pricing at Nexus Clinic KL"
-              variant="compact"
-              fadeInUp={fadeInUp}
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Treatment" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "units", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Under Eye Filler",
+                product: "Juvederm Ultra XC",
+                areas: "Under Eye / Lips",
+                units: "1 cc",
+                normalPrice: "RM 2,400",
+                sellingPrice: "RM 2,200",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Under Eye Filler",
+                product: "Juvederm Volbella (Pre Order)",
+                areas: "Lips / Around the mouth / Under the eyes",
+                units: "1 cc",
+                normalPrice: "RM 2,600",
+                sellingPrice: "RM 2,300",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Under Eye Filler",
+                product: "Belotero Balance",
+                areas: "Tear trough area / Under Eye",
+                units: "1 cc",
+                normalPrice: "-",
+                sellingPrice: "RM 2,200",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "-",
+              },
+            ]}
+            title="Under Eye Filler Price in Malaysia"
+            subtitle="2026 Pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
           />
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <p>All pricing at Nexus Clinic KL is confirmed after consultation. No treatment is recommended or priced before the doctor has assessed whether it is appropriate for your specific concern.

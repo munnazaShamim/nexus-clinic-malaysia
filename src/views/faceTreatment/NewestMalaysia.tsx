@@ -462,26 +462,42 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Protocol" },
-              { key: "price", header: "Price Range (2026)" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              volume: tier.volume,
-              price: tier.price,
-            }))}
-            title="NEWEST Cost in Malaysia"
-            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-            variant="compact"
-            fadeInUp={fadeInUp}
-          />
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "units", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Newest",
+                  product: "Newest 4ml",
+                  areas: "Face / Neck",
+                  units: "Per session",
+                  normalPrice: "RM 500",
+                  sellingPrice: "RM 500",
+                  trialPrice: "-",
+                  promoPrice: "Nil",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+              ]}
+              title="NEWEST Cost in Malaysia"
+              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 max-w-5xl mx-auto">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your NEWEST Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -491,13 +507,13 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
                 </li>
               ))}
             </ul>
+            <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
+              <p className="text-brown/50 font-inter text-sm">
+                NEWEST requires 3 to 4 sessions for optimal results. Patients seeking maintenance can add <Link href="/skin/laser-hair-removal-malaysia/" className="text-wine font-bold italic">laser hair removal Malaysia</Link> for facial grooming. Those with persistent redness or sensitivity may also review <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment Malaysia</Link> alongside their skin booster plan.
+              </p>
+            </motion.div>
           </motion.div>
           
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown/50 font-inter text-sm">
-               NEWEST requires 3 to 4 sessions for optimal results. Patients seeking maintenance can add <Link href="/skin/laser-hair-removal-malaysia/" className="text-wine font-bold italic">laser hair removal Malaysia</Link> for facial grooming. Those with persistent redness or sensitivity may also review <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment Malaysia</Link> alongside their skin booster plan.
-            </p>
-          </motion.div>
         
         </motion.div>
       </section>

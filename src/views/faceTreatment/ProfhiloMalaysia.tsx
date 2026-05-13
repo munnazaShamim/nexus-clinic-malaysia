@@ -502,26 +502,55 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Protocol" },
-              { key: "price", header: "Price Range (2026)" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              volume: tier.volume,
-              price: tier.price,
-            }))}
-            title="Profhilo Cost in Malaysia"
-            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-            variant="compact"
-            fadeInUp={fadeInUp}
-          />
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "units", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Profhilo",
+                  product: "Profhilo",
+                  areas: "Neck / Décolleté / Arms / Knees / Hands",
+                  units: "1 Syringe",
+                  normalPrice: "RM 2,500",
+                  sellingPrice: "RM 2,500",
+                  trialPrice: "-",
+                  promoPrice: "RM 2,500",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+                {
+                  treatment: "Profhilo",
+                  product: "Profhilo",
+                  areas: "Same treatment section",
+                  units: "2 Syringes",
+                  normalPrice: "RM 5,000",
+                  sellingPrice: "RM 4,800",
+                  trialPrice: "-",
+                  promoPrice: "RM 4,800",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+              ]}
+              title="Profhilo Cost in Malaysia"
+              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+        </motion.div>
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 max-w-7xl mx-auto">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Profhilo Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -531,15 +560,13 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
                 </li>
               ))}
             </ul>
-          </motion.div>
-          
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown/50 font-inter text-sm">
                 Profhilo is typically priced as a 2-session course, with final cost depending on treatment area and product authenticity. Patients with persistent facial redness or sensitivity may first require barrier repair, which can be assessed through our <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment in Malaysia</Link> options. Those looking to extend Profhilo's hydrating effects can combine it with <Link href="/skin/skin-whitening-treatment-malaysia/" className="text-wine font-bold italic">skin whitening treatment in Malaysia</Link> for a brighter, more even complexion.
             </p>
           </motion.div>
-        
-        </motion.div>
+          </motion.div>
+          
       </section>
 
       {/* Benefits & Limitations Section */}

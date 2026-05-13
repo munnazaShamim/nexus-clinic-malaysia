@@ -489,7 +489,7 @@ const DermalFillersLanding = ({
           </div>
         </motion.section>
 
-        {/* Pricing Section */}
+        {/* Pricing Section - Dermal Fillers */}
         <motion.section
           initial="hidden"
           whileInView="visible"
@@ -498,55 +498,237 @@ const DermalFillersLanding = ({
           className="py-20 px-4 md:px-8 lg:px-16 bg-white"
         >
           <div className="container mx-auto max-w-7xl">
-            <section className="py-20 px-4 bg-cream">
-              <div className="container mx-auto max-w-4xl">
+            <div className="bg-cream rounded-2xl overflow-hidden shadow-lg">
+              
+              {/* Main Pricing Table */}
+              <div className="p-6 md:p-8">
                 <TableForPages
                   columns={[
-                    { key: "area", header: pricing?.tableColumns?.[0] || "Treatment Area" },
-                    { key: "volume", header: pricing?.tableColumns?.[1] || "Typical Volume" },
-                    { key: "price", header: pricing?.tableColumns?.[2] || "Price Range (RM)" },
+                    { key: "product", header: "Product", className: "min-w-[160px]" },
+                    { key: "type", header: "Type / Variant", className: "min-w-[180px]" },
+                    { key: "areas", header: "Treatment Areas", className: "min-w-[200px]" },
+                    { key: "volume", header: "Volume", className: "text-center" },
+                    { key: "normalPrice", header: "Normal Price", className: "text-right" },
+                    { key: "sellingPrice", header: "Selling Price", className: "text-right font-semibold text-wine" },
+                    { key: "promoPrice", header: "Promo Price", className: "text-right text-green-600 font-semibold" },
+                    { key: "status", header: "Status", className: "text-center" },
                   ]}
-                  data={pricing?.prices?.map((item: any) => ({
-                    area: item.area,
-                    volume: item.volume,
-                    price: item.price,
-                  })) || []}
-                  title= {pricing?.title || "Dermal Filler Cost in Malaysia | Transparent 2026 Pricing"}
-                  subtitle={pricing?.description}
+                  data={[
+                    // Juvederm Series
+                    {
+                      product: "Juvederm",
+                      type: "Ultra XC",
+                      areas: "Under Eye / Lips",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,400",
+                      sellingPrice: "RM 2,200",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Juvederm",
+                      type: "Ultraplus XC",
+                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,400",
+                      sellingPrice: "RM 2,200",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Juvederm",
+                      type: "Voluma",
+                      areas: "Cheeks / Chin",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,800",
+                      sellingPrice: "RM 2,400",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Juvederm",
+                      type: "Volbella (Pre Order)",
+                      areas: "Lips / Around the mouth / Under the eyes",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,600",
+                      sellingPrice: "RM 2,300",
+                      promoPrice: "RM 2,200",
+                      status: "Pre Order",
+                    },
+                    {
+                      product: "Juvederm",
+                      type: "Volux",
+                      areas: "Cheek / Chin / Jawline contouring",
+                      volume: "1 cc",
+                      normalPrice: "RM 3,000",
+                      sellingPrice: "RM 2,500",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Juvederm",
+                      type: "Volift (Pre Order)",
+                      areas: "Lips / Chin / Lower Face / Cheek",
+                      volume: "1 cc",
+                      normalPrice: "RM 3,000",
+                      sellingPrice: "RM 2,500",
+                      promoPrice: "RM 2,200",
+                      status: "Pre Order",
+                    },
+                    // Celosome Series
+                    {
+                      product: "Celosome",
+                      type: "Mid",
+                      areas: "Nasolabial folds / Forehead wrinkles / Marionette lines / Lips",
+                      volume: "1.1 cc",
+                      normalPrice: "RM 2,200",
+                      sellingPrice: "RM 1,888",
+                      promoPrice: "RM 1,888",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Celosome",
+                      type: "Implant",
+                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin / Jawline",
+                      volume: "1.1 cc",
+                      normalPrice: "-",
+                      sellingPrice: "RM 1,888",
+                      promoPrice: "RM 1,888",
+                      status: "In Stock",
+                    },
+                    // Belotero Series
+                    {
+                      product: "Belotero",
+                      type: "Volume",
+                      areas: "Cheekbones / Temples",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,600",
+                      sellingPrice: "RM 2,200",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Belotero",
+                      type: "Balance",
+                      areas: "Tear trough area / Under Eye",
+                      volume: "1 cc",
+                      normalPrice: "-",
+                      sellingPrice: "RM 2,200",
+                      promoPrice: "RM 2,200",
+                      status: "In Stock",
+                    },
+                    {
+                      product: "Belotero",
+                      type: "Revive (Skin Booster)",
+                      areas: "Face / Neck / Décolletage / Hands",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,200",
+                      sellingPrice: "RM 2,000",
+                      promoPrice: "Out Of Stock",
+                      status: "Out of Stock",
+                    },
+                    // Neauvia Series
+                    {
+                      product: "Neauvia",
+                      type: "Intense",
+                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                      volume: "1 cc",
+                      normalPrice: "RM 2,200",
+                      sellingPrice: "RM 2,000",
+                      promoPrice: "Out Of Stock",
+                      status: "Out of Stock",
+                    },
+                    {
+                      product: "Neauvia",
+                      type: "Hydro Deluxe",
+                      areas: "Face / Hands / Body",
+                      volume: "2.5 cc",
+                      normalPrice: "RM 2,000",
+                      sellingPrice: "RM 1,800",
+                      promoPrice: "Out Of Stock",
+                      status: "Out of Stock",
+                    },
+                  ]}
+                  title="Dermal Filler Cost in Malaysia | Transparent 2026 Pricing"
+                  subtitle="Complete Juvederm, Celosome, Belotero & Neauvia Pricing Guide at Nexus Clinic KL"
                   variant="detailed"
                   fadeInUp={fadeInUp}
                 />
               </div>
-            </section>
 
-            <motion.div variants={fadeInUp} className="bg-cream p-8 rounded-xl mb-6">
-              <p className="text-brown text-center italic mb-4">
-                {pricing?.note}
-              </p>
-              <h3 className="font-georgia text-xl text-brown mb-4">
-                {pricing?.factors?.title}
-              </h3>
-              <ul className="space-y-2">
-                {pricing?.factors?.items?.map((factor: string, idx: number) => (
-                  <li key={idx} className="flex items-start gap-2 text-taupe text-sm">
-                    <ChevronRight size={14} className="text-wine shrink-0 mt-0.5" />
-                    {factor}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 p-4 bg-white rounded-lg border border-taupe/20">
-                <p className="text-brown text-sm">
-                  <Info size={16} className="inline text-wine mr-2" />
-                  {pricing?.transparencyNote}
-                </p>
+              {/* Quick Stats Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-6 md:px-8 pb-6">
+                <motion.div variants={fadeInUp} className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="text-xs text-taupe uppercase tracking-wide">Best Value Filler</p>
+                  <p className="text-2xl font-bold text-wine">RM 1,888</p>
+                  <p className="text-sm font-medium">Celosome Mid / Implant</p>
+                  <p className="text-xs text-taupe mt-1">1.1cc volume</p>
+                </motion.div>
+                <motion.div variants={fadeInUp} className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="text-xs text-taupe uppercase tracking-wide">Premium Choice</p>
+                  <p className="text-2xl font-bold text-wine">RM 2,200</p>
+                  <p className="text-sm font-medium">Juvederm Promo Price</p>
+                  <p className="text-xs text-taupe mt-1">Most variants at this rate</p>
+                </motion.div>
+                <motion.div variants={fadeInUp} className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="text-xs text-taupe uppercase tracking-wide">Skin Booster</p>
+                  <p className="text-2xl font-bold text-wine">RM 2,000</p>
+                  <p className="text-sm font-medium">Belotero Revive</p>
+                  <p className="text-xs text-taupe mt-1">Face / Neck / Hands</p>
+                </motion.div>
+                <motion.div variants={fadeInUp} className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="text-xs text-taupe uppercase tracking-wide">Volume Deal</p>
+                  <p className="text-2xl font-bold text-wine">RM 1,800</p>
+                  <p className="text-sm font-medium">Neauvia Hydro Deluxe</p>
+                  <p className="text-xs text-taupe mt-1">2.5cc (Out of Stock)</p>
+                </motion.div>
               </div>
-            </motion.div>
 
-            <motion.div variants={fadeInUp} className="text-center">
-              <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full hover:bg-rose transition-all duration-300">
-                {pricing?.cta || "Get Your Personalised Quote | Book a Free Consultation at Nexus Clinic KL"}
-              </Link>
-            </motion.div>
+              {/* Information Section */}
+              <motion.div variants={fadeInUp} className="px-6 md:px-8 pb-6">
+                <div className="bg-white p-6 rounded-xl">
+                  <h3 className="font-georgia text-xl text-brown mb-4">What Affects Dermal Filler Pricing?</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Brand selection:</strong> Juvederm (premium) vs Celosome (value)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Filler type:</strong> Volume vs Balance vs Revive formulations</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Treatment area:</strong> Under eyes, lips, cheeks, or nose</span>
+                      </li>
+                    </ul>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Volume needed:</strong> Standard 1cc vs 1.1cc vs 2.5cc options</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Pre-order status:</strong> Volbella and Volift require advance booking</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ChevronRight className="w-4 h-4 text-wine mt-1 flex-shrink-0" />
+                        <span className="text-brown"><strong>Stock availability:</strong> Belotero Revive & Neauvia currently out of stock</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-cream rounded-lg border border-taupe/20">
+                    <p className="text-brown text-sm flex items-start gap-2">
+                      <Info className="w-4 h-4 text-wine shrink-0 mt-0.5" />
+                      <span>All Juvederm products reflect promo pricing of RM 2,200 (regular RM 2,400-3,000). Celosome offers best value at RM 1,888 per 1.1cc. Pre-order items require 7-14 days advance notice. Terms and conditions apply.</span>
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+            </div>
           </div>
         </motion.section>
 

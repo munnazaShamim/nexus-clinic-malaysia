@@ -426,17 +426,49 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
       </section>
 
       <section className="py-20 px-4 bg-cream">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-7xl">
           <TableForPages
             columns={[
               { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Typical Volume" },
-              { key: "price", header: "Price Range (2026)" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "units", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={pricingTiers}
+            data={[
+              {
+                treatment: "Tear Trough",
+                product: "Juvederm Ultra XC",
+                areas: "Under Eye / Lips",
+                units: "1 cc",
+                normalPrice: "RM 2,400",
+                sellingPrice: "RM 2,200",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "Benefit text mentions under eyes / tear troughs; source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Tear Trough",
+                product: "Belotero Balance",
+                areas: "Tear trough area / Under Eye",
+                units: "1 cc",
+                normalPrice: "-",
+                sellingPrice: "RM 2,200",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "-",
+              },
+            ]}
             title="Tear Trough Filler Price in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
           />
           

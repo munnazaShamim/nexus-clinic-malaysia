@@ -696,24 +696,64 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-            <TableForPages
-              columns={[
-                { key: "treatment", header: "Treatment" },
-                { key: "volume", header: "Typical Volume" },
-                { key: "price", header: "Price Range (2026)" },
-              ]}
-              data={pricingTiers.map((tier) => ({
-                treatment: tier.treatment,
-                volume: tier.volume,
-                price: tier.price,
-              }))}
-              title="Nose Filler Price in Malaysia"
-              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-              variant="compact"
-              fadeInUp={fadeInUp}
-            />
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Treatment" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "volume", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Nose Filler",
+                product: "Juvederm Ultraplus XC",
+                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                volume: "1 cc",
+                normalPrice: "RM 2,400",
+                sellingPrice: "RM 2,200",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "Source shows trial/promo note as ",
+              },
+              {
+                treatment: "Nose Filler",
+                product: "Celosome Implant",
+                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                volume: "1.1 cc",
+                normalPrice: "-",
+                sellingPrice: "RM 1,888",
+                trialPrice: "-",
+                promoPrice: "RM 1,888",
+                package: "-",
+                notes: "Benefit text mentions cheekbones / jawline / chin / nose",
+              },
+              {
+                treatment: "Nose Filler",
+                product: "Neauvia Intense",
+                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                volume: "1 cc",
+                normalPrice: "RM 2,200",
+                sellingPrice: "RM 2,000",
+                trialPrice: "-",
+                promoPrice: "Out Of Stock",
+                package: "-",
+                notes: "Out of stock in source",
+              },
+            ]}
+            title="Nose Filler Price in Malaysia"
+            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+          />
 
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">

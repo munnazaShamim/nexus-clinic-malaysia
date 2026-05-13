@@ -576,28 +576,75 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             whileInView="visible"
             className="space-y-12"
           >
-            <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto">
-              <h2 className="font-georgia text-4xl text-brown mb-6">
-                {pricing?.title}
-              </h2>
-              <p className="text-taupe">
-                {pricing?.description}
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {pricing?.priceTable?.map((item: any, index: number) => (
-                <motion.div
-                  key={index}
-                  variants={scaleIn}
-                  className="bg-white p-6 rounded-xl shadow-lg text-center"
-                >
-                  <h3 className="text-xl font-bold text-wine mb-2">{item.treatmentType}</h3>
-                  <p className="text-2xl font-bold text-brown mb-2">{item.priceRange}</p>
-                  <p className="text-sm text-taupe">{item.typicalVolume}</p>
-                </motion.div>
-              ))}
-            </div>
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "volume", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Lip Filler",
+                  product: "Juvederm Ultra XC",
+                  areas: "Under Eye / Lips",
+                  volume: "1 cc",
+                  normalPrice: "RM 2,400",
+                  sellingPrice: "RM 2,200",
+                  trialPrice: "-",
+                  promoPrice: "RM 2,200",
+                  package: "-",
+                  notes: "Source shows trial/promo note as ",
+                },
+                {
+                  treatment: "Lip Filler",
+                  product: "Juvederm Volbella (Pre Order)",
+                  areas: "Lips / Around the mouth / Under the eyes",
+                  volume: "1 cc",
+                  normalPrice: "RM 2,600",
+                  sellingPrice: "RM 2,300",
+                  trialPrice: "-",
+                  promoPrice: "RM 2,200",
+                  package: "-",
+                  notes: "Source shows trial/promo note as ",
+                },
+                {
+                  treatment: "Lip Filler",
+                  product: "Juvederm Volift (Pre Order)",
+                  areas: "Lips / Chin / Lower Face / Cheek",
+                  volume: "1 cc",
+                  normalPrice: "RM 3,000",
+                  sellingPrice: "RM 2,500",
+                  trialPrice: "-",
+                  promoPrice: "RM 2,200",
+                  package: "-",
+                  notes: "Source shows trial/promo note as ",
+                },
+                {
+                  treatment: "Lip Filler",
+                  product: "Celosome Mid",
+                  areas: "Nasolabial folds / Forehead wrinkles / Marionette lines",
+                  volume: "1.1 cc",
+                  normalPrice: "RM 2,200",
+                  sellingPrice: "RM 1,888",
+                  trialPrice: "-",
+                  promoPrice: "RM 1,888",
+                  package: "-",
+                  notes: "Benefit text mentions lip augmentation",
+                },
+              ]}
+              title={pricing?.title}
+              subtitle={pricing?.description}
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
+        
 
             <motion.div variants={fadeInUp} className="bg-white p-6 rounded-xl">
               <h3 className="text-xl font-bold text-wine mb-4">{pricing?.factors?.title}</h3>

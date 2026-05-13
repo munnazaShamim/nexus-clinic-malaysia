@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -11,14 +10,7 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  Eye,
-  ArrowUp,
   AlertCircle,
-  Droplets,
-  Activity,
-  TrendingUp,
-  Users,
-  Scissors,
   Zap,
 } from "lucide-react";
 import {
@@ -623,44 +615,52 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >          
-          {/* Jawline Filler Pricing Table */}
-          <section className="py-20 px-4 bg-cream">
-            <div className="container mx-auto max-w-4xl">
-              <TableForPages
-                columns={[
-                  { key: "treatment", header: "Treatment" },
-                  { key: "volume", header: "Typical Volume" },
-                  { key: "price", header: "Price Range (2026)" },
-                ]}
-                data={pricingTiers.map((tier) => ({
-                  treatment: tier.treatment,
-                  volume: tier.volume,
-                  price: tier.price,
-                }))}
-                title="Jawline Filler Price in Malaysia"
-                subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-                variant="compact"
-                fadeInUp={fadeInUp}
-              />
-              
-              {/* Footnote */}
-              <motion.p 
-                variants={fadeInUp}
-                className="text-center text-taupe font-inter text-sm italic mt-4"
-              >
-                * Final pricing confirmed at consultation. Price depends on filler brand, volume required and complexity.
-              </motion.p>
-            </div>
-          </section>
-          
-          <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
-              Get Your Personalised Jawline Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Treatment" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "volume", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Jawline Filler",
+                product: "Juvederm Volux",
+                areas: "Cheek / Chin",
+                volume: "1 cc",
+                normalPrice: "RM 3,000",
+                sellingPrice: "RM 2,500",
+                trialPrice: "-",
+                promoPrice: "RM 2,200",
+                package: "-",
+                notes: "Benefit text mentions jawline contouring",
+              },
+              {
+                treatment: "Jawline Filler",
+                product: "Celosome Implant",
+                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
+                volume: "1.1 cc",
+                normalPrice: "-",
+                sellingPrice: "RM 1,888",
+                trialPrice: "-",
+                promoPrice: "RM 1,888",
+                package: "-",
+                notes: "Benefit text mentions cheekbones / jawline / chin / nose",
+              },
+            ]}
+            title="Jawline Filler Price in Malaysia"
+            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+          />
         </motion.div>
       </section>
 

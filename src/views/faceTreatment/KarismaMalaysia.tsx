@@ -499,26 +499,66 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
             columns={[
               { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Protocol" },
-              { key: "price", header: "Price Range (2026)" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "units", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              volume: tier.volume,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "Karisma",
+                product: "1 Karisma 2 cc",
+                areas: "Face: cheeks, jawline, temples / Neck / Hands / Décolletage",
+                units: "1 Syringe",
+                normalPrice: "RM 3,000",
+                sellingPrice: "RM 3,000",
+                trialPrice: "-",
+                promoPrice: "RM 3,000",
+                package: "-",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Karisma",
+                product: "2 Karisma 4 cc",
+                areas: "Same treatment section",
+                units: "2 Syringes",
+                normalPrice: "RM 6,000",
+                sellingPrice: "RM 5,400",
+                trialPrice: "-",
+                promoPrice: "RM 5,400",
+                package: "-",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Karisma",
+                product: "3 Karisma 6 cc",
+                areas: "Same treatment section",
+                units: "3 Syringes",
+                normalPrice: "RM 9,000",
+                sellingPrice: "RM 7,500",
+                trialPrice: "-",
+                promoPrice: "RM 7,500",
+                package: "-",
+                notes: "Source shows trial/promo note as ??",
+              },
+            ]}
             title="Karisma Cost in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
           />
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 mx-auto max-w-4xl">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Karisma Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -530,7 +570,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
             </ul>
           </motion.div>
           
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center mx-auto max-w-4xl">
             <p className="text-brown font-inter text-sm">
               Karisma is typically recommended as a 2-session course spaced 1 month apart, with maintenance every 6 to 9 months depending on skin condition. Patients with age-related collagen loss affecting facial volume may achieve deeper structural improvement by combining Karisma with <Link href="/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link> for gradual collagen stimulation. Those concerned with fine lines and skin laxity on the neck and décolletage can also explore <Link href="/face/profhilo-malaysia/" className="text-wine font-bold italic">Profhilo in Malaysia</Link> as a complementary bio-remodelling treatment for overall skin hydration and firmness.
             </p>

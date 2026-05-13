@@ -602,32 +602,52 @@ export default function NoseThreadLift({ locale }: NoseThreadLiftProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          <div className="container mx-auto max-w-4xl">
             <TableForPages
               columns={[
                 { key: "treatment", header: "Treatment" },
-                { key: "price", header: "Price Range (2026)" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "units", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={pricingTiers.map((tier) => ({
-                treatment: tier.treatment,
-                price: tier.price,
-              }))}
+              data={[
+                {
+                  treatment: "Nose Thread Lift",
+                  product: "Nose Bridge",
+                  areas: "Nose Bridge",
+                  units: "Max 8 only",
+                  normalPrice: "RM 2,800",
+                  sellingPrice: "RM 2,500",
+                  trialPrice: "-",
+                  promoPrice: "Nil",
+                  package: "-",
+                  notes: "-",
+                },
+                {
+                  treatment: "Nose Thread Lift",
+                  product: "Nose Tips",
+                  areas: "Nose Tips",
+                  units: "3 - 4 threads",
+                  normalPrice: "RM 1,800",
+                  sellingPrice: "RM 1,400",
+                  trialPrice: "-",
+                  promoPrice: "Nil",
+                  package: "-",
+                  notes: "-",
+                },
+              ]}
               title="Nose Thread Lift Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-              variant="compact"
+              variant="detailed"
               fadeInUp={fadeInUp}
             />
-            
-            {/* Footnote */}
-            <motion.p 
-              variants={fadeInUp}
-              className="text-center text-taupe font-inter text-sm italic mt-4"
-            >
-              * Final pricing confirmed at consultation. Price depends on thread type, count and correction required.
-            </motion.p>
-          </div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-taupe text-sm">

@@ -502,36 +502,115 @@ const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
         whileInView="visible"
         className="py-16 px-4 md:px-8 lg:px-16 bg-cream"
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <section className="py-20 px-4 bg-cream">
-            <div className="container mx-auto max-w-4xl">
+            <div className="container mx-auto max-w-7xl">
               <TableForPages
                 columns={[
-                  { key: "area", header: "Treatment Area" },
-                  { key: "price", header: "Price Range (2026)" },
+                  { key: "treatment", header: "Treatment" },
+                  { key: "areas", header: "Areas" },
+                  { key: "units", header: "Units / Session" },
+                  { key: "selling", header: "Selling Price" },
+                  { key: "promo", header: "Promo Price" },
+                  { key: "package", header: "Package" },
                 ]}
                 data={[
-                  { area: "Single area (forehead, frown lines, crow's feet)", price: "RM 588 to RM 800" },
-                  { area: "Multiple areas (2 to 3 areas)", price: "RM 1500 to RM 2160" },
-                  { area: "Jaw slimming (masseter)", price: "RM 1500 to RM 2400" },
-                  { area: "Full face anti-wrinkle plan", price: "RM 1800 to RM 3000+" },
+                  {
+                    treatment: "Botox Option 1 - Per Area",
+                    areas: "Forehead / Glabellar / Crow's feet",
+                    units: "1 Area",
+                    selling: "RM 800",
+                    promo: "RM 688",
+                    package: "3 Areas RM 2160 + touch-up after 2 weeks",
+                  },
+                  {
+                    treatment: "Botox Option 1 - Masseter",
+                    areas: "Masseter / Slimming jawline",
+                    units: "3 Areas / 1 Session",
+                    selling: "RM 2400",
+                    promo: "RM 2064",
+                    package: "6 Areas RM 4220",
+                  },
+                  {
+                    treatment: "Botox Option 1 - Per Bottle",
+                    areas: "Forehead / Glabellar / Crow's feet / Masseter / Shoulder",
+                    units: "100 Units",
+                    selling: "RM 3300",
+                    promo: "RM 3300",
+                    package: "2 Bottles RM 5800 • 3 Bottles RM 8400 • 4 Bottles RM 10400",
+                  },
+                  {
+                    treatment: "Botox Option 2 - Per Area",
+                    areas: "Forehead / Glabellar / Crow's feet",
+                    units: "1 Area",
+                    selling: "RM 588",
+                    promo: "RM 488",
+                    package: "3 Areas RM 1500",
+                  },
+                  {
+                    treatment: "Botox Option 2 - Masseter",
+                    areas: "Masseter",
+                    units: "3 Areas",
+                    selling: "RM 1500",
+                    promo: "RM 1464",
+                    package: "4 Areas RM 1900",
+                  },
+                  {
+                    treatment: "Botox Option 2 - Per Bottle",
+                    areas: "Forehead / Glabellar / Crow's feet / Masseter / Shoulder",
+                    units: "100 Units",
+                    selling: "RM 2500",
+                    promo: "RM 2500",
+                    package: "2 Bottles RM 4800",
+                  },
                 ]}
-                title=" Botox Cost in Malaysia | Transparent 2026 Pricing"
+                title="Botox Cost in Malaysia | Transparent 2026 Pricing"
                 subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-                variant="compact"
+                variant="detailed"
                 fadeInUp={fadeInUp}
               />
             </div>
           </section>
 
-          <motion.div variants={fadeInUp} className="bg-white p-6 rounded-xl">
-            <h3 className="font-georgia text-xl text-brown mb-3">What Affects the Pricing?</h3>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2"><ChevronRight className="w-4 h-4 text-wine mt-1" /><span className="text-brown">Number of units required: Men generally need more units</span></li>
-              <li className="flex items-start gap-2"><ChevronRight className="w-4 h-4 text-wine mt-1" /><span className="text-brown">Brand used: Botox is priced slightly higher than Dysport</span></li>
-              <li className="flex items-start gap-2"><ChevronRight className="w-4 h-4 text-wine mt-1" /><span className="text-brown">Area complexity: Jaw slimming and hyperhidrosis require more units</span></li>
-            </ul>
-          </motion.div>
+            <motion.div variants={fadeInUp} className="bg-white p-6 rounded-2xl shadow-md mt-8">
+              <h3 className="font-georgia text-2xl text-brown mb-5">
+                What Affects Botox Pricing?
+              </h3>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <ChevronRight className="w-5 h-5 text-wine mt-1 shrink-0" />
+                  <p className="text-brown leading-relaxed">
+                    <span className="font-semibold">Number of units required:</span>{" "}
+                    Larger muscle groups and male patients may require higher dosage.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <ChevronRight className="w-5 h-5 text-wine mt-1 shrink-0" />
+                  <p className="text-brown leading-relaxed">
+                    <span className="font-semibold">Botox brand used:</span>{" "}
+                    Premium imported brands may be priced differently depending on formulation.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <ChevronRight className="w-5 h-5 text-wine mt-1 shrink-0" />
+                  <p className="text-brown leading-relaxed">
+                    <span className="font-semibold">Treatment complexity:</span>{" "}
+                    Jaw slimming, shoulder reduction, and hyperhidrosis treatments require more units.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <ChevronRight className="w-5 h-5 text-wine mt-1 shrink-0" />
+                  <p className="text-brown leading-relaxed">
+                    <span className="font-semibold">Package selection:</span>{" "}
+                    Multi-area and bottle packages provide better long-term value.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
 
           <div className="flex flex-wrap gap-4 mt-8">
             <motion.a

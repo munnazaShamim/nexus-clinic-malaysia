@@ -568,26 +568,54 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Protocol" },
-              { key: "price", header: "Price Range (2026)" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              volume: tier.volume,
-              price: tier.price,
-            }))}
-            title="Sculptra Cost in Malaysia"
-            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-            variant="compact"
-            fadeInUp={fadeInUp}
-          />
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "units", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Sculptra",
+                  product: "Sculptra 1 vial",
+                  areas: "Face & Body",
+                  units: "1 vial 9 ml",
+                  normalPrice: "RM 3,300",
+                  sellingPrice: "RM 3,000",
+                  trialPrice: "-",
+                  promoPrice: "RM 2,700",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+                {
+                  treatment: "Sculptra",
+                  product: "Sculptra 3 vials",
+                  areas: "Face & Body",
+                  units: "1 vial 9 ml x 3 sessions",
+                  normalPrice: "RM 9,900",
+                  sellingPrice: "RM 7,500",
+                  trialPrice: "-",
+                  promoPrice: "RM 7,500",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+              ]}
+              title="Sculptra Cost in Malaysia"
+              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 mx-auto max-w-5xl">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Sculptra Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -599,7 +627,7 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
             </ul>
           </motion.div>
           
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center mx-auto max-w-4xl">
               <p className="text-center text-brown/50 text-sm mt-4">
                 Sculptra is priced per vial, with most patients requiring 2 to 3 vials across 2 to 3 sessions for optimal collagen stimulation. For patients seeking maintenance of skin hydration and glow during the collagen-building phase, regular <Link href="/skin/hydrafacial-malaysia/" className="text-wine font-bold italic">HydraFacial in Malaysia</Link> sessions can support surface skin health. Those with active acne or post-inflammatory marks may also explore <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> to address textural concerns alongside Sculptra's volumising effects.
               </p>

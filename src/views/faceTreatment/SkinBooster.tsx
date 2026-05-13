@@ -549,35 +549,100 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          {/* Skin Booster Pricing Table */}
-          <section className="py-20 px-4 bg-cream">
-            <div className="container mx-auto max-w-4xl">
-              <TableForPages
-                columns={[
-                  { key: "treatment", header: "Treatment" },
-                  { key: "area", header: "Area" },
-                  { key: "price", header: "Price per Session (2026)" },
-                ]}
-                data={pricingTiers.map((tier) => ({
-                  treatment: tier.treatment,
-                  area: tier.area,
-                  price: tier.price,
-                }))}
-                title="Skin Booster Price in Malaysia"
-                subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
-                variant="compact"
-                fadeInUp={fadeInUp}
-              />
-              
-              {/* Footnote */}
-              <p className="text-center max-w-4xl mt-4">
-                All pricing at Nexus Clinic KL is confirmed at consultation before any commitment is made. You receive a clear treatment plan and cost breakdown to take home before deciding.
-                  Patients looking for a complete anti-aging plan often combine skin booster treatment with other methods to improve skin elasticity and hydration. <Link  href='/face/botox-malaysia/' className='font-bold text-wine italic'>Botox in Malaysia </Link> for muscle relaxation alongside skin quality improvement at Nexus Clinic KL.
-              </p>
-            </div>
-          </section>
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Treatment" },
+              { key: "product", header: "Product / Option" },
+              { key: "areas", header: "Parts / Areas" },
+              { key: "units", header: "Units / Session / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "trialPrice", header: "First Trial Price RM" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "package", header: "Standard Package" },
+              { key: "notes", header: "Trial / Promo Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Skin Booster",
+                product: "Belotero Revive (Skin Booster)",
+                areas: "Face / Neck / Décolletage / Hands",
+                units: "1 cc",
+                normalPrice: "RM 2,200",
+                sellingPrice: "RM 2,000",
+                trialPrice: "-",
+                promoPrice: "Out Of Stock",
+                package: "-",
+                notes: "Out of stock in source",
+              },
+              {
+                treatment: "Skin Booster",
+                product: "Neauvia Hydro Deluxe",
+                areas: "Face / Hands / Body",
+                units: "2.5 cc",
+                normalPrice: "RM 2,000",
+                sellingPrice: "RM 1,800",
+                trialPrice: "-",
+                promoPrice: "Out Of Stock",
+                package: "-",
+                notes: "Out of stock in source",
+              },
+              {
+                treatment: "Skin Booster",
+                product: "Plinest 2ML 1's",
+                areas: "Face / Abdomen",
+                units: "2 ml",
+                normalPrice: "RM 2,200",
+                sellingPrice: "RM 1,800",
+                trialPrice: "-",
+                promoPrice: "Nil",
+                package: "Package Price i.e. buy 4, get 1 free",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Skin Booster",
+                product: "Newest 4ml",
+                areas: "Face / Neck",
+                units: "Per session",
+                normalPrice: "RM 500",
+                sellingPrice: "RM 500",
+                trialPrice: "-",
+                promoPrice: "Nil",
+                package: "Package Price i.e. buy 4, get 1 free",
+                notes: "Source shows trial/promo note as ??",
+              },
+              {
+                treatment: "Skin Booster",
+                product: "Dermasal",
+                areas: "Full Face",
+                units: "Per session",
+                normalPrice: "RM 650",
+                sellingPrice: "RM 650",
+                trialPrice: "-",
+                promoPrice: "Nil",
+                package: "Package Price i.e. buy 4, get 1 free",
+                notes: "-",
+              },
+              {
+                treatment: "Skin Booster",
+                product: "Dermaglass",
+                areas: "Full Face",
+                units: "Per session",
+                normalPrice: "RM 950",
+                sellingPrice: "RM 950",
+                trialPrice: "-",
+                promoPrice: "Nil",
+                package: "Package Price i.e. buy 4, get 1 free",
+                notes: "-",
+              },
+            ]}
+            title="Skin Booster Price in Malaysia"
+            subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+          />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
             <h3 className="font-georgia text-lg text-brown mb-2">What Affects Skin Booster Price in Kuala Lumpur</h3>

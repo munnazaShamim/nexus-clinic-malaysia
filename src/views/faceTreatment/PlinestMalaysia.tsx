@@ -513,9 +513,9 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
+          {/* <TableForPages
             columns={[
               { key: "treatment", header: "Treatment" },
               { key: "volume", header: "Protocol" },
@@ -530,9 +530,41 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="compact"
             fadeInUp={fadeInUp}
-          />
+          /> */}
+          <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment" },
+                { key: "product", header: "Product / Option" },
+                { key: "areas", header: "Parts / Areas" },
+                { key: "units", header: "Units / Session / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "trialPrice", header: "First Trial Price RM" },
+                { key: "promoPrice", header: "Promo Price" },
+                { key: "package", header: "Standard Package" },
+                { key: "notes", header: "Trial / Promo Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Plinest",
+                  product: "Plinest 2ML 1's",
+                  areas: "Face / Abdomen",
+                  units: "2 ml",
+                  normalPrice: "RM 2,200",
+                  sellingPrice: "RM 1,800",
+                  trialPrice: "-",
+                  promoPrice: "Nil",
+                  package: "Package Price i.e. buy 4, get 1 free",
+                  notes: "Source shows trial/promo note as ??",
+                },
+              ]}
+              title="Plinest Cost in Malaysia"
+              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 mx-auto max-w-4xl">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Plinest Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -544,7 +576,7 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
             </ul>
           </motion.div>
           
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center mx-auto max-w-4xl">
           <p className="text-center text-brown mt-4">
               Plinest is typically priced as a course of 3 to 4 sessions, with final cost depending on treatment area and product quantity required. Patients with age-related collagen loss affecting facial structure may achieve better long-term results by combining Plinest with <Link href="/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link> for deeper collagen stimulation. Those concerned about fine lines and skin laxity on the neck and décolletage can also explore <Link href="/face/profhilo-malaysia/" className="text-wine font-bold italic">Profhilo in Malaysia</Link> as a complementary bio-remodelling treatment.
             </p>
