@@ -86,6 +86,7 @@ export const navItems: NavItem[] = [
           { key: "submenu.hair.exosome", fallback: "exosome-hair-treatment-malaysia" },
           { key: "submenu.hair.minoxidil", fallback: "minoxidil-treatment-malaysia" },
           { key: "submenu.hair.finasteride", fallback: "finasteride-treatment-malaysia" },
+          { key: "submenu.hair.alopecia", fallback: "alopecia-areata-treatment-malaysia" },
         ],
       },
       regenerative: {

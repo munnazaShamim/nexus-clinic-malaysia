@@ -497,31 +497,40 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "details", header: "Details" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              details: tier.details,
-              price: tier.price,
-            }))}
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Parts / Area" },
+                  { key: "unit", header: "Unit / Duration" },
+                  { key: "normalPrice", header: "Normal Price RM" },
+                  { key: "sellingPrice", header: "Selling Price RM" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Curas Laser",
+                    area: "Face / Body",
+                    unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                    normalPrice: "RM1,200",
+                    sellingPrice: "RM900",
+                    packageNotes: "Sheet mentions tattoos",
+                  },
+                  {
+                    treatment: "Discovery PICO Tattoo Removal",
+                    area: "Body",
+                    unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                    normalPrice: "-",
+                    sellingPrice: "-",
+                    packageNotes: "Tattoo removal row is listed",
+                  },
+                ]}
             title="Pico Laser Tattoo Removal Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="compact"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
-
-          <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Programme pricing for a combination laser tattoo removal course across 6 sessions provides a meaningful per-session reduction. All pricing disclosed before the first removal session is booked.
-            </p>
-          </motion.div>
         </motion.div>
       </section>
 

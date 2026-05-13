@@ -642,25 +642,32 @@ export default function KeloidLandingPage({ locale }: KeloidTreatmentProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-5xl"
         >
-          <TableForPages
+          {/* <TableForPages
             columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best For" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Parts / Area" },
+              { key: "unit", header: "Unit / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "promoPrice", header: "Promo Price RM" },
+              { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "BHMed SPMCE",
+                area: "-",
+                unit: "-",
+                normalPrice: "-",
+                sellingPrice: "-",
+                promoPrice: "NIL",
+                packageNotes: "Sheet mentions keloids, but price is not listed",
+              },
+            ]}
             title="Keloid Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="default"
+            variant="detailed"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
-          />
+          /> */}
             <motion.div variants={fadeInUp} className="text-center mt-4">
               <p className="text-taupe font-inter text-sm italic text-sm">
                   Combination programmes that incorporate steroid injection plus <Link href="/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser</Link> across a 3 to 5 session series offer the best-evidence approach for moderate to large or treatment-resistant keloids. Patients with raised scars following acne may also benefit from reviewing our <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment Malaysia</Link> for comprehensive scar management. For those concerned about pigmentation changes around healed keloids, our <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">pigmentation treatment Malaysia</Link> provides additional context for achieving even skin tone. All pricing disclosed at initial assessment.

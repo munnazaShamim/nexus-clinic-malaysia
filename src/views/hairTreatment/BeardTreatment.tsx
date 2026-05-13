@@ -648,26 +648,58 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
             columns={[
-              { key: "package", header: "Beard Transplant Package" },
-              { key: "grafts", header: "Graft / Hair Count" },
-              { key: "price", header: "Estimated Total Price (RM) 2026" },
+              { key: "treatment", header: "Treatment" },
+              { key: "area", header: "Area" },
+              { key: "hairCount", header: "Hair Count / Unit" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "notes", header: "Notes" },
             ]}
-            data={pricingTiers.map((tier) => ({
-              package: tier.package,
-              grafts: tier.grafts,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "Beard Transplant",
+                area: "Beard / Fronter & Crown",
+                hairCount: "1500 to 2000 hairs",
+                normalPrice: "RM12 per hair",
+                sellingPrice: "RM8 per hair",
+                notes: "Same pricing as Hair Transplant",
+              },
+              {
+                treatment: "Beard Transplant",
+                area: "Beard / Fronter & Crown",
+                hairCount: "2001 to 3000 hairs",
+                normalPrice: "-",
+                sellingPrice: "RM7.50 per hair",
+                notes: "-",
+              },
+              {
+                treatment: "Beard Transplant",
+                area: "Beard / Fronter & Crown",
+                hairCount: "3001 to 4999 hairs",
+                normalPrice: "-",
+                sellingPrice: "RM6.50 per hair",
+                notes: "-",
+              },
+              {
+                treatment: "Beard Transplant",
+                area: "Beard / Fronter & Crown",
+                hairCount: "5000 and above hairs",
+                normalPrice: "-",
+                sellingPrice: "RM5.50 to RM6 per hair",
+                notes: "-",
+              },
+            ]}
             title="Beard Transplant Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
           />
 
-          <motion.div variants={fadeInUp} className="text-center mt-6">
+          <motion.div variants={fadeInUp} className="text-center mt-6 max-w-6xl mx-auto">
               <p className="text-center text-taupe">
                 Beard transplant cost in Malaysia is calculated per graft or per hair depending on the technique used, meaning the total investment reflects the size of the coverage area and the density achieved. All consultations at Nexus Clinic KL are complimentary and a full itemised cost breakdown is provided after the beard design consultation. Patients combining beard transplant with scalp hair restoration may also benefit from{' '}
                 <Link 

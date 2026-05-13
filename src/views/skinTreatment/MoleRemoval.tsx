@@ -72,15 +72,6 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
     { method: "Surgical Excision with Sutures", risk: "Linear scar along incision line; fades significantly over 6 to 12 months", bestLocations: "Deeper or atypical moles; body locations where appearance is less critical", timeline: "Sutures removed at 7 to 14 days; full scar remodelling at 6 to 12 months" },
   ];
 
-  const pricingTiers = [
-    { treatment: "CO2 Laser Ablation (per mole)", bestFor: "Small to medium flat and raised benign moles", sessions: "1 (2 if deep)", price: "RM 150 – RM 350 per mole" },
-    { treatment: "RF Cauterisation (per mole)", bestFor: "Raised benign moles and skin tags", sessions: "1", price: "RM 120 – RM 280 per mole" },
-    { treatment: "Surgical Shave Excision (per mole)", bestFor: "Raised compound naevi; moles requiring tissue sample", sessions: "1", price: "RM 250 – RM 500 per mole" },
-    { treatment: "Surgical Excision with Sutures (per mole)", bestFor: "Deep, large or atypical moles; histopathology indicated", sessions: "1", price: "RM 400 – RM 900 per mole (histopathology fee additional)" },
-    { treatment: "Multiple Moles Package (5 or more, CO2 or RF)", bestFor: "Multiple small benign moles in one session", sessions: "1 session", price: "From RM 600 for 5 moles" },
-    { treatment: "Histopathology", bestFor: "Atypical, compound or suspicious moles", sessions: "One-time with procedure", price: "RM 150 – RM 350 (lab fee, separate from procedure)" },
-  ];
-
   const healingTimeline = [
     { day: "Day 1-3", description: "Mild redness, tenderness, small wound. Local anaesthetic wears off. Keep area clean and dry.", status: "active" },
     { day: "Day 4-7", description: "Scab forms and begins to dry. No picking or scratching. Apply prescribed ointment.", status: "healing" },
@@ -595,29 +586,36 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment / Method", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best Suited For" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
-            title="Mole Removal Cost in Malaysia 2026"
-            subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="default"
-            fadeInUp={fadeInUp}
-            className="py-12 px-4"
-          />
-          <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-center text-brown mt-4">
+              <TableForPages
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Parts / Area" },
+                  { key: "unit", header: "Unit / Duration" },
+                  { key: "normalPrice", header: "Normal Price RM" },
+                  { key: "sellingPrice", header: "Selling Price RM" },
+                  { key: "promoPrice", header: "Promo Price RM" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Deka CO2 Laser",
+                    area: "Surrounding eye / Face / Entire body",
+                    unit: "1 hour including 30 minutes numbing cream; duration can be longer depending on quantity",
+                    normalPrice: "RM450",
+                    sellingPrice: "RM300",
+                    promoPrice: "RM300 onwards",
+                    packageNotes: "Sheet mentions moles, warts, xanthelasma, seborrheic keratosis and more",
+                  },
+                ]}
+                title="Mole Removal Cost in Malaysia 2026"
+                subtitle="Transparent pricing at Nexus Clinic KL"
+                variant="detailed"
+                fadeInUp={fadeInUp}
+              />
+          <motion.div variants={fadeInUp} className="text-center mt-4 max-w-4xl mx-auto">
+            <p className="text-center text-brown/50 mt-4">
               Patients exploring skin health more broadly alongside mole removal may find our <Link href="https://www.nexus-clinic.com/skin/mole-removal-malaysia/" className="text-wine font-bold italic">mole removal Malaysia page</Link> alongside our best mole removal options. 
               <Link href="https://www.nexus-clinic.com/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">Acne scar treatment in Malaysia</Link> can also address cosmetic reasons for skin improvement. This page is relevant if post-removal marks are a concern, especially if damage to surrounding skin is a possibility.
             </p>

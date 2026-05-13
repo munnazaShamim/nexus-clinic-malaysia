@@ -584,39 +584,112 @@ export default function MelasmaLanding({ locale }: MelasmaTreatmentProps) {
       <SectionBeforeAfter transformations={transformations} />
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 bg-light">
+      <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best For" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
-            title="Melasma Treatment Cost in Malaysia 2026"
-            subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="default"
-            fadeInUp={fadeInUp}
-            className="py-12 px-4"
-          />
-
-          <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Combination melasma programmes deliver the most durable outcomes. Package pricing available for committed multi-session programmes.
-            </p>
-          </motion.div>
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Curas Laser",
+                  area: "Face / Body",
+                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                  normalPrice: "RM1,200",
+                  sellingPrice: "RM900",
+                  promoPrice: "NIL",
+                  packageNotes: "Sheet mentions pigmentation",
+                },
+                {
+                  treatment: "Dual Yellow Laser",
+                  area: "Face / Body",
+                  unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "RM1,200",
+                  packageNotes: "Sheet mentions pigmentation and redness",
+                },
+                {
+                  treatment: "Discovery PICO Rejuvenation",
+                  area: "Face / Body",
+                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "NIL",
+                  packageNotes: "Sheet mentions pigmentations and large spots",
+                },
+                {
+                  treatment: "Chemical Peel",
+                  area: "Face",
+                  unit: "30 to 45 minutes, every 2 weeks",
+                  normalPrice: "RM550",
+                  sellingPrice: "RM450",
+                  promoPrice: "RM450",
+                  packageNotes: "Sheet mentions hyperpigmentation",
+                },
+                {
+                  treatment: "Chemical Peel",
+                  area: "Body",
+                  unit: "Per part",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "Per part RM800",
+                  packageNotes: "Sheet mentions hyperpigmentation",
+                },
+                {
+                  treatment: "Elixir Lightening Cream, HQ Cream",
+                  area: "Face / Body",
+                  unit: "30gm",
+                  normalPrice: "RM270",
+                  sellingPrice: "RM270",
+                  promoPrice: "NIL",
+                  packageNotes: "Sheet specifically mentions melasma, chloasma, solar lentigines, freckles, PIH",
+                },
+                {
+                  treatment: "Cyspera Set 3 in 1",
+                  area: "Face / Body",
+                  unit: "50gm",
+                  normalPrice: "RM1,280",
+                  sellingPrice: "RM1,280",
+                  promoPrice: "NIL",
+                  packageNotes: "Pigment corrector for brown patches and dark spots",
+                },
+                {
+                  treatment: "Tranexamic Acid",
+                  area: "Oral",
+                  unit: "1's / as prescribed by doctor",
+                  normalPrice: "RM1",
+                  sellingPrice: "RM1",
+                  promoPrice: "NIL",
+                  packageNotes: "Sheet mentions melasma and post-inflammatory hyperpigmentation",
+                },
+                {
+                  treatment: "BHMed SPMCE",
+                  area: "-",
+                  unit: "-",
+                  normalPrice: "-",
+                  sellingPrice: "-",
+                  promoPrice: "NIL",
+                  packageNotes: "Mentions melasma",
+                },
+              ]}
+              title="Melasma Treatment Cost in Malaysia 2026"
+              subtitle="Transparent pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
 
         </motion.div>
       </section>

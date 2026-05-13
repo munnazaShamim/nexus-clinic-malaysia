@@ -118,51 +118,6 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
     },
   ];
 
-  const pricingTiers = [
-    {
-      treatment: "Pico Laser (Full Face)",
-      target: "PIH, mild texture, early scarring",
-      sessions: "3 to 5",
-      price: "RM 700 – RM 1,200 / session",
-    },
-    {
-      treatment: "Fractional CO2 Laser (Full Face)",
-      target: "Boxcar, rolling, moderate to deep atrophic",
-      sessions: "2 to 4",
-      price: "RM 1,200 – RM 2,500 / session",
-    },
-    {
-      treatment: "RF Microneedling (Sylfirm X / Potenza)",
-      target: "Rolling, boxcar, skin texture",
-      sessions: "3 to 5",
-      price: "RM 1,000 – RM 1,800 / session",
-    },
-    {
-      treatment: "Subcision",
-      target: "Tethered rolling scars",
-      sessions: "1 to 3",
-      price: "RM 500 – RM 900 / session",
-    },
-    {
-      treatment: "TCA CROSS Chemical Peel",
-      target: "Ice pick scars",
-      sessions: "2 to 4",
-      price: "RM 400 – RM 700 / session",
-    },
-    {
-      treatment: "Rejuran S Skin Booster",
-      target: "Skin repair, post-treatment recovery",
-      sessions: "2 to 3",
-      price: "RM 900 – RM 1,500 / session",
-    },
-    {
-      treatment: "Combination Scar Programme",
-      target: "Mixed / severe scarring (2 to 3 modalities)",
-      sessions: "4 to 6 total",
-      price: "From RM 3,500 (package pricing available)",
-    },
-  ];
-
   const faqData = [
     {
       q: "How many sessions of fractional CO2 laser are needed for acne scars?",
@@ -933,33 +888,112 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 bg-light">
+      <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
-        <TableForPages
-          columns={[
-            { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-            { key: "target", header: "Target Scar Type" },
-            { key: "sessions", header: "Sessions Needed" },
-            { key: "price", header: "Price Range (RM)", className: "font-semibold text-wine" },
-          ]}
-          data={pricingTiers.map(tier => ({
-            treatment: tier.treatment,
-            target: tier.target,
-            sessions: tier.sessions,
-            price: tier.price,
-          }))}
-          title="Acne Scar Treatment Cost in Malaysia 2026"
-          subtitle="Transparent pricing at Nexus Clinic KL"
-          variant="compact"
-          fadeInUp={fadeInUp}
-          className="py-12 px-4"
-        />
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Parts / Area" },
+              { key: "unit", header: "Unit / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "promoPrice", header: "Promo Price RM" },
+              { key: "packageNotes", header: "Package / Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Curas Laser",
+                area: "Face / Body",
+                unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                normalPrice: "RM1,200",
+                sellingPrice: "RM900",
+                promoPrice: "NIL",
+                packageNotes: "Sheet mentions acne scars, pigmentation, tattoos, fine lines, wrinkles",
+              },
+              {
+                treatment: "Deka Fractional Laser",
+                area: "Face / Body",
+                unit: "1 hour including 30 minutes numbing cream",
+                normalPrice: "RM1,500",
+                sellingPrice: "RM1,500",
+                promoPrice: "RM788",
+                packageNotes: "Sheet mentions acne scars and hyperpigmentation",
+              },
+              {
+                treatment: "Discovery PICO Resurfacing",
+                area: "Face / Body",
+                unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                normalPrice: "RM1,500",
+                sellingPrice: "RM1,200",
+                promoPrice: "NIL",
+                packageNotes: "Resurfacing / collagen remodelling",
+              },
+              {
+                treatment: "Dermapen",
+                area: "Face / Body",
+                unit: "1 hour 15 minutes including 30 minutes numb cream",
+                normalPrice: "RM800",
+                sellingPrice: "RM688",
+                promoPrice: "RM688",
+                packageNotes: "Sheet mentions scars and stretch marks",
+              },
+              {
+                treatment: "Derma Glow",
+                area: "-",
+                unit: "-",
+                normalPrice: "RM688",
+                sellingPrice: "RM588",
+                promoPrice: "RM588",
+                packageNotes: "Sheet mentions pigmentation and scars",
+              },
+              {
+                treatment: "Chemical Peel",
+                area: "Face",
+                unit: "30 to 45 minutes, every 2 weeks",
+                normalPrice: "RM550",
+                sellingPrice: "RM450",
+                promoPrice: "RM450",
+                packageNotes: "Helps acne, hyperpigmentation, uneven texture",
+              },
+              {
+                treatment: "Chemical Peel",
+                area: "Body",
+                unit: "Per part",
+                normalPrice: "RM1,500",
+                sellingPrice: "RM1,200",
+                promoPrice: "Per part RM800",
+                packageNotes: "Sheet mentions acne scars, surgical scars, hyperpigmentation",
+              },
+              {
+                treatment: "Glow Peel",
+                area: "Face",
+                unit: "1 hour / per session",
+                normalPrice: "RM650",
+                sellingPrice: "RM550",
+                promoPrice: "RM450",
+                packageNotes: "Quick facial + any suitable chemical peel",
+              },
+              {
+                treatment: "BHMed SPMCE",
+                area: "-",
+                unit: "-",
+                normalPrice: "-",
+                sellingPrice: "-",
+                promoPrice: "NIL",
+                packageNotes: "Mentions acne scars",
+              },
+            ]}
+            title="Acne Scar Treatment Cost in Malaysia 2026"
+            subtitle="Transparent pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+          />
         </motion.div>
       </section>
 

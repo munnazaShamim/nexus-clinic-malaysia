@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,19 +9,8 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Target,
-  Droplet,
-  Leaf,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -60,14 +48,6 @@ export default function FUEHairTransplant({ locale }: FUEHairTransplantProps) {
     { category: "Depleted or Limited Donor", density: "Below 40 follicles per cm²", maxGrafts: "Below 1,500 safely harvestable", approach: "FUE supplemented by body hair transplant or beard hair. FUT may not be viable." },
   ];
 
-  const pricingTiers = [
-    { package: "Hairline Restoration (FUE)", grafts: "1,000 to 1,500 grafts", price: "RM 8,000 to RM 18,000" },
-    { package: "Crown and Top Restoration (FUE)", grafts: "1,500 to 2,500 grafts", price: "RM 12,000 to RM 30,000" },
-    { package: "Moderate to Significant Loss (FUE)", grafts: "2,500 to 3,500 grafts", price: "RM 20,000 to RM 42,000" },
-    { package: "Large Session FUE", grafts: "3,500 to 4,000 grafts", price: "RM 28,000 to RM 48,000" },
-    { package: "FUE Beard / Eyebrow Transplant", grafts: "500 to 1,500 grafts", price: "RM 6,000 to RM 22,500" },
-    { package: "DHI Programme (Advanced FUE)", grafts: "1,000 to 3,000 grafts", price: "RM 10,000 to RM 45,000" },
-  ];
 
   const faqData = [
     { q: "What makes FUE different from FUT hair transplant?", a: "FUE extracts individual hair follicles one by one using a circular punch, leaving only tiny circular dot scars that are invisible at normal hair length. FUT removes a strip of skin from the donor area, which is then dissected into grafts. FUT leaves a linear scar that is visible if the hair is cut very short. FUE offers faster recovery, no linear scar, and more versatile donor site options. FUT can harvest more grafts per session for patients with advanced baldness and costs less per graft. The best approach depends on the patient's specific hair loss stage, donor density, and cosmetic preferences." },
@@ -618,25 +598,52 @@ export default function FUEHairTransplant({ locale }: FUEHairTransplantProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
             columns={[
-              { key: "package", header: "FUE Hair Transplant Package" },
-              { key: "grafts", header: "Graft Count" },
-              { key: "price", header: "Estimated Total Price (RM) 2026" },
+              { key: "treatment", header: "Treatment" },
+              { key: "area", header: "Area" },
+              { key: "hairCount", header: "Hair Count / Unit" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
             ]}
-            data={pricingTiers.map((tier) => ({
-              package: tier.package,
-              grafts: tier.grafts,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "FUE Hair Transplant / Hair Transplant",
+                area: "Fronter & Crown / Beard",
+                hairCount: "1500 to 2000 hairs",
+                normalPrice: "RM12 per hair",
+                sellingPrice: "RM8 per hair",
+              },
+              {
+                treatment: "FUE Hair Transplant / Hair Transplant",
+                area: "Fronter & Crown / Beard",
+                hairCount: "2001 to 3000 hairs",
+                normalPrice: "-",
+                sellingPrice: "RM7.50 per hair",
+              },
+              {
+                treatment: "FUE Hair Transplant / Hair Transplant",
+                area: "Fronter & Crown / Beard",
+                hairCount: "3001 to 4999 hairs",
+                normalPrice: "-",
+                sellingPrice: "RM6.50 per hair",
+              },
+              {
+                treatment: "FUE Hair Transplant / Hair Transplant",
+                area: "Fronter & Crown / Beard",
+                hairCount: "5000 and above hairs",
+                normalPrice: "-",
+                sellingPrice: "RM5.50 to RM6 per hair",
+              },
+            ]}
             title="FUE Hair Transplant Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
           />
-          <motion.div variants={fadeInUp} className="text-center mt-6">
+          <motion.div variants={fadeInUp} className="text-center mt-6  mx-auto max-w-6xl">
             <p className="text-taupe">
                   Hair transplant cost in Malaysia is calculated per graft, meaning the total investment is proportional to the number of grafts the patient requires. Hair transplant cost at Nexus Clinic KL is competitive with the best hair transplant clinics in Kuala Lumpur and significantly more cost-effective than equivalent procedures in Australia, the UK, or Singapore. All consultations are complimentary and a full itemised cost breakdown is provided before any procedure is confirmed. Patients combining FUE with post-operative hair preservation treatments may also benefit from{' '}
                   <a 

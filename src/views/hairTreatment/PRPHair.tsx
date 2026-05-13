@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,19 +9,9 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Target,
   Syringe,
-  Thermometer,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -630,41 +619,63 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
-          {/* PRP Hair Treatment Cost Table */}
           <TableForPages
             columns={[
               { key: "treatment", header: "Treatment" },
-              { key: "sessionType", header: "Session Type" },
-              { key: "price", header: "Price Range (RM) 2026" },
+              { key: "brand", header: "Brand / Option" },
+              { key: "area", header: "Area" },
+              { key: "unit", header: "Unit / Session" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={pricingTiers.map((tier) => ({
-              treatment: tier.treatment,
-              sessionType: tier.sessionType,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "PRP Hair Treatment",
+                brand: "Regen",
+                area: "Face / Hair / Skin / Lips / Breast",
+                unit: "Per session",
+                normalPrice: "RM2500",
+                sellingPrice: "RM2500",
+                promoPrice: "RM2500",
+                packageNotes: "PRP Hair mentioned for preventing hair loss and promoting new hair growth",
+              },
+              {
+                treatment: "PRP Hair Treatment",
+                brand: "Normal Tube",
+                area: "Face / Hair / Skin / Lips / Breast",
+                unit: "1 tube",
+                normalPrice: "RM900",
+                sellingPrice: "RM900",
+                promoPrice: "RM900",
+                packageNotes: "Package price: buy 4, get 1 free",
+              },
+              {
+                treatment: "PRP Hair Treatment",
+                brand: "Korean",
+                area: "Face / Hair / Skin / Lips / Breast",
+                unit: "1 tube",
+                normalPrice: "RM1800",
+                sellingPrice: "RM1300",
+                promoPrice: "RM1300",
+                packageNotes: "Package price: buy 4, get 1 free",
+              },
+            ]}
             title="PRP Hair Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
-            className="py-20 px-4"
           />
-
-          {/* Footnote */}
           <motion.p 
             variants={fadeInUp}
-            className="text-center text-taupe font-inter text-sm italic mt-4"
+            className="text-center text-taupe font-inter text-sm italic mt-4 max-w-4xl mx-auto"
           >
             Package rates for multiple sessions represent the most cost-effective approach for patients committing to a full course of treatment. All consultations are complimentary at Nexus Clinic KL.
           </motion.p>
           
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
-              Get Your Personalised PRP Treatment Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
         </motion.div>
       </section>
 

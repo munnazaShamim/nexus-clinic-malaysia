@@ -502,33 +502,323 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-              columns={[
-                { key: "area", header: "Treatment Area", className: "font-semibold text-brown" },
-                { key: "duration", header: "Session Duration" },
-                { key: "sessions", header: "Sessions" },
-                { key: "price", header: "Price Range (RM) 2026 / Session", className: "font-semibold text-wine" },
-              ]}
-              data={pricingTiers.map(tier => ({
-                area: tier.area,
-                duration: tier.duration,
-                sessions: tier.sessions,
-                price: tier.price,
-              }))}
-              title="Cost of Laser Hair Removal in Malaysia 2026"
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Parts / Area" },
+                  { key: "unit", header: "Unit / Duration" },
+                  { key: "normalPrice", header: "Normal Price RM" },
+                  { key: "sellingPrice", header: "Selling Price RM" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Full Face",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "Buy 1 FOC 1, same area, 1-time purchase only",
+                  },
+                  {
+                    treatment: "Half Face",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM270",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Neck",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Full Back",
+                    area: "Female",
+                    unit: "1 hour",
+                    normalPrice: "-",
+                    sellingPrice: "RM520",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Half Back",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Full Front",
+                    area: "Female",
+                    unit: "1 hour",
+                    normalPrice: "-",
+                    sellingPrice: "RM520",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Half Front",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Full Arms",
+                    area: "Female",
+                    unit: "1 hour",
+                    normalPrice: "-",
+                    sellingPrice: "RM520",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Half Arms",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Underarms",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM350",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Full Legs",
+                    area: "Female",
+                    unit: "1 hour",
+                    normalPrice: "-",
+                    sellingPrice: "RM850",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Half Legs",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM520",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Bikini Line Only Top Part",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM270",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Bikini Line Top & Lips",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM270",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Brazilian",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM500",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Buttocks",
+                    area: "Female",
+                    unit: "45 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM400",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Full Body",
+                    area: "Female",
+                    unit: "5 hours",
+                    normalPrice: "-",
+                    sellingPrice: "RM2,270",
+                    packageNotes: "-",
+                  },
+                  {
+                    treatment: "Small Area",
+                    area: "Female",
+                    unit: "30 minutes",
+                    normalPrice: "-",
+                    sellingPrice: "RM270",
+                    packageNotes: "-",
+                  },
+                ]}              
+              title="Cost of Laser Hair Removal for women in Malaysia 2026"
               subtitle="Transparent pricing at Nexus Clinic KL"
-              variant="default"
+              variant="compact"
               fadeInUp={fadeInUp}
-              className="py-12 px-4"
             />
+        </motion.div>
+      </section>
 
-            <motion.div variants={fadeInUp} className="text-center mt-4">
-              <p className="text-taupe font-inter text-sm italic">
-                Package pricing for 6 to 8 session programmes is available for all body areas. Full body programmes covering multiple areas available at combined programme pricing.
-              </p>
-            </motion.div>
+      <section className="py-20 px-4 bg-cream">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="container mx-auto max-w-7xl"
+        >
+          <TableForPages
+          columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Full Face, Man",
+                  area: "Male",
+                  unit: "30 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "Buy 1 FOC 1, same area, 1-time purchase only",
+                },
+                {
+                  treatment: "Half Face, Man",
+                  area: "Male",
+                  unit: "30 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM320",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Neck, Man",
+                  area: "Male",
+                  unit: "30 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Full Back, Man",
+                  area: "Male",
+                  unit: "1 hour",
+                  normalPrice: "-",
+                  sellingPrice: "RM580",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Half Back, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Full Front, Man",
+                  area: "Male",
+                  unit: "1 hour",
+                  normalPrice: "-",
+                  sellingPrice: "RM580",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Half Front, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Full Arms, Man",
+                  area: "Male",
+                  unit: "1 hour",
+                  normalPrice: "-",
+                  sellingPrice: "RM580",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Half Arms, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Underarms, Man",
+                  area: "Male",
+                  unit: "30 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Full Legs, Man",
+                  area: "Male",
+                  unit: "1 hour",
+                  normalPrice: "-",
+                  sellingPrice: "RM900",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Half Legs, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM570",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Boyzillian & Crack, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM550",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Buttocks, Man",
+                  area: "Male",
+                  unit: "45 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM400",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Full Body, Man",
+                  area: "Male",
+                  unit: "5 hours",
+                  normalPrice: "-",
+                  sellingPrice: "RM2,350",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Small Area, Man",
+                  area: "Male",
+                  unit: "30 minutes",
+                  normalPrice: "-",
+                  sellingPrice: "RM320",
+                  packageNotes: "-",
+                },
+              ]}            
+              title="Cost of Laser Hair Removal for Men in Malaysia 2026"
+              subtitle="Transparent pricing at Nexus Clinic KL"
+              variant="compact"
+              fadeInUp={fadeInUp}
+            />
         </motion.div>
       </section>
 

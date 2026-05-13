@@ -611,30 +611,109 @@ export default function SkinWhiteningLanding({ locale }: SkinWhiteningProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best For" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Whitening Drip",
+                  area: "-",
+                  unit: "Every 2 weeks",
+                  normalPrice: "RM650",
+                  sellingPrice: "RM650",
+                  promoPrice: "NIL",
+                  packageNotes: "Ascorbic acid + Glutathione",
+                },
+                {
+                  treatment: "Glutathione IV 600mg Drip",
+                  area: "-",
+                  unit: "Weekly basis depending on doctor suggestion",
+                  normalPrice: "RM450",
+                  sellingPrice: "RM350",
+                  promoPrice: "NIL",
+                  packageNotes: "Buy 4, get 1 free",
+                },
+                {
+                  treatment: "Elixir Lightening Cream, HQ Cream",
+                  area: "Face / Body",
+                  unit: "30gm",
+                  normalPrice: "RM270",
+                  sellingPrice: "RM270",
+                  promoPrice: "NIL",
+                  packageNotes: "Skin lightening / melasma / pigmentation",
+                },
+                {
+                  treatment: "Cyspera Set 3 in 1",
+                  area: "Face / Body",
+                  unit: "50gm",
+                  normalPrice: "RM1,280",
+                  sellingPrice: "RM1,280",
+                  promoPrice: "NIL",
+                  packageNotes: "Pigment corrector",
+                },
+                {
+                  treatment: "Tranexamic Acid",
+                  area: "Oral",
+                  unit: "1's / as prescribed by doctor",
+                  normalPrice: "RM1",
+                  sellingPrice: "RM1",
+                  promoPrice: "NIL",
+                  packageNotes: "Skin brightening / melasma / PIH",
+                },
+                {
+                  treatment: "Lumi22",
+                  area: "Oral",
+                  unit: "1 box, 30 sachets",
+                  normalPrice: "RM328",
+                  sellingPrice: "RM328",
+                  promoPrice: "NIL",
+                  packageNotes: "Brighter, firmer, younger-looking skin",
+                },
+                {
+                  treatment: "Glow-thione 60 caps",
+                  area: "-",
+                  unit: "30's tablet for 1 month supply",
+                  normalPrice: "RM200",
+                  sellingPrice: "RM200",
+                  promoPrice: "NIL",
+                  packageNotes: "Out of stock / discontinued",
+                },
+                {
+                  treatment: "Elixir No4 Vital C",
+                  area: "Face",
+                  unit: "15gm",
+                  normalPrice: "RM388",
+                  sellingPrice: "RM388",
+                  promoPrice: "NIL",
+                  packageNotes: "Dark spots / skin tone",
+                },
+                {
+                  treatment: "Elixir Deep Hydra Bio Cellulose Mask",
+                  area: "Face",
+                  unit: "1 piece",
+                  normalPrice: "RM50",
+                  sellingPrice: "RM50",
+                  promoPrice: "NIL",
+                  packageNotes: "Buy 5 FOC 1 / Buy 10 FOC 3",
+                },
+              ]}
             title="Skin Whitening Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="default"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
 
           {/* Footnote */}
-          <motion.div variants={fadeInUp} className="text-center mt-4">
+          <motion.div variants={fadeInUp} className="text-center mt-4 max-w-4xl mx-auto">
             <p className="text-taupe font-inter text-sm italic">
               Combination whitening programmes that incorporate <Link href="https://www.nexus-clinic.com/skin/pico-laser-malaysia/" className="text-wine font-bold italic">Pico Laser</Link>, IV glutathione drip and oral brightening supplements provide the most comprehensive and sustained brightening outcomes. For patients with <Link href="https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">hormonal factors affecting pigmentation</Link>, addressing the underlying endocrine condition is essential before expecting optimal laser results. All pricing disclosed before any treatment is booked.
             </p>

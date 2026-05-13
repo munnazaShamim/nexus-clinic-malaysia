@@ -598,29 +598,63 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best For" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Juvederm Ultra XC",
+                  area: "Under Eye / Lips",
+                  unit: "1cc",
+                  normalPrice: "RM2,400",
+                  sellingPrice: "RM2,200",
+                  promoPrice: "RM2,200",
+                  packageNotes: "Under-eye filler option",
+                },
+                {
+                  treatment: "Belotero Balance",
+                  area: "Tear trough area / Under Eye",
+                  unit: "1cc",
+                  normalPrice: "-",
+                  sellingPrice: "RM2,200",
+                  promoPrice: "RM2,200",
+                  packageNotes: "Under-eye / tear trough filler option",
+                },
+                {
+                  treatment: "Hyalual Electri",
+                  area: "Full face / Surrounding eyes",
+                  unit: "1.5cc",
+                  normalPrice: "RM2,500",
+                  sellingPrice: "RM2,500",
+                  promoPrice: "RM2,200",
+                  packageNotes: "Buy 4, get 1 free",
+                },
+                {
+                  treatment: "Deka CO2 Laser",
+                  area: "Surrounding eye / Face / Entire body",
+                  unit: "1 hour including 30 minutes numbing cream",
+                  normalPrice: "RM450",
+                  sellingPrice: "RM300",
+                  promoPrice: "RM300 onwards",
+                  packageNotes: "Surrounding eye listed, but not specifically dark eye circle",
+                },
+              ]}
             title="Dark Eye Circle Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="compact"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
 
-          <motion.div variants={fadeInUp} className="text-center mt-4">
+          <motion.div variants={fadeInUp} className="text-center mt-4 max-w-4xl mx-auto">
             <p className="text-center text-wine/50 mt-4">
               Further details are available on our <Link href="https://www.nexus-clinic.com/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster treatments in Malaysia page</Link>, designed to rejuvenate the skin and combat the look of tired eyes, addressing the underlying causes of dark circles.
             </p>

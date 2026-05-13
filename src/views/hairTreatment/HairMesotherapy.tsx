@@ -744,28 +744,39 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
-            <TableForPages
-              columns={[
-                { key: "service", header: "Service / Treatment" },
-                { key: "details", header: "Details" },
-                { key: "price", header: "Price Range (RM) 2026" },
-              ]}
-              data={pricingTiers.map((tier) => ({
-                service: tier.service,
-                details: tier.details,
-                price: tier.price,
-              }))}
-              title="Mesotherapy Hair Loss Treatment Cost in Malaysia 2026"
-              subtitle="Transparent pricing at Nexus Clinic KL"
-              variant="compact"
-              fadeInUp={fadeInUp}
-              className="py-20 px-4"
-            />
+              <TableForPages
+                columns={[
+                  { key: "treatment", header: "Treatment" },
+                  { key: "brand", header: "Brand / Option" },
+                  { key: "area", header: "Area" },
+                  { key: "unit", header: "Unit / Session" },
+                  { key: "normalPrice", header: "Normal Price" },
+                  { key: "sellingPrice", header: "Selling Price" },
+                  { key: "promoPrice", header: "Promo Price" },
+                  { key: "notes", header: "Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Hair Mesotherapy",
+                    brand: "MCCM",
+                    area: "Hair",
+                    unit: "6.5cc",
+                    normalPrice: "RM650",
+                    sellingPrice: "RM550",
+                    promoPrice: "RM450",
+                    notes: "Meso skin 1ml + Hair cocktail plus 5ml",
+                  },
+                ]}
+                title="Mesotherapy Hair Loss Treatment Cost in Malaysia 2026"
+                subtitle="Transparent pricing at Nexus Clinic KL"
+                variant="detailed"
+                fadeInUp={fadeInUp}
+              />
             <motion.p 
               variants={fadeInUp}
-              className="text-center text-taupe font-inter text-sm italic mt-4"
+              className="text-center text-taupe font-inter text-sm italic mt-4  mx-auto max-w-4xl"
             >
               All consultations are complimentary at Nexus Clinic KL. Final pricing confirmed after scalp assessment. Package rates available for full treatment courses.
             </motion.p>

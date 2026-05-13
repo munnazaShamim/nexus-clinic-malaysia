@@ -59,16 +59,6 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
     { timeframe: "Month 6 and Beyond", follicleLevel: "Follicle health sustained by completed cellular regeneration. Maintenance session recommended every 6 to 12 months.", patientNotices: "Full result established. Maintenance ensures continued follicle vitality and hair density preservation." },
   ];
 
-  const pricingTiers = [
-    { treatment: "Exosome Hair Loss Treatment (Standard)", sessionType: "Per session", price: "RM 1,500 to RM 2,500" },
-    { treatment: "Advanced Exosome Hair Therapy (HRLV)", sessionType: "Per session", price: "RM 2,200 to RM 3,500" },
-    { treatment: "Premium Exosome Hair Package (3 sessions)", sessionType: "Package", price: "RM 5,500 to RM 9,000" },
-    { treatment: "Exosome Skin Rejuvenation (Face)", sessionType: "Per session", price: "RM 1,500 to RM 2,800" },
-    { treatment: "Combined Exosome Hair + Skin Session", sessionType: "Per combined session", price: "RM 2,500 to RM 4,500" },
-    { treatment: "Exosome + Microneedling Protocol", sessionType: "Per session", price: "RM 1,800 to RM 3,200" },
-    { treatment: "Post-Transplant Exosome Support", sessionType: "Per session (post-FUE)", price: "RM 1,800 to RM 3,000" },
-  ];
-
   const faqData = [
     { q: "What are exosomes and how are they different from stem cell therapy?", a: "Exosomes are extracellular vesicles produced by stem cells as biological messenger particles. They carry the repair and regeneration signals of the stem cell without containing the stem cell itself. Unlike stem cell therapy, which introduces living cells into the body, exosome hair treatment uses only the cellular messages, which are non-cellular and therefore carry no risk of immune rejection or uncontrolled cell proliferation. The clinical advantage is that all the regenerative signals of stem cells are delivered in a stable, consistent, injectable format without the regulatory complexity of live cell transplantation." },
     { q: "How does exosome therapy compare to PRP for hair loss?", a: "Exosomes deliver three to five times more growth factors than PRP at a standardised, consistent concentration. PRP is derived from the patient's own blood, meaning the quality and concentration varies based on individual platelet count, which changes with age, health status, and medications. Exosome products are prepared from stem cells to a fixed concentration per vial, ensuring a reliable and predictable therapeutic dose in every session. For patients who have not responded to PRP or who want the most potent non-surgical hair loss solution available, exosome therapy offers a meaningfully superior mechanism." },
@@ -625,41 +615,6 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <p className="text-taupe text-sm mt-3">Advanced regenerative exosome therapy at Nexus Clinic KL</p>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 px-4 bg-cream">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
-        >
-          <TableForPages
-            columns={[
-              { key: "treatment", header: "Exosome Treatment Package" },
-              { key: "sessionType", header: "Session Type" },
-              { key: "price", header: "Price Range (RM) 2026" },
-            ]}
-            data={pricingTiers.map((tier) => ({
-              treatment: tier.treatment,
-              sessionType: tier.sessionType,
-              price: tier.price,
-            }))}
-            title="Exosome Hair Treatment Cost in Malaysia 2026"
-            subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
-            fadeInUp={fadeInUp}
-          />
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
-              Get Your Personalised Exosome Treatment Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </motion.div>
         </motion.div>
       </section>

@@ -463,26 +463,54 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment" },
-              { key: "volume", header: "Protocol" },
-              { key: "price", header: "Price Range (2026)" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              volume: tier.volume,
-              price: tier.price,
-            }))}
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Glow Peel",
+                  area: "Face",
+                  unit: "1 hour / per session",
+                  normalPrice: "RM650",
+                  sellingPrice: "RM550",
+                  promoPrice: "RM450",
+                  packageNotes: "Quick Facial 20 minutes + Chemical Peel, any type",
+                },
+                {
+                  treatment: "Chemical Peel",
+                  area: "Face",
+                  unit: "30 to 45 minutes, every 2 weeks",
+                  normalPrice: "RM550",
+                  sellingPrice: "RM450",
+                  promoPrice: "RM450",
+                  packageNotes: "Glycolic / Salicylic / TCA Cross 100% / TCA 30% / Lactic / Mandelic",
+                },
+                {
+                  treatment: "Chemical Peel",
+                  area: "Body",
+                  unit: "Per part",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "Per part RM800",
+                  packageNotes: "For scars / hyperpigmentation / uneven tone",
+                },
+              ]}
             title="Chemical Peel Cost in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="compact"
             fadeInUp={fadeInUp}
           />
 
-          <motion.div variants={fadeInUp} className="mt-8">
+          <motion.div variants={fadeInUp} className="mt-8 mx-auto max-w-6xl">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Chemical Peel Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
@@ -494,8 +522,8 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
             </ul>
           </motion.div>
           
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-center text-brown/50 text-sm mt-4">
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl mx-auto max-w-6xl">
+            <p className="text-brown/50 text-sm mt-4">
               Chemical peel pricing varies based on peel depth, skin concern, and number of sessions required. Light peels for acne and dullness are typically more affordable and performed as a series, while medium peels for pigmentation and texture cost more due to stronger formulations and longer recovery monitoring. Patients with deeper acne scars or textural damage may find better value combining peels with <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">acne scar treatment in Malaysia</Link> for comprehensive resurfacing. Those seeking ongoing skin brightness after completing their peel series can maintain results with <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">skin booster in Malaysia</Link> to support long-term hydration and collagen health.
             </p>
           </motion.div>

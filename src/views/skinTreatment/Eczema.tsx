@@ -521,25 +521,34 @@ export default function EczemaLandingPage({ locale }: EczemaTreatmentProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
-          <TableForPages
-            columns={[
-              { key: "service", header: "Service / Treatment", className: "font-semibold text-brown" },
-              { key: "includes", header: "What Is Included" },
-              { key: "price", header: "Price Guide (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(item => ({
-              service: item.service,
-              includes: item.includes,
-              price: item.price,
-            }))}
+          {/* <TableForPages
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Eczema Treatment",
+                  area: "-",
+                  unit: "-",
+                  normalPrice: "-",
+                  sellingPrice: "-",
+                  promoPrice: "-",
+                  packageNotes: "-",
+                },
+              ]}
             title="Eczema Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="default"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
-          />
+          /> */}
 
           <motion.div variants={fadeInUp} className="text-center mt-4">
             <p className="text-center text-brown/50 text-sm mt-4">

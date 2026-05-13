@@ -61,16 +61,6 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
     { component: "Scalp Assessment and Hair Density Photography", role: "Objective assessment of hair loss progression and treatment response using standardised photography and trichoscopy.", integration: "Full scalp assessment including standardised hair density photography performed at consultation and at 6-month and 12-month review appointments. Provides objective comparison to confirm whether finasteride is working." },
   ];
 
-  const pricingTiers = [
-    { service: "Hair Loss Assessment Consultation", details: "Clinical hair and scalp examination; trichoscopy assessment; hair loss pattern grading; medical history review; treatment recommendation", price: "RM 150 to RM 300" },
-    { service: "Finasteride 1mg Prescription (per month)", details: "Oral finasteride 1mg prescribed by doctor; brand or generic; prescription valid for 1 to 3 months", price: "RM 60 to RM 180 per month" },
-    { service: "Topical Finasteride (per month)", details: "Compounded topical finasteride 0.1% to 0.25% solution; for men who prefer topical delivery", price: "RM 150 to RM 350 per month" },
-    { service: "Dutasteride (per month, off-label)", details: "Dutasteride 0.5mg oral for hair loss; off-label use when finasteride 1mg is insufficient", price: "RM 80 to RM 200 per month" },
-    { service: "Topical Minoxidil (per month)", details: "5% topical minoxidil for scalp application; once or twice daily", price: "RM 30 to RM 80 per month" },
-    { service: "PRP Hair Treatment (per session)", details: "Platelet-rich plasma injected into scalp; growth factors to promote hair regrowth; 3-session initial course", price: "RM 1,200 to RM 2,500 per session" },
-    { service: "Follow-Up Hair Loss Review Consultation", details: "6-month and 12-month structured reviews; hair density photography comparison; prescription renewal", price: "RM 100 to RM 200 per visit" },
-  ];
-
   const faqData = [
     { q: "What is finasteride and how does it treat male pattern hair loss?", a: "Finasteride is a prescription medication primarily used to treat male pattern hair loss (androgenetic alopecia). Finasteride works by blocking the 5-alpha reductase enzyme that converts testosterone to dihydrotestosterone (DHT) in the scalp. Reducing DHT levels in the scalp by 60 to 70% prevents further hair follicle miniaturisation and in many men promotes hair regrowth. Finasteride 1mg is the approved dose for hair loss treatment. Finasteride helps prevent further hair loss in approximately 83 to 90% of men who take it consistently." },
     { q: "How do I buy finasteride in Malaysia?", a: "To buy finasteride in Malaysia, a prescription from a registered medical doctor is required. Finasteride is a prescription medication regulated by the National Pharmaceutical Regulatory Agency (NPRA) under the Ministry of Health Malaysia and is not available over the counter at a pharmacy without a prescription. A doctor must assess your suitability for finasteride before prescribing it, discuss the side effects and risks including the rare risk of suicidal ideation, and establish a monitoring plan. At Nexus Clinic KL, finasteride is prescribed after a full clinical assessment at the initial hair loss consultation." },
@@ -615,22 +605,30 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
           viewport={{ once: true }}
           className="container mx-auto max-w-5xl"
         >
-          <TableForPages
-            columns={[
-              { key: "service", header: "Service / Treatment" },
-              { key: "details", header: "Details" },
-              { key: "price", header: "Price Range (RM) 2026" },
-            ]}
-            data={pricingTiers.map((tier) => ({
-              service: tier.service,
-              details: tier.details,
-              price: tier.price,
-            }))}
-            title="Finasteride and Hair Loss Treatment Cost in Malaysia 2026"
-            subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
-            fadeInUp={fadeInUp}
-          />
+            <TableForPages
+              columns={[
+                { key: "treatment", header: "Treatment / Product" },
+                { key: "brand", header: "Brand" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price" },
+                { key: "sellingPrice", header: "Selling Price" },
+                { key: "notes", header: "Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Finasteride 1mg 30's",
+                  brand: "Nexus",
+                  unit: "30's for 1 month supply",
+                  normalPrice: "RM222",
+                  sellingPrice: "RM222",
+                  notes: "Oral finasteride for male pattern hair loss",
+                },
+              ]}
+              title="Finasteride Cost in Malaysia 2026"
+              subtitle="Transparent pricing at Nexus Clinic KL"
+              variant="detailed"
+              fadeInUp={fadeInUp}
+            />
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Hair Loss Programme Pricing

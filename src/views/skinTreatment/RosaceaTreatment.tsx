@@ -637,33 +637,43 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
               <TableForPages
-                columns={[
-                  { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-                  { key: "bestFor", header: "Best For (Subtype)" },
-                  { key: "sessions", header: "Sessions" },
-                  { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-                ]}
-                data={pricingTiers.map(tier => ({
-                  treatment: tier.treatment,
-                  bestFor: tier.bestFor,
-                  sessions: tier.sessions,
-                  price: tier.price,
-                }))}
+                  columns={[
+                    { key: "treatment", header: "Sheet Item / Option" },
+                    { key: "area", header: "Parts / Area" },
+                    { key: "unit", header: "Unit / Duration" },
+                    { key: "normalPrice", header: "Normal Price RM" },
+                    { key: "sellingPrice", header: "Selling Price RM" },
+                    { key: "promoPrice", header: "Promo Price RM" },
+                    { key: "packageNotes", header: "Package / Notes" },
+                  ]}
+                  data={[
+                    {
+                      treatment: "BHMed SPMCE",
+                      area: "-",
+                      unit: "-",
+                      normalPrice: "-",
+                      sellingPrice: "-",
+                      promoPrice: "NIL",
+                      packageNotes: "Sheet mentions rosacea, but price is not listed",
+                    },
+                    {
+                      treatment: "Dual Yellow Laser",
+                      area: "Face / Body",
+                      unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
+                      normalPrice: "RM1,500",
+                      sellingPrice: "RM1,200",
+                      promoPrice: "RM1,200",
+                      packageNotes: "Sheet mentions redness and red facial veins, but not specifically rosacea",
+                    },
+                  ]}
                 title="Rosacea Treatment Cost in Malaysia 2026"
                 subtitle="Transparent pricing at Nexus Clinic KL"
-                variant="default"
+                variant="detailed"
                 fadeInUp={fadeInUp}
-                className="py-12 px-4"
               />
-
-              <motion.div variants={fadeInUp} className="text-center mt-4">
-                <p className="text-taupe font-inter text-sm italic">
-                  Combination rosacea programmes incorporating medical management and procedural laser deliver the most comprehensive outcomes for moderate to severe or mixed subtype rosacea. All pricing disclosed before any commitment at the initial consultation.
-                </p>
-              </motion.div>
         </motion.div>
       </section>
 

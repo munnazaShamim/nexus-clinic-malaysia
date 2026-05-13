@@ -143,17 +143,6 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
       integration: "Every patient has standardised baseline scalp photography. Photography set repeated at 6 and 12 months to provide objective evidence of hair density changes."
     },
   ];
-
-  // Pricing Data
-  const pricingTiers = [
-    { service: "Hair Loss Assessment Consultation", details: "Expert hair assessment; trichoscopy scalp examination; hair loss pattern grading; minoxidil treatment plan discussion; topical vs oral assessment.", price: "RM 150 - RM 300" },
-    { service: "Topical Minoxidil 5% (per month)", details: "Standard 5% topical solution or foam; once or twice daily scalp application; guidance on correct application technique provided.", price: "RM 30 - RM 120" },
-    { service: "Oral Minoxidil Prescription (per month)", details: "Low-dose oral minoxidil (0.625mg to 5mg); baseline blood pressure check required; once-daily oral medication.", price: "RM 80 - RM 200" },
-    { service: "Finasteride 1mg (per month, for men)", details: "Oral finasteride for male androgenetic alopecia; combined with minoxidil for best results; full side effect discussion.", price: "RM 60 - RM 180" },
-    { service: "PRP Hair Treatment (per session)", details: "Platelet-rich plasma injected into scalp; growth factors stimulate hair growth; 3-session initial course recommended.", price: "RM 1,200 - RM 2,500" },
-    { service: "6-Month Hair Loss Review", details: "Standardised hair density photography comparison; scalp trichoscopy; treatment effectiveness assessment; plan adjustment if needed.", price: "RM 100 - RM 200" },
-  ];
-
   // FAQ Data
   const faqData = [
     { q: "What is minoxidil and how does it work for hair loss?", a: "Minoxidil is a vasodilator medication originally developed to treat high blood pressure; its hair growth-promoting effect was discovered as a side effect. Minoxidil works by dilating blood vessels in the scalp to allow more oxygen and nutrients to reach the hair follicles, extending the anagen (active growth) phase of the hair growth cycle. Minoxidil is a topical solution or foam applied directly to the scalp or taken as an oral medication once daily. It is used to treat androgenetic alopecia in both men and women and is one of the two most evidence-supported medications for hair loss treatment alongside finasteride." },
@@ -827,32 +816,34 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-            {/* Minoxidil Hair Loss Treatment Cost Table */}
-            <TableForPages
-              columns={[
-                { key: "service", header: "Service / Treatment" },
-                { key: "details", header: "Details" },
-                { key: "price", header: "Price Range (RM) 2026" },
-              ]}
-              data={pricingTiers.map((tier) => ({
-                service: tier.service,
-                details: tier.details,
-                price: tier.price,
-              }))}
-              title="Minoxidil Hair Loss Treatment Cost in Malaysia 2026"
-              subtitle="Transparent pricing at Nexus Clinic KL"
-              variant="compact"
-              fadeInUp={fadeInUp}
-              className="py-20 px-4"
-            />
-
-            {/* Footnote */}
-            <motion.p 
-              variants={fadeInUp}
-              className="text-center text-taupe font-inter text-sm italic mt-4"
-            >
-              Annual cost for complete minoxidil, finasteride and PRP programme is approximately RM 6,000 to RM 12,000 for men. Women on minoxidil alone have annual cost of approximately RM 1,000 to RM 3,000. All pricing disclosed at initial consultation.
-            </motion.p>
+          <TableForPages
+            columns={[
+              { key: "treatment", header: "Treatment / Product" },
+              { key: "brand", header: "Brand" },
+              { key: "area", header: "Area" },
+              { key: "unit", header: "Unit / Duration" },
+              { key: "normalPrice", header: "Normal Price" },
+              { key: "sellingPrice", header: "Selling Price" },
+              { key: "promoPrice", header: "Promo Price" },
+              { key: "notes", header: "Notes" },
+            ]}
+            data={[
+              {
+                treatment: "Nexus Follithick Spray, Minoxidil 5% + Biotin 1%",
+                brand: "Nexus",
+                area: "Apply on scalp only",
+                unit: "Depending on usage",
+                normalPrice: "RM190",
+                sellingPrice: "RM190",
+                promoPrice: "NIL",
+                notes: "Recommended once daily at night, gently massage for 2 minutes and leave on",
+              },
+            ]}
+            title="Minoxidil Hair Loss Treatment Cost in Malaysia 2026"
+            subtitle="Transparent pricing at Nexus Clinic KL"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+          />
         </motion.div>
       </section>
 

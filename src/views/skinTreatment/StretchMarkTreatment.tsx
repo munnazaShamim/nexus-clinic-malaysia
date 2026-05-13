@@ -627,23 +627,39 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
           className="container mx-auto max-w-5xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "bestFor", header: "Best For" },
-              { key: "sessions", header: "Recommended Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              bestFor: tier.bestFor,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Plinest 2ML 1's",
+                  area: "Face / Abdomen",
+                  unit: "2ml",
+                  normalPrice: "RM2,200",
+                  sellingPrice: "RM1,800",
+                  promoPrice: "NIL",
+                  packageNotes: "Buy 4, get 1 free. Sheet mentions stretch marks",
+                },
+                {
+                  treatment: "Dermapen",
+                  area: "Face / Body",
+                  unit: "1 hour 15 minutes including 30 minutes numb cream",
+                  normalPrice: "RM800",
+                  sellingPrice: "RM688",
+                  promoPrice: "RM688",
+                  packageNotes: "Sheet mentions scars and stretch marks",
+                },
+              ]}
             title="Stretch Mark Removal Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="default"
+            variant="detailed"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
 
           {/* Footnote */}

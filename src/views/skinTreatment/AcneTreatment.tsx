@@ -65,13 +65,6 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
     { factor: "Prescription access", clinic: "Yes. Doctor can prescribe medical-grade treatments", facial: "No. Limited to cosmetic products" },
   ];
 
-  const pricingTiers = [
-    { treatment: "Acne facial / deep cleansing (DermaClear)", price: "RM 288 – RM 488" },
-    { treatment: "Chemical peel (salicylic / glycolic / etc.)", price: "RM 450" },
-    { treatment: "Advanced acne laser treatments", price: "RM 1200 – RM 1500" },
-    { treatment: "Combined acne treatment plans", price: "RM 1500 – RM 3000+" },
-  ];
-
   return (
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
@@ -485,37 +478,124 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-4xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
             columns={[
-              { key: "treatment", header: "Treatment", className: "font-semibold text-brown" },
-              { key: "price", header: "Price Per Session (2026)", className: "font-semibold text-wine" },
+              { key: "treatment", header: "Sheet Item / Option" },
+              { key: "area", header: "Parts / Area" },
+              { key: "unit", header: "Unit / Duration" },
+              { key: "normalPrice", header: "Normal Price RM" },
+              { key: "sellingPrice", header: "Selling Price RM" },
+              { key: "promoPrice", header: "Promo Price RM" },
+              { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              price: tier.price,
-            }))}
+            data={[
+              {
+                treatment: "DermaClear",
+                area: "Face",
+                unit: "1 hour 15 minutes",
+                normalPrice: "RM588",
+                sellingPrice: "RM288",
+                promoPrice: "RM288",
+                packageNotes: "Acne-prone skin facial",
+              },
+              {
+                treatment: "Dual Yellow Laser",
+                area: "Face / Body",
+                unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
+                normalPrice: "RM1,500",
+                sellingPrice: "RM1,200",
+                promoPrice: "RM1,200",
+                packageNotes: "Sheet mentions acne conditions, redness, pigmentation",
+              },
+              {
+                treatment: "Chemical Peel",
+                area: "Face",
+                unit: "30 to 45 minutes, every 2 weeks",
+                normalPrice: "RM550",
+                sellingPrice: "RM450",
+                promoPrice: "RM450",
+                packageNotes: "Glycolic / Salicylic / TCA Cross 100% / TCA 30% / Lactic / Mandelic",
+              },
+              {
+                treatment: "Elixir No2 Repair Toner",
+                area: "Face / Body",
+                unit: "100gm",
+                normalPrice: "RM160",
+                sellingPrice: "RM160",
+                promoPrice: "NIL",
+                packageNotes: "Sheet mentions calming acne appearance",
+              },
+              {
+                treatment: "Elixir No4 Vital C",
+                area: "Face",
+                unit: "15gm",
+                normalPrice: "RM388",
+                sellingPrice: "RM388",
+                promoPrice: "NIL",
+                packageNotes: "Sheet mentions reducing appearance of acne, dark spots, fine lines",
+              },
+              {
+                treatment: "Acne-Aid Liquid Cleanser",
+                area: "Face",
+                unit: "100ml",
+                normalPrice: "RM29",
+                sellingPrice: "RM29",
+                promoPrice: "NIL",
+                packageNotes: "Cleanser for excess oil and impurities",
+              },
+              {
+                treatment: "Acne Complex 30 tabs, 10MG",
+                area: "-",
+                unit: "30's for 1 month supply",
+                normalPrice: "RM200",
+                sellingPrice: "RM200",
+                promoPrice: "NIL",
+                packageNotes: "Acne oral product",
+              },
+              {
+                treatment: "Tretinon 0.05% Tube",
+                area: "Face",
+                unit: "Application on face",
+                normalPrice: "RM50",
+                sellingPrice: "RM50",
+                promoPrice: "NIL",
+                packageNotes: "Acne / skin renewal / brightening",
+              },
+              {
+                treatment: "Tretinon 0.025% Tube",
+                area: "-",
+                unit: "-",
+                normalPrice: "RM50",
+                sellingPrice: "RM50",
+                promoPrice: "NIL",
+                packageNotes: "Acne / skin renewal / brightening",
+              },
+              {
+                treatment: "BHMed Skin",
+                area: "-",
+                unit: "-",
+                normalPrice: "-",
+                sellingPrice: "-",
+                promoPrice: "NIL",
+                packageNotes: "-",
+              },
+              {
+                treatment: "BHMed SPMCE",
+                area: "-",
+                unit: "-",
+                normalPrice: "-",
+                sellingPrice: "-",
+                promoPrice: "NIL",
+                packageNotes: "Mentions acne, scars, rosacea, hyperpigmentation, keloids, melasma",
+              },
+            ]}
             title="Acne Treatment Cost in Malaysia — 2026 Pricing Guide"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="compact"
+            variant="detailed"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
-
-          {/* Footnote */}
-          <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Most acne treatments require multiple sessions depending on severity. Package pricing available for full treatment courses (typically 6 to 8 sessions). Prescription medications charged separately at dispensing cost. Consultation fees waived or incorporated once treatment plan agreed.
-            </p>
-          </motion.div>
-          
-          <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
-              Get a Clear Cost Estimate for Your Acne Treatment | Free Assessment
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
         </motion.div>
       </section>
 

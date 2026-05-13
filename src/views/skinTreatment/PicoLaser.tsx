@@ -74,16 +74,6 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
     { factor: "Price Per Session Malaysia", pico: "RM 700 to RM 1,500", qs: "RM 200 to RM 500", co2: "RM 1,200 to RM 2,500" },
   ];
 
-  const pricingTiers = [
-    { treatment: "Full Face Toning (Brightening / Maintenance)", mode: "Toning Mode (1064nm)", sessions: "4 to 8 monthly", price: "RM 700 – RM 1,000 / session" },
-    { treatment: "Pigmentation Removal (Sunspots, Freckles, PIH)", mode: "Spot Mode + Toning (532nm or 755nm)", sessions: "3 to 5", price: "RM 700 – RM 1,200 / session" },
-    { treatment: "Melasma Management", mode: "Toning Mode (1064nm low fluence)", sessions: "4 to 8 + maintenance", price: "RM 700 – RM 1,100 / session" },
-    { treatment: "Acne Scar Treatment (Fractional Collagen)", mode: "Fractional LIOB Mode (755nm or 1064nm)", sessions: "4 to 8", price: "RM 900 – RM 1,500 / session" },
-    { treatment: "Skin Rejuvenation and Pore Refinement", mode: "Fractional LIOB Mode + Toning", sessions: "3 to 5", price: "RM 800 – RM 1,300 / session" },
-    { treatment: "Tattoo Removal (per session)", mode: "Spot Mode (wavelength per ink colour)", sessions: "4 to 10", price: "RM 300 – RM 1,200 per session (size-dependent)" },
-    { treatment: "Combination Programme (Pigmentation + Scars)", mode: "Multi-mode per session; tailored protocol", sessions: "5 to 8 total", price: "From RM 3,500 (package pricing available)" },
-  ];
-
   const faqData = [
     { q: "What is the difference between Pico Laser and Q-Switched laser?", a: "Pico Laser delivers energy in picoseconds using photoacoustic pressure to shatter pigment with minimal heat. Q-Switched laser delivers energy in nanoseconds using a photothermal mechanism that generates more heat. For Malaysian patients, Pico Laser requires fewer sessions, carries lower PIH risk, and is effective across a broader range of concerns including deep acne scars." },
     { q: "How many sessions of Pico Laser do I need?", a: "Surface pigmentation: 3 to 5 Spot mode sessions. PIH and mild melasma: 4 to 8 Toning mode sessions. Acne scars: 4 to 8 Fractional LIOB mode sessions spaced 4 to 6 weeks apart. Tattoo removal: 4 to 10 sessions depending on ink depth and colour. Your doctor will estimate your specific requirement at consultation." },
@@ -507,33 +497,61 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-6xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-            columns={[
-              { key: "treatment", header: "Treatment / Concern", className: "font-semibold text-brown" },
-              { key: "mode", header: "Mode Used" },
-              { key: "sessions", header: "Sessions" },
-              { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-            ]}
-            data={pricingTiers.map(tier => ({
-              treatment: tier.treatment,
-              mode: tier.mode,
-              sessions: tier.sessions,
-              price: tier.price,
-            }))}
+              columns={[
+                { key: "treatment", header: "Sheet Item / Option" },
+                { key: "area", header: "Parts / Area" },
+                { key: "unit", header: "Unit / Duration" },
+                { key: "normalPrice", header: "Normal Price RM" },
+                { key: "sellingPrice", header: "Selling Price RM" },
+                { key: "promoPrice", header: "Promo Price RM" },
+                { key: "packageNotes", header: "Package / Notes" },
+              ]}
+              data={[
+                {
+                  treatment: "Discovery PICO Rejuvenation",
+                  area: "Face / Body",
+                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "NIL",
+                  packageNotes: "Package: N/A",
+                },
+                {
+                  treatment: "Discovery PICO Resurfacing",
+                  area: "Face / Body",
+                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                  normalPrice: "RM1,500",
+                  sellingPrice: "RM1,200",
+                  promoPrice: "NIL",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Discovery PICO Tattoo Removal",
+                  area: "Body",
+                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
+                  normalPrice: "-",
+                  sellingPrice: "-",
+                  promoPrice: "NIL",
+                  packageNotes: "-",
+                },
+                {
+                  treatment: "Brightening Laser Curas",
+                  area: "Face",
+                  unit: "1 hour 45 minutes",
+                  normalPrice: "RM1,398",
+                  sellingPrice: "RM846",
+                  promoPrice: "NIL",
+                  packageNotes: "Treatment steps mention Pico by doctor",
+                },
+              ]}
             title="Pico Laser Price in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
-            variant="default"
+            variant="detailed"
             fadeInUp={fadeInUp}
-            className="py-12 px-4"
           />
-
-          <motion.div variants={fadeInUp} className="text-center mt-4">
-            <p className="text-taupe font-inter text-sm italic">
-              Combination programmes covering both pigmentation and acne scar concerns available at package pricing. All session pricing includes pre-treatment numbing cream, doctor-performed session, and post-treatment care.
-            </p>
-          </motion.div>
         </motion.div>
       </section>
 

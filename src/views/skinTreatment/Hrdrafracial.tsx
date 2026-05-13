@@ -50,15 +50,6 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
     { phase: "Phase 4: Long-Term Skin Health", timeline: "Year 2 and beyond", sessions: "Monthly HydraFacial as core skin maintenance", outcome: "Continuously maintained pore health, hydration and glow; protects results from deeper clinical treatments" },
   ];
 
-  const pricingTiers = [
-    { treatment: "Signature HydraFacial", includes: "Cleanse, peel, extract, hydrate with Vortex-Fusion; Antiox+ serum infusion", time: "30 to 40 min", price: "RM 380 to RM 520" },
-    { treatment: "Deluxe HydraFacial", includes: "All Signature steps plus 1 targeted booster (Britenol / Rozatrol / DermaBuilder) plus LED light therapy", time: "45 to 60 min", price: "RM 520 to RM 720" },
-    { treatment: "Platinum HydraFacial", includes: "All Deluxe steps plus lymphatic drainage massage and detox booster; maximum glow and sculpting", time: "60 to 75 min", price: "RM 720 to RM 950" },
-    { treatment: "Booster Add-On (per session)", includes: "Britenol (brightening), Rozatrol (calming), DermaBuilder (anti-ageing), Antiox+ (antioxidant)", time: "Included in Deluxe and Platinum", price: "RM 80 to RM 150 if added to Signature" },
-    { treatment: "LED Light Therapy Add-On", includes: "Blue LED (acne), Red LED (collagen and anti-inflammation) or combination", time: "15 min add-on", price: "RM 80 to RM 120 if added to Signature" },
-    { treatment: "Monthly HydraFacial Package (4 sessions)", includes: "4x Signature or Deluxe HydraFacial; booster adjusted each session based on skin review", time: "4 sessions over 4 months", price: "From RM 1,500 (Signature) / From RM 2,000 (Deluxe)" },
-  ];
-
   const faqData = [
     { q: "What is the difference between Signature, Deluxe and Platinum HydraFacial?", a: "Signature HydraFacial is the core three-step session covering cleanse, extract, and hydrate using patented vortex-fusion technology with Antiox+ serum. It takes 30 to 40 minutes and is ideal for maintenance and general brightness. Deluxe HydraFacial adds a targeted booster serum for your specific skin concern, such as Britenol for pigmentation, Rozatrol for sensitive skin, or DermaBuilder for fine lines, plus LED light therapy. It takes 45 to 60 minutes. Platinum HydraFacial adds lymphatic drainage massage before the core steps for maximum depuffing, detoxification and sculpting. It takes 60 to 75 minutes and is the choice for special occasions or patients wanting the most comprehensive single-session experience." },
     { q: "How often should I get a HydraFacial in Malaysia?", a: "Monthly HydraFacial sessions produce the best sustained results for most patients. Monthly frequency aligns with the skin's natural cell turnover cycle of approximately 28 days, meaning each session works with freshly renewed surface cells rather than clearing the same accumulated congestion from an overly long interval. For patients with active acne or heavy congestion, fortnightly sessions for the first 6 to 8 weeks followed by monthly maintenance is sometimes recommended. For patients using HydraFacial purely for occasional glow maintenance or event preparation, sessions every 4 to 8 weeks are appropriate." },
@@ -561,33 +552,70 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
+          className="container mx-auto max-w-7xl"
         >
           <TableForPages
-              columns={[
-                { key: "treatment", header: "HydraFacial Treatment", className: "font-semibold text-brown" },
-                { key: "includes", header: "Includes" },
-                { key: "time", header: "Session Time" },
-                { key: "price", header: "Price Range (RM) 2026", className: "font-semibold text-wine" },
-              ]}
-              data={pricingTiers.map(tier => ({
-                treatment: tier.treatment,
-                includes: tier.includes,
-                time: tier.time,
-                price: tier.price,
-              }))}
+                columns={[
+                  { key: "treatment", header: "Sheet Item / Option" },
+                  { key: "area", header: "Parts / Area" },
+                  { key: "unit", header: "Unit / Duration" },
+                  { key: "normalPrice", header: "Normal Price RM" },
+                  { key: "sellingPrice", header: "Selling Price RM" },
+                  { key: "promoPrice", header: "Promo Price RM" },
+                  { key: "packageNotes", header: "Package / Notes" },
+                ]}
+                data={[
+                  {
+                    treatment: "Hydrolite",
+                    area: "Face",
+                    unit: "1 hour 15 minutes",
+                    normalPrice: "RM288",
+                    sellingPrice: "RM198",
+                    promoPrice: "RM198",
+                    packageNotes: "Hydrating facial",
+                  },
+                  {
+                    treatment: "Hydrolift",
+                    area: "Face",
+                    unit: "1 hour 15 minutes",
+                    normalPrice: "RM388",
+                    sellingPrice: "RM248",
+                    promoPrice: "RM248",
+                    packageNotes: "Lifting / hydrating facial",
+                  },
+                  {
+                    treatment: "Hydroshine",
+                    area: "Face",
+                    unit: "1 hour 15 minutes",
+                    normalPrice: "RM500",
+                    sellingPrice: "RM328",
+                    promoPrice: "RM328",
+                    packageNotes: "Hydrating / glow facial",
+                  },
+                  {
+                    treatment: "DermaClear",
+                    area: "Face",
+                    unit: "1 hour 15 minutes",
+                    normalPrice: "RM588",
+                    sellingPrice: "RM288",
+                    promoPrice: "RM288",
+                    packageNotes: "Acne-prone skin facial",
+                  },
+                  {
+                    treatment: "DermaRadiance",
+                    area: "Face",
+                    unit: "1 hour 15 minutes",
+                    normalPrice: "RM588",
+                    sellingPrice: "RM288",
+                    promoPrice: "RM288",
+                    packageNotes: "Radiance / anti-aging facial",
+                  },
+                ]}
               title="HydraFacial Price in Malaysia 2026"
               subtitle="Transparent pricing at Nexus Clinic KL"
-              variant="default"
+              variant="detailed"
               fadeInUp={fadeInUp}
-              className="py-12 px-4"
             />
-
-            <motion.div variants={fadeInUp} className="text-center mt-4">
-              <p className="text-taupe font-inter text-sm italic">
-                Monthly package pricing available for patients committing to a 4-session programme. All sessions include pre-treatment skin consultation, full device session, and post-treatment SPF application.
-              </p>
-            </motion.div>
         </motion.div>
       </section>
 
