@@ -1,8 +1,9 @@
 export const dynamic = "force-static";
-import { languages } from "@/src/i18n/settings";
+import { routing } from "@/src/i18n/routing";
 import type { Metadata } from "next";
 import { weightLossSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
+import { buildAlternates, localizedUrl } from "@/src/lib/seo";
 
 import { weightlossTreatmentsMetadata } from "@/src/config/weightlossTreatments";
 import CoolSculpting from "@/src/views/weightlossTreatment/Coolsculpting";
@@ -36,7 +37,7 @@ const components: Record<string, React.ComponentType<{ locale: string }>> = {
 
 export async function generateStaticParams() {
   const paths = [];
-  for (const locale of languages) {
+  for (const locale of routing.locales) {
     for (const treatment of weightlossTreatmentsMetadata) {
       paths.push({ locale, slug: treatment.slug });
     }
@@ -63,16 +64,13 @@ export async function generateMetadata({
   }
 
 
-  const baseUrl = process.env.BASE_URL|| "https://www.nexus-clinic.com";
-  const url =
-    locale === "en"
-      ? `${baseUrl}/weight-loss/${slug}`
-      : `${baseUrl}/${locale}/weight-loss/${slug}`;
+  const path = `/weight-loss/${slug}/`;
+  const url = localizedUrl(locale, path);
 
   return {
     title: treatment.title,
     description: treatment.description,
-    alternates: { canonical: url },
+    alternates: buildAlternates(locale, path),
     openGraph: {
       title: treatment.title,
       description: treatment.description,

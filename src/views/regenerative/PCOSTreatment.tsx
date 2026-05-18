@@ -21,14 +21,13 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import TableForPages from "@/src/components/TableForPages";
 import Whatsapp from "@/src/components/Whatsapp";
 import Link from "next/link";
 
-const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "regenerative/pcosTreatment");
+const PCOSPage = () => {
+  const t = useTranslations("regenerative.pcosTreatment");
 
   // PCOS Phenotype Table Data
   const phenotypeTableData = [

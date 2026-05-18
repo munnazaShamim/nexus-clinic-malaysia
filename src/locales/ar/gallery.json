@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "معرض قبل وبعد",
+    "titleLine1": "نتائج حقيقية،",
+    "titleLine2": "أشخاص حقيقيون",
+    "description": "كل تحول تراه تم إنجازه من قبل أطبائنا المعتمدين باستخدام علاجات قائمة على الأدلة. اسحب كل شريط تمرير لكشف الرحلة."
+  },
+  "filter": {
+    "ariaLabel": "تصفية المعرض حسب فئة العلاج"
+  },
+  "results": {
+    "showing": "عرض",
+    "results": "نتائج",
+    "in": "في",
+    "noResults": "لم يتم العثور على نتائج لهذه الفئة.",
+    "ariaLabel": "نتائج المعرض لـ {category}"
+  },
+  "card": {
+    "session": "جلسة",
+    "sessions": "جلسات",
+    "viewDetails": "عرض التفاصيل الكاملة لـ {title}"
+  },
+  "labels": {
+    "before": "قبل",
+    "after": "بعد"
+  },
+  "lightbox": {
+    "sessions": "جلسات",
+    "session": "جلسة",
+    "beforeHeading": "قبل",
+    "afterHeading": "بعد",
+    "bookConsultation": "احجز استشارة",
+    "closeAria": "إغلاق تفاصيل المعرض",
+    "prevAria": "النتيجة السابقة",
+    "nextAria": "النتيجة التالية"
+  },
+  "comparisonAria": "مقارنة قبل وبعد: {title}",
+  "disclaimer": "* قد تختلف النتائج الفردية. جميع العلاجات يتم إجراؤها من قبل أخصائيين طبيين معتمدين في Nexus Clinic Malaysia. الصور هي حالات مرضى حقيقية بموافقتهم."
+}

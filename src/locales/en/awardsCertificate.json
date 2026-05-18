@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "badge": "Recognition • Excellence • Innovation",
+    "title": "Awards & Certifications",
+    "highlight": "Nexus Clinic Kuala Lumpur",
+    "description": "Quality assurance through industry recognition. Every award received by Nexus Clinic reflects our commitment to safe, effective, and innovative aesthetic treatments in Malaysia.",
+    "details": "From Allergan Aesthetics' highest honours to CoolSculpting excellence and advanced injectable certifications, our growing collection of awards represents decades of clinical expertise and patient-centred care at our KLCC clinic.",
+    "note": "All awards are presented by independent industry bodies including Allergan Aesthetics, CoolSculpting, and Biolyph, recognising clinical excellence and patient safety standards.",
+    "imageAlt": "Nexus Clinic Kuala Lumpur - Awards and Certifications",
+    "ctaText": "Book a Consultation",
+    "whatsappMessage": "Hi, I'm interested in learning more about Nexus Clinic's award-winning treatments. I'd like to book a consultation.",
+    "floatingTitle": "🏆 Industry Recognised",
+    "floatingSubtitle": "Excellence Since 2001"
+  },
+  "section": {
+    "title": "Our Awards & Recognitions",
+    "subtitle": "Each award represents our commitment to excellence, patient safety, and outstanding clinical outcomes."
+  },
+  "awards": [
+    {
+      "title": "Nexus Clinic Award for Body Contouring Excellence | Aesthetic Clinic Malaysia",
+      "year": "2022",
+      "category": "Body Contouring Excellence",
+      "description": "Nexus Clinic proudly receives the Allergan Aesthetics Body Contouring Gold Award 2022, recognising its excellence in advanced body contouring treatments in Malaysia. As a leading aesthetic clinic in Kuala Lumpur, Nexus Clinic is known for delivering safe and effective non-surgical body contouring, fat reduction treatments, and personalised aesthetic care. With a strong focus on innovation, patient safety, and natural-looking results, the clinic continues to set high standards in cosmetic treatments in Malaysia, helping clients achieve refined body shape and long-term confidence."
+    },
+    {
+      "title": "Nexus Clinic CoolSculpting Club 200 Award | Fat Freezing Treatment Malaysia",
+      "year": "2023",
+      "category": "Fat Freezing Excellence",
+      "description": "Nexus Clinic is recognised as a CoolSculpting Club 200 member, marking its expertise in advanced fat freezing treatments in Malaysia. As a trusted aesthetic clinic in Kuala Lumpur, Nexus Clinic has successfully delivered over 200 CoolSculpting treatments, helping clients achieve safe, non-invasive body contouring and fat reduction results. Known for its personalised approach and medically guided care, the clinic continues to lead in non-surgical body sculpting and modern aesthetic treatments in Malaysia, ensuring effective results with minimal downtime."
+    },
+    {
+      "title": "Nexus Clinic Platinum Body Contouring Award 2024 | Top Aesthetic Clinic Malaysia",
+      "year": "2024",
+      "category": "Body Contouring Excellence",
+      "description": "Nexus Clinic receives the prestigious Allergan Aesthetics Platinum Award 2024 for excellence in body contouring treatments in Malaysia, reinforcing its position as a leading aesthetic clinic in Kuala Lumpur. Known for advanced non-surgical body contouring, fat reduction treatments, and clinically proven technologies, Nexus Clinic delivers safe, personalised solutions for body sculpting. With a strong track record in CoolSculpting, fat freezing, and modern aesthetic treatments in Malaysia, the clinic continues to set industry benchmarks for quality, innovation, and natural-looking results."
+    },
+    {
+      "title": "Nexus Clinic Biolyph Partner Clinic Award | Advanced Aesthetic Treatments Malaysia",
+      "year": "2024",
+      "category": "Advanced Aesthetic Partnership",
+      "description": "Nexus Clinic is recognised as an official Biolyph Partner Clinic, highlighting its commitment to advanced aesthetic treatments in Malaysia. As a leading aesthetic clinic in Kuala Lumpur, Nexus Clinic offers innovative, medically guided solutions including skin rejuvenation, anti-aging treatments, and personalised aesthetic care. This recognition reflects the clinic's dedication to quality, safety, and consistent results, strengthening its reputation for delivering trusted cosmetic treatments in Malaysia with a patient-focused approach."
+    },
+    {
+      "title": "Nexus Clinic Star Injector Award 2024 | Expert Aesthetic Injectables Malaysia",
+      "year": "2024",
+      "category": "Expert Aesthetic Injectables",
+      "description": "Nexus Clinic earns the prestigious Star Injector Award 2024, recognising its expertise in advanced aesthetic injectables in Malaysia. As a trusted aesthetic clinic in Kuala Lumpur, Nexus Clinic specialises in precision-based botox treatments, dermal fillers, and non-surgical facial contouring for natural-looking results. With a strong focus on safety, technique, and personalised care, the clinic continues to lead in anti-aging treatments in Malaysia, delivering refined outcomes through expert injector skills and modern aesthetic solutions."
+    },
+    {
+      "title": "Nexus Clinic Sculptra Star Injector Award 2025 | Leading Aesthetic Injectables Malaysia",
+      "year": "2025",
+      "category": "Leading Aesthetic Injectables",
+      "description": "Nexus Clinic is honoured with the Sculptra Star Injector Award 2025, recognising its excellence in advanced aesthetic injectables in Malaysia. As a leading aesthetic clinic in Kuala Lumpur, Nexus Clinic specialises in Sculptra treatments, collagen stimulation therapy, and precision-based dermal fillers for natural, long-lasting results. With expert injectors and a strong focus on safety and personalised care, the clinic continues to set benchmarks in anti-aging treatments in Malaysia, offering innovative, non-surgical solutions for facial rejuvenation and skin enhancement."
+    },
+    {
+      "title": "Nexus Clinic Body Contouring Appreciation Award 2023 | Aesthetic Clinic Malaysia",
+      "year": "2023",
+      "category": "Body Contouring Excellence",
+      "description": "Nexus Clinic receives the Allergan Aesthetics Body Contouring Appreciation Award 2023, recognising its excellence in body contouring treatments in Malaysia. As a trusted aesthetic clinic in Kuala Lumpur, Nexus Clinic is known for delivering effective non-surgical body contouring, fat reduction treatments, and personalised aesthetic solutions. With a strong focus on innovation, patient safety, and natural results, the clinic continues to lead in cosmetic treatments in Malaysia, helping clients achieve refined body shape and long-term confidence."
+    }
+  ],
+  "cta": {
+    "title": "Experience Award-Winning Care at Nexus Clinic Kuala Lumpur",
+    "description": "Our awards reflect our dedication to excellence. Let us show you why Nexus Clinic is recognised as a leader in aesthetic medicine in Malaysia.",
+    "button": "Book Your Consultation",
+    "whatsappMessage": "Hi, I'm interested in learning more about Nexus Clinic's award-winning treatments. I'd like to book a consultation.",
+    "footnote": "Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001"
+  }
+}

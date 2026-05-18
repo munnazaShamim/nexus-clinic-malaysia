@@ -4,14 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star, Award, GraduationCap, Instagram, Linkedin, Stethoscope, ArrowLeft } from "lucide-react";
 import { doctors } from "@/src/data/doctorProfiles";
-import { languages } from "@/src/i18n/settings";
+import { routing } from "@/src/i18n/routing";
+import { buildAlternates } from "@/src/lib/seo";
 
 export const dynamic = "force-static";
 
-const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com";
-
 export async function generateStaticParams() {
-  return languages.flatMap((locale: string) =>
+  return (routing.locales as readonly string[]).flatMap((locale) =>
     doctors.map((doctor) => ({ locale, slug: doctor.slug }))
   );
 }
@@ -21,15 +20,13 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const doctor = doctors.find((d) => d.slug === slug);
   if (!doctor) return {};
   return {
     title: `${doctor.name} – ${doctor.title} | Nexus Clinic Malaysia`,
     description: doctor.bio,
-    alternates: {
-      canonical: `${baseurl}/doctors/${slug}`,
-    },
+    alternates: buildAlternates(locale, `/doctors/${slug}/`),
   };
 }
 

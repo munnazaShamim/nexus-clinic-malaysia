@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "badge": "Pusat Penurunan Berat Badan • Nexus Clinic KL",
+    "title": "Perawatan Penurunan Berat Badan di Malaysia",
+    "subtitle": "Penurunan Berat Badan Medis yang Dipimpin Dokter di Nexus Clinic KL",
+    "description": "Setiap perawatan penurunan berat badan di Nexus Clinic KL dimulai dengan penilaian, bukan tebakan. Jelajahi rangkaian lengkap pilihan penurunan berat badan dan body contouring kami di Malaysia, termasuk Ozempic, Wegovy, Mounjaro, Duromine, program penurunan berat badan yang dipantau dokter, fat freezing, dan lainnya. Dipimpin dokter. Rencana yang dipersonalisasi. Kuala Lumpur.",
+    "cta": "Pesan Penilaian Penurunan Berat Badan Gratis",
+    "noCommit": "Tanpa Komitmen • Konsultasi Gratis",
+    "whatsappMessage": "Halo, saya tertarik dengan perawatan penurunan berat badan di Nexus Clinic KL. Saya ingin memesan konsultasi."
+  },
+  "trust": {
+    "items": [
+      { "title": "5.000+ Konsultasi", "subtitle": "Didukung oleh dokter berlisensi" },
+      { "title": "15+ Tahun Pengalaman", "subtitle": "Pengalaman medis gabungan" },
+      { "title": "Rencana Dipantau Dokter", "subtitle": "Disesuaikan dengan tujuan Anda" },
+      { "title": "Lokasi KLCC", "subtitle": "Wisma UOA II, Jalan Pinang" }
+    ]
+  },
+  "intro": {
+    "title": "Kenaikan Berat Badan Memiliki Lebih dari Satu Penyebab",
+    "para1": "Kenaikan berat badan bukan hanya tentang kemauan. Sinyal nafsu makan, respons insulin, stres, kualitas tidur, hormon, kebiasaan sehari-hari, dan perubahan metabolik semuanya dapat memengaruhi cara tubuh menyimpan dan menggunakan energi. Itulah mengapa pasien yang berbeda sering memerlukan solusi yang berbeda, bahkan ketika tujuan akhirnya sama.",
+    "para2": "Di Nexus Clinic Kuala Lumpur, penurunan berat badan dimulai dengan penilaian yang tepat. Dokter kami melihat keluhan berat badan Anda saat ini, pola makan, latar belakang kesehatan, upaya sebelumnya, dan kesesuaian perawatan sebelum merekomendasikan rencana. Bagi beberapa pasien, ini mungkin berarti dukungan obat. Bagi yang lain, mungkin berarti body contouring, dukungan gaya hidup, atau program terstruktur yang dipantau dokter. Tujuannya selalu sama: kemajuan yang aman, terasa realistis, dan berkelanjutan."
+  },
+  "treatments": {
+    "title": "Perawatan Penurunan Berat Badan Tersedia di Nexus Clinic KL",
+    "subtitle": "Jelajahi rangkaian lengkap pilihan penurunan berat badan medis dan body contouring kami.",
+    "viewDetails": "Lihat Detail Perawatan",
+    "items": [
+      { "name": "Ozempic Penurunan Berat Badan Malaysia", "description": "Panduan yang dipimpin dokter tentang Ozempic untuk penurunan berat badan di Malaysia, termasuk cara kerjanya, siapa yang cocok, kemajuan yang diharapkan, harga, dan perencanaan perawatan." },
+      { "name": "Wegovy Penurunan Berat Badan Malaysia", "description": "Pelajari bagaimana Wegovy mendukung kontrol nafsu makan dan penurunan berat badan medis yang terstruktur, dengan panduan konsultasi, tinjauan kandidasi, dan ekspektasi realistis." },
+      { "name": "Mounjaro Penurunan Berat Badan Malaysia", "description": "Informasi komprehensif tentang perawatan penurunan berat badan Mounjaro di Malaysia, termasuk penilaian dokter, kesesuaian perawatan, dan dukungan kemajuan." },
+      { "name": "Duromine Penurunan Berat Badan Malaysia", "description": "Jelajahi program penurunan berat badan Duromine jangka pendek yang dipantau dokter, bagaimana diresepkan, siapa yang cocok, dan pemantauan apa yang diperlukan." },
+      { "name": "Penurunan Berat Badan yang Dipantau Dokter Malaysia", "description": "Pendekatan yang dipersonalisasi dan dipantau dokter untuk pasien yang memerlukan panduan klinis, tindak lanjut terstruktur, dan rencana perawatan yang sesuai dengan profil kesehatan mereka." },
+      { "name": "HCG Penurunan Berat Badan Malaysia", "description": "Pahami peran, klaim, dan pertimbangan klinis seputar rencana penurunan berat badan terkait HCG, dengan panduan dokter yang jujur tentang kesesuaian." },
+      { "name": "Fat Freezing Malaysia", "description": "Body contouring non-bedah untuk area lemak membandel menggunakan teknologi pendinginan terkontrol. Ideal untuk pasien yang ingin menargetkan area tertentu." },
+      { "name": "CoolSculpting Malaysia", "description": "Tinjauan lengkap CoolSculpting di Malaysia, termasuk cara kerja perawatan, area tubuh ideal, dan hasil yang realistis." },
+      { "name": "Program GLP 1 Malaysia", "description": "Program penurunan berat badan berbasis GLP 1 yang terstruktur dirancang seputar penilaian, perencanaan perawatan, tindak lanjut, dan dukungan gaya hidup." },
+      { "name": "Zepbound Penurunan Berat Badan Malaysia", "description": "Informasi yang dipimpin dokter tentang perawatan penurunan berat badan Zepbound, termasuk perbandingannya dengan opsi lain dan siapa yang mungkin mendapat manfaat dari tinjauan medis." },
+      { "name": "IV Drip Penurunan Berat Badan Malaysia", "description": "Pilihan IV drip yang mendukung kesehatan dan hidrasi yang dapat ditambahkan ke rencana manajemen berat badan yang lebih luas jika sesuai secara klinis." }
+    ]
+  },
+  "concerns": {
+    "title": "Temukan Perawatan yang Tepat untuk Keluhan Anda",
+    "subtitle": "Tidak yakin perawatan penurunan berat badan mana yang sesuai dengan keluhan khusus Anda? Gunakan panduan ini.",
+    "tableHead": {
+      "concern": "Keluhan Anda",
+      "treatment": "Perawatan yang Disarankan",
+      "start": "Mulai di Sini"
+    },
+    "viewLink": "Lihat Detail",
+    "items": [
+      { "concern": "Butuh bantuan medis untuk mengurangi nafsu makan dan mengontrol ngidam", "treatment": "Ozempic, Wegovy, Mounjaro atau Program GLP 1" },
+      { "concern": "Butuh rencana klinis terstruktur dengan tindak lanjut rutin", "treatment": "Penurunan Berat Badan yang Dipantau Dokter" },
+      { "concern": "Butuh dukungan untuk penurunan berat badan jangka pendek yang diawasi dokter", "treatment": "Duromine Penurunan Berat Badan" },
+      { "concern": "Ingin menargetkan lemak membandel di area tubuh tertentu", "treatment": "Fat Freezing atau CoolSculpting" },
+      { "concern": "Ingin membandingkan pilihan obat suntikan", "treatment": "Ozempic, Wegovy, Mounjaro atau Zepbound" },
+      { "concern": "Ingin body contouring tanpa operasi", "treatment": "Fat Freezing atau CoolSculpting" },
+      { "concern": "Butuh program yang lebih luas daripada satu perawatan", "treatment": "Program GLP 1 atau Penurunan Berat Badan yang Dipantau Dokter" },
+      { "concern": "Mencari tambahan kesehatan pendukung", "treatment": "IV Drip Penurunan Berat Badan" },
+      { "concern": "Ingin memahami semua pilihan sebelum memutuskan", "treatment": "Konsultasi Tinjauan Penurunan Berat Badan" }
+    ]
+  },
+  "approach": {
+    "title": "Pendekatan yang Membuat Perbedaan",
+    "leftPara1": "Ada banyak klinik yang menawarkan perawatan penurunan berat badan di Kuala Lumpur. Perawatannya mungkin tampak serupa di permukaan, tetapi rekomendasi yang tepat tergantung pada pasien. Tidak setiap orang memerlukan obat. Tidak setiap orang memerlukan body contouring. Dan tidak setiap pasien harus mengikuti rencana yang sama.",
+    "leftPara2": "Di Nexus Clinic KL, setiap perjalanan penurunan berat badan dimulai dengan penilaian yang dipimpin dokter. Kami mengidentifikasi apa yang mendorong keluhan, menjelaskan apa yang dapat dan tidak dapat dilakukan setiap perawatan, dan hanya merekomendasikan apa yang masuk akal untuk tujuan Anda. Kami menjaga konsultasi tetap jujur, praktis, dan jelas. Jika suatu perawatan tidak cocok untuk Anda, kami akan memberi tahu Anda.",
+    "checklist": [
+      "Penilaian yang dipimpin dokter sebelum rekomendasi perawatan apa pun",
+      "Penjelasan jelas tentang kemajuan realistis dan kesesuaian perawatan",
+      "Rencana yang dipersonalisasi untuk dukungan obat, body contouring, atau perawatan kombinasi",
+      "Konsultasi jujur dengan perencanaan perawatan yang transparan",
+      "Lokasi pusat Kuala Lumpur dengan pengalaman klinik yang nyaman"
+    ]
+  },
+  "whyUs": {
+    "title": "Mengapa Pasien Memilih Nexus Clinic KL",
+    "items": [
+      "Penilaian yang dipimpin dokter sebelum rekomendasi perawatan apa pun",
+      "Penjelasan jelas tentang kemajuan realistis dan kesesuaian perawatan",
+      "Rencana yang dipersonalisasi untuk dukungan obat, body contouring, atau perawatan kombinasi",
+      "Konsultasi jujur dengan perencanaan perawatan yang transparan",
+      "Lokasi pusat Kuala Lumpur dengan pengalaman klinik yang nyaman"
+    ]
+  },
+  "faq": {
+    "items": [
+      { "q": "Bagaimana saya tahu perawatan penurunan berat badan mana yang sebenarnya saya butuhkan?", "a": "Mulailah dengan konsultasi. Sebagian besar pasien datang dengan tujuan, bukan nama perawatan. Dokter meninjau keluhan, riwayat kesehatan, dan ekspektasi Anda, lalu merekomendasikan pilihan yang paling sesuai dengan situasi Anda." },
+      { "q": "Bisakah saya menggabungkan penurunan berat badan medis dan perawatan body contouring?", "a": "Ya. Beberapa pasien mendapat manfaat dari menggabungkan program yang dipantau dokter dengan perawatan body contouring seperti fat freezing. Kombinasi yang tepat tergantung pada tujuan, area tubuh, dan kesesuaian perawatan Anda." },
+      { "q": "Apakah perawatan penurunan berat badan di Nexus Clinic KL cocok untuk semua orang?", "a": "Tidak setiap perawatan cocok untuk setiap pasien. Beberapa pilihan mungkin tergantung pada riwayat medis, obat-obatan saat ini, profil massa tubuh, dan tujuan pribadi Anda. Kesesuaian dikonfirmasi selama konsultasi." },
+      { "q": "Apa perbedaan antara Ozempic, Wegovy, dan Mounjaro?", "a": "Ketiganya adalah pilihan yang diresepkan dokter yang digunakan dalam perencanaan penurunan berat badan medis, tetapi tidak identik. Dokter akan menjelaskan bagaimana mereka berbeda, untuk apa dirancang, dan pilihan mana yang mungkin lebih sesuai untuk kasus Anda." },
+      { "q": "Bisakah body contouring menggantikan penurunan berat badan keseluruhan?", "a": "Perawatan body contouring seperti fat freezing dan CoolSculpting paling baik untuk lemak lokal yang membandel. Mereka bukan pengganti penurunan berat badan medis yang lebih luas ketika tujuan utamanya adalah pengurangan keseluruhan." },
+      { "q": "Berapa lama program penurunan berat badan yang dipantau dokter berlangsung?", "a": "Garis waktu bervariasi dari pasien ke pasien. Beberapa memerlukan dukungan jangka pendek, sementara yang lain mendapat manfaat dari tindak lanjut terstruktur yang lebih lama. Dokter Anda akan menguraikan rencana berdasarkan kemajuan dan tujuan Anda." },
+      { "q": "Apakah saya memerlukan konsultasi sebelum memulai perawatan?", "a": "Ya. Setiap perawatan penurunan berat badan di Nexus Clinic KL dimulai dengan konsultasi sehingga dokter dapat menilai kesesuaian Anda, menjelaskan pilihan Anda, dan membuat rencana yang aman dan realistis." },
+      { "q": "Di mana lokasi Nexus Clinic KL?", "a": "Nexus Clinic terletak di Wisma UOA II, Jalan Pinang, Kuala Lumpur, membuatnya nyaman bagi pasien dari KLCC dan area sekitarnya." }
+    ]
+  },
+  "cta": {
+    "title": "Pesan Konsultasi Penurunan Berat Badan Anda di Nexus Clinic Kuala Lumpur",
+    "description": "Setiap perjalanan penurunan berat badan dimulai dengan cara yang sama: penilaian yang tepat oleh dokter berlisensi, penjelasan jujur tentang apa yang mungkin bekerja untuk tujuan Anda, dan rencana yang jelas sebelum Anda berkomitmen pada apa pun.",
+    "button": "Pesan Konsultasi Gratis Anda Sekarang",
+    "whatsappMessage": "Halo, saya ingin memesan konsultasi penurunan berat badan gratis di Nexus Clinic KL. Mohon beri tahu jadwal yang tersedia.",
+    "limitedSlots": "Slot Terbatas Tersedia Minggu Ini | Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "serving": "Melayani pasien di KL, Petaling Jaya, Bangsar, Chow Kit, KLCC, Ampang, Mont Kiara, dan seluruh Malaysia."
+  },
+  "footerBrand": "Nexus Clinic adalah klinik estetika dan penurunan berat badan medis canggih di Kuala Lumpur. Kami menawarkan penurunan berat badan yang dipimpin dokter, body contouring, dan perencanaan perawatan yang dipersonalisasi yang dirancang seputar tujuan, kenyamanan, dan kepercayaan diri jangka panjang Anda."
+}

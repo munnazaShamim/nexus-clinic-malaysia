@@ -25,74 +25,24 @@ import {
 } from "../lib/animations";
 import FAQWithSchema from "../components/FAQWithSchema";
 import BeforeAfterFaceSection from "../components/BeforeAfterFace";
+import { useTranslations } from "next-intl";
+
+const statIcons = [Target, Clock, Calendar, Timer];
+const concernIcons = [Sparkles, Heart, Shield, Target];
 
 const PageFractionalLaser = () => {
-  const treatmentStats = [
-    { icon: Target, label: "Treated Area", value: "Face & Body" },
-    { icon: Clock, label: "Duration", value: "30-60 mins" },
-    { icon: Calendar, label: "Frequency", value: "1x per month" },
-    { icon: Timer, label: "Downtime", value: "3-7 days" },
-  ];
+  const t = useTranslations("fractionalLaser");
 
-  const benefits = [
-    {
-      title: "Faster Recovery",
-      desc: "Minimal downtime with targeted treatment zones",
-    },
-    {
-      title: "Customizable",
-      desc: "Tailored intensity for your unique skin needs",
-    },
-    {
-      title: "Long-lasting Results",
-      desc: "Stimulates natural collagen production",
-    },
-    {
-      title: "Safe & Effective",
-      desc: "FDA-approved technology with proven results",
-    },
-  ];
-
-  const skinConcerns = [
-    { title: "Acne Scars", icon: Sparkles },
-    { title: "Fine Lines", icon: Heart },
-    { title: "Sun Damage", icon: Shield },
-    { title: "Large Pores", icon: Target },
-  ];
-
-  const testimonials = [
-    {
-      name: "Kumar Raj",
-      text: "CO2 laser resurfacing for acne scars was effective, and the cost was very affordable.",
-    },
-    {
-      name: "Mai Lin",
-      text: "This was my second session and I already loved my skin. Can't recommend enough!",
-    },
-    {
-      name: "Linh Nguyen",
-      text: "Significantly reduced my acne scars. My skin felt rejuvenated and fresh.",
-    },
-  ];
-
-  const faqs = [
-    {
-      q: "How many sessions are needed?",
-      a: "Typically 2-4 sessions, spaced 4-6 weeks apart, depending on severity.",
-    },
-    {
-      q: "Is the treatment painful?",
-      a: "A numbing cream is applied beforehand. You may feel mild warmth but discomfort is minimal.",
-    },
-    {
-      q: "How long is the recovery?",
-      a: "Expect 3-7 days of peeling and redness. Sun protection is essential during healing.",
-    },
-    {
-      q: "Is it safe for all skin tones?",
-      a: "Yes, with proper consultation to customize settings and prevent pigmentation risks.",
-    },
-  ];
+  const treatmentStats = (t.raw("stats") as Array<{ label: string; value: string }>).map(
+    (stat, idx) => ({ ...stat, icon: statIcons[idx] ?? Target })
+  );
+  const benefits = t.raw("benefits.items") as Array<{ title: string; desc: string }>;
+  const skinConcerns = (t.raw("concerns.items") as Array<{ title: string }>).map(
+    (item, idx) => ({ ...item, icon: concernIcons[idx] ?? Sparkles })
+  );
+  const processItems = t.raw("process.items") as Array<{ step: string; title: string; desc: string }>;
+  const testimonials = t.raw("testimonials.items") as Array<{ name: string; text: string }>;
+  const faqs = t.raw("faq") as Array<{ q: string; a: string }>;
 
   return (
     <>
@@ -114,7 +64,7 @@ const PageFractionalLaser = () => {
             <motion.div variants={fadeInUp} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-glass backdrop-blur-md rounded-full text-brown text-sm font-medium">
                 <Sparkles className="w-4 h-4" />
-                Advanced Skin Rejuvenation
+                {t("hero.badge")}
               </span>
             </motion.div>
 
@@ -122,17 +72,15 @@ const PageFractionalLaser = () => {
               variants={fadeInUp}
               className="font-georgia text-4xl md:text-6xl lg:text-7xl text-light leading-tight mb-6"
             >
-              Fractional CO2 Laser
-              <span className="block text-cream/80 mt-2">Skin Resurfacing</span>
+              {t("hero.titleLine1")}
+              <span className="block text-cream/80 mt-2">{t("hero.titleLine2")}</span>
             </motion.h1>
 
             <motion.p
               variants={fadeInUp}
               className="text-cream/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Experience deep skin transformation. Target stubborn scars,
-              wrinkles, and imperfections with precision laser technology for
-              radiant, youthful skin.
+              {t("hero.description")}
             </motion.p>
 
             <motion.div
@@ -140,10 +88,10 @@ const PageFractionalLaser = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <button className="px-8 py-4 bg-cream text-brown font-semibold rounded-full hover:bg-light transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
-                Book Consultation
+                {t("hero.primaryCta")}
               </button>
               <button className="px-8 py-4 bg-transparent border-2 border-cream/50 text-cream font-semibold rounded-full hover:bg-cream/10 transition-all duration-300">
-                Learn More
+                {t("hero.secondaryCta")}
               </button>
             </motion.div>
 
@@ -153,15 +101,15 @@ const PageFractionalLaser = () => {
             >
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5" />
-                <span>689+ Satisfied Clients</span>
+                <span>{t("hero.clients")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Award className="w-5 h-5" />
-                <span>Since 2001</span>
+                <span>{t("hero.since")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5 fill-current" />
-                <span>5-Star Rated</span>
+                <span>{t("hero.rated")}</span>
               </div>
             </motion.div>
           </motion.div>
@@ -183,32 +131,23 @@ const PageFractionalLaser = () => {
             >
               <motion.div variants={fadeInLeft}>
                 <span className="text-wine font-medium tracking-wider uppercase text-sm">
-                  The Treatment
+                  {t("what.eyebrow")}
                 </span>
                 <h2 className="font-georgia text-3xl md:text-5xl text-brown mt-4 mb-6 leading-tight">
-                  What is Fractional CO2 Laser?
+                  {t("what.title")}
                 </h2>
                 <div className="space-y-4 text-taupe leading-relaxed">
-                  <p>
-                    Fractional CO2 laser is an advanced skin resurfacing
-                    treatment using carbon dioxide laser technology. Unlike
-                    traditional methods, it delivers microscopic beams creating
-                    tiny treatment zones surrounded by healthy tissue.
-                  </p>
-                  <p>
-                    These micro-injuries trigger your body's natural healing,
-                    encouraging collagen and elastin production. The result?
-                    Smoother, tighter, and more youthful skin.
-                  </p>
+                  <p>{t("what.para1")}</p>
+                  <p>{t("what.para2")}</p>
                 </div>
                 <div className="mt-8 flex items-center gap-4">
                   <div className="w-16 h-16 bg-wine/10 rounded-2xl flex items-center justify-center">
                     <Zap className="w-8 h-8 text-wine" />
                   </div>
                   <div>
-                    <p className="font-semibold text-brown">Gold Standard</p>
+                    <p className="font-semibold text-brown">{t("what.goldTitle")}</p>
                     <p className="text-taupe text-sm">
-                      For deep skin rejuvenation
+                      {t("what.goldSubtitle")}
                     </p>
                   </div>
                 </div>
@@ -267,13 +206,13 @@ const PageFractionalLaser = () => {
                 variants={fadeInUp}
                 className="text-rose font-medium tracking-wider uppercase text-sm"
               >
-                Why Choose Us
+                {t("benefits.eyebrow")}
               </motion.span>
               <motion.h2
                 variants={fadeInUp}
                 className="font-georgia text-3xl md:text-5xl text-light mt-4"
               >
-                Treatment Benefits
+                {t("benefits.title")}
               </motion.h2>
             </motion.div>
 
@@ -321,20 +260,19 @@ const PageFractionalLaser = () => {
                 variants={fadeInUp}
                 className="text-wine font-medium tracking-wider uppercase text-sm"
               >
-                Treatment Areas
+                {t("concerns.eyebrow")}
               </motion.span>
               <motion.h2
                 variants={fadeInUp}
                 className="font-georgia text-3xl md:text-5xl text-brown mt-4 mb-6"
               >
-                Skin Concerns We Treat
+                {t("concerns.title")}
               </motion.h2>
               <motion.p
                 variants={fadeInUp}
                 className="text-taupe max-w-2xl mx-auto"
               >
-                Our fractional CO2 laser effectively addresses multiple skin
-                concerns with precision and care.
+                {t("concerns.subtitle")}
               </motion.p>
             </motion.div>
 
@@ -364,8 +302,8 @@ const PageFractionalLaser = () => {
             </motion.div>
           </div>
         </section>
-        {/* Before After */}
 
+        {/* Before After */}
         <BeforeAfterFaceSection />
 
         {/* Process Section */}
@@ -382,34 +320,18 @@ const PageFractionalLaser = () => {
                   variants={fadeInUp}
                   className="text-wine font-medium tracking-wider uppercase text-sm"
                 >
-                  Your Journey
+                  {t("process.eyebrow")}
                 </motion.span>
                 <motion.h2
                   variants={fadeInUp}
                   className="font-georgia text-3xl md:text-5xl text-brown mt-4"
                 >
-                  Treatment Process
+                  {t("process.title")}
                 </motion.h2>
               </div>
 
               <div className="grid md:grid-cols-3 gap-8">
-                {[
-                  {
-                    step: "01",
-                    title: "Consultation",
-                    desc: "Thorough skin assessment to customize your treatment plan",
-                  },
-                  {
-                    step: "02",
-                    title: "Treatment",
-                    desc: "Numbing cream applied, then precise laser delivery to target areas",
-                  },
-                  {
-                    step: "03",
-                    title: "Recovery",
-                    desc: "Follow aftercare guidelines for optimal healing and results",
-                  },
-                ].map((item, index) => (
+                {processItems.map((item, index) => (
                   <motion.div
                     key={index}
                     variants={fadeInUp}
@@ -424,7 +346,7 @@ const PageFractionalLaser = () => {
                       </h3>
                       <p className="text-taupe">{item.desc}</p>
                     </div>
-                    {index < 2 && (
+                    {index < processItems.length - 1 && (
                       <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                         <ArrowRight className="w-8 h-8 text-wine/30" />
                       </div>
@@ -450,13 +372,13 @@ const PageFractionalLaser = () => {
                   variants={fadeInUp}
                   className="text-cream/80 font-medium tracking-wider uppercase text-sm"
                 >
-                  Testimonials
+                  {t("testimonials.eyebrow")}
                 </motion.span>
                 <motion.h2
                   variants={fadeInUp}
                   className="font-georgia text-3xl md:text-5xl text-light mt-4"
                 >
-                  Client Reviews
+                  {t("testimonials.title")}
                 </motion.h2>
               </div>
 
@@ -476,7 +398,7 @@ const PageFractionalLaser = () => {
                       ))}
                     </div>
                     <p className="text-light/90 mb-6 italic">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 bg-light/20 rounded-full flex items-center justify-center">
@@ -511,20 +433,19 @@ const PageFractionalLaser = () => {
               variants={fadeInUp}
               className="font-georgia text-3xl md:text-5xl text-light mb-6"
             >
-              Ready to Transform Your Skin?
+              {t("cta.title")}
             </motion.h2>
             <motion.p
               variants={fadeInUp}
               className="text-cream/80 text-lg mb-10 max-w-2xl mx-auto"
             >
-              Schedule your consultation today and discover how fractional CO2
-              laser can help you achieve radiant, youthful skin.
+              {t("cta.description")}
             </motion.p>
             <motion.button
               variants={fadeInUp}
               className="px-10 py-4 bg-wine text-light font-semibold rounded-full hover:bg-rose transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Book Your Consultation
+              {t("cta.button")}
             </motion.button>
           </motion.div>
         </section>

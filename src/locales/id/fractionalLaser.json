@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Peremajaan Kulit Canggih",
+    "titleLine1": "Laser CO2 Fraksional",
+    "titleLine2": "Pelapisan Ulang Kulit",
+    "description": "Rasakan transformasi kulit yang mendalam. Targetkan bekas luka membandel, kerutan, dan ketidaksempurnaan dengan teknologi laser presisi untuk kulit yang bercahaya dan muda.",
+    "primaryCta": "Pesan Konsultasi",
+    "secondaryCta": "Pelajari Lebih Lanjut",
+    "clients": "689+ Klien Puas",
+    "since": "Sejak 2001",
+    "rated": "Berperingkat 5 Bintang"
+  },
+  "stats": [
+    { "label": "Area yang Dirawat", "value": "Wajah & Tubuh" },
+    { "label": "Durasi", "value": "30-60 menit" },
+    { "label": "Frekuensi", "value": "1x per bulan" },
+    { "label": "Waktu Henti", "value": "3-7 hari" }
+  ],
+  "what": {
+    "eyebrow": "Perawatan",
+    "title": "Apa itu Laser CO2 Fraksional?",
+    "para1": "Laser CO2 fraksional adalah perawatan pelapisan ulang kulit canggih yang menggunakan teknologi laser karbon dioksida. Berbeda dengan metode tradisional, ia memberikan sinar mikroskopis yang menciptakan zona perawatan kecil yang dikelilingi oleh jaringan sehat.",
+    "para2": "Cedera mikro ini memicu penyembuhan alami tubuh Anda, mendorong produksi kolagen dan elastin. Hasilnya? Kulit yang lebih halus, kencang, dan muda.",
+    "goldTitle": "Standar Emas",
+    "goldSubtitle": "Untuk peremajaan kulit yang mendalam"
+  },
+  "benefits": {
+    "eyebrow": "Mengapa Memilih Kami",
+    "title": "Manfaat Perawatan",
+    "items": [
+      { "title": "Pemulihan Lebih Cepat", "desc": "Waktu henti minimal dengan zona perawatan yang ditargetkan" },
+      { "title": "Dapat Disesuaikan", "desc": "Intensitas disesuaikan untuk kebutuhan kulit unik Anda" },
+      { "title": "Hasil Tahan Lama", "desc": "Merangsang produksi kolagen alami" },
+      { "title": "Aman & Efektif", "desc": "Teknologi yang disetujui FDA dengan hasil yang terbukti" }
+    ]
+  },
+  "concerns": {
+    "eyebrow": "Area Perawatan",
+    "title": "Masalah Kulit yang Kami Tangani",
+    "subtitle": "Laser CO2 fraksional kami secara efektif menangani berbagai masalah kulit dengan presisi dan perawatan.",
+    "items": [
+      { "title": "Bekas Jerawat" },
+      { "title": "Garis Halus" },
+      { "title": "Kerusakan Matahari" },
+      { "title": "Pori-pori Besar" }
+    ]
+  },
+  "process": {
+    "eyebrow": "Perjalanan Anda",
+    "title": "Proses Perawatan",
+    "items": [
+      { "step": "01", "title": "Konsultasi", "desc": "Penilaian kulit menyeluruh untuk menyesuaikan rencana perawatan Anda" },
+      { "step": "02", "title": "Perawatan", "desc": "Krim mati rasa diaplikasikan, lalu pemberian laser presisi ke area target" },
+      { "step": "03", "title": "Pemulihan", "desc": "Ikuti pedoman perawatan setelahnya untuk penyembuhan dan hasil optimal" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimoni",
+    "title": "Ulasan Klien",
+    "items": [
+      { "name": "Kumar Raj", "text": "Pelapisan ulang laser CO2 untuk bekas jerawat efektif, dan biayanya sangat terjangkau." },
+      { "name": "Mai Lin", "text": "Ini adalah sesi kedua saya dan saya sudah menyukai kulit saya. Tidak bisa cukup merekomendasikan!" },
+      { "name": "Linh Nguyen", "text": "Secara signifikan mengurangi bekas jerawat saya. Kulit saya terasa segar dan diremajakan." }
+    ]
+  },
+  "faq": [
+    { "q": "Berapa sesi yang dibutuhkan?", "a": "Biasanya 2-4 sesi, dengan jarak 4-6 minggu, tergantung pada tingkat keparahan." },
+    { "q": "Apakah perawatannya menyakitkan?", "a": "Krim mati rasa diaplikasikan terlebih dahulu. Anda mungkin merasakan kehangatan ringan tetapi ketidaknyamanannya minimal." },
+    { "q": "Berapa lama pemulihannya?", "a": "Harapkan 3-7 hari pengelupasan dan kemerahan. Perlindungan matahari penting selama penyembuhan." },
+    { "q": "Apakah aman untuk semua warna kulit?", "a": "Ya, dengan konsultasi yang tepat untuk menyesuaikan pengaturan dan mencegah risiko pigmentasi." }
+  ],
+  "cta": {
+    "title": "Siap Mengubah Kulit Anda?",
+    "description": "Jadwalkan konsultasi Anda hari ini dan temukan bagaimana laser CO2 fraksional dapat membantu Anda mencapai kulit yang bercahaya dan muda.",
+    "button": "Pesan Konsultasi Anda"
+  }
+}

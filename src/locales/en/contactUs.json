@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "badge": "Get in Touch • Nexus Clinic KL",
+    "title": "Contact Us",
+    "description": "Have questions about our treatments? Want to book a consultation? We are here to help. Reach out to us any way that works for you."
+  },
+  "contactInfo": {
+    "visit": {
+      "title": "Visit Us",
+      "details": [
+        "LG 10, Lower Ground Floor, Wisma UOA 2",
+        "Jalan Pinang, 50450 Kuala Lumpur",
+        "Malaysia"
+      ],
+      "action": "Get Directions"
+    },
+    "call": {
+      "title": "Call Us",
+      "detail": "Main: ",
+      "action": "Call Now"
+    },
+    "email": {
+      "title": "Email Us",
+      "action": "Send Email"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "details": [
+        "Monday - Saturday: 9:00 AM - 6:00 PM",
+        "Sunday: Closed",
+        "Public Holidays: By Appointment"
+      ]
+    }
+  },
+  "map": {
+    "title": "Find Us Here",
+    "imageAlt": "Nexus Clinic location map at Wisma UOA 2, Kuala Lumpur",
+    "locationTitle": "Our Location",
+    "openInMaps": "Open in Google Maps"
+  },
+  "form": {
+    "title": "Book Your Appointment",
+    "subtitle": "Fill in the form below to schedule your consultation. We'll confirm your appointment within 24 hours.",
+    "iframeTitle": "Appointment Booking Form - Nexus Clinic"
+  },
+  "faq": {
+    "items": [
+      { "q": "Do I need an appointment to visit Nexus Clinic?", "a": "Yes, we recommend booking an appointment to ensure our doctors can give you proper attention. Walk-ins are welcome but may have waiting time." },
+      { "q": "Is parking available at the clinic?", "a": "Yes, Wisma UOA II has basement parking. We validate parking tickets for patients." },
+      { "q": "What is the nearest LRT station?", "a": "KLCC LRT station is a 5-minute walk from our clinic. Ampang Park station is also nearby." },
+      { "q": "Can I book a consultation via WhatsApp?", "a": "Yes! You can reach us on WhatsApp for appointments and enquiries." },
+      { "q": "Do you offer online consultations?", "a": "Yes, we offer virtual consultations for certain treatments. Please contact us to arrange." },
+      { "q": "What languages do your doctors speak?", "a": "Our doctors speak English, Bahasa Malaysia, Mandarin, Cantonese, and Tamil." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Start Your Journey?",
+    "description": "Book your consultation today and take the first step toward achieving your aesthetic goals.",
+    "button": "Book Your Free Consultation",
+    "whatsappMessage": "can i get more info"
+  }
+}

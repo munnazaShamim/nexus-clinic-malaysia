@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "badge": "Pusat Perawatan Wajah • Nexus Clinic KL",
+    "title": "Perawatan Wajah di Malaysia",
+    "subtitle": "Estetika Wajah Non-Bedah di Nexus Clinic KL",
+    "description": "Setiap perawatan wajah di Nexus Clinic KL dimulai dengan diagnosis, bukan promosi. Jelajahi rangkaian lengkap perawatan wajah non-bedah kami di Malaysia, termasuk filler, Botox, nose thread lift, skin booster, dan lainnya. Dipimpin dokter. Hasil yang alami. Kuala Lumpur.",
+    "cta": "Pesan Penilaian Wajah Gratis",
+    "noCommit": "Tanpa Komitmen • Konsultasi Gratis",
+    "whatsappMessage": "Halo, saya tertarik dengan perawatan wajah di Nexus Clinic KL. Saya ingin memesan konsultasi."
+  },
+  "trust": {
+    "items": [
+      { "title": "5.000+ Prosedur", "subtitle": "Diselesaikan oleh dokter berlisensi" },
+      { "title": "15+ Tahun Pengalaman", "subtitle": "Pengalaman gabungan kedokteran estetika" },
+      { "title": "Produk Disetujui MOH", "subtitle": "Untuk setiap perawatan injeksi" },
+      { "title": "Lokasi KLCC", "subtitle": "Wisma UOA II, Jalan Pinang" }
+    ]
+  },
+  "intro": {
+    "title": "Wajah Menua Dalam Lapisan",
+    "para1": "Di permukaan, kulit kehilangan hidrasi, elastisitas, dan kecerahan. Di bawahnya, bantalan lemak menipis dan turun. Lebih dalam lagi, kepadatan tulang berkurang dan struktur rangka wajah perlahan menyusut. Keluhan yang dibawa pasien — cekungan, kerutan, kendur, lingkaran hitam, hidung yang tidak pernah mereka sukai — semuanya memiliki penyebab struktural yang spesifik. Dan masing-masing memiliki perawatan yang spesifik pula.",
+    "para2": "Di Nexus Clinic Kuala Lumpur, perawatan wajah dimulai dengan diagnosis, bukan dengan menu. Dokter estetika berlisensi kami menilai wajah Anda, menjelaskan penyebab dari keluhan Anda, dan merekomendasikan perawatan atau kombinasi yang benar-benar mengatasi akar masalahnya. Setiap perawatan di halaman ini adalah non-bedah, dilakukan oleh dokter, dan dirancang agar tampak alami dari setiap sudut."
+  },
+  "treatments": {
+    "title": "Perawatan Wajah yang Tersedia di Nexus Clinic KL",
+    "subtitle": "Jelajahi rangkaian lengkap perawatan wajah non-bedah kami",
+    "viewDetails": "Lihat Detail Perawatan",
+    "items": [
+      { "name": "Botox Malaysia", "description": "Pelemasan kerutan, perampingan rahang, gummy smile, dan lainnya." },
+      { "name": "Cheek Filler Malaysia", "description": "Memulihkan volume bagian tengah wajah & mengangkat bagian bawah wajah." },
+      { "name": "Chin Filler Malaysia", "description": "Mengoreksi proyeksi & mengembalikan keseimbangan wajah." },
+      { "name": "Dermal Filler Malaysia", "description": "Pemulihan volume & pembentukan kontur wajah." },
+      { "name": "Jawline Filler Malaysia", "description": "Menegaskan garis rahang & mempertajam profil Anda." },
+      { "name": "Lip Filler Malaysia", "description": "Bibir lebih penuh & busur Cupid yang lebih jelas." },
+      { "name": "Nose Filler Malaysia", "description": "Batang hidung lebih tinggi, menyamarkan tonjolan & menegaskan ujung hidung." },
+      { "name": "Nose Thread Lift Malaysia", "description": "Batang lebih tinggi, ujung lebih tajam & profil yang lebih baik." },
+      { "name": "Skin Booster Malaysia", "description": "Hidrasi, kolagen, & cahaya alami dari dalam." },
+      { "name": "Tear Trough Filler Malaysia", "description": "Perawatan bawah mata untuk lingkaran hitam & cekungan." },
+      { "name": "Under Eye Filler Malaysia", "description": "Panduan berorientasi pasien untuk perawatan area bawah mata." }
+    ]
+  },
+  "concerns": {
+    "title": "Temukan Perawatan yang Tepat untuk Keluhan Anda",
+    "subtitle": "Tidak yakin perawatan mana yang sesuai dengan keluhan Anda? Gunakan panduan ini",
+    "tableHead": {
+      "concern": "Keluhan Anda",
+      "treatment": "Perawatan yang Disarankan",
+      "start": "Mulai di Sini"
+    },
+    "viewLink": "Lihat Detail",
+    "items": [
+      { "concern": "Garis dan kerutan saat tersenyum, mengerutkan dahi, atau berbicara", "treatment": "Botox" },
+      { "concern": "Pipi cekung atau tirus, hilangnya kepenuhan bagian tengah wajah", "treatment": "Cheek Filler" },
+      { "concern": "Mata terlihat lelah, bayangan gelap di bawah mata", "treatment": "Tear Trough atau Under Eye Filler" },
+      { "concern": "Garis rahang yang datar atau tidak jelas", "treatment": "Jawline Filler atau Jaw Botox" },
+      { "concern": "Dagu yang mundur atau lemah yang mempengaruhi profil", "treatment": "Chin Filler" },
+      { "concern": "Batang hidung datar atau ujung yang turun", "treatment": "Nose Thread Lift atau Nose Filler" },
+      { "concern": "Bibir tipis atau tidak terdefinisi", "treatment": "Lip Filler" },
+      { "concern": "Kulit kusam, dehidrasi, atau tekstur tidak rata", "treatment": "Skin Booster (Profhilo, Rejuran, Juvelook)" },
+      { "concern": "Benjolan atau asimetri hidung tanpa operasi", "treatment": "Nose Filler" },
+      { "concern": "Rahang lebar karena otot yang besar", "treatment": "Jaw Slimming Botox" },
+      { "concern": "Hilangnya volume wajah dan penurunan secara keseluruhan seiring usia", "treatment": "Cheek Filler dan Dermal Filler" },
+      { "concern": "Ingin memahami semua pilihan filler terlebih dahulu", "treatment": "Ikhtisar Dermal Filler" }
+    ]
+  },
+  "approach": {
+    "title": "Pendekatan yang Membuat Perbedaan",
+    "para1": "Ada banyak klinik estetika yang menawarkan perawatan wajah di Kuala Lumpur. Perawatan, produk, dan harganya seringkali serupa. Yang berbeda adalah bagaimana setiap klinik mengambil keputusan tentang apa yang sebenarnya Anda butuhkan.",
+    "para2": "Di Nexus Clinic KL, setiap perawatan wajah dimulai dengan penilaian yang dipimpin dokter. Kami mengidentifikasi penyebab struktural dari keluhan Anda sebelum merekomendasikan perawatan apa pun. Kami menjelaskan secara tepat apa yang akan dicapai oleh perawatan dan apa yang tidak. Kami memberikan biaya yang jelas sebelum Anda berkomitmen. Dan kami menggunakan teknik konservatif sebagai standar klinis, bukan klaim pemasaran.",
+    "checklist": [
+      "Lebih dari 5.000 prosedur wajah diselesaikan oleh dokter berlisensi",
+      "15 tahun atau lebih pengalaman gabungan kedokteran estetika",
+      "Pelatihan dalam anatomi wajah Asia Tenggara",
+      "Produk disetujui MOH untuk setiap perawatan injeksi",
+      "Penilaian dan diagnosis sebelum rekomendasi perawatan apa pun",
+      "Konsultasi jujur: jika perawatan tidak tepat, Anda akan diberi tahu"
+    ]
+  },
+  "faq": {
+    "items": [
+      { "q": "Bagaimana saya tahu perawatan wajah mana yang sebenarnya saya butuhkan?", "a": "Mulailah dengan konsultasi. Sebagian besar pasien datang dengan keluhan, bukan dengan nama perawatan. Dokter menilai wajah Anda dan mengidentifikasi penyebab keluhan Anda, lalu merekomendasikan perawatan atau kombinasi yang benar-benar mengatasi akar masalahnya. Banyak pasien yang datang dengan ekspektasi satu perawatan pergi dengan rencana yang lebih jelas, berbeda, dan seringkali lebih sederhana dari yang mereka harapkan." },
+      { "q": "Apakah saya bisa menggabungkan beberapa perawatan wajah dalam satu kunjungan?", "a": "Ya. Menggabungkan perawatan dalam satu sesi adalah hal yang umum dan seringkali lebih hemat biaya dibandingkan kunjungan terpisah. Kombinasi paling umum di Nexus Clinic KL adalah Botox dengan filler, cheek filler dengan tear trough filler, dan jawline filler dengan chin filler. Dokter merencanakan urutan yang tepat dan memastikan apa yang aman untuk dikombinasikan pada saat konsultasi." },
+      { "q": "Apakah semua perawatan wajah di Nexus Clinic KL non-bedah?", "a": "Semua perawatan yang tercantum pada halaman ini adalah perawatan injeksi non-bedah. Tidak ada sayatan, anestesi umum, atau waktu pemulihan yang panjang. Sebagian besar pasien kembali ke aktivitas normal di hari yang sama. Untuk keluhan yang benar-benar memerlukan evaluasi bedah, dokter akan mengatakannya secara jujur selama konsultasi Anda, alih-alih mencoba mengatasinya dengan opsi non-bedah yang tidak akan memberikan hasil yang Anda butuhkan." },
+      { "q": "Berapa lama hasil perawatan wajah bertahan?", "a": "Durasi sangat bervariasi tergantung perawatan. Botox bertahan 3 hingga 6 bulan. Filler HA, tergantung area dan produk, bertahan 9 hingga 24 bulan. Nose thread lift bertahan 12 hingga 36 bulan tergantung jenis benang. Skin booster memerlukan sesi top-up setiap 3 hingga 18 bulan tergantung produk. Setiap halaman perawatan yang ditautkan di atas mencakup bagian rinci tentang durasi hasil untuk perawatan tersebut." },
+      { "q": "Berapa kisaran harga perawatan wajah di Malaysia di Nexus Clinic KL?", "a": "Harga bervariasi tergantung jenis perawatan, produk yang digunakan, dan tingkat koreksi yang dibutuhkan. Perawatan relaksan otot biasanya dimulai dari sekitar RM 500 hingga RM 800 per area. Dermal filler umumnya berkisar antara RM 1800 hingga RM 3000+ tergantung area dan volume. Perawatan skin booster dan peremajaan biasanya berkisar antara RM 1800 hingga RM 2500 per sesi. Setiap halaman perawatan mencakup rincian harga, dan rekomendasi akhir dikonfirmasi pada konsultasi berdasarkan tujuan Anda." }
+    ]
+  },
+  "cta": {
+    "title": "Pesan Konsultasi Wajah Anda di Nexus Clinic Kuala Lumpur",
+    "description": "Setiap perjalanan perawatan wajah dimulai dengan cara yang sama: penilaian yang tepat oleh dokter berlisensi, penjelasan jujur tentang apa yang benar-benar akan berhasil untuk wajah Anda, dan rencana perawatan yang jelas dengan harga yang transparan sebelum Anda berkomitmen.",
+    "button": "Pesan Konsultasi Gratis Anda Sekarang",
+    "whatsappMessage": "Halo, saya ingin memesan konsultasi wajah gratis di Nexus Clinic KL. Mohon beri tahu jadwal yang tersedia.",
+    "limitedSlots": "Slot Terbatas Tersedia Minggu Ini | Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "serving": "Melayani pasien di KL, Petaling Jaya, Bangsar, Chow Kit, KLCC, Ampang, Mont Kiara, dan seluruh Malaysia"
+  }
+}

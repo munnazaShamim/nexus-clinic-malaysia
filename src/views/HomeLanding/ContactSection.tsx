@@ -4,8 +4,10 @@ import {
   Clock,
 } from "lucide-react";
 import SocialIcons from "@/src/components/SocialIcons";
+import { getTranslations } from "next-intl/server";
 
-const ContactSection = ({ t }: { t: (key: string) => string }) => {
+const ContactSection = async () => {
+  const t = await getTranslations("home");
   return (
     <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background Image */}

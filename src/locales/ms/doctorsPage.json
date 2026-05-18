@@ -1,0 +1,24 @@
+{
+  "section": {
+    "eyebrow": "Pakar Kami",
+    "titleLine1": "Temui Para Doktor",
+    "titleLine2": "Di Sebalik Cahaya Anda",
+    "description": "Pasukan doktor estetika terlatih antarabangsa kami menggabungkan ketepatan klinikal dengan pandangan artistik — komited untuk mendedahkan versi diri anda yang paling yakin."
+  },
+  "card": {
+    "qualifications": "Kelayakan & Anugerah",
+    "viewProfile": "Lihat Profil",
+    "instagramAria": "{name} di Instagram",
+    "linkedinAria": "{name} di LinkedIn"
+  },
+  "stats": {
+    "yearsValue": "12+",
+    "yearsLabel": "Tahun Kecemerlangan",
+    "treatmentsValue": "8,000+",
+    "treatmentsLabel": "Rawatan Dilakukan",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "Kepuasan Pesakit",
+    "awardedValue": "3",
+    "awardedLabel": "Doktor Pemenang Anugerah"
+  }
+}

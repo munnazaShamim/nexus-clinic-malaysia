@@ -6,6 +6,7 @@ import {
   Shield,
 } from "lucide-react";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 // Import at the top of your component file
 import "@/src/lib/animations.css";
 
@@ -23,7 +24,8 @@ const GlassCard = ({
   </div>
 );
 
-const WhyChooseSection = ({ t }: { t: (key: string) => string }) => {
+const WhyChooseSection = async () => {
+  const t = await getTranslations("home");
   const features = [
     {
       icon: Shield,

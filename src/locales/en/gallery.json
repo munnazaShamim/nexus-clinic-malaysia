@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Before & After Gallery",
+    "titleLine1": "Real Results,",
+    "titleLine2": "Real People",
+    "description": "Every transformation you see was achieved by our certified physicians using evidence-based treatments. Drag each slider to reveal the journey."
+  },
+  "filter": {
+    "ariaLabel": "Filter gallery by treatment category"
+  },
+  "results": {
+    "showing": "Showing",
+    "results": "results",
+    "in": "in",
+    "noResults": "No results found for this category.",
+    "ariaLabel": "Gallery results for {category}"
+  },
+  "card": {
+    "session": "session",
+    "sessions": "sessions",
+    "viewDetails": "View full details for {title}"
+  },
+  "labels": {
+    "before": "Before",
+    "after": "After"
+  },
+  "lightbox": {
+    "sessions": "Sessions",
+    "session": "Session",
+    "beforeHeading": "Before",
+    "afterHeading": "After",
+    "bookConsultation": "Book a Consultation",
+    "closeAria": "Close gallery detail",
+    "prevAria": "Previous result",
+    "nextAria": "Next result"
+  },
+  "comparisonAria": "Before and after comparison: {title}",
+  "disclaimer": "* Individual results may vary. All treatments are performed by certified medical professionals at Nexus Clinic Malaysia. Images are real patient cases with consent."
+}

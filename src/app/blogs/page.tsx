@@ -1,6 +1,5 @@
 import BlogPage from "@/src/components/blog/BlogsPage";
 import { FloatingWhatsapp } from "@/src/components/Whatsapp";
-import { languages } from "@/src/i18n/settings";
 import { wordpressService } from "@/src/services/wordpress";
 import type { WordPressPost } from "@/src/types/wordpress";
 import { Metadata } from "next";
@@ -14,10 +13,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-export async function generateStaticParams() {
-  return languages.map((locale: string) => ({ locale }));
-}
 
 export default async function Page() {
   let initialPosts: WordPressPost[] = [];

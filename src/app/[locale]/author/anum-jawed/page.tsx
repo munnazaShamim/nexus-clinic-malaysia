@@ -1,23 +1,28 @@
 export const dynamic = "force-static";
 import Image from "next/image";
-import { Linkedin, Award, BookOpen, Users } from "lucide-react";
+import { Award, BookOpen, Users } from "lucide-react";
 import { Metadata } from "next";
-const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com"
+import { buildAlternates } from "@/src/lib/seo";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: "Dr. Anum Jawed | Nexus Clinic",
+    description: "Learn more about Dr. Anum Jawed, a registered pharmacist and pharmaceutical content writer at Nexus Clinic.",
+    alternates: buildAlternates(locale, "/author/anum-jawed/"),
+  };
+}
 
-export const metadata: Metadata = {
-  title: "Dr. Anum Jawed | Nexus Clinic",
-  description: "Learn more about Dr. Anum Jawed, a registered pharmacist and pharmaceutical content writer at Nexus Clinic.",
-  alternates: {
-    canonical: `${baseurl}/author/anum-jawed/`,
-  },
-};
 export default function AuthorPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
       {/* Main Card */}
       <div className="bg-white rounded-2xl shadow-sm border border-cream overflow-hidden">
-        
+
         {/* Hero Section with Gradient Background */}
         <div className="bg-gradient-to-r from-wine/5 via-cream/30 to-transparent px-6 py-8 md:p-10">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -44,16 +49,6 @@ export default function AuthorPage() {
                   Pharm-D, MPhil in Pharmaceutics
                 </p>
               </a>
-              {/* LinkedIn Button */}
-              {/* <a
-                href="https://www.linkedin.com/in/anumjawedharis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-wine hover:bg-wine/90 text-white px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-sm font-medium"
-              >
-                <Linkedin size={18} />
-                <span>Connect on LinkedIn</span>
-              </a> */}
             </div>
           </div>
         </div>
@@ -96,8 +91,8 @@ export default function AuthorPage() {
           </p>
 
           <p className="text-brown/90 leading-relaxed">
-            She has professional experience working with 
-            <a href="https://www.doctoroncall.com/" target="_blank" className="text-wine font-bold italic"> DoctorOnCall</a >, 
+            She has professional experience working with
+            <a href="https://www.doctoroncall.com/" target="_blank" className="text-wine font-bold italic"> DoctorOnCall</a >,
             a Malaysian digital healthcare platform, and has also contributed to healthcare initiatives associated with the Ministry of Health Malaysia (MOH).
           </p>
 

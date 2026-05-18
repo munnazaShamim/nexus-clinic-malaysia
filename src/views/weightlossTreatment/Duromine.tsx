@@ -27,13 +27,12 @@ import {
 import TableForPages from "@/src/components/TableForPages"
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
 
-const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "weightLoss/duromine");
+const DuromineLandingPage = () => {
+  const t = useTranslations("weightLoss.duromine");
 
   const transformations = [
     {

@@ -22,8 +22,7 @@ import {
   CheckCircle2,
   TrendingDown,
 } from "lucide-react";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 function DecorLine({ className = "" }) {
@@ -151,8 +150,8 @@ function StatCard({
 }
 
 
-export default function Products({ locale = fallbackLng }: { locale?: string }) {
-  const { t } = useTranslation(locale, "products");
+export default function Products() {
+  const t = useTranslations("products");
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,

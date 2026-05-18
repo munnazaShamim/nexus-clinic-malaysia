@@ -24,13 +24,12 @@ import {
 } from "../../lib/animations";
 import FAQWithSchema from "../../components/FAQWithSchema";
 import SectionBeforeAfter from "../../components/BeforeAfterCustomize";
-import { useTranslation } from "@/src/i18n/client";
+import { useTranslations } from "next-intl";
 import TableForPages from "@/src/components/TableForPages"
-import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
-const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "weightLoss/glp1");
+const GLP1LandingPage = () => {
+  const t = useTranslations("weightLoss.glp1");
 
   const transformations = [
     {

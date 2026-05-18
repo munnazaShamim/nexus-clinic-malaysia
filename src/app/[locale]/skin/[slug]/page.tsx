@@ -1,9 +1,10 @@
 export const dynamic = "force-static";
-import { languages } from "@/src/i18n/settings";
+import { routing } from "@/src/i18n/routing";
 import { skinTreatmentsMetadata } from "@/src/config/skinTreatments";
 import type { Metadata } from "next";
 import { skinSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
+import { buildAlternates, localizedUrl } from "@/src/lib/seo";
 // Import all components (create these files with minimal return)
 import AcneTreatment from "@/src/views/skinTreatment/AcneTreatment";
 import AcneScarTreatment from "@/src/views/skinTreatment/AcneScarTreatment";
@@ -45,7 +46,7 @@ const components: Record<string, React.ComponentType<{ locale: string }>> = {
 
 export async function generateStaticParams() {
   const paths = [];
-  for (const locale of languages) {
+  for (const locale of routing.locales) {
     for (const treatment of skinTreatmentsMetadata) {
       paths.push({ locale, slug: treatment.slug });
     }
@@ -71,16 +72,13 @@ export async function generateMetadata({
     };
   }
 
-  const baseUrl = process.env.BASE_URL|| "https://www.nexus-clinic.com";
-  const url =
-    locale === "en"
-      ? `${baseUrl}/skin/${slug}`
-      : `${baseUrl}/${locale}/skin/${slug}`;
+  const path = `/skin/${slug}/`;
+  const url = localizedUrl(locale, path);
 
   return {
     title: treatment.title,
     description: treatment.description,
-    alternates: { canonical: url },
+    alternates: buildAlternates(locale, path),
     openGraph: {
       title: treatment.title,
       description: treatment.description,

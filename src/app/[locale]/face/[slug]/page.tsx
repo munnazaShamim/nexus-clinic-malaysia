@@ -1,9 +1,10 @@
 export const dynamic = "force-static";
-import { languages } from "@/src/i18n/settings";
+import { routing } from "@/src/i18n/routing";
 import { faceTreatmentsMetadata } from "@/src/config/faceTreatments";
 import { Metadata } from "next";
 import { faceSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
+import { buildAlternates, localizedUrl } from "@/src/lib/seo";
 
 import DermalFiller from "@/src/views/faceTreatment/DermalFiller";
 import LipFiller from "@/src/views/faceTreatment/LipFiller";
@@ -47,7 +48,7 @@ const components = {
 
 export async function generateStaticParams() {
   const paths = [];
-  for (const locale of languages) {
+  for (const locale of routing.locales) {
     for (const treatment of faceTreatmentsMetadata) {
       paths.push({ locale, slug: treatment.slug });
     }
@@ -69,15 +70,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     };
   }
 
-  const baseUrl = process.env.BASE_URL || "https://www.nexus-clinic.com";
-  const url = locale === 'en' 
-    ? `${baseUrl}/face/${slug}` 
-    : `${baseUrl}/${locale}/face/${slug}`;
+  const path = `/face/${slug}/`;
+  const url = localizedUrl(locale, path);
 
   return {
     title: treatment.title,
     description: treatment.description,
-    alternates: { canonical: url },
+    alternates: buildAlternates(locale, path),
     openGraph: {
       title: treatment.title,
       description: treatment.description,

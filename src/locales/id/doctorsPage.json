@@ -1,0 +1,24 @@
+{
+  "section": {
+    "eyebrow": "Spesialis Kami",
+    "titleLine1": "Temui Para Dokter",
+    "titleLine2": "Di Balik Cahaya Anda",
+    "description": "Tim dokter estetika terlatih internasional kami memadukan ketepatan klinis dengan visi artistik — berdedikasi untuk mengungkap versi diri Anda yang paling percaya diri."
+  },
+  "card": {
+    "qualifications": "Kualifikasi & Penghargaan",
+    "viewProfile": "Lihat Profil",
+    "instagramAria": "{name} di Instagram",
+    "linkedinAria": "{name} di LinkedIn"
+  },
+  "stats": {
+    "yearsValue": "12+",
+    "yearsLabel": "Tahun Keunggulan",
+    "treatmentsValue": "8.000+",
+    "treatmentsLabel": "Perawatan Dilakukan",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "Kepuasan Pasien",
+    "awardedValue": "3",
+    "awardedLabel": "Dokter Penerima Penghargaan"
+  }
+}

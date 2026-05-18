@@ -1,0 +1,24 @@
+{
+  "section": {
+    "eyebrow": "أخصائيونا",
+    "titleLine1": "تعرف على الأطباء",
+    "titleLine2": "وراء توهجك",
+    "description": "فريقنا من أطباء التجميل المدربين دوليًا يجمع بين الدقة السريرية والعين الفنية — ملتزمون بالكشف عن أكثر نسخك ثقة."
+  },
+  "card": {
+    "qualifications": "المؤهلات والجوائز",
+    "viewProfile": "عرض الملف الشخصي",
+    "instagramAria": "{name} على Instagram",
+    "linkedinAria": "{name} على LinkedIn"
+  },
+  "stats": {
+    "yearsValue": "+12",
+    "yearsLabel": "سنوات من التميز",
+    "treatmentsValue": "+8,000",
+    "treatmentsLabel": "علاج تم تنفيذه",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "رضا المرضى",
+    "awardedValue": "3",
+    "awardedLabel": "أطباء حائزون على جوائز"
+  }
+}

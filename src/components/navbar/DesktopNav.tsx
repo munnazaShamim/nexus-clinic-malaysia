@@ -96,7 +96,7 @@ export const DesktopNav = ({
       </div>
 
       {/* Language Selector - Hide on blogs page for now on all */}
-      {/* {!isBlogsPage && (
+      {!isBlogsPage && (
         <LanguageSwitcher
           isScrolled={isScrolled}
           currentLocale={currentLocale}
@@ -104,7 +104,7 @@ export const DesktopNav = ({
           getLocaleHref={getLocaleHref}
           handleLangClick={handleLangClick}
         />
-      )} */}
+      )}
 
       {/* CTA */}
       <Link

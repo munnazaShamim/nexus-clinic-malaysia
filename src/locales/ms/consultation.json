@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "badge": "Perkhidmatan Kami • Nexus Clinic KL",
+    "title": "Rawatan Estetik & Kesejahteraan Menyeluruh",
+    "description": "Temui rangkaian lengkap rawatan tanpa pembedahan dipimpin doktor untuk muka, kulit, rambut, penurunan berat badan, dan kesihatan regeneratif. Setiap rawatan bermula dengan penilaian yang betul dan pelan diperibadikan direka di sekitar matlamat anda.",
+    "cta": "Tempah Konsultasi Percuma",
+    "whatsappMessage": "Hi, saya berminat dengan rawatan di Nexus Clinic KL. Saya ingin menempah konsultasi."
+  },
+  "trust": {
+    "items": [
+      { "title": "5,000+ Prosedur", "subtitle": "Disiapkan oleh doktor berlesen" },
+      { "title": "15+ Tahun Pengalaman", "subtitle": "Perubatan estetik gabungan" },
+      { "title": "Produk Diluluskan MOH", "subtitle": "Untuk setiap rawatan suntikan" },
+      { "title": "Lokasi KLCC", "subtitle": "Wisma UOA II, Jalan Pinang" }
+    ]
+  },
+  "viewAll": "Lihat Semua {category}",
+  "categories": {
+    "face": {
+      "name": "Rawatan Muka",
+      "description": "Estetik muka tanpa pembedahan termasuk pengisi dermal, Botox, angkat benang, dan penggalak kulit untuk peremajaan yang kelihatan semula jadi.",
+      "treatments": [
+        { "name": "Botox Malaysia", "description": "Relaksasi kedutan, penipisan rahang, senyuman gusi & lebih banyak lagi." },
+        { "name": "Cheek Filler Malaysia", "description": "Pulihkan isipadu pertengahan muka & angkat muka bawah." },
+        { "name": "Chin Filler Malaysia", "description": "Betulkan unjuran & pulihkan keseimbangan muka." },
+        { "name": "Dermal Filler Malaysia", "description": "Pemulihan isipadu & kontur muka." },
+        { "name": "Jawline Filler Malaysia", "description": "Tentukan sempadan rahang & tajamkan profil anda." },
+        { "name": "Lip Filler Malaysia", "description": "Bibir lebih penuh & busur Cupid yang jelas." },
+        { "name": "Nose Filler Malaysia", "description": "Jambatan lebih tinggi, kamuflase bonggol & definisi hujung." },
+        { "name": "Nose Thread Lift Malaysia", "description": "Jambatan lebih tinggi, hujung lebih tajam & profil lebih baik." },
+        { "name": "Skin Booster Malaysia", "description": "Hidrasi, kolagen & cahaya dari dalam." },
+        { "name": "Tear Trough Filler Malaysia", "description": "Rawatan bawah mata untuk bulatan gelap & lekuk." },
+        { "name": "Under Eye Filler Malaysia", "description": "Panduan pesakit-utama untuk rawatan bawah mata." }
+      ]
+    },
+    "skin": {
+      "name": "Rawatan Kulit",
+      "description": "Penyelesaian dipimpin doktor untuk jerawat, parut, pigmentasi, melasma, dan kesihatan kulit keseluruhan dengan rawatan laser dan perubatan termaju.",
+      "treatments": [
+        { "name": "Acne Treatment Malaysia", "description": "Kulit lebih bersih dengan pelan dipimpin doktor untuk jerawat aktif." },
+        { "name": "Acne Scar Treatment Malaysia", "description": "Tingkatkan tekstur & kelicinan dari parut." },
+        { "name": "Pigmentation Treatment Malaysia", "description": "Samakan ton & kurangkan tanda gelap dengan berkesan." },
+        { "name": "Melasma Treatment Malaysia", "description": "Pengurusan selamat & realistik untuk pigmen degil." },
+        { "name": "Mole Removal Malaysia", "description": "Pembuangan kosmetik dengan penilaian doktor yang betul." },
+        { "name": "Hydrafacial Malaysia", "description": "Bersihkan, kelupaskan & hidrasi untuk kulit bersinar." },
+        { "name": "Pico Laser Malaysia", "description": "Rawatan tepat pigmentasi, tatu & tekstur." },
+        { "name": "Dark Eye Circle Treatment Malaysia", "description": "Tangani lekuk, pigmentasi & bayang vaskular." },
+        { "name": "Skin Whitening Treatment Malaysia", "description": "Pencerahan kulit yang sihat & sekata." },
+        { "name": "Eczema Treatment Malaysia", "description": "Tenangkan dan lindungi penghalang kulit." },
+        { "name": "Keloid Treatment Malaysia", "description": "Pendekatan berhati-hati untuk tisu parut yang naik." },
+        { "name": "Rosacea Treatment Malaysia", "description": "Uruskan kemerahan, kemerahan & sensitiviti." },
+        { "name": "Stretch Mark Removal Malaysia", "description": "Tingkatkan rupa berdasarkan usia tanda." },
+        { "name": "Laser Hair Removal Malaysia", "description": "Pengurangan jangka panjang untuk rambut yang tidak diingini." },
+        { "name": "Tattoo Removal Malaysia", "description": "Pemudaran tatu berasaskan laser dengan bimbingan doktor." }
+      ]
+    },
+    "hair": {
+      "name": "Rawatan Rambut",
+      "description": "Pemulihan rambut menyeluruh dari terapi perubatan ke pemindahan rambut FUE, direka untuk kepadatan semula jadi dan keyakinan jangka panjang.",
+      "treatments": [
+        { "name": "Hair Transplant Malaysia", "description": "Pemulihan rambut pembedahan untuk kepadatan jangka panjang." },
+        { "name": "FUE Hair Transplant Malaysia", "description": "Parut minimum, hasil yang kelihatan semula jadi." },
+        { "name": "PRP Hair Treatment Malaysia", "description": "Sokong folikel yang lebih lemah dengan faktor pertumbuhan." },
+        { "name": "Hair Loss Treatment Malaysia", "description": "Pelan perubatan diperibadikan untuk keguguran rambut." },
+        { "name": "Beard Transplant Malaysia", "description": "Pemulihan rambut muka yang lebih penuh & semula jadi." },
+        { "name": "Mesotherapy Hair Loss Malaysia", "description": "Hantarkan bahan aktif ke kulit kepala." },
+        { "name": "Exosome Hair Treatment Malaysia", "description": "Penjagaan regeneratif termaju untuk penipisan." },
+        { "name": "Minoxidil Treatment Malaysia", "description": "Kekalkan kepadatan dan perlahankan penipisan." },
+        { "name": "Finasteride Treatment Malaysia", "description": "Kurangkan pengecilan folikel hormon." }
+      ]
+    },
+    "weightLoss": {
+      "name": "Rawatan Penurunan Berat Badan",
+      "description": "Program penurunan berat badan perubatan dengan ubat GLP-1 (Ozempic, Wegovy, Mounjaro) dan pembentukan badan tanpa pembedahan seperti CoolSculpting.",
+      "treatments": [
+        { "name": "Ozempic Weight Loss Malaysia", "description": "Sokongan kawalan selera makan untuk penurunan berat badan perubatan." },
+        { "name": "Wegovy Weight Loss Malaysia", "description": "Program perubatan berstruktur untuk pengurusan berat badan." },
+        { "name": "Mounjaro Weight Loss Malaysia", "description": "Rawatan GLP-1 termaju untuk penurunan berat badan." },
+        { "name": "Duromine Weight Loss Malaysia", "description": "Sokongan penurunan berat badan jangka pendek dipantau doktor." },
+        { "name": "Doctor Monitored Weight Loss Malaysia", "description": "Bimbingan klinikal & susulan berstruktur." },
+        { "name": "HCG Weight Loss Malaysia", "description": "Bimbingan doktor mengenai pelan penurunan berat badan berkaitan HCG." },
+        { "name": "Fat Freezing Malaysia", "description": "Sasarkan kawasan lemak degil secara tanpa pembedahan." },
+        { "name": "CoolSculpting Malaysia", "description": "Pembentukan badan tanpa pembedahan untuk lemak degil." },
+        { "name": "GLP 1 Programme Malaysia", "description": "Program penurunan berat badan berstruktur berasaskan GLP-1." },
+        { "name": "Zepbound Weight Loss Malaysia", "description": "Maklumat dipimpin doktor mengenai rawatan Zepbound." },
+        { "name": "IV Drip Weight Loss Malaysia", "description": "Pilihan IV menyokong kesihatan & hidrasi." }
+      ]
+    },
+    "regenerative": {
+      "name": "Rawatan Regeneratif",
+      "description": "Pengoptimuman hormon, kesejahteraan intim (P-Shot, O-Shot), dan terapi termaju untuk tenaga, pemacu, dan penuaan sihat.",
+      "treatments": [
+        { "name": "Testosterone Therapy Malaysia", "description": "Pulihkan tenaga & pemacu untuk pesakit yang sesuai." },
+        { "name": "ED Treatment Malaysia", "description": "Keyakinan & kesejahteraan seksual melalui penjagaan perubatan." },
+        { "name": "Hormone Replacement Therapy Malaysia", "description": "Keseimbangan & pelegaan gejala untuk ketidakseimbangan hormon." },
+        { "name": "PCOS Treatment Malaysia", "description": "Sokongan dipimpin doktor untuk sindrom ovari polikistik." },
+        { "name": "Hypothyroidism Treatment Malaysia", "description": "Sokongan perubatan untuk fungsi tiroid rendah." },
+        { "name": "Stem Cell Therapy Malaysia", "description": "Rawatan regeneratif termaju untuk sokongan tisu." },
+        { "name": "Anti-Aging Therapy Malaysia", "description": "Pendekatan berfokus kesihatan untuk penuaan sihat." },
+        { "name": "Hormone Test Malaysia", "description": "Ujian menyeluruh untuk mengenal pasti ketidakseimbangan." },
+        { "name": "Menopause Hormone Replacement Malaysia", "description": "Sokongan untuk gejala berkaitan menopaus." },
+        { "name": "P-Shot Malaysia", "description": "Kesejahteraan intim regeneratif untuk lelaki." },
+        { "name": "O-Shot Malaysia", "description": "Kesejahteraan intim regeneratif untuk wanita." },
+        { "name": "Shockwave Therapy Malaysia", "description": "Pilihan tanpa invasif untuk kesejahteraan seksual." }
+      ]
+    }
+  },
+  "card": {
+    "learnMore": "Ketahui Lebih Lanjut",
+    "prevAria": "Rawatan sebelumnya",
+    "nextAria": "Rawatan seterusnya"
+  },
+  "whyUs": {
+    "title": "Mengapa Pesakit Memilih Nexus Clinic KL",
+    "items": [
+      { "title": "Penilaian Dipimpin Doktor", "description": "Setiap rawatan bermula dengan diagnosis yang betul oleh doktor perubatan berlesen." },
+      { "title": "Pelan Rawatan Diperibadikan", "description": "Cadangan berdasarkan anatomi unik, kebimbangan, dan matlamat anda." },
+      { "title": "Produk & Peranti Diluluskan MOH", "description": "Semua suntikan dan laser memenuhi piawaian keselamatan ketat Malaysia." },
+      { "title": "Hasil Yang Kelihatan Semula Jadi", "description": "Teknik konservatif sebagai piawaian klinikal, bukan tuntutan pemasaran." },
+      { "title": "Telus & Jujur", "description": "Harga jelas, jangkaan realistik, dan nasihat jujur tentang kesesuaian." },
+      { "title": "Lokasi KLCC Pusat", "description": "Terletak dengan mudah di Wisma UOA II, Jalan Pinang, Kuala Lumpur." }
+    ]
+  },
+  "cta": {
+    "title": "Tempah Konsultasi Anda di Nexus Clinic Kuala Lumpur",
+    "description": "Bersedia meneroka pilihan rawatan anda? Setiap perjalanan bermula dengan penilaian yang betul oleh doktor berlesen, penjelasan jujur tentang apa yang sebenarnya akan berfungsi untuk anda, dan pelan rawatan jelas dengan harga telus.",
+    "button": "Tempah Konsultasi Percuma Anda Sekarang",
+    "whatsappMessage": "Hi, saya ingin menempah konsultasi percuma di Nexus Clinic KL. Sila beritahu saya slot yang tersedia.",
+    "limitedSlots": "Slot Terhad Tersedia Minggu Ini | Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "serving": "Berkhidmat kepada pesakit di seluruh Kuala Lumpur, Petaling Jaya, Bangsar, Mont Kiara, Ampang, KLCC, dan seluruh Malaysia"
+  }
+}

@@ -2,7 +2,8 @@
 
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 import {
   ChevronRight,
@@ -24,6 +25,7 @@ function DoctorCard({
   doctor: (typeof doctors)[0];
   index: number;
 }) {
+  const t = useTranslations("doctorsPage.card");
   const [expanded, setExpanded] = useState(false);
   const cardRef = useRef(null);
   const inView = useInView(cardRef, { once: true, margin: "-80px" });
@@ -40,7 +42,6 @@ function DoctorCard({
       }}
       className="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-taupe/10 flex flex-col"
     >
-      {/* Clickable photo area → doctor profile */}
       <Link href={`/doctors/${doctor.slug}`} className="block group relative w-full aspect-3/4 overflow-hidden bg-cream">
         <Image
           src={doctor.photo}
@@ -51,10 +52,8 @@ function DoctorCard({
             (e.target as HTMLImageElement).style.display = "none";
           }}
         />
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-brown/60 via-transparent to-transparent" />
 
-        {/* Name overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-5">
           <h3 className="font-georgia text-cream text-xl leading-tight">
             {doctor.name}
@@ -64,7 +63,6 @@ function DoctorCard({
           </p>
         </div>
 
-        {/* Rating badge */}
         <div className="absolute top-4 right-4 bg-glass backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1">
           {Array.from({ length: doctor.rating }).map((_, i) => (
             <Star key={i} className="w-3 h-3 fill-wine text-wine" />
@@ -72,9 +70,7 @@ function DoctorCard({
         </div>
       </Link>
 
-      {/* Body */}
       <div className="p-6 flex flex-col flex-1">
-        {/* Specialisation */}
         <div className="flex items-center gap-2 mb-4">
           <Stethoscope className="w-4 h-4 text-wine shrink-0" />
           <span className="text-rose text-sm font-medium">
@@ -82,17 +78,15 @@ function DoctorCard({
           </span>
         </div>
 
-        {/* Bio */}
         <p className="text-taupe text-sm leading-relaxed mb-5">{doctor.bio}</p>
 
-        {/* Qualifications toggle */}
         <button
           onClick={() => setExpanded(!expanded)}
           className="flex items-center gap-2 text-wine text-sm font-semibold hover:text-brown transition-colors mb-3 group/btn"
           aria-expanded={expanded}
         >
           <GraduationCap className="w-4 h-4" />
-          <span>Qualifications &amp; Awards</span>
+          <span>{t("qualifications")}</span>
           <ChevronRight
             className={`w-4 h-4 transition-transform duration-300 ${expanded ? "rotate-90" : ""}`}
           />
@@ -133,18 +127,17 @@ function DoctorCard({
           )}
         </AnimatePresence>
 
-        {/* Social + View Profile */}
         <div className="mt-auto pt-4 flex items-center gap-3 border-t border-taupe/20">
           <a
             href={doctor.instagram}
-            aria-label={`${doctor.name} on Instagram`}
+            aria-label={t("instagramAria", { name: doctor.name })}
             className="w-8 h-8 rounded-full bg-cream flex items-center justify-center text-taupe hover:text-wine hover:bg-wine/10 transition-colors"
           >
             <Instagram className="w-4 h-4" />
           </a>
           <a
             href={doctor.linkedin}
-            aria-label={`${doctor.name} on LinkedIn`}
+            aria-label={t("linkedinAria", { name: doctor.name })}
             className="w-8 h-8 rounded-full bg-cream flex items-center justify-center text-taupe hover:text-wine hover:bg-wine/10 transition-colors"
           >
             <Linkedin className="w-4 h-4" />
@@ -153,7 +146,7 @@ function DoctorCard({
             href={`/doctors/${doctor.slug}`}
             className="ml-auto text-xs font-semibold tracking-wide text-cream bg-wine hover:bg-brown transition-colors px-4 py-2 rounded-full"
           >
-            View Profile
+            {t("viewProfile")}
           </Link>
         </div>
       </div>
@@ -162,8 +155,16 @@ function DoctorCard({
 }
 
 export function DoctorsSection() {
+  const t = useTranslations("doctorsPage");
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  const stats = [
+    { value: t("stats.yearsValue"), label: t("stats.yearsLabel") },
+    { value: t("stats.treatmentsValue"), label: t("stats.treatmentsLabel") },
+    { value: t("stats.satisfactionValue"), label: t("stats.satisfactionLabel") },
+    { value: t("stats.awardedValue"), label: t("stats.awardedLabel") },
+  ];
 
   return (
     <section
@@ -172,7 +173,6 @@ export function DoctorsSection() {
       aria-labelledby="doctors-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        {/* Header */}
         <div ref={ref} className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -180,7 +180,7 @@ export function DoctorsSection() {
             transition={{ duration: 0.5 }}
             className="text-wine uppercase tracking-[0.25em] text-xs font-semibold mb-4"
           >
-            Our Specialists
+            {t("section.eyebrow")}
           </motion.p>
           <motion.h2
             id="doctors-heading"
@@ -189,9 +189,9 @@ export function DoctorsSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-georgia text-brown text-4xl md:text-5xl leading-tight mb-5"
           >
-            Meet the Physicians
+            {t("section.titleLine1")}
             <br />
-            <span className="text-wine italic">Behind Your Glow</span>
+            <span className="text-wine italic">{t("section.titleLine2")}</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -199,9 +199,7 @@ export function DoctorsSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-taupe max-w-xl mx-auto text-base leading-relaxed"
           >
-            Our team of internationally trained aesthetic physicians combines
-            clinical precision with an artistic eye — dedicated to revealing
-            your most confident self.
+            {t("section.description")}
           </motion.p>
           <motion.div
             initial={{ scaleX: 0 }}
@@ -211,26 +209,19 @@ export function DoctorsSection() {
           />
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {doctors.map((doc, i) => (
             <DoctorCard key={doc.id} doctor={doc} index={i} />
           ))}
         </div>
 
-        {/* Trust badges */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6"
         >
-          {[
-            { value: "12+", label: "Years of Excellence" },
-            { value: "8,000+", label: "Treatments Performed" },
-            { value: "98%", label: "Patient Satisfaction" },
-            { value: "3", label: "Award-Winning Doctors" },
-          ].map((stat) => (
+          {stats.map((stat) => (
             <div
               key={stat.label}
               className="text-center p-5 rounded-2xl bg-cream border border-taupe/10"

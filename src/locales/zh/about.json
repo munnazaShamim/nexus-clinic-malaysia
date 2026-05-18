@@ -1,0 +1,117 @@
+{
+  "hero": {
+    "badge": "关于 Nexus Clinic KL",
+    "titleLine1": "一家与众不同的",
+    "titleLine2": "美容诊所",
+    "description": "在 Nexus Clinic 吉隆坡,我们围绕一个简单的信念建立我们的诊所:医学美容应该从适当的诊断、诚实的建议和为真实的人(而不是套餐)设计的治疗方案开始。",
+    "cta": "认识我们的医生",
+    "whatsappMessage": "您好,我想更多地了解 Nexus Clinic KL 并预约咨询。"
+  },
+  "stats": [
+    { "value": "5,000+", "label": "手术", "sublabel": "安全完成" },
+    { "value": "15+", "label": "年", "sublabel": "综合经验" },
+    { "value": "4", "label": "专家", "sublabel": "专职医生" },
+    { "value": "98%", "label": "满意度", "sublabel": "患者评价" }
+  ],
+  "story": {
+    "eyebrow": "我们的故事",
+    "title": "为什么 Nexus Clinic 诞生",
+    "para1": "Nexus Clinic 之所以成立,是因为我们看到了市场上的一个缺口。太多的美容诊所在没有适当评估的情况下销售治疗。患者在有人花时间了解他们实际需要什么之前就被推荐套餐。",
+    "para2": "我们决定以不同的方式做事。每个走进我们大门的患者都会得到与持证医生的适当咨询。我们先评估、诊断,然后推荐。而不是反过来。",
+    "para3": "今天,Nexus Clinic KL 已发展成为面部治疗、皮肤健康、毛发修复和医学减重的可信赖名称。但我们的核心理念从未改变:诚实建议、医生主导的护理和自然的效果。",
+    "imageAlt": "Nexus Clinic 内部",
+    "happyBadge": "5,000+ 满意患者",
+    "happySub": "并在不断增加"
+  },
+  "values": {
+    "eyebrow": "我们的信念",
+    "title": "我们的核心价值观",
+    "items": [
+      { "title": "患者优先", "description": "每个建议都从对患者正确的事开始,而不是最容易销售的事。" },
+      { "title": "医生主导", "description": "所有治疗都从持证医生的适当医学评估开始。" },
+      { "title": "诚实建议", "description": "如果治疗不合适,我们会明确告诉您并解释原因。" },
+      { "title": "自然结果", "description": "我们的目标是看起来像您的增强,只是更清新的版本。" }
+    ]
+  },
+  "doctors": {
+    "eyebrow": "认识团队",
+    "title": "我们的医生",
+    "subtitle": "Nexus Clinic 的每项治疗都由具有多年专业经验的持证医生执行或监督。",
+    "viewAll": "查看所有医生",
+    "items": [
+      {
+        "name": "Dr. Aris Fadzillah Mazlan",
+        "role": "美容与抗衰老医生",
+        "specialty": "抗衰老治疗与美容增强",
+        "experience": "10+ 年",
+        "bio": "Dr. Aris 将医学专业知识与艺术眼光相结合,提供安全、自然的效果。能流利使用英语、俄语和马来语。"
+      },
+      {
+        "name": "Dr. Preetha Nair",
+        "role": "美容医学医生",
+        "specialty": "非侵入性治疗与个性化护肤",
+        "experience": "8+ 年",
+        "bio": "Dr. Preetha 采用整体方法进行美容医学,使用温和的技术和细致的关注以获得自然的效果。"
+      },
+      {
+        "name": "Dr. Ashvinia Bala",
+        "role": "美容医学医生",
+        "specialty": "普通医学与美容治疗",
+        "experience": "7+ 年",
+        "bio": "Dr. Ashvinia 将美容医学与健康和可持续性相结合,提供个性化护理以获得自然、自信的效果。"
+      }
+    ]
+  },
+  "approach": {
+    "title": "是什么让 Nexus Clinic 与众不同",
+    "items": [
+      { "title": "始终由医生主导", "description": "每次咨询和治疗都由持证医生主导。没有捷径,没有不合格的从业者。" },
+      { "title": "诊断优先", "description": "我们在推荐任何治疗之前正确评估您的问题。没有假设,没有套餐优先的心态。" },
+      { "title": "诚实建议", "description": "如果治疗不适合您,我们会告诉您。我们不相信销售不会起作用的东西。" },
+      { "title": "自然结果", "description": "我们的目标是看起来像您的增强。我们避免过度填充、过度或不自然的结果。" },
+      { "title": "结构化跟进", "description": "我们正确跟踪进展,必要时调整方案,并在您治疗的整个过程中陪伴您。" },
+      { "title": "MOH 批准产品", "description": "我们只为每种治疗使用卫生部批准的产品和设备。" }
+    ]
+  },
+  "milestones": {
+    "eyebrow": "我们的旅程",
+    "title": "Nexus Clinic 时间线",
+    "items": [
+      { "year": "2010", "title": "诊所成立", "description": "Nexus Clinic 以诚实、医生主导的美容医学愿景打开大门。" },
+      { "year": "2015", "title": "服务扩展", "description": "增加了全面的减重和毛发修复计划。" },
+      { "year": "2018", "title": "KLCC 位置", "description": "搬到我们目前位于 Wisma UOA II, Jalan Pinang 的旗舰位置。" },
+      { "year": "2024", "title": "5,000+ 手术", "description": "超过 5,000 次由我们医疗团队完成的成功治疗。" }
+    ]
+  },
+  "location": {
+    "eyebrow": "我们的空间",
+    "title": "为舒适而设计的诊所",
+    "para1": "位于 Wisma UOA II, Jalan Pinang,我们的诊所旨在让人感到平静、私密和欢迎。我们相信合适的环境很重要 — 对患者的舒适和临床精确度。",
+    "para2": "从您走进的那一刻起,您将受到一个倾听、解释并指导您完成治疗旅程每一步的团队的欢迎。",
+    "address": "Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "hours": "周一 - 周六: 上午9:00 - 下午6:00",
+    "phone": "016-702 5699",
+    "badge": "KLCC | 便利位置",
+    "altReception": "诊所接待处",
+    "altTreatment": "治疗室",
+    "altConsultation": "咨询室",
+    "altWaiting": "等候区"
+  },
+  "testimonials": {
+    "eyebrow": "患者故事",
+    "title": "我们的患者怎么说",
+    "items": [
+      { "quote": "Nexus 的医生真的倾听了我的担忧,并完全推荐了我需要的东西。没有追加销售,只有诚实的建议。", "author": "Mei Ling", "location": "吉隆坡" },
+      { "quote": "我来寻求减重支持,得到了一个适当的医疗计划。后续跟进很出色,我看到了真正的进展。", "author": "Ramesh", "location": "Petaling Jaya" },
+      { "quote": "干净的诊所,专业的医生,透明的价格。我会向任何寻找美容治疗的人推荐 Nexus。", "author": "Siti", "location": "Bangsar" }
+    ]
+  },
+  "cta": {
+    "title": "准备好开始您的旅程了吗?",
+    "description": "今天就预约我们的医生咨询。没有承诺,只有关于什么可能对您有效的诚实建议。",
+    "button": "预约您的免费咨询",
+    "whatsappMessage": "您好,我想在 Nexus Clinic KL 预约咨询。请告知可用时段。",
+    "limitedSlots": "本周可用名额有限 | Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur"
+  },
+  "footerBrand": "Nexus Clinic 是吉隆坡一家先进的美容和医疗诊所,提供医生主导的面部、皮肤、毛发和减重治疗。我们专注于明确诊断、自然效果以及围绕长期信心和福祉构建的治疗方案。"
+}

@@ -7,18 +7,13 @@ import {
   fadeInLeft,
   fadeInRight,
 } from "@/src/lib/animations";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-const HormonReplaceLanding = ({
-  locale = fallbackLng,
-}: {
-  locale?: string;
-}) => {
-    const { t } = useTranslation(locale, "regenerative/hormoneReplacement");
+const HormonReplaceLanding = () => {
+    const t = useTranslations("regenerative.hormoneReplacement");
 
     const images = {
       heroWoman:

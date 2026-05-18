@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "badge": "认可 • 卓越 • 创新",
+    "title": "奖项与认证",
+    "highlight": "Nexus Clinic 吉隆坡",
+    "description": "通过行业认可保证质量。Nexus Clinic 获得的每个奖项都反映了我们对马来西亚安全、有效和创新美容治疗的承诺。",
+    "details": "从 Allergan Aesthetics 的最高荣誉到 CoolSculpting 卓越和先进注射剂认证,我们不断增长的奖项收藏代表了我们 KLCC 诊所数十年的临床专业知识和以患者为中心的护理。",
+    "note": "所有奖项均由独立行业机构颁发,包括 Allergan Aesthetics、CoolSculpting 和 Biolyph,以表彰临床卓越和患者安全标准。",
+    "imageAlt": "Nexus Clinic 吉隆坡 - 奖项与认证",
+    "ctaText": "预约咨询",
+    "whatsappMessage": "您好,我想了解更多关于 Nexus Clinic 获奖治疗的信息。我想预约咨询。",
+    "floatingTitle": "🏆 业界认可",
+    "floatingSubtitle": "始于2001年的卓越"
+  },
+  "section": {
+    "title": "我们的奖项与认可",
+    "subtitle": "每个奖项都代表我们对卓越、患者安全和杰出临床效果的承诺。"
+  },
+  "awards": [
+    {
+      "title": "Nexus Clinic 身体塑形卓越奖 | 马来西亚美容诊所",
+      "year": "2022",
+      "category": "身体塑形卓越",
+      "description": "Nexus Clinic 自豪地获得 Allergan Aesthetics 身体塑形金奖 2022,表彰其在马来西亚先进身体塑形治疗方面的卓越表现。作为吉隆坡的领先美容诊所,Nexus Clinic 以提供安全有效的非手术身体塑形、减脂治疗和个性化美容护理而闻名。凭借对创新、患者安全和自然外观结果的高度关注,该诊所继续在马来西亚的美容治疗中树立高标准,帮助客户实现精致的身材和长期的信心。"
+    },
+    {
+      "title": "Nexus Clinic CoolSculpting Club 200 奖 | 马来西亚冷冻溶脂治疗",
+      "year": "2023",
+      "category": "冷冻溶脂卓越",
+      "description": "Nexus Clinic 被认可为 CoolSculpting Club 200 成员,标志着其在马来西亚先进冷冻溶脂治疗方面的专业知识。作为吉隆坡值得信赖的美容诊所,Nexus Clinic 成功提供了 200 多次 CoolSculpting 治疗,帮助客户实现安全、非侵入性的身体塑形和减脂效果。以其个性化方法和医学指导的护理而闻名,该诊所继续在马来西亚的非手术身体雕塑方面处于领先地位。"
+    },
+    {
+      "title": "Nexus Clinic 白金身体塑形奖 2024 | 马来西亚顶级美容诊所",
+      "year": "2024",
+      "category": "身体塑形卓越",
+      "description": "Nexus Clinic 获得久负盛名的 Allergan Aesthetics 白金奖 2024,表彰其在马来西亚身体塑形治疗方面的卓越表现,巩固了其作为吉隆坡领先美容诊所的地位。以先进的非手术身体塑形、减脂治疗和临床验证技术而闻名,Nexus Clinic 为身体雕塑提供安全、个性化的解决方案。"
+    },
+    {
+      "title": "Nexus Clinic Biolyph Partner Clinic 奖 | 马来西亚先进美容治疗",
+      "year": "2024",
+      "category": "先进美容合作",
+      "description": "Nexus Clinic 被认可为官方 Biolyph Partner Clinic,突出了其对马来西亚先进美容治疗的承诺。作为吉隆坡的领先美容诊所,Nexus Clinic 提供创新的、医学指导的解决方案,包括皮肤年轻化、抗衰老治疗和个性化美容护理。这一认可反映了该诊所对质量、安全和一致结果的奉献。"
+    },
+    {
+      "title": "Nexus Clinic Star Injector 奖 2024 | 马来西亚专业美容注射剂",
+      "year": "2024",
+      "category": "专业美容注射剂",
+      "description": "Nexus Clinic 获得久负盛名的 Star Injector 奖 2024,表彰其在马来西亚先进美容注射剂方面的专业知识。作为吉隆坡值得信赖的美容诊所,Nexus Clinic 专注于基于精准的肉毒杆菌治疗、皮肤填充剂和非手术面部塑形,以获得自然外观的效果。"
+    },
+    {
+      "title": "Nexus Clinic Sculptra Star Injector 奖 2025 | 马来西亚领先美容注射剂",
+      "year": "2025",
+      "category": "领先美容注射剂",
+      "description": "Nexus Clinic 荣获 Sculptra Star Injector 奖 2025,表彰其在马来西亚先进美容注射剂方面的卓越表现。作为吉隆坡的领先美容诊所,Nexus Clinic 专注于 Sculptra 治疗、胶原蛋白刺激疗法和基于精准的皮肤填充剂,以获得自然、持久的效果。"
+    },
+    {
+      "title": "Nexus Clinic 身体塑形赞赏奖 2023 | 马来西亚美容诊所",
+      "year": "2023",
+      "category": "身体塑形卓越",
+      "description": "Nexus Clinic 获得 Allergan Aesthetics 身体塑形赞赏奖 2023,表彰其在马来西亚身体塑形治疗方面的卓越表现。作为吉隆坡值得信赖的美容诊所,Nexus Clinic 以提供有效的非手术身体塑形、减脂治疗和个性化美容解决方案而闻名。"
+    }
+  ],
+  "cta": {
+    "title": "在 Nexus Clinic 吉隆坡体验获奖护理",
+    "description": "我们的奖项反映了我们对卓越的奉献。让我们向您展示为什么 Nexus Clinic 被认可为马来西亚美容医学的领导者。",
+    "button": "预约您的咨询",
+    "whatsappMessage": "您好,我想了解更多关于 Nexus Clinic 获奖治疗的信息。我想预约咨询。",
+    "footnote": "位于 Wisma UOA II, Jalan Pinang, KLCC — 自2001年起服务马来西亚"
+  }
+}

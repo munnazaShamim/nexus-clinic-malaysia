@@ -1,0 +1,24 @@
+{
+  "section": {
+    "eyebrow": "Our Specialists",
+    "titleLine1": "Meet the Physicians",
+    "titleLine2": "Behind Your Glow",
+    "description": "Our team of internationally trained aesthetic physicians combines clinical precision with an artistic eye — dedicated to revealing your most confident self."
+  },
+  "card": {
+    "qualifications": "Qualifications & Awards",
+    "viewProfile": "View Profile",
+    "instagramAria": "{name} on Instagram",
+    "linkedinAria": "{name} on LinkedIn"
+  },
+  "stats": {
+    "yearsValue": "12+",
+    "yearsLabel": "Years of Excellence",
+    "treatmentsValue": "8,000+",
+    "treatmentsLabel": "Treatments Performed",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "Patient Satisfaction",
+    "awardedValue": "3",
+    "awardedLabel": "Award-Winning Doctors"
+  }
+}

@@ -1,20 +1,21 @@
 export const dynamic = "force-static";
 import ContactUs from "@/src/views/ContactUs";
 import { Metadata } from "next";
+import { buildAlternates } from "@/src/lib/seo";
 
-const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com"
-export const metadata: Metadata = {
-  title: "Contact Nexus Clinic – Get in Touch in KL | Nexus",
-  description: "Reach Nexus Clinic in KL for doctor-led aesthetic treatments. Call, email or visit us. Book your free consultation today.",
-  alternates: {
-    canonical: `${baseurl}/contact-us`,
-  },
-};
-
-export default async function Page({
+export async function generateMetadata({
   params,
-}: {    params: Promise<{ locale: string }>;       
-}) {
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
-  return <ContactUs  />;
-}       
+  return {
+    title: "Contact Nexus Clinic – Get in Touch in KL | Nexus",
+    description: "Reach Nexus Clinic in KL for doctor-led aesthetic treatments. Call, email or visit us. Book your free consultation today.",
+    alternates: buildAlternates(locale, "/contact-us/"),
+  };
+}
+
+export default function Page() {
+  return <ContactUs />;
+}

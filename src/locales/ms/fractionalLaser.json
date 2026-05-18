@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Peremajaan Kulit Termaju",
+    "titleLine1": "Laser CO2 Pecahan",
+    "titleLine2": "Pelapisan Semula Kulit",
+    "description": "Alami transformasi kulit yang mendalam. Sasarkan parut degil, kedutan, dan ketidaksempurnaan dengan teknologi laser tepat untuk kulit bersinar dan muda.",
+    "primaryCta": "Tempah Konsultasi",
+    "secondaryCta": "Ketahui Lebih Lanjut",
+    "clients": "689+ Pelanggan Berpuas Hati",
+    "since": "Sejak 2001",
+    "rated": "Penarafan 5 Bintang"
+  },
+  "stats": [
+    { "label": "Kawasan Dirawat", "value": "Muka & Badan" },
+    { "label": "Tempoh", "value": "30-60 minit" },
+    { "label": "Kekerapan", "value": "1x sebulan" },
+    { "label": "Masa Henti", "value": "3-7 hari" }
+  ],
+  "what": {
+    "eyebrow": "Rawatan",
+    "title": "Apakah Laser CO2 Pecahan?",
+    "para1": "Laser CO2 pecahan adalah rawatan pelapisan semula kulit termaju menggunakan teknologi laser karbon dioksida. Tidak seperti kaedah tradisional, ia menyampaikan sinaran mikroskopik mewujudkan zon rawatan kecil dikelilingi tisu sihat.",
+    "para2": "Kecederaan mikro ini mencetuskan penyembuhan semula jadi badan anda, menggalakkan pengeluaran kolagen dan elastin. Hasilnya? Kulit lebih licin, kencang, dan lebih muda.",
+    "goldTitle": "Piawaian Emas",
+    "goldSubtitle": "Untuk peremajaan kulit mendalam"
+  },
+  "benefits": {
+    "eyebrow": "Mengapa Pilih Kami",
+    "title": "Manfaat Rawatan",
+    "items": [
+      { "title": "Pemulihan Lebih Pantas", "desc": "Masa henti minimum dengan zon rawatan disasarkan" },
+      { "title": "Boleh Disesuaikan", "desc": "Keamatan disesuaikan untuk keperluan kulit unik anda" },
+      { "title": "Hasil Tahan Lama", "desc": "Merangsang pengeluaran kolagen semula jadi" },
+      { "title": "Selamat & Berkesan", "desc": "Teknologi diluluskan FDA dengan hasil terbukti" }
+    ]
+  },
+  "concerns": {
+    "eyebrow": "Kawasan Rawatan",
+    "title": "Masalah Kulit Yang Kami Rawat",
+    "subtitle": "Laser CO2 pecahan kami menangani pelbagai masalah kulit secara berkesan dengan ketepatan dan penjagaan.",
+    "items": [
+      { "title": "Parut Jerawat" },
+      { "title": "Garis Halus" },
+      { "title": "Kerosakan Matahari" },
+      { "title": "Liang Besar" }
+    ]
+  },
+  "process": {
+    "eyebrow": "Perjalanan Anda",
+    "title": "Proses Rawatan",
+    "items": [
+      { "step": "01", "title": "Konsultasi", "desc": "Penilaian kulit menyeluruh untuk menyesuaikan pelan rawatan anda" },
+      { "step": "02", "title": "Rawatan", "desc": "Krim memati rasa digunakan, kemudian penghantaran laser tepat ke kawasan sasaran" },
+      { "step": "03", "title": "Pemulihan", "desc": "Ikuti panduan penjagaan selepas untuk penyembuhan dan hasil optimum" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimoni",
+    "title": "Ulasan Pelanggan",
+    "items": [
+      { "name": "Kumar Raj", "text": "Pelapisan semula laser CO2 untuk parut jerawat berkesan, dan kosnya sangat berpatutan." },
+      { "name": "Mai Lin", "text": "Ini sesi kedua saya dan saya sudah menyukai kulit saya. Tidak boleh mengesyorkannya cukup!" },
+      { "name": "Linh Nguyen", "text": "Mengurangkan parut jerawat saya dengan ketara. Kulit saya terasa segar dan diremajakan." }
+    ]
+  },
+  "faq": [
+    { "q": "Berapa banyak sesi diperlukan?", "a": "Biasanya 2-4 sesi, berjarak 4-6 minggu, bergantung pada keterukan." },
+    { "q": "Adakah rawatan menyakitkan?", "a": "Krim memati rasa digunakan terlebih dahulu. Anda mungkin merasa kehangatan ringan tetapi ketidakselesaan minimum." },
+    { "q": "Berapa lama pemulihan?", "a": "Jangkakan 3-7 hari pengelupasan dan kemerahan. Perlindungan matahari penting semasa penyembuhan." },
+    { "q": "Adakah ia selamat untuk semua warna kulit?", "a": "Ya, dengan konsultasi yang betul untuk menyesuaikan tetapan dan mencegah risiko pigmentasi." }
+  ],
+  "cta": {
+    "title": "Bersedia Mengubah Kulit Anda?",
+    "description": "Jadualkan konsultasi anda hari ini dan temui bagaimana laser CO2 pecahan boleh membantu anda mencapai kulit bersinar dan muda.",
+    "button": "Tempah Konsultasi Anda"
+  }
+}

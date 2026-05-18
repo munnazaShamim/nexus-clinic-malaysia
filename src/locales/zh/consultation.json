@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "badge": "我们的服务 • Nexus Clinic KL",
+    "title": "全面的美容与健康治疗",
+    "description": "探索我们由医生主导的非手术治疗的完整范围,涵盖面部、皮肤、毛发、减重和再生健康。每项治疗都从适当的评估和围绕您目标设计的个性化计划开始。",
+    "cta": "预约免费咨询",
+    "whatsappMessage": "您好,我对 Nexus Clinic KL 的治疗感兴趣。我想预约咨询。"
+  },
+  "trust": {
+    "items": [
+      { "title": "5,000+ 手术", "subtitle": "由持证医生完成" },
+      { "title": "15+ 年经验", "subtitle": "综合美容医学" },
+      { "title": "MOH 批准产品", "subtitle": "用于每种注射治疗" },
+      { "title": "KLCC 位置", "subtitle": "Wisma UOA II, Jalan Pinang" }
+    ]
+  },
+  "viewAll": "查看所有{category}",
+  "categories": {
+    "face": {
+      "name": "面部治疗",
+      "description": "非手术面部美容,包括皮肤填充剂、肉毒杆菌、线雕和皮肤增强剂,实现自然外观的年轻化。",
+      "treatments": [
+        { "name": "Botox 马来西亚", "description": "皱纹放松、下颌瘦身、露龈笑等。" },
+        { "name": "脸颊填充剂 马来西亚", "description": "恢复中面部体积并提升下面部。" },
+        { "name": "下巴填充剂 马来西亚", "description": "纠正突出度并恢复面部平衡。" },
+        { "name": "皮肤填充剂 马来西亚", "description": "体积恢复与面部塑形。" },
+        { "name": "下颌线填充剂 马来西亚", "description": "定义下颌边界并锐化轮廓。" },
+        { "name": "唇部填充剂 马来西亚", "description": "更丰满的嘴唇和清晰的丘比特弓。" },
+        { "name": "鼻部填充剂 马来西亚", "description": "更高的鼻梁、隆起遮蔽和鼻尖定义。" },
+        { "name": "鼻线提升 马来西亚", "description": "更高的鼻梁、更尖的鼻尖和更好的轮廓。" },
+        { "name": "皮肤增强剂 马来西亚", "description": "由内而外的水合、胶原蛋白和光泽。" },
+        { "name": "泪沟填充剂 马来西亚", "description": "针对黑眼圈和凹陷的眼下治疗。" },
+        { "name": "眼下填充剂 马来西亚", "description": "以患者为先的眼下治疗指南。" }
+      ]
+    },
+    "skin": {
+      "name": "皮肤治疗",
+      "description": "针对痤疮、疤痕、色素沉着、黄褐斑和整体皮肤健康的医生主导解决方案,采用先进的激光和医学治疗。",
+      "treatments": [
+        { "name": "痤疮治疗 马来西亚", "description": "通过医生主导的活动性痤疮方案获得更清晰的皮肤。" },
+        { "name": "痤疮疤痕治疗 马来西亚", "description": "改善凹陷疤痕的质地和光滑度。" },
+        { "name": "色素沉着治疗 马来西亚", "description": "均匀肤色并有效减少黑斑。" },
+        { "name": "黄褐斑治疗 马来西亚", "description": "针对顽固色素的安全现实管理。" },
+        { "name": "痣去除 马来西亚", "description": "经过适当医生评估的美容去除。" },
+        { "name": "水疗面部护理 马来西亚", "description": "清洁、去角质和水合以获得焕发的皮肤。" },
+        { "name": "皮秒激光 马来西亚", "description": "色素、纹身和质地的精确治疗。" },
+        { "name": "黑眼圈治疗 马来西亚", "description": "解决凹陷、色素沉着和血管阴影。" },
+        { "name": "皮肤美白治疗 马来西亚", "description": "健康、均匀的皮肤亮白。" },
+        { "name": "湿疹治疗 马来西亚", "description": "舒缓并保护皮肤屏障。" },
+        { "name": "瘢痕疙瘩治疗 马来西亚", "description": "针对凸起疤痕组织的谨慎方法。" },
+        { "name": "酒糟鼻治疗 马来西亚", "description": "管理发红、潮红和敏感。" },
+        { "name": "妊娠纹去除 马来西亚", "description": "根据斑纹年龄改善外观。" },
+        { "name": "激光脱毛 马来西亚", "description": "对不需要的毛发进行长期减少。" },
+        { "name": "纹身去除 马来西亚", "description": "医生指导的基于激光的纹身褪色。" }
+      ]
+    },
+    "hair": {
+      "name": "毛发治疗",
+      "description": "从医学疗法到 FUE 毛发移植的全面毛发修复,旨在实现自然密度和长期信心。",
+      "treatments": [
+        { "name": "毛发移植 马来西亚", "description": "用于长期密度的手术毛发修复。" },
+        { "name": "FUE 毛发移植 马来西亚", "description": "最小疤痕,自然外观效果。" },
+        { "name": "PRP 毛发治疗 马来西亚", "description": "用生长因子支持较弱的毛囊。" },
+        { "name": "脱发治疗 马来西亚", "description": "针对脱发的个性化医学方案。" },
+        { "name": "胡须移植 马来西亚", "description": "更丰满、自然的面部毛发修复。" },
+        { "name": "美塑疗法脱发 马来西亚", "description": "将活性成分输送到头皮。" },
+        { "name": "外泌体毛发治疗 马来西亚", "description": "针对稀疏的先进再生护理。" },
+        { "name": "米诺地尔治疗 马来西亚", "description": "维持密度并减缓稀疏。" },
+        { "name": "非那雄胺治疗 马来西亚", "description": "减少激素性毛囊微缩。" }
+      ]
+    },
+    "weightLoss": {
+      "name": "减重治疗",
+      "description": "使用 GLP-1 药物(Ozempic、Wegovy、Mounjaro)的医学减重计划和 CoolSculpting 等非手术身体塑形。",
+      "treatments": [
+        { "name": "Ozempic 减重 马来西亚", "description": "医学减重的食欲控制支持。" },
+        { "name": "Wegovy 减重 马来西亚", "description": "用于体重管理的结构化医学计划。" },
+        { "name": "Mounjaro 减重 马来西亚", "description": "用于减重的先进 GLP-1 治疗。" },
+        { "name": "Duromine 减重 马来西亚", "description": "短期医生监督的减重支持。" },
+        { "name": "医生监督减重 马来西亚", "description": "临床指导和结构化随访。" },
+        { "name": "HCG 减重 马来西亚", "description": "医生关于 HCG 相关减重计划的指导。" },
+        { "name": "冷冻溶脂 马来西亚", "description": "非手术地针对顽固脂肪区域。" },
+        { "name": "CoolSculpting 马来西亚", "description": "用于顽固脂肪的非手术身体塑形。" },
+        { "name": "GLP 1 计划 马来西亚", "description": "基于 GLP-1 的结构化减重计划。" },
+        { "name": "Zepbound 减重 马来西亚", "description": "关于 Zepbound 治疗的医生主导信息。" },
+        { "name": "IV 滴注减重 马来西亚", "description": "支持性健康和水合 IV 选项。" }
+      ]
+    },
+    "regenerative": {
+      "name": "再生治疗",
+      "description": "激素优化、亲密健康(P-Shot、O-Shot)以及针对能量、动力和健康老化的先进疗法。",
+      "treatments": [
+        { "name": "睾酮治疗 马来西亚", "description": "为合适的患者恢复能量和动力。" },
+        { "name": "ED 治疗 马来西亚", "description": "通过医学指导的护理获得信心和性健康。" },
+        { "name": "激素替代疗法 马来西亚", "description": "针对激素失衡的平衡和症状缓解。" },
+        { "name": "PCOS 治疗 马来西亚", "description": "针对多囊卵巢综合征的医生主导支持。" },
+        { "name": "甲状腺功能减退治疗 马来西亚", "description": "针对低甲状腺功能的医学支持。" },
+        { "name": "干细胞疗法 马来西亚", "description": "用于组织支持的先进再生治疗。" },
+        { "name": "抗衰老疗法 马来西亚", "description": "以健康为中心的健康老化方法。" },
+        { "name": "激素检测 马来西亚", "description": "全面检测以识别失衡。" },
+        { "name": "更年期激素替代 马来西亚", "description": "针对更年期相关症状的支持。" },
+        { "name": "P-Shot 马来西亚", "description": "男性再生亲密健康。" },
+        { "name": "O-Shot 马来西亚", "description": "女性再生亲密健康。" },
+        { "name": "冲击波疗法 马来西亚", "description": "性健康的非侵入性选项。" }
+      ]
+    }
+  },
+  "card": {
+    "learnMore": "了解更多",
+    "prevAria": "上一个治疗",
+    "nextAria": "下一个治疗"
+  },
+  "whyUs": {
+    "title": "为什么患者选择 Nexus Clinic KL",
+    "items": [
+      { "title": "医生主导评估", "description": "每项治疗都从持证医生的适当诊断开始。" },
+      { "title": "个性化治疗方案", "description": "基于您独特的解剖结构、问题和目标的建议。" },
+      { "title": "MOH 批准的产品和设备", "description": "所有注射剂和激光均符合马来西亚严格的安全标准。" },
+      { "title": "自然外观结果", "description": "保守技术作为临床标准,而非营销主张。" },
+      { "title": "透明和诚实", "description": "明确的价格、现实的期望和关于适用性的诚实建议。" },
+      { "title": "KLCC 中心位置", "description": "便利地位于吉隆坡 Wisma UOA II, Jalan Pinang。" }
+    ]
+  },
+  "cta": {
+    "title": "在 Nexus Clinic 吉隆坡预约咨询",
+    "description": "准备好探索您的治疗选项了吗?每段旅程都从持证医生的适当评估开始,诚实地解释什么对您真正有效,以及具有透明价格的明确治疗方案。",
+    "button": "立即预约您的免费咨询",
+    "whatsappMessage": "您好,我想在 Nexus Clinic KL 预约免费咨询。请告知可用时段。",
+    "limitedSlots": "本周可用名额有限 | Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "serving": "为吉隆坡、八打灵再也、Bangsar、Mont Kiara、Ampang、KLCC 和整个马来西亚的患者服务"
+  }
+}

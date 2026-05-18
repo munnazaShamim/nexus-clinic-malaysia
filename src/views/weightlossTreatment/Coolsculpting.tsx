@@ -31,8 +31,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages"
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
 
@@ -78,24 +77,20 @@ interface GuidePoint {
   desc: string;
 }
 
-const CoolSculptingLanding = ({
-  locale = fallbackLng,
-}: {
-  locale?: string;
-}) => {
-  const { t } = useTranslation(locale, "weightLoss/coolsculpting");
+const CoolSculptingLanding = () => {
+  const t = useTranslations("weightLoss.coolsculpting");
 
   // Type-safe translation getters
-  const benefits = t("benefits", { returnObjects: true }) as Benefit[];
-  const treatmentAreas = t("treatmentAreas.areas", { returnObjects: true }) as TreatmentArea[];
-  const faqs = t("faq.items", { returnObjects: true }) as FAQ[];
-  const processSteps = t("processTimeline.steps", { returnObjects: true }) as ProcessStep[];
-  const whyNexusPoints = t("whyNexus.points", { returnObjects: true }) as WhyNexusPoint[];
-  const pricingItems = t("pricing.prices", { returnObjects: true }) as PricingItem[];
-  const competitors = t("comparison.competitors", { returnObjects: true }) as Competitor[];
-  const guidePoints = t("comparison.guidePoints", { returnObjects: true }) as GuidePoint[];
-  const howItWorksSteps = t("howItWorks.steps", { returnObjects: true }) as string[];
-  const commonAreasList = t("pricing.commonAreas.list", { returnObjects: true }) as string[];
+  const benefits = t.raw("benefits") as Benefit[];
+  const treatmentAreas = t.raw("treatmentAreas.areas") as TreatmentArea[];
+  const faqs = t.raw("faq.items") as FAQ[];
+  const processSteps = t.raw("processTimeline.steps") as ProcessStep[];
+  const whyNexusPoints = t.raw("whyNexus.points") as WhyNexusPoint[];
+  const pricingItems = t.raw("pricing.prices") as PricingItem[];
+  const competitors = t.raw("comparison.competitors") as Competitor[];
+  const guidePoints = t.raw("comparison.guidePoints") as GuidePoint[];
+  const howItWorksSteps = t.raw("howItWorks.steps") as string[];
+  const commonAreasList = t.raw("pricing.commonAreas.list") as string[];
 
   const stats = [
     {

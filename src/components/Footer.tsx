@@ -1,93 +1,59 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState, useCallback } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/src/i18n/navigation";
 import SocialIcons from "@/src/components/SocialIcons";
 import Image from "next/image";
 
-export const Footer = ({ locale }: { locale?: string }) => {
-  const { t, i18n } = useTranslation();
-  const [mounted, setMounted] = useState(false);
+export const Footer = () => {
+  // Footer copy lives at common.footer.* inside common.json
+  const t = useTranslations('common.footer');
+  const activeLocale = useLocale();
+
   const [isBlogsPage, setIsBlogsPage] = useState(false);
-  const [currentLocale, setCurrentLocale] = useState(locale);
-  
+  const [currentLocale, setCurrentLocale] = useState<string>(activeLocale);
+
+  // next-intl's usePathname returns the path WITHOUT the locale prefix.
   const pathname = usePathname() ?? "/";
 
-  // Check if current page is blogs page
+  // Blogs routes live outside [locale], so detect via the real browser URL.
   useEffect(() => {
-    const isBlogs = pathname.includes('/blogs/');
+    const fullPath = typeof window !== 'undefined' ? window.location.pathname : pathname;
+    const isBlogs = fullPath.includes('/blogs/');
     setIsBlogsPage(isBlogs);
-    
-    // On blogs page, force locale to 'en' for display
-    if (isBlogs) {
-      setCurrentLocale('en');
-    } else {
-      setCurrentLocale(locale);
-    }
-  }, [pathname, locale]);
+    setCurrentLocale(isBlogs ? 'en' : activeLocale);
+  }, [pathname, activeLocale]);
 
-  // Custom text getter that returns English on blogs page
+  // On blogs pages, force the English fallback so copy doesn't leak between locales.
   const getText = useCallback((key: string, fallback: string) => {
-    if (isBlogsPage) {
-      return fallback; // Always return English fallback on blogs page
+    if (isBlogsPage) return fallback;
+    try {
+      const translated = t(key);
+      return translated === key ? fallback : translated;
+    } catch {
+      return fallback;
     }
-    const translated = t(key);
-    return translated === key ? fallback : translated;
   }, [isBlogsPage, t]);
 
-  useEffect(() => {
-    if (currentLocale && i18n.language !== currentLocale && i18n.isInitialized) {
-      i18n.changeLanguage(currentLocale);
-    }
-    setMounted(true);
-  }, [currentLocale, i18n]);
-
-  if (!mounted) {
-    return (
-      <footer className="bg-light">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <div className="lg:col-span-2">
-              <span className="text-2xl mb-6 block font-georgia text-brown">
-                <Image
-                  src="/images/logo.webp" 
-                  alt="Nexus Clinic Logo" 
-                  width={200}
-                  height={200}
-                  loading="lazy"
-                  className="w-auto"/>
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
-    );
-  }
-
   const getNavHref = (path: string) => {
-    // If it's the blogs link, always go to /blogs without locale prefix
-    if (path === '/blogs/') {
-      return '/blogs/';
-    }
-    
-    // For other paths, add locale prefix if not English
+    if (path.startsWith('/blogs/')) return '/blogs/';
     if (!currentLocale || currentLocale === "en") return path;
     return `/${currentLocale}${path}`;
   };
 
   const quickLinks = [
-    { label: getText("footer.aboutUs", "About Us"), href: "/about-us/" },
-    { label: getText("footer.services", "Doctors"), href: "/doctors/" },
-    { label: getText("footer.treatments", "Gallery"), href: "/gallery/" },
-    { label: getText("footer.blog", "Blog"), href: "/blogs/" },
-    { label: getText("footer.contact", "Contact"), href: "/contact-us/" },
+    { label: getText("aboutUs", "About Us"), href: "/about-us/" },
+    { label: getText("services", "Doctors"), href: "/doctors/" },
+    { label: getText("treatments", "Gallery"), href: "/gallery/" },
+    { label: getText("blog", "Blog"), href: "/blogs/" },
+    { label: getText("contact", "Contact"), href: "/contact-us/" },
   ];
 
   const legalLinks = [
-    { label: getText("footer.privacyPolicy", "Privacy Policy"), href: "/privacy-policy/" },
-    { label: getText("footer.termsOfUse", "Terms of Use"), href: "/terms-of-use/" },
+    { label: getText("privacyPolicy", "Privacy Policy"), href: "/privacy-policy/" },
+    { label: getText("termsOfUse", "Terms of Use"), href: "/terms-of-use/" },
   ];
 
   return (
@@ -107,13 +73,13 @@ export const Footer = ({ locale }: { locale?: string }) => {
               />
             </span>
             <p className="max-w-md mb-6 text-taupe">
-              {getText("footer.description", "LCP Certified and MOH Registered aesthetic and medical weight loss clinic in Kuala Lumpur, combining science-backed treatments with artistic precision for natural-looking results.")}
+              {getText("description", "LCP Certified and MOH Registered aesthetic and medical weight loss clinic in Kuala Lumpur, combining science-backed treatments with artistic precision for natural-looking results.")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-6 text-brown">{getText("footer.quickLinks", "Quick Links")}</h4>
+            <h4 className="font-semibold mb-6 text-brown">{getText("quickLinks", "Quick Links")}</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -131,30 +97,30 @@ export const Footer = ({ locale }: { locale?: string }) => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-6 text-brown">{getText("footer.contactTitle", "Contact")}</h4>
+            <h4 className="font-semibold mb-6 text-brown">{getText("contactTitle", "Contact")}</h4>
             <ul className="space-y-3 text-taupe">
-              <li><a 
+              <li><a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Nexus Clinic Wisma UOA 2 Kuala Lumpur")}`}
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-wine cursor-pointer transition-colors"
                 >
-                  {getText("footer.address", "LG 10, Lower Ground Floor, Wisma UOA 2, Kuala Lumpur, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia")}
+                  {getText("address", "LG 10, Lower Ground Floor, Wisma UOA 2, Kuala Lumpur, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia")}
                 </a></li>
               <li>
-                <a 
-                  href={`tel:${getText("footer.phone", "+016-774 5699").replace(/\s/g, '')}`} 
+                <a
+                  href={`tel:${getText("phone", "+016-774 5699").replace(/\s/g, '')}`}
                   className="hover:text-wine cursor-pointer transition-colors"
                 >
-                  {getText("footer.phone", "+016‑774 5699")}
+                  {getText("phone", "+016‑774 5699")}
                 </a>
               </li>
               <li>
-                <a 
-                  href={`mailto:${getText("footer.email", "contact@nexus-clinic.com")}`} 
+                <a
+                  href={`mailto:${getText("email", "contact@nexus-clinic.com")}`}
                   className="hover:text-wine cursor-pointer transition-colors"
                 >
-                  {getText("footer.email", "contact@nexus-clinic.com")}
+                  {getText("email", "contact@nexus-clinic.com")}
                 </a>
               </li>
             </ul>
@@ -166,7 +132,7 @@ export const Footer = ({ locale }: { locale?: string }) => {
         {/* Bottom Bar */}
         <div className="border-t border-taupe/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-taupe">
-            {getText("footer.copyright", "© 2026 Aesthetics & Skin Care Clinic Near Me | ⁠ ⁠⁠Mozart Simfoni Sdn Bhd | Powered by ")}
+            {getText("copyright", "© 2026 Aesthetics & Skin Care Clinic Near Me | ⁠ ⁠⁠Mozart Simfoni Sdn Bhd | Powered by ")}
             <a href="http://daikimedia.com/"  target="_blank" >  <strong className="italic text-wine">  Daikimedia</strong></a>
           </p>
 

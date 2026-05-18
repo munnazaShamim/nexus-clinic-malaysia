@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "前后对比画廊",
+    "titleLine1": "真实结果,",
+    "titleLine2": "真实人物"
+  ,
+    "description": "您看到的每一次蜕变都是由我们的认证医生使用循证治疗实现的。拖动每个滑块以揭示旅程。"
+  },
+  "filter": {
+    "ariaLabel": "按治疗类别筛选画廊"
+  },
+  "results": {
+    "showing": "显示",
+    "results": "个结果",
+    "in": "在",
+    "noResults": "未找到此类别的结果。",
+    "ariaLabel": "{category}的画廊结果"
+  },
+  "card": {
+    "session": "次",
+    "sessions": "次",
+    "viewDetails": "查看{title}的完整详情"
+  },
+  "labels": {
+    "before": "前",
+    "after": "后"
+  },
+  "lightbox": {
+    "sessions": "次治疗",
+    "session": "次治疗",
+    "beforeHeading": "之前",
+    "afterHeading": "之后",
+    "bookConsultation": "预约咨询",
+    "closeAria": "关闭画廊详情",
+    "prevAria": "上一个结果",
+    "nextAria": "下一个结果"
+  },
+  "comparisonAria": "前后对比:{title}",
+  "disclaimer": "* 个人结果可能有所不同。所有治疗均由 Nexus Clinic Malaysia 的认证医疗专业人员执行。图片为经同意的真实患者案例。"
+}

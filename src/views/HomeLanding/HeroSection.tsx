@@ -1,5 +1,8 @@
 import Image from "next/image";
-const HeroSection = ({ t }: { t: (key: string) => string }) => {
+import { getTranslations } from "next-intl/server";
+
+const HeroSection = async () => {
+  const t = await getTranslations("home");
   return (
     <section className="relative h-[700px] w-full overflow-hidden">
         <Image

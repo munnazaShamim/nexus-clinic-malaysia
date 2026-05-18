@@ -57,8 +57,7 @@ import {
   fadeInUp,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 
 // Import icon mapping for dynamic icons
 const iconMap: Record<string, any> = {
@@ -105,12 +104,8 @@ const iconMap: Record<string, any> = {
   SyringeIcon,
 };
 
-const DermalFillersLanding = ({
-  locale = fallbackLng,
-}: {
-  locale?: string;
-}) => {
-  const { t } = useTranslation(locale, "face/dermalFiller");
+const DermalFillersLanding = () => {
+  const t = useTranslations("face.dermalFiller");
 
   // Helper function to render text with HTML tags
   const renderWithTags = (text: string) => {
@@ -126,19 +121,19 @@ const DermalFillersLanding = ({
   };
 
   // Get data from translation with fallbacks
-  const heroData = t("hero", { returnObjects: true }) as any;
-  const treatmentAtGlance = t("treatmentAtGlance", { returnObjects: true }) as any;
-  const howItWorks = t("howItWorks", { returnObjects: true }) as any;
-  const faceAreas = t("faceAreas", { returnObjects: true }) as any;
-  const products = t("products", { returnObjects: true }) as any;
-  const whyNexus = t("whyNexus", { returnObjects: true }) as any;
-  const procedure = t("procedure", { returnObjects: true }) as any;
-  const pricing = t("pricing", { returnObjects: true }) as any;
-  const advantagesLimitations = t("advantagesLimitations", { returnObjects: true }) as any;
-  const sideEffects = t("sideEffects", { returnObjects: true }) as any;
-  const aftercare = t("aftercare", { returnObjects: true }) as any;
-  const faqData = t("faq", { returnObjects: true }) as any;
-  const finalCta = t("finalCta", { returnObjects: true }) as any;
+  const heroData = t.raw("hero") as any;
+  const treatmentAtGlance = t.raw("treatmentAtGlance") as any;
+  const howItWorks = t.raw("howItWorks") as any;
+  const faceAreas = t.raw("faceAreas") as any;
+  const products = t.raw("products") as any;
+  const whyNexus = t.raw("whyNexus") as any;
+  const procedure = t.raw("procedure") as any;
+  const pricing = t.raw("pricing") as any;
+  const advantagesLimitations = t.raw("advantagesLimitations") as any;
+  const sideEffects = t.raw("sideEffects") as any;
+  const aftercare = t.raw("aftercare") as any;
+  const faqData = t.raw("faq") as any;
+  const finalCta = t.raw("finalCta") as any;
 
   // Format FAQs for FAQ component
   const faqs = faqData?.items?.map((item: any) => ({

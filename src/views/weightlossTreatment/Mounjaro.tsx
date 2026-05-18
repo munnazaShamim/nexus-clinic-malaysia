@@ -23,15 +23,14 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
 
 import Image from "next/image";
 import Link from "next/link";
-const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "weightLoss/mounjaro");
+const MounjaroLanding = () => {
+  const t = useTranslations("weightLoss.mounjaro");
 
   const transformations = [
     {

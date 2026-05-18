@@ -20,12 +20,11 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
-const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "regenerative/hypothyroidism");
+const HypothyroidLanding = () => {
+  const t = useTranslations("regenerative.hypothyroidism");
 
   const realLifeItems = [
     { icon: Activity, key: "r1" },

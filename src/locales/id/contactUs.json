@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "badge": "Hubungi Kami • Nexus Clinic KL",
+    "title": "Hubungi Kami",
+    "description": "Punya pertanyaan tentang perawatan kami? Ingin memesan konsultasi? Kami di sini untuk membantu. Hubungi kami dengan cara apa pun yang cocok untuk Anda."
+  },
+  "contactInfo": {
+    "visit": {
+      "title": "Kunjungi Kami",
+      "details": [
+        "LG 10, Lantai Bawah, Wisma UOA 2",
+        "Jalan Pinang, 50450 Kuala Lumpur",
+        "Malaysia"
+      ],
+      "action": "Dapatkan Petunjuk Arah"
+    },
+    "call": {
+      "title": "Telepon Kami",
+      "detail": "Utama: ",
+      "action": "Telepon Sekarang"
+    },
+    "email": {
+      "title": "Email Kami",
+      "action": "Kirim Email"
+    },
+    "hours": {
+      "title": "Jam Operasional",
+      "details": [
+        "Senin - Sabtu: 9:00 AM - 6:00 PM",
+        "Minggu: Tutup",
+        "Hari Libur Umum: Dengan Perjanjian"
+      ]
+    }
+  },
+  "map": {
+    "title": "Temukan Kami di Sini",
+    "imageAlt": "Peta lokasi Nexus Clinic di Wisma UOA 2, Kuala Lumpur",
+    "locationTitle": "Lokasi Kami",
+    "openInMaps": "Buka di Google Maps"
+  },
+  "form": {
+    "title": "Pesan Janji Temu Anda",
+    "subtitle": "Isi formulir di bawah ini untuk menjadwalkan konsultasi Anda. Kami akan mengkonfirmasi janji temu Anda dalam 24 jam.",
+    "iframeTitle": "Formulir Pemesanan Janji Temu - Nexus Clinic"
+  },
+  "faq": {
+    "items": [
+      { "q": "Apakah saya perlu janji temu untuk mengunjungi Nexus Clinic?", "a": "Ya, kami merekomendasikan untuk memesan janji temu untuk memastikan dokter kami dapat memberikan perhatian yang tepat. Walk-in diterima tetapi mungkin ada waktu tunggu." },
+      { "q": "Apakah ada parkir di klinik?", "a": "Ya, Wisma UOA II memiliki parkir basement. Kami memvalidasi tiket parkir untuk pasien." },
+      { "q": "Apa stasiun LRT terdekat?", "a": "Stasiun LRT KLCC berjarak 5 menit berjalan kaki dari klinik kami. Stasiun Ampang Park juga di dekatnya." },
+      { "q": "Bisakah saya memesan konsultasi via WhatsApp?", "a": "Ya! Anda dapat menghubungi kami di WhatsApp untuk janji temu dan pertanyaan." },
+      { "q": "Apakah Anda menawarkan konsultasi online?", "a": "Ya, kami menawarkan konsultasi virtual untuk perawatan tertentu. Silakan hubungi kami untuk mengatur." },
+      { "q": "Bahasa apa yang dikuasai dokter Anda?", "a": "Dokter kami berbicara bahasa Inggris, Bahasa Malaysia, Mandarin, Kanton, dan Tamil." }
+    ]
+  },
+  "cta": {
+    "title": "Siap Memulai Perjalanan Anda?",
+    "description": "Pesan konsultasi Anda hari ini dan ambil langkah pertama menuju pencapaian tujuan estetika Anda.",
+    "button": "Pesan Konsultasi Gratis Anda",
+    "whatsappMessage": "bisakah saya mendapatkan lebih banyak info"
+  }
+}

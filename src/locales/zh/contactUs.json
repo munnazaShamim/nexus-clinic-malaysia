@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "badge": "联系我们 • Nexus Clinic KL",
+    "title": "联系我们",
+    "description": "对我们的治疗有疑问?想要预约咨询?我们在这里提供帮助。以适合您的任何方式与我们联系。"
+  },
+  "contactInfo": {
+    "visit": {
+      "title": "拜访我们",
+      "details": [
+        "LG 10, 较低底层, Wisma UOA 2",
+        "Jalan Pinang, 50450 Kuala Lumpur",
+        "马来西亚"
+      ],
+      "action": "获取路线"
+    },
+    "call": {
+      "title": "致电我们",
+      "detail": "主线: ",
+      "action": "立即致电"
+    },
+    "email": {
+      "title": "发邮件给我们",
+      "action": "发送邮件"
+    },
+    "hours": {
+      "title": "营业时间",
+      "details": [
+        "周一 - 周六: 上午9:00 - 下午6:00",
+        "周日: 休息",
+        "公共假期: 预约制"
+      ]
+    }
+  },
+  "map": {
+    "title": "在此找到我们",
+    "imageAlt": "Nexus Clinic 位置地图,位于吉隆坡 Wisma UOA 2",
+    "locationTitle": "我们的位置",
+    "openInMaps": "在 Google 地图中打开"
+  },
+  "form": {
+    "title": "预约您的就诊",
+    "subtitle": "填写以下表格以安排您的咨询。我们将在24小时内确认您的预约。",
+    "iframeTitle": "预约表格 - Nexus Clinic"
+  },
+  "faq": {
+    "items": [
+      { "q": "我需要预约才能拜访 Nexus Clinic 吗?", "a": "是的,我们建议预约以确保我们的医生能给予您适当的关注。欢迎不预约直接前来,但可能需要等待。" },
+      { "q": "诊所有停车场吗?", "a": "是的,Wisma UOA II 有地下停车场。我们为患者验证停车票。" },
+      { "q": "最近的 LRT 站是哪个?", "a": "KLCC LRT 站距离我们的诊所步行5分钟。Ampang Park 站也在附近。" },
+      { "q": "我可以通过 WhatsApp 预约咨询吗?", "a": "可以!您可以通过 WhatsApp 与我们联系进行预约和咨询。" },
+      { "q": "您们提供在线咨询吗?", "a": "是的,我们为某些治疗提供虚拟咨询。请联系我们安排。" },
+      { "q": "您们的医生会说什么语言?", "a": "我们的医生会说英语、马来语、普通话、广东话和泰米尔语。" }
+    ]
+  },
+  "cta": {
+    "title": "准备好开始您的旅程了吗?",
+    "description": "今天就预约您的咨询,迈出实现美容目标的第一步。",
+    "button": "预约您的免费咨询",
+    "whatsappMessage": "我可以获得更多信息吗"
+  }
+}

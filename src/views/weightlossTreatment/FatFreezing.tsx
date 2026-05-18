@@ -22,13 +22,12 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import AllPagesHero from "@/src/components/AllPagesHero"
 import Link from "next/link";
 import Image from "next/image";
-const FatFreezingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "weightLoss/fatFreezing");
+const FatFreezingLanding = () => {
+  const t = useTranslations("weightLoss.fatFreezing");
 
   const transformations = [
     {

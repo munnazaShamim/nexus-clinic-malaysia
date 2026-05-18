@@ -29,15 +29,14 @@ import {
 } from "@/src/lib/animations";
 import React from "react";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslation } from "@/src/i18n/client";
-import { fallbackLng } from "@/src/i18n/settings";
+import { useTranslations } from "next-intl";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import AllPagesHero from '@/src/components/AllPagesHero'
 import Image from "next/image";
-const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "regenerative/testosterone");
+const TestosteroneLanding = () => {
+  const t = useTranslations("regenerative.testosterone");
 
   const images = {
     doctorConsultation: "/images/regenerative/testosterone-therapy.webp",

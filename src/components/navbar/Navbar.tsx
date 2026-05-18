@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link, usePathname } from "@/src/i18n/navigation";
 
 import "@/src/lib/vibration.css";
 import { TopBar } from "./TopBar";
@@ -15,100 +13,80 @@ import { navItems } from "./navData";
 import { buildSearchIndex } from "./search/searchUtils";
 import { SearchResult } from "@/src/types/navbar.types";
 
-const Navbar = ({ locale }: { locale?: string }) => {
-  const { t: tFallback, i18n } = useTranslation('common');
-  const t = useMemo(
-    () => (typeof i18n.getFixedT === 'function' ? i18n.getFixedT(locale || 'en', 'common') : tFallback),
-    [locale, i18n]
-  );
-  
+const Navbar = () => {
+  const t = useTranslations("common");
+  const activeLocale = useLocale();
+  // next-intl's usePathname returns the path WITHOUT the locale prefix.
+  const pathname = usePathname() ?? "/";
+
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isBlogsPage, setIsBlogsPage] = useState(false);
-  const [currentLocale, setCurrentLocale] = useState(locale);
+  const [currentLocale, setCurrentLocale] = useState<string>(activeLocale);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const pathname = usePathname() ?? "/";
 
-  // Check if current page is blogs page
+  // Blogs routes live outside [locale], so detect via the real browser URL.
   useEffect(() => {
-    const isBlogs = pathname.includes('/blogs/');
+    const fullPath = typeof window !== "undefined" ? window.location.pathname : pathname;
+    const isBlogs = fullPath.includes("/blogs/");
     setIsBlogsPage(isBlogs);
-    
-    if (isBlogs) {
-      setCurrentLocale('en');
-    } else {
-      setCurrentLocale(locale);
-    }
-  }, [pathname, locale]);
+    setCurrentLocale(isBlogs ? "en" : activeLocale);
+  }, [pathname, activeLocale]);
 
-  const getText = useCallback((key: string, fallback: string) => {
-    if (isBlogsPage) {
-      return fallback;
-    }
-    const translated = t(key);
-    return translated === key ? fallback : translated;
-  }, [isBlogsPage, t]);
+  const getText = useCallback(
+    (key: string, fallback: string) => {
+      if (isBlogsPage) return fallback;
+      try {
+        const translated = t(key);
+        return translated === key ? fallback : translated;
+      } catch {
+        return fallback;
+      }
+    },
+    [isBlogsPage, t]
+  );
 
   const [searchIndex, setSearchIndex] = useState<SearchResult[]>([]);
 
   useEffect(() => {
-    const newSearchIndex = buildSearchIndex(getText, navItems);
-    setSearchIndex(newSearchIndex);
+    setSearchIndex(buildSearchIndex(getText, navItems));
   }, [getText]);
 
-  const getLocaleHref = useCallback((langCode: string) => {
-    if (isBlogsPage || pathname.includes('/blogs/')) {
-      return '/blogs/';
-    }
-    
-    const localePrefixRegex = /^\/(id|ar|ms|zh)(\/|$)/;
-    const hasPrefixMatch = pathname.match(localePrefixRegex);
-    
-    let basePath = pathname;
-    
-    if (hasPrefixMatch) {
-      basePath = pathname.replace(localePrefixRegex, "/");
-    } else {
-      basePath = pathname;
-    }
-    
-    const cleanPath = basePath === "" || basePath === "/" ? "/" : basePath;
-    
-    if (langCode === "en") {
-      return cleanPath;
-    }
-    
-    return cleanPath === "/" ? `/${langCode}` : `/${langCode}${cleanPath}`;
-  }, [pathname, isBlogsPage]);
+  // Build a full URL for the language switcher (children consume a string href).
+  const getLocaleHref = useCallback(
+    (langCode: string) => {
+      if (isBlogsPage) return "/blogs/";
 
-  const handleLangClick = useCallback((langCode: string) => {
-    document.cookie = `i18next=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
-    
-    const newHref = getLocaleHref(langCode);
-    
-    const currentLang = currentLocale || 'en';
-    if (langCode === currentLang && newHref === pathname) {
-      return;
-    }
-    
-    setTimeout(() => {
-      window.location.href = newHref;
-    }, 50);
-  }, [getLocaleHref, currentLocale, pathname]);
+      const cleanPath = pathname === "" ? "/" : pathname;
+      if (langCode === "en") return cleanPath;
+      return cleanPath === "/" ? `/${langCode}` : `/${langCode}${cleanPath}`;
+    },
+    [pathname, isBlogsPage]
+  );
 
-  const getNavHref = useCallback((path: string) => {
-    if (path === '/blogs/' || path === '/blogs/' || path.startsWith('/blogs/')) {
-      return '/blogs/';
-    }
-    
-    if (isBlogsPage) {
-      return path;
-    }
+  const handleLangClick = useCallback(
+    (langCode: string) => {
+      document.cookie = `NEXT_LOCALE=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
 
-    if (!currentLocale || currentLocale === "en") return path;
-    
-    return `/${currentLocale}${path}`;
-  }, [currentLocale, isBlogsPage]);
+      const newHref = getLocaleHref(langCode);
+      if (langCode === currentLocale && newHref === window.location.pathname) return;
+
+      setTimeout(() => {
+        window.location.href = newHref;
+      }, 50);
+    },
+    [getLocaleHref, currentLocale]
+  );
+
+  const getNavHref = useCallback(
+    (path: string) => {
+      if (path.startsWith("/blogs/")) return "/blogs/";
+      if (isBlogsPage) return path;
+      if (!currentLocale || currentLocale === "en") return path;
+      return `/${currentLocale}${path}`;
+    },
+    [currentLocale, isBlogsPage]
+  );
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -126,9 +104,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
   };
 
   const handleDropdownItemClick = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setActiveDropdown(null);
   };
 
@@ -140,10 +116,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? "bg-light/95 backdrop-blur-xl shadow-lg shadow-brown/5 mt-4 md:mt-0"
@@ -156,9 +129,9 @@ const Navbar = ({ locale }: { locale?: string }) => {
         {!isScrolled && (
           <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 bg-white">
             <div className="flex items-center justify-between md:justify-center h-16 lg:h-20 gap-3 mt-16 mx-auto">
-              {/* Logo */}
+              {/* Logo — next-intl's Link auto-prepends the active locale, so pass the raw path. */}
               <Link
-                href={getNavHref("/")}
+                href={isBlogsPage ? "/blogs/" : "/"}
                 className="shrink-0 relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
               >
                 <Image
@@ -203,7 +176,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
             </div>
           </div>
         )}
-      </motion.header>
+      </header>
 
       {/* Spacer */}
       <div className={`${isScrolled ? "h-16 lg:h-20" : "h-16 lg:h-28"}`} />
