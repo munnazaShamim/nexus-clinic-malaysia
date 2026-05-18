@@ -9,9 +9,13 @@ import { buildAlternates } from "@/src/lib/seo";
 
 export const dynamic = "force-static";
 
+// Doctors with a `profilePath` have their own custom designed page elsewhere.
+// Exclude them from the generic catch-all so we don't generate duplicate URLs.
+const sharedDoctors = doctors.filter((d) => !d.profilePath);
+
 export async function generateStaticParams() {
   return (routing.locales as readonly string[]).flatMap((locale) =>
-    doctors.map((doctor) => ({ locale, slug: doctor.slug }))
+    sharedDoctors.map((doctor) => ({ locale, slug: doctor.slug }))
   );
 }
 
@@ -21,7 +25,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const doctor = doctors.find((d) => d.slug === slug);
+  const doctor = sharedDoctors.find((d) => d.slug === slug);
   if (!doctor) return {};
   return {
     title: `${doctor.name} – ${doctor.title} | Nexus Clinic Malaysia`,
@@ -36,7 +40,7 @@ export default async function DoctorProfilePage({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { slug } = await params;
-  const doctor = doctors.find((d) => d.slug === slug);
+  const doctor = sharedDoctors.find((d) => d.slug === slug);
 
   if (!doctor) {
     notFound();

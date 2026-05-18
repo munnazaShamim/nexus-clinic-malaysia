@@ -38,8 +38,18 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
+function sameShape(a: unknown, b: unknown): boolean {
+  if (Array.isArray(a)) return Array.isArray(b);
+  if (isPlainObject(a)) return isPlainObject(b);
+  return true;
+}
+
 // Fill gaps in the requested locale with English copy so a missing translation
-// renders the English fallback rather than the raw key.
+// renders the English fallback rather than the raw key. If the override has a
+// shape that doesn't match the English base (e.g. an old flat object where the
+// new structure expects an array), keep the English value so `t.raw()` always
+// returns the shape the components expect — translators can catch up later
+// without breaking the build.
 function deepMerge(
   base: Record<string, unknown>,
   override: Record<string, unknown>
@@ -48,7 +58,13 @@ function deepMerge(
   for (const key of Object.keys(override)) {
     const a = base[key];
     const b = override[key];
-    out[key] = isPlainObject(a) && isPlainObject(b) ? deepMerge(a, b) : b;
+    if (isPlainObject(a) && isPlainObject(b)) {
+      out[key] = deepMerge(a, b);
+    } else if (a !== undefined && !sameShape(a, b)) {
+      out[key] = a;
+    } else {
+      out[key] = b;
+    }
   }
   return out;
 }

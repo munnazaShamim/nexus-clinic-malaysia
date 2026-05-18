@@ -1,9 +1,39 @@
 // Plain data file — no "use client" — safe to import in server components
 
-export const doctors = [
+export type DoctorProfile = {
+  id: number;
+  slug: string;
+  /** If set, the doctor has a custom designed route. The generic
+   *  /doctors/[slug] catch-all skips entries with this field, and cards
+   *  in DoctorsSection link here instead. Should start and end with `/`. */
+  profilePath?: string;
+  name: string;
+  title: string;
+  photo: string;
+  photoLandscape: string;
+  specialisation: string;
+  qualifications: string[];
+  credentials: {
+    degree: string;
+    university: string;
+    universityUrl: string;
+    country: string;
+    licenseNumber: string;
+    yearsOfExperience: number;
+  };
+  clinicalFocus?: string[];
+  awards: string[];
+  bio: string;
+  instagram: string;
+  linkedin: string;
+  rating: number;
+};
+
+export const doctors: DoctorProfile[] = [
   {
     id: 1,
     slug: "preetha-nair",
+    profilePath: "/doctors/dr-preetha-nair-aesthetic-doctor/",
     name: "Dr. Preetha Nair",
     title: "Aesthetic Medical Doctor | Advocate for Natural Beauty",
     photo: "/images/doctors/dr-preetha-nair.webp",
@@ -91,5 +121,3 @@ export const doctors = [
     rating: 5,
   },
 ];
-
-export type DoctorProfile = (typeof doctors)[0];
