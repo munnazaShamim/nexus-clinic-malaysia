@@ -5,8 +5,7 @@
       "Bash(mv __TRACKED_VAR__/consultation/page.json __TRACKED_VAR__/consultation.json)",
       "Bash(mv __TRACKED_VAR__/contactUs/page.json __TRACKED_VAR__/contactUs.json)",
       "Bash(mv __TRACKED_VAR__/gallery/page.json __TRACKED_VAR__/gallery.json)",
-      "Bash(mv __TRACKED_VAR__/doctors/page.json __TRACKED_VAR__/doctorsPage.json)",
-      "Bash(node -e ' *)"
+      "Bash(mv __TRACKED_VAR__/doctors/page.json __TRACKED_VAR__/doctorsPage.json)"
     ]
   }
 }

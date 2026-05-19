@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Link } from "@/src/i18n/navigation";
+import Link from "next/link";
 import Image from "next/image";
 import {
   Star,
@@ -25,6 +25,9 @@ import {
 import Whatsapp from "@/src/components/Whatsapp";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import content from "@/src/locales/en/doctors/drPreethaNair.json";
+
+const BASE_URL = "https://www.nexus-clinic.com";
+const DOCTOR_URL = `${BASE_URL}/doctors/${content.meta.slug}/`;
 
 // Helper to check if professional background has verified content
 const hasVerifiedBackground = () => {

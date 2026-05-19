@@ -42,7 +42,7 @@ function DoctorCard({
       }}
       className="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-taupe/10 flex flex-col"
     >
-      <Link href={(doctor.profilePath ?? `/doctors/${doctor.slug}/`)} className="block group relative w-full aspect-3/4 overflow-hidden bg-cream">
+      <Link href={`/doctors/${doctor.slug}`} className="block group relative w-full aspect-3/4 overflow-hidden bg-cream">
         <Image
           src={doctor.photo}
           alt={`Portrait of ${doctor.name}`}
@@ -143,7 +143,7 @@ function DoctorCard({
             <Linkedin className="w-4 h-4" />
           </a>
           <Link
-            href={(doctor.profilePath ?? `/doctors/${doctor.slug}/`)}
+            href={`/doctors/${doctor.slug}`}
             className="ml-auto text-xs font-semibold tracking-wide text-cream bg-wine hover:bg-brown transition-colors px-4 py-2 rounded-full"
           >
             {t("viewProfile")}

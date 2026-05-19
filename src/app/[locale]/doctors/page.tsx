@@ -1,6 +1,6 @@
 export const dynamic = "force-static";
 import { routing } from "@/src/i18n/routing";
-import { DoctorsSection } from "@/src/components/DoctorSection";
+import PageProfileDoctor from "@/src/views/HomeLanding/PageDoctors";
 import React from "react";
 import { Metadata } from "next";
 import { buildAlternates } from "@/src/lib/seo";
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 }
 
 const Page = () => {
-  return <DoctorsSection />;
+  return <PageProfileDoctor />;
 };
 
 export default Page;
