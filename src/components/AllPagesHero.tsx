@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Sparkles, AlertCircle, ArrowRight } from "lucide-react";
+import { Sparkles, AlertCircle, ArrowRight, Calendar } from "lucide-react";
 import Whatsapp from "./Whatsapp";
 import Link from "next/link";
 
@@ -16,10 +16,12 @@ interface TreatmentHeroProps {
   image: string;
   imageAlt: string;
   ctaText: string;
-  ctaLink?: string; 
+  ctaLink?: string;
   whatsappMessage: string;
-  floatingTitle?: string;
-  floatingSubtitle?: string;
+  /** Doctor name shown on the floating image card */
+  doctorName?: string;
+  /** Doctor credentials e.g. "MBBS (UM) | AAM Certified" */
+  doctorCredentials?: string;
   staggerContainer: any;
   fadeInLeft: any;
   fadeInRight: any;
@@ -36,158 +38,174 @@ export default function AllPagesHero({
   image,
   imageAlt,
   ctaText,
+  ctaLink = "/contact-us/",
   whatsappMessage,
-  floatingTitle = "Refreshed Look",
-  floatingSubtitle = "Restored brightness • Natural results",
-  ctaLink = "/contact-us",
+  doctorName,
+  doctorCredentials,
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
 }: TreatmentHeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Desktop: Original gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cream/60 via-light to-rose/15 hidden lg:block" />
-      
-      {/* Mobile: Image as background with overlay */}
-      <div className="absolute inset-0 z-0 lg:hidden">
-        <Image
-          src={image}
-          alt={imageAlt}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-          quality={85}
-        />
-        {/* Strong overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/85" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/50" />
-      </div>
+    <>
+      {/* ─────────────────────────────────────────────
+          HERO SECTION
+      ───────────────────────────────────────────── */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#FDFBF7] via-[#F9F5F0] to-[#F3ECE3] pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24">
 
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto max-w-6xl relative z-10 px-4 py-12 md:py-20 lg:py-28"
-      >
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-          {/* LEFT CONTENT */}
-          <motion.div variants={fadeInLeft} className="space-y-5 md:space-y-6">
-            {/* Badge - Different styles for mobile vs desktop */}
-            <motion.div
-              variants={fadeInUp}
-              className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full lg:bg-rose/10 bg-white/10 backdrop-blur-md lg:backdrop-blur-none border border-white/20 lg:border-none"
-            >
-              <Sparkles className="w-3.5 h-3.5 md:w-4 md:h-4 text-white lg:text-wine" />
-              <span className="text-xs md:text-sm font-inter text-white lg:text-wine font-medium">
-                {badge}
-              </span>
-            </motion.div>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="container mx-auto max-w-6xl relative z-10 px-4 md:px-6"
+        >
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
-            {/* Title - White on mobile, Brown on desktop */}
-            <motion.h1
-              variants={fadeInUp}
-              className="font-georgia text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white lg:text-brown leading-tight drop-shadow-lg lg:drop-shadow-none"
-            >
-              {title}{" "}
-              <span className="text-rose-200 italic lg:text-wine block sm:inline">
-                {highlight}
-              </span>
-            </motion.h1>
-
-            {/* Description - White on mobile, Taupe on desktop */}
-            <motion.p
-              variants={fadeInUp}
-              className="text-base sm:text-lg md:text-xl text-white lg:text-taupe font-inter leading-relaxed drop-shadow-md lg:drop-shadow-none"
-            >
-              {description}
-            </motion.p>
-
-            {/* Details - White on mobile, Brown on desktop */}
-            {details && (
-              <motion.p
-                variants={fadeInUp}
-                className="text-sm md:text-base text-white lg:text-brown font-inter drop-shadow-md lg:drop-shadow-none"
-              >
-                {details}
-              </motion.p>
-            )}
-
-            {/* Note - Hidden on mobile, visible on desktop with original styling */}
-            {note && (
-              <motion.div className="bg-wine/5 p-3 md:p-4 rounded-xl border-l-4 border-wine hidden lg:block">
-                <p className="text-wine font-inter font-semibold text-xs md:text-sm flex items-center gap-2">
-                  <AlertCircle className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                  Important Clinical Note
-                </p>
-                <p className="text-taupe font-inter text-xs md:text-sm mt-1 leading-relaxed">
-                  {note}
-                </p>
-              </motion.div>
-            )}
-
-            {/* CTA Buttons */}
+            {/* ── LEFT CONTENT ─────────────────────── */}
             <motion.div
               variants={fadeInLeft}
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 items-stretch sm:items-center justify-start pt-4"
+              className="lg:col-span-7 max-w-xl mx-auto lg:mx-0"
             >
-              {/* Primary Button - Different styling on mobile */}
-              <Link
-                href={ctaLink || "#"} 
-                className="transition-transform duration-200 hover:translate-x-1 px-6 md:px-8 py-3.5 md:py-4 rounded-full font-georgia text-base md:text-lg transition-all shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto lg:bg-wine lg:text-light bg-white text-wine font-semibold lg:font-normal"
+              {/* Badge */}
+              <motion.div
+                variants={fadeInUp}
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#8C2A3C]/5 border border-[#8C2A3C]/15 mb-4"
               >
-                {ctaText}
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
-              </Link>
+                <Sparkles className="w-3.5 h-3.5 text-[#8C2A3C] shrink-0" />
+                <span className="text-xs font-medium tracking-widest uppercase font-inter text-[#8C2A3C]">
+                  {badge}
+                </span>
+              </motion.div>
 
-                <Whatsapp message={whatsappMessage} variant="light" />
+              {/* H1 — 4xl mobile → 5xl desktop (48px cap for premium feel) */}
+              <motion.h1
+                variants={fadeInUp}
+                className="font-georgia text-4xl sm:text-5xl lg:text-5xl text-[#3A2D27] leading-[1.18] tracking-tight mb-3"
+              >
+                {title}{" "}
+                <span className="text-[#8C2A3C] italic font-normal block sm:inline">
+                  {highlight}
+                </span>
+              </motion.h1>
+
+              {/* Description */}
+              <motion.p
+                variants={fadeInUp}
+                className="text-base sm:text-lg text-[#65554D] font-inter leading-relaxed mb-2"
+              >
+                {description}
+              </motion.p>
+
+              {/* Optional supporting detail line */}
+              {details && (
+                <motion.p
+                  variants={fadeInUp}
+                  className="text-sm text-[#3A2D27]/70 font-inter leading-relaxed mb-6"
+                >
+                  {details}
+                </motion.p>
+              )}
+
+              {/* ── CTA ROW ─── */}
+              <motion.div
+                variants={fadeInLeft}
+                className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-6"
+              >
+                {/* Primary — solid filled */}
+                <Link
+                  href={ctaLink}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#8C2A3C] text-white font-georgia text-base font-medium transition-all duration-200 hover:bg-[#70212F] shadow-sm hover:shadow-md w-full sm:w-auto"
+                >
+                  <Calendar className="w-4 h-4 shrink-0" />
+                  {ctaText}
+                </Link>
+
+                {/* Secondary — outline only, Whatsapp manages its own styling */}
+                <Whatsapp
+                  message={whatsappMessage}
+                  variant="dark"
+                />
+              </motion.div>
+
+              {/* Clinical Note — hidden below sm to protect mobile fold */}
+              {note && (
+                <motion.div
+                  variants={fadeInUp}
+                  className="hidden sm:flex items-start gap-3 mt-6 bg-[#8C2A3C]/5 border-l-4 border-[#8C2A3C] rounded-r-xl p-4"
+                  style={{ borderRadius: "0 12px 12px 0" }}
+                >
+                  <AlertCircle className="w-4 h-4 text-[#8C2A3C] shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-[#8C2A3C] font-inter font-semibold text-xs uppercase tracking-wider mb-1">
+                      Important Clinical Note
+                    </p>
+                    <p className="text-[#65554D] font-inter text-xs leading-relaxed">
+                      {note}
+                    </p>
+                  </div>
+                </motion.div>
+              )}
             </motion.div>
-          </motion.div>
 
-          {/* DESKTOP IMAGE - ORIGINAL DESIGN */}
-          <motion.div
-            variants={fadeInRight}
-            className="relative hidden lg:block"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4]">
-              <Image
-                src={image}
-                alt={imageAlt}
-                fill
-                priority
-                className="object-cover"
-                sizes="50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent" />
-            </div>
+            {/* ── RIGHT IMAGE ──────────────────────── */}
+            <motion.div
+              variants={fadeInRight}
+              className="lg:col-span-5 relative w-full max-w-sm mx-auto lg:max-w-none mt-4 lg:mt-0"
+            >
+              {/* pb-8 reserves room for the -bottom-4 float card overhang */}
+              <div className="relative pb-8">
 
-            <div className="absolute -bottom-6 -left-6 bg-cream p-4 rounded-xl shadow-lg">
-              <p className="font-inter font-bold text-brown">
-                {floatingTitle}
-              </p>
-              <p className="font-inter text-sm text-taupe">
-                {floatingSubtitle}
-              </p>
-            </div>
-          </motion.div>
-        </div>
+                {/* Image frame — overflow-hidden scoped here only */}
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] bg-[#F3ECE3]">
+                  <Image
+                    src={image}
+                    alt={imageAlt}
+                    fill
+                    priority
+                    className="object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    quality={90}
+                  />
+                  {/* Subtle warm vignette */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3A2D27]/25 via-transparent to-transparent pointer-events-none" />
+                </div>
 
-        {/* MOBILE FLOATING CARD - White text with glass effect */}
-        <motion.div
-          variants={fadeInUp}
-          className="lg:hidden mt-6 bg-white/15 backdrop-blur-lg rounded-xl p-4 border border-white/30 shadow-xl"
-        >
-          <p className="font-inter font-bold text-white text-base">
-            {floatingTitle}
-          </p>
-          <p className="font-inter text-white/90 text-xs mt-1">
-            {floatingSubtitle}
-          </p>
+                {/* Floating credential card — sits outside overflow-hidden */}
+                <div className="absolute -bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:w-[220px] bg-white/95 backdrop-blur-md rounded-xl border border-[#3A2D27]/8 p-4 shadow-lg">
+                  {doctorName ? (
+                    <>
+                      <p className="font-inter font-semibold text-xs text-[#8C2A3C] uppercase tracking-wider mb-0.5">
+                        Your Doctor
+                      </p>
+                      <p className="font-inter font-bold text-sm text-[#3A2D27]">
+                        {doctorName}
+                      </p>
+                      {doctorCredentials && (
+                        <p className="font-inter text-xs text-[#65554D] mt-0.5 leading-relaxed">
+                          {doctorCredentials}
+                        </p>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <p className="font-inter font-bold text-sm text-[#3A2D27]">
+                        Trusted by clients
+                      </p>
+                      <p className="font-inter text-xs text-[#65554D] mt-0.5">
+                        Kuala Lumpur, Malaysia
+                      </p>
+                    </>
+                  )}
+                </div>
+
+              </div>
+            </motion.div>
+
+          </div>
         </motion.div>
-      </motion.div>
-    </section>
+      </section>
+    </>
   );
 }
