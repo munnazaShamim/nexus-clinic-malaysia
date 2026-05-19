@@ -21,12 +21,13 @@ import {
   fadeInUp,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import Whatsapp from "@/src/components/Whatsapp";
-const MonopauseLanding = () => {
-  const t = useTranslations("regenerative.menopause");
+const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "regenerative/menopause");
 
   const faqData = [
     {

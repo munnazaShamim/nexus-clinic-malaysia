@@ -26,14 +26,19 @@ import {
   scaleIn,
   staggerContainer,
 } from "@/src/lib/animations";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import Image from "next/image";
-export default function EDTreatment() {
-  const t = useTranslations("regenerative.edTreatment");
+export default function EDTreatment({
+  locale = fallbackLng,
+}: {
+  locale?: string;
+}) {
+  const { t } = useTranslation(locale, "regenerative/edTreatment");
 
   const images = {
     doctorConsultation: "/images/regenerative/ed-treatment.webp",

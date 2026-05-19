@@ -19,12 +19,17 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
 import Image from "next/image";
-const HCGWeightLossLanding = () => {
-  const t = useTranslations("weightLoss.hcg");
+const HCGWeightLossLanding = ({
+  locale = fallbackLng,
+}: {
+  locale?: string;
+}) => {
+  const { t } = useTranslation(locale, "weightLoss/hcg");
 
   const faqs = [
     {

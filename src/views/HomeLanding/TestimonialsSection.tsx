@@ -1,8 +1,6 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import { Star, Quote } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
 const GlassCard = ({
   children,
@@ -18,8 +16,7 @@ const GlassCard = ({
   </div>
 );
 
-const TestimonialsSection = () => {
-  const t = useTranslations("home");
+const TestimonialsSection = ({ t }: { t: (key: string) => string }) => {
   const [current, setCurrent] = useState(0);
   const testimonials = [
     {

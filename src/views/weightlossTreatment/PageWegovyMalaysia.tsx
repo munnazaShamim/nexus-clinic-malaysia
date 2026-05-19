@@ -21,13 +21,18 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
 
 import Link from "next/link";
-export default function PageWegovyMalaysia() {
-  const t = useTranslations("weightLoss.wegovy");
+export default function PageWegovyMalaysia({
+  locale = fallbackLng,
+}: {
+  locale?: string;
+}) {
+  const { t } = useTranslation(locale, "weightLoss/wegovy");
 
   const faqs = [
     {

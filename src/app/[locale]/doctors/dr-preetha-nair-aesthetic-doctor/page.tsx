@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import content from "@/src/locales/en/doctors/drPreethaNair.json";
 import DrPreethaNairPage from "./DrPreethaNairPage";
-import { buildAlternates, BASE_URL } from "@/src/lib/seo";
 
-const DOCTOR_PATH = `/doctors/${content.meta.slug}/`;
-const DOCTOR_URL = `${BASE_URL}${DOCTOR_PATH}`;
+const BASE_URL = "https://www.nexus-clinic.com";
+const DOCTOR_URL = `${BASE_URL}/doctors/${content.meta.slug}/`;
 
 // Schema Markup - Single Physician + MedicalBusiness association
 const physicianSchema = {
@@ -73,17 +72,14 @@ const physicianSchema = {
     }
   ]
 };
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: content.meta.title,
     description: content.meta.description,
     keywords: `${content.meta.mainKeyword}, ${content.meta.secondaryKeywords}`,
-    alternates: buildAlternates(locale, DOCTOR_PATH),
+    alternates: {
+      canonical: DOCTOR_URL,
+    },
     openGraph: {
       title: content.meta.title,
       description: content.meta.description,

@@ -1,11 +1,9 @@
+import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
-import { Link } from "@/src/i18n/navigation";
 
-const ServicesSection = async () => {
-  const t = await getTranslations("home");
+const ServicesSection = ({ t }: { t: (key: string) => string }) => {
   const services = [
     {
       title: t("services.items.facial.title"),

@@ -19,7 +19,8 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
 
@@ -70,22 +71,26 @@ interface FAQ {
   a: string;
 }
 
-export default function DoctorMonitoredLanding() {
-  const t = useTranslations("weightLoss.doctorMonitored");
+export default function DoctorMonitoredLanding({
+  locale = fallbackLng,
+}: {
+  locale?: string;
+}) {
+  const { t } = useTranslation(locale, "weightLoss/doctorMonitored");
 
   // Type-safe translation getters
-  const trustBarItems = t.raw("trustBar") as TrustBarItem[];
-  const programmeItems = t.raw("programmeAtGlance.items") as ProgrammeItem[];
-  const rootCauseFactors = t.raw("rootCauses.factors") as RootCauseFactor[];
-  const patientProfiles = t.raw("patientProfile.profiles") as PatientProfile[];
-  const protectionItems = t.raw("professionalGuidance.protectionItems") as string[];
-  const medicationsList = t.raw("medications.list") as Medication[];
-  const stepByStepItems = t.raw("stepByStep.steps") as StepItem[];
-  const pricingItems = t.raw("pricing.prices") as PricingItem[];
-  const resultFactors = t.raw("results.factors") as string[];
-  const comparisons = t.raw("results.comparisons") as ComparisonItem[];
-  const whyNexusPoints = t.raw("whyNexus.points") as string[];
-  const faqs = t.raw("faq.items") as FAQ[];
+  const trustBarItems = t("trustBar", { returnObjects: true }) as TrustBarItem[];
+  const programmeItems = t("programmeAtGlance.items", { returnObjects: true }) as ProgrammeItem[];
+  const rootCauseFactors = t("rootCauses.factors", { returnObjects: true }) as RootCauseFactor[];
+  const patientProfiles = t("patientProfile.profiles", { returnObjects: true }) as PatientProfile[];
+  const protectionItems = t("professionalGuidance.protectionItems", { returnObjects: true }) as string[];
+  const medicationsList = t("medications.list", { returnObjects: true }) as Medication[];
+  const stepByStepItems = t("stepByStep.steps", { returnObjects: true }) as StepItem[];
+  const pricingItems = t("pricing.prices", { returnObjects: true }) as PricingItem[];
+  const resultFactors = t("results.factors", { returnObjects: true }) as string[];
+  const comparisons = t("results.comparisons", { returnObjects: true }) as ComparisonItem[];
+  const whyNexusPoints = t("whyNexus.points", { returnObjects: true }) as string[];
+  const faqs = t("faq.items", { returnObjects: true }) as FAQ[];
 
   // Icon mapping helper
   const getIconComponent = (iconName: string, className: string) => {

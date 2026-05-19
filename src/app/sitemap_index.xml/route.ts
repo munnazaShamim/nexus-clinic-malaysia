@@ -1,3 +1,4 @@
+import { MetadataRoute } from "next";
 import { faceTreatmentsMetadata } from "@/src/config/faceTreatments";
 import { hairTreatmentsMetadata } from "@/src/config/hairTreatments";
 import { skinTreatmentsMetadata } from "@/src/config/skinTreatments";
@@ -5,13 +6,14 @@ import { regenerativeTreatmentsMetadata } from "@/src/config/regenerativeTreatme
 import { weightlossTreatmentsMetadata } from "@/src/config/weightlossTreatments";
 import { wordpressService } from "@/src/services/wordpress";
 import { doctors } from "@/src/data/doctorProfiles";
-import { routing } from "@/src/i18n/routing";
-import { BASE_URL, localizedUrl } from "@/src/lib/seo";
 
 export async function GET() {
-  const withSlash = (url: string) => (url.endsWith("/") ? url : `${url}/`);
-  const now = new Date();
-
+  const baseUrl = process.env.BASE_URL || "https://www.nexus-clinic.com";
+  
+  const withSlash = (url: string) => {
+    return url.endsWith("/") ? url : `${url}/`;
+  };
+  
   const staticRoutes = [
     "",
     "/about-us",
@@ -29,35 +31,32 @@ export async function GET() {
     "/fraqtional-laser-resurfacing",
   ];
 
-  // Emit one URL per locale for every non-blog route.
-  const localizedRoutes = (paths: string[]) => {
-    const out: Array<{ url: string; lastModified: Date }> = [];
-    for (const path of paths) {
-      for (const locale of routing.locales) {
-        out.push({ url: localizedUrl(locale, path), lastModified: now });
-      }
-    }
-    return out;
+  const staticUrls = staticRoutes.map((route) => ({
+    url: withSlash(`${baseUrl}${route}`),
+    lastModified: new Date(),
+  }));
+
+  const generateDynamicUrls = (items: { slug: string }[], basePath: string) => {
+    return items.map((item) => ({
+      url: withSlash(`${baseUrl}/${basePath}/${item.slug}`),
+      lastModified: new Date(),
+    }));
   };
 
-  const staticUrls = localizedRoutes(staticRoutes);
+  const faceUrls = generateDynamicUrls(faceTreatmentsMetadata, "face");
+  const hairUrls = generateDynamicUrls(hairTreatmentsMetadata, "hair");
+  const skinUrls = generateDynamicUrls(skinTreatmentsMetadata, "skin");
+  const regenerativeUrls = generateDynamicUrls(regenerativeTreatmentsMetadata, "regenerative");
+  const weightLossUrls = generateDynamicUrls(weightlossTreatmentsMetadata, "weight-loss");
+  const doctorUrls = generateDynamicUrls(doctors, "doctors");
 
-  const treatmentPaths = (items: { slug: string }[], basePath: string) =>
-    items.map((item) => `/${basePath}/${item.slug}`);
-
-  const faceUrls = localizedRoutes(treatmentPaths(faceTreatmentsMetadata, "face"));
-  const hairUrls = localizedRoutes(treatmentPaths(hairTreatmentsMetadata, "hair"));
-  const skinUrls = localizedRoutes(treatmentPaths(skinTreatmentsMetadata, "skin"));
-  const regenerativeUrls = localizedRoutes(treatmentPaths(regenerativeTreatmentsMetadata, "regenerative"));
-  const weightLossUrls = localizedRoutes(treatmentPaths(weightlossTreatmentsMetadata, "weight-loss"));
-  const doctorUrls = localizedRoutes(treatmentPaths(doctors, "doctors"));
-
-  // Blogs are English-only (not under [locale]) — never emit locale variants.
+  // Fix: Add explicit type
   let blogUrls: Array<{ url: string; lastModified: Date }> = [];
+
   try {
     const posts = await wordpressService.getAllPosts();
     blogUrls = posts.map((post) => ({
-      url: withSlash(`${BASE_URL}/blogs/${post.slug}`),
+      url: withSlash(`${baseUrl}/blogs/${post.slug}`),
       lastModified: new Date(post.modified || post.date),
     }));
   } catch (err) {
@@ -75,6 +74,7 @@ export async function GET() {
     ...blogUrls,
   ];
 
+  // Generate XML
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${allUrls.map((url) => `

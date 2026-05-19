@@ -5,6 +5,28 @@ import { fadeInUp, staggerContainer } from "../lib/animations";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
+[
+  {
+    q: "Is Wegovy safe for weight loss in Malaysia?",
+    a: "Yes, Wegovy is prescribed under medical guidance in Malaysia and is considered safe for most adults. Our doctors conduct thorough assessments before prescribing.",
+  },
+  {
+    q: "Can I get Wegovy without diabetes?",
+    a: "Yes! Wegovy is specifically designed for weight loss, even if you do not have diabetes. It's approved for chronic weight management in eligible adults.",
+  },
+  {
+    q: "What are Wegovy's side effects?",
+    a: "Mild side effects include nausea and tiredness, which typically improve over time. More serious but rare side effects may include pancreatitis or gallbladder issues.",
+  },
+  {
+    q: "How fast can I lose weight with Wegovy?",
+    a: "Many people see changes in 2–4 weeks. Results improve significantly with healthy eating and regular exercise. Individual results vary.",
+  },
+  {
+    q: "How do I use Wegovy?",
+    a: "It's a weekly pen injection in the stomach, thigh, or upper arm. Our medical team will provide complete training and ongoing support.",
+  },
+];
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = useState(false);
 

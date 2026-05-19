@@ -1,5 +1,5 @@
 export const dynamic = "force-static";
-import { routing } from "@/src/i18n/routing";
+import { languages } from "@/src/i18n/settings";
 import type { Metadata } from "next";
 import { hairTreatmentsMetadata } from "@/src/config/hairTreatments";
 import HairTransplant from "@/src/views/hairTreatment/HairTransplant";
@@ -15,7 +15,6 @@ import AlopeciaArea from "@/src/views/hairTreatment/AlopeciaArea";
 import { notFound } from "next/navigation";
 import { hairSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
-import { buildAlternates, localizedUrl } from "@/src/lib/seo";
 
 const components: Record<string, React.ComponentType<{ locale: string }>> = {
   HairTransplant,
@@ -32,7 +31,7 @@ const components: Record<string, React.ComponentType<{ locale: string }>> = {
 
 export async function generateStaticParams() {
   const paths = [];
-  for (const locale of routing.locales) {
+  for (const locale of languages) {
     for (const treatment of hairTreatmentsMetadata) {
       paths.push({ locale, slug: treatment.slug });
     }
@@ -58,13 +57,15 @@ export async function generateMetadata({
     };
   }
   
-  const path = `/hair/${slug}/`;
-  const url = localizedUrl(locale, path);
+  const baseUrl = process.env.BASE_URL|| "https://www.nexus-clinic.com";
+  const url = locale === 'en' 
+    ? `${baseUrl}/hair/${slug}` 
+    : `${baseUrl}/${locale}/hair/${slug}`;
 
   return {
     title: treatment.title,
     description: treatment.description,
-    alternates: buildAlternates(locale, path),
+    alternates: { canonical: url },
     openGraph: {
       title: treatment.title,
       description: treatment.description,

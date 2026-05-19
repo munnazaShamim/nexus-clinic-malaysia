@@ -29,14 +29,15 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages"
 import Image from "next/image";
 
-const ZepboundLanding = () => {
-  const t = useTranslations("weightLoss.zepbound");
+const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "weightLoss/zepbound");
 
   const transformations = [
     {

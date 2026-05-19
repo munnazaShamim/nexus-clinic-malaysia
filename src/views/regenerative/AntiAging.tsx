@@ -10,13 +10,14 @@ import {
 } from "lucide-react";
 import { staggerContainer, fadeInUp, fadeInRight, fadeInLeft } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
-const AntiAgingLanding = () => {
-  const t = useTranslations("regenerative.antiAging");
+const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "regenerative/antiAging");
 
   const transformations = [
     {

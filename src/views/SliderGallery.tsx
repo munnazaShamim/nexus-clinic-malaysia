@@ -11,14 +11,12 @@ import {
   Layers,
 } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import {
   galleryItems,
   GALLERY_CATEGORIES,
   type GalleryItem,
   type GalleryCategory,
 } from "@/src/lib/data";
-
 function BeforeAfterSlider({
   item,
   priority = false,
@@ -26,7 +24,6 @@ function BeforeAfterSlider({
   item: GalleryItem;
   priority?: boolean;
 }) {
-  const t = useTranslations("gallery");
   const [pos, setPos] = useState(50);
   const [dragging, setDragging] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -47,8 +44,9 @@ function BeforeAfterSlider({
       onMouseMove={(e) => dragging && update(e.clientX)}
       onTouchMove={(e) => update(e.touches[0].clientX)}
       role="img"
-      aria-label={t("comparisonAria", { title: item.title })}
+      aria-label={`Before and after comparison: ${item.title}`}
     >
+      {/* AFTER */}
       <figure className="absolute inset-0 m-0">
         <Image
           src={item.afterSrc}
@@ -61,6 +59,7 @@ function BeforeAfterSlider({
         <figcaption className="sr-only">{item.altAfter}</figcaption>
       </figure>
 
+      {/* BEFORE — clip */}
       <figure
         className="absolute inset-0 m-0 overflow-hidden"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
@@ -76,13 +75,15 @@ function BeforeAfterSlider({
         <figcaption className="sr-only">{item.altBefore}</figcaption>
       </figure>
 
+      {/* Labels */}
       <span className="absolute bottom-3 left-3 text-[10px] font-semibold tracking-widest uppercase bg-brown/90 text-cream px-2.5 py-1 rounded-full pointer-events-none">
-        {t("labels.before")}
+        Before
       </span>
       <span className="absolute bottom-3 right-3 text-[10px] font-semibold tracking-widest uppercase bg-wine/90 text-cream px-2.5 py-1 rounded-full pointer-events-none">
-        {t("labels.after")}
+        After
       </span>
 
+      {/* Divider */}
       <div
         className="absolute top-0 bottom-0 w-[2px] bg-white/90 shadow-lg pointer-events-none"
         style={{ left: `${pos}%` }}
@@ -105,7 +106,6 @@ function GalleryCard({
   index: number;
   onOpen: (item: GalleryItem) => void;
 }) {
-  const t = useTranslations("gallery");
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
@@ -121,24 +121,28 @@ function GalleryCard({
       }}
       className="group bg-light rounded-2xl overflow-hidden border border-taupe/10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col"
     >
+      {/* Image area */}
       <div className="relative w-full aspect-[4/3]">
         <BeforeAfterSlider item={item} priority={index < 4} />
 
+        {/* Tag badge */}
         {item.tag && (
           <span className="absolute top-3 left-3 text-[10px] font-semibold tracking-widest uppercase bg-wine text-cream px-2.5 py-1 rounded-full z-10">
             {item.tag}
           </span>
         )}
 
+        {/* Expand button */}
         <button
           onClick={() => onOpen(item)}
-          aria-label={t("card.viewDetails", { title: item.title })}
+          aria-label={`View full details for ${item.title}`}
           className="absolute top-3 right-3 w-8 h-8 rounded-full bg-glass backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-white"
         >
           <ZoomIn className="w-4 h-4 text-brown" />
         </button>
       </div>
 
+      {/* Text */}
       <div className="p-5 flex flex-col flex-1">
         <span className="text-[10px] uppercase tracking-[0.2em] text-wine font-semibold mb-1">
           {item.category}
@@ -153,7 +157,7 @@ function GalleryCard({
           <div className="flex items-center gap-1.5 text-taupe text-xs">
             <Layers className="w-3.5 h-3.5 text-wine" />
             <span>
-              {item.sessionsN} {item.sessions > 1 ? t("card.sessions") : t("card.session")}
+              {item.sessionsN} session{item.sessions > 1 ? "s" : ""}
             </span>
           </div>
           <div className="flex items-center gap-1.5 text-taupe text-xs">
@@ -179,7 +183,6 @@ function LightboxModal({
   onPrev: () => void;
   onNext: () => void;
 }) {
-  const t = useTranslations("gallery");
   return (
     <AnimatePresence>
       <motion.div
@@ -197,10 +200,12 @@ function LightboxModal({
           className="bg-light rounded-3xl overflow-hidden max-w-4xl w-full max-h-[90vh] flex flex-col md:flex-row shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
+          {/* Slider panel */}
           <div className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto shrink-0">
             <BeforeAfterSlider item={item} priority />
           </div>
 
+          {/* Info panel */}
           <div className="p-8 flex flex-col overflow-y-auto">
             <span className="text-[10px] uppercase tracking-[0.2em] text-wine font-semibold mb-2">
               {item.category}
@@ -213,7 +218,7 @@ function LightboxModal({
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-cream rounded-xl p-4 text-center">
                 <p className="font-georgia text-wine text-2xl">
-                  {item.sessions} {item.sessions > 1 ? t("lightbox.sessions") : t("lightbox.session")}
+                  {item.sessions} {item.sessions > 1 ? " Sessions" : " Session"}
                 </p>
               </div>
               <div className="bg-cream rounded-xl p-4 text-center">
@@ -225,7 +230,7 @@ function LightboxModal({
 
             <div className="mb-6">
               <h4 className="text-brown text-xs font-semibold uppercase tracking-wider mb-2">
-                {t("lightbox.beforeHeading")}
+                Before
               </h4>
               <p className="text-taupe text-sm leading-relaxed">
                 {item.altBefore}
@@ -233,7 +238,7 @@ function LightboxModal({
             </div>
             <div className="mb-8">
               <h4 className="text-brown text-xs font-semibold uppercase tracking-wider mb-2">
-                {t("lightbox.afterHeading")}
+                After
               </h4>
               <p className="text-taupe text-sm leading-relaxed">
                 {item.altAfter}
@@ -245,28 +250,30 @@ function LightboxModal({
               className="mt-auto block text-center bg-wine hover:bg-brown transition-colors text-cream font-semibold text-sm py-3 rounded-full"
               onClick={onClose}
             >
-              {t("lightbox.bookConsultation")}
+              Book a Consultation
             </a>
           </div>
 
+          {/* Close */}
           <button
             onClick={onClose}
-            aria-label={t("lightbox.closeAria")}
+            aria-label="Close gallery detail"
             className="absolute top-4 right-4 w-9 h-9 rounded-full bg-cream/90 backdrop-blur flex items-center justify-center hover:bg-wine hover:text-cream transition-colors"
           >
             <X className="w-4 h-4" />
           </button>
 
+          {/* Prev / Next */}
           <button
             onClick={onPrev}
-            aria-label={t("lightbox.prevAria")}
+            aria-label="Previous result"
             className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-cream/90 backdrop-blur flex items-center justify-center hover:bg-wine hover:text-cream transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
             onClick={onNext}
-            aria-label={t("lightbox.nextAria")}
+            aria-label="Next result"
             className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-cream/90 backdrop-blur flex items-center justify-center hover:bg-wine hover:text-cream transition-colors"
           >
             <ChevronRight className="w-4 h-4" />
@@ -278,7 +285,6 @@ function LightboxModal({
 }
 
 export default function GalleryPage() {
-  const t = useTranslations("gallery");
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>("All");
   const [lightboxItem, setLightboxItem] = useState<GalleryItem | null>(null);
   const headerRef = useRef(null);
@@ -305,10 +311,12 @@ export default function GalleryPage() {
   return (
     <>
       <main className="bg-cream min-h-screen" id="gallery">
+        {/* ── PAGE HERO ── */}
         <section
           className="relative bg-light overflow-hidden py-28 md:py-36"
           aria-labelledby="gallery-hero-heading"
         >
+          {/* Decorative rings */}
           <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full border border-wine/20" />
           <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full border border-wine/10" />
           <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full border border-taupe/20" />
@@ -323,7 +331,7 @@ export default function GalleryPage() {
               transition={{ duration: 0.5 }}
               className="text-wine uppercase tracking-[0.3em] text-xs font-semibold mb-4"
             >
-              {t("hero.eyebrow")}
+              Before &amp; After Gallery
             </motion.p>
             <motion.h1
               id="gallery-hero-heading"
@@ -332,9 +340,9 @@ export default function GalleryPage() {
               transition={{ duration: 0.65, delay: 0.1 }}
               className="font-georgia text-brown text-5xl md:text-6xl leading-tight mb-6"
             >
-              {t("hero.titleLine1")}
+              Real Results,
               <br />
-              <em className="text-wine italic">{t("hero.titleLine2")}</em>
+              <em className="text-wine italic">Real People</em>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -342,13 +350,16 @@ export default function GalleryPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-taupe max-w-lg mx-auto text-base leading-relaxed"
             >
-              {t("hero.description")}
+              Every transformation you see was achieved by our certified
+              physicians using evidence-based treatments. Drag each slider to
+              reveal the journey.
             </motion.p>
           </div>
         </section>
 
+        {/* ── CATEGORY FILTER ── */}
         <nav
-          aria-label={t("filter.ariaLabel")}
+          aria-label="Filter gallery by treatment category"
           className="sticky top-0 z-30 bg-cream/95 backdrop-blur-sm border-b border-taupe/15 shadow-sm"
         >
           <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4">
@@ -381,21 +392,23 @@ export default function GalleryPage() {
           </div>
         </nav>
 
+        {/* ── GRID ── */}
         <section
           className="max-w-7xl mx-auto px-6 lg:px-12 py-16"
-          aria-label={t("results.ariaLabel", { category: activeCategory })}
+          aria-label={`Gallery results for ${activeCategory}`}
         >
+          {/* Result count */}
           <div className="flex items-center justify-between mb-8">
             <p className="text-taupe text-sm">
-              {t("results.showing")}{" "}
+              Showing{" "}
               <span className="text-brown font-semibold">
                 {filtered.length}
               </span>{" "}
-              {t("results.results")}
+              results
               {activeCategory !== "All" && (
                 <>
                   {" "}
-                  {t("results.in")}{" "}
+                  in{" "}
                   <span className="text-wine font-semibold">
                     {activeCategory}
                   </span>
@@ -427,19 +440,23 @@ export default function GalleryPage() {
           {filtered.length === 0 && (
             <div className="text-center py-24">
               <p className="text-taupe text-lg">
-                {t("results.noResults")}
+                No results found for this category.
               </p>
             </div>
           )}
         </section>
 
+        {/* Disclaimer */}
         <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20">
           <p className="text-center text-taupe/60 text-xs">
-            {t("disclaimer")}
+            * Individual results may vary. All treatments are performed by
+            certified medical professionals at Nexus Clinic Malaysia. Images are
+            real patient cases with consent.
           </p>
         </div>
       </main>
 
+      {/* ── LIGHTBOX ── */}
       {lightboxItem && (
         <LightboxModal
           item={lightboxItem}

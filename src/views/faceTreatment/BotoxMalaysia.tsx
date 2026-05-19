@@ -23,7 +23,8 @@ import {
   fadeInUp,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
@@ -122,8 +123,8 @@ const features = [
     description: "Patients may also be guided on complementary treatments including fillers, skin boosters and collagen stimulators for balanced rejuvenation."
   }
 ];
-const BotoxMalaysia = () => {
-  const t = useTranslations("face.botoxMalaysia");
+const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "face/botoxMalaysia");
 
   
   return (

@@ -27,7 +27,8 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
@@ -49,8 +50,8 @@ const iconMap: Record<string, any> = {
   Users,
 };
 
-const LipFillerLanding = () => {
-  const t = useTranslations("face.lipFiller");
+const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "face/lipFiller");
 
   // Helper to get icon component
   const getIcon = (iconName: string) => {
@@ -58,20 +59,20 @@ const LipFillerLanding = () => {
   };
 
   // Get data from translation with fallbacks
-  const heroData = t.raw("hero") as any;
-  const treatmentOverview = t.raw("treatmentOverview") as any;
-  const whatIsLipFiller = t.raw("whatIsLipFiller") as any;
-  const lipEnhancementStyles = t.raw("lipEnhancementStyles") as any;
-  const lipFillerVsLipFlip = t.raw("lipFillerVsLipFlip") as any;
-  const whoIsItFor = t.raw("whoIsItFor") as any;
-  const commonMistakes = t.raw("commonMistakes") as any;
-  const notSuitableFor = t.raw("notSuitableFor") as any;
-  const whyNexus = t.raw("whyNexus") as any;
-  const procedure = t.raw("procedure") as any;
-  const pricing = t.raw("pricing") as any;
-  const sideEffectsAndAftercare = t.raw("sideEffectsAndAftercare") as any;
-  const faqData = t.raw("faq") as any;
-  const finalCta = t.raw("finalCta") as any;
+  const heroData = t("hero", { returnObjects: true }) as any;
+  const treatmentOverview = t("treatmentOverview", { returnObjects: true }) as any;
+  const whatIsLipFiller = t("whatIsLipFiller", { returnObjects: true }) as any;
+  const lipEnhancementStyles = t("lipEnhancementStyles", { returnObjects: true }) as any;
+  const lipFillerVsLipFlip = t("lipFillerVsLipFlip", { returnObjects: true }) as any;
+  const whoIsItFor = t("whoIsItFor", { returnObjects: true }) as any;
+  const commonMistakes = t("commonMistakes", { returnObjects: true }) as any;
+  const notSuitableFor = t("notSuitableFor", { returnObjects: true }) as any;
+  const whyNexus = t("whyNexus", { returnObjects: true }) as any;
+  const procedure = t("procedure", { returnObjects: true }) as any;
+  const pricing = t("pricing", { returnObjects: true }) as any;
+  const sideEffectsAndAftercare = t("sideEffectsAndAftercare", { returnObjects: true }) as any;
+  const faqData = t("faq", { returnObjects: true }) as any;
+  const finalCta = t("finalCta", { returnObjects: true }) as any;
 
   // Format FAQs for FAQ component
   const faqs = faqData?.items?.map((item: any) => ({

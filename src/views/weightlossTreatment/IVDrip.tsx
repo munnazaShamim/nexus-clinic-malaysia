@@ -31,11 +31,12 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 // import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages"
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
-const IVDripLanding = () => {
-  const t = useTranslations("weightLoss.ivDrip");
+const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "weightLoss/ivDrip");
 
   // const transformations = [
   //   {

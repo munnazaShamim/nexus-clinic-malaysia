@@ -14,15 +14,16 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
 import Image from "next/image";
 
-const StemCellLanding = () => {
-  const t = useTranslations("regenerative.stemCell");
+const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "regenerative/stemCell");
 
   const transformations = [
     {

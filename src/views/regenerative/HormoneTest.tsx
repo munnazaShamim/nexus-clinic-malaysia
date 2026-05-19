@@ -28,12 +28,17 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import { useTranslations } from "next-intl";
+import { useTranslation } from "@/src/i18n/client";
+import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
 import Image from "next/image";
-export default function HormoneTestLanding() {
-  const t = useTranslations("regenerative.hormoneTest");
+export default function HormoneTestLanding({
+  locale = fallbackLng,
+}: {
+  locale?: string;
+}) {
+  const { t } = useTranslation(locale, "regenerative/hormoneTest");
 
   // Updated FAQ content
   const faqs = [
