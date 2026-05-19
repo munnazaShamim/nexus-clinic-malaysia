@@ -69,14 +69,6 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   devIndicators: false,
 
-  // src/i18n/request.ts loads JSON files via fs.readdir at runtime, which
-  // Next.js's static tracing cannot follow. Without this hint Vercel ships a
-  // serverless function with no src/locales/, so every translation lookup
-  // throws MISSING_MESSAGE in production while building cleanly locally.
-  outputFileTracingIncludes: {
-    '/**/*': ['./src/locales/**/*.json'],
-  },
-
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
       exclude: ['error'],
