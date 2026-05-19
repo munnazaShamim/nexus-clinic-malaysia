@@ -1,3 +1,4 @@
+// @ts-ignore
 import "./globals.css";
 import Script from "next/script";
 import { inter } from "@/src/fonts/inter";
@@ -36,12 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o" />
+        {/* <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o" /> */}
         {/* Preconnect to critical third-party origins for faster mobile loading */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        {/* <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://api.leadconnectorhq.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" /> */}
         <Script
           id="medical-clinic-schema"
           type="application/ld+json"
@@ -54,14 +55,14 @@ export default function RootLayout({
 
       <body className={inter.className}>
          <GTM />
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PRRSXZ2"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript> */}
         {children}
       </body>
     </html>
