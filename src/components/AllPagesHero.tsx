@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Sparkles, AlertCircle, ArrowRight, Calendar } from "lucide-react";
+import { Sparkles, AlertCircle, Calendar } from "lucide-react";
 import Whatsapp from "./Whatsapp";
 import Link from "next/link";
 
@@ -18,10 +18,18 @@ interface TreatmentHeroProps {
   ctaText: string;
   ctaLink?: string;
   whatsappMessage: string;
-  /** Doctor name shown on the floating image card */
-  doctorName?: string;
-  /** Doctor credentials e.g. "MBBS (UM) | AAM Certified" */
-  doctorCredentials?: string;
+  /**
+   * floatingTitle — bold heading on the image float card.
+   * Pass a doctor name (e.g. "Dr. Vanessa Lee"),
+   * an award label (e.g. "🏆 Industry Recognised"),
+   * or any short trust line (e.g. "Refreshed Look").
+   */
+  floatingTitle?: string;
+  /**
+   * floatingSubtitle — supporting line under floatingTitle.
+   * E.g. "MBBS (UM) | AAM Certified" or "Natural results • No frozen look".
+   */
+  floatingSubtitle?: string;
   staggerContainer: any;
   fadeInLeft: any;
   fadeInRight: any;
@@ -40,8 +48,8 @@ export default function AllPagesHero({
   ctaText,
   ctaLink = "/contact-us/",
   whatsappMessage,
-  doctorName,
-  doctorCredentials,
+  floatingTitle = "Trusted by clients",
+  floatingSubtitle = "Kuala Lumpur, Malaysia",
   staggerContainer,
   fadeInLeft,
   fadeInRight,
@@ -52,26 +60,26 @@ export default function AllPagesHero({
       {/* ─────────────────────────────────────────────
           HERO SECTION
       ───────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#FDFBF7] via-[#F9F5F0] to-[#F3ECE3] pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#FDFBF7] via-[#F9F5F0] to-[#F3ECE3] pt-24 pb-20 md:pt-28 md:pb-24 lg:pt-32 lg:pb-28">
 
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="container mx-auto max-w-6xl relative z-10 px-4 md:px-6"
+          viewport={{ once: true, amount: 0.15 }}
+          className="container mx-auto max-w-7xl relative z-10 px-4 md:px-8"
         >
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 
-            {/* ── LEFT CONTENT ─────────────────────── */}
+            {/* ── LEFT CONTENT — 6 cols ─────────────── */}
             <motion.div
               variants={fadeInLeft}
-              className="lg:col-span-7 max-w-xl mx-auto lg:mx-0"
+              className="lg:col-span-6 max-w-xl mx-auto lg:mx-0"
             >
               {/* Badge */}
               <motion.div
                 variants={fadeInUp}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#8C2A3C]/5 border border-[#8C2A3C]/15 mb-4"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#8C2A3C]/5 border border-[#8C2A3C]/15 mb-5"
               >
                 <Sparkles className="w-3.5 h-3.5 text-[#8C2A3C] shrink-0" />
                 <span className="text-xs font-medium tracking-widest uppercase font-inter text-[#8C2A3C]">
@@ -79,10 +87,10 @@ export default function AllPagesHero({
                 </span>
               </motion.div>
 
-              {/* H1 — 4xl mobile → 5xl desktop (48px cap for premium feel) */}
+              {/* H1 — capped at 5xl / 48px for premium hierarchy */}
               <motion.h1
                 variants={fadeInUp}
-                className="font-georgia text-4xl sm:text-5xl lg:text-5xl text-[#3A2D27] leading-[1.18] tracking-tight mb-3"
+                className="font-georgia text-4xl sm:text-5xl lg:text-5xl text-[#3A2D27] leading-[1.18] tracking-tight mb-4"
               >
                 {title}{" "}
                 <span className="text-[#8C2A3C] italic font-normal block sm:inline">
@@ -102,7 +110,7 @@ export default function AllPagesHero({
               {details && (
                 <motion.p
                   variants={fadeInUp}
-                  className="text-sm text-[#3A2D27]/70 font-inter leading-relaxed mb-6"
+                  className="text-sm text-[#3A2D27]/65 font-inter leading-relaxed mt-2"
                 >
                   {details}
                 </motion.p>
@@ -111,9 +119,9 @@ export default function AllPagesHero({
               {/* ── CTA ROW ─── */}
               <motion.div
                 variants={fadeInLeft}
-                className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-6"
+                className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mt-8"
               >
-                {/* Primary — solid filled */}
+                {/* Primary — solid filled, dominant weight */}
                 <Link
                   href={ctaLink}
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#8C2A3C] text-white font-georgia text-base font-medium transition-all duration-200 hover:bg-[#70212F] shadow-sm hover:shadow-md w-full sm:w-auto"
@@ -122,18 +130,18 @@ export default function AllPagesHero({
                   {ctaText}
                 </Link>
 
-                {/* Secondary — outline only, Whatsapp manages its own styling */}
+                {/* Secondary — Whatsapp component handles its own outline/dark styling */}
                 <Whatsapp
                   message={whatsappMessage}
                   variant="dark"
                 />
               </motion.div>
 
-              {/* Clinical Note — hidden below sm to protect mobile fold */}
+              {/* Clinical Note — hidden on mobile to protect the conversion fold */}
               {note && (
                 <motion.div
                   variants={fadeInUp}
-                  className="hidden sm:flex items-start gap-3 mt-6 bg-[#8C2A3C]/5 border-l-4 border-[#8C2A3C] rounded-r-xl p-4"
+                  className="hidden sm:flex items-start gap-3 mt-7 bg-[#8C2A3C]/5 border-l-4 border-[#8C2A3C] p-4"
                   style={{ borderRadius: "0 12px 12px 0" }}
                 >
                   <AlertCircle className="w-4 h-4 text-[#8C2A3C] shrink-0 mt-0.5" />
@@ -149,54 +157,39 @@ export default function AllPagesHero({
               )}
             </motion.div>
 
-            {/* ── RIGHT IMAGE ──────────────────────── */}
+            {/* ── RIGHT IMAGE — 6 cols (equal split = larger image on desktop) ── */}
             <motion.div
               variants={fadeInRight}
-              className="lg:col-span-5 relative w-full max-w-sm mx-auto lg:max-w-none mt-4 lg:mt-0"
+              className="lg:col-span-6 relative w-full max-w-md mx-auto lg:max-w-none mt-6 lg:mt-0"
             >
-              {/* pb-8 reserves room for the -bottom-4 float card overhang */}
-              <div className="relative pb-8">
+              {/* pb-10 reserves vertical space for the -bottom-2 float card so it never clips */}
+              <div className="relative pb-10">
 
-                {/* Image frame — overflow-hidden scoped here only */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] bg-[#F3ECE3]">
+                {/* Image frame — overflow-hidden scoped only to this div, not the parent,
+                    so the float card below it is never cut off */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4] lg:aspect-[4/5] bg-[#F3ECE3]">
                   <Image
                     src={image}
                     alt={imageAlt}
                     fill
                     priority
                     className="object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     quality={90}
                   />
-                  {/* Subtle warm vignette */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#3A2D27]/25 via-transparent to-transparent pointer-events-none" />
+                  {/* Warm vignette — bottom-up only */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3A2D27]/30 via-transparent to-transparent pointer-events-none" />
                 </div>
 
-                {/* Floating credential card — sits outside overflow-hidden */}
-                <div className="absolute -bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:w-[220px] bg-white/95 backdrop-blur-md rounded-xl border border-[#3A2D27]/8 p-4 shadow-lg">
-                  {doctorName ? (
-                    <>
-                      <p className="font-inter font-semibold text-xs text-[#8C2A3C] uppercase tracking-wider mb-0.5">
-                        Your Doctor
-                      </p>
-                      <p className="font-inter font-bold text-sm text-[#3A2D27]">
-                        {doctorName}
-                      </p>
-                      {doctorCredentials && (
-                        <p className="font-inter text-xs text-[#65554D] mt-0.5 leading-relaxed">
-                          {doctorCredentials}
-                        </p>
-                      )}
-                    </>
-                  ) : (
-                    <>
-                      <p className="font-inter font-bold text-sm text-[#3A2D27]">
-                        Trusted by clients
-                      </p>
-                      <p className="font-inter text-xs text-[#65554D] mt-0.5">
-                        Kuala Lumpur, Malaysia
-                      </p>
-                    </>
+                {/* Floating info / credential card */}
+                <div className="absolute -bottom-2 left-4 right-4 sm:left-6 sm:right-auto sm:w-[240px] bg-white/95 backdrop-blur-md rounded-xl border border-[#3A2D27]/10 px-4 py-3.5 shadow-lg">
+                  <p className="font-inter font-bold text-sm text-[#3A2D27] leading-snug">
+                    {floatingTitle}
+                  </p>
+                  {floatingSubtitle && (
+                    <p className="font-inter text-xs text-[#65554D] mt-0.5 leading-relaxed">
+                      {floatingSubtitle}
+                    </p>
                   )}
                 </div>
 
