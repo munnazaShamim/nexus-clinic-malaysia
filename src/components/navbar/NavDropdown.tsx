@@ -79,7 +79,7 @@ export const NavDropdown = ({
                       {categoryData.items.map(
                         (subItem: { key: string; fallback: string }, idx: number) => (
                           <li key={idx}>
-                            <Link
+                            <a
                               href={getNavHref(
                                 `/${getCategoryPath(category)}/${subItem.fallback}/`
                               )}
@@ -88,7 +88,7 @@ export const NavDropdown = ({
                             >
                               <span className="w-1.5 h-1.5 rounded-full bg-taupe/30 group-hover/item:bg-wine group-hover/item:scale-125 transition-all duration-200" />
                               <span>{getText(subItem.key, subItem.fallback)}</span>
-                            </Link>
+                            </a>
                           </li>
                         )
                       )}

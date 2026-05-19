@@ -60,7 +60,7 @@ export default function AllPagesHero({
       {/* ─────────────────────────────────────────────
           HERO SECTION
       ───────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#FDFBF7] via-[#F9F5F0] to-[#F3ECE3] pt-24 pb-20 md:pt-28 md:pb-24 lg:pt-32 lg:pb-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#FDFBF7] via-[#F9F5F0] to-[#F3ECE3] pt-8 pb-8">
 
         <motion.div
           variants={staggerContainer}
@@ -69,12 +69,12 @@ export default function AllPagesHero({
           viewport={{ once: true, amount: 0.15 }}
           className="container mx-auto max-w-7xl relative z-10 px-4 md:px-8"
         >
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div className="grid md:grid-cols-12 gap-10 lg:gap-12 items-center pt-12 pb-12">
 
             {/* ── LEFT CONTENT — 6 cols ─────────────── */}
             <motion.div
               variants={fadeInLeft}
-              className="lg:col-span-6 max-w-xl mx-auto lg:mx-0"
+              className="md:col-span-7 mx-auto lg:mx-0"
             >
               {/* Badge */}
               <motion.div
@@ -157,16 +157,11 @@ export default function AllPagesHero({
               )}
             </motion.div>
 
-            {/* ── RIGHT IMAGE — 6 cols (equal split = larger image on desktop) ── */}
             <motion.div
               variants={fadeInRight}
-              className="lg:col-span-6 relative w-full max-w-md mx-auto lg:max-w-none mt-6 lg:mt-0"
+              className="md:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none mt-6 lg:mt-0"
             >
-              {/* pb-10 reserves vertical space for the -bottom-2 float card so it never clips */}
               <div className="relative pb-10">
-
-                {/* Image frame — overflow-hidden scoped only to this div, not the parent,
-                    so the float card below it is never cut off */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[3/4] lg:aspect-[4/5] bg-[#F3ECE3]">
                   <Image
                     src={image}

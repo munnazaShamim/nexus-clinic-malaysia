@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
@@ -140,10 +139,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
             ? "bg-light/95 backdrop-blur-xl shadow-lg shadow-brown/5 mt-4 md:mt-0"
@@ -203,7 +199,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
             </div>
           </div>
         )}
-      </motion.header>
+      </header>
 
       {/* Spacer */}
       <div className={`${isScrolled ? "h-16 lg:h-20" : "h-16 lg:h-28"}`} />

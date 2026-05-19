@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import {AnimatePresence } from "framer-motion";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,12 +13,7 @@ interface TopBarProps {
 export const TopBar = ({ isScrolled, getText }: TopBarProps) => {
   return (
     <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: 1, height: "auto" }}
-        exit={{ opacity: 0, height: 0 }}
-        className="bg-green text-light/90 text-xs fixed top-0 left-0 right-0 z-50"
-      >
+      <div className="bg-green text-light/90 text-xs fixed top-0 left-0 right-0 z-50">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between py-2">
             {/* LEFT SIDE */}
@@ -65,7 +60,7 @@ export const TopBar = ({ isScrolled, getText }: TopBarProps) => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </AnimatePresence>
   );
 };
