@@ -180,7 +180,13 @@ export default async function DoctorProfilePage({
               <span className="font-medium text-brown">License No:</span>
               <span> {doctor.credentials.licenseNumber}</span>
             </div>
-            
+            {doctor.credentials.registered &&
+              <div>
+                <span className="font-medium text-brown">{doctor.credentials.registered}</span>
+                <a href={doctor.credentials.registeredLink}
+                target="_blank" className="text-wine hover:underline"> Verify Registration</a>
+              </div>
+            }
             <div>
               <span className="font-medium text-brown">Experience:</span>
               <span> {doctor.credentials.yearsOfExperience}+ years</span>

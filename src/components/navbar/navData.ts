@@ -129,4 +129,7 @@ export const categoryLabels: Record<string, { key: string; fallback: string }> =
   face: { key: "categories.face", fallback: "Face" },
   hair: { key: "categories.hair", fallback: "Hair" },
   regenerative: { key: "categories.regenerative", fallback: "Regenerative" },
+  blog: { key: "categories.blog", fallback: "Blog" },
+  page: { key: "categories.page", fallback: "Page" },
+  doctors: { key: "categories.doctors", fallback: "Doctors" },
 };

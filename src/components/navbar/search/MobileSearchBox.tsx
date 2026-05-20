@@ -135,7 +135,7 @@ export const MobileSearchBox = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 6 }}
             transition={{ duration: 0.18 }}
-            className="absolute top-full left-0 right-0 mt-2 bg-light rounded-2xl shadow-2xl shadow-brown/15 border border-cream overflow-hidden z-60"
+            className="fixed left-0 right-0 mt-2 bg-light rounded-2xl shadow-2xl shadow-brown/15 border border-cream overflow-hidden z-60"
           >
             <div className="px-4 py-2.5 border-b border-cream">
               <p className="text-taupe text-xs font-inter">
@@ -143,7 +143,7 @@ export const MobileSearchBox = ({
                 &ldquo;{debouncedQuery}&rdquo;
               </p>
             </div>
-            <ul className="py-2 max-h-60 overflow-y-auto">
+            <ul className="py-2 max-h-200 overflow-y-auto">
               {results.map((item, idx) => (
                 <li key={idx}>
                   <button

@@ -47,6 +47,8 @@ export const doctors = [
       country: "Malaysia",
       licenseNumber: "82489",
       yearsOfExperience: 9, // 2017 houseman → 2026 = 9 years clinical experience
+      registered: "MCMC Registered Aesthetic Practitioner:",
+      registeredLink:"https://merits.mmc.gov.my/search/registeredDoctor?name=ashv&page=3linkedin.com/in/dr-ashvinia-bala-16261327a?originalSubdomain=my"
     },
     clinicalFocus: [
       "Aesthetic & Regenerative Medicine",

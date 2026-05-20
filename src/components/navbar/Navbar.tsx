@@ -11,10 +11,16 @@ import { TopBar } from "./TopBar";
 import { DesktopNav } from "./DesktopNav";
 import { MobileNav } from "./MobileNav";
 import { navItems } from "./navData";
-import { buildSearchIndex } from "./search/searchUtils";
+import { buildSearchIndex, deduplicateIndex } from "./search/searchUtils";
 import { SearchResult } from "@/src/types/navbar.types";
 
-const Navbar = ({ locale }: { locale?: string }) => {
+const Navbar = ({
+  locale,
+  searchIndex: serverSearchIndex = [],
+}: {
+  locale?: string;
+  searchIndex?: SearchResult[];
+}) => {
   const { t: tFallback, i18n } = useTranslation('common');
   const t = useMemo(
     () => (typeof i18n.getFixedT === 'function' ? i18n.getFixedT(locale || 'en', 'common') : tFallback),
@@ -48,12 +54,18 @@ const Navbar = ({ locale }: { locale?: string }) => {
     return translated === key ? fallback : translated;
   }, [isBlogsPage, t]);
 
-  const [searchIndex, setSearchIndex] = useState<SearchResult[]>([]);
-
-  useEffect(() => {
-    const newSearchIndex = buildSearchIndex(getText, navItems);
-    setSearchIndex(newSearchIndex);
-  }, [getText]);
+  // The server (layout) builds sitemap entries — blog posts, treatment
+  // sub-pages and extra static pages — and passes them in via `serverSearchIndex`.
+  // We merge those with the client-built nav index (whose labels are localized
+  // through `getText`). Localized nav entries come first so they win on dedupe.
+  const searchIndex = useMemo<SearchResult[]>(
+    () =>
+      deduplicateIndex([
+        ...buildSearchIndex(getText, navItems),
+        ...serverSearchIndex,
+      ]),
+    [getText, serverSearchIndex]
+  );
 
   const getLocaleHref = useCallback((langCode: string) => {
     if (isBlogsPage || pathname.includes('/blogs/')) {
@@ -155,7 +167,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
               {/* Logo */}
               <Link
                 href={getNavHref("/")}
-                className="shrink-0 relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
+                className="relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
               >
                 <Image
                   src="/images/logo.webp"

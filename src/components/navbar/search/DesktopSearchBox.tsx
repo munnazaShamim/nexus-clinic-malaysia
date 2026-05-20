@@ -131,7 +131,7 @@ export const DesktopSearchBox = ({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.97 }}
             transition={{ duration: 0.18, ease: "easeOut" }}
-            className="absolute top-full right-0 mt-2 w-72 bg-light rounded-2xl shadow-2xl shadow-brown/10 border border-cream overflow-hidden z-50"
+            className="absolute top-full right-0 mt-2 min-w-72 max-w-130 bg-light rounded-2xl shadow-2xl shadow-brown/10 border border-cream overflow-hidden z-50"
           >
             <div className="px-4 py-2.5 border-b border-cream">
               <p className="text-taupe text-xs font-inter">
@@ -139,7 +139,7 @@ export const DesktopSearchBox = ({
                 &ldquo;{debouncedQuery}&rdquo;
               </p>
             </div>
-            <ul className="py-2 max-h-72 overflow-y-auto">
+            <ul className="py-2 max-h-200 overflow-y-auto">
               {results.map((item, idx) => (
                 <motion.li
                   key={idx}

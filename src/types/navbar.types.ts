@@ -1,7 +1,21 @@
+// Known search categories. The `(string & {})` member keeps editor autocomplete
+// for the known values while still accepting any string (e.g. categories derived
+// dynamically from the sitemap or nav submenu keys), so assignments never break.
+export type SearchCategory =
+  | 'weightLoss'
+  | 'skin'
+  | 'face'
+  | 'hair'
+  | 'regenerative'
+  | 'blog'
+  | 'page'
+  | 'doctors'
+  | (string & {});
+
 export interface SearchResult {
   label: string;
   href: string;
-  category: string;
+  category: SearchCategory;
 }
 
 export interface CategoryLabel {

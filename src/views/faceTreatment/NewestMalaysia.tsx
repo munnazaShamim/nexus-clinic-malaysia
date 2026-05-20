@@ -633,6 +633,86 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
         </motion.div>
       </section>
 
+      <section className="py-20 px-4 bg-light overflow-hidden">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="container mx-auto max-w-6xl"
+        >
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <motion.div variants={fadeInLeft} className="space-y-6">
+              <div className="inline-flex items-center gap-2 bg-wine/10 px-4 py-2 rounded-full">
+                <Award className="w-4 h-4 text-wine" />
+                <span className="font-inter text-sm font-semibold text-wine tracking-wide">
+                  Trusted Excellence
+                </span>
+              </div>
+              
+              <h2 className="font-georgia text-3xl md:text-4xl lg:text-5xl text-brown leading-tight">
+                Award-Winning Injectors <br />
+                <span className="text-wine italic">at Nexus Clinic KL</span>
+              </h2>
+              
+              <p className="text-brown font-inter text-lg leading-relaxed">
+                You came here wanting to look like yourself, just refreshed. At Nexus Clinic KL, our award-winning 
+                aesthetic doctors specialise in results that are noticed but never obvious. Better skin, natural 
+                balance, and a face that simply looks well-rested.
+              </p>
+              
+              <p className="text-taupe font-inter">
+                Every treatment plan is personalised to your skin concerns, facial features and aesthetic goals. 
+                Using advanced regenerative treatments and precise injection techniques, we help you achieve 
+                facial harmony without the overdone look.
+              </p>
+              
+              {/* Award Features Grid */}
+              <div className="grid sm:grid-cols-2 gap-4 pt-4">
+                {[
+                  { icon: Award, text: "Best Injector Award Winner" },
+                  { icon: Syringe, text: "Advanced Injectable & Regenerative Expertise" },
+                  { icon: Calendar, text: "Helping Patients Achieve Their Facial Goals Since 2021" },
+                  { icon: Shield, text: "LCP Certified Aesthetic Doctors" },
+                ].map((feature, idx) => (
+                  <div key={idx} className="flex items-center gap-3 bg-cream/50 p-3 rounded-xl">
+                    <div className="w-8 h-8 bg-wine/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <feature.icon className="w-4 h-4 text-wine" />
+                    </div>
+                    <span className="font-inter text-sm font-medium text-brown">{feature.text}</span>
+                  </div>
+                ))}
+              </div>
+              
+                <Link
+                  href="/doctors/"
+                  className="bg-wine text-light px-6 py-3 rounded-full font-inter font-semibold hover:bg-wine/80 transition-all shadow-lg inline-flex items-center justify-center gap-2 group"
+                >
+                  Meet Our Doctors
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              
+            </motion.div>
+            
+            {/* Right Image */}
+            <motion.div variants={fadeInRight} className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[1/1]">
+                <Image
+                  src="/images/awards/N6.webp"
+                  alt="Nexus Clinic KL Award-Winning Aesthetic Doctors Team"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              {/* Decorative accent */}
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-wine/10 rounded-full -z-10 hidden lg:block" />
+              <div className="absolute -top-4 -right-4 w-32 h-32 bg-gold/10 rounded-full -z-10 hidden lg:block" />
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* FAQ Section */}
       <FAQWithSchema data={faqData} />
       
