@@ -489,11 +489,11 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                   <br />
                   <br />
                   Patients who want to compare Mounjaro as an alternative should also review our{' '}
-                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                  <Link href="/weight-loss/mounjaro-malaysia/" className="text-wine font-bold italic">
                     Mounjaro weight loss programme in Malaysia
                   </Link>{' '}
                   and our{' '}
-                  <Link href="/weight-loss/doctor-monitored-weight-loss-malaysia/" className="text-wine font-bold italic">
+                  <Link href="/weight-loss/wegovy-malaysia/" className="text-wine font-bold italic">
                     Wegovy weight loss programme
                   </Link>{' '}
                   for a full picture of what is available at Nexus Clinic KL.

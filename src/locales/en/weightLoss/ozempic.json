@@ -61,19 +61,6 @@
     "item4Title": "Clinically Proven",
     "item4Desc": "Safe and effective with medical supervision"
   },
-  "doctors": {
-    "badge": "Our Experts",
-    "title1": "Meet Our",
-    "title2": "Doctors",
-    "dr1Name": "Dr. Aris",
-    "dr1Specialty": "Metabolic Health Expert",
-    "dr2Name": "Dr. Preetha",
-    "dr2Specialty": "Holistic Wellness",
-    "dr3Name": "Dr. Ashvinia",
-    "dr3Specialty": "Evidence-Based Solutions",
-    "dr4Name": "Dr. Charmaine",
-    "dr4Specialty": "Aesthetic & Weight Management"
-  },
   "testimonials": {
     "badge": "Success Stories",
     "title1": "Client",

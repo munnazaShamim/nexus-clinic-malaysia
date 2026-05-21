@@ -61,19 +61,6 @@
     "item4Title": "临床验证",
     "item4Desc": "在医学监督下安全有效"
   },
-  "doctors": {
-    "badge": "我们的专家",
-    "title1": "认识我们的",
-    "title2": "医生团队",
-    "dr1Name": "Dr. Aris",
-    "dr1Specialty": "代谢健康专家",
-    "dr2Name": "Dr. Preetha",
-    "dr2Specialty": "整体健康管理",
-    "dr3Name": "Dr. Ashvinia",
-    "dr3Specialty": "循证医学方案",
-    "dr4Name": "Dr. Charmaine",
-    "dr4Specialty": "医学美容与体重管理"
-  },
   "testimonials": {
     "badge": "成功案例",
     "title1": "客户",

@@ -72,7 +72,7 @@ export default async function DoctorProfilePage({
           <div className="flex-1">
             {/* Back link */}
             <Link
-              href="/doctors"
+              href="/doctors/"
               className="inline-flex items-center gap-2 text-taupe text-sm hover:text-wine transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />

@@ -79,20 +79,12 @@ export default function AboutUs() {
 
 const doctors = [
   {
-    name: "Dr. Aris Fadzillah Mazlan",
-    role: "Aesthetic & Anti-Aging Physician",
-    specialty: "Anti-Aging Treatments & Aesthetic Enhancements",
-    experience: "10+ years",
-    bio: "Dr. Aris combines medical expertise with artistic vision to deliver safe, natural-looking results. Fluent in English, Russian, and Malay.",
-    image: "/images/main/Dr.-Aris-Image.webp",
-  },
-  {
     name: "Dr. Preetha Nair",
     role: "Aesthetic Medical Doctor",
     specialty: "Non-Invasive Treatments & Personalized Skincare",
     experience: "8+ years",
     bio: "Dr. Preetha adopts a holistic approach to aesthetic medicine with gentle techniques and meticulous attention to detail for natural-looking results.",
-    image: "/images/main/Dr.-Preetha-Image.webp",
+    image: "/images/doctors/dr-preetha-nair-landscape.webp",
   },
   {
     name: "Dr. Ashvinia Bala",
@@ -100,7 +92,7 @@ const doctors = [
     specialty: "General Medicine & Aesthetic Treatments",
     experience: "7+ years",
     bio: "Dr. Ashvinia combines aesthetic medicine with wellness and sustainability, providing personalized care for natural, confident results.",
-    image: "/images/main/Dr-Ashvinia-bala.webp",
+    image: "/images/doctors/dr-ashvinia-bala-landscape.webp",
   },
 ];
 
@@ -317,7 +309,7 @@ const doctors = [
             <div className="w-20 h-0.5 bg-wine mx-auto mt-6"></div>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {doctors.map((doctor, idx) => (
               <motion.div
                 key={idx}
@@ -325,12 +317,12 @@ const doctors = [
                 whileHover={{ y: -8 }}
                 className="bg-cream rounded-2xl overflow-hidden shadow-lg border border-taupe/10"
               >
-                <div className="aspect-square bg-brown/10 relative overflow-hidden">
+                <div className="bg-brown/10 relative overflow-hidden">
                   <Image
                     src={doctor.image}
                     alt={doctor.name}
-                    width={400}
-                    height={400}
+                    width={600}
+                    height={500}
                   />
                 </div>
                 <div className="p-5">

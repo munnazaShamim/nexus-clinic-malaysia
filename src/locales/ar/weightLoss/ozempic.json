@@ -61,19 +61,6 @@
     "item4Title": "مثبت سريرياً",
     "item4Desc": "آمن وفعّال تحت إشراف طبي متخصص"
   },
-  "doctors": {
-    "badge": "خبراؤنا",
-    "title1": "تعرّف على",
-    "title2": "أطبائنا",
-    "dr1Name": "Dr. Aris",
-    "dr1Specialty": "خبير في صحة الأيض",
-    "dr2Name": "Dr. Preetha",
-    "dr2Specialty": "الصحة الشاملة",
-    "dr3Name": "Dr. Ashvinia",
-    "dr3Specialty": "حلول قائمة على الأدلة العلمية",
-    "dr4Name": "Dr. Charmaine",
-    "dr4Specialty": "التجميل وإدارة الوزن"
-  },
   "testimonials": {
     "badge": "قصص النجاح",
     "title1": "آراء",
