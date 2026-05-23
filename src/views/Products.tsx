@@ -102,7 +102,7 @@ const treatmentsDef = [
   {
     id: 1,
     name: "Mounjaro",
-    price: "RM 1,588",
+    price: "RM 1,980",
     href: createWhatsAppLink("Mounjaro"),
     linear: "from-wine to-brown",
   },
@@ -116,14 +116,14 @@ const treatmentsDef = [
   {
     id: 3,
     name: "Wegovy",
-    price: "RM 1,850",
+    price: "RM 1,288",
     href: createWhatsAppLink("Wegovy"),
     linear: "from-rose to-brown",
   },
   {
     id: 4,
     name: "Saxenda",
-    price: "RM 1,650",
+    price: "RM 600",
     href: createWhatsAppLink("Saxenda"),
     linear: "from-brown to-taupe",
   },
