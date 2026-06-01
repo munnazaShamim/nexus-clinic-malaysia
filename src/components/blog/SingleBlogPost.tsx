@@ -18,119 +18,62 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
       const container = contentRef.current;
       if (!container) return;
 
-      // SEO + UX baseline: lazy load, async decode, alt text, explicit width/height
-      // (prevents CLS — Core Web Vitals SEO factor) and a smart natural-size sizer
-      // so small images don't get upscaled to blur on wide containers.
-      const SMALL_THRESHOLD = 500; // px — images smaller than this won't be stretched
-      const LARGE_MAX_WIDTH = 900; // px — cap for very wide images so they don't dominate
-
-      const applyNaturalSizing = (img: HTMLImageElement, figure?: HTMLElement) => {
-        const apply = () => {
-          const nw = img.naturalWidth;
-          const nh = img.naturalHeight;
-          if (!nw || !nh) return;
-
-          // Lock in dimensions to prevent layout shift
-          if (!img.getAttribute('width')) img.setAttribute('width', String(nw));
-          if (!img.getAttribute('height')) img.setAttribute('height', String(nh));
-
-          if (nw < SMALL_THRESHOLD) {
-            // Small image: display at natural size, centered. No upscale → no blur.
-            img.style.width = 'auto';
-            img.style.maxWidth = `${nw}px`;
-            img.classList.add('mx-auto', 'block');
-            if (figure) {
-              figure.style.maxWidth = `${nw}px`;
-              figure.classList.add('mx-auto');
-              figure.classList.remove('shadow-xl');
-              figure.classList.add('shadow-md');
-            }
-          } else {
-            // Large image: fill container up to a sensible cap, keep aspect ratio
-            img.style.maxWidth = `${LARGE_MAX_WIDTH}px`;
-            img.style.width = '100%';
-            img.classList.add('mx-auto', 'block');
-            if (figure) {
-              figure.style.maxWidth = `${LARGE_MAX_WIDTH}px`;
-              figure.classList.add('mx-auto');
-            }
-          }
-        };
-        if (img.complete && img.naturalWidth) apply();
-        else img.addEventListener('load', apply, { once: true });
-      };
-
-      const setBaseAttrs = (img: HTMLImageElement) => {
-        img.loading = 'lazy';
-        img.decoding = 'async';
-        if (!img.alt || img.alt.trim() === '') {
-          img.alt = 'Nexus Clinic treatment image';
-        }
-      };
-
-      // Handle VC Row sections (grid layouts) — uniform card sizing is desired here
+      // Handle VC Row sections (grid layouts)
       const sections = container.querySelectorAll('.vc_row');
-
+      
       sections.forEach(section => {
         const columns = section.querySelectorAll('.wpb_column');
-
+        
         if (columns.length > 1) {
+          // This is a grid section - style it as a grid
+          const rowContainer = section.querySelector('.ld-container');
           const row = section.querySelector('.row');
-
+          
           if (row) {
             row.classList.add(
               'grid',
               'grid-cols-2',
               'md:grid-cols-3',
               'lg:grid-cols-6',
-              'gap-3',
-              'md:gap-4',
-              'my-6',
-              'md:my-8'
+              'gap-4',
+              'my-8'
             );
           }
-
+          
           columns.forEach((column, index) => {
+            // Style each column
             column.classList.add(
               'flex',
               'flex-col',
               'items-center',
               'text-center',
-              'p-1',
-              'md:p-2'
+              'p-2'
             );
-
-            const img = column.querySelector('img') as HTMLImageElement | null;
-            const figure = column.querySelector('figure') as HTMLElement | null;
+            
+            const img = column.querySelector('img');
+            const figure = column.querySelector('figure');
             const heading = column.querySelector('.ld-fancy-heading');
-
+            
             if (img) {
               img.classList.add(
                 'w-full',
-                'h-[120px]',
-                'md:h-[160px]',
-                'lg:h-[180px]',
+                'h-[150px]',
+                'md:h-[180px]',
                 'object-cover',
-                'object-center',
                 'rounded-xl',
                 'shadow-md',
                 'transition-all',
                 'duration-300',
                 'hover:shadow-xl',
-                'hover:scale-105'
+                'hover:scale-105',
+                
               );
-              setBaseAttrs(img);
-              // Lock dims for CLS even in grid view
-              const lockDims = () => {
-                if (img.naturalWidth && !img.getAttribute('width')) {
-                  img.setAttribute('width', String(img.naturalWidth));
-                  img.setAttribute('height', String(img.naturalHeight));
-                }
-              };
-              if (img.complete) lockDims();
-              else img.addEventListener('load', lockDims, { once: true });
+              img.loading = 'lazy';
+              if (!img.alt || img.alt.trim() === '') {
+                img.alt = 'Nexus Clinic treatment image';
+              }
             }
-
+            
             if (figure) {
               figure.classList.add(
                 'my-2',
@@ -141,7 +84,7 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
                 'w-full'
               );
             }
-
+            
             if (heading) {
               heading.classList.add(
                 'text-center',
@@ -150,7 +93,7 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
                 'font-medium',
                 'w-full'
               );
-
+              
               const words = heading.querySelectorAll('.split-unit');
               words.forEach(word => {
                 word.classList.add(
@@ -164,8 +107,12 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
               });
             }
 
+            // Add a subtle animation delay for each card
             (column as HTMLElement).style.animationDelay = `${index * 0.1}s`;
-            column.classList.add('opacity-0', 'animate-fadeInUp');
+            column.classList.add(
+              'opacity-0',
+              'animate-fadeInUp'
+            );
           });
         }
       });
@@ -174,16 +121,17 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
       const standaloneImages = container.querySelectorAll('img:not(.vc_row img)');
       if (standaloneImages.length === 0) return;
 
+      // Convert NodeList to array for easier manipulation
       const imagesArray = Array.from(standaloneImages) as HTMLImageElement[];
-
-      // Group consecutive standalone images sharing the same parent
+      
+      // Group consecutive standalone images
       const imageGroups: HTMLImageElement[][] = [];
       let currentGroup: HTMLImageElement[] = [];
       let lastParent: Element | null = null;
 
       imagesArray.forEach((img) => {
         const currentParent = img.parentElement;
-
+        
         if (currentParent !== lastParent || currentGroup.length >= 2) {
           if (currentGroup.length > 0) {
             imageGroups.push([...currentGroup]);
@@ -199,111 +147,86 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
         imageGroups.push(currentGroup);
       }
 
+      // Process standalone image groups
       imageGroups.forEach((group) => {
         if (group.length === 1) {
           const img = group[0];
-          setBaseAttrs(img);
+          img.loading = 'lazy';
+          if (!img.alt || img.alt.trim() === '') {
+            img.alt = 'Nexus Clinic treatment image';
+          }
           img.classList.add(
-            'max-w-full',
+            'w-full',
             'h-auto',
-            'block',
             'rounded-2xl',
-            'shadow-lg',
+            'shadow-xl',
             'transition-transform',
             'duration-500',
-            'hover:scale-[1.02]'
+            'hover:scale-102',
+            'my-8'
           );
 
-          let figure: HTMLElement;
-          if (img.parentElement?.tagName === 'FIGURE') {
-            figure = img.parentElement as HTMLElement;
-            figure.className =
-              'my-6 md:my-8 relative rounded-2xl overflow-hidden shadow-lg max-w-full';
-          } else {
-            figure = document.createElement('figure');
-            figure.className =
-              'my-6 md:my-8 relative rounded-2xl overflow-hidden shadow-lg max-w-full';
-
+          if (img.parentElement?.tagName !== 'FIGURE') {
+            const figure = document.createElement('figure');
+            figure.className = 'my-8 relative rounded-2xl overflow-hidden shadow-xl';
+            
             if (img.parentNode) {
               img.parentNode.insertBefore(figure, img);
               figure.appendChild(img);
             }
           }
-
-          applyNaturalSizing(img, figure);
         } else {
-          // Multi-image gallery — adaptive grid based on count
+          // Create gallery for multiple standalone images
           const firstImg = group[0];
           const parentNode = firstImg.parentNode;
-
-          const cols =
-            group.length === 2
-              ? 'grid-cols-1 sm:grid-cols-2'
-              : group.length === 3
-              ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
-              : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
-
+          
           const galleryContainer = document.createElement('div');
-          galleryContainer.className = `grid ${cols} gap-3 md:gap-4 my-6 md:my-8`;
+          galleryContainer.className = 'grid grid-cols-1 md:grid-cols-2 gap-6 my-8';
 
           group.forEach((img, index) => {
-            setBaseAttrs(img);
+            img.loading = 'lazy';
             img.classList.add(
               'w-full',
-              'h-auto',
-              'max-h-[260px]',
-              'md:max-h-[300px]',
-              'object-contain',
-              'bg-cream/40',
+              'h-[250px]',
+              'object-cover',
               'rounded-xl',
-              'shadow-md',
+              'shadow-lg',
               'transition-transform',
               'duration-500',
-              'hover:scale-[1.03]'
+              'hover:scale-105'
             );
-            // Lock dims for CLS
-            const lockDims = () => {
-              if (img.naturalWidth && !img.getAttribute('width')) {
-                img.setAttribute('width', String(img.naturalWidth));
-                img.setAttribute('height', String(img.naturalHeight));
-              }
-            };
-            if (img.complete) lockDims();
-            else img.addEventListener('load', lockDims, { once: true });
-
+            
             let figure: HTMLElement;
             if (img.parentElement?.tagName === 'FIGURE') {
-              figure = img.parentElement as HTMLElement;
-              figure.className =
-                'relative overflow-hidden rounded-xl group h-full flex items-center justify-center bg-cream/30';
+              figure = img.parentElement;
+              figure.className = 'relative overflow-hidden rounded-xl group h-full';
             } else {
               figure = document.createElement('figure');
-              figure.className =
-                'relative overflow-hidden rounded-xl group h-full flex items-center justify-center bg-cream/30';
-
+              figure.className = 'relative overflow-hidden rounded-xl group h-full';
+              
               if (img.parentNode) {
                 img.parentNode.insertBefore(figure, img);
                 figure.appendChild(img);
               }
             }
-
-            (figure as HTMLElement).style.animationDelay = `${index * 0.15}s`;
+            
+            // Add animation delay
+            (figure as HTMLElement).style.animationDelay = `${index * 0.2}s`;
             figure.classList.add('opacity-0', 'animate-fadeInUp');
-
+            
             if (img.alt && !figure.querySelector('figcaption')) {
               const figcaption = document.createElement('figcaption');
-              figcaption.className =
-                'absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-2 md:p-3 text-xs md:text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300';
+              figcaption.className = 'absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300';
               figcaption.textContent = img.alt;
               figure.appendChild(figcaption);
             }
-
+            
             galleryContainer.appendChild(figure);
           });
-
+          
           if (parentNode && firstImg.parentNode) {
             parentNode.insertBefore(galleryContainer, firstImg);
-
+            
             group.forEach((img) => {
               if (img.parentNode) {
                 img.parentNode.removeChild(img);
