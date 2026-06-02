@@ -182,7 +182,7 @@ export default function DrPreethaNairPage() {
                   </div>
                   <div>
                     <span className="font-medium text-brown">MCMC Registered Aesthetic Practitioner:</span>
-                      <a href="https://merits.mmc.gov.my/viewDoctor/35496/search#:~:text=Full%20Name,PREETHA%20NAIR%20A%2FP%20K.SANGU&text=Qualification,MD&text=Graduated%20of,UNIVERSITAS%20UDAYANA&text=Provisional%20Registration%20Number,36658&text=Date%20of%20Provisional%20Registration" 
+                      <a href="https://merits.mmc.gov.my/viewDoctor/35496/search" 
                       target="_blank"
                       className="text-wine hover:underline text-sm ml-2">Verify Registration</a>
                   </div>
