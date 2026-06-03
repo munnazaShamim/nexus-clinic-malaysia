@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/#webpage",
+      "name": "Pico Laser Price Malaysia 2025 — Cost Per Session at Nexus Clinic KL",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/",
+      "description": "Transparent Pico Laser pricing at Nexus Clinic KL. Discovery PICO Rejuvenation and Resurfacing at RM1,200 per session, Brightening Laser Curas at RM846, and what actually drives price differences between clinics in Malaysia.",
+      "publisher": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/#faq",
+      "name": "Pico Laser Price Malaysia FAQ",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/#webpage",
+      "name": "Pico Laser Side Effects Malaysia — Real Risks and How They Are Managed",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/",
+      "description": "Honest guide to pico laser side effects from Nexus Clinic KL. Expected reactions, PIH risk for Fitzpatrick III to V skin, less common effects, and how LCP-certified doctors manage each through correct wavelength, fluence and aftercare.",
+      "publisher": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/#faq",
+      "name": "Pico Laser Side Effects FAQ",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/"
+      }
+    }
+  ]
+}

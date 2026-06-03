@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { faceTreatmentsMetadata } from "@/src/config/faceTreatments";
 import { hairTreatmentsMetadata } from "@/src/config/hairTreatments";
 import { skinTreatmentsMetadata } from "@/src/config/skinTreatments";
+import { picoLaserConditionSlugs } from "@/src/config/picoLaserConditions";
 import { regenerativeTreatmentsMetadata } from "@/src/config/regenerativeTreatments";
 import { weightlossTreatmentsMetadata } from "@/src/config/weightlossTreatments";
 import { wordpressService } from "@/src/services/wordpress";
@@ -46,6 +47,10 @@ export async function GET() {
   const faceUrls = generateDynamicUrls(faceTreatmentsMetadata, "face");
   const hairUrls = generateDynamicUrls(hairTreatmentsMetadata, "hair");
   const skinUrls = generateDynamicUrls(skinTreatmentsMetadata, "skin");
+  const picoLaserConditionUrls = picoLaserConditionSlugs.map((slug) => ({
+    url: withSlash(`${baseUrl}/skin/pico-laser-malaysia/${slug}`),
+    lastModified: new Date(),
+  }));
   const regenerativeUrls = generateDynamicUrls(regenerativeTreatmentsMetadata, "regenerative");
   const weightLossUrls = generateDynamicUrls(weightlossTreatmentsMetadata, "weight-loss");
   const doctorUrls = generateDynamicUrls(doctors, "doctors");
@@ -68,6 +73,7 @@ export async function GET() {
     ...faceUrls,
     ...hairUrls,
     ...skinUrls,
+    ...picoLaserConditionUrls,
     ...regenerativeUrls,
     ...weightLossUrls,
     ...doctorUrls,

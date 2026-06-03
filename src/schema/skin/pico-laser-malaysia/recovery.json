@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/#webpage",
+      "name": "Pico Laser Recovery Malaysia — Complete Aftercare Guide",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/",
+      "description": "Complete pico laser recovery and aftercare guide from Nexus Clinic KL. Day-by-day timeline for toning mode, Fractional LIOB and spot mode sessions. What to do, what to avoid, and which skincare products support the healing process.",
+      "publisher": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/#faq",
+      "name": "Pico Laser Recovery FAQ",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/"
+      }
+    }
+  ]
+}

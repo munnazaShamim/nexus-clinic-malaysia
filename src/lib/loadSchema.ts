@@ -41,6 +41,16 @@ export function skinSchema(slug: string): any {
     return null;
   }
 }
+export function picoLaserConditionSchema(condition: string): any {
+  try {
+    const filePath = path.join(process.cwd(), "src", "schema", "skin", "pico-laser-malaysia", `${condition}.json`);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(fileContents);
+  } catch (error) {
+    console.error("Error loading schema:", error);
+    return null;
+  }
+}
 export function weightLossSchema(slug: string): any {
   try {
     const filePath = path.join(process.cwd(), "src", "schema", "weightLoss", `${slug}.json`);

@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/#service",
+      "name": "Pico Laser for Acne Scars in Malaysia",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/",
+      "description": "Pico Laser for acne scars at Nexus Clinic KL. Fractional LIOB mode stimulates deep collagen remodelling without surface wounding to improve rolling, boxcar and ice pick scars.",
+      "serviceType": "Pico Laser Treatment for Acne Scars",
+      "provider": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/"
+      },
+      "image": "https://www.nexus-clinic.com/images/logo.webp"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/#medicalprocedure",
+      "name": "Pico Laser for Acne Scars",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/",
+      "description": "Picosecond laser using Fractional LIOB mode to remodel dermal collagen for rolling, boxcar and ice pick acne scars. Most patients achieve 50 to 80 percent visible improvement across 4 to 6 sessions.",
+      "procedureType": "http://schema.org/NoninvasiveProcedure",
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Nexus Clinic"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/"
+      }
+    }
+  ]
+}
