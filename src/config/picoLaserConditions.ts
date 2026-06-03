@@ -1899,6 +1899,223 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       },
     ],
   },
+
+  price: {
+    slug: "price",
+    metaTitle:
+      "Pico Laser Price Malaysia 2025 Cost Per Session Package Rates and What Affects the Price at Nexus Clinic KL",
+    metaDescription:
+      "Pico Laser pricing in Malaysia ranges from RM500 to RM2000 per session depending on skin concern and treatment area. Nexus Clinic KL offers transparent, consultation-based pricing with no hidden fees. Find out the cost for your specific concern before committing to a package.",
+
+    heroBadge: "Transparent Pico Laser Pricing • MOH Registered Clinic",
+    heroTitle: "Pico Laser Price Malaysia 2025",
+    heroHighlight: "Cost Per Session and What Actually Affects the Price",
+    heroDescription:
+      "Pico laser pricing in Malaysia is confusing. One clinic charges RM400. Another charges RM2,000. The machine might share the same brand name on the website. The results will not be the same. Understanding what drives the price difference helps you make a better decision about where you actually spend your money.",
+    heroDetails:
+      "This page covers exactly what pico laser treatment costs at Nexus Clinic KL, the variables that determine price, and what you should be checking for when comparing prices between clinics. No vague ranges. Just the actual numbers and what they mean.",
+    heroNote:
+      "All sessions performed or supervised by LCP-certified doctors using the Discovery PICO device. Free consultation with Wood's lamp assessment included.",
+    heroImage: "/images/skin/pico-laser-malaysia/price-1.webp",
+    heroImageAlt:
+      "Doctor reviewing a Pico Laser treatment plan and pricing with a patient at Nexus Clinic KL",
+    secondImage: "/images/skin/pico-laser-malaysia/price-2.webp",
+    secondImageAlt:
+      "Transparent treatment menu and price list at Nexus Clinic KL",
+    heroCtaText: "Book Free Consultation",
+    heroWhatsapp:
+      "Hi, I'd like to understand Pico Laser pricing for my skin concern at Nexus Clinic KL. I'd like to book a consultation.",
+    heroFloatingTitle: "Transparent Pricing",
+    heroFloatingSubtitle: "RM1,200 / Session • No Hidden Fees",
+
+    overviewHeading: "Pico Laser Price at Nexus Clinic KL at a Glance",
+    overviewSubheading: "Discovery PICO sessions by LCP-certified doctors",
+    quickFacts: baseQuickFacts(
+      "20 to 50 minutes per session including numbing",
+      "Free consultation with Wood's lamp assessment",
+      "No minimum session commitment required",
+      "Discovery PICO Rejuvenation / Resurfacing at RM1,200 per session"
+    ),
+    overviewSummary:
+      "At Nexus Clinic KL, Discovery PICO Rejuvenation and Resurfacing are both RM1,200 per session, the Brightening Laser Curas package is RM846, and tattoo removal is priced at consultation. There is no minimum session commitment — you can start with one session and decide based on how your skin responds.",
+
+    conditionHeading: "What Makes Pico Laser Sessions More or Less Expensive",
+    conditionParagraphs: [
+      "If you have already searched for pico laser prices in Malaysia, you will have found a wide range. The biggest driver is the device. True picosecond devices including Discovery PICO, PicoSure, and PicoWay cost significantly more per session to operate than pseudo-pico or standard Q-switch devices. A clinic charging RM300 per session is almost certainly not using a genuine picosecond device. At Nexus Clinic KL, the Discovery PICO is a registered medical device used by LCP-certified doctors.",
+      "Who performs the treatment matters too. By Malaysian law, medical-grade laser treatments must be performed by licensed medical doctors with an LCP (Letter of Credentialing and Privileging) from the Ministry of Health. Clinics that have therapists or non-doctors performing laser treatments are operating outside legal requirements. Doctor-performed sessions cost more because they come with actual medical oversight, correct setting calibration, and medical accountability.",
+      "What the session includes is the third factor. A proper session includes a pre-treatment skin assessment, numbing cream application time of 20 to 30 minutes, the laser session itself, immediate post-treatment care including cooling and SPF application, and written aftercare instructions. Sessions priced below RM500 typically exclude one or more of these components.",
+    ],
+
+    mechanismHeading: "How Many Sessions Will Your Treatment Cost in Total",
+    mechanismSubheading: "Per-session price is only part of the investment",
+    mechanismParagraphs: [
+      "Pigmentation and sunspots: 1 to 6 sessions at RM1,200 per session. Total range: RM1,200 to RM7,200 depending on type and severity. Melasma: 4 to 8 initial sessions plus maintenance. Initial course: RM4,800 to RM9,600; maintenance every 6 to 8 weeks at RM1,200 per session.",
+      "Acne scars: 4 to 8 sessions at RM1,200 per session. Total range: RM4,800 to RM9,600. Large pores: 6 to 7 sessions at RM1,200 per session, approximately RM7,200 to RM8,400. Freckles: 1 to 3 sessions at RM1,200 per session, total RM1,200 to RM3,600.",
+      "Brightening: 4 to 6 sessions, using Discovery PICO Rejuvenation at RM1,200 per session or the Brightening Laser Curas package at RM846. These are starting estimates. Your doctor will give you a more precise session recommendation based on your specific skin condition at consultation.",
+    ],
+    mechanismCallout:
+      "For acne scars specifically, fractional CO2 laser resurfacing (RM1,200 to RM2,500 per session) is a strong alternative with comparable results but 5 to 7 days of downtime and higher PIH risk. Pico Laser Fractional LIOB offers comparable collagen induction with 1 to 3 days of downtime.",
+
+    expectationsHeading: "What to Check When Comparing Prices Between Clinics",
+    expectations: [
+      {
+        heading: "Is the device a genuine picosecond laser?",
+        body: "Ask for the device brand and model. Discovery PICO, PicoSure, and PicoWay are verified true picosecond devices. Devices marketed as 'pico' that operate at longer pulse durations do not deliver the same photoacoustic mechanism or results.",
+      },
+      {
+        heading: "Is the treatment performed by an LCP-certified doctor?",
+        body: "This is a legal requirement in Malaysia for medical-grade laser treatments. Clinics using therapists or non-doctors for laser treatment are operating outside Ministry of Health requirements.",
+      },
+      {
+        heading: "Is the quoted price for a full session or a limited area?",
+        body: "Some low-priced sessions cover the nose or forehead only. Confirm whether numbing cream, post-treatment care, and aftercare instructions are included, or charged separately.",
+      },
+      {
+        heading: "What is the clinic's policy if side effects occur?",
+        body: "Check whether a follow-up is included. A genuine RM200 'pico' session almost always uses a Q-switch device, limits the area, or excludes numbing and aftercare — genuine picosecond devices cannot be operated profitably at that price point.",
+      },
+    ],
+
+    pricingHeading: "Pico Laser Price at Nexus Clinic KL",
+    pricingSubheading: "Current session prices — free consultation included",
+    pricingRows: [
+      {
+        treatment: "Discovery PICO Rejuvenation",
+        area: "Face",
+        unit: "Per session",
+        normalPrice: "RM1,500",
+        sellingPrice: "RM1,200",
+        promoPrice: "NIL",
+        packageNotes: "Pigmentation, melasma, sunspots, freckles, brightening",
+      },
+      {
+        treatment: "Discovery PICO Resurfacing",
+        area: "Face",
+        unit: "Per session",
+        normalPrice: "RM1,500",
+        sellingPrice: "RM1,200",
+        promoPrice: "NIL",
+        packageNotes: "Acne scars and pore refinement (Fractional LIOB)",
+      },
+      {
+        treatment: "Brightening Laser Curas",
+        area: "Face",
+        unit: "Per package",
+        normalPrice: "RM1,398",
+        sellingPrice: "RM846",
+        promoPrice: "NIL",
+        packageNotes: "Brightening-focused multi-step protocol",
+      },
+      {
+        treatment: "Discovery PICO Tattoo Removal",
+        area: "Body",
+        unit: "Per session",
+        normalPrice: "POA",
+        sellingPrice: "POA",
+        promoPrice: "NIL",
+        packageNotes: "Priced at consultation by size and ink complexity",
+      },
+      {
+        treatment: "Free Consultation",
+        area: "Wood's lamp + skin assessment",
+        unit: "Single visit",
+        normalPrice: "RM0",
+        sellingPrice: "RM0",
+        promoPrice: "NIL",
+        packageNotes: "No obligation to book sessions",
+      },
+    ],
+
+    aftercareHeading: "Is Pico Laser Worth the Price vs Cheaper Alternatives",
+    expectedSideEffects: [
+      "Q-switch laser: RM200 to RM500 per session; works for pigmentation but higher PIH risk on Fitzpatrick III to V",
+      "Q-switch needs more sessions for equivalent results and cannot treat scars needing Fractional LIOB",
+      "Fractional CO2 for scars: RM1,200 to RM2,500; comparable results but 5 to 7 days downtime",
+      "Pico Laser: best balance of effectiveness, safety, and recovery time for most Malaysian skin",
+    ],
+    aftercareInstructions: [
+      "Verify the device brand and model is a genuine picosecond laser",
+      "Confirm the treatment is performed by an LCP-certified doctor",
+      "Check the price covers a full session, not a limited area",
+      "Confirm numbing cream, post-treatment care and aftercare are included",
+      "Ask about the follow-up policy if side effects occur",
+    ],
+
+    candidacyHeading: "Package Pricing and Session Commitment",
+    goodCandidate: [
+      "No minimum session commitment — start with one and decide based on response",
+      "Consultation-based package pricing for multi-session courses",
+      "Packages available for melasma management, acne scar courses and pore refinement",
+      "Free consultation with a specific session count and cost estimate before any commitment",
+    ],
+    pauseIf: [
+      "Beware sessions priced RM200 to RM400 — usually Q-switch marketed as 'pico'",
+      "Beware non-doctor operators on unverified devices regardless of low price",
+      "Beware quotes covering only a small area (nose or forehead only)",
+      "Beware prices that exclude numbing cream and post-treatment care",
+    ],
+
+    faqHeading: "Frequently Asked Questions About Pico Laser Price in Malaysia",
+    faqSubheading: "Answers from our LCP-certified doctors",
+    faqs: [
+      {
+        q: "How much does pico laser cost per session in Malaysia?",
+        a: "At Nexus Clinic KL, Discovery PICO Rejuvenation and Resurfacing sessions are priced at RM1,200 per session. The Brightening Laser Curas package is available at RM846. Tattoo removal is priced at consultation based on tattoo specifics. Across Malaysia, prices range from RM400 to RM2,500 per session depending on device quality, clinic credentials, and session scope.",
+      },
+      {
+        q: "Why is pico laser more expensive than Q-switch laser?",
+        a: "Genuine picosecond devices cost significantly more to purchase and maintain than Q-switch devices. The shorter pulse duration requires fundamentally different laser technology. The higher per-session cost reflects a real difference in fragmentation efficiency, results per session, and PIH risk profile, not just a premium label.",
+      },
+      {
+        q: "How many sessions do I need and what will it cost in total?",
+        a: "Session count varies by concern: 1 to 3 for freckles, 3 to 6 for general pigmentation, 4 to 8 for melasma or acne scars, 6 to 7 for pore refinement. At RM1,200 per session, total treatment costs range from approximately RM1,200 to RM9,600 depending on concern and severity. Your doctor provides a specific estimate at consultation.",
+      },
+      {
+        q: "Is there a minimum number of sessions I have to commit to?",
+        a: "No. At Nexus Clinic KL, there is no minimum session commitment. You can begin with a single session and decide on continuation based on how your skin responds. Your doctor will make a session recommendation at consultation, but you are not obligated to commit to the full course upfront.",
+      },
+      {
+        q: "Does the consultation cost anything at Nexus Clinic KL?",
+        a: "No. Consultations are free of charge. This includes a Wood's lamp skin assessment, skin type evaluation, and a clinical treatment recommendation. There is no obligation to book sessions following a consultation.",
+      },
+      {
+        q: "Are package discounts available for multiple pico laser sessions?",
+        a: "Yes. Package pricing for multi-session treatment courses is available at Nexus Clinic KL. Package rates are discussed at consultation based on the specific number of sessions recommended for your concern. Packages are offered for melasma management, acne scar courses, and pore refinement.",
+      },
+      {
+        q: "Is the cheapest pico laser in Malaysia still worth trying?",
+        a: "Price alone is not a useful guide. A RM400 pico laser session from a non-doctor operator on an unverified device carries real risks regardless of the low price. The key questions are: Is the device genuinely a picosecond device? Is the treatment performed by an LCP-certified doctor? Are the settings calibrated for your skin type? These factors determine results and safety far more than the headline price.",
+      },
+      {
+        q: "Why do some clinics charge RM200 for a session called pico laser?",
+        a: "Sessions priced at RM200 to RM400 described as pico laser are typically using Q-switch devices marketed with pico terminology, or are limiting the session to a very small area, or are not including numbing cream and post-treatment care. Genuine picosecond devices cannot be operated profitably at these price points.",
+      },
+      {
+        q: "Does pico laser price vary based on the skin concern?",
+        a: "At Nexus Clinic KL, Discovery PICO Rejuvenation and Resurfacing are both priced at RM1,200 per session regardless of whether they are used for pigmentation or acne scars. The concern determines which delivery mode is used, not the price. Tattoo removal is the exception, where price is determined by tattoo size and colour complexity.",
+      },
+      {
+        q: "Is pico laser for skin brightening cheaper than for acne scars?",
+        a: "At Nexus Clinic KL, the Brightening Laser Curas package at RM846 is available as a more accessible entry point for brightening-focused treatment. For full Discovery PICO sessions, Rejuvenation and Resurfacing are both priced at RM1,200 per session regardless of the concern being treated.",
+      },
+    ],
+
+    ctaHeading: "Get a Transparent Cost Estimate Before You Decide",
+    ctaBody:
+      "The best way to understand what pico laser will cost for your specific concern is to speak with a doctor directly. Book a free consultation at Nexus Clinic KL and get a transparent session recommendation and cost estimate before making any decision.",
+    ctaPrimaryText: "Book Your Free Consultation",
+    relatedLinks: [
+      { label: "Pico Laser Hub", href: "/skin/pico-laser-malaysia/" },
+      {
+        label: "Pico Laser for Pigmentation",
+        href: "/skin/pico-laser-malaysia/pigmentation/",
+      },
+      {
+        label: "Fractional Laser Resurfacing",
+        href: "/fraqtional-laser-resurfacing/",
+      },
+    ],
+  },
 };
 
 export const picoLaserConditionSlugs = Object.keys(picoLaserConditions);
