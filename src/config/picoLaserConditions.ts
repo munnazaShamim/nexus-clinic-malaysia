@@ -125,9 +125,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Melasma is one of the most mismanaged skin conditions in Malaysia. Not because the technology to treat it does not exist, but because the wrong settings, the wrong delivery mode, and the wrong session frequency are used far too often. At Nexus Clinic KL, we treat melasma as the chronic hormonal condition it is, not as a simple pigmentation spot.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,Our LCP-certified doctors bring 15+ years of combined clinical experience treating Asian melasma across Fitzpatrick III to V skin.",
+      "Over 5,000 Aesthetic Procedures Completed. Our LCP-certified doctors bring 15+ years of combined clinical experience treating Asian melasma across Fitzpatrick III to V skin.",
     heroImage: "/images/skin/pico-laser-malaysia/melasma-1.webp",
-    heroImageAlt: "Asian woman with melasma pigmentation on cheeks,Pico Laser melasma treatment at Nexus Clinic KL",
+    heroImageAlt: "Asian woman with melasma pigmentation on cheeks. Pico Laser melasma treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/melasma-2.webp",
     secondImageAlt: "Wood's lamp skin analysis report mapping melasma depth before Pico Laser treatment at Nexus Clinic KL",
     heroCtaText: "Book Free Melasma Consultation",
@@ -324,10 +324,10 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pigmentation that sits deep in the skin needs something that reaches that depth. Pico laser works because it delivers energy in trillionths of a second, directly targeting melanin clusters without the heat damage that creates new pigmentation problems. At Nexus Clinic KL, we start every pigmentation case with a proper assessment because not all dark spots are the same type and not all of them respond to the same approach.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,Our doctors are trained in Southeast Asian skin physiology and the calibration of picosecond laser parameters for Fitzpatrick III to V patients.",
+      "Over 5,000 Aesthetic Procedures Completed. Our doctors are trained in Southeast Asian skin physiology and the calibration of picosecond laser parameters for Fitzpatrick III to V patients.",
     heroImage: "/images/skin/pico-laser-malaysia/pigmentation-1.webp",
     heroImageAlt:
-      "Close-up of facial pigmentation and dark spots,Pico Laser pigmentation treatment at Nexus Clinic KL",
+      "Close-up of facial pigmentation and dark spots. Pico Laser pigmentation treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/pigmentation-2.webp",
     secondImageAlt:
       "Pico Laser wavelength selection for different pigmentation depths at Nexus Clinic KL",
@@ -528,9 +528,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser treats acne scars by triggering new collagen production deep in the dermis, and it does this without breaking the skin surface. No open wounds. No week of hiding at home. But there is one critical thing that determines whether pico laser works for your scars or does nothing at all. It is not the machine. It is the delivery mode.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,LCP-certified doctors evaluating scar morphology before choosing energy density, depth and combination protocol.",
+      "Over 5,000 Aesthetic Procedures Completed. LCP-certified doctors evaluating scar morphology before choosing energy density, depth and combination protocol.",
     heroImage: "/images/skin/pico-laser-malaysia/acne-scars-1.webp",
-    heroImageAlt: "Rolling and boxcar acne scars on cheek,Pico Laser acne scar treatment at Nexus Clinic KL",
+    heroImageAlt: "Rolling and boxcar acne scars on cheek. Pico Laser acne scar treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/acne-scars-2.webp",
     secondImageAlt: "Fractional LIOB collagen remodelling for acne scars at Nexus Clinic KL",
     heroCtaText: "Book Free Acne Scar Consultation",
@@ -546,7 +546,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "30 to 50 minutes including topical numbing",
       "24 to 72 hours mild redness; pinpoint marks 1 to 3 days",
       "Rolling: 4-6 | Boxcar: 5-8 | Ice pick + TCA CROSS: 4-6",
-      "Fractional LIOB Mode at 1064nm,TCA CROSS combined for ice pick scars"
+      "Fractional LIOB Mode at 1064nm. TCA CROSS combined for ice pick scars"
     ),
     overviewSummary:
       "Fractional LIOB mode triggers new collagen formation in the dermis without ablating the skin surface. Visible textural improvement starts at sessions two to three. 50 to 80 percent improvement is realistic across 4 to 6 sessions for rolling and boxcar scars.",
@@ -727,9 +727,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser works on large pores by triggering new collagen production in the dermis, the layer directly beneath the skin surface where pore walls are anchored. As new collagen forms around the pore, the walls tighten, the pore contracts, and the surface texture improves. This is a structural fix for a structural problem.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,Doctors calibrate Pico Laser fractional energy per skin type for visible, lasting pore refinement.",
+      "Over 5,000 Aesthetic Procedures Completed. Doctors calibrate Pico Laser fractional energy per skin type for visible, lasting pore refinement.",
     heroImage: "/images/skin/pico-laser-malaysia/large-pores-1.webp",
-    heroImageAlt: "Enlarged pores and skin texture on cheek,Pico Laser pore tightening at Nexus Clinic KL",
+    heroImageAlt: "Enlarged pores and skin texture on cheek. Pico Laser pore tightening at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/large-pores-2.webp",
     secondImageAlt: "Pore-wall collagen stimulation with Fractional LIOB at Nexus Clinic KL",
     heroCtaText: "Book Free Pore Assessment",
@@ -926,9 +926,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser is one of the most effective treatments for freckles in Malaysia. It targets melanin directly, shatters the pigment clusters with pressure rather than heat, and lets the body clear the fragments naturally. Most patients see significant lightening or complete clearance after just one to three sessions.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,LCP-certified doctors selecting wavelength and fluence per Fitzpatrick type to clear freckles without surface damage.",
+      "Over 5,000 Aesthetic Procedures Completed. LCP-certified doctors selecting wavelength and fluence per Fitzpatrick type to clear freckles without surface damage.",
     heroImage: "/images/skin/pico-laser-malaysia/freckles-1.webp",
-    heroImageAlt: "Freckles and jeragat across cheeks and nose,Pico Laser freckle removal at Nexus Clinic KL",
+    heroImageAlt: "Freckles and jeragat across cheeks and nose. Pico Laser freckle removal at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/freckles-2.webp",
     secondImageAlt: "Spot mode picosecond treatment targeting freckle melanin at Nexus Clinic KL",
     heroCtaText: "Book Free Freckle Consultation",
@@ -1125,9 +1125,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser tattoo removal in Malaysia is the most effective method currently available. The ultra-short picosecond pulses shatter tattoo ink into particles fine enough for the immune system to clear completely, and it does this significantly faster and with less damage to surrounding tissue than older Q-switch laser methods.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,Black ink, coloured ink, and resistant tattoos that did not fully clear with previous treatments.",
+      "Over 5,000 Aesthetic Procedures Completed. Black ink, coloured ink, and resistant tattoos that did not fully clear with previous treatments.",
     heroImage: "/images/skin/pico-laser-malaysia/tattoo-removal-1.webp",
-    heroImageAlt: "Tattoo being treated with picosecond laser,Pico Laser tattoo removal at Nexus Clinic KL",
+    heroImageAlt: "Tattoo being treated with picosecond laser. Pico Laser tattoo removal at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/tattoo-removal-2.webp",
     secondImageAlt: "Multi-wavelength Pico Laser shattering tattoo ink for immune clearance at Nexus Clinic KL",
     heroCtaText: "Book Free Tattoo Removal Consultation",
@@ -1317,9 +1317,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser brightening at Nexus Clinic KL uses toning mode to deliver full-face sessions that break down scattered surface melanin, stimulate collagen, and produce a progressive improvement in skin clarity and luminosity. Not one dramatic change overnight. A real, cumulative improvement that your skin develops session by session.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed,Toning protocols calibrated for Malaysian skin from Fitzpatrick I to V.",
+      "Over 5,000 Aesthetic Procedures Completed. Toning protocols calibrated for Malaysian skin from Fitzpatrick I to V.",
     heroImage: "/images/skin/pico-laser-malaysia/skin-brightening-1.webp",
-    heroImageAlt: "Bright, even-toned glass skin,Pico Laser skin brightening at Nexus Clinic KL",
+    heroImageAlt: "Bright, even-toned glass skin. Pico Laser skin brightening at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/skin-brightening-2.webp",
     secondImageAlt: "Pico toning full-face brightening session at Nexus Clinic KL",
     heroCtaText: "Book Free Skin Brightening Consultation",
@@ -1627,7 +1627,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     candidacyHeading:
       "What to Avoid After Pico Laser Treatment",
     goodCandidate: [
-      "Maintain SPF50 every morning,UV after pico laser triggers PIH",
+      "Maintain SPF50 every morning. UV after pico laser triggers PIH",
       "Simplify routine to cleanser, moisturiser and SPF during recovery",
       "Resume actives only after the 5 to 7 day pause window",
       "Photograph your skin monthly to track progressive results",
@@ -1824,7 +1824,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     ],
 
     candidacyHeading:
-      "Pico Laser vs Other Lasers,Safety Comparison",
+      "Pico Laser vs Other Lasers. Safety Comparison",
     goodCandidate: [
       "Pico vs Fractional CO2: 1-3 days mild recovery vs 5-7 days significant healing; lower PIH risk",
       "Pico vs Q-switch: photoacoustic mechanism generates less heat; meaningfully lower PIH risk on Malaysian skin",
