@@ -125,9 +125,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Melasma is one of the most mismanaged skin conditions in Malaysia. Not because the technology to treat it does not exist, but because the wrong settings, the wrong delivery mode, and the wrong session frequency are used far too often. At Nexus Clinic KL, we treat melasma as the chronic hormonal condition it is, not as a simple pigmentation spot.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — Our LCP-certified doctors bring 15+ years of combined clinical experience treating Asian melasma across Fitzpatrick III to V skin.",
+      "Over 5,000 Aesthetic Procedures Completed. Our LCP-certified doctors bring 15+ years of combined clinical experience treating Asian melasma across Fitzpatrick III to V skin.",
     heroImage: "/images/skin/pico-laser-malaysia/melasma-1.webp",
-    heroImageAlt: "Asian woman with melasma pigmentation on cheeks — Pico Laser melasma treatment at Nexus Clinic KL",
+    heroImageAlt: "Asian woman with melasma pigmentation on cheeks. Pico Laser melasma treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/melasma-2.webp",
     secondImageAlt: "Wood's lamp skin analysis report mapping melasma depth before Pico Laser treatment at Nexus Clinic KL",
     heroCtaText: "Book Free Melasma Consultation",
@@ -186,7 +186,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     ],
 
     pricingHeading: "Pico Laser Melasma Treatment Price at Nexus Clinic KL",
-    pricingSubheading: "Transparent pricing — free consultation included",
+    pricingSubheading: "Transparent pricing,free consultation included",
     pricingRows: [
       {
         treatment: "Discovery PICO Rejuvenation",
@@ -227,7 +227,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     aftercareInstructions: [
       "SPF50 every morning before leaving the house, reapplied every two hours outdoors",
       "Avoid aggressive peels, retinoids in the days immediately after each session",
-      "Avoid heat exposure including saunas and steam — heat reactivates melanocyte production",
+      "Avoid heat exposure including saunas and steam,heat reactivates melanocyte production",
       "Gentle cleansers and ceramide-rich moisturisers as your baseline skincare between sessions",
       "Continue prescribed oral tranexamic acid as directed",
     ],
@@ -324,10 +324,10 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pigmentation that sits deep in the skin needs something that reaches that depth. Pico laser works because it delivers energy in trillionths of a second, directly targeting melanin clusters without the heat damage that creates new pigmentation problems. At Nexus Clinic KL, we start every pigmentation case with a proper assessment because not all dark spots are the same type and not all of them respond to the same approach.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — Our doctors are trained in Southeast Asian skin physiology and the calibration of picosecond laser parameters for Fitzpatrick III to V patients.",
+      "Over 5,000 Aesthetic Procedures Completed. Our doctors are trained in Southeast Asian skin physiology and the calibration of picosecond laser parameters for Fitzpatrick III to V patients.",
     heroImage: "/images/skin/pico-laser-malaysia/pigmentation-1.webp",
     heroImageAlt:
-      "Close-up of facial pigmentation and dark spots — Pico Laser pigmentation treatment at Nexus Clinic KL",
+      "Close-up of facial pigmentation and dark spots. Pico Laser pigmentation treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/pigmentation-2.webp",
     secondImageAlt:
       "Pico Laser wavelength selection for different pigmentation depths at Nexus Clinic KL",
@@ -353,7 +353,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     conditionParagraphs: [
       "This matters more than most clinics let on. Treating the wrong type of pigmentation with the wrong wavelength produces minimal results and occasionally makes things worse.",
       "Sunspots and age spots are flat brown marks from cumulative UV exposure, mostly epidermal, very common across Malaysian cheeks, temples, and the backs of hands. Post-inflammatory hyperpigmentation (PIH) is the dark mark left behind after acne, eczema or any skin injury. Freckles are genetically predisposed and UV-activated.",
-      "Melasma is hormonal pigmentation with epidermal and dermal components — more complex, more prone to recurrence and extremely heat-sensitive. ABNOM and Hori's nevus are acquired deep dermal pigmentation unique to Asian skin, appearing as bilateral bluish-grey patches on the cheekbones and temples. They require the deepest penetrating wavelength.",
+      "Melasma is hormonal pigmentation with epidermal and dermal components,more complex, more prone to recurrence and extremely heat-sensitive. ABNOM and Hori's nevus are acquired deep dermal pigmentation unique to Asian skin, appearing as bilateral bluish-grey patches on the cheekbones and temples. They require the deepest penetrating wavelength.",
       "Your doctor maps which type you have, how deep it sits, and whether there are multiple types in the same area, all before any laser is used.",
     ],
 
@@ -428,7 +428,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Temporary skin dryness as cell turnover accelerates",
     ],
     aftercareInstructions: [
-      "Do not pick or scrub the darkened spots — let them shed naturally",
+      "Do not pick or scrub the darkened spots,let them shed naturally",
       "SPF50 every morning, reapplied every two hours when outdoors",
       "Pause retinol, AHA, BHA and physical exfoliants for 5 to 7 days",
       "Medical-grade vitamin C, kojic acid combinations and niacinamide between sessions amplify results",
@@ -447,7 +447,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "You are pregnant or breastfeeding",
       "You have active skin infection, severe acne inflammation or open wounds",
       "You have taken isotretinoin within the past 6 months",
-      "Your primary concern is melasma — covered in a dedicated protocol",
+      "Your primary concern is melasma,covered in a dedicated protocol",
     ],
 
     faqHeading: "Frequently Asked Questions About Pico Laser for Pigmentation",
@@ -528,9 +528,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser treats acne scars by triggering new collagen production deep in the dermis, and it does this without breaking the skin surface. No open wounds. No week of hiding at home. But there is one critical thing that determines whether pico laser works for your scars or does nothing at all. It is not the machine. It is the delivery mode.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — LCP-certified doctors evaluating scar morphology before choosing energy density, depth and combination protocol.",
+      "Over 5,000 Aesthetic Procedures Completed. LCP-certified doctors evaluating scar morphology before choosing energy density, depth and combination protocol.",
     heroImage: "/images/skin/pico-laser-malaysia/acne-scars-1.webp",
-    heroImageAlt: "Rolling and boxcar acne scars on cheek — Pico Laser acne scar treatment at Nexus Clinic KL",
+    heroImageAlt: "Rolling and boxcar acne scars on cheek. Pico Laser acne scar treatment at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/acne-scars-2.webp",
     secondImageAlt: "Fractional LIOB collagen remodelling for acne scars at Nexus Clinic KL",
     heroCtaText: "Book Free Acne Scar Consultation",
@@ -546,7 +546,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "30 to 50 minutes including topical numbing",
       "24 to 72 hours mild redness; pinpoint marks 1 to 3 days",
       "Rolling: 4-6 | Boxcar: 5-8 | Ice pick + TCA CROSS: 4-6",
-      "Fractional LIOB Mode at 1064nm — TCA CROSS combined for ice pick scars"
+      "Fractional LIOB Mode at 1064nm. TCA CROSS combined for ice pick scars"
     ),
     overviewSummary:
       "Fractional LIOB mode triggers new collagen formation in the dermis without ablating the skin surface. Visible textural improvement starts at sessions two to three. 50 to 80 percent improvement is realistic across 4 to 6 sessions for rolling and boxcar scars.",
@@ -572,7 +572,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     expectations: [
       {
         heading: "Sessions One to Two",
-        body: "Mild redness and warm sensation for 24 to 72 hours. Pinpoint marks that resolve in 1 to 3 days. Visible textural change is rare after a single session — collagen remodelling takes weeks.",
+        body: "Mild redness and warm sensation for 24 to 72 hours. Pinpoint marks that resolve in 1 to 3 days. Visible textural change is rare after a single session,collagen remodelling takes weeks.",
       },
       {
         heading: "Sessions Three to Four",
@@ -632,7 +632,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Pause retinoids, AHAs and BHAs for 7 full days after each session",
       "Use a gentle ceramide-rich moisturiser twice daily",
       "Avoid saunas, steam rooms and intense exercise for 48 to 72 hours",
-      "Continue prescribed acne medication — uncontrolled acne worsens scarring",
+      "Continue prescribed acne medication,uncontrolled acne worsens scarring",
     ],
 
     candidacyHeading:
@@ -644,7 +644,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Fitzpatrick III to V skin needing a low-PIH option",
     ],
     pauseIf: [
-      "Active moderate to severe inflammatory acne — treat that first",
+      "Active moderate to severe inflammatory acne,treat that first",
       "Isotretinoin within the past 6 months",
       "Pregnant or breastfeeding",
       "History of keloid scarring (requires careful planning)",
@@ -727,9 +727,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser works on large pores by triggering new collagen production in the dermis, the layer directly beneath the skin surface where pore walls are anchored. As new collagen forms around the pore, the walls tighten, the pore contracts, and the surface texture improves. This is a structural fix for a structural problem.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — Doctors calibrate Pico Laser fractional energy per skin type for visible, lasting pore refinement.",
+      "Over 5,000 Aesthetic Procedures Completed. Doctors calibrate Pico Laser fractional energy per skin type for visible, lasting pore refinement.",
     heroImage: "/images/skin/pico-laser-malaysia/large-pores-1.webp",
-    heroImageAlt: "Enlarged pores and skin texture on cheek — Pico Laser pore tightening at Nexus Clinic KL",
+    heroImageAlt: "Enlarged pores and skin texture on cheek. Pico Laser pore tightening at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/large-pores-2.webp",
     secondImageAlt: "Pore-wall collagen stimulation with Fractional LIOB at Nexus Clinic KL",
     heroCtaText: "Book Free Pore Assessment",
@@ -771,7 +771,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     expectations: [
       {
         heading: "Sessions One to Two",
-        body: "Expect 24 to 48 hours of redness and mild pinpoint marks at treatment sites. These resolve within one to three days. Most patients return to normal activities the next day. The skin may feel tighter and slightly more sensitive — this is the inflammatory phase of collagen production.",
+        body: "Expect 24 to 48 hours of redness and mild pinpoint marks at treatment sites. These resolve within one to three days. Most patients return to normal activities the next day. The skin may feel tighter and slightly more sensitive,this is the inflammatory phase of collagen production.",
       },
       {
         heading: "Sessions Two to Three",
@@ -926,9 +926,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser is one of the most effective treatments for freckles in Malaysia. It targets melanin directly, shatters the pigment clusters with pressure rather than heat, and lets the body clear the fragments naturally. Most patients see significant lightening or complete clearance after just one to three sessions.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — LCP-certified doctors selecting wavelength and fluence per Fitzpatrick type to clear freckles without surface damage.",
+      "Over 5,000 Aesthetic Procedures Completed. LCP-certified doctors selecting wavelength and fluence per Fitzpatrick type to clear freckles without surface damage.",
     heroImage: "/images/skin/pico-laser-malaysia/freckles-1.webp",
-    heroImageAlt: "Freckles and jeragat across cheeks and nose — Pico Laser freckle removal at Nexus Clinic KL",
+    heroImageAlt: "Freckles and jeragat across cheeks and nose. Pico Laser freckle removal at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/freckles-2.webp",
     secondImageAlt: "Spot mode picosecond treatment targeting freckle melanin at Nexus Clinic KL",
     heroCtaText: "Book Free Freckle Consultation",
@@ -1020,14 +1020,14 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
 
     aftercareHeading: "Pico Laser Freckle Side Effects and Aftercare",
     expectedSideEffects: [
-      "Treated freckles darken for 3 to 7 days before flaking off — expected, not abnormal",
+      "Treated freckles darken for 3 to 7 days before flaking off,expected, not abnormal",
       "Mild redness around treated lesions for several hours",
       "Possible pinpoint crusts that resolve in 5 to 7 days",
       "Slight skin sensitivity to heat and sun for 5 to 7 days",
     ],
     aftercareInstructions: [
-      "Do not pick or scrub the darkened spots — let them shed naturally",
-      "SPF50 every morning, reapplied every 2 hours when outdoors — non-negotiable",
+      "Do not pick or scrub the darkened spots,let them shed naturally",
+      "SPF50 every morning, reapplied every 2 hours when outdoors,non-negotiable",
       "Avoid sun exposure in the days immediately after treatment",
       "Pause retinol, AHA, BHA and physical exfoliants for 5 to 7 days",
       "Medical-grade vitamin C between sessions helps suppress new melanin formation",
@@ -1042,9 +1042,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Willing to maintain daily SPF50 to prevent new freckles",
     ],
     pauseIf: [
-      "Very recent sun exposure or active tan — wait until faded",
+      "Very recent sun exposure or active tan,wait until faded",
       "Pregnant or breastfeeding",
-      "Suspected melasma — requires a different protocol",
+      "Suspected melasma,requires a different protocol",
       "Active skin infection on the treatment area",
     ],
 
@@ -1125,9 +1125,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser tattoo removal in Malaysia is the most effective method currently available. The ultra-short picosecond pulses shatter tattoo ink into particles fine enough for the immune system to clear completely, and it does this significantly faster and with less damage to surrounding tissue than older Q-switch laser methods.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — Black ink, coloured ink, and resistant tattoos that did not fully clear with previous treatments.",
+      "Over 5,000 Aesthetic Procedures Completed. Black ink, coloured ink, and resistant tattoos that did not fully clear with previous treatments.",
     heroImage: "/images/skin/pico-laser-malaysia/tattoo-removal-1.webp",
-    heroImageAlt: "Tattoo being treated with picosecond laser — Pico Laser tattoo removal at Nexus Clinic KL",
+    heroImageAlt: "Tattoo being treated with picosecond laser. Pico Laser tattoo removal at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/tattoo-removal-2.webp",
     secondImageAlt: "Multi-wavelength Pico Laser shattering tattoo ink for immune clearance at Nexus Clinic KL",
     heroCtaText: "Book Free Tattoo Removal Consultation",
@@ -1170,7 +1170,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     expectations: [
       {
         heading: "Immediately After the Session",
-        body: "Numbing cream is applied for 20 to 30 minutes before every session. The treatment feels like fast rubber band snaps. Immediately after, the skin around the tattoo appears red and mildly swollen. A frosting white effect may be visible on the tattoo surface — a normal immediate response.",
+        body: "Numbing cream is applied for 20 to 30 minutes before every session. The treatment feels like fast rubber band snaps. Immediately after, the skin around the tattoo appears red and mildly swollen. A frosting white effect may be visible on the tattoo surface,a normal immediate response.",
       },
       {
         heading: "Between Sessions",
@@ -1188,7 +1188,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
 
     pricingHeading: "Pico Laser Tattoo Removal Price at Nexus Clinic KL",
     pricingSubheading:
-      "Pricing assessed at consultation — depends on size, colour, and session count",
+      "Pricing assessed at consultation,depends on size, colour, and session count",
     pricingRows: [
       {
         treatment: "Discovery PICO Tattoo Removal",
@@ -1213,16 +1213,16 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     aftercareHeading: "Aftercare After Pico Laser Tattoo Removal Sessions",
     expectedSideEffects: [
       "Redness and mild swelling around tattoo for several days",
-      "Frosting white effect on tattoo surface immediately after — fades within hours",
+      "Frosting white effect on tattoo surface immediately after,fades within hours",
       "Possible mild blistering in some patients (normal tissue response)",
       "Mild scabbing or crusting over treated area for up to 2 weeks",
     ],
     aftercareInstructions: [
       "Keep treated area clean, covered with thin layer of medical-grade barrier ointment for first 48 hours",
-      "Avoid submerging the area in water — no swimming, open water, or prolonged showering for first week",
+      "Avoid submerging the area in water,no swimming, open water, or prolonged showering for first week",
       "Avoid sun exposure throughout removal course; SPF50 on the area if sun-exposed",
       "Do not pick or scratch the area during the healing phase",
-      "Blisters should be left to resolve naturally — picking increases infection risk and scarring",
+      "Blisters should be left to resolve naturally,picking increases infection risk and scarring",
     ],
 
     candidacyHeading:
@@ -1234,7 +1234,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Patients willing to commit to 6 to 8 week intervals between sessions",
     ],
     pauseIf: [
-      "Fresh tattoo less than 6 to 8 weeks old — skin needs to fully heal first",
+      "Fresh tattoo less than 6 to 8 weeks old,skin needs to fully heal first",
       "Active skin infection in the tattoo area",
       "Pregnant or breastfeeding",
       "History of keloid scarring (requires careful planning)",
@@ -1317,9 +1317,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Pico laser brightening at Nexus Clinic KL uses toning mode to deliver full-face sessions that break down scattered surface melanin, stimulate collagen, and produce a progressive improvement in skin clarity and luminosity. Not one dramatic change overnight. A real, cumulative improvement that your skin develops session by session.",
     heroNote:
-      "Over 5,000 Aesthetic Procedures Completed — Toning protocols calibrated for Malaysian skin from Fitzpatrick I to V.",
+      "Over 5,000 Aesthetic Procedures Completed. Toning protocols calibrated for Malaysian skin from Fitzpatrick I to V.",
     heroImage: "/images/skin/pico-laser-malaysia/skin-brightening-1.webp",
-    heroImageAlt: "Bright, even-toned glass skin — Pico Laser skin brightening at Nexus Clinic KL",
+    heroImageAlt: "Bright, even-toned glass skin. Pico Laser skin brightening at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/skin-brightening-2.webp",
     secondImageAlt: "Pico toning full-face brightening session at Nexus Clinic KL",
     heroCtaText: "Book Free Skin Brightening Consultation",
@@ -1355,7 +1355,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "The collagen stimulation that accompanies toning mode also plays a role. As new collagen forms in the dermal layer, the skin develops better density and light-reflecting properties. This is part of why the brightness improvement looks natural rather than bleached or artificial.",
     ],
     mechanismCallout:
-      "There is an important distinction between brightening and whitening. Pico laser brightening restores your skin to its clearest version of its natural tone — it does not lighten beyond baseline. For specific whitening goals, see our Skin Whitening Treatment page.",
+      "There is an important distinction between brightening and whitening. Pico laser brightening restores your skin to its clearest version of its natural tone,it does not lighten beyond baseline. For specific whitening goals, see our Skin Whitening Treatment page.",
 
     expectationsHeading: "How Many Sessions for Pico Laser Brightening Results",
     expectations: [
@@ -1378,7 +1378,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     ],
 
     pricingHeading: "Pico Laser Skin Brightening Price at Nexus Clinic KL",
-    pricingSubheading: "Transparent pricing — free consultation included",
+    pricingSubheading: "Transparent pricing,free consultation included",
     pricingRows: [
       {
         treatment: "Brightening Laser Curas Package",
@@ -1430,12 +1430,12 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Dull, uneven, sun-damaged skin tone",
       "Diffuse mild pigmentation across the face",
       "Wanting overall skin clarity and 'glass skin' luminosity",
-      "All Fitzpatrick skin tones — protocol adjusted per type",
+      "All Fitzpatrick skin tones,protocol adjusted per type",
     ],
     pauseIf: [
       "Pregnant or breastfeeding",
       "Isotretinoin within the past 6 months",
-      "Recent significant sun exposure or active tan — wait until faded",
+      "Recent significant sun exposure or active tan,wait until faded",
       "Active skin infection on the treatment area",
     ],
 
@@ -1516,9 +1516,9 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroDetails:
       "Recovery after pico laser is shorter than almost any other laser treatment available. But shorter does not mean none. What you do in the days after each session directly affects how well your skin heals, how much improvement shows up at your next visit, and whether you develop any unwanted side effects.",
     heroNote:
-      "Written by our LCP-certified doctors. Recovery varies by delivery mode — this page maps the full timeline for each.",
+      "Written by our LCP-certified doctors. Recovery varies by delivery mode,this page maps the full timeline for each.",
     heroImage: "/images/skin/pico-laser-malaysia/recovery-1.webp",
-    heroImageAlt: "Calm skin healing after Pico Laser — recovery and aftercare guide at Nexus Clinic KL",
+    heroImageAlt: "Calm skin healing after Pico Laser,recovery and aftercare guide at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/recovery-2.webp",
     secondImageAlt: "Ceramide moisturiser and SPF50 aftercare products that support Pico Laser recovery",
     heroCtaText: "Book Free Consultation",
@@ -1550,8 +1550,8 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     mechanismSubheading: "Timeline across all delivery modes",
     mechanismParagraphs: [
       "Immediately after the session, the skin feels warm and looks flushed. A mild sunburn sensation is common for the first hour or two. For Fractional LIOB sessions, pinpoint redness at each treatment site appears immediately. For spot mode, the treated lesions appear lighter or have a white frosting effect that fades within an hour.",
-      "Day 1 to 2 — Toning mode: redness has faded; skin may feel mildly sensitive or tight; most patients look completely normal by day two. Fractional LIOB mode: pinpoint marks are visible and the skin appears flushed; mild swelling around the treatment area is normal. Spot mode: treated spots are beginning to darken.",
-      "Day 3 to 5 — Toning: skin is fully back to normal, early brightness improvement beginning. Fractional LIOB: pinpoint marks resolving and fading; mild flaking over treatment sites is normal as the micro-columns heal. Spot: treated spots at their darkest. Day 6 to 14 — Fractional LIOB skin fully healed at the surface; collagen remodelling continues underneath for six weeks. Spot: darkened spots begin to shed naturally; by day 10 to 14 most treated spots have shed and the skin underneath is lighter.",
+      "Day 1 to 2,Toning mode: redness has faded; skin may feel mildly sensitive or tight; most patients look completely normal by day two. Fractional LIOB mode: pinpoint marks are visible and the skin appears flushed; mild swelling around the treatment area is normal. Spot mode: treated spots are beginning to darken.",
+      "Day 3 to 5,Toning: skin is fully back to normal, early brightness improvement beginning. Fractional LIOB: pinpoint marks resolving and fading; mild flaking over treatment sites is normal as the micro-columns heal. Spot: treated spots at their darkest. Day 6 to 14,Fractional LIOB skin fully healed at the surface; collagen remodelling continues underneath for six weeks. Spot: darkened spots begin to shed naturally; by day 10 to 14 most treated spots have shed and the skin underneath is lighter.",
     ],
     mechanismCallout:
       "Which mode your session used depends entirely on your skin concern. The delivery mode breakdown for each concern is mapped in full at our pico laser treatment page.",
@@ -1564,7 +1564,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       },
       {
         heading: "Cleansing and Moisturising",
-        body: "Gentle cleanser only — avoid foaming cleansers with sulphates or exfoliating particles for the first week. Micellar water or a gentle cream cleanser is the right choice. Ceramide-rich moisturiser to support the barrier in the days after treatment.",
+        body: "Gentle cleanser only,avoid foaming cleansers with sulphates or exfoliating particles for the first week. Micellar water or a gentle cream cleanser is the right choice. Ceramide-rich moisturiser to support the barrier in the days after treatment.",
       },
       {
         heading: "Skincare to Pause",
@@ -1572,13 +1572,13 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       },
       {
         heading: "Heat and Activity",
-        body: "No saunas, steam rooms, hot showers on the face, or heavy exercise that causes significant facial flushing for 48 to 72 hours. No picking — especially for spot mode sessions. The darkening and natural shedding should not be interfered with.",
+        body: "No saunas, steam rooms, hot showers on the face, or heavy exercise that causes significant facial flushing for 48 to 72 hours. No picking,especially for spot mode sessions. The darkening and natural shedding should not be interfered with.",
       },
     ],
 
     pricingHeading: "Pico Laser Session Pricing at Nexus Clinic KL",
     pricingSubheading:
-      "Recovery is included with every session — no extra charge for aftercare guidance",
+      "Recovery is included with every session,no extra charge for aftercare guidance",
     pricingRows: [
       {
         treatment: "Discovery PICO Rejuvenation (Toning)",
@@ -1587,7 +1587,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
         normalPrice: "RM1,500",
         sellingPrice: "RM1,200",
         promoPrice: "NIL",
-        packageNotes: "Minimal recovery — lunchtime treatment",
+        packageNotes: "Minimal recovery,lunchtime treatment",
       },
       {
         treatment: "Discovery PICO Resurfacing (Fractional LIOB)",
@@ -1617,17 +1617,17 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Subtle flaking over Fractional treatment sites in days 3 to 5",
     ],
     aftercareInstructions: [
-      "Ceramide moisturisers twice daily — restore and maintain the skin barrier",
-      "Hyaluronic acid serums — safe to use immediately after treatment",
-      "EGF or peptide recovery serums — useful in the days following Fractional LIOB",
-      "Medical-grade SPF50 mineral or hybrid — gentler than purely chemical SPF",
+      "Ceramide moisturisers twice daily,restore and maintain the skin barrier",
+      "Hyaluronic acid serums,safe to use immediately after treatment",
+      "EGF or peptide recovery serums,useful in the days following Fractional LIOB",
+      "Medical-grade SPF50 mineral or hybrid,gentler than purely chemical SPF",
       "Skin booster injections between sessions provide deep dermal hydration that supports collagen remodelling",
     ],
 
     candidacyHeading:
       "What to Avoid After Pico Laser Treatment",
     goodCandidate: [
-      "Maintain SPF50 every morning — UV after pico laser triggers PIH",
+      "Maintain SPF50 every morning. UV after pico laser triggers PIH",
       "Simplify routine to cleanser, moisturiser and SPF during recovery",
       "Resume actives only after the 5 to 7 day pause window",
       "Photograph your skin monthly to track progressive results",
@@ -1718,7 +1718,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     heroNote:
       "Honest information from our LCP-certified aesthetic doctors. Side effects are predictable when settings are calibrated correctly for your skin type.",
     heroImage: "/images/skin/pico-laser-malaysia/side-effects-1.webp",
-    heroImageAlt: "Skin reaction assessment after Pico Laser — side effects guide at Nexus Clinic KL",
+    heroImageAlt: "Skin reaction assessment after Pico Laser,side effects guide at Nexus Clinic KL",
     secondImage: "/images/skin/pico-laser-malaysia/side-effects-2.webp",
     secondImageAlt: "LCP-certified doctor calibrating Pico Laser settings to minimise PIH risk at Nexus Clinic KL",
     heroCtaText: "Book Free Consultation",
@@ -1737,12 +1737,12 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "All sessions performed by LCP-certified doctors on FDA-cleared Discovery PICO"
     ),
     overviewSummary:
-      "Pico laser is one of the safest laser modalities for Malaysian Fitzpatrick III to V skin. Its photoacoustic mechanism generates significantly less heat than Q-switch or IPL, which directly reduces PIH risk — the most relevant risk for darker skin tones.",
+      "Pico laser is one of the safest laser modalities for Malaysian Fitzpatrick III to V skin. Its photoacoustic mechanism generates significantly less heat than Q-switch or IPL, which directly reduces PIH risk,the most relevant risk for darker skin tones.",
 
     conditionHeading: "Expected Side Effects After Pico Laser: Normal and Temporary",
     conditionParagraphs: [
-      "These side effects occur in most patients and are not a sign that anything has gone wrong. They are part of the skin's normal response to laser treatment and resolve on their own. Redness and warmth: immediately after a session, the treated area appears red and feels warm — a vascular response to the laser energy. After toning mode, redness fades within 2 to 4 hours. After Fractional LIOB, mild redness may persist for 24 to 48 hours.",
-      "Temporary darkening of pigmentation: after spot or toning mode sessions targeting pigmentation, the treated areas typically appear darker in the 3 to 7 days following treatment. This is fragmented melanin rising toward the skin surface before being cleared — a positive response, not a negative one. The darkening resolves naturally without any intervention.",
+      "These side effects occur in most patients and are not a sign that anything has gone wrong. They are part of the skin's normal response to laser treatment and resolve on their own. Redness and warmth: immediately after a session, the treated area appears red and feels warm, a vascular response to the laser energy. After toning mode, redness fades within 2 to 4 hours. After Fractional LIOB, mild redness may persist for 24 to 48 hours.",
+      "Temporary darkening of pigmentation: after spot or toning mode sessions targeting pigmentation, the treated areas typically appear darker in the 3 to 7 days following treatment. This is fragmented melanin rising toward the skin surface before being cleared, a positive response, not a negative one. The darkening resolves naturally without any intervention.",
       "Pinpoint marks after Fractional LIOB sessions used for acne scars and pore refinement: small red dots appear at each treatment micro-column site. These look like fine petechiae and fade within 1 to 3 days. Mild flaking over the treated sites in days 3 to 5 is normal. Mild swelling, particularly around the eyes and cheekbones, can appear within hours of a session and typically resolves within 24 to 48 hours.",
     ],
 
@@ -1818,13 +1818,13 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     aftercareInstructions: [
       "Tell your doctor about any history of keloid scarring, heat-triggered conditions or previous PIH",
       "Disclose all medications, especially photosensitising antibiotics or retinoids",
-      "Isotretinoin within 6 months is a contraindication — postpone until clear",
+      "Isotretinoin within 6 months is a contraindication,postpone until clear",
       "Active skin infection, open wounds or severe inflammatory acne require resolution first",
-      "Pregnancy and breastfeeding — laser treatment is postponed",
+      "Pregnancy and breastfeeding,laser treatment is postponed",
     ],
 
     candidacyHeading:
-      "Pico Laser vs Other Lasers — Safety Comparison",
+      "Pico Laser vs Other Lasers. Safety Comparison",
     goodCandidate: [
       "Pico vs Fractional CO2: 1-3 days mild recovery vs 5-7 days significant healing; lower PIH risk",
       "Pico vs Q-switch: photoacoustic mechanism generates less heat; meaningfully lower PIH risk on Malaysian skin",
@@ -1903,12 +1903,12 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
   price: {
     slug: "price",
     metaTitle:
-      "Pico Laser Price Malaysia 2025 Cost Per Session Package Rates and What Affects the Price at Nexus Clinic KL",
+      "Pico Laser Price Malaysia 2026 Cost Per Session Package Rates and What Affects the Price at Nexus Clinic KL",
     metaDescription:
       "Pico Laser pricing in Malaysia ranges from RM500 to RM2000 per session depending on skin concern and treatment area. Nexus Clinic KL offers transparent, consultation-based pricing with no hidden fees. Find out the cost for your specific concern before committing to a package.",
 
     heroBadge: "Transparent Pico Laser Pricing • MOH Registered Clinic",
-    heroTitle: "Pico Laser Price Malaysia 2025",
+    heroTitle: "Pico Laser Price Malaysia 2026",
     heroHighlight: "Cost Per Session and What Actually Affects the Price",
     heroDescription:
       "Pico laser pricing in Malaysia is confusing. One clinic charges RM400. Another charges RM2,000. The machine might share the same brand name on the website. The results will not be the same. Understanding what drives the price difference helps you make a better decision about where you actually spend your money.",
@@ -1937,7 +1937,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       "Discovery PICO Rejuvenation / Resurfacing at RM1,200 per session"
     ),
     overviewSummary:
-      "At Nexus Clinic KL, Discovery PICO Rejuvenation and Resurfacing are both RM1,200 per session, the Brightening Laser Curas package is RM846, and tattoo removal is priced at consultation. There is no minimum session commitment — you can start with one session and decide based on how your skin responds.",
+      "At Nexus Clinic KL, Discovery PICO Rejuvenation and Resurfacing are both RM1,200 per session, the Brightening Laser Curas package is RM846, and tattoo removal is priced at consultation. There is no minimum session commitment,you can start with one session and decide based on how your skin responds.",
 
     conditionHeading: "What Makes Pico Laser Sessions More or Less Expensive",
     conditionParagraphs: [
@@ -1972,12 +1972,12 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       },
       {
         heading: "What is the clinic's policy if side effects occur?",
-        body: "Check whether a follow-up is included. A genuine RM200 'pico' session almost always uses a Q-switch device, limits the area, or excludes numbing and aftercare — genuine picosecond devices cannot be operated profitably at that price point.",
+        body: "Check whether a follow-up is included. A genuine RM200 'pico' session almost always uses a Q-switch device, limits the area, or excludes numbing and aftercare,genuine picosecond devices cannot be operated profitably at that price point.",
       },
     ],
 
-    pricingHeading: "Pico Laser Price at Nexus Clinic KL",
-    pricingSubheading: "Current session prices — free consultation included",
+    pricingHeading: "Pico Laser Price Malaysia 2026 at Nexus Clinic KL",
+    pricingSubheading: "Current session prices,free consultation included",
     pricingRows: [
       {
         treatment: "Discovery PICO Rejuvenation",
@@ -2043,13 +2043,13 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
 
     candidacyHeading: "Package Pricing and Session Commitment",
     goodCandidate: [
-      "No minimum session commitment — start with one and decide based on response",
+      "No minimum session commitment,start with one and decide based on response",
       "Consultation-based package pricing for multi-session courses",
       "Packages available for melasma management, acne scar courses and pore refinement",
       "Free consultation with a specific session count and cost estimate before any commitment",
     ],
     pauseIf: [
-      "Beware sessions priced RM200 to RM400 — usually Q-switch marketed as 'pico'",
+      "Beware sessions priced RM200 to RM400,usually Q-switch marketed as 'pico'",
       "Beware non-doctor operators on unverified devices regardless of low price",
       "Beware quotes covering only a small area (nose or forehead only)",
       "Beware prices that exclude numbing cream and post-treatment care",
