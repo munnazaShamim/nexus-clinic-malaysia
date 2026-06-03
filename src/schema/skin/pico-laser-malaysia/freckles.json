@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/#service",
+      "name": "Pico Laser for Freckles in Malaysia",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/",
+      "description": "Pico Laser treatment for freckles and jeragat at Nexus Clinic KL. Ultra-fast picosecond pulses target melanin deposits with minimal heat risk, preserving surrounding healthy Asian skin.",
+      "serviceType": "Pico Laser Treatment for Freckles",
+      "provider": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/"
+      },
+      "image": "https://www.nexus-clinic.com/images/logo.webp"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/#medicalprocedure",
+      "name": "Pico Laser for Freckles",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/",
+      "description": "Picosecond laser delivered in Spot or Toning mode at 755nm or 532nm to fragment epidermal melanin in freckles (jeragat) with minimal collateral heat. Results visible from session one when paired with daily SPF50.",
+      "procedureType": "http://schema.org/NoninvasiveProcedure",
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Nexus Clinic"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/"
+      }
+    }
+  ]
+}

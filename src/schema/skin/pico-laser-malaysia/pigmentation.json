@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/#service",
+      "name": "Pico Laser for Pigmentation in Malaysia",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/",
+      "description": "Pico Laser pigmentation treatment at Nexus Clinic KL. Photoacoustic picosecond pulses target sunspots, post-acne marks, PIH and uneven skin tone safely on Fitzpatrick III to V skin.",
+      "serviceType": "Pico Laser Treatment for Pigmentation",
+      "provider": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/"
+      },
+      "image": "https://www.nexus-clinic.com/images/logo.webp"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/#medicalprocedure",
+      "name": "Pico Laser for Pigmentation",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/",
+      "description": "Picosecond laser treatment to remove dark spots, sunspots and uneven skin tone. Wavelength is matched to pigment depth: 755nm and 532nm for epidermal lesions, 1064nm for deeper dermal pigment.",
+      "procedureType": "http://schema.org/NoninvasiveProcedure",
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Nexus Clinic"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/#service",
+      "name": "Pico Laser Skin Brightening in Malaysia",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/",
+      "description": "Pico laser skin brightening at Nexus Clinic KL using toning mode. Full-face low-fluence passes break down scattered melanin and stimulate collagen for progressive improvement in skin clarity and luminosity. Safe for all Malaysian skin tones.",
+      "serviceType": "Pico Laser Skin Brightening Treatment",
+      "provider": {
+        "@type": "MedicalClinic",
+        "@id": "https://www.nexus-clinic.com#medicalclinic",
+        "name": "Nexus Clinic",
+        "url": "https://www.nexus-clinic.com"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/"
+      },
+      "image": "https://www.nexus-clinic.com/images/logo.webp"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/#medicalprocedure",
+      "name": "Pico Laser Skin Brightening",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/",
+      "description": "Pico toning mode delivers full-face low-fluence sessions that fragment scattered surface melanin and stimulate collagen, producing progressive improvement in skin clarity, evenness and luminosity across 4 to 6 sessions.",
+      "procedureType": "http://schema.org/NoninvasiveProcedure",
+      "recognizingAuthority": {
+        "@type": "Organization",
+        "name": "Nexus Clinic"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/"
+      }
+    }
+  ]
+}
