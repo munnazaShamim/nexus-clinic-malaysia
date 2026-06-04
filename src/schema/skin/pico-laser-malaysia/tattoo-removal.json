@@ -3,9 +3,9 @@
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/#service",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/#service",
       "name": "Pico Laser Tattoo Removal in Malaysia",
-      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/",
       "description": "Pico laser tattoo removal at Nexus Clinic KL. Ultra-short picosecond pulses shatter tattoo ink into dust-sized fragments for faster immune clearance. Black, coloured and resistant tattoos. Multi-wavelength approach: 1064nm, 755nm and 532nm.",
       "serviceType": "Pico Laser Tattoo Removal",
       "provider": {
@@ -20,15 +20,15 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/"
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/"
       },
       "image": "https://www.nexus-clinic.com/images/logo.webp"
     },
     {
       "@type": "MedicalProcedure",
-      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/#medicalprocedure",
+      "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/#medicalprocedure",
       "name": "Pico Laser Tattoo Removal",
-      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/",
+      "url": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/",
       "description": "Picosecond laser tattoo removal using multi-wavelength approach. Black ink at 1064nm, blue and green at 755nm, red and warm tones at 532nm. Sessions spaced 6 to 8 weeks for full immune clearance between treatments.",
       "procedureType": "http://schema.org/NoninvasiveProcedure",
       "recognizingAuthority": {
@@ -37,7 +37,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/pico-tattoo-removal/"
+        "@id": "https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/"
       }
     }
   ]

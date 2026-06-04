@@ -1110,8 +1110,8 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
     ],
   },
 
-  "pico-tattoo-removal": {
-    slug: "pico-tattoo-removal",
+  "tattoo-removal": {
+    slug: "tattoo-removal",
     metaTitle:
       "Pico Laser Tattoo Removal Malaysia Remove All Ink Colours with Picosecond Laser at Nexus Clinic KL",
     metaDescription:

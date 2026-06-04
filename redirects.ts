@@ -145,7 +145,7 @@ export const redirectsList: [string, string][] = [
   ["/en/chemical-peel-malaysia/", "/skin/chemical-peel-malaysia/"],
   ["/en/chemical-peel-malaysia/cost/", "/skin/chemical-peel-malaysia/"],
   ["/en/our-services/carbon-laser-peel/", "/skin/chemical-peel-malaysia/"],
-    // ["", ""],
+  ["/skin/pico-laser-malaysia/pico-tattoo-removal/", "/skin/pico-laser-malaysia/tattoo-removal/"],
 
   // Hair
   ["/en/hair-transplant-malaysia/", "/hair/hair-transplant-malaysia/"],
