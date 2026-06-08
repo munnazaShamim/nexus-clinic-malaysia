@@ -85,8 +85,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o"/>
-        <link rel="preconnect" href="https://www.googletagmanager.com"/>
-        <link rel="preconnect" href="https://www.google-analytics.com"/>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
         <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
         <Script
@@ -102,20 +100,26 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({
-                  'gtm.start': new Date().getTime(),
-                  event:'gtm.js'
+              (function() {
+                var loaded = false;
+                function loadGTM() {
+                  if (loaded) return;
+                  loaded = true;
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                  var s = document.createElement('script');
+                  s.async = true;
+                  s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PRRSXZ2';
+                  document.head.appendChild(s);
+                  ['mousedown','keydown','touchstart','scroll'].forEach(function(e) {
+                    window.removeEventListener(e, loadGTM, { passive: true });
+                  });
+                }
+                window.addEventListener('load', function() { setTimeout(loadGTM, 3500); });
+                ['mousedown','keydown','touchstart','scroll'].forEach(function(e) {
+                  window.addEventListener(e, loadGTM, { passive: true, once: true });
                 });
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src=
-                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-PRRSXZ2');
+              })();
             `,
           }}
         />

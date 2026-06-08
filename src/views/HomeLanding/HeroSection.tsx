@@ -1,14 +1,14 @@
 import Image from "next/image";
 const HeroSection = ({ t }: { t: (key: string) => string }) => {
   return (
-    <section className="relative h-[700px] w-full overflow-hidden">
+    <section className="relative h-[550px] md:h-[700px] w-full overflow-hidden">
         <Image
           src="/images/hero_image.webp"
           alt="Nexus Clinic Aesthetic Treatment"
           fill
           priority
           fetchPriority="high"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 100vw"
           quality={75}
           className="object-cover object-[65%_center] md:object-center"
         />

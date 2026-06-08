@@ -66,6 +66,15 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   devIndicators: false,
 
+  // NOTE: experimental.optimizeCss (critters) is intentionally disabled.
+  // With Next 15.5 + a pure app-router project (no /pages dir), critters'
+  // post-build step throws `ENOENT .next/server/pages-manifest.json` and
+  // fails the build. Re-enable only after upgrading past the fix or moving
+  // to Next's built-in `optimizeCss` successor.
+  // experimental: {
+  //   optimizeCss: true,
+  // },
+
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
       exclude: ['error'],
