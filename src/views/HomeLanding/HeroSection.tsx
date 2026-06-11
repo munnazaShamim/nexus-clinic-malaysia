@@ -1,17 +1,20 @@
 import Image from "next/image";
-const HeroSection = ({ t }: { t: (key: string) => string }) => {
+
+const HeroSection = ({ t }: { t: any }) => {
+  const badges = (t("hero.badges", { returnObjects: true }) as unknown as string[]) || [];
+
   return (
-    <section className="relative h-[550px] md:h-[700px] w-full overflow-hidden">
-        <Image
-          src="/images/hero_image.webp"
-          alt="Nexus Clinic Aesthetic Treatment"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, 100vw"
-          quality={75}
-          className="object-cover object-[65%_center] md:object-center"
-        />
+    <section className="relative h-[760px] w-full overflow-hidden">
+      <Image
+        src="/images/hero_image.webp"
+        alt="Nexus Clinic Aesthetic Treatment"
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+        quality={75}
+        className="object-cover object-[65%_center] md:object-center"
+      />
       <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/10 to-transparent" />
 
       {/* Content */}
@@ -24,9 +27,25 @@ const HeroSection = ({ t }: { t: (key: string) => string }) => {
             <h1 className="text-3xl lg:text-5xl font-georgia text-brown leading-tight mb-6">
               {t("hero.heading")}
             </h1>
-            <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-8">
+            <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
               {t("hero.description")}
             </p>
+
+            {/* Trust Badges */}
+            {badges.length > 0 && (
+              <ul className="flex flex-wrap gap-2 mb-8">
+                {badges.map((badge) => (
+                  <li
+                    key={badge}
+                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 border border-wine/20 text-xs text-brown font-medium backdrop-blur-sm"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-wine" aria-hidden="true" />
+                    {badge}
+                  </li>
+                ))}
+              </ul>
+            )}
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://api.leadconnectorhq.com/widget/booking/tQwUF5MSxWFBM1ymiizk/"
@@ -51,8 +70,8 @@ const HeroSection = ({ t }: { t: (key: string) => string }) => {
         <span className="text-xs tracking-widest text-light">
           {t("hero.scroll")}
         </span>
-        <div className="w-6 h-10 rounded-full border-2 border-light flex justify-center pt-2" >
-          <div className="w-1 h-2 rounded-full bg-light"/>
+        <div className="w-6 h-10 rounded-full border-2 border-light flex justify-center pt-2">
+          <div className="w-1 h-2 rounded-full bg-light" />
         </div>
       </div>
     </section>
