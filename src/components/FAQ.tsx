@@ -61,6 +61,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 const FAQ = (props: any) => {
+  const heading = props.title || "Frequently Asked Questions";
+  const eyebrow = props.eyebrow || "Got Questions?";
   return (
     <section className="py-24 bg-cream">
       <div className="container mx-auto px-4">
@@ -71,10 +73,10 @@ const FAQ = (props: any) => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-wine font-medium tracking-wider uppercase text-sm">
-            Got Questions?
+            {eyebrow}
           </span>
           <h2 className="text-3xl md:text-4xl font-georgia text-brown mt-4">
-            Frequently Asked Questions
+            {heading}
           </h2>
         </motion.div>
 
