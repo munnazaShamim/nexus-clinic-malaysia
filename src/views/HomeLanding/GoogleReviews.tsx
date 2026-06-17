@@ -30,10 +30,13 @@ export default function GoogleReviews() {
     const loadReviews = async () => {
       try {
         const data = await getReviews();
-        const apiReviews = data?.reviews || [];
+        const apiReviews: Review[] = data?.reviews || [];
 
-        if (mounted && apiReviews.length) {
-          setReviews([...apiReviews, ...apiReviews, ...apiReviews]);
+        // Only show 4 & 5 star reviews
+        const filtered = apiReviews.filter((r) => r.rating >= 4);
+
+        if (mounted && filtered.length) {
+          setReviews([...filtered, ...filtered, ...filtered]);
         }
       } catch (error) {
         console.error("Failed to load reviews", error);

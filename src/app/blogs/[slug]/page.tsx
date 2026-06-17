@@ -205,6 +205,9 @@ export default async function Page(
         <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
           <article>
             <SingleBlogPost content={post.content} postSlug={slug} />
+            <p className="text-center text-wine/70 mt-8">
+              ✓ Reviewed by <strong>Dr. Preetha Nair,</strong> Aesthetic Medical Doctor – Nexus Clinic KL
+            </p>
           </article>
         </section>
       </main>
