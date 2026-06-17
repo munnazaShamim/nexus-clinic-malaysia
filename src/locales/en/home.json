@@ -1,42 +1,36 @@
 {
   "hero": {
-    "subtitle": "NEXUS CLINIC",
-    "heading": "Aesthetic Clinic Kuala Lumpur",
-    "description": "Nexus Clinic is a doctor-led aesthetic and medical weight loss clinic located in KLCC, Kuala Lumpur. Home to an award-winning injector, our team provides personalised treatments for facial aesthetics, skin rejuvenation, medical weight loss and hair restoration with a focus on natural-looking results and patient safety.",
+    "subtitle": "Award Winning LCP Certified Aesthetic Clinic",
+    "heading": "Natural Looking Results with Personalized Medical Aesthetic Care",
+    "description": "At Nexus Clinic, we offer doctor led aesthetic treatments focused on the face, skin, and medical weight loss. Our approach is simple  natural looking results, personalized care, and treatments designed to help you feel confident in your own skin.",
     "cta1": "Book Consultation",
     "cta2": "Explore Treatments",
-    "scroll": "SCROLL",
-    "badges": [
-      "Award-Winning Injector",
-      "Doctor-Led Consultations",
-      "KLCC Kuala Lumpur",
-      "Personalised Treatment Plans"
-    ]
+    "scroll": "SCROLL"
   },
   "whyChoose": {
-    "subtitle": "Why Patients Choose Us",
-    "title": "Why Patients Trust",
-    "titleHighlight": "Nexus Clinic",
-    "description": "Every visit to Nexus Clinic begins with a conversation. Our doctors take the time to understand your concerns and goals before recommending any treatment, so that every plan is suited to you and grounded in clinical experience.",
+    "subtitle": "Why Patients Choose Nexus Clinic",
+    "title": "Where Science Meets",
+    "titleHighlight": "Artistry",
+    "description": "At Nexus Clinic, we believe in enhancing your natural beauty through evidence-based treatments. Our doctor-led approach ensures safety, efficacy, and results you'll love.",
     "yearsValue": "15+",
     "yearsLabel1": "Years of",
     "yearsLabel2": "Excellence",
     "features": {
       "moh": {
-        "title": "Award-Winning Expertise",
-        "desc": "Nexus Clinic is home to an award-winning injector recognised for excellence in aesthetic medicine. Every treatment is designed around patient safety, personalised care and natural-looking outcomes."
+        "title": "Natural-Looking Results",
+        "desc": "We believe the best aesthetic results are the ones that look fresh, soft, and never overdone"
       },
       "doctor": {
-        "title": "Doctor-Led Consultations",
-        "desc": "Every treatment journey begins with a consultation and assessment by our medical team to ensure treatments are suitable for your needs and goals."
+        "title": "Doctor-Led Care",
+        "desc": "Your treatments are guided by experienced medical professionals who prioritize both safety and results."
       },
       "personalized": {
         "title": "Personalized Treatment Plans",
-        "desc": "No two patients are the same. Treatment recommendations are tailored based on your concerns, medical history and desired outcomes."
+        "desc": "No two faces, skin types, or goals are the same. Every plan is tailored to you."
       },
       "premium": {
-        "title": "Convenient KLCC Location",
-        "desc": "Located at Wisma UOA II, Jalan Pinang, Nexus Clinic is easily accessible from KLCC, Pavilion, Bukit Bintang, TRX and surrounding areas."
+        "title": "Modern Aesthetic Solutions",
+        "desc": "We combine medical knowledge with modern aesthetic techniques to deliver refined, balanced results."
       }
     }
   },
@@ -50,57 +44,30 @@
       "facial": {
         "title": "Face Aesthetics",
         "subtitle": "Refine. Lift. Refresh.",
-        "description": "Explore facial aesthetic treatments including Botox, dermal fillers, Profhilo, skin boosters and facial contouring procedures designed to enhance facial harmony while maintaining natural-looking results."
+        "description": " We offer facial aesthetic treatments designed to enhance your natural features with a soft and balanced result. From wrinkle care to contouring and facial harmony, our treatments are planned carefully to suit your face and your goals."
       },
       "weightLoss": {
         "title": "Medical Weight Loss",
         "subtitle": "A Smarter Path to Weight Loss",
-        "description": "Our doctor-led weight loss programmes may include Mounjaro, Wegovy, Saxenda, Duromine and personalised weight management support tailored to your goals."
+        "description": "Nexus Clinic offers safe, expert-led medical weight loss treatments for sustainable results."
       },
       "skin": {
         "title": "Skin Treatments",
         "subtitle": "Clearer, Healthier, Brighter Skin",
-        "description": "Treat concerns such as pigmentation, acne scars, uneven skin tone, melasma and signs of ageing through advanced skin rejuvenation treatments."
+        "description": "Nexus Clinic provides advanced treatments for acne, pigmentation, and aging to improve skin texture and tone"
       },
       "hair": {
         "title": "Hair Restoration",
         "subtitle": "PRP & Mesotherapy",
-        "description": "Discover personalised hair restoration programmes designed to support healthier, fuller-looking hair through evidence-based treatment approaches."
+        "description": "Nexus Clinic offers advanced hair restoration treatments, including PRP and mesotherapy, to support natural hair growth and reduce hair loss."
       }
     }
   },
-  "medicalTeam": {
-    "subtitle": "Our Medical Team",
-    "title": "Meet Our",
-    "titleHighlight": "Medical Team",
-    "description": "Treatments at Nexus Clinic are planned and performed by licensed medical doctors with years of combined experience in aesthetic and clinical medicine.",
-    "cta": "Meet the Full Team"
-  },
-  "approach": {
-    "subtitle": "Our Approach",
-    "title": "Our Approach To",
-    "titleHighlight": "Aesthetic & Weight Management",
-    "description": "Every Nexus Clinic plan starts by understanding the concern, not the treatment.",
-    "items": [
-      {
-        "title": "Concerned About Signs Of Ageing?",
-        "desc": "Patients often notice volume loss, wrinkles, skin laxity or changes in facial definition over time. Understanding the cause of these concerns helps determine the most suitable treatment approach."
-      },
-      {
-        "title": "Struggling To Lose Weight Despite Dieting?",
-        "desc": "Many patients have tried multiple diets, exercise programmes or weight loss methods before seeking professional support. Understanding what has prevented progress is often the first step toward long-term success."
-      },
-      {
-        "title": "Not Sure Which Treatment Is Right For You?",
-        "desc": "A consultation allows our medical team to understand your goals, concerns and expectations before recommending suitable treatment options."
-      }
-    ]
-  },
   "testimonials": {
-    "subtitle": "Patient Experiences",
-    "title": "Real Patient",
-    "titleHighlight": "Experiences",
-    "titleEnd": "",
+    "subtitle": "Testimonials",
+    "title": "What Patients Love ",
+    "titleHighlight": " About Nexus Clinic",
+    "titleEnd": "Say",
     "reviews": "(500+ Reviews)",
     "items": [
       {
@@ -118,26 +85,6 @@
         "author": "Emily Wong",
         "role": "Creative Director"
       }
-    ]
-  },
-  "servingAreas": {
-    "subtitle": "Serving Greater Kuala Lumpur",
-    "title": "Serving Patients Across",
-    "titleHighlight": "Kuala Lumpur",
-    "paragraph1": "Nexus Clinic welcomes patients from KLCC, Bukit Bintang, Pavilion, TRX, Bangsar, Mont Kiara, Ampang, Damansara Heights, Petaling Jaya, Cheras and Setapak.",
-    "paragraph2": "Conveniently located at Wisma UOA II, Jalan Pinang, the clinic is easily accessible for patients seeking aesthetic and medical weight loss treatments in Kuala Lumpur.",
-    "areas": [
-      "KLCC",
-      "Bukit Bintang",
-      "Pavilion",
-      "TRX",
-      "Bangsar",
-      "Mont Kiara",
-      "Ampang",
-      "Damansara Heights",
-      "Petaling Jaya",
-      "Cheras",
-      "Setapak"
     ]
   },
   "contact": {
@@ -161,71 +108,46 @@
     "submitButton": "Submit Enquiry"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "titleHighlight": "About Aesthetic Clinics",
     "items": [
       {
-        "q": "What Do Aesthetic Clinics Do?",
-        "a": "Aesthetic clinics provide non-surgical and minimally invasive medical treatments that address skin, facial, weight, and hair concerns. Treatments commonly include injectables such as Botox and dermal fillers, laser therapies for skin and pigmentation, medical-grade facials, body contouring and medical weight management. At Nexus Clinic, every plan is built around your goals after a doctor-led consultation."
+        "q": "What does Nexus Clinic specialize in?",
+        "a": "Nexus Clinic specializes in aesthetic treatments for the face, skin, and medical weight loss. Our goal is to provide personalized care with natural-looking results."
       },
       {
-        "q": "How Do I Choose The Right Aesthetic Clinic In Malaysia?",
-        "a": "Look for a clinic that is registered with the Ministry of Health, has treatments performed or supervised by LCP-certified doctors, uses MOH-approved devices, and offers transparent pricing with no pressure to commit. A genuine consultation should always come before any treatment recommendation."
+        "q": "Is Nexus Clinic a doctor-led aesthetic clinic?",
+        "a": "Yes, Nexus Clinic is a doctor-led aesthetic clinic. Patient safety, treatment suitability, and natural results are at the heart of our approach."
       },
       {
-        "q": "How Can I Check If An Aesthetic Clinic Is Registered In Malaysia?",
-        "a": "Registered aesthetic clinics display their MOH licence on premises and have practising doctors with valid Letter of Credentialing and Privileging (LCP) certificates issued by the Ministry of Health. You can also verify the practising doctors through the Malaysian Medical Council register."
+        "q": "What treatments are available at Nexus Clinic?",
+        "a": "At Nexus Clinic, we offer a range of aesthetic services that may include facial rejuvenation, skin treatments, and medical weight loss support. Your recommended treatment depends on your needs and goals."
       },
       {
-        "q": "Why Choose A Doctor-Led Aesthetic Clinic?",
-        "a": "Doctor-led clinics ensure that consultations, treatment planning and procedures are performed or directly supervised by qualified medical practitioners. This matters most when assessing skin concerns, selecting laser settings, prescribing medical weight loss treatments and managing any complications safely."
+        "q": "Does Nexus Clinic focus on natural-looking results?",
+        "a": "Yes. At Nexus Clinic, we believe aesthetic treatments should enhance your features in a soft and balanced way. We focus on results that look refreshed, not overdone."
       },
       {
-        "q": "What Should I Expect During My First Consultation?",
-        "a": "Your first consultation at Nexus Clinic includes a medical history review, an honest conversation about your goals and a clinical assessment of your concerns. Your doctor will then explain the suitable treatment options, expected outcomes, session counts and pricing. There is no obligation to commit on the day."
+        "q": "Can I visit Nexus Clinic for skin concerns?",
+        "a": "Yes, Nexus Clinic offers treatments for common skin concerns such as dullness, uneven texture, acne, pigmentation, and signs of aging. A consultation helps us guide you to the right option."
       },
       {
-        "q": "What Treatments Are Commonly Offered By Aesthetic Clinics?",
-        "a": "Common treatments include Botox, dermal fillers, skin boosters, Profhilo, threadlifts, pico laser, Sylfirm X RF microneedling, chemical peels, HydraFacial, medical weight loss programmes and hair restoration. The right choice depends on the concern being treated rather than the device available."
+        "q": "Does Nexus Clinic offer weight loss treatments?",
+        "a": "Yes, Nexus Clinic provides medically guided weight loss support for patients looking for a more structured and professional approach to their journey."
       },
       {
-        "q": "What Is A Medical Weight Loss Clinic?",
-        "a": "A medical weight loss clinic provides doctor-supervised, evidence-based weight management programmes that may include prescription medication such as Mounjaro, Wegovy, Saxenda or Duromine, alongside dietary guidance and ongoing clinical review. It is suited for patients who have not achieved results through diet and exercise alone."
+        "q": "How do I know which treatment at Nexus Clinic is right for me?",
+        "a": "The best way is to book a consultation at Nexus Clinic. We will assess your concerns, listen to your goals, and recommend a treatment plan that fits you."
       },
       {
-        "q": "How Do Personalized Treatment Plans Work?",
-        "a": "A personalised treatment plan starts with a clinical assessment of your specific concerns, skin type, medical history and goals. Your doctor then sequences the right treatments at the right intervals, adjusting as the skin or body responds. The result is a plan built around you, not a fixed protocol applied to everyone."
-      }
-    ]
-  },
-  "whyChooseFinal": {
-    "subtitle": "What Sets Us Apart",
-    "title": "Why Choose",
-    "titleHighlight": "Nexus Clinic",
-    "items": [
-      {
-        "title": "Award-Winning Injector",
-        "desc": "Recognised for excellence in aesthetic medicine"
+        "q": "Is Nexus Clinic suitable for first-time aesthetic patients?",
+        "a": "Yes. Many patients visit Nexus Clinic for their first aesthetic consultation. We explain everything clearly and recommend only what is suitable for you."
       },
       {
-        "title": "Doctor-Led Care",
-        "desc": "Consultations and treatments by qualified doctors"
+        "q": "Where is Nexus Clinic located?",
+        "a": "Nexus Clinic is located at LG 10, Wisma UOA II, Jalan Pinang, Kuala Lumpur."
       },
       {
-        "title": "Personalized Treatment Plans",
-        "desc": "Plans built around your concerns and goals"
-      },
-      {
-        "title": "Medical Weight Loss Expertise",
-        "desc": "Doctor-supervised, evidence-based programmes"
-      },
-      {
-        "title": "Natural-Looking Results",
-        "desc": "Refined outcomes that look soft and balanced"
-      },
-      {
-        "title": "Convenient KLCC Location",
-        "desc": "Wisma UOA II, easily accessible across KL"
+        "q": "How can I book an appointment with Nexus Clinic?",
+        "a": "You can contact Nexus Clinic by phone or use the booking form on the website to arrange your consultation."
       }
     ]
   }
