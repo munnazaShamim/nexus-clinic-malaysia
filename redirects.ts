@@ -339,7 +339,7 @@ export const blogStandaloneRedirects: [string, string][] = [
   ["/en/prp-joint-and-knee-treatment-course-and-costs-malaysia/", "/blogs/prp-joint-and-knee-treatment-course-and-costs-malaysia/"],
   ["/en/rejuran-treatment-malaysia/", "/blogs/rejuran-treatment-all-you-need-to-know/"],
   ["/en/stem-cell-therapy-for-skin-regeneration-and-wound-healing/", "/blogs/stem-cell-therapy-for-skin-regeneration-and-wound-healing/"],
-  ["/en/karisma-collagen-skin-booster/", "/blogs/karisma-collagen-skin-booster/"],
+  ["/en/karisma-collagen-skin-booster/", "/face/karisma-malaysia/"],
   ["/en/face-contouring-malaysia/", "/blogs/face-contouring-treatments-in-malaysia-everything-you-need-to-know/"],
   ["/en/sculptra-malaysia/ellanse-vs-sculptra-2/", "/blogs/sculptra-collagen-boosting-everything-you-need-to-know-about-this-injectable-treatment/"],
   ["/en/carboxy-therapy-malaysia/", "/blogs/carboxy-facial-treatment/"],

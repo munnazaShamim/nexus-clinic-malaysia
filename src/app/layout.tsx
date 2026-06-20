@@ -10,13 +10,6 @@ export const metadata = {
   },
   description:
     "Nexus Clinic Kuala Lumpur provides weight loss, aesthetic, and skin treatments with experienced medical professionals.",
-  keywords: [
-    "weight loss clinic Kuala Lumpur",
-    "aesthetic clinic KL",
-    "skin clinic Malaysia",
-    "fat loss treatment KL",
-    "Nexus Clinic",
-  ],
   alternates: {
     canonical: "https://www.nexus-clinic.com",
   },

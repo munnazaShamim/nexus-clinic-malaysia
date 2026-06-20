@@ -9,8 +9,8 @@ export const faceTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'dermal-filler-malaysia',
     component: 'DermalFiller',
-    title: 'Best Dermal Fillers Malaysia | Effective Treatment With Award Winning Doctors at Nexus Clinic Kuala Lumpur',
-    description: 'Trusted results. Award-winning injectors and aesthetic doctors at Nexus Clinic KL deliver expert dermal filler in Kuala Lumpur. Natural volume, sharper contours, zero surgery. Book your free consultation today.',
+    title: 'Dermal Fillers Malaysia: Cheek, Jawline and Under-Eye Filler at Nexus Clinic KL',
+    description: 'Dermal filler treatment in Malaysia for cheeks, jawline, chin, lips and under-eye areas. Doctor-administered hyaluronic acid fillers with natural-looking results at Nexus Clinic KL, Kuala Lumpur. Book your free consultation today.',
   },
   {
     slug: 'lip-filler-malaysia',
@@ -87,14 +87,14 @@ export const faceTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'sculptra-malaysia',
     component: 'SculptraMalaysia',
-    title: 'Best Sculptra Malaysia | Collagen-Stimulating Treatment at Nexus Clinic Kuala Lumpur',
-    description: 'Restore facial volume and improve skin firmness with Sculptra in Malaysia. Nexus Clinic KL offers doctor-led Sculptra treatment for natural, gradual, long-lasting results. Book your free consultation today.',
+    title: 'Sculptra Malaysia: Collagen Biostimulator Treatment at Nexus Clinic KL',
+    description: 'Sculptra collagen biostimulator treatment in Malaysia. Poly-L-lactic acid injectable to rebuild lost facial volume and improve skin firmness over time. Doctor-led sessions at Nexus Clinic KL. From RM3,000 per vial. Book a free consultation.',
   },
   {
     slug: 'karisma-malaysia',
     component: 'KarismaMalaysia',
-    title: 'Best Karisma Malaysia | Collagen Skin Booster Treatment at Nexus Clinic Kuala Lumpur',
-    description: 'Improve skin firmness, elasticity and glow with Karisma in Malaysia. Nexus Clinic KL offers doctor-led Karisma Rh Collagen treatment for natural skin rejuvenation. Book your free consultation today.',
+    title: 'Karisma Collagen Skin Booster Malaysia: RH Collagen Injectable at Nexus Clinic KL',
+    description: 'Karisma RH Collagen skin booster in Malaysia. Bioidentical silkworm-derived collagen injectable that stimulates your skin\'s own collagen and elastin. Reduces fine lines, improves firmness and hydration. Doctor-administered at Nexus Clinic KL. Book a free consultation.',
   },
   {
     slug: 'plinest-malaysia',

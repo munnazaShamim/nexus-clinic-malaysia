@@ -27,8 +27,9 @@ export const hairTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'hair-loss-treatment-malaysia',
     component: 'HairLossTreatment',
-    title: 'Hair Loss Treatment Malaysia: Alopecia and Hair Growth Treatment for All Hair Loss Types | Nexus Clinic KL',
-    description: 'Hair loss treatment in Malaysia for all types of alopecia including alopecia areata and androgenetic alopecia. PRP, finasteride and hair growth treatment to promote hair growth and restore thin hair and hair follicles. Effective hair loss and hair transplant consultation at this specialist in Malaysia. Book today.',  },
+    title: 'Hair Loss Treatment Malaysia: PRP, Finasteride and Mesotherapy at Nexus Clinic KL',
+    description: 'Hair loss treatments in Malaysia including PRP therapy, finasteride prescription, hair mesotherapy, exosomes and hair transplant. Doctor-assessed at Nexus Clinic KL. Book a free hair and scalp consultation today.',
+  },
   {
     slug: 'beard-transplant-malaysia',
     component: 'BeardTreatment',
@@ -55,8 +56,8 @@ export const hairTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'finasteride-treatment-malaysia',
     component: 'Finasteride',
-    title: 'Finasteride for Hair Loss in Malaysia: Finasteride 1mg, Topical Minoxidil and Hair Loss Treatment at Nexus Clinic KL',
-    description: 'Finasteride hair loss treatment in Malaysia. Finasteride 1mg prescribed by doctors to treat male pattern hair loss by blocking DHT and reducing hair follicle miniaturisation. Topical and oral finasteride, minoxidil, PRP and dutasteride available. Thin hair, receding hairline and hair regrowth treatment at Nexus Clinic KL. Book your consultation today.', 
+    title: 'Finasteride Malaysia: Doctor-Prescribed Hair Loss Treatment | Nexus Clinic KL',
+    description: 'Finasteride 1mg for male pattern hair loss in Malaysia, prescribed by a licensed doctor after a proper hair and scalp assessment. Oral and topical finasteride, minoxidil and PRP available. Nexus Clinic KL, Kuala Lumpur. Book your consultation.',
   },
   {
     slug: 'alopecia-areata-treatment-malaysia',

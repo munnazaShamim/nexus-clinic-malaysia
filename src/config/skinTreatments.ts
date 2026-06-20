@@ -69,8 +69,8 @@ export const skinTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'keloid-treatment-malaysia',
     component: 'KeloidTreatment',
-    title: 'Effective Keloid Removal Treatment in Malaysia for Lasting Keloid Scar Removal | Nexus Clinic KL',
-    description: 'Raised, itchy scars that keep growing and do not respond to creams alone. Nexus Clinic KL diagnoses whether you have a true keloid or a hypertrophic scar and builds a combination treatment programme matched to your site, size and skin type. Book your free assessment today.',
+    title: 'Keloid Treatment in Malaysia: Steroid Injection, Laser and Scar Control | Nexus Clinic KL',
+    description: 'Keloid treatment in Malaysia using steroid injection, pulsed dye laser, cryotherapy and silicone sheeting. Nexus Clinic KL treats BCG vaccine keloids, earlobe keloids and post-acne keloids. Doctor-assessed combination protocols for Malaysian skin. Book your free assessment.',
   },
   {
     slug: 'rosacea-treatment-malaysia',
@@ -87,8 +87,8 @@ export const skinTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'laser-hair-removal-malaysia',
     component: 'LaserHairRemoval',
-    title: 'Safe Laser Hair Removal in Kuala Lumpur for All Malaysian Skin Types | Nexus Clinic KL',
-    description: 'The best laser hair removal clinic in Malaysia for permanent laser hair removal treatment. Remove unwanted hair safely using diode laser and Nd:YAG technology calibrated for Malaysian skin in Kuala Lumpur and Selangor. No wax, no ingrown hairs, no PIH. Book your free consultation today.',
+    title: 'Laser Hair Removal Malaysia: Nd:YAG and Diode for All Skin Types | Nexus Clinic KL',
+    description: 'Permanent laser hair removal in Malaysia using Nd:YAG 1064nm and Diode 808nm technology calibrated for Malaysian skin. Doctor-performed sessions at Nexus Clinic KL in Kuala Lumpur. No wax, no ingrown hairs, no PIH. Book your free consultation today.',
   },
   {
     slug: 'tattoo-removal-malaysia',

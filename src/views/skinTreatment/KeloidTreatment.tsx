@@ -106,8 +106,8 @@ export default function KeloidLandingPage({ locale }: KeloidTreatmentProps) {
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Combination Therapy • Doctor-Only"
-        title="Effective Keloid Removal Treatment in Malaysia for"
-        highlight="Lasting Keloid Scar Control"
+        title="Keloid Treatment in Malaysia:"
+        highlight="Injection, Laser and Scar Control at Nexus Clinic KL"
         description="Raised, itchy scars that keep growing and do not respond to creams alone. Keloids are one of the most difficult skin conditions to manage because they resist simple solutions and frequently recur after treatment."
         details="Malaysian patients of Malay, Chinese and Indian ethnicity carry a significantly elevated genetic risk of keloid formation. At Nexus Clinic KL, keloid management begins with accurate diagnosis whether your scar is a true keloid, a hypertrophic scar, or a BCG vaccination keloid on your deltoid."
         note="The BCG vaccination scar on the left upper arm is one of the most uniquely prevalent keloid presentations in Malaysia. Thousands of Malaysians have keloids from their childhood immunisation triggering excessive collagen deposition."

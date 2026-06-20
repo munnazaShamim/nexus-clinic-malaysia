@@ -75,7 +75,7 @@ export const regenerativeTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'shockwave-therapy-malaysia',
     component: 'ShockwaveTheraphy',
-    title: 'Shockwave Therapy Malaysia: Extracorporeal Shockwave Therapy (ESWT) for Erectile Dysfunction and Musculoskeletal Conditions in Kuala Lumpur',
-    description: 'Shockwave therapy (ESWT) in Malaysia: non-invasive extracorporeal shockwave therapy for erectile dysfunction and musculoskeletal conditions. Acoustic shockwave technology delivers non-invasive treatment for ED, plantar fasciitis, tennis elbow and tendinopathy at Nexus Clinic KL. Shockwave therapy in Malaysia with doctor-performed sessions and honest outcome expectations. Book your assessment today.',
+    title: 'Shockwave Therapy Malaysia: ESWT for ED and Pain Relief | Nexus Clinic KL',
+    description: 'Extracorporeal shockwave therapy (ESWT) in Malaysia for erectile dysfunction and musculoskeletal pain. Treats ED, plantar fasciitis, tennis elbow and tendinopathy. Doctor-performed sessions at Nexus Clinic KL. Book your assessment today.',
   }
 ];

@@ -78,7 +78,7 @@ export async function generateMetadata({
       : `${baseUrl}/${locale}/skin/${slug}`;
 
   return {
-    title: treatment.title,
+    title: { absolute: treatment.title },
     description: treatment.description,
     alternates: { canonical: url },
     openGraph: {
@@ -86,6 +86,14 @@ export async function generateMetadata({
       description: treatment.description,
       url,
       siteName: "Nexus Clinic",
+      type: 'website',
+      images: [{ url: `${baseUrl}/logo.png`, width: 1200, height: 630, alt: 'Nexus Clinic' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: treatment.title,
+      description: treatment.description,
+      images: [`${baseUrl}/logo.png`],
     },
   };
 }
