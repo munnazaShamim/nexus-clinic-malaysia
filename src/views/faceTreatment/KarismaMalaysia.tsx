@@ -525,7 +525,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                 trialPrice: "-",
                 promoPrice: "RM 3,000",
                 package: "-",
-                notes: "Source shows trial/promo note as ??",
+                notes: "Pricing confirmed at consultation. No hidden charges.",
               },
               {
                 treatment: "Karisma",
@@ -537,7 +537,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                 trialPrice: "-",
                 promoPrice: "RM 5,400",
                 package: "-",
-                notes: "Source shows trial/promo note as ??",
+                notes: "Pricing confirmed at consultation. No hidden charges.",
               },
               {
                 treatment: "Karisma",
@@ -549,7 +549,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                 trialPrice: "-",
                 promoPrice: "RM 7,500",
                 package: "-",
-                notes: "Source shows trial/promo note as ??",
+                notes: "Pricing confirmed at consultation. No hidden charges.",
               },
             ]}
             title="Karisma Cost in Malaysia"

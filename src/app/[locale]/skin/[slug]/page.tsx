@@ -95,6 +95,10 @@ export async function generateMetadata({
       description: treatment.description,
       images: [`${baseUrl}/logo.png`],
     },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

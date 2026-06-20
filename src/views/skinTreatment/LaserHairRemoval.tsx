@@ -107,8 +107,8 @@ export default function LaserHairRemovalLanding({ locale }: LaserHairRemovalProp
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Doctor-Led Laser Hair Removal • MOH Registered Clinic"
-        title="Laser Hair Removal for"
-        highlight="All Malaysian Skin Types"
+        title="Laser Hair Removal Malaysia:"
+        highlight="Nd:YAG and Diode for All Skin Types"
         description="The best laser hair removal clinic in Malaysia for permanent laser hair removal treatment. Remove unwanted hair safely using diode laser and Nd:YAG technology calibrated for Malaysian skin in Kuala Lumpur and Selangor."
         details="Waxing every three weeks. Shaving every few days. Ingrown hairs that leave dark marks. For most patients, the question is not whether to start laser hair removal but which clinic to trust with a procedure that, done correctly, delivers safe and permanent hair reduction."
         note="Over 5,000 Aesthetic Procedures Completed — Our doctors have more than 15 years of combined experience treating laser hair removal as the medical procedure it is: assessed per skin type, calibrated per session and honest about realistic results."

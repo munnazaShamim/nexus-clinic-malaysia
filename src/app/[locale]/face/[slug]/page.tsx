@@ -92,6 +92,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: treatment.description,
       images: [`${baseUrl}/logo.png`],
     },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 

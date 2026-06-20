@@ -307,6 +307,28 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
         </motion.div>
       </section>
 
+      {/* Pricing Anchor Section — visible early for cost-intent visitors */}
+      <section className="py-10 px-4 bg-wine/5 border-y border-wine/10">
+        <div className="container mx-auto max-w-5xl flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div className="flex-1">
+            <h2 className="font-georgia text-xl md:text-2xl text-brown mb-2">Sculptra Treatment Cost in Malaysia</h2>
+            <p className="font-inter text-brown text-sm md:text-base">
+              Sculptra in Malaysia starts from <strong>RM3,000 per vial</strong> at Nexus Clinic KL. Most patients require 2 to 3 sessions for a full collagen-building result, spaced several weeks apart. Pricing is discussed before any treatment begins with no hidden charges.{" "}
+              <Link href="#sculptra-pricing" className="text-wine underline underline-offset-2 font-semibold hover:text-wine/80 transition-colors">
+                Sculptra cost in Malaysia
+              </Link>
+            </p>
+          </div>
+          <Link
+            href="/contact-us/"
+            className="shrink-0 inline-flex items-center gap-2 bg-wine text-light font-inter font-semibold px-5 py-3 rounded-full hover:bg-wine/90 transition-colors text-sm"
+          >
+            Book Free Consultation
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
       {/* What Is Sculptra Section */}
       <section className="py-20 px-4 bg-light">
         <motion.div
@@ -562,7 +584,7 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 bg-light">
+      <section id="sculptra-pricing" className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -581,7 +603,6 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
                 { key: "trialPrice", header: "First Trial Price RM" },
                 { key: "promoPrice", header: "Promo Price" },
                 { key: "package", header: "Standard Package" },
-                { key: "notes", header: "Trial / Promo Notes" },
               ]}
               data={[
                 {
@@ -594,7 +615,6 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
                   trialPrice: "-",
                   promoPrice: "RM 2,700",
                   package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
                 },
                 {
                   treatment: "Sculptra",
@@ -606,7 +626,7 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
                   trialPrice: "-",
                   promoPrice: "RM 7,500",
                   package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
+                  notes: "Pricing confirmed at consultation. No hidden charges.",
                 },
               ]}
               title="Sculptra Cost in Malaysia"

@@ -96,8 +96,8 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Prescription Medication • Doctor-Only"
-        title="Finasteride for Hair Loss in Malaysia for"
-        highlight="Male Pattern Baldness Treatment"
+        title="Finasteride Malaysia:"
+        highlight="Doctor-Prescribed Hair Loss Treatment at Nexus Clinic KL"
         description="Male pattern hair loss affects a significant proportion of Malaysian men and is one of the most treatable forms of hair loss when addressed early. A receding hairline and thinning crown are the visible expressions of a hormone-driven process."
         details="Finasteride is the most evidence-supported oral prescription medication for hair loss available in Malaysia. Finasteride works by blocking the enzyme that converts testosterone to DHT, reducing DHT levels in the scalp by 60 to 70% and stopping the progression of follicle miniaturisation."
         note="Finasteride is a prescription medication regulated by the National Pharmaceutical Regulatory Agency (NPRA) under the Ministry of Health Malaysia. It cannot be purchased at a pharmacy without a prescription. To buy finasteride safely in Malaysia, a medical consultation with a registered doctor is required."

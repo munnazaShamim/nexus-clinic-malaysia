@@ -199,8 +199,8 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="PRP • Finasteride • Minoxidil • Laser Therapy"
-        title="Hair Loss Treatment in Malaysia for"
-        highlight="All Types of Alopecia"
+        title="Hair Loss Treatment Malaysia:"
+        highlight="PRP, Finasteride and Mesotherapy at Nexus Clinic KL"
         description="Hair loss is one of the most common concerns bringing Malaysian patients to a specialist clinic, yet it is also one of the most inconsistently managed."
         details="The reason most hair loss treatment approaches fail is that they do not start with a correct diagnosis of which type of hair loss the patient has, what causes hair loss in that specific case, and what the evidence-based treatment options are for that particular cause."
         note="At Nexus Clinic KL, every hair loss assessment begins with a clinical diagnosis of the specific type of hair loss, followed by a personalised hair growth treatment programme designed around that diagnosis."
