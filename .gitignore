@@ -29,3 +29,6 @@ out
 # environment varialbe
 .env
 
+# Admin pricing overrides — edited via browser on VPS, must NOT be in git
+src/data/pricing-overrides.json
+

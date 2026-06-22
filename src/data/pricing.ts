@@ -491,3 +491,85 @@ export const productCardPrices = {
   wegovy: "RM 1,288",
   saxenda: "RM 600",
 };
+
+// ─── ADMIN PRICE OVERRIDES ────────────────────────────────────────────────────
+// Written by /admin/pricing panel. File is gitignored on VPS — survives git pull.
+// Applied at build time: run `npm run build && pm2 reload nexus-clinic-malaysia`.
+/* eslint-disable @typescript-eslint/no-require-imports */
+try {
+  const _ov: Record<string, unknown> = require('./pricing-overrides.json');
+  const _patch = (arr: object[], key: string) => {
+    const s = _ov[key] as Partial<Record<string, unknown>>[] | undefined;
+    if (!Array.isArray(s)) return;
+    s.forEach((p, i) => { if (arr[i] && p) Object.assign(arr[i], p); });
+  };
+  // Face
+  _patch(dermalFillerPricing, 'dermalFillerPricing');
+  _patch(lipFillerPricing, 'lipFillerPricing');
+  _patch(underEyeFillerPricing, 'underEyeFillerPricing');
+  _patch(tearTroughFillerPricing, 'tearTroughFillerPricing');
+  _patch(skinBoosterPricing, 'skinBoosterPricing');
+  _patch(noseThreadLiftPricing, 'noseThreadLiftPricing');
+  _patch(noseFillerPricing, 'noseFillerPricing');
+  _patch(jawlineFillerPricing, 'jawlineFillerPricing');
+  _patch(chinFillerPricing, 'chinFillerPricing');
+  _patch(cheekFillerPricing, 'cheekFillerPricing');
+  _patch(plinestPricing, 'plinestPricing');
+  _patch(profhiloPricing, 'profhiloPricing');
+  _patch(sculptraPricing, 'sculptraPricing');
+  _patch(karismaPricing, 'karismaPricing');
+  _patch(newestPricing, 'newestPricing');
+  _patch(botoxPricing, 'botoxPricing');
+  // Weight Loss
+  _patch(coolsculptingPricing, 'coolsculptingPricing');
+  _patch(mounjaroPricing, 'mounjaroPricing');
+  _patch(wegovyComparisonPricing, 'wegovyComparisonPricing');
+  _patch(zepBoundPricing, 'zepBoundPricing');
+  _patch(hcgPricing, 'hcgPricing');
+  _patch(ivDripPricing, 'ivDripPricing');
+  _patch(doctorMonitoredPricing, 'doctorMonitoredPricing');
+  _patch(duromineComparisonPricing, 'duromineComparisonPricing');
+  _patch(glpPricing, 'glpPricing');
+  _patch(ozempicComparisonPricing, 'ozempicComparisonPricing');
+  // Skin
+  _patch(acneTreatmentPricing, 'acneTreatmentPricing');
+  _patch(acneScarPricing, 'acneScarPricing');
+  _patch(melasmaPricing, 'melasmaPricing');
+  _patch(moleRemovalPricing, 'moleRemovalPricing');
+  _patch(hydrafacialPricing, 'hydrafacialPricing');
+  _patch(picoLaserPricing, 'picoLaserPricing');
+  _patch(darkEyeCirclePricing, 'darkEyeCirclePricing');
+  _patch(skinWhiteningPricing, 'skinWhiteningPricing');
+  _patch(tattooRemovalPricing, 'tattooRemovalPricing');
+  _patch(chemicalPeelPricing, 'chemicalPeelPricing');
+  _patch(rosaceaPricing, 'rosaceaPricing');
+  _patch(pigmentationPricing, 'pigmentationPricing');
+  _patch(stretchMarkPricing, 'stretchMarkPricing');
+  _patch(laserHairRemovalFemalePricing, 'laserHairRemovalFemalePricing');
+  _patch(laserHairRemovalMalePricing, 'laserHairRemovalMalePricing');
+  // Hair
+  _patch(hairTransplantPricing, 'hairTransplantPricing');
+  _patch(fueHairTransplantPricing, 'fueHairTransplantPricing');
+  _patch(beardTreatmentPricing, 'beardTreatmentPricing');
+  _patch(prpHairPricing, 'prpHairPricing');
+  _patch(hairMesotherapyPricing, 'hairMesotherapyPricing');
+  _patch(minoxidilPricing, 'minoxidilPricing');
+  _patch(finasteridePricing, 'finasteridePricing');
+  _patch(hairLossPricing, 'hairLossPricing');
+  // Regenerative
+  _patch(oShotPricing, 'oShotPricing');
+  _patch(pShotPricing, 'pShotPricing');
+  _patch(edTreatmentPricing, 'edTreatmentPricing');
+  _patch(testosteronePricing, 'testosteronePricing');
+  _patch(menopausePricing, 'menopausePricing');
+  _patch(stemCellPricing, 'stemCellPricing');
+  _patch(antiAgingInjectablesPricing, 'antiAgingInjectablesPricing');
+  _patch(antiAgingWellnessPricing, 'antiAgingWellnessPricing');
+  _patch(hormoneReplacementPricing, 'hormoneReplacementPricing');
+  _patch(shockwavePricing, 'shockwavePricing');
+  // Product card prices (object, not array)
+  const _cardOv = _ov['productCardPrices'] as Record<string, string> | undefined;
+  if (_cardOv && !Array.isArray(_cardOv)) Object.assign(productCardPrices, _cardOv);
+} catch {
+  // pricing-overrides.json not present — use base defaults
+}
