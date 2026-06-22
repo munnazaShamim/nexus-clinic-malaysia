@@ -26,6 +26,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { finasteridePricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface FinasterideLandingProps {
   locale: string;
@@ -614,16 +615,7 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
                 { key: "sellingPrice", header: "Selling Price" },
                 { key: "notes", header: "Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Finasteride 1mg 30's",
-                  brand: "Nexus",
-                  unit: "30's for 1 month supply",
-                  normalPrice: "RM222",
-                  sellingPrice: "RM222",
-                  notes: "Oral finasteride for male pattern hair loss",
-                },
-              ]}
+              data={finasteridePricing}
               title="Finasteride Cost in Malaysia 2026"
               subtitle="Transparent pricing at Nexus Clinic KL"
               variant="detailed"

@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { karismaPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity, Leaf, Recycle, Award, Sparkle } from "lucide-react";
@@ -514,44 +515,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Karisma",
-                product: "1 Karisma 2 cc",
-                areas: "Face: cheeks, jawline, temples / Neck / Hands / Décolletage",
-                units: "1 Syringe",
-                normalPrice: "RM 3,000",
-                sellingPrice: "RM 3,000",
-                trialPrice: "-",
-                promoPrice: "RM 3,000",
-                package: "-",
-                notes: "Pricing confirmed at consultation. No hidden charges.",
-              },
-              {
-                treatment: "Karisma",
-                product: "2 Karisma 4 cc",
-                areas: "Same treatment section",
-                units: "2 Syringes",
-                normalPrice: "RM 6,000",
-                sellingPrice: "RM 5,400",
-                trialPrice: "-",
-                promoPrice: "RM 5,400",
-                package: "-",
-                notes: "Pricing confirmed at consultation. No hidden charges.",
-              },
-              {
-                treatment: "Karisma",
-                product: "3 Karisma 6 cc",
-                areas: "Same treatment section",
-                units: "3 Syringes",
-                normalPrice: "RM 9,000",
-                sellingPrice: "RM 7,500",
-                trialPrice: "-",
-                promoPrice: "RM 7,500",
-                package: "-",
-                notes: "Pricing confirmed at consultation. No hidden charges.",
-              },
-            ]}
+            data={karismaPricing}
             title="Karisma Cost in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="detailed"

@@ -25,6 +25,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import TableForPages from "@/src/components/TableForPages"
+import { duromineComparisonPricing } from '@/src/data/pricing';
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
@@ -762,64 +763,7 @@ const DuromineLandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
                 { key: "hcg", header: "HCG Programme" },
                 { key: "contrave", header: "Contrave (Naltrexone/Bupropion)" },
               ]}
-              data={[
-                {
-                  factor: "Mechanism",
-                  duromine: "CNS stimulant, appetite suppressant",
-                  ozempic: "GLP-1 receptor agonist",
-                  hcg: "Hormonal fat mobilisation + VLCD",
-                  contrave: "Reward pathway modulator",
-                },
-                {
-                  factor: "Admin Route",
-                  duromine: "Daily oral capsule",
-                  ozempic: "Weekly injection",
-                  hcg: "Daily injection",
-                  contrave: "Daily oral tablet",
-                },
-                {
-                  factor: "Speed of Results",
-                  duromine: "Fast. Visible in 2 to 4 weeks",
-                  ozempic: "Moderate. 4 to 8 weeks",
-                  hcg: "Very fast. Days to 1 week",
-                  contrave: "Slow. 8 to 12 weeks",
-                },
-                {
-                  factor: "Duration",
-                  duromine: "Up to 12 weeks per cycle",
-                  ozempic: "Long-term ongoing",
-                  hcg: "23 to 40-day fixed cycle",
-                  contrave: "Long-term ongoing",
-                },
-                {
-                  factor: "Average Weight Loss",
-                  duromine: "7 to 12% body weight over 12 weeks",
-                  ozempic: "10 to 15% over 6 to 12 months",
-                  hcg: "5 to 13 kg per cycle",
-                  contrave: "5 to 9% body weight over 6 months",
-                },
-                {
-                  factor: "Dependency Risk",
-                  duromine: "Moderate. Requires structured exit",
-                  ozempic: "None",
-                  hcg: "None",
-                  contrave: "Low",
-                },
-                {
-                  factor: "Best For",
-                  duromine: "Short-term appetite suppression, kickstarting weight loss",
-                  ozempic: "Sustained metabolic control, diabetes",
-                  hcg: "Rapid structured reset, stubborn fat",
-                  contrave: "Emotional eating, food cravings, binge patterns",
-                },
-                {
-                  factor: "Cost in Malaysia (monthly)",
-                  duromine: "RM 300 to RM 600",
-                  ozempic: "From RM 1,800 per pen",
-                  hcg: "RM 1,200 to RM 2,300 per cycle",
-                  contrave: "RM 300 to RM 700",
-                },
-              ]}
+              data={duromineComparisonPricing}
               title="Duromine vs Ozempic vs HCG vs Contrave: Choosing Your Weight Loss Medication in Malaysia"
               subtitle="The weight loss medication landscape in Malaysia in 2026 offers more clinically proven options than at any previous point. Duromine vs alternatives is one of the most commonly discussed topics during consultations at Nexus Clinic KL, particularly as GLP-1 medications have gained significant public attention. Each medication has a distinct mechanism, a distinct patient profile it suits best, and a different risk and benefit trade-off. The comparison below covers the four main prescription weight loss medications available in Malaysia so patients can make informed decisions with their doctor rather than choosing based on marketing alone"
               variant="detailed"

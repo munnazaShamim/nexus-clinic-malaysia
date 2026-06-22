@@ -24,6 +24,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { darkEyeCirclePricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface DarkEyeCircleProps {
   locale: string;
@@ -610,44 +611,7 @@ export default function DarkEyeCircleLanding({ locale }: DarkEyeCircleProps) {
                 { key: "promoPrice", header: "Promo Price RM" },
                 { key: "packageNotes", header: "Package / Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Juvederm Ultra XC",
-                  area: "Under Eye / Lips",
-                  unit: "1cc",
-                  normalPrice: "RM2,400",
-                  sellingPrice: "RM2,200",
-                  promoPrice: "RM2,200",
-                  packageNotes: "Under-eye filler option",
-                },
-                {
-                  treatment: "Belotero Balance",
-                  area: "Tear trough area / Under Eye",
-                  unit: "1cc",
-                  normalPrice: "-",
-                  sellingPrice: "RM2,200",
-                  promoPrice: "RM2,200",
-                  packageNotes: "Under-eye / tear trough filler option",
-                },
-                {
-                  treatment: "Hyalual Electri",
-                  area: "Full face / Surrounding eyes",
-                  unit: "1.5cc",
-                  normalPrice: "RM2,500",
-                  sellingPrice: "RM2,500",
-                  promoPrice: "RM2,200",
-                  packageNotes: "Buy 4, get 1 free",
-                },
-                {
-                  treatment: "Deka CO2 Laser",
-                  area: "Surrounding eye / Face / Entire body",
-                  unit: "1 hour including 30 minutes numbing cream",
-                  normalPrice: "RM450",
-                  sellingPrice: "RM300",
-                  promoPrice: "RM300 onwards",
-                  packageNotes: "Surrounding eye listed, but not specifically dark eye circle",
-                },
-              ]}
+              data={darkEyeCirclePricing}
             title="Dark Eye Circle Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="compact"

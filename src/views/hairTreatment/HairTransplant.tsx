@@ -23,6 +23,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { hairTransplantPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface HairTransplantProps {
   locale: string;
@@ -669,36 +670,7 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
                 { key: "normalPrice", header: "Normal Price" },
                 { key: "sellingPrice", header: "Selling Price" },
               ]}
-              data={[
-                {
-                  treatment: "Hair Transplant",
-                  area: "Fronter & Crown / Beard",
-                  hairCount: "1500 to 2000 hairs",
-                  normalPrice: "RM12 per hair",
-                  sellingPrice: "RM8 per hair",
-                },
-                {
-                  treatment: "Hair Transplant",
-                  area: "Fronter & Crown / Beard",
-                  hairCount: "2001 to 3000 hairs",
-                  normalPrice: "-",
-                  sellingPrice: "RM7.50 per hair",
-                },
-                {
-                  treatment: "Hair Transplant",
-                  area: "Fronter & Crown / Beard",
-                  hairCount: "3001 to 4999 hairs",
-                  normalPrice: "-",
-                  sellingPrice: "RM6.50 per hair",
-                },
-                {
-                  treatment: "Hair Transplant",
-                  area: "Fronter & Crown / Beard",
-                  hairCount: "5000 and above hairs",
-                  normalPrice: "-",
-                  sellingPrice: "RM5.50 to RM6 per hair",
-                },
-              ]}
+              data={hairTransplantPricing}
               title="Hair Transplant Cost in Malaysia 2026"
               subtitle="Transparent pricing at Nexus Clinic KL"
               variant="detailed"

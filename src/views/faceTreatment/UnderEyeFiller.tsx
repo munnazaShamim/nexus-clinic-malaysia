@@ -28,6 +28,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { underEyeFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface UnderEyeFillerProps {
   locale: string;
@@ -555,44 +556,7 @@ export default function UnderEyeFiller({ locale }: UnderEyeFillerProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Under Eye Filler",
-                product: "Juvederm Ultra XC",
-                areas: "Under Eye / Lips",
-                units: "1 cc",
-                normalPrice: "RM 2,400",
-                sellingPrice: "RM 2,200",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "Source shows trial/promo note as ??",
-              },
-              {
-                treatment: "Under Eye Filler",
-                product: "Juvederm Volbella (Pre Order)",
-                areas: "Lips / Around the mouth / Under the eyes",
-                units: "1 cc",
-                normalPrice: "RM 2,600",
-                sellingPrice: "RM 2,300",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "Source shows trial/promo note as ??",
-              },
-              {
-                treatment: "Under Eye Filler",
-                product: "Belotero Balance",
-                areas: "Tear trough area / Under Eye",
-                units: "1 cc",
-                normalPrice: "-",
-                sellingPrice: "RM 2,200",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "-",
-              },
-            ]}
+            data={underEyeFillerPricing}
             title="Under Eye Filler Price in Malaysia"
             subtitle="2026 Pricing at Nexus Clinic KL"
             variant="detailed"

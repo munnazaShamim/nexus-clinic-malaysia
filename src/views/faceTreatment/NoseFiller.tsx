@@ -32,6 +32,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { noseFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface NoseFillerProps {
   locale: string;
@@ -711,44 +712,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Nose Filler",
-                product: "Juvederm Ultraplus XC",
-                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                volume: "1 cc",
-                normalPrice: "RM 2,400",
-                sellingPrice: "RM 2,200",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "Source shows trial/promo note as ",
-              },
-              {
-                treatment: "Nose Filler",
-                product: "Celosome Implant",
-                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                volume: "1.1 cc",
-                normalPrice: "-",
-                sellingPrice: "RM 1,888",
-                trialPrice: "-",
-                promoPrice: "RM 1,888",
-                package: "-",
-                notes: "Benefit text mentions cheekbones / jawline / chin / nose",
-              },
-              {
-                treatment: "Nose Filler",
-                product: "Neauvia Intense",
-                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                volume: "1 cc",
-                normalPrice: "RM 2,200",
-                sellingPrice: "RM 2,000",
-                trialPrice: "-",
-                promoPrice: "Out Of Stock",
-                package: "-",
-                notes: "Out of stock in source",
-              },
-            ]}
+            data={noseFillerPricing}
             title="Nose Filler Price in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="detailed"

@@ -25,6 +25,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { jawlineFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 interface JawlineFillerProps {
@@ -630,32 +631,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Jawline Filler",
-                product: "Juvederm Volux",
-                areas: "Cheek / Chin",
-                volume: "1 cc",
-                normalPrice: "RM 3,000",
-                sellingPrice: "RM 2,500",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "Benefit text mentions jawline contouring",
-              },
-              {
-                treatment: "Jawline Filler",
-                product: "Celosome Implant",
-                areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                volume: "1.1 cc",
-                normalPrice: "-",
-                sellingPrice: "RM 1,888",
-                trialPrice: "-",
-                promoPrice: "RM 1,888",
-                package: "-",
-                notes: "Benefit text mentions cheekbones / jawline / chin / nose",
-              },
-            ]}
+            data={jawlineFillerPricing}
             title="Jawline Filler Price in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="detailed"

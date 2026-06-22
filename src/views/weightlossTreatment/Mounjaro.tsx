@@ -27,7 +27,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
-
+import { mounjaroPricing } from '@/src/data/pricing';
 import Image from "next/image";
 import Link from "next/link";
 const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
@@ -663,28 +663,7 @@ const MounjaroLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "details", header: "Details" },
                   { key: "price", header: "Nexus Price Reference" },
                 ]}
-                data={[
-                  {
-                    programme: "Mounjaro Starter Dose",
-                    details: "2.5mg pen",
-                    price: "RM1,588 per pen",
-                  },
-                  {
-                    programme: "Mounjaro 5mg Dose",
-                    details: "5mg pen",
-                    price: "RM2,188 per pen",
-                  },
-                  {
-                    programme: "Higher-dose Mounjaro Programme",
-                    details: "7.5mg, 10mg, 12.5mg, or 15mg",
-                    price: "Subject to availability and doctor assessment",
-                  },
-                  {
-                    programme: "Consultation, blood tests, monitoring, and packages",
-                    details: "Based on treatment plan",
-                    price: "Quoted after assessment",
-                  },
-                ]}
+                data={mounjaroPricing}
               title="Mounjaro Malaysia Price Guide 2026: Nexus Clinic KL"
               subtitle="The monthly cost of a Mounjaro programme in Malaysia depends on the dosage level, clinic structure, and whether patients choose individual monthly billing or package-based programmes. Tirzepatide is generally more expensive than semaglutide due to its dual GIP and GLP-1 mechanism and stronger average clinical weight loss outcomes. The table below reflects updated 2026 indicative pricing at Nexus Clinic KL."
               variant="detailed"

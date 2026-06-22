@@ -33,6 +33,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
+import { testosteronePricing } from '@/src/data/pricing';
 import Link from "next/link";
 import AllPagesHero from '@/src/components/AllPagesHero'
 import Image from "next/image";
@@ -741,24 +742,7 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "sellingPrice", header: "Selling Price" },
                   { key: "packageNotes", header: "Package / Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Nebido 1000mg",
-                    area: "IM intramuscular",
-                    unit: "Per treatment",
-                    normalPrice: "RM1250",
-                    sellingPrice: "RM1250",
-                    packageNotes: "Package price: Buy 4, get 1 free",
-                  },
-                  {
-                    treatment: "Janaesterone Testosterone Enanthate 250mg",
-                    area: "IM intramuscular",
-                    unit: "Per treatment",
-                    normalPrice: "RM450",
-                    sellingPrice: "RM450",
-                    packageNotes: "-",
-                  },
-                ]}
+                data={testosteronePricing}
             title="Testosterone Replacement Therapy Cost at Our Clinic in Malaysia 2026"
             subtitle="Total annual cost varies by formulation. Nebido-based programmes: RM 5,000 to RM 9,000 per year. Gel-based programmes: RM 7,000 to RM 12,000 per year. All pricing transparent and disclosed before any treatment plan is issued."
             variant="detailed"

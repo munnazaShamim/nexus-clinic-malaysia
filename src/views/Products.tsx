@@ -26,6 +26,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import Image from "next/image";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
+import { productCardPrices } from "@/src/data/pricing";
 function DecorLine({ className = "" }) {
   return (
     <motion.div
@@ -102,28 +103,28 @@ const treatmentsDef = [
   {
     id: 1,
     name: "Mounjaro",
-    price: "RM 1,980",
+    price: productCardPrices.mounjaro,
     href: createWhatsAppLink("Mounjaro"),
     linear: "from-wine to-brown",
   },
   {
     id: 2,
     name: "Ozempic",
-    price: "RM 1,800",
+    price: productCardPrices.ozempic,
     href: createWhatsAppLink("Ozempic"),
     linear: "from-taupe to-wine",
   },
   {
     id: 3,
     name: "Wegovy",
-    price: "RM 1,288",
+    price: productCardPrices.wegovy,
     href: createWhatsAppLink("Wegovy"),
     linear: "from-rose to-brown",
   },
   {
     id: 4,
     name: "Saxenda",
-    price: "RM 600",
+    price: productCardPrices.saxenda,
     href: createWhatsAppLink("Saxenda"),
     linear: "from-brown to-taupe",
   },

@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { cheekFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp } from "lucide-react";
@@ -551,68 +552,7 @@ export default function CheekFiller({ locale }: CheekFillerProps) {
                   { key: "promo", header: "Promo Price" },
                   { key: "notes", header: "Notes" },
                 ]}
-                data={[
-                  {
-                    product: "Juvederm Ultraplus XC",
-                    areas:
-                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                    volume: "1 cc",
-                    selling: "RM 2,200",
-                    promo: "RM 2,200",
-                    notes: "Suitable for facial contouring and volume restoration",
-                  },
-                  {
-                    product: "Juvederm Voluma",
-                    areas: "Cheeks / Chin",
-                    volume: "1 cc",
-                    selling: "RM 2,400",
-                    promo: "RM 2,200",
-                    notes: "Designed for deeper cheek enhancement and lifting",
-                  },
-                  {
-                    product: "Juvederm Volux",
-                    areas: "Cheek / Chin",
-                    volume: "1 cc",
-                    selling: "RM 2,500",
-                    promo: "RM 2,200",
-                    notes: "Popular for jawline and facial contour definition",
-                  },
-                  {
-                    product: "Juvederm Volift (Pre Order)",
-                    areas: "Lips / Chin / Lower Face / Cheek",
-                    volume: "1 cc",
-                    selling: "RM 2,500",
-                    promo: "RM 2,200",
-                    notes: "Pre-order filler option for soft facial refinement",
-                  },
-                  {
-                    product: "Celosome Implant",
-                    areas:
-                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                    volume: "1.1 cc",
-                    selling: "RM 1,888",
-                    promo: "RM 1,888",
-                    notes:
-                      "Used for cheekbones, jawline, chin, and nose enhancement",
-                  },
-                  {
-                    product: "Belotero Volume",
-                    areas: "Cheekbones / Temples",
-                    volume: "1 cc",
-                    selling: "RM 2,200",
-                    promo: "RM 2,200",
-                    notes: "Ideal for temple hollowing and cheekbone support",
-                  },
-                  {
-                    product: "Neauvia Intense",
-                    areas:
-                      "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                    volume: "1 cc",
-                    selling: "RM 2,000",
-                    promo: "Out Of Stock",
-                    notes: "Currently unavailable",
-                  },
-                ]}
+                data={cheekFillerPricing}
                 title="Cheek Filler Price in Malaysia"
                 subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
                 variant="detailed"

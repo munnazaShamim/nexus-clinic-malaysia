@@ -30,6 +30,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { noseThreadLiftPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface NoseThreadLiftProps {
   locale: string;
@@ -617,32 +618,7 @@ export default function NoseThreadLift({ locale }: NoseThreadLiftProps) {
                 { key: "package", header: "Standard Package" },
                 { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Nose Thread Lift",
-                  product: "Nose Bridge",
-                  areas: "Nose Bridge",
-                  units: "Max 8 only",
-                  normalPrice: "RM 2,800",
-                  sellingPrice: "RM 2,500",
-                  trialPrice: "-",
-                  promoPrice: "Nil",
-                  package: "-",
-                  notes: "-",
-                },
-                {
-                  treatment: "Nose Thread Lift",
-                  product: "Nose Tips",
-                  areas: "Nose Tips",
-                  units: "3 - 4 threads",
-                  normalPrice: "RM 1,800",
-                  sellingPrice: "RM 1,400",
-                  trialPrice: "-",
-                  promoPrice: "Nil",
-                  package: "-",
-                  notes: "-",
-                },
-              ]}
+              data={noseThreadLiftPricing}
               title="Nose Thread Lift Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
               variant="detailed"

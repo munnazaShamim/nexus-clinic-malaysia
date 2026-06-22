@@ -23,6 +23,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
+import { hcgPricing } from '@/src/data/pricing';
 import Image from "next/image";
 const HCGWeightLossLanding = ({
   locale = fallbackLng,
@@ -459,23 +460,7 @@ const HCGWeightLossLanding = ({
                   { key: "duration", header: "Duration" },
                   { key: "price", header: "Price Range (RM) 2026" },
                 ]}
-                data={[
-                  {
-                    programme: "HCG Standard Programme",
-                    duration: "23 days",
-                    price: "RM 1,200 to RM 1,800",
-                  },
-                  {
-                    programme: "HCG Full Programme",
-                    duration: "40 days",
-                    price: "RM 1,800 to RM 2,300",
-                  },
-                  {
-                    programme: "Free Consultation",
-                    duration: "Nexus Clinic KL, Wisma UOA II",
-                    price: "Complimentary",
-                  },
-                ]}
+                data={hcgPricing}
               title="HCG Diet Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
               subtitle="The HCG weight loss programme is one of the most cost-effective medically supervised weight loss treatment options in Malaysia. Pricing is structured by treatment cycle rather than open-ended monthly billing. The table below reflects verified 2026 indicative pricing at Nexus Clinic KL in Kuala Lumpur. All initial consultations are complimentary. Medications and injections are included within programme pricing. Patients who want to combine the HCG programme with body contouring may also be interested in fat freezing treatment in Malaysia as a non-invasive complement for stubborn localised fat that remains after the programme."
               variant="detailed"

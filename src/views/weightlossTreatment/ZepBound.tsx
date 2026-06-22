@@ -34,6 +34,7 @@ import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages"
+import { zepBoundPricing } from '@/src/data/pricing';
 import Image from "next/image";
 
 const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
@@ -947,43 +948,7 @@ const ZepboundLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "includes", header: "Includes" },
                   { key: "price", header: "Price Range (RM) 2026" },
                 ]}
-                data={[
-                  {
-                    programme: "Initial Consultation + Medical Assessment",
-                    includes: "BMI, bloods, health history, suitability check",
-                    price: "Complimentary",
-                  },
-                  {
-                    programme: "Mounjaro 2.5mg Starter (4 weeks)",
-                    includes: "KwikPen + doctor review",
-                    price: "RM 1,588 per pen",
-                  },
-                  {
-                    programme: "Mounjaro 5mg (4 weeks)",
-                    includes: "KwikPen + monitoring",
-                    price: "RM 2,188 per pen",
-                  },
-                  {
-                    programme: "Mounjaro 10mg (4 weeks)",
-                    includes: "KwikPen + monitoring",
-                    price: "RM 1,800 to RM 2,400 per pen",
-                  },
-                  {
-                    programme: "Mounjaro 15mg (4 weeks)",
-                    includes: "KwikPen + enhanced monitoring",
-                    price: "RM 2,200 to RM 3,200 per pen",
-                  },
-                  {
-                    programme: "Zepbound Programme (weight management)",
-                    includes: "KwikPen + full weight management support",
-                    price: "Pricing varies by availability and consultation",
-                  },
-                  {
-                    programme: "Comprehensive 3-Month Package",
-                    includes: "Medication + bloods + check-ins + nutrition support",
-                    price: "Pricing varies depending on programme structure and dosage stage",
-                  },
-                ]}
+                data={zepBoundPricing}
               title="Mounjaro Price in Malaysia 2026: Transparent Programme Pricing at Nexus Clinic KL"
               subtitle="Mounjaro pricing in Malaysia varies based on the dose prescribed and the programme structure chosen. All consultations at Nexus Clinic KL are complimentary. Medication pricing is itemised and provided in writing before any prescription is confirmed. The pricing table below reflects updated 2026 indicative pricing for the currently verified tirzepatide doses available at Nexus Clinic KL. Patients combining Mounjaro with aesthetic treatments for body contouring may also wish to explore CoolSculpting in Malaysia for localised fat reduction that complements the systemic weight loss achieved through tirzepatide.
 "

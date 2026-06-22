@@ -32,6 +32,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { moleRemovalPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface MoleRemovalProps {
   locale: string;
@@ -598,17 +599,7 @@ export default function MoleRemovalLanding({ locale }: MoleRemovalProps) {
                   { key: "promoPrice", header: "Promo Price RM" },
                   { key: "packageNotes", header: "Package / Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Deka CO2 Laser",
-                    area: "Surrounding eye / Face / Entire body",
-                    unit: "1 hour including 30 minutes numbing cream; duration can be longer depending on quantity",
-                    normalPrice: "RM450",
-                    sellingPrice: "RM300",
-                    promoPrice: "RM300 onwards",
-                    packageNotes: "Sheet mentions moles, warts, xanthelasma, seborrheic keratosis and more",
-                  },
-                ]}
+                data={moleRemovalPricing}
                 title="Mole Removal Cost in Malaysia 2026"
                 subtitle="Transparent pricing at Nexus Clinic KL"
                 variant="detailed"

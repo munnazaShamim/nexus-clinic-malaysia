@@ -34,6 +34,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { skinBoosterPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 interface SkinBoosterProps {
@@ -564,80 +565,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Skin Booster",
-                product: "Belotero Revive (Skin Booster)",
-                areas: "Face / Neck / Décolletage / Hands",
-                units: "1 cc",
-                normalPrice: "RM 2,200",
-                sellingPrice: "RM 2,000",
-                trialPrice: "-",
-                promoPrice: "Out Of Stock",
-                package: "-",
-                notes: "Out of stock in source",
-              },
-              {
-                treatment: "Skin Booster",
-                product: "Neauvia Hydro Deluxe",
-                areas: "Face / Hands / Body",
-                units: "2.5 cc",
-                normalPrice: "RM 2,000",
-                sellingPrice: "RM 1,800",
-                trialPrice: "-",
-                promoPrice: "Out Of Stock",
-                package: "-",
-                notes: "Out of stock in source",
-              },
-              {
-                treatment: "Skin Booster",
-                product: "Plinest 2ML 1's",
-                areas: "Face / Abdomen",
-                units: "2 ml",
-                normalPrice: "RM 2,200",
-                sellingPrice: "RM 1,800",
-                trialPrice: "-",
-                promoPrice: "Nil",
-                package: "Package Price i.e. buy 4, get 1 free",
-                notes: "Source shows trial/promo note as ??",
-              },
-              {
-                treatment: "Skin Booster",
-                product: "Newest 4ml",
-                areas: "Face / Neck",
-                units: "Per session",
-                normalPrice: "RM 500",
-                sellingPrice: "RM 500",
-                trialPrice: "-",
-                promoPrice: "Nil",
-                package: "Package Price i.e. buy 4, get 1 free",
-                notes: "Source shows trial/promo note as ??",
-              },
-              {
-                treatment: "Skin Booster",
-                product: "Dermasal",
-                areas: "Full Face",
-                units: "Per session",
-                normalPrice: "RM 650",
-                sellingPrice: "RM 650",
-                trialPrice: "-",
-                promoPrice: "Nil",
-                package: "Package Price i.e. buy 4, get 1 free",
-                notes: "-",
-              },
-              {
-                treatment: "Skin Booster",
-                product: "Dermaglass",
-                areas: "Full Face",
-                units: "Per session",
-                normalPrice: "RM 950",
-                sellingPrice: "RM 950",
-                trialPrice: "-",
-                promoPrice: "Nil",
-                package: "Package Price i.e. buy 4, get 1 free",
-                notes: "-",
-              },
-            ]}
+            data={skinBoosterPricing}
             title="Skin Booster Price in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="detailed"

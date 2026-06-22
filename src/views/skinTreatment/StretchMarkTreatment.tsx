@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -26,6 +26,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { stretchMarkPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface StretchMarkRemovalProps {
   locale: string;
@@ -636,26 +637,7 @@ export default function StretchMarkLanding({ locale }: StretchMarkRemovalProps) 
                 { key: "promoPrice", header: "Promo Price RM" },
                 { key: "packageNotes", header: "Package / Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Plinest 2ML 1's",
-                  area: "Face / Abdomen",
-                  unit: "2ml",
-                  normalPrice: "RM2,200",
-                  sellingPrice: "RM1,800",
-                  promoPrice: "NIL",
-                  packageNotes: "Buy 4, get 1 free. Sheet mentions stretch marks",
-                },
-                {
-                  treatment: "Dermapen",
-                  area: "Face / Body",
-                  unit: "1 hour 15 minutes including 30 minutes numb cream",
-                  normalPrice: "RM800",
-                  sellingPrice: "RM688",
-                  promoPrice: "RM688",
-                  packageNotes: "Sheet mentions scars and stretch marks",
-                },
-              ]}
+              data={stretchMarkPricing}
             title="Stretch Mark Removal Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

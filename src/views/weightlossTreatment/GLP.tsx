@@ -26,6 +26,7 @@ import FAQWithSchema from "../../components/FAQWithSchema";
 import SectionBeforeAfter from "../../components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import TableForPages from "@/src/components/TableForPages"
+import { glpPricing } from '@/src/data/pricing';
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Image from "next/image";
@@ -870,38 +871,7 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "medication", header: "Medication" },
                   { key: "price", header: "Price Range / Package Price" },
                 ]}
-                data={[
-                  {
-                    programme: "Saxenda Starter Programme",
-                    medication: "Liraglutide 3.0mg daily",
-                    price: "From RM1,650 for 3 pens",
-                  },
-                  {
-                    programme: "Ozempic Programme",
-                    medication: "Semaglutide 0.5mg to 1mg weekly",
-                    price: "From RM1,800 per pen",
-                  },
-                  {
-                    programme: "Wegovy Programme",
-                    medication: "Semaglutide up to 2.4mg weekly",
-                    price: "RM1,088–RM1,888 per pen",
-                  },
-                  {
-                    programme: "Mounjaro Programme",
-                    medication: "Tirzepatide weekly",
-                    price: "RM1,588–RM2,188 per pen",
-                  },
-                  {
-                    programme: "Zepbound Programme",
-                    medication: "Tirzepatide weekly",
-                    price: "Pricing subject to availability and consultation",
-                  },
-                  {
-                    programme: "Comprehensive GLP-1 Package",
-                    medication: "Medication + monitoring + lifestyle support",
-                    price: "Pricing varies by programme structure",
-                  },
-                ]}
+                data={glpPricing}
               title="GLP-1 Programme Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
               subtitle="GLP-1 programme pricing in Malaysia varies based on the medication prescribed, the dosage required, and the level of clinical monitoring included in the programme. Nexus Clinic KL provides a transparent pricing breakdown after your initial consultation. No medication is prescribed without a full medical assessment, and no patient is committed to treatment costs before understanding exactly what is included. The table below reflects updated 2026 indicative pricing based on currently available GLP-1 programmes at Nexus Clinic KL"
               variant="detailed"

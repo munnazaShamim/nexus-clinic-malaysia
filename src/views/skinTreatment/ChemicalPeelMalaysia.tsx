@@ -1,9 +1,10 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { chemicalPeelPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Heart, Shield, Droplet, Gem, Activity, Sparkle, Waves, Sun, Filter, Brush, } from "lucide-react";
@@ -475,35 +476,7 @@ export default function ChemicalPeelMalaysia({ locale }: ChemicalPeelMalaysiaPro
                 { key: "promoPrice", header: "Promo Price RM" },
                 { key: "packageNotes", header: "Package / Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Glow Peel",
-                  area: "Face",
-                  unit: "1 hour / per session",
-                  normalPrice: "RM650",
-                  sellingPrice: "RM550",
-                  promoPrice: "RM450",
-                  packageNotes: "Quick Facial 20 minutes + Chemical Peel, any type",
-                },
-                {
-                  treatment: "Chemical Peel",
-                  area: "Face",
-                  unit: "30 to 45 minutes, every 2 weeks",
-                  normalPrice: "RM550",
-                  sellingPrice: "RM450",
-                  promoPrice: "RM450",
-                  packageNotes: "Glycolic / Salicylic / TCA Cross 100% / TCA 30% / Lactic / Mandelic",
-                },
-                {
-                  treatment: "Chemical Peel",
-                  area: "Body",
-                  unit: "Per part",
-                  normalPrice: "RM1,500",
-                  sellingPrice: "RM1,200",
-                  promoPrice: "Per part RM800",
-                  packageNotes: "For scars / hyperpigmentation / uneven tone",
-                },
-              ]}
+              data={chemicalPeelPricing}
             title="Chemical Peel Cost in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="compact"

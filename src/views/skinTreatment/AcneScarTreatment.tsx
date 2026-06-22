@@ -33,6 +33,7 @@ import Image from "next/image";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { acneScarPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 interface AcneScarLandingProps {
@@ -906,89 +907,7 @@ export default function AcneScarLanding({ locale }: AcneScarLandingProps) {
               { key: "promoPrice", header: "Promo Price RM" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Curas Laser",
-                area: "Face / Body",
-                unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                normalPrice: "RM1,200",
-                sellingPrice: "RM900",
-                promoPrice: "NIL",
-                packageNotes: "Sheet mentions acne scars, pigmentation, tattoos, fine lines, wrinkles",
-              },
-              {
-                treatment: "Deka Fractional Laser",
-                area: "Face / Body",
-                unit: "1 hour including 30 minutes numbing cream",
-                normalPrice: "RM1,500",
-                sellingPrice: "RM1,500",
-                promoPrice: "RM788",
-                packageNotes: "Sheet mentions acne scars and hyperpigmentation",
-              },
-              {
-                treatment: "Discovery PICO Resurfacing",
-                area: "Face / Body",
-                unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                normalPrice: "RM1,500",
-                sellingPrice: "RM1,200",
-                promoPrice: "NIL",
-                packageNotes: "Resurfacing / collagen remodelling",
-              },
-              {
-                treatment: "Dermapen",
-                area: "Face / Body",
-                unit: "1 hour 15 minutes including 30 minutes numb cream",
-                normalPrice: "RM800",
-                sellingPrice: "RM688",
-                promoPrice: "RM688",
-                packageNotes: "Sheet mentions scars and stretch marks",
-              },
-              {
-                treatment: "Derma Glow",
-                area: "-",
-                unit: "-",
-                normalPrice: "RM688",
-                sellingPrice: "RM588",
-                promoPrice: "RM588",
-                packageNotes: "Sheet mentions pigmentation and scars",
-              },
-              {
-                treatment: "Chemical Peel",
-                area: "Face",
-                unit: "30 to 45 minutes, every 2 weeks",
-                normalPrice: "RM550",
-                sellingPrice: "RM450",
-                promoPrice: "RM450",
-                packageNotes: "Helps acne, hyperpigmentation, uneven texture",
-              },
-              {
-                treatment: "Chemical Peel",
-                area: "Body",
-                unit: "Per part",
-                normalPrice: "RM1,500",
-                sellingPrice: "RM1,200",
-                promoPrice: "Per part RM800",
-                packageNotes: "Sheet mentions acne scars, surgical scars, hyperpigmentation",
-              },
-              {
-                treatment: "Glow Peel",
-                area: "Face",
-                unit: "1 hour / per session",
-                normalPrice: "RM650",
-                sellingPrice: "RM550",
-                promoPrice: "RM450",
-                packageNotes: "Quick facial + any suitable chemical peel",
-              },
-              {
-                treatment: "BHMed SPMCE",
-                area: "-",
-                unit: "-",
-                normalPrice: "-",
-                sellingPrice: "-",
-                promoPrice: "NIL",
-                packageNotes: "Mentions acne scars",
-              },
-            ]}
+            data={acneScarPricing}
             title="Acne Scar Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

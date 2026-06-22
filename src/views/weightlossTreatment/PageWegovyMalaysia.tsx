@@ -25,7 +25,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
-
+import { wegovyComparisonPricing } from '@/src/data/pricing';
 import Link from "next/link";
 export default function PageWegovyMalaysia({
   locale = fallbackLng,
@@ -925,48 +925,7 @@ export default function PageWegovyMalaysia({
                   { key: "wegovy", header: "Wegovy (Semaglutide 2.4mg)" },
                   { key: "ozempic", header: "Ozempic (Semaglutide 0.25mg to 1mg)" },
                 ]}
-                data={[
-                  {
-                    factor: "Active Ingredient",
-                    wegovy: "Semaglutide",
-                    ozempic: "Semaglutide",
-                  },
-                  {
-                    factor: "Maximum Dose",
-                    wegovy: "2.4mg once weekly",
-                    ozempic: "1mg once weekly in the current Nexus price context",
-                  },
-                  {
-                    factor: "Primary Approval",
-                    wegovy: "Chronic weight management for obesity or overweight with weight-related risk factors",
-                    ozempic: "Type 2 diabetes management",
-                  },
-                  {
-                    factor: "Weight Loss",
-                    wegovy: "Around 14.9% average body-weight reduction over 68 weeks in STEP 1",
-                    ozempic: "Weight loss varies; not an obesity-dose semaglutide product, so avoid claiming a fixed 10–15% result",
-                  },
-                  {
-                    factor: "Cardiovascular Data",
-                    wegovy: "SELECT showed cardiovascular benefit; FDA approved Wegovy for reducing risk of CV death, heart attack, and stroke in adults with CVD and obesity/overweight",
-                    ozempic: "Ozempic has cardiovascular benefit data in type 2 diabetes patients with established cardiovascular disease",
-                  },
-                  {
-                    factor: "NPRA Malaysia Status",
-                    wegovy: "NPRA-registered semaglutide product; Wegovy 2.4mg is listed under MAL23066008ACZ",
-                    ozempic: "NPRA-registered semaglutide product; Ozempic is listed under MAL20026057AZ",
-                  },
-                  {
-                    factor: "Best Patient Profile",
-                    wegovy: "Obesity or overweight patients where weight loss is the primary goal",
-                    ozempic: "Type 2 diabetes patients where weight and blood sugar control are both relevant",
-                  },
-                  {
-                    factor: "Malaysia / Nexus Price",
-                    wegovy: "RM1,088–RM1,888 per pen depending on dose\n2.4mg dose: RM1,888 per pen",
-                    ozempic: "RM1,800 per pen\n4 pens: RM6,800\n6 pens: RM9,600",
-                  },
-                ]}
+                data={wegovyComparisonPricing}
               title="Wegovy vs Ozempic Malaysia: Same Molecule, Completely Different Mission"
               subtitle="The most common question Malaysian patients ask when researching semaglutide is: if Wegovy and Ozempic both contain semaglutide, why is Wegovy more expensive and what is the actual difference? The answer has three parts: dose, primary approval, and cardiovascular indication. No Malaysian competitor clinic explains all three clearly in one place. The table below does."
               variant="detailed"

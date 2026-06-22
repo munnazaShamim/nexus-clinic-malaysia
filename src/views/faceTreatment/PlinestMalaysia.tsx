@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { plinestPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity, Leaf, Recycle, Award, Sparkle, Waves, Laugh, Smile } from "lucide-react";
@@ -544,20 +545,7 @@ export default function PlinestMalaysia({ locale }: PlinestMalaysiaProps) {
                 { key: "package", header: "Standard Package" },
                 { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Plinest",
-                  product: "Plinest 2ML 1's",
-                  areas: "Face / Abdomen",
-                  units: "2 ml",
-                  normalPrice: "RM 2,200",
-                  sellingPrice: "RM 1,800",
-                  trialPrice: "-",
-                  promoPrice: "Nil",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
-                },
-              ]}
+              data={plinestPricing}
               title="Plinest Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
               variant="detailed"

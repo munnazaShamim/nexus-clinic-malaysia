@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { newestPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity, Leaf, Award, Waves, Sun, Wind } from "lucide-react";
@@ -477,20 +478,7 @@ export default function NewestMalaysia({ locale }: NewestMalaysiaProps) {
                 { key: "package", header: "Standard Package" },
                 { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Newest",
-                  product: "Newest 4ml",
-                  areas: "Face / Neck",
-                  units: "Per session",
-                  normalPrice: "RM 500",
-                  sellingPrice: "RM 500",
-                  trialPrice: "-",
-                  promoPrice: "Nil",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
-                },
-              ]}
+              data={newestPricing}
               title="NEWEST Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
               variant="detailed"

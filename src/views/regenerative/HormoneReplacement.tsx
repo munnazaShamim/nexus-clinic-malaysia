@@ -11,6 +11,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { hormoneReplacementPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 const HormonReplaceLanding = ({
@@ -395,35 +396,7 @@ const HormonReplaceLanding = ({
                 { key: "promoPrice", header: "Promo Price" },
                 { key: "packageNotes", header: "Package / Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Nebido 1000mg",
-                  area: "IM intramuscular",
-                  unit: "Per treatment",
-                  normalPrice: "RM1250",
-                  sellingPrice: "RM1250",
-                  promoPrice: "NIL",
-                  packageNotes: "Package price: Buy 4, get 1 free",
-                },
-                {
-                  treatment: "Janaesterone Testosterone Enanthate 250mg",
-                  area: "IM intramuscular",
-                  unit: "Per treatment",
-                  normalPrice: "RM450",
-                  sellingPrice: "RM450",
-                  promoPrice: "NIL",
-                  packageNotes: "-",
-                },
-                {
-                  treatment: "Nexus DHEA 25mg, 60's",
-                  area: "Oral",
-                  unit: "60's, 1 to 2 months supply",
-                  normalPrice: "RM189",
-                  sellingPrice: "RM189",
-                  promoPrice: "NIL",
-                  packageNotes: "Sheet mentions DHEA is used for anti-aging and menopause symptoms",
-                },
-              ]}
+              data={hormoneReplacementPricing}
             title="Hormone Replacement Therapy Cost in Malaysia 2026"
             variant="compact"
             fadeInUp={fadeInUp}

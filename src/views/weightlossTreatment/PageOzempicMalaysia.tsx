@@ -24,6 +24,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages"
+import { ozempicComparisonPricing } from '@/src/data/pricing';
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
@@ -421,57 +422,7 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "mounjaro", header: "Mounjaro (Tirzepatide)" },
                   { key: "saxenda", header: "Saxenda (Liraglutide)" },
                 ]}
-                data={[
-                  {
-                    factor: "Mechanism",
-                    ozempic: "GLP-1 agonist",
-                    wegovy: "GLP-1 agonist",
-                    mounjaro: "GLP-1 + GIP dual agonist",
-                    saxenda: "GLP-1 agonist",
-                  },
-                  {
-                    factor: "Max Dose",
-                    ozempic: "1 mg weekly",
-                    wegovy: "2.4 mg weekly",
-                    mounjaro: "15 mg weekly",
-                    saxenda: "3.0 mg daily",
-                  },
-                  {
-                    factor: "Frequency",
-                    ozempic: "Once weekly",
-                    wegovy: "Once weekly",
-                    mounjaro: "Once weekly",
-                    saxenda: "Once daily",
-                  },
-                  {
-                    factor: "Expected Weight Loss",
-                    ozempic: "10 to 15%",
-                    wegovy: "12 to 17%",
-                    mounjaro: "15 to 22%",
-                    saxenda: "5 to 8%",
-                  },
-                  {
-                    factor: "Malaysia Price / Month",
-                    ozempic: "RM 1,800 per pen",
-                    wegovy: "RM 1,100 to RM 1,600",
-                    mounjaro: "RM 1,588 to RM 2,188+",
-                    saxenda: "RM 1,200 to RM 2,000",
-                  },
-                  {
-                    factor: "NPRA Status in Malaysia",
-                    ozempic: "Registered (for T2DM)",
-                    wegovy: "Limited availability",
-                    mounjaro: "Registered (for T2DM)",
-                    saxenda: "Registered (for obesity)",
-                  },
-                  {
-                    factor: "Best For",
-                    ozempic: "Cost-effective entry point, T2DM + weight",
-                    wegovy: "Weight-focused patients",
-                    mounjaro: "Maximum weight loss potential",
-                    saxenda: "Daily compliance preference",
-                  },
-                ]}
+                data={ozempicComparisonPricing}
               title=""
               subtitle=""
               variant="detailed"

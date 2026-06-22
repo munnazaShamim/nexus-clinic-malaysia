@@ -23,6 +23,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages"
+import { doctorMonitoredPricing } from '@/src/data/pricing';
 
 // TypeScript interfaces
 interface TrustBarItem {
@@ -559,43 +560,7 @@ export default function DoctorMonitoredLanding({
                   { key: "duration", header: "Duration" },
                   { key: "price", header: "Price" },
                 ]}
-                data={[
-                  {
-                    programme: "Duromine Weight Loss Programme",
-                    duration: "1 month supply",
-                    price: "RM438 promo / RM1,134 normal",
-                  },
-                  {
-                    programme: "HCG Weight Loss Programme",
-                    duration: "23 or 40-day cycle",
-                    price: "RM2,300–RM4,000 promo",
-                  },
-                  {
-                    programme: "Ozempic Programme",
-                    duration: "Per pen",
-                    price: "RM1,800 promo / RM2,500 normal",
-                  },
-                  {
-                    programme: "Wegovy Programme",
-                    duration: "Per pen, depending on dose",
-                    price: "RM1,088–RM1,888",
-                  },
-                  {
-                    programme: "Mounjaro Programme",
-                    duration: "Per pen, listed doses only",
-                    price: "RM1,588–RM2,188",
-                  },
-                  {
-                    programme: "Zepbound Programme",
-                    duration: "Subject to availability",
-                    price: "Pricing not confirmed",
-                  },
-                  {
-                    programme: "Comprehensive Weight Management",
-                    duration: "Custom programme",
-                    price: "Pricing varies by programme structure",
-                  },
-                ]}
+                data={doctorMonitoredPricing}
               title="Medical Weight Loss Clinic Pricing in Malaysia 2026: Transparent Costs at Nexus Clinic KL"
               subtitle="The cost of a medically supervised weight loss programme at Nexus Clinic KL depends on the protocol chosen, the medications prescribed, and the duration of your programme. All first consultations are complimentary. Blood tests and medications are priced transparently and itemised on your treatment plan before you commit. There are no hidden package fees. The table below reflects updated 2026 pricing as a reference. Patients combining weight loss programmes with fat freezing in Malaysia for body contouring may qualify for combined programme pricing. Your doctor will discuss all options during consultation."
               variant="detailed"

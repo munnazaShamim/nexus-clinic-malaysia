@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -34,6 +34,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { pigmentationPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 interface PigmentationTreatmentProps {
@@ -549,125 +550,7 @@ export default function PigmentationLanding({ locale }: PigmentationTreatmentPro
                     { key: "promoPrice", header: "Promo Price RM" },
                     { key: "packageNotes", header: "Package / Notes" },
                   ]}
-                  data={[
-                    {
-                      treatment: "Curas Laser",
-                      area: "Face / Body",
-                      unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                      normalPrice: "RM1,200",
-                      sellingPrice: "RM900",
-                      promoPrice: "NIL",
-                      packageNotes: "Sheet mentions pigmentation",
-                    },
-                    {
-                      treatment: "Deka Fractional Laser",
-                      area: "Face / Body",
-                      unit: "1 hour including 30 minutes numbing cream",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,500",
-                      promoPrice: "RM788",
-                      packageNotes: "Sheet mentions hyperpigmentation",
-                    },
-                    {
-                      treatment: "Dual Yellow Laser",
-                      area: "Face / Body",
-                      unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,200",
-                      promoPrice: "RM1,200",
-                      packageNotes: "Sheet mentions pigmentation",
-                    },
-                    {
-                      treatment: "Discovery PICO Rejuvenation",
-                      area: "Face / Body",
-                      unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,200",
-                      promoPrice: "NIL",
-                      packageNotes: "Package: N/A",
-                    },
-                    {
-                      treatment: "Discovery PICO Resurfacing",
-                      area: "Face / Body",
-                      unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,200",
-                      promoPrice: "NIL",
-                      packageNotes: "Resurfacing / skin stimulation",
-                    },
-                    {
-                      treatment: "Brightening Laser Curas",
-                      area: "Face",
-                      unit: "1 hour 45 minutes",
-                      normalPrice: "RM1,398",
-                      sellingPrice: "RM846",
-                      promoPrice: "NIL",
-                      packageNotes: "Brightening laser facial",
-                    },
-                    {
-                      treatment: "Derma Glow",
-                      area: "-",
-                      unit: "-",
-                      normalPrice: "RM688",
-                      sellingPrice: "RM588",
-                      promoPrice: "RM588",
-                      packageNotes: "Sheet mentions pigmentation and scars",
-                    },
-                    {
-                      treatment: "Chemical Peel",
-                      area: "Face",
-                      unit: "30 to 45 minutes, every 2 weeks",
-                      normalPrice: "RM550",
-                      sellingPrice: "RM450",
-                      promoPrice: "RM450",
-                      packageNotes: "Sheet mentions hyperpigmentation",
-                    },
-                    {
-                      treatment: "Chemical Peel",
-                      area: "Body",
-                      unit: "Per part",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,200",
-                      promoPrice: "Per part RM800",
-                      packageNotes: "Sheet mentions hyperpigmentation",
-                    },
-                    {
-                      treatment: "Elixir Shield",
-                      area: "Face",
-                      unit: "30ml",
-                      normalPrice: "RM160",
-                      sellingPrice: "RM160",
-                      promoPrice: "NIL",
-                      packageNotes: "Sunscreen, sheet mentions pigmentation prevention",
-                    },
-                    {
-                      treatment: "Elixir Lightening Cream, HQ Cream",
-                      area: "Face / Body",
-                      unit: "30gm",
-                      normalPrice: "RM270",
-                      sellingPrice: "RM270",
-                      promoPrice: "NIL",
-                      packageNotes: "Depigmentation / lightening",
-                    },
-                    {
-                      treatment: "Cyspera Set 3 in 1",
-                      area: "Face / Body",
-                      unit: "50gm",
-                      normalPrice: "RM1,280",
-                      sellingPrice: "RM1,280",
-                      promoPrice: "NIL",
-                      packageNotes: "Pigment corrector",
-                    },
-                    {
-                      treatment: "Tranexamic Acid",
-                      area: "Oral",
-                      unit: "1's / as prescribed by doctor",
-                      normalPrice: "RM1",
-                      sellingPrice: "RM1",
-                      promoPrice: "NIL",
-                      packageNotes: "Melasma / PIH / dark spots",
-                    },
-                  ]}
+                  data={pigmentationPricing}
                 title="Pigmentation Treatment Cost in Malaysia 2026"
                 subtitle="Transparent pricing at Nexus Clinic KL"
                 variant="detailed"

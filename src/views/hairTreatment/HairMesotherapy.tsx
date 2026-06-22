@@ -32,6 +32,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { hairMesotherapyPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface HairMesotherapyProps {
   locale: string;
@@ -757,18 +758,7 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
                   { key: "promoPrice", header: "Promo Price" },
                   { key: "notes", header: "Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Hair Mesotherapy",
-                    brand: "MCCM",
-                    area: "Hair",
-                    unit: "6.5cc",
-                    normalPrice: "RM650",
-                    sellingPrice: "RM550",
-                    promoPrice: "RM450",
-                    notes: "Meso skin 1ml + Hair cocktail plus 5ml",
-                  },
-                ]}
+                data={hairMesotherapyPricing}
                 title="Mesotherapy Hair Loss Treatment Cost in Malaysia 2026"
                 subtitle="Transparent pricing at Nexus Clinic KL"
                 variant="detailed"

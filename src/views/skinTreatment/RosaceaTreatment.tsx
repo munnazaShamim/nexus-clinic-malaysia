@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -25,6 +25,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { rosaceaPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface RosaceaTreatmentProps {
   locale: string;
@@ -649,26 +650,7 @@ export default function RosaceaTreatmentLanding({ locale }: RosaceaTreatmentProp
                     { key: "promoPrice", header: "Promo Price RM" },
                     { key: "packageNotes", header: "Package / Notes" },
                   ]}
-                  data={[
-                    {
-                      treatment: "BHMed SPMCE",
-                      area: "-",
-                      unit: "-",
-                      normalPrice: "-",
-                      sellingPrice: "-",
-                      promoPrice: "NIL",
-                      packageNotes: "Sheet mentions rosacea, but price is not listed",
-                    },
-                    {
-                      treatment: "Dual Yellow Laser",
-                      area: "Face / Body",
-                      unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
-                      normalPrice: "RM1,500",
-                      sellingPrice: "RM1,200",
-                      promoPrice: "RM1,200",
-                      packageNotes: "Sheet mentions redness and red facial veins, but not specifically rosacea",
-                    },
-                  ]}
+                  data={rosaceaPricing}
                 title="Rosacea Treatment Cost in Malaysia 2026"
                 subtitle="Transparent pricing at Nexus Clinic KL"
                 variant="detailed"

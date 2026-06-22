@@ -15,6 +15,7 @@ import { fallbackLng } from "@/src/i18n/settings";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { antiAgingInjectablesPricing, antiAgingWellnessPricing } from '@/src/data/pricing';
 import Link from "next/link";
 const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/antiAging");
@@ -448,89 +449,7 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Hyalual Electri",
-                area: "Full face / Surrounding eyes",
-                unit: "1.5cc",
-                normalPrice: "RM2500",
-                sellingPrice: "RM2500",
-                promoPrice: "RM2200",
-                packageNotes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "Profhilo",
-                area: "Neck / Décolleté / Arms / Knees / Hands",
-                unit: "1 syringe",
-                normalPrice: "RM2500",
-                sellingPrice: "RM2500",
-                promoPrice: "RM2500",
-                packageNotes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "Profhilo",
-                area: "Same treatment section",
-                unit: "2 syringes",
-                normalPrice: "RM5000",
-                sellingPrice: "RM4800",
-                promoPrice: "RM4800",
-                packageNotes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "PRO 32",
-                area: "Face / Neck / Hand",
-                unit: "1 syringe",
-                normalPrice: "RM2000",
-                sellingPrice: "RM1488",
-                promoPrice: "RM1488",
-                packageNotes: "-",
-              },
-              {
-                treatment: "Sculptra 1 vial",
-                area: "Face & Body",
-                unit: "1 vial, 9ml",
-                normalPrice: "RM3300",
-                sellingPrice: "RM3000",
-                promoPrice: "RM2700",
-                packageNotes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "Sculptra 3 vials",
-                area: "Face & Body",
-                unit: "1 vial 9ml x 3 sessions",
-                normalPrice: "RM9900",
-                sellingPrice: "RM7500",
-                promoPrice: "RM7500",
-                packageNotes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "Karisma 1, 2cc",
-                area: "Face, cheeks, jawline, temples / Neck / Hands / Décolletage",
-                unit: "1 syringe",
-                normalPrice: "RM3000",
-                sellingPrice: "RM3000",
-                promoPrice: "RM3000",
-                packageNotes: "-",
-              },
-              {
-                treatment: "Karisma 2, 4cc",
-                area: "Same treatment section",
-                unit: "2 syringes",
-                normalPrice: "RM6000",
-                sellingPrice: "RM5400",
-                promoPrice: "RM5400",
-                packageNotes: "-",
-              },
-              {
-                treatment: "Karisma 3, 6cc",
-                area: "Same treatment section",
-                unit: "3 syringes",
-                normalPrice: "RM9000",
-                sellingPrice: "RM7500",
-                promoPrice: "RM7500",
-                packageNotes: "-",
-              },
-            ]}
+            data={antiAgingInjectablesPricing}
           title="Anti-Aging Therapy - Injectables / Bio-Stimulators Cost in Malaysia 2026"
           subtitle="All pricing is disclosed at the initial consultation before any treatment begins."
           variant="compact"
@@ -556,71 +475,7 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Hydrogen Drip RFB-1",
-                area: "IV intravenous / Butterfly",
-                unit: "Every 2 weeks",
-                normalPrice: "RM6000",
-                sellingPrice: "RM4800",
-                promoPrice: "NIL",
-                packageNotes: "Package price: Buy 4, get 1 free",
-              },
-              {
-                treatment: "NMN, Japan",
-                area: "IV / mixed into Hydrogen Drip",
-                unit: "4 vials x 5cc",
-                normalPrice: "RM8000",
-                sellingPrice: "RM7200",
-                promoPrice: "NIL",
-                packageNotes: "Package price: Buy 4, get 1 free",
-              },
-              {
-                treatment: "Nexus DHEA 25mg, 60's",
-                area: "Oral",
-                unit: "60's, 1 to 2 months supply",
-                normalPrice: "RM189",
-                sellingPrice: "RM189",
-                promoPrice: "NIL",
-                packageNotes: "Anti-aging and menopause symptoms mentioned",
-              },
-              {
-                treatment: "Lumi22 Belltree",
-                area: "Oral",
-                unit: "1 box, 30 sachets",
-                normalPrice: "RM328",
-                sellingPrice: "RM328",
-                promoPrice: "NIL",
-                packageNotes: "Brighter, firmer, younger-looking skin",
-              },
-              {
-                treatment: "BHMed Marine Premium Softgel",
-                area: "Oral",
-                unit: "30 softgels in 1 box",
-                normalPrice: "RM1500",
-                sellingPrice: "RM1400",
-                promoPrice: "NIL",
-                packageNotes: "Buy 3 boxes, 90's, RM3600",
-              },
-              {
-                treatment: "BHMed Vege Premium Softgel",
-                area: "Oral",
-                unit: "30 softgels in 1 box",
-                normalPrice: "RM1500",
-                sellingPrice: "RM1400",
-                promoPrice: "NIL",
-                packageNotes: "Anti-aging support mentioned",
-              },
-              {
-                treatment: "BHMed Vital Cell Softgels",
-                area: "Oral",
-                unit: "30 softgels in 1 box",
-                normalPrice: "RM1500",
-                sellingPrice: "RM1400",
-                promoPrice: "NIL",
-                packageNotes: "Anti-aging support mentioned",
-              },
-            ]}
+            data={antiAgingWellnessPricing}
           title="Anti-Aging Therapy - Wellness / Products Cost in Malaysia 2026"
           subtitle="All pricing is disclosed at the initial consultation before any treatment begins."
           variant="compact"

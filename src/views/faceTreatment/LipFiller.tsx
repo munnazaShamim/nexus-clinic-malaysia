@@ -32,6 +32,7 @@ import { fallbackLng } from "@/src/i18n/settings";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { lipFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 // Import icon mapping for dynamic icons
@@ -589,56 +590,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 { key: "package", header: "Standard Package" },
                 { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Lip Filler",
-                  product: "Juvederm Ultra XC",
-                  areas: "Under Eye / Lips",
-                  volume: "1 cc",
-                  normalPrice: "RM 2,400",
-                  sellingPrice: "RM 2,200",
-                  trialPrice: "-",
-                  promoPrice: "RM 2,200",
-                  package: "-",
-                  notes: "Source shows trial/promo note as ",
-                },
-                {
-                  treatment: "Lip Filler",
-                  product: "Juvederm Volbella (Pre Order)",
-                  areas: "Lips / Around the mouth / Under the eyes",
-                  volume: "1 cc",
-                  normalPrice: "RM 2,600",
-                  sellingPrice: "RM 2,300",
-                  trialPrice: "-",
-                  promoPrice: "RM 2,200",
-                  package: "-",
-                  notes: "Source shows trial/promo note as ",
-                },
-                {
-                  treatment: "Lip Filler",
-                  product: "Juvederm Volift (Pre Order)",
-                  areas: "Lips / Chin / Lower Face / Cheek",
-                  volume: "1 cc",
-                  normalPrice: "RM 3,000",
-                  sellingPrice: "RM 2,500",
-                  trialPrice: "-",
-                  promoPrice: "RM 2,200",
-                  package: "-",
-                  notes: "Source shows trial/promo note as ",
-                },
-                {
-                  treatment: "Lip Filler",
-                  product: "Celosome Mid",
-                  areas: "Nasolabial folds / Forehead wrinkles / Marionette lines",
-                  volume: "1.1 cc",
-                  normalPrice: "RM 2,200",
-                  sellingPrice: "RM 1,888",
-                  trialPrice: "-",
-                  promoPrice: "RM 1,888",
-                  package: "-",
-                  notes: "Benefit text mentions lip augmentation",
-                },
-              ]}
+              data={lipFillerPricing}
               title={pricing?.title}
               subtitle={pricing?.description}
               variant="detailed"

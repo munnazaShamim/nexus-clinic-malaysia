@@ -26,6 +26,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import TableForPages from "@/src/components/TableForPages";
+import { oShotPricing } from '@/src/data/pricing';
 import Image from "next/image";
 const OShotLanding = () => {
   const faqs = [
@@ -733,26 +734,7 @@ const OShotLanding = () => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "O Shot, Regen PRP",
-                area: "Intra Vaginal",
-                unit: "1 tube",
-                normalPrice: "RM2888",
-                sellingPrice: "RM2500",
-                promoPrice: "RM2500",
-                packageNotes: "PRP-based O-Shot",
-              },
-              {
-                treatment: "O Shot, Korean PRP",
-                area: "Intra Vaginal",
-                unit: "1 tube",
-                normalPrice: "RM2300",
-                sellingPrice: "RM1888",
-                promoPrice: "RM2500",
-                packageNotes: "PRP-based O-Shot",
-              },
-            ]}
+            data={oShotPricing}
           title="O-Shot Treatment Cost in Malaysia 2026"
           subtitle="Transparent pricing at Nexus Clinic KL — disclosed before any injection is scheduled"
           variant="detailed"

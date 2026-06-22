@@ -27,6 +27,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { picoLaserPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 interface PicoLaserProps {
@@ -509,44 +510,7 @@ export default function PicoLaserLanding({ locale }: PicoLaserProps) {
                 { key: "promoPrice", header: "Promo Price RM" },
                 { key: "packageNotes", header: "Package / Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Discovery PICO Rejuvenation",
-                  area: "Face / Body",
-                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                  normalPrice: "RM1,500",
-                  sellingPrice: "RM1,200",
-                  promoPrice: "NIL",
-                  packageNotes: "Package: N/A",
-                },
-                {
-                  treatment: "Discovery PICO Resurfacing",
-                  area: "Face / Body",
-                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                  normalPrice: "RM1,500",
-                  sellingPrice: "RM1,200",
-                  promoPrice: "NIL",
-                  packageNotes: "-",
-                },
-                {
-                  treatment: "Discovery PICO Tattoo Removal",
-                  area: "Body",
-                  unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                  normalPrice: "-",
-                  sellingPrice: "-",
-                  promoPrice: "NIL",
-                  packageNotes: "-",
-                },
-                {
-                  treatment: "Brightening Laser Curas",
-                  area: "Face",
-                  unit: "1 hour 45 minutes",
-                  normalPrice: "RM1,398",
-                  sellingPrice: "RM846",
-                  promoPrice: "NIL",
-                  packageNotes: "Treatment steps mention Pico by doctor",
-                },
-              ]}
+              data={picoLaserPricing}
             title="Pico Laser Price in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

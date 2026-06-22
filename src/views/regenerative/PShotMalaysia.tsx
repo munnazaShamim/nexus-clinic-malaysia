@@ -16,6 +16,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages";
+import { pShotPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -387,26 +388,7 @@ const PShotLanding = () => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "P Shot, Regen PRP",
-                area: "Penile",
-                unit: "2 tubes",
-                normalPrice: "RM5000",
-                sellingPrice: "RM4800",
-                promoPrice: "RM2500",
-                packageNotes: "PRP-based P-Shot",
-              },
-              {
-                treatment: "P Shot, Korean PRP",
-                area: "Penile",
-                unit: "2 tubes",
-                normalPrice: "RM4000",
-                sellingPrice: "RM3800",
-                promoPrice: "RM2500",
-                packageNotes: "PRP-based P-Shot",
-              },
-            ]}
+            data={pShotPricing}
           title="P-Shot Cost in Malaysia 2026"
           variant="detailed"
           fadeInUp={fadeInUp}

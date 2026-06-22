@@ -31,6 +31,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 // import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages"
+import { ivDripPricing } from '@/src/data/pricing';
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
@@ -765,26 +766,7 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "interval", header: "Suggested Interval" },
                   { key: "price", header: "Price Range" },
                 ]}
-                data={[
-                  {
-                    treatment: "Hydrogen Drip RFB-1 Japan",
-                    package: "4 + 1 package, total 5 sessions, 500ml",
-                    interval: "Every 2 weeks",
-                    price: "RM4,800–RM6,000 package",
-                  },
-                  {
-                    treatment: "NMN Japan",
-                    package: "4 vials × 5cc",
-                    interval: "Can be diluted into Hydrogen Drip; every 2 weeks advisable",
-                    price: "RM7,200–RM8,000 package",
-                  },
-                  {
-                    treatment: "Monofer Drip",
-                    package: "1 vial",
-                    interval: "Based on doctor's recommendation",
-                    price: "RM1,000–RM1,300",
-                  },
-                ]}
+                data={ivDripPricing}
               title="IV Drip Price in Malaysia 2026: Transparent Pricing at Nexus Clinic KL"
               subtitle="IV drip pricing in Malaysia varies based on the formulation, ingredient complexity, and session duration. Nexus Clinic KL provides transparent, itemised pricing after the initial consultation. All first consultations are complimentary. The table below reflects current 2026 indicative pricing across the full range of formulations. Patients in Selangor, including those from Subang Jaya, Petaling Jaya, and surrounding areas, are welcome at the Wisma UOA II clinic in Kuala Lumpur. Mobile IV availability is offered for selected patients. Please enquire during your consultation. Patients combining iv drip therapies with other weight loss treatments may also be interested in 
                 HCG weight loss programme or the full range of GLP-1 weight loss injections available at the clinic."

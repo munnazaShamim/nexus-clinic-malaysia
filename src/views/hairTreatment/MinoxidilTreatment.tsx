@@ -34,6 +34,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { minoxidilPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface MinoxidilLandingProps {
   locale: string;
@@ -827,18 +828,7 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
               { key: "promoPrice", header: "Promo Price" },
               { key: "notes", header: "Notes" },
             ]}
-            data={[
-              {
-                treatment: "Nexus Follithick Spray, Minoxidil 5% + Biotin 1%",
-                brand: "Nexus",
-                area: "Apply on scalp only",
-                unit: "Depending on usage",
-                normalPrice: "RM190",
-                sellingPrice: "RM190",
-                promoPrice: "NIL",
-                notes: "Recommended once daily at night, gently massage for 2 minutes and leave on",
-              },
-            ]}
+            data={minoxidilPricing}
             title="Minoxidil Hair Loss Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

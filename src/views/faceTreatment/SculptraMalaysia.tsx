@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { sculptraPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { 
@@ -604,31 +605,7 @@ export default function SculptraMalaysia({ locale }: SculptraMalaysiaProps) {
                 { key: "promoPrice", header: "Promo Price" },
                 { key: "package", header: "Standard Package" },
               ]}
-              data={[
-                {
-                  treatment: "Sculptra",
-                  product: "Sculptra 1 vial",
-                  areas: "Face & Body",
-                  units: "1 vial 9 ml",
-                  normalPrice: "RM 3,300",
-                  sellingPrice: "RM 3,000",
-                  trialPrice: "-",
-                  promoPrice: "RM 2,700",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                },
-                {
-                  treatment: "Sculptra",
-                  product: "Sculptra 3 vials",
-                  areas: "Face & Body",
-                  units: "1 vial 9 ml x 3 sessions",
-                  normalPrice: "RM 9,900",
-                  sellingPrice: "RM 7,500",
-                  trialPrice: "-",
-                  promoPrice: "RM 7,500",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Pricing confirmed at consultation. No hidden charges.",
-                },
-              ]}
+              data={sculptraPricing}
               title="Sculptra Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
               variant="detailed"

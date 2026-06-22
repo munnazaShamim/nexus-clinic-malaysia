@@ -30,6 +30,7 @@ import {
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages"
+import { coolsculptingPricing } from '@/src/data/pricing';
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
@@ -840,88 +841,7 @@ const CoolSculptingLanding = ({
                   { key: "promoPrice", header: "Promo Price" },
                   { key: "notes", header: "Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Coolsculpting Petite",
-                    applicator: "Fit",
-                    area: "Under Arm / inner thighs",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Petite",
-                    applicator: "Core",
-                    area: "Lower & upper abdomen / banana roll",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Petite",
-                    applicator: "Curve ++",
-                    area: "Flanks / muffin top / bra buldge / axillary puff",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Advantage",
-                    applicator: "Fit",
-                    area: "Under Arm / inner thighs",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Advantage",
-                    applicator: "Core",
-                    area: "Lower & upper abdomen / banana roll",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Advantage",
-                    applicator: "Curve ++",
-                    area: "Flanks / muffin top / bra buldge / axillary puff",
-                    duration: "35 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Legacy",
-                    applicator: "Coolsculpting Mini",
-                    area: "Double chin",
-                    duration: "45 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                  {
-                    treatment: "Coolsculpting Legacy",
-                    applicator: "Coolsculpting Smooth",
-                    area: "Outer Thighs",
-                    duration: "1 hour & 15 minutes",
-                    normalPrice: "RM2500 per applicator",
-                    sellingPrice: "Depending on the promo of the month",
-                    promoPrice: "RM1500",
-                    notes: "Price shown on parent Coolsculpting row",
-                  },
-                ]}
+                data={coolsculptingPricing}
               title="CoolSculpting Malaysia Pricing Guide"
               subtitle=""
               variant="detailed"

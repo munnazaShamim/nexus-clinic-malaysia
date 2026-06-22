@@ -24,6 +24,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import TableForPages from "@/src/components/TableForPages";
+import { tearTroughFillerPricing } from '@/src/data/pricing';
 import ClinicTrustSection from "@/src/components/ClinicTrustSection";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
@@ -440,32 +441,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
               { key: "package", header: "Standard Package" },
               { key: "notes", header: "Trial / Promo Notes" },
             ]}
-            data={[
-              {
-                treatment: "Tear Trough",
-                product: "Juvederm Ultra XC",
-                areas: "Under Eye / Lips",
-                units: "1 cc",
-                normalPrice: "RM 2,400",
-                sellingPrice: "RM 2,200",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "Benefit text mentions under eyes / tear troughs; source shows trial/promo note as ??",
-              },
-              {
-                treatment: "Tear Trough",
-                product: "Belotero Balance",
-                areas: "Tear trough area / Under Eye",
-                units: "1 cc",
-                normalPrice: "-",
-                sellingPrice: "RM 2,200",
-                trialPrice: "-",
-                promoPrice: "RM 2,200",
-                package: "-",
-                notes: "-",
-              },
-            ]}
+            data={tearTroughFillerPricing}
             title="Tear Trough Filler Price in Malaysia"
             subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
             variant="detailed"

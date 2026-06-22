@@ -48,6 +48,7 @@ import {
 } from "lucide-react";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { dermalFillerPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import {
   staggerContainer,
@@ -513,142 +514,7 @@ const DermalFillersLanding = ({
                     { key: "promoPrice", header: "Promo Price", className: "text-right text-green-600 font-semibold" },
                     { key: "status", header: "Status", className: "text-center" },
                   ]}
-                  data={[
-                    // Juvederm Series
-                    {
-                      product: "Juvederm",
-                      type: "Ultra XC",
-                      areas: "Under Eye / Lips",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,400",
-                      sellingPrice: "RM 2,200",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Juvederm",
-                      type: "Ultraplus XC",
-                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,400",
-                      sellingPrice: "RM 2,200",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Juvederm",
-                      type: "Voluma",
-                      areas: "Cheeks / Chin",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,800",
-                      sellingPrice: "RM 2,400",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Juvederm",
-                      type: "Volbella (Pre Order)",
-                      areas: "Lips / Around the mouth / Under the eyes",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,600",
-                      sellingPrice: "RM 2,300",
-                      promoPrice: "RM 2,200",
-                      status: "Pre Order",
-                    },
-                    {
-                      product: "Juvederm",
-                      type: "Volux",
-                      areas: "Cheek / Chin / Jawline contouring",
-                      volume: "1 cc",
-                      normalPrice: "RM 3,000",
-                      sellingPrice: "RM 2,500",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Juvederm",
-                      type: "Volift (Pre Order)",
-                      areas: "Lips / Chin / Lower Face / Cheek",
-                      volume: "1 cc",
-                      normalPrice: "RM 3,000",
-                      sellingPrice: "RM 2,500",
-                      promoPrice: "RM 2,200",
-                      status: "Pre Order",
-                    },
-                    // Celosome Series
-                    {
-                      product: "Celosome",
-                      type: "Mid",
-                      areas: "Nasolabial folds / Forehead wrinkles / Marionette lines / Lips",
-                      volume: "1.1 cc",
-                      normalPrice: "RM 2,200",
-                      sellingPrice: "RM 1,888",
-                      promoPrice: "RM 1,888",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Celosome",
-                      type: "Implant",
-                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin / Jawline",
-                      volume: "1.1 cc",
-                      normalPrice: "-",
-                      sellingPrice: "RM 1,888",
-                      promoPrice: "RM 1,888",
-                      status: "In Stock",
-                    },
-                    // Belotero Series
-                    {
-                      product: "Belotero",
-                      type: "Volume",
-                      areas: "Cheekbones / Temples",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,600",
-                      sellingPrice: "RM 2,200",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Belotero",
-                      type: "Balance",
-                      areas: "Tear trough area / Under Eye",
-                      volume: "1 cc",
-                      normalPrice: "-",
-                      sellingPrice: "RM 2,200",
-                      promoPrice: "RM 2,200",
-                      status: "In Stock",
-                    },
-                    {
-                      product: "Belotero",
-                      type: "Revive (Skin Booster)",
-                      areas: "Face / Neck / Décolletage / Hands",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,200",
-                      sellingPrice: "RM 2,000",
-                      promoPrice: "Out Of Stock",
-                      status: "Out of Stock",
-                    },
-                    // Neauvia Series
-                    {
-                      product: "Neauvia",
-                      type: "Intense",
-                      areas: "Nose / Nasolabial folds / Marionette lines / Cheeks / Chin",
-                      volume: "1 cc",
-                      normalPrice: "RM 2,200",
-                      sellingPrice: "RM 2,000",
-                      promoPrice: "Out Of Stock",
-                      status: "Out of Stock",
-                    },
-                    {
-                      product: "Neauvia",
-                      type: "Hydro Deluxe",
-                      areas: "Face / Hands / Body",
-                      volume: "2.5 cc",
-                      normalPrice: "RM 2,000",
-                      sellingPrice: "RM 1,800",
-                      promoPrice: "Out Of Stock",
-                      status: "Out of Stock",
-                    },
-                  ]}
+                  data={dermalFillerPricing}
                   title="Dermal Filler Cost in Malaysia | Transparent 2026 Pricing"
                   subtitle="Complete Juvederm, Celosome, Belotero & Neauvia Pricing Guide at Nexus Clinic KL"
                   variant="detailed"

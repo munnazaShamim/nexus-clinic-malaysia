@@ -27,6 +27,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { hydrafacialPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface HydraFacialProps {
   locale: string;
@@ -564,53 +565,7 @@ export default function HydraFacialLandingPage({ locale }: HydraFacialProps) {
                   { key: "promoPrice", header: "Promo Price RM" },
                   { key: "packageNotes", header: "Package / Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Hydrolite",
-                    area: "Face",
-                    unit: "1 hour 15 minutes",
-                    normalPrice: "RM288",
-                    sellingPrice: "RM198",
-                    promoPrice: "RM198",
-                    packageNotes: "Hydrating facial",
-                  },
-                  {
-                    treatment: "Hydrolift",
-                    area: "Face",
-                    unit: "1 hour 15 minutes",
-                    normalPrice: "RM388",
-                    sellingPrice: "RM248",
-                    promoPrice: "RM248",
-                    packageNotes: "Lifting / hydrating facial",
-                  },
-                  {
-                    treatment: "Hydroshine",
-                    area: "Face",
-                    unit: "1 hour 15 minutes",
-                    normalPrice: "RM500",
-                    sellingPrice: "RM328",
-                    promoPrice: "RM328",
-                    packageNotes: "Hydrating / glow facial",
-                  },
-                  {
-                    treatment: "DermaClear",
-                    area: "Face",
-                    unit: "1 hour 15 minutes",
-                    normalPrice: "RM588",
-                    sellingPrice: "RM288",
-                    promoPrice: "RM288",
-                    packageNotes: "Acne-prone skin facial",
-                  },
-                  {
-                    treatment: "DermaRadiance",
-                    area: "Face",
-                    unit: "1 hour 15 minutes",
-                    normalPrice: "RM588",
-                    sellingPrice: "RM288",
-                    promoPrice: "RM288",
-                    packageNotes: "Radiance / anti-aging facial",
-                  },
-                ]}
+                data={hydrafacialPricing}
               title="HydraFacial Price in Malaysia 2026"
               subtitle="Transparent pricing at Nexus Clinic KL"
               variant="detailed"

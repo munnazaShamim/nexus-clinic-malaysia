@@ -31,6 +31,7 @@ import { fallbackLng } from "@/src/i18n/settings";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { edTreatmentPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 export default function EDTreatment({
@@ -565,53 +566,7 @@ export default function EDTreatment({
                   { key: "promoPrice", header: "Promo Price" },
                   { key: "packageNotes", header: "Package / Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "P Shot, Regen PRP",
-                    area: "Penile",
-                    unit: "2 tubes",
-                    normalPrice: "RM5000",
-                    sellingPrice: "RM4800",
-                    promoPrice: "RM2500",
-                    packageNotes: "P-Shot for erectile dysfunction mentioned in sheet",
-                  },
-                  {
-                    treatment: "P Shot, Korean PRP",
-                    area: "Penile",
-                    unit: "2 tubes",
-                    normalPrice: "RM4000",
-                    sellingPrice: "RM3800",
-                    promoPrice: "RM2500",
-                    packageNotes: "P-Shot for erectile dysfunction mentioned in sheet",
-                  },
-                  {
-                    treatment: "Shockwave",
-                    area: "Penile",
-                    unit: "20 minutes, no numb cream required",
-                    normalPrice: "RM650",
-                    sellingPrice: "RM550",
-                    promoPrice: "RM450",
-                    packageNotes: "Sheet mentions penile blood flow / erection support",
-                  },
-                  {
-                    treatment: "Nebido 1000mg",
-                    area: "IM intramuscular",
-                    unit: "Per treatment",
-                    normalPrice: "RM1250",
-                    sellingPrice: "RM1250",
-                    promoPrice: "NIL",
-                    packageNotes: "TRT option",
-                  },
-                  {
-                    treatment: "Janaesterone Testosterone Enanthate 250mg",
-                    area: "IM intramuscular",
-                    unit: "Per treatment",
-                    normalPrice: "RM450",
-                    sellingPrice: "RM450",
-                    promoPrice: "NIL",
-                    packageNotes: "TRT option",
-                  },
-                ]}
+                data={edTreatmentPricing}
               title="Cost of Erectile Dysfunction Treatment in Malaysia 2026"
               subtitle="All pricing is presented at the assessment consultation before any ED treatment begins. Oral medications are the most affordable ongoing option. Shockwave therapy programmes represent a more significant investment but address underlying blood flow."
               variant="compact"

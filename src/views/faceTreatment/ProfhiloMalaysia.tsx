@@ -4,6 +4,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { profhiloPricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle, Clock, Syringe, Heart, Shield, Sparkles, Droplet, Gem, Zap, Eye, ArrowUp, Droplets, Calendar, TrendingUp, Activity } from "lucide-react";
@@ -517,32 +518,7 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
                 { key: "package", header: "Standard Package" },
                 { key: "notes", header: "Trial / Promo Notes" },
               ]}
-              data={[
-                {
-                  treatment: "Profhilo",
-                  product: "Profhilo",
-                  areas: "Neck / Décolleté / Arms / Knees / Hands",
-                  units: "1 Syringe",
-                  normalPrice: "RM 2,500",
-                  sellingPrice: "RM 2,500",
-                  trialPrice: "-",
-                  promoPrice: "RM 2,500",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
-                },
-                {
-                  treatment: "Profhilo",
-                  product: "Profhilo",
-                  areas: "Same treatment section",
-                  units: "2 Syringes",
-                  normalPrice: "RM 5,000",
-                  sellingPrice: "RM 4,800",
-                  trialPrice: "-",
-                  promoPrice: "RM 4,800",
-                  package: "Package Price i.e. buy 4, get 1 free",
-                  notes: "Source shows trial/promo note as ??",
-                },
-              ]}
+              data={profhiloPricing}
               title="Profhilo Cost in Malaysia"
               subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
               variant="detailed"

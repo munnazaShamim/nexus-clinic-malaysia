@@ -25,6 +25,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { acneTreatmentPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface AcneTreatmentProps {
   locale: string;
@@ -490,107 +491,7 @@ export default function AcneLandingPage({ locale }: AcneTreatmentProps) {
               { key: "promoPrice", header: "Promo Price RM" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "DermaClear",
-                area: "Face",
-                unit: "1 hour 15 minutes",
-                normalPrice: "RM588",
-                sellingPrice: "RM288",
-                promoPrice: "RM288",
-                packageNotes: "Acne-prone skin facial",
-              },
-              {
-                treatment: "Dual Yellow Laser",
-                area: "Face / Body",
-                unit: "1 hour without numb cream; 1 hour 15 minutes with numb cream if downtime setting",
-                normalPrice: "RM1,500",
-                sellingPrice: "RM1,200",
-                promoPrice: "RM1,200",
-                packageNotes: "Sheet mentions acne conditions, redness, pigmentation",
-              },
-              {
-                treatment: "Chemical Peel",
-                area: "Face",
-                unit: "30 to 45 minutes, every 2 weeks",
-                normalPrice: "RM550",
-                sellingPrice: "RM450",
-                promoPrice: "RM450",
-                packageNotes: "Glycolic / Salicylic / TCA Cross 100% / TCA 30% / Lactic / Mandelic",
-              },
-              {
-                treatment: "Elixir No2 Repair Toner",
-                area: "Face / Body",
-                unit: "100gm",
-                normalPrice: "RM160",
-                sellingPrice: "RM160",
-                promoPrice: "NIL",
-                packageNotes: "Sheet mentions calming acne appearance",
-              },
-              {
-                treatment: "Elixir No4 Vital C",
-                area: "Face",
-                unit: "15gm",
-                normalPrice: "RM388",
-                sellingPrice: "RM388",
-                promoPrice: "NIL",
-                packageNotes: "Sheet mentions reducing appearance of acne, dark spots, fine lines",
-              },
-              {
-                treatment: "Acne-Aid Liquid Cleanser",
-                area: "Face",
-                unit: "100ml",
-                normalPrice: "RM29",
-                sellingPrice: "RM29",
-                promoPrice: "NIL",
-                packageNotes: "Cleanser for excess oil and impurities",
-              },
-              {
-                treatment: "Acne Complex 30 tabs, 10MG",
-                area: "-",
-                unit: "30's for 1 month supply",
-                normalPrice: "RM200",
-                sellingPrice: "RM200",
-                promoPrice: "NIL",
-                packageNotes: "Acne oral product",
-              },
-              {
-                treatment: "Tretinon 0.05% Tube",
-                area: "Face",
-                unit: "Application on face",
-                normalPrice: "RM50",
-                sellingPrice: "RM50",
-                promoPrice: "NIL",
-                packageNotes: "Acne / skin renewal / brightening",
-              },
-              {
-                treatment: "Tretinon 0.025% Tube",
-                area: "-",
-                unit: "-",
-                normalPrice: "RM50",
-                sellingPrice: "RM50",
-                promoPrice: "NIL",
-                packageNotes: "Acne / skin renewal / brightening",
-              },
-              {
-                treatment: "BHMed Skin",
-                area: "-",
-                unit: "-",
-                normalPrice: "-",
-                sellingPrice: "-",
-                promoPrice: "NIL",
-                packageNotes: "-",
-              },
-              {
-                treatment: "BHMed SPMCE",
-                area: "-",
-                unit: "-",
-                normalPrice: "-",
-                sellingPrice: "-",
-                promoPrice: "NIL",
-                packageNotes: "Mentions acne, scars, rosacea, hyperpigmentation, keloids, melasma",
-              },
-            ]}
+            data={acneTreatmentPricing}
             title="Acne Treatment Cost in Malaysia — 2026 Pricing Guide"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

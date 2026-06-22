@@ -18,6 +18,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
+import { stemCellPricing } from '@/src/data/pricing';
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
 import Image from "next/image";
@@ -497,40 +498,7 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               { key: "sellingPrice", header: "Selling Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Mesenchymal Stem Cells, 15 Million",
-                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
-                unit: "Pre-order, paid first",
-                normalPrice: "RM15000",
-                sellingPrice: "RM15000",
-                packageNotes: "Pre-order 5 working days",
-              },
-              {
-                treatment: "Mesenchymal Stem Cells, 50 Million",
-                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
-                unit: "Pre-order, paid first",
-                normalPrice: "RM45000",
-                sellingPrice: "RM45000",
-                packageNotes: "-",
-              },
-              {
-                treatment: "Mesenchymal Stem Cells, 100 Million",
-                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
-                unit: "Pre-order, paid first",
-                normalPrice: "RM55000",
-                sellingPrice: "RM55000",
-                packageNotes: "-",
-              },
-              {
-                treatment: "Mesenchymal Stem Cells, 150 Million",
-                area: "Full Face / Neck / Hands / Knee / Full body IV intravenous",
-                unit: "Pre-order, paid first",
-                normalPrice: "RM75000",
-                sellingPrice: "RM75000",
-                packageNotes: "-",
-              },
-            ]}
+            data={stemCellPricing}
           title="Stem Cell Treatment Price in Malaysia 2026"
           variant="detailed"
           fadeInUp={fadeInUp}

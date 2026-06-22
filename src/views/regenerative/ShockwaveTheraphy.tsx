@@ -30,6 +30,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import TableForPages from "@/src/components/TableForPages"
+import { shockwavePricing } from '@/src/data/pricing';
 import Image from "next/image";
 
 const ShockwaveLanding = () => {
@@ -615,17 +616,7 @@ const ShockwaveLanding = () => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Shockwave",
-                area: "Penile",
-                unit: "20 minutes, no numb cream required",
-                normalPrice: "RM650",
-                sellingPrice: "RM550",
-                promoPrice: "RM450",
-                packageNotes: "ED / penile blood-flow support mentioned in sheet",
-              },
-            ]}
+            data={shockwavePricing}
           title="Shockwave Therapy Cost in Malaysia 2026"
           subtitle="Transparent pricing at Nexus Clinic KL — disclosed before any injection is scheduled"
           variant="detailed"

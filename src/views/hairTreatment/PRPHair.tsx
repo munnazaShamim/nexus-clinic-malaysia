@@ -26,6 +26,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { prpHairPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface PRPHairTreatmentProps {
   locale: string;
@@ -632,38 +633,7 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Regen",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "Per session",
-                normalPrice: "RM2500",
-                sellingPrice: "RM2500",
-                promoPrice: "RM2500",
-                packageNotes: "PRP Hair mentioned for preventing hair loss and promoting new hair growth",
-              },
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Normal Tube",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "1 tube",
-                normalPrice: "RM900",
-                sellingPrice: "RM900",
-                promoPrice: "RM900",
-                packageNotes: "Package price: buy 4, get 1 free",
-              },
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Korean",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "1 tube",
-                normalPrice: "RM1800",
-                sellingPrice: "RM1300",
-                promoPrice: "RM1300",
-                packageNotes: "Package price: buy 4, get 1 free",
-              },
-            ]}
+            data={prpHairPricing}
             title="PRP Hair Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

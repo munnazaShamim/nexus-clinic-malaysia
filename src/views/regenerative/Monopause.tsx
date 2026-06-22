@@ -24,6 +24,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import TableForPages from "@/src/components/TableForPages";
+import { menopausePricing } from '@/src/data/pricing';
 import Link from "next/link";
 import Whatsapp from "@/src/components/Whatsapp";
 const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
@@ -537,26 +538,7 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               { key: "promoPrice", header: "Promo Price" },
               { key: "packageNotes", header: "Package / Notes" },
             ]}
-            data={[
-              {
-                treatment: "Nexus DHEA 25mg, 60's",
-                area: "Oral",
-                unit: "60's, 1 to 2 months supply",
-                normalPrice: "RM189",
-                sellingPrice: "RM189",
-                promoPrice: "NIL",
-                packageNotes: "Sheet mentions DHEA is used for symptoms of menopause",
-              },
-              {
-                treatment: "BHMed female revitalization 7 in 1 / 11 in 1",
-                area: "-",
-                unit: "-",
-                normalPrice: "-",
-                sellingPrice: "-",
-                promoPrice: "-",
-                packageNotes: "Mentioned in sheet, but no price is listed",
-              },
-            ]}
+            data={menopausePricing}
             title="Hormone Replacement Therapy Cost in Malaysia 2026"
             variant="detailed"
             fadeInUp={fadeInUp}

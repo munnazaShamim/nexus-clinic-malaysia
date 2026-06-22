@@ -27,6 +27,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import Image from "next/image";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { hairLossPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface HairLossTreatmentProps {
   locale: string;
@@ -739,138 +740,7 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
               { key: "promoPrice", header: "Promo Price" },
               { key: "notes", header: "Notes" },
             ]}
-            data={[
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Regen",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "Per session",
-                normalPrice: "RM2500",
-                sellingPrice: "RM2500",
-                promoPrice: "RM2500",
-                notes: "For hair loss / hair growth support",
-              },
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Normal Tube",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "1 tube",
-                normalPrice: "RM900",
-                sellingPrice: "RM900",
-                promoPrice: "RM900",
-                notes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "PRP Hair Treatment",
-                brand: "Korean",
-                area: "Face / Hair / Skin / Lips / Breast",
-                unit: "1 tube",
-                normalPrice: "RM1800",
-                sellingPrice: "RM1300",
-                promoPrice: "RM1300",
-                notes: "Buy 4, get 1 free",
-              },
-              {
-                treatment: "Hair Biolyph",
-                brand: "Biolyph",
-                area: "Hairs / Beard / Face / Body part",
-                unit: "5 vials",
-                normalPrice: "RM10500",
-                sellingPrice: "RM8888",
-                promoPrice: "NIL",
-                notes: "Freeze-dried PRP for hair growth",
-              },
-              {
-                treatment: "Hair Biolyph",
-                brand: "Biolyph",
-                area: "Hairs / Beard / Face / Body part",
-                unit: "10 vials",
-                normalPrice: "RM16500",
-                sellingPrice: "RM13888",
-                promoPrice: "NIL",
-                notes: "-",
-              },
-              {
-                treatment: "Hair Biolyph",
-                brand: "Biolyph",
-                area: "Hairs / Beard / Face / Body part",
-                unit: "15 vials",
-                normalPrice: "RM27000",
-                sellingPrice: "RM20888",
-                promoPrice: "NIL",
-                notes: "-",
-              },
-              {
-                treatment: "Hair Mesotherapy",
-                brand: "MCCM",
-                area: "Hair",
-                unit: "6.5cc",
-                normalPrice: "RM650",
-                sellingPrice: "RM550",
-                promoPrice: "RM450",
-                notes: "Meso skin 1ml + Hair cocktail plus 5ml",
-              },
-              {
-                treatment: "Finasteride",
-                brand: "Nexus",
-                area: "-",
-                unit: "30's for 1 month supply",
-                normalPrice: "RM222",
-                sellingPrice: "RM222",
-                promoPrice: "NIL",
-                notes: "Finasteride 1mg 30's",
-              },
-              {
-                treatment: "Minoxidil Spray",
-                brand: "Nexus",
-                area: "Scalp",
-                unit: "Depending on usage",
-                normalPrice: "RM190",
-                sellingPrice: "RM190",
-                promoPrice: "NIL",
-                notes: "Nexus Follithick Spray, Minoxidil 5% + Biotin 1%",
-              },
-              {
-                treatment: "Hair Dr Shampoo",
-                brand: "Hair Dr, South Korea",
-                area: "Hair & Scalp",
-                unit: "Depending on usage",
-                normalPrice: "RM60",
-                sellingPrice: "RM60",
-                promoPrice: "NIL",
-                notes: "Hair growth / hair loss support product",
-              },
-              {
-                treatment: "Hair Dr Nutrition",
-                brand: "Hair Dr, South Korea",
-                area: "Hair / Scalp",
-                unit: "Depending on usage",
-                normalPrice: "RM340",
-                sellingPrice: "RM340",
-                promoPrice: "NIL",
-                notes: "Hair & scalp nutrition",
-              },
-              {
-                treatment: "Hair Dr Solution",
-                brand: "Hair Dr, South Korea",
-                area: "Hair / Scalp",
-                unit: "Depending on usage",
-                normalPrice: "RM80",
-                sellingPrice: "RM80",
-                promoPrice: "NIL",
-                notes: "For thinning areas",
-              },
-              {
-                treatment: "Zinc & Biotin 30 caps",
-                brand: "Nexus",
-                area: "Hair / Skin / Nails support",
-                unit: "30's for 1 month supply",
-                normalPrice: "RM150",
-                sellingPrice: "RM150",
-                promoPrice: "NIL",
-                notes: "Hair and skin supplement",
-              },
-            ]}
+            data={hairLossPricing}
             title="Hair Loss Treatment Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="detailed"

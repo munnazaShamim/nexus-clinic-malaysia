@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -24,6 +24,7 @@ import Whatsapp from "@/src/components/Whatsapp";
 import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { tattooRemovalPricing } from '@/src/data/pricing';
 import Link from "next/link";
 interface LaserTattooRemovalProps {
   locale: string;
@@ -508,24 +509,7 @@ export default function TattooRemovalLanding({ locale }: LaserTattooRemovalProps
                   { key: "sellingPrice", header: "Selling Price RM" },
                   { key: "packageNotes", header: "Package / Notes" },
                 ]}
-                data={[
-                  {
-                    treatment: "Curas Laser",
-                    area: "Face / Body",
-                    unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                    normalPrice: "RM1,200",
-                    sellingPrice: "RM900",
-                    packageNotes: "Sheet mentions tattoos",
-                  },
-                  {
-                    treatment: "Discovery PICO Tattoo Removal",
-                    area: "Body",
-                    unit: "1 hour 15 minutes including 30 minutes numbing cream",
-                    normalPrice: "-",
-                    sellingPrice: "-",
-                    packageNotes: "Tattoo removal row is listed",
-                  },
-                ]}
+                data={tattooRemovalPricing}
             title="Pico Laser Tattoo Removal Cost in Malaysia 2026"
             subtitle="Transparent pricing at Nexus Clinic KL"
             variant="compact"

@@ -27,6 +27,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import { botoxPricing } from '@/src/data/pricing';
 import Link from "next/link";
 
 // Complete FAQ data with all questions from content
@@ -514,56 +515,7 @@ const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
                   { key: "promo", header: "Promo Price" },
                   { key: "package", header: "Package" },
                 ]}
-                data={[
-                  {
-                    treatment: "Botox Option 1 - Per Area",
-                    areas: "Forehead / Glabellar / Crow's feet",
-                    units: "1 Area",
-                    selling: "RM 800",
-                    promo: "RM 688",
-                    package: "3 Areas RM 2160 + touch-up after 2 weeks",
-                  },
-                  {
-                    treatment: "Botox Option 1 - Masseter",
-                    areas: "Masseter / Slimming jawline",
-                    units: "3 Areas / 1 Session",
-                    selling: "RM 2400",
-                    promo: "RM 2064",
-                    package: "6 Areas RM 4220",
-                  },
-                  {
-                    treatment: "Botox Option 1 - Per Bottle",
-                    areas: "Forehead / Glabellar / Crow's feet / Masseter / Shoulder",
-                    units: "100 Units",
-                    selling: "RM 3300",
-                    promo: "RM 3300",
-                    package: "2 Bottles RM 5800 • 3 Bottles RM 8400 • 4 Bottles RM 10400",
-                  },
-                  {
-                    treatment: "Botox Option 2 - Per Area",
-                    areas: "Forehead / Glabellar / Crow's feet",
-                    units: "1 Area",
-                    selling: "RM 588",
-                    promo: "RM 488",
-                    package: "3 Areas RM 1500",
-                  },
-                  {
-                    treatment: "Botox Option 2 - Masseter",
-                    areas: "Masseter",
-                    units: "3 Areas",
-                    selling: "RM 1500",
-                    promo: "RM 1464",
-                    package: "4 Areas RM 1900",
-                  },
-                  {
-                    treatment: "Botox Option 2 - Per Bottle",
-                    areas: "Forehead / Glabellar / Crow's feet / Masseter / Shoulder",
-                    units: "100 Units",
-                    selling: "RM 2500",
-                    promo: "RM 2500",
-                    package: "2 Bottles RM 4800",
-                  },
-                ]}
+                data={botoxPricing}
                 title="Botox Cost in Malaysia | Transparent 2026 Pricing"
                 subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
                 variant="detailed"
