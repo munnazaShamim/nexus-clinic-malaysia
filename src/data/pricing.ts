@@ -83,8 +83,8 @@ export const plinestPricing = [
 ];
 
 export const profhiloPricing = [
-  { treatment: "Profhilo", product: "Profhilo", areas: "Neck / Décolleté / Arms / Knees / Hands", units: "1 Syringe", normalPrice: "RM 2,500", sellingPrice: "RM 2,500", trialPrice: "-", promoPrice: "RM 2,500", package: "Package Price i.e. buy 4, get 1 free", notes: "" },
-  { treatment: "Profhilo", product: "Profhilo", areas: "Neck / Décolleté / Arms / Knees / Hands", units: "2 Syringes", normalPrice: "RM 5,000", sellingPrice: "RM 4,800", trialPrice: "-", promoPrice: "RM 4,800", package: "Package Price i.e. buy 4, get 1 free", notes: "" },
+  { treatment: "Profhilo", areas: "Neck / Décolleté / Arms / Knees / Hands", units: "1 Syringe", normalPrice: "RM 2,500", sellingPrice: "RM 2,500", promoPrice: "RM 2,500", package: "Package Price i.e. buy 4, get 1 free" },
+  { treatment: "Profhilo",  areas: "Neck / Décolleté / Arms / Knees / Hands", units: "2 Syringes", normalPrice: "RM 5,000", sellingPrice: "RM 4,800", promoPrice: "RM 4,800", package: "Package Price i.e. buy 4, get 1 free" },
 ];
 
 export const sculptraPricing = [
@@ -99,7 +99,7 @@ export const karismaPricing = [
 ];
 
 export const newestPricing = [
-  { treatment: "Newest", product: "Newest 4ml", areas: "Face / Neck", units: "Per session", normalPrice: "RM 500", sellingPrice: "RM 500", trialPrice: "-", promoPrice: "Nil", package: "Package Price i.e. buy 4, get 1 free", notes: "" },
+  { treatment: "Newest", product: "Newest 4ml", areas: "Face / Neck", units: "Per session", normalPrice: "RM 500", sellingPrice: "RM 500", package: "Package Price i.e. buy 4, get 1 free" },
 ];
 
 export const botoxPricing = [

@@ -31,53 +31,53 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
     { label: "Recommended Protocol", value: "2 sessions, 4 weeks apart" },
     { label: "When Results Start", value: "Hydration first, firmness builds over weeks" },
     { label: "Longevity", value: "6 to 9 months" },
-    { label: "Suitable For", value: "Dull skin, fine lines, crepey texture, early laxity, dehydration, loss of bounce" },
+    { label: "Suitable For", value: "Dull skin, fine lines, wrinkled skin, early laxity, dehydration, loss of bounce" },
   ];
 
   const profhiloBenefits = [
     {
       title: "Dull Skin",
-      description: "When skin loses hydration, it loses light reflection too. Profhilo helps improve moisture from within, which can make the skin look fresher and more radiant.",
+      description: "When skin loses hydration at a deeper level, it also loses how it reflects light. Profhilo improves moisture from within, which brings back a fresher, more enhanced quality that surface products really cannot replicate.",
       icon: Sparkles
     },
     {
       title: "Fine Lines",
-      description: "Fine lines caused by dryness and thinning skin often become more visible with age. Profhilo is used to improve overall skin texture and softness, which can make these lines less obvious over time.",
+      description: "These are specifically the fine lines caused by dryness and thinning skin, not deep-set wrinkles. They get more visible with age and dehydration. Profhilo helps improve overall skin texture and softness, which makes these lines less noticeable over time.",
       icon: Eye
     },
     {
       title: "Loss of Skin Firmness",
-      description: "When the skin starts looking loose or less tight, especially on the cheeks, lower face or neck, Profhilo may help support firmer-looking skin through skin remodelling.",
+      description: "When the skin on the cheeks, lower face or neck starts looking a little loose or less tight, Profhilo can help support skin looking firmer through its remodelling effect. It is not a lifting treatment, but it does address early laxity.",
       icon: TrendingUp
     },
     {
-      title: "Crepey Skin",
-      description: "Profhilo is widely used for skin that feels thin, fragile or crepey, especially on the face, neck and hands.",
+      title: "Wrinkled Skin",
+      description: "Skin that feels thin, fragile, or papery, especially on the face, neck, and hands, responds well to Profhilo. These are also areas where traditional filler is not a favorable option, which makes Profhilo particularly useful here.",
       icon: Droplets
     },
     {
       title: "Early Ageing",
-      description: "Some patients are not ready for filler or more advanced procedures. Profhilo is often chosen earlier, when the goal is prevention, hydration and skin quality maintenance.",
+      description: "A lot of patients who choose Profhilo are not ready for filler or anything more intensive. It is often chosen earlier, when the goal is prevention. Maintaining skin quality and slowing down what is starting to change rather than correcting something significant.",
       icon: Calendar
     },
   ];
 
   const treatmentAreas = [
-    { area: "Face", description: "For hydration, smoother texture and better skin quality" },
-    { area: "Neck", description: "For thin, crepey or ageing skin" },
-    { area: "Décolletage", description: "For fine lines and loss of smoothness" },
-    { area: "Hands", description: "For ageing, dry or thinning skin" },
+    { area: "Face", description: "For hydration, smoother texture and better skin quality overall. This is usually the first area patients ask about, since it's where dullness and tightness show up the most." },
+    { area: "Neck", description: "For thin, wrinkled or ageing skin that lacks firmness. People often skip this area for years and then notice it ages faster than their face does." },
+    { area: "Décolletage", description: "For fine lines and loss of smoothness in the chest area. Sun exposure tends to hit this spot harder than people realise, so it's often more dehydrated than expected." },
+    { area: "Hands", description: "For ageing, dry or thinning skin where filler is not the right choice. Hands give away age quicker than most people think, and there's not much you can do about that with creams alone." },
   ];
 
   const comparisonData = [
     {
       type: "Profhilo",
-      concerns: "tired-looking skin, loss of glow, fine lines, thin or crepey skin, early skin laxity, poor skin texture",
-      action: "Improves skin quality",
+      concerns: "tired-looking skin, loss of glow, fine lines, thin or wrinkled skin, early skin laxity, or poor overall skin texture",
+      action: "Improves skin quality without changing anything structural",
     },
     {
       type: "Filler",
-      concerns: "sunken cheeks, lip volume, chin projection, jawline definition, structural contouring",
+      concerns: "sunken cheeks, loss of lip volume, chin projection, jawline definition, or structural contouring",
       action: "Changes volume and shape",
     },
   ];
@@ -86,111 +86,104 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
     {
       step: "1",
       title: "Full Skin Assessment",
-      desc: "Your doctor examines skin texture, hydration, elasticity and laxity. This matters because not every patient who asks for Profhilo is actually the right fit for it."
+      desc: "The doctor looks at your skin texture, hydration levels, elasticity and laxity before anything else. Not every patient who asks for Profhilo is actually the correct candidate, and this is where that gets figured out honestly."
     },
     {
       step: "2",
       title: "Personalised Treatment Planning",
-      desc: "The doctor confirms whether Profhilo should be used alone or combined with something else. If your concern is volume loss rather than skin quality, you will be told clearly before treatment starts."
+      desc: "The doctor decides whether Profhilo should be used alone or alongside something else. If your concern turns out to be volume loss rather than skin quality, you will be told that clearly before treatment starts. Nothing gets recommended without a reason."
     },
     {
       step: "3",
       title: "Injection Session",
-      desc: "Profhilo is usually injected using specific points designed for safe and even spread. On the face, the common protocol is 5 injection points per side."
+      desc: "Profhilo is injected using specific anatomical points chosen for safe and even spread through the tissue. On the face, the core protocol is five injection points per side using the BAP technique. Each session takes between 15 and 30 minutes."
     },
     {
       step: "4",
       title: "Second Session",
-      desc: "Most patients need a second session around 4 weeks later for the standard treatment course."
+      desc: "Most patients need a second session around four weeks after the first to complete the standard treatment course. One session alone does not give you the full result."
     },
     {
       step: "5",
-      title: "Review",
-      desc: "Your skin is reviewed over the following weeks as hydration and firmness continue to build."
+      title: "Review and Results",
+      desc: "Your skin is monitored over the following weeks as hydration and firmness continue building underneath. Full results are generally clear around eight weeks after the second session."
     },
   ];
 
-  const pricingTiers = [
-    { treatment: "1 session", volume: "Per session", price: "RM 2,000 – RM 3,500" },
-    { treatment: "Recommended 2-session course", volume: "Full protocol", price: "RM 4,000 – RM 7,000" },
-    { treatment: "Neck / hands / add-on areas", volume: "Additional areas", price: "Priced separately" },
-  ];
-
   const priceFactors = [
-    "Number of sessions needed: Most patients start with 2 sessions",
-    "Treatment area: Face, neck, hands and décolletage may be priced differently",
-    "Doctor experience: More experienced injectors often charge more",
-    "Authenticity of product: Real Profhilo from proper sources costs more than questionable alternatives",
-    "Combination plans: Some patients combine Profhilo with other treatments for stronger results",
+    "Number of sessions needed: most patients start with two",
+    "Treatment area: face, neck, hands and décolletage may vary in price",
+    "Doctor experience: more experienced injectors generally charge more",
+    "Product authenticity: genuine Profhilo from proper sources costs more",
+    "Combination plans: some patients pair Profhilo with other treatments",
   ];
 
   const benefitsList = [
-    "Improves skin hydration from within",
+    "Improves skin hydration from within, not just on the surface",
     "Helps skin look smoother, fresher and more radiant",
-    "Supports firmer-looking skin over time",
-    "Softens the look of fine lines caused by dryness and thinning skin",
-    "Does not change facial shape",
-    "Very natural-looking outcome",
+    "Supports firmer-looking skin over time through collagen and elastin stimulation",
+    "Softens fine lines caused by dryness and thinning",
+    "Does not change facial shape or structure in any way",
+    "Results look very natural because the skin just looks healthier",
     "Minimal downtime for most patients",
-    "Suitable for face, neck, hands and other areas depending on assessment",
+    "Can be used on the face, neck, hands and décolletage",
   ];
 
   const limitationsList = [
     "It is not a filler and does not replace lost facial volume",
-    "It does not lift severe sagging skin",
-    "Results are not instant in the same way filler is",
-    "Most patients need 2 sessions for best results",
-    "Maintenance is needed because results are not permanent",
-    "It is not suitable for every patient or every skin concern",
+    "It does not lift skin that has significantly sagged",
+    "Results are not immediate the way filler is on the same day",
+    "Most patients need two sessions for proper results, one is not enough",
+    "Maintenance is required because results are not permanent",
+    "Not suitable for every patient or every skin concern",
   ];
 
   const sideEffects = {
     common: [
-      "small raised bumps at injection points",
-      "mild redness",
-      "slight swelling",
-      "light bruising",
-      "tenderness for 1 to 3 days",
+      "Small raised bumps at the injection points, similar to mild mosquito bites",
+      "Mild redness around the treated area",
+      "Slight swelling that settles quickly",
+      "Light bruising in some patients",
+      "Tenderness for one to three days",
     ],
     rare: [
-      "infection",
-      "allergic or hypersensitivity reaction",
-      "prolonged lumpiness",
-      "vascular complications, which are uncommon but serious with injectable treatments and require proper medical management",
+      "Infection",
+      "Allergic or hypersensitivity reaction",
+      "Prolonged lumpiness at injection points",
+      "Vascular complications, uncommon but serious if they occur",
     ],
   };
 
   const aftercareInstructions = [
     "Do not press or massage the treated area unless your doctor tells you to",
-    "Avoid intense exercise for 24 hours",
-    "Avoid alcohol for the first 24 hours if possible",
-    "Avoid sauna, steam and strong heat for 24 to 48 hours",
-    "Do not schedule facials or aggressive skin treatments immediately after",
+    "Avoid intense exercise for 24 hours after treatment",
+    "Skip alcohol for the first 24 hours if possible",
+    "Avoid saunas, steam and strong heat for 24 to 48 hours",
+    "Do not book facials or active skin treatments straight after",
     "Give the treatment time to settle before judging the result",
   ];
 
   const faqData = [
-    { q: "How much does Profhilo cost in Malaysia?", a: "Profhilo in Malaysia commonly falls around RM 2,000 to RM 3,500 per session, depending on clinic, area and doctor experience. A full 2-session course usually costs more overall." },
-    { q: "How many Profhilo sessions do I need?", a: "Most patients start with 2 sessions about 4 weeks apart. Some later continue with maintenance based on how their skin responds." },
-    { q: "How long does Profhilo last?", a: "Results commonly last around 6 to 9 months, though this varies from person to person." },
-    { q: "Is Profhilo the same as filler?", a: "No. Profhilo is mainly used to improve skin quality, hydration and firmness. Filler is used to add volume and shape." },
-    { q: "Is Profhilo painful?", a: "Most patients describe it as very manageable. You may feel brief stinging or pressure during the injections, but the procedure is quick." },
-    { q: "When will I see results from Profhilo?", a: "Some patients notice better hydration and glow first. Firmer, smoother improvement usually builds over the next few weeks." },
-    { q: "What age is best for Profhilo?", a: "There is no single best age. It is often chosen by adults who notice dullness, fine lines, dehydration or early skin laxity and want a natural improvement." },
-    { q: "Can Profhilo lift sagging skin?", a: "Profhilo can improve skin quality and mild laxity, but it does not replace a true lifting treatment when sagging is more advanced." },
-    { q: "Is there downtime after Profhilo?", a: "Downtime is usually minimal. Small bumps, redness or mild bruising can happen, but these are usually temporary." },
-    { q: "Who is not suitable for Profhilo?", a: "Suitability should be decided by a doctor. In general, injectable treatments may be postponed or avoided in people with active skin infection, certain medical issues, pregnancy, or other factors that need assessment first." },
+    { q: "How much does Profhilo cost in Malaysia?", a: "Generally between RM 2,000 and RM 3,500 per session. At Nexus Clinic KL, pricing is mentioned clearly before anything is confirmed with no hidden charges." },
+    { q: "How many sessions do I need?", a: "Most patients start with two sessions spaced four weeks apart. After that, maintenance is typically every six to nine months." },
+    { q: "How long do results last?", a: "Around six to nine months for most people. This varies based on age, lifestyle and how the skin responds." },
+    { q: "Is Profhilo the same as filler?", a: "No. Profhilo improves skin quality, hydration and firmness. Filler adds volume and changes structure. They solve completely different problems." },
+    { q: "Is it painful?", a: "Most patients find it very manageable. There is brief stinging at each injection point but the whole session is done in under 30 minutes. Numbing cream is available for patients if needed." },
+    { q: "When will I see results?", a: "Better hydration and glow usually show within the first two weeks. Firming and texture improvement builds over the following month. Full results are generally clear around eight weeks after your second session." },
+    { q: "Can Profhilo lift sagging skin?", a: "It can improve skin quality and mild laxity, but it is not a lifting treatment. More advanced sagging needs a different approach entirely." },
+    { q: "Is there downtime?", a: "Minimal. Small bumps, light redness and occasional bruising can happen but these are temporary. Most patients are back to their normal routine the same day." },
+    { q: "Who is not suitable for Profhilo?", a: "Suitability is decided by the doctor during consultation. Generally, injectable treatments may be avoided or postponed for people with active skin infections, certain medical conditions, pregnancy, or other factors that need assessing first." },
   ];
 
   return (
     <div className="w-full bg-light overflow-hidden">
       <AllPagesHero
         badge="Non-Surgical Skin Remodelling"
-        title="Profhilo | Skin Hydration & Firmness Treatment"
-        highlight="at Nexus Clinic KL"
+        title="Profhilo Treatment in Malaysia "
+        highlight=" Nexus Clinic KL"
         description="Improve skin hydration, firmness and glow with Profhilo in Malaysia. Nexus Clinic KL offers doctor-led Profhilo treatment for dull, thin and ageing skin."
-        details="Your skin can look tired even when you are not. It starts to feel thinner. Fine lines show more easily. Makeup stops sitting well. The glow fades. Skin loses bounce, and no cream seems to fix it for long. That is usually the point where skincare alone is no longer enough."
-        note="Profhilo is not a filler. It does not change your facial shape. It works by spreading under the skin to improve hydration, elasticity and overall skin texture."
+        details="Your skin can look sleepy even when you are not. It starts feeling thinner. Fine lines show up more frequently. Makeup stops sitting right. The glow you used to have just vanishes off, and no matter what you put on your face, nothing seems to hold for long. That is usually the point where skincare on its own stops being enough. Profhilo is one of the treatments that comes up at this stage, and for good reason. But it also gets misunderstood a lot, so let us go through what it actually does, who it is for, and what to expect."
+        note="Profhilo works by spreading under the skin to improve hydration, elasticity and overall skin texture."
         image="/images/face/Profhilo/Profhilo Malaysia.webp"
         imageAlt="Nexus Clinic Kuala Lumpur - Profhilo Treatment"
         ctaText="Book free consultation"
@@ -264,18 +257,19 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
                 What Is Profhilo and <span className="text-wine italic">How It Works</span>
               </h2>
               <p className="text-brown font-inter">
-                Profhilo is an injectable skin remodelling treatment made with high-purity hyaluronic acid. Unlike dermal filler, 
-                it is not used to build cheeks, shape the chin or add volume to the lips. Instead, it spreads through the tissue 
-                to improve hydration and support better skin quality.
+                Profhilo is an injectable skin-remodeling treatment made from highly pure hyaluronic acid. What it does is spread
+                through the tissue below the skin and improves the condition of the skin itself.
               </p>
               <p className="text-brown font-inter">
-                It is often described as a bio-remodelling treatment because the goal is not to fill a line, but to improve the 
-                condition of the skin itself. Patients usually choose Profhilo when they feel their skin has become thin, tired, 
-                loose or less fresh than before.
+                It is often described as a bioremodeling treatment because the main point is not to fill a line or a hollow. It is
+                to get the skin functioning better from within, improving hydration, texture and firmness over time. Results look real
+                because your face still looks like your face, just healthier and more refreshed than before.
               </p>
               <p className="text-brown font-inter">
-                One of the reasons Profhilo became so popular is that it treats skin quality in a very natural-looking way. 
-                Skin still looks like your skin, just healthier, more hydrated and more refined.
+                The product is manufactured by IBSA in Switzerland using NAHYCO technology, a thermal bonding process that avoids the
+                chemical cross-linking agents seen in traditional fillers. That is why the texture flows through tissue instead of holding
+                a shape. It has been available since 2015 and caught on in Malaysia, especially because the results look like your own skin.
+                Nobody asks what you did.
               </p>
               <div className="bg-cream p-5 rounded-xl border-l-4 border-wine">
                 <p className="font-georgia italic text-brown">"Profhilo improves skin quality. Filler changes volume and shape."</p>
@@ -308,7 +302,7 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
             <h2 className="font-georgia text-3xl md:text-4xl text-brown">What Profhilo Helps Improve</h2>
-            <p className="text-taupe font-inter max-w-2xl mx-auto">At Nexus Clinic KL, Profhilo is commonly used for patients who want skin improvement without adding facial volume</p>
+            <p className="text-taupe font-inter max-w-2xl mx-auto">At Nexus Clinic KL, Profhilo is used for patients who want to improve their skin without adding facial volume or changing how they look. Here is what it is generally used for:</p>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -367,8 +361,8 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           className="container mx-auto max-w-5xl"
         >
           <motion.div variants={fadeInUp} className="text-center mb-10">
-            <h2 className="font-georgia text-3xl md:text-4xl text-brown">Why Patients Choose Profhilo Instead of Filler</h2>
-            <p className="text-taupe font-inter">Profhilo and filler are not the same thing</p>
+            <h2 className="font-georgia text-3xl md:text-4xl text-brown">Profhilo vs Filler: Why People Get Confused</h2>
+            <p className="text-taupe font-inter">These two are not the same thing and they do not solve the same problems. People mix them up often, even those who have already had one of them done.</p>
           </motion.div>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -395,12 +389,59 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="mt-8 p-5 bg-wine/5 rounded-xl text-center">
           <p className="text-center text-brown/50 mt-4">
-            Unlike dermal fillers that add direct volume, Profhilo works by spreading beneath the skin to boost hydration and stimulate collagen remodelling. Patients with age-related collagen loss causing flattened cheeks or softened jawlines may achieve better structural support by combining Profhilo with <Link href="https://www.nexus-clinic.com/face/sculptra-malaysia/" className="text-wine font-bold italic">Sculptra in Malaysia</Link>, which rebuilds facial volume gradually over months. For those seeking overall skin health maintenance, our <Link href="https://www.nexus-clinic.com" className="text-wine font-bold italic">aesthetic clinic in Kuala Lumpur</Link> offers comprehensive doctor-led treatment planning.
+            A lot of people who feel their skin looks flat and dull do not need filler at all. And some who think they just need a general skin refresh actually have volume loss that Profhilo will not fix. If the real concern is <Link href="https://www.nexus-clinic.com/face/cheek-filler-malaysia/" className="text-wine font-bold italic">sunken cheeks</Link>, <Link href="https://www.nexus-clinic.com/face/lip-filler-malaysia/" className="text-wine font-bold italic">loss of lip volume</Link>, <Link href="https://www.nexus-clinic.com/face/chin-filler-malaysia/" className="text-wine font-bold italic">chin projection</Link>, <Link href="https://www.nexus-clinic.com/face/jawline-filler-malaysia/" className="text-wine font-bold italic">jawline definition</Link>, or structural contouring, filler changes volume and shape — and that is a different treatment path entirely. This is exactly why a proper doctor assessment at our <Link href="https://www.nexus-clinic.com" className="text-wine font-bold italic">aesthetic clinic in Kuala Lumpur</Link> matters before anything gets booked.
           </p>
           </motion.div>
         </motion.div>
       </section>
-
+      {/* Benefits & Limitations Section */}
+      <section className="py-20 px-4 bg-cream">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="container mx-auto max-w-5xl"
+        >
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div variants={fadeInLeft} className="bg-light p-6 rounded-xl border border-taupe/10">
+              <h3 className="font-georgia text-xl text-brown mb-4 flex items-center gap-2">
+                <Gem className="w-5 h-5 text-wine" />
+                Benefits of Profhilo
+              </h3>
+              <ul className="space-y-2">
+                {benefitsList.map((benefit, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
+                    <CheckCircle className="w-4 h-4 text-wine mt-0.5 flex-shrink-0" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            
+            <motion.div variants={fadeInRight} className="bg-light p-6 rounded-xl border border-taupe/10">
+              <h3 className="font-georgia text-xl text-brown mb-4 flex items-center gap-2">
+                <Shield className="w-5 h-5 text-wine" />
+                Limitations of Profhilo
+              </h3>
+              <ul className="space-y-2">
+                {limitationsList.map((limitation, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
+                    <span className="text-wine text-lg">⚠️</span>
+                    <span>{limitation}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+          
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
+            <p className="text-brown font-inter text-sm">
+              This is why proper assessment matters. If the real issue is volume loss, hollowing or heaviness, another treatment may be more effective.
+            </p>
+          </motion.div>
+        </motion.div>
+      </section>
       {/* Nexus Clinic Difference Section */}
       <section className="py-20 px-4 bg-light">
         <motion.div
@@ -508,91 +549,39 @@ export default function ProfhiloMalaysia({ locale }: ProfhiloMalaysiaProps) {
             <TableForPages
               columns={[
                 { key: "treatment", header: "Treatment" },
-                { key: "product", header: "Product / Option" },
                 { key: "areas", header: "Parts / Areas" },
                 { key: "units", header: "Units / Session / Duration" },
                 { key: "normalPrice", header: "Normal Price RM" },
                 { key: "sellingPrice", header: "Selling Price RM" },
-                { key: "trialPrice", header: "First Trial Price RM" },
                 { key: "promoPrice", header: "Promo Price" },
                 { key: "package", header: "Standard Package" },
-                { key: "notes", header: "Trial / Promo Notes" },
               ]}
               data={profhiloPricing}
-              title="Profhilo Cost in Malaysia"
-              subtitle="Transparent 2026 Pricing at Nexus Clinic KL"
+              title="Profhilo Cost in Malaysia 2026"
+              subtitle="Across Malaysia, Profhilo generally sits between RM 2,000 and RM 3,500 per session depending on the clinic, the doctor's experience, and the region being addressed."
               variant="detailed"
               fadeInUp={fadeInUp}
             />
         </motion.div>
 
-          <motion.div variants={fadeInUp} className="mt-8 max-w-7xl mx-auto">
+          <motion.div variants={fadeInUp} className="mt-8 max-w-5xl mx-auto text-center">
             <h3 className="font-georgia text-xl text-brown mb-3">Factors That Affect Your Profhilo Price</h3>
             <ul className="space-y-2">
               {priceFactors.map((factor, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
-                  <span className="text-wine">•</span>
+                <li key={idx} className="flex items-center gap-2 text-taupe text-center justify-center">
                   <span>{factor}</span>
                 </li>
               ))}
             </ul>
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown/50 font-inter text-sm">
-                Profhilo is typically priced as a 2-session course, with final cost depending on treatment area and product authenticity. Patients with persistent facial redness or sensitivity may first require barrier repair, which can be assessed through our <Link href="/skin/rosacea-treatment-malaysia/" className="text-wine font-bold italic">rosacea treatment in Malaysia</Link> options. Those looking to extend Profhilo's hydrating effects can combine it with <Link href="/skin/skin-whitening-treatment-malaysia/" className="text-wine font-bold italic">skin whitening treatment in Malaysia</Link> for a brighter, more even complexion.
+                One thing worth knowing if you are shopping around: counterfeit HA products are a documented issue in Southeast Asia. Genuine Profhilo is manufactured by IBSA in Switzerland. If the pricing somewhere looks unusually low, ask to see the product packaging and batch number before agreeing to anything.
             </p>
           </motion.div>
           </motion.div>
           
       </section>
 
-      {/* Benefits & Limitations Section */}
-      <section className="py-20 px-4 bg-cream">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
-        >
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div variants={fadeInLeft} className="bg-light p-6 rounded-xl border border-taupe/10">
-              <h3 className="font-georgia text-xl text-brown mb-4 flex items-center gap-2">
-                <Gem className="w-5 h-5 text-wine" />
-                Benefits of Profhilo
-              </h3>
-              <ul className="space-y-2">
-                {benefitsList.map((benefit, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
-                    <CheckCircle className="w-4 h-4 text-wine mt-0.5 flex-shrink-0" />
-                    <span>{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            
-            <motion.div variants={fadeInRight} className="bg-light p-6 rounded-xl border border-taupe/10">
-              <h3 className="font-georgia text-xl text-brown mb-4 flex items-center gap-2">
-                <Shield className="w-5 h-5 text-wine" />
-                Limitations of Profhilo
-              </h3>
-              <ul className="space-y-2">
-                {limitationsList.map((limitation, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
-                    <span className="text-wine text-lg">⚠️</span>
-                    <span>{limitation}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-          
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              This is why proper assessment matters. If the real issue is volume loss, hollowing or heaviness, another treatment may be more effective.
-            </p>
-          </motion.div>
-        </motion.div>
-      </section>
 
       {/* Side Effects & Aftercare Section */}
       <section className="py-20 px-4 bg-light">
