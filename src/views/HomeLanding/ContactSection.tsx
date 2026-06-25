@@ -8,9 +8,12 @@ import SocialIcons from "@/src/components/SocialIcons";
 const ContactSection = ({ t }: { t: (key: string) => string }) => {
   return (
     <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image
+          bg-fixed (background-attachment: fixed) is removed — it forces the browser
+          to repaint the entire viewport on every scroll tick on mobile, causing
+          consistent frame drops. bg-scroll is visually near-identical on small screens. */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/nexus-clinic.webp')" }}
       />
       

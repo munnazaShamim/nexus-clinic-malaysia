@@ -62,7 +62,8 @@ const WhyChooseSection = ({ t }: { t: (key: string) => string }) => {
                   width={800}
                   height={1000}
                   className="w-full aspect-[4/5] object-cover"
-                  priority={true}
+                  priority={false}
+                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

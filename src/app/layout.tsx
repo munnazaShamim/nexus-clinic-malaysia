@@ -78,12 +78,17 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o"/>
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+        {/* Preconnect for self-hosted fonts eliminates RTT before font fetch */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
+        {/* Upgrade GTM from dns-prefetch to preconnect – saves ~100 ms on cold connections */}
+        <link rel="preconnect" href="https://www.googletagmanager.com"/>
         <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+        {/* Schema does not affect rendering; afterInteractive avoids blocking the parser */}
         <Script
           id="medical-clinic-schema"
           type="application/ld+json"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schemaData),
           }}

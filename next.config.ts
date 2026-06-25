@@ -75,13 +75,23 @@ const nextConfig: NextConfig = {
   //   optimizeCss: true,
   // },
 
+  experimental: {
+    // Tree-shake framer-motion and lucide-react to only bundle used exports,
+    // significantly reducing the JS sent to mobile clients.
+    optimizePackageImports: ['framer-motion', 'lucide-react'],
+  },
+
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
       exclude: ['error'],
     } : false,
   },
-  
+
   images: {
+    // Serve AVIF first (≈50% smaller than WebP), fall back to WebP.
+    formats: ['image/avif', 'image/webp'],
+    // Cache optimized images for 1 year.
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: "https",

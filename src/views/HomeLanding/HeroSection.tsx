@@ -8,7 +8,7 @@ const HeroSection = ({ t }: { t: (key: string) => string }) => {
           fill
           priority
           fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, 100vw"
+          sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 100vw"
           quality={75}
           className="object-cover object-[65%_center] md:object-center"
         />
