@@ -66,18 +66,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   devIndicators: false,
 
-  // NOTE: experimental.optimizeCss (critters) is intentionally disabled.
-  // With Next 15.5 + a pure app-router project (no /pages dir), critters'
-  // post-build step throws `ENOENT .next/server/pages-manifest.json` and
-  // fails the build. Re-enable only after upgrading past the fix or moving
-  // to Next's built-in `optimizeCss` successor.
-  // experimental: {
-  //   optimizeCss: true,
-  // },
-
   experimental: {
-    // Tree-shake framer-motion and lucide-react to only bundle used exports,
-    // significantly reducing the JS sent to mobile clients.
     optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
 
@@ -88,9 +77,7 @@ const nextConfig: NextConfig = {
   },
 
   images: {
-    // Serve AVIF first (≈50% smaller than WebP), fall back to WebP.
     formats: ['image/avif', 'image/webp'],
-    // Cache optimized images for 1 year.
     minimumCacheTTL: 31536000,
     remotePatterns: [
       {
@@ -100,20 +87,6 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // async headers() {
-  //   return [
-  //     { source: "/(.*)", headers: securityHeaders },
-  //     {
-  //       source: '/images/(.*)',
-  //       headers: [
-  //         {
-  //           key: 'Cache-Control',
-  //           value: 'public, max-age=31536000, immutable',
-  //         },
-  //       ],
-  //     },
-  //   ];
-  // },
     async headers() {
     return [
       {
