@@ -66,9 +66,10 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   devIndicators: false,
 
-  experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
-  },
+    experimental: {
+      optimizePackageImports: ['framer-motion', 'lucide-react'],
+      optimizeCss: true,
+    },
 
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
