@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState, useCallback } from "react";
 import { usePathname } from "next/navigation";
@@ -113,17 +112,16 @@ export const Footer = ({ locale }: { locale?: string }) => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-6 text-brown">{getText("footer.quickLinks", "Quick Links")}</h4>
+            <h3 className="font-semibold mb-6 text-brown">{getText("footer.quickLinks", "Quick Links")}</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <motion.a
+                  <a
                     href={getNavHref(link.href)}
-                    whileHover={{ x: 5 }}
-                    className="inline-block text-taupe hover:text-wine transition-colors"
+                    className="inline-block text-taupe hover:text-wine hover:translate-x-1 transition-all"
                   >
                     {link.label}
-                  </motion.a>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -131,7 +129,7 @@ export const Footer = ({ locale }: { locale?: string }) => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-6 text-brown">{getText("footer.contactTitle", "Contact")}</h4>
+            <h3 className="font-semibold mb-6 text-brown">{getText("footer.contactTitle", "Contact")}</h3>
             <ul className="space-y-3 text-taupe">
               <li><a 
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Nexus Clinic Wisma UOA 2 Kuala Lumpur")}`}

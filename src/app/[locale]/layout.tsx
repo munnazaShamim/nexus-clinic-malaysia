@@ -30,7 +30,7 @@ export default async function LocaleLayout({
   return (
     <>
       <Navbar locale={locale} searchIndex={searchIndex} />
-      {children}
+      <main>{children}</main>
       <Footer />
       <FloatingWhatsapp isActive={true} hideOnMobile={false} />
     </>

@@ -9,7 +9,7 @@ const HeroSection = ({ t }: { t: (key: string) => string }) => {
           priority
           fetchPriority="high"
           sizes="100vw"
-          quality={75}
+          quality={65}
           className="object-cover object-[65%_center] md:object-center"
         />
       <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/10 to-transparent" />
