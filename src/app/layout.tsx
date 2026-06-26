@@ -78,8 +78,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="m2Jx5XHGk5VfQM86pq0VleG_ctP1wwrtGNvsy2jT86o"/>
-        {/* Preconnect for GTM – saves ~100 ms on cold connections before first user interaction */}
-        <link rel="preconnect" href="https://www.googletagmanager.com"/>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
         <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
         <script
           type="application/ld+json"
