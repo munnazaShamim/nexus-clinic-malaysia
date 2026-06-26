@@ -1,0 +1,140 @@
+# Nexus Clinic
+
+> Nexus Clinic is a medical aesthetic clinic in Kuala Lumpur, Malaysia, offering treatments across face, skin, hair, regenerative medicine, and weight loss.
+
+## Core Pages
+
+- [Home](https://www.nexus-clinic.com/)
+- [About Us](https://www.nexus-clinic.com/about-us/)
+- [Doctors](https://www.nexus-clinic.com/doctors/)
+- [Gallery](https://www.nexus-clinic.com/gallery/)
+- [Products](https://www.nexus-clinic.com/products/)
+- [Awards and Certifications](https://www.nexus-clinic.com/awards-and-certifications/)
+- [Consultation](https://www.nexus-clinic.com/consultation/)
+- [Contact Us](https://www.nexus-clinic.com/contact-us/)
+
+## Doctors
+
+- [Dr Preetha Nair](https://www.nexus-clinic.com/doctors/preetha-nair/)
+- [Dr Ashvinia Bala](https://www.nexus-clinic.com/doctors/ashvinia-bala/)
+- [Dr Anum Jawed](https://www.nexus-clinic.com/doctors/anum-jawed/)
+
+## Treatments: Face
+
+- [Face Treatments Overview](https://www.nexus-clinic.com/face/)
+- [Dermal Filler](https://www.nexus-clinic.com/face/dermal-filler-malaysia/)
+- [Lip Filler](https://www.nexus-clinic.com/face/lip-filler-malaysia/)
+- [Chin Filler](https://www.nexus-clinic.com/face/chin-filler-malaysia/)
+- [Jawline Filler](https://www.nexus-clinic.com/face/jawline-filler-malaysia/)
+- [Cheek Filler](https://www.nexus-clinic.com/face/cheek-filler-malaysia/)
+- [Nose Filler](https://www.nexus-clinic.com/face/nose-filler-malaysia/)
+- [Tear Trough Filler](https://www.nexus-clinic.com/face/tear-trough-filler-malaysia/)
+- [Under Eye Filler](https://www.nexus-clinic.com/face/under-eye-filler-malaysia/)
+- [Botox](https://www.nexus-clinic.com/face/botox-malaysia/)
+- [Nose Thread Lift](https://www.nexus-clinic.com/face/nose-thread-lift-malaysia/)
+- [Skin Booster](https://www.nexus-clinic.com/face/skin-booster-malaysia/)
+- [Profhilo](https://www.nexus-clinic.com/face/profhilo-malaysia/)
+- [Sculptra](https://www.nexus-clinic.com/face/sculptra-malaysia/)
+- [Rejuran](https://www.nexus-clinic.com/face/rejuran-malaysia/)
+- [Plinest](https://www.nexus-clinic.com/face/plinest-malaysia/)
+- [Newest](https://www.nexus-clinic.com/face/newest-malaysia/)
+- [Karisma](https://www.nexus-clinic.com/face/karisma-malaysia/)
+
+## Treatments: Skin
+
+- [Skin Treatments Overview](https://www.nexus-clinic.com/skin/)
+- [Pico Laser](https://www.nexus-clinic.com/skin/pico-laser-malaysia/)
+- [Pico Laser for Melasma](https://www.nexus-clinic.com/skin/pico-laser-malaysia/melasma/)
+- [Pico Laser for Pigmentation](https://www.nexus-clinic.com/skin/pico-laser-malaysia/pigmentation/)
+- [Pico Laser for Acne Scars](https://www.nexus-clinic.com/skin/pico-laser-malaysia/acne-scars/)
+- [Pico Laser for Large Pores](https://www.nexus-clinic.com/skin/pico-laser-malaysia/large-pores/)
+- [Pico Laser for Freckles](https://www.nexus-clinic.com/skin/pico-laser-malaysia/freckles/)
+- [Pico Laser for Tattoo Removal](https://www.nexus-clinic.com/skin/pico-laser-malaysia/tattoo-removal/)
+- [Pico Laser for Skin Brightening](https://www.nexus-clinic.com/skin/pico-laser-malaysia/skin-brightening/)
+- [Pico Laser Recovery](https://www.nexus-clinic.com/skin/pico-laser-malaysia/recovery/)
+- [Pico Laser Side Effects](https://www.nexus-clinic.com/skin/pico-laser-malaysia/side-effects/)
+- [Pico Laser Price](https://www.nexus-clinic.com/skin/pico-laser-malaysia/price/)
+- [Acne Treatment](https://www.nexus-clinic.com/skin/acne-treatment-malaysia/)
+- [Acne Scar Treatment](https://www.nexus-clinic.com/skin/acne-scar-treatment-malaysia/)
+- [Pigmentation Treatment](https://www.nexus-clinic.com/skin/pigmentation-treatment-malaysia/)
+- [Melasma Treatment](https://www.nexus-clinic.com/skin/melasma-treatment-malaysia/)
+- [Mole Removal](https://www.nexus-clinic.com/skin/mole-removal-malaysia/)
+- [HydraFacial](https://www.nexus-clinic.com/skin/hydrafacial-malaysia/)
+- [Dark Eye Circle Treatment](https://www.nexus-clinic.com/skin/dark-eye-circle-treatment-malaysia/)
+- [Skin Whitening Treatment](https://www.nexus-clinic.com/skin/skin-whitening-treatment-malaysia/)
+- [Eczema Treatment](https://www.nexus-clinic.com/skin/eczema-treatment-malaysia/)
+- [Keloid Treatment](https://www.nexus-clinic.com/skin/keloid-treatment-malaysia/)
+- [Rosacea Treatment](https://www.nexus-clinic.com/skin/rosacea-treatment-malaysia/)
+- [Stretch Mark Removal](https://www.nexus-clinic.com/skin/stretch-mark-removal-malaysia/)
+- [Laser Hair Removal](https://www.nexus-clinic.com/skin/laser-hair-removal-malaysia/)
+- [Tattoo Removal](https://www.nexus-clinic.com/skin/tattoo-removal-malaysia/)
+- [Chemical Peel](https://www.nexus-clinic.com/skin/chemical-peel-malaysia/)
+- [Fractional Laser Resurfacing](https://www.nexus-clinic.com/fraqtional-laser-resurfacing/)
+
+## Treatments: Hair
+
+- [Hair Treatments Overview](https://www.nexus-clinic.com/hair/)
+- [Hair Transplant](https://www.nexus-clinic.com/hair/hair-transplant-malaysia/)
+- [FUE Hair Transplant](https://www.nexus-clinic.com/hair/fue-hair-transplant-malaysia/)
+- [PRP Hair Treatment](https://www.nexus-clinic.com/hair/prp-hair-treatment-malaysia/)
+- [Hair Loss Treatment](https://www.nexus-clinic.com/hair/hair-loss-treatment-malaysia/)
+- [Beard Transplant](https://www.nexus-clinic.com/hair/beard-transplant-malaysia/)
+- [Mesotherapy for Hair Loss](https://www.nexus-clinic.com/hair/mesotherapy-hair-loss-malaysia/)
+- [Exosome Hair Treatment](https://www.nexus-clinic.com/hair/exosome-hair-treatment-malaysia/)
+- [Minoxidil Treatment](https://www.nexus-clinic.com/hair/minoxidil-treatment-malaysia/)
+- [Finasteride Treatment](https://www.nexus-clinic.com/hair/finasteride-treatment-malaysia/)
+- [Alopecia Areata Treatment](https://www.nexus-clinic.com/hair/alopecia-areata-treatment-malaysia/)
+
+## Treatments: Regenerative Medicine
+
+- [Regenerative Treatments Overview](https://www.nexus-clinic.com/regenerative/)
+- [Testosterone Therapy](https://www.nexus-clinic.com/regenerative/testosterone-therapy-malaysia/)
+- [Erectile Dysfunction Treatment](https://www.nexus-clinic.com/regenerative/ed-treatment-malaysia/)
+- [Hormone Replacement Therapy](https://www.nexus-clinic.com/regenerative/hormone-replacement-therapy-malaysia/)
+- [PCOS Treatment](https://www.nexus-clinic.com/regenerative/pcos-treatment-malaysia/)
+- [Hypothyroidism Treatment](https://www.nexus-clinic.com/regenerative/hypothyroidism-treatment-malaysia/)
+- [Stem Cell Therapy](https://www.nexus-clinic.com/regenerative/stem-cell-therapy-malaysia/)
+- [Anti-Aging Therapy](https://www.nexus-clinic.com/regenerative/anti-aging-therapy-malaysia/)
+- [Hormone Test](https://www.nexus-clinic.com/regenerative/hormone-test-malaysia/)
+- [Menopause Hormone Replacement](https://www.nexus-clinic.com/regenerative/menopause-hormone-replacement-malaysia/)
+- [P-Shot](https://www.nexus-clinic.com/regenerative/p-shot-malaysia/)
+- [O-Shot](https://www.nexus-clinic.com/regenerative/o-shot-malaysia/)
+- [Shockwave Therapy](https://www.nexus-clinic.com/regenerative/shockwave-therapy-malaysia/)
+
+## Treatments: Weight Loss
+
+- [Weight Loss Overview](https://www.nexus-clinic.com/weight-loss/)
+- [Ozempic](https://www.nexus-clinic.com/weight-loss/ozempic-malaysia/)
+- [Mounjaro](https://www.nexus-clinic.com/weight-loss/mounjaro-malaysia/)
+- [Wegovy](https://www.nexus-clinic.com/weight-loss/wegovy-malaysia/)
+- [Zepbound](https://www.nexus-clinic.com/weight-loss/zepbound-malaysia/)
+- [GLP-1 Programme](https://www.nexus-clinic.com/weight-loss/glp-1-programme-malaysia/)
+- [CoolSculpting](https://www.nexus-clinic.com/weight-loss/coolsculpting-malaysia/)
+- [Fat Freezing](https://www.nexus-clinic.com/weight-loss/fat-freezing-malaysia/)
+- [Doctor-Monitored Weight Loss](https://www.nexus-clinic.com/weight-loss/doctor-monitored-weight-loss-malaysia/)
+- [HCG Programme](https://www.nexus-clinic.com/weight-loss/hcg-programme-malaysia/)
+- [Duromine](https://www.nexus-clinic.com/weight-loss/duromine-malaysia/)
+- [IV Drip](https://www.nexus-clinic.com/weight-loss/iv-drip-malaysia/)
+
+## Blog: Selected Key Articles
+
+- [Best Skin Treatments in Kuala Lumpur 2026](https://www.nexus-clinic.com/blogs/best-skin-treatments-in-kuala-lumpur-2026-expert-picks-pricing-guide/)
+- [Ozempic Side Effects Malaysia](https://www.nexus-clinic.com/blogs/ozempic-side-effects-malaysia/)
+- [Ozempic After Weight Goal Malaysia](https://www.nexus-clinic.com/blogs/ozempic-after-weight-goal-malaysia/)
+- [Profhilo vs Rejuran vs Newest vs Karisma](https://www.nexus-clinic.com/blogs/profhilo-vs-rejuran-vs-newest-vs-karisma-malaysia/)
+- [Skin Booster vs Moisturiser](https://www.nexus-clinic.com/blogs/skin-booster-vs-moisturiser-malaysia/)
+- [Pico Laser for Acne Scar Treatment: Step-by-Step Guide](https://www.nexus-clinic.com/blogs/what-to-expect-pico-laser-acne-scar-treatment-step-by-step-guide-malaysia/)
+- [Botox Cost in Kuala Lumpur](https://www.nexus-clinic.com/blogs/how-much-does-botox-cost-in-kuala-lumpur-full-pricing-breakdown/)
+- [Duromine Side Effects](https://www.nexus-clinic.com/blogs/duromine-side-effects-what-you-need-to-know-before-use/)
+- [Masseter Botox Malaysia](https://www.nexus-clinic.com/blogs/masseter-botox-malaysia-for-jaw-slimming-teeth-grinding-and-face-shape/)
+- [Sculptra vs Dermal Fillers Malaysia](https://www.nexus-clinic.com/blogs/sculptra-vs-dermal-fillers-malaysia-facial-volume-loss/)
+- [GLP-1 Medications Malaysia: Ozempic vs Wegovy vs Saxenda](https://www.nexus-clinic.com/blogs/all-about-glp-1-weight-loss-medications-in-malaysia-ozempic-vs-wegovy-vs-saxenda/)
+- [Hair Transplant Malaysia: Cost, Procedure, Success](https://www.nexus-clinic.com/blogs/hair-transplant-malaysia-cost-procedure-success/)
+- [Stem Cell Therapy for Anti-Aging in Malaysia](https://www.nexus-clinic.com/blogs/stem-cell-therapy-for-anti-aging-in-malaysia/)
+- [Testosterone Replacement Therapy Malaysia](https://www.nexus-clinic.com/blogs/everything-you-need-to-know-about-testosterone-replacement-therapy-in-malaysia/)
+- [PRP Hair vs Hair Transplant](https://www.nexus-clinic.com/blogs/prp-hair-vs-hair-transplant-treatment-in-malaysia/)
+- [Nose Thread Lift vs Nose Filler Malaysia](https://www.nexus-clinic.com/blogs/nose-thread-lift-vs-nose-filler-malaysia/)
+- [Tear Trough Filler Risks Malaysia](https://www.nexus-clinic.com/blogs/tear-trough-filler-risks-malaysia-guide/)
+- [CoolSculpting Malaysia: Fat Freezing Results](https://www.nexus-clinic.com/blogs/coolsculpting-malaysia-fat-freezing-results-explained/)
+- [Semaglutide vs Tirzepatide for Weight Management](https://www.nexus-clinic.com/blogs/semaglutide-vs-tirzepatide-which-is-better-for-weight-management/)
+- [Best Hair Loss Treatment in Kuala Lumpur](https://www.nexus-clinic.com/blogs/best-hair-loss-treatment-in-kuala-lumpur-what-really-works/)

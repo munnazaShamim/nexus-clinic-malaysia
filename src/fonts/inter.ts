@@ -5,4 +5,5 @@ export const inter = Inter({
   // Weight 300 removed — not used in the design, saves one font file download.
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Arial", "sans-serif"],
 });

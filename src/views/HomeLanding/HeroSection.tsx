@@ -1,7 +1,7 @@
 import Image from "next/image";
 const HeroSection = ({ t }: { t: (key: string) => string }) => {
   return (
-    <section className="relative h-[550px] md:h-[700px] w-full overflow-hidden">
+    <section className="relative h-[550px] md:h-[700px] w-full mt-18 md:mt-0 overflow-hidden">
         <Image
           src="/images/hero_image.webp"
           alt="Nexus Clinic Aesthetic Treatment"
