@@ -110,7 +110,7 @@ export const MobileSearchBox = ({
             : "bg-light/90 border-light/40 focus-within:border-light/70"
         }`}
       >
-        <Search size={16} className="text-taupe shrink-0" />
+        <Search size={16} className="text-taupe shrink-0" aria-hidden={true} />
         <input
           ref={inputRef}
           type="text"
@@ -118,13 +118,15 @@ export const MobileSearchBox = ({
           onChange={handleChange}
           onFocus={() => results.length > 0 && setIsOpen(true)}
           placeholder={getText("search.placeholder", "Search treatments...")}
+          aria-label={getText("search.placeholder", "Search treatments")}
           className="bg-transparent outline-none text-sm font-inter text-brown placeholder:text-taupe/50 flex-1 min-w-0"
         />
         <button
           onClick={handleClearOrClose}
           className="text-taupe hover:text-wine transition-colors shrink-0 p-0.5"
+          aria-label={query ? "Clear search" : "Close search"}
         >
-          <X size={16} />
+          <X size={16} aria-hidden={true} />
         </button>
       </div>
 
@@ -150,7 +152,7 @@ export const MobileSearchBox = ({
                     onClick={() => handleSelect(item.href)}
                     className="w-full text-left flex items-center gap-3 px-4 py-3 hover:bg-cream/60 active:bg-cream transition-colors group"
                   >
-                    <div className="w-7 h-7 rounded-full bg-wine/10 flex items-center justify-center shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-wine/10 flex items-center justify-center shrink-0" aria-hidden={true}>
                       <Search size={13} className="text-wine" />
                     </div>
                     <div className="min-w-0 flex-1">
@@ -164,7 +166,7 @@ export const MobileSearchBox = ({
                         )}
                       </p>
                     </div>
-                    <ChevronRight size={14} className="text-taupe shrink-0" />
+                    <ChevronRight size={14} className="text-taupe shrink-0" aria-hidden={true} />
                   </button>
                 </li>
               ))}

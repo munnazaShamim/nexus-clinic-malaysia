@@ -39,6 +39,7 @@ export function NewsletterStrip() {
           <input
             type="email"
             placeholder="your@email.com"
+            aria-label="Email address for newsletter"
             className="flex-1 lg:w-64 px-5 py-3.5 rounded-xl text-sm outline-none"
             style={{
               background: "rgba(255,255,255,0.12)",

@@ -44,6 +44,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
           className="shrink-0"
+          aria-hidden={true}
         >
           <ChevronDown className="w-5 h-5 text-wine" />
         </motion.div>

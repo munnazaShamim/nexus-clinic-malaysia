@@ -117,7 +117,7 @@ export const MobileNav = ({
                 }`}
                 aria-label="Open search"
               >
-                <Search size={20} />
+                <Search size={20} aria-hidden={true} />
               </motion.button>
 
               <motion.button
@@ -138,6 +138,7 @@ export const MobileNav = ({
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: 90, opacity: 0 }}
                       transition={{ duration: 0.15 }}
+                      aria-hidden={true}
                     >
                       <X size={22} />
                     </motion.div>
@@ -148,6 +149,7 @@ export const MobileNav = ({
                       animate={{ rotate: 0, opacity: 1 }}
                       exit={{ rotate: -90, opacity: 0 }}
                       transition={{ duration: 0.15 }}
+                      aria-hidden={true}
                     >
                       <Menu size={22} />
                     </motion.div>
@@ -180,30 +182,46 @@ export const MobileNav = ({
                   >
                     {item.submenu ? (
                       <>
-                        <button
-                          onClick={() =>
-                            setMobileSubmenu(
-                              mobileSubmenu === item.label ? null : item.label
-                            )
-                          }
-                          className={`w-full max-w-[93%] flex items-center justify-between py-3.5 px-4 rounded-xl transition-all duration-200 ${
+                        <div
+                          className={`w-full max-w-[93%] flex items-center rounded-xl transition-all duration-200 ${
                             mobileSubmenu === item.label
                               ? "bg-cream text-wine"
                               : "text-brown hover:bg-cream/50"
                           }`}
                         >
-                          <span className="font-inter font-medium">
-                            {getText(item.label, item.fallback)}
-                          </span>
-                          <motion.div
-                            animate={{
-                              rotate: mobileSubmenu === item.label ? 180 : 0,
-                            }}
-                            transition={{ duration: 0.2 }}
+                          {item.href && item.href !== "#" ? (
+                            <Link
+                              href={getNavHref(item.href)}
+                              className="flex-1 py-3.5 pl-4 font-inter font-medium"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {getText(item.label, item.fallback)}
+                            </Link>
+                          ) : (
+                            <span className="flex-1 py-3.5 pl-4 font-inter font-medium">
+                              {getText(item.label, item.fallback)}
+                            </span>
+                          )}
+                          <button
+                            onClick={() =>
+                              setMobileSubmenu(
+                                mobileSubmenu === item.label ? null : item.label
+                              )
+                            }
+                            className="py-3.5 px-4 flex items-center"
+                            aria-label={`${mobileSubmenu === item.label ? "Collapse" : "Expand"} ${getText(item.label, item.fallback)} submenu`}
                           >
-                            <ChevronDown size={18} />
-                          </motion.div>
-                        </button>
+                            <motion.div
+                              animate={{
+                                rotate: mobileSubmenu === item.label ? 180 : 0,
+                              }}
+                              transition={{ duration: 0.2 }}
+                              aria-hidden={true}
+                            >
+                              <ChevronDown size={18} />
+                            </motion.div>
+                          </button>
+                        </div>
 
                         <AnimatePresence>
                           {mobileSubmenu === item.label && (
@@ -244,6 +262,7 @@ export const MobileNav = ({
                                                 `/${getCategoryPath(category)}/${subItem.fallback}/`
                                               )}
                                               className="text-taupe hover:text-wine text-sm py-2.5 px-3 rounded-lg hover:bg-light transition-all duration-200 flex items-center gap-2"
+                                              onClick={() => setIsMenuOpen(false)}
                                             >
                                               <span className="w-1.5 h-1.5 rounded-full bg-taupe/30" />
                                               {getText(subItem.key, subItem.fallback)}
@@ -309,7 +328,7 @@ export const MobileNav = ({
                     href={getNavHref("/contact-us/")}
                     className="flex max-w-[93%] items-center justify-center gap-2 bg-wine text-light px-6 py-4 rounded-xl font-inter font-semibold text-center shadow-lg shadow-wine/20 hover:bg-wine/90 transition-all duration-200"
                   >
-                    <Calendar size={18} />
+                    <Calendar size={18} aria-hidden={true} />
                     <span>
                       {getText("nav.bookConsultation", "Book Your Consultation")}
                     </span>
@@ -318,7 +337,7 @@ export const MobileNav = ({
                     href="tel:0167025699"
                     className="flex w-full max-w-[93%] items-center justify-center gap-2 text-taupe hover:text-wine py-3 font-inter transition-colors"
                   >
-                    <Phone size={16} />
+                    <Phone size={16} aria-hidden={true} />
                     <span className="font-medium">016-702 5699</span>
                   </a>
                 </motion.div>

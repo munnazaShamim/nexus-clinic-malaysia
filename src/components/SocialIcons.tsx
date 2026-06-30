@@ -11,6 +11,8 @@ const TikTokIcon = ({ size = 18, color = "currentColor" }: { size?: number; colo
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     style={{ color }}
+    aria-hidden="true"
+    focusable="false"
   >
     <path
       d="M19.589 6.686a4.993 4.993 0 0 1-3.77-4.245c-.043-.53-.048-.706-.048-1.046h-3.527v11.65c0 1.48-1.202 2.68-2.682 2.68a2.685 2.685 0 0 1-2.683-2.68c0-1.48 1.202-2.68 2.683-2.68.273 0 .538.045.785.122v-3.595a6.278 6.278 0 0 0-4.53 1.116 6.278 6.278 0 0 0-2.366 4.937c0 3.463 2.813 6.277 6.277 6.277 3.464 0 6.278-2.814 6.278-6.277V7.786c1.198.858 2.63 1.355 4.17 1.37V5.66a4.96 4.96 0 0 1-1.42-.974z"
@@ -87,14 +89,15 @@ export default function SocialIcons({
           aria-label={`Follow us on ${social.name}`}
         >
           {social.name === "TikTok" ? (
-            <social.icon 
-              size={iconSize} 
+            <social.icon
+              size={iconSize}
               color={variant === "colored" ? social.color : "currentColor"}
             />
           ) : (
-            <social.icon 
-              size={iconSize} 
+            <social.icon
+              size={iconSize}
               style={variant === "colored" ? { color: social.color } : undefined}
+              aria-hidden={true}
             />
           )}
           

@@ -34,7 +34,7 @@ export const TopBar = ({ isScrolled, getText }: TopBarProps) => {
                     href="tel:0167025699"
                     className="flex items-center gap-2 hover:text-cream transition-colors"
                   >
-                    <Phone size={12} />
+                    <Phone size={12} aria-hidden={true} />
                     <span>016-702 5699</span>
                   </a>
 

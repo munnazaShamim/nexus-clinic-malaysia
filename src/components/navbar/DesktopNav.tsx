@@ -67,6 +67,7 @@ export const DesktopNav = ({
                   rotate: activeDropdown === item.label ? 180 : 0,
                 }}
                 transition={{ duration: 0.2 }}
+                aria-hidden={true}
               >
                 <ChevronDown size={14} />
               </motion.div>
@@ -113,7 +114,7 @@ export const DesktopNav = ({
         shadow-green/20 hover:bg-green/90 transition-all duration-300 flex items-center justiy-center gap-2 hover:shadow-green/30
          hover:scale-105"
       >
-        <Calendar size={16} />
+        <Calendar size={16} aria-hidden={true} />
         <span>{getText("nav.bookNow", "Book Now")}</span>
       </Link>
     </nav>

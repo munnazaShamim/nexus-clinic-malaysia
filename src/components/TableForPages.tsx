@@ -123,11 +123,14 @@ export default function TableForPages({
                 </div>
                 
                 {variant === "detailed" && (
-                  <button className="text-wine">
+                  <button
+                    className="text-wine"
+                    aria-label={expandedRows.includes(idx) ? "Collapse row" : "Expand row"}
+                  >
                     {expandedRows.includes(idx) ? (
-                      <ChevronUp className="w-5 h-5" />
+                      <ChevronUp className="w-5 h-5" aria-hidden={true} />
                     ) : (
-                      <ChevronDown className="w-5 h-5" />
+                      <ChevronDown className="w-5 h-5" aria-hidden={true} />
                     )}
                   </button>
                 )}

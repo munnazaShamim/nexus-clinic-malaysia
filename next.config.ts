@@ -68,6 +68,7 @@ const nextConfig: NextConfig = {
 
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
+    inlineCss: true,
   },
 
   compiler: {

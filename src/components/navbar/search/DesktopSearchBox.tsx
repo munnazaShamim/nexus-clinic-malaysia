@@ -99,6 +99,7 @@ export const DesktopSearchBox = ({
         <Search
           size={15}
           className={isScrolled ? "text-taupe" : "text-brown/80"}
+          aria-hidden={true}
         />
         <input
           ref={inputRef}
@@ -107,6 +108,7 @@ export const DesktopSearchBox = ({
           onChange={handleChange}
           onFocus={() => results.length > 0 && setIsOpen(true)}
           placeholder={getText("search.placeholder", "Search treatments...")}
+          aria-label={getText("search.placeholder", "Search treatments")}
           className="bg-transparent outline-none text-sm font-inter w-36 md:w-36 placeholder:text-taupe/60 transition-all duration-300 text-brown"
         />
         {query && (
@@ -118,8 +120,9 @@ export const DesktopSearchBox = ({
               inputRef.current?.focus();
             }}
             className="text-taupe hover:text-wine transition-colors"
+            aria-label="Clear search"
           >
-            <X size={13} />
+            <X size={13} aria-hidden={true} />
           </button>
         )}
       </div>
@@ -151,7 +154,7 @@ export const DesktopSearchBox = ({
                     onClick={() => handleSelect(item.href)}
                     className="w-full text-left flex items-center gap-3 px-4 py-2.5 hover:bg-cream/60 transition-colors group"
                   >
-                    <div className="w-7 h-7 rounded-full bg-wine/10 flex items-center justify-center shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-wine/10 flex items-center justify-center shrink-0" aria-hidden={true}>
                       <Search size={13} className="text-wine" />
                     </div>
                     <div className="min-w-0">
@@ -168,6 +171,7 @@ export const DesktopSearchBox = ({
                     <ChevronRight
                       size={14}
                       className="text-taupe ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                      aria-hidden={true}
                     />
                   </button>
                 </motion.li>

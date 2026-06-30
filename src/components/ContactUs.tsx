@@ -75,20 +75,26 @@ export const ContactSection = () => {
                   <input
                     type="text"
                     placeholder="Your Name"
+                    aria-label="Your name"
                     className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine transition-colors text-brown placeholder:text-taupe"
                   />
                   <input
                     type="email"
                     placeholder="Email Address"
+                    aria-label="Email address"
                     className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine transition-colors text-brown placeholder:text-taupe"
                   />
                 </div>
                 <input
                   type="tel"
                   placeholder="Phone Number"
+                  aria-label="Phone number"
                   className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine transition-colors text-brown placeholder:text-taupe"
                 />
-                <select className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine transition-colors text-taupe">
+                <select
+                  aria-label="Select treatment interest"
+                  className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine transition-colors text-taupe"
+                >
                   <option>Select Treatment Interest</option>
                   <option>Facial & Anti-Aging</option>
                   <option>Weight Loss Program</option>
@@ -98,6 +104,7 @@ export const ContactSection = () => {
                 <textarea
                   rows={4}
                   placeholder="Your Message"
+                  aria-label="Your message"
                   className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine resize-none transition-colors text-brown placeholder:text-taupe"
                 />
                 <motion.button

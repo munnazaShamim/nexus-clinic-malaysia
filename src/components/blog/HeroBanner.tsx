@@ -73,13 +73,14 @@ export function HeroBanner({
                     backdropFilter: "blur(12px)",
                   }}
                 >
-              <Search size={18} className="text-wine shrink-0" />
+              <Search size={18} className="text-wine shrink-0" aria-hidden={true} />
               <input
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setSearchFocused(true)}
                 onBlur={() => setSearchFocused(false)}
                 placeholder="Search articles..."
+                aria-label="Search articles"
                 className="bg-transparent text-brown placeholder-taupe/70 text-sm outline-none flex-1 font-medium"
                 style={{
                   color: "var(--color-brown)",

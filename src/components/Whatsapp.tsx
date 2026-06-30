@@ -13,6 +13,8 @@ const WhatsAppIcon = ({ size = 24, className = "" }) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     className={className}
+    aria-hidden="true"
+    focusable="false"
   >
     <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21z" />
     <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
@@ -92,8 +94,9 @@ const FloatingWhatsapp = ({
       }
       whileHover={{ scale: 1.2 }}
       className={`fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center shadow-xl z-50 bg-green hover:bg-green/90 transition-colors ${hideOnMobile ? "hidden md:flex" : "flex"}`}
+      aria-label="Chat on WhatsApp – Claim RM100 Voucher"
     >
-      <span className="fixed bottom-3 right-12 text-xs font-bold px-3 py-1.5 whitespace-nowrap z-50">
+      <span className="fixed bottom-3 right-12 text-xs font-bold px-3 py-1.5 whitespace-nowrap z-50" aria-hidden="true">
         CLAIM RM100 VOUCHER
       </span>
     <WhatsAppIcon className="text-white" size={30} />

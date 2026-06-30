@@ -75,11 +75,13 @@ const ContactSection = ({ t }: { t: (key: string) => string }) => {
                   <input
                     type="text"
                     placeholder={t("contact.placeholderName")}
+                    aria-label="Your name"
                     className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 text-brown transition-all duration-300"
                   />
                   <input
                     type="email"
                     placeholder={t("contact.placeholderEmail")}
+                    aria-label="Email address"
                     className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 text-brown transition-all duration-300"
                   />
                 </div>
@@ -87,10 +89,14 @@ const ContactSection = ({ t }: { t: (key: string) => string }) => {
                 <input
                   type="tel"
                   placeholder={t("contact.placeholderPhone")}
+                  aria-label="Phone number"
                   className="w-full px-5 py-4 rounded-xl border border-cream bg-cream focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 text-brown transition-all duration-300"
                 />
 
-                <select className="w-full px-5 py-4 rounded-xl border border-cream bg-cream text-taupe focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 transition-all duration-300">
+                <select
+                  aria-label="Select treatment interest"
+                  className="w-full px-5 py-4 rounded-xl border border-cream bg-cream text-taupe focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 transition-all duration-300"
+                >
                   <option>{t("contact.selectTreatment")}</option>
                   <option>{t("contact.optionFacial")}</option>
                   <option>{t("contact.optionWeightLoss")}</option>
@@ -101,6 +107,7 @@ const ContactSection = ({ t }: { t: (key: string) => string }) => {
                 <textarea
                   rows={4}
                   placeholder={t("contact.placeholderMessage")}
+                  aria-label="Your message"
                   className="w-full px-5 py-4 rounded-xl border border-cream bg-cream resize-none text-brown focus:outline-none focus:border-wine focus:ring-2 focus:ring-wine/20 transition-all duration-300"
                 />
 
